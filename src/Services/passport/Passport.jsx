@@ -1142,7 +1142,7 @@ const [leadId,setLeadId]=useState();
         alert("Please enter a valid 10-digit mobile number.");
         return;
       }
-      formattedNumber = `+91${formattedNumber}`;
+      formattedNumber = `91${formattedNumber}`;
       console.log("Formatted Mobile Number:", formattedNumber);
 
       const response = await axios.post(
@@ -1320,7 +1320,7 @@ const [leadId,setLeadId]=useState();
     try {
       let formattedNumber = mobileNumber.trim();
       if (!/^91\d{10}$/.test(formattedNumber)) {
-        formattedNumber = `+91${formattedNumber}`;
+        formattedNumber = `91${formattedNumber}`;
       }
   
       console.log("Formatted Mobile Number for Resend:", formattedNumber);
@@ -1370,7 +1370,7 @@ const [leadId,setLeadId]=useState();
         return;
       }
   
-      formattedNumber = `+91${formattedNumber}`;
+      formattedNumber = `${formattedNumber}`;
       console.log("Formatted Mobile Number:", formattedNumber);
   
       const enteredOtp = otp.join("").trim();

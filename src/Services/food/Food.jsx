@@ -1079,7 +1079,7 @@ useLayoutEffect(() => {
             alert("Please enter a valid 10-digit mobile number.");
             return;
           }
-          formattedNumber = `+91${formattedNumber}`;
+          formattedNumber = `91${formattedNumber}`;
           console.log("Formatted Mobile Number:", formattedNumber);
       
           const response = await axios.post("https://api.makemydocuments.in/api/sendOTP", {
@@ -1124,7 +1124,7 @@ useLayoutEffect(() => {
         try {
           let formattedNumber = mobileNumber.trim();
           if (!/^91\d{10}$/.test(formattedNumber)) {
-            formattedNumber = `+91${formattedNumber}`;
+            formattedNumber = `91${formattedNumber}`;
           }
       
           console.log("Formatted Mobile Number for Resend:", formattedNumber);
@@ -1174,7 +1174,7 @@ useLayoutEffect(() => {
             return;
           }
       
-          formattedNumber = `+91${formattedNumber}`;
+          formattedNumber = `${formattedNumber}`;
           console.log("Formatted Mobile Number:", formattedNumber);
       
           const enteredOtp = otp.join("").trim();

@@ -3026,7 +3026,7 @@ const Services = () => {
         return;
       }
   
-      formattedNumber = `91${formattedNumber}`;
+      formattedNumber = `${formattedNumber}`;
       console.log("Formatted Mobile Number:", formattedNumber);
   
       const enteredOtp = otp.join("").trim();
