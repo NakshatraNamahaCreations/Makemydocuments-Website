@@ -13,28 +13,66 @@ const About = () => {
   return (
     <>
     <Helmet>
-    <title>About Us | Make My Documents™ - Your Trusted Online Document Consultancy</title>
-<meta name="description" content="Learn about Make My Documents™, a trusted online platform simplifying document-related services like PAN card, Passport, Insurance, and Senior Citizen Cards. Your hassle-free solution to all documentation needs." />
-<meta name="keywords" content="about Make My Documents, document consultancy, online document services, PAN card, passport, insurance, senior citizen card, document support, hassle-free documentation" />
-<meta name="author" content="https://makemydocuments.com/about-us" />
-<meta name="rating" content="General" />
-<meta name="revisit-after" content="2 days" />
-<meta name="robots" content="ALL, index, follow" />
-<meta name="distribution" content="Global" />
-<meta name="language" content="English" />
-<meta http-equiv="window-target" content="_top" />
-<meta http-equiv="pics-label" content="for all ages" />
-<meta name="rating" content="general" />
-<meta content="All, FOLLOW" name="GOOGLEBOTS" />
-<meta content="All, FOLLOW" name="YAHOOBOTS" />
-<meta content="All, FOLLOW" name="MSNBOTS" />
-<meta content="All, FOLLOW" name="BINGBOTS" />
-<meta content="all" name="Googlebot-Image" />
-<meta content="all" name="Slurp" />
-<meta content="all" name="Scooter" />
-<meta content="ALL" name="WEBCRAWLERS" />
+        <title>About Us | Make My Documents™ - Your Trusted Online Document Consultancy</title>
+        <meta name="description" content="Learn about Make My Documents™, a trusted online platform simplifying document-related services like PAN card, Passport, Insurance, and Senior Citizen Cards. Your hassle-free solution to all documentation needs." />
+        <meta name="keywords" content="about Make My Documents, document consultancy, online document services, PAN card, passport, insurance, senior citizen card, document support, hassle-free documentation" />
+        <meta name="author" content="https://makemydocuments.com/about-us" />
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="2 days" />
+        <meta name="robots" content="ALL, index, follow" />
+        <meta name="distribution" content="Global" />
+        <meta name="language" content="English" />
+        <meta http-equiv="window-target" content="_top" />
+        <meta http-equiv="pics-label" content="for all ages" />
+        <meta name="rating" content="general" />
+        <meta content="All, FOLLOW" name="GOOGLEBOTS" />
+        <meta content="All, FOLLOW" name="YAHOOBOTS" />
+        <meta content="All, FOLLOW" name="MSNBOTS" />
+        <meta content="All, FOLLOW" name="BINGBOTS" />
+        <meta content="all" name="Googlebot-Image" />
+        <meta content="all" name="Slurp" />
+        <meta content="all" name="Scooter" />
+        <meta content="ALL" name="WEBCRAWLERS" />
 
-    </Helmet>
+        {/* Meta Pixel Code */}
+        <script>
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '865961251883214');
+            fbq('track', 'PageView');
+          `}
+        </script>
+        <noscript>
+          {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=865961251883214&ev=PageView&noscript=1" alt="Meta Pixel" />`}
+        </noscript>
+
+        <script>
+          {`
+            (function(w,d,t,r,u){
+              var f,n,i;w[u]=w[u]||[],f=function(){
+                var o={ti:"56340877", enableAutoSpaTracking: true};
+                o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+              },
+              n=d.createElement(t),n.src=r,n.async=1,
+              n.onload=n.onreadystatechange=function(){
+                var s=this.readyState;
+                s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+              },
+              i=d.getElementsByTagName(t)[0];
+              i.parentNode.insertBefore(n,i)
+            })(window,document,"script","//bat.bing.com/bat.js","uetq");
+          `}
+        </script>
+        {/* End Meta Pixel Code */}
+      </Helmet>
+
     <div style={{overflow:'hidden'}}>
       {/* About Us Section */}
       <div className="container-fluid-about about-section-container" style={{marginTop:'-7%'}}>

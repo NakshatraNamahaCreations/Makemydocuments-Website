@@ -10,6 +10,7 @@ import { useLayoutEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import "../food/food.css";
 import { FaArrowLeft } from 'react-icons/fa';
+import { Helmet } from "react-helmet";
 import howIcon from '../../images/how.svg';
 
 const stateData = [
@@ -1014,7 +1015,7 @@ useLayoutEffect(() => {
           date: date,
           dob: dob || "",
           insurance_registration_number: registrationNumber || "",
-          paidAmount: "1",
+          paidAmount: "99",
           // paymentStatus: paymentStatus || "",
           // qualification: "", 
           applyingfor:"",
@@ -1056,7 +1057,7 @@ useLayoutEffect(() => {
               mobilenumber: leadData.mobilenumber || "",
               orderid: leadData.orderId || "",
               services: leadData.services || "N/A",
-              paidAmount: leadData.paidAmount || "₹1",
+              paidAmount: leadData.paidAmount || "₹99",
               // PGID: leadData.PGID,
             });
           } else {
@@ -1220,12 +1221,12 @@ useLayoutEffect(() => {
     
     const [userDetails, setUserDetails] = useState(null); // Holds user details
     const [orderid, setOrderID] = useState(); 
-    const [paidAmount, setPaidAmount] = React.useState(1); 
+    const [paidAmount, setPaidAmount] = React.useState(99); 
     const [paymentSuccess, setPaymentSuccess] = React.useState(false);
     
     const handleProceedToPay = async () => {
       const txnBaseAmount = userDetails?.baseAmount || 0;
-      const txnFee = 1;
+      const txnFee = 99;
       const txnAmount = txnBaseAmount + txnFee;
   
       const custId = userDetails?.name
@@ -1379,6 +1380,66 @@ useLayoutEffect(() => {
 
 
     return (
+      <>
+        <Helmet>
+    <title> Apply Food License | food license Application India </title>
+<meta name="description" content="Apply online for your food license with expert assistance. Quick and reliable service for employment, rental, and immigration purposes."/>
+<meta name="keywords" content="food license apply "/>
+<link rel="canonical" href="https://makemydocuments.com/food-license"/>
+<meta name="rating" content="General"/>
+<meta name="revisit-after" content="2 days"/>
+<meta name="robots" content="ALL, index, follow"/>
+<meta name="distribution" content="Global" />
+<meta name="rating" content="Safe For All" />
+<meta name="language" content="English" />
+<meta http-equiv="window-target" content="_top"/>
+<meta http-equiv="pics-label" content="for all ages"/>
+<meta content="All, FOLLOW" name="GOOGLEBOTS"/>
+<meta content="All, FOLLOW" name="YAHOOBOTS"/>
+<meta content="All, FOLLOW" name="MSNBOTS"/>
+<meta content="All, FOLLOW" name="BINGBOTS"/>
+<meta content="all" name="Googlebot-Image"/>
+<meta content="all" name="Slurp"/>
+<meta content="all" name="Scooter"/>
+<meta content="ALL" name="WEBCRAWLERS"/>
+
+<script>
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '865961251883214');
+            fbq('track', 'PageView');
+          `}
+        </script>
+        <noscript>
+          {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=865961251883214&ev=PageView&noscript=1" alt="Meta Pixel" />`}
+        </noscript>
+
+        <script>
+          {`
+            (function(w,d,t,r,u){
+              var f,n,i;w[u]=w[u]||[],f=function(){
+                var o={ti:"56340877", enableAutoSpaTracking: true};
+                o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+              },
+              n=d.createElement(t),n.src=r,n.async=1,
+              n.onload=n.onreadystatechange=function(){
+                var s=this.readyState;
+                s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+              },
+              i=d.getElementsByTagName(t)[0];
+              i.parentNode.insertBefore(n,i)
+            })(window,document,"script","//bat.bing.com/bat.js","uetq");
+          `}
+        </script>
+
+    </Helmet>
         <div style={{overflow:'hidden'}}>
           <div  className='container-food'
           style={{
@@ -2428,6 +2489,7 @@ useLayoutEffect(() => {
         
         
         </div>
+        </>
     );
 };
 
