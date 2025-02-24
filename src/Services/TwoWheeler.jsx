@@ -1471,7 +1471,7 @@ two wheeler insurance online, bike insurance renewal online, how to get bike ins
 	<meta content="all" name="Scooter"/>
 	<meta content="ALL" name="WEBCRAWLERS"/>
 
-  <script>
+   <script>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -1488,6 +1488,7 @@ two wheeler insurance online, bike insurance renewal online, how to get bike ins
         <noscript>
           {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=865961251883214&ev=PageView&noscript=1" alt="Meta Pixel" />`}
         </noscript>
+
         <script>
           {`
             (function(w,d,t,r,u){
@@ -2021,7 +2022,7 @@ two wheeler insurance online, bike insurance renewal online, how to get bike ins
                             <span style={{ color: "red" }}>*</span>
                           </label>
                           <input
-                            type="number"
+                            type="text"
                             id="registrationNumber"
                             // onChange={handleRegistrationNumberChange}
                             value={registrationNumber}

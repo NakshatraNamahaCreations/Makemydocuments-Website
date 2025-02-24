@@ -2541,7 +2541,7 @@ const [isLoading, setIsLoading] = useState(false);
                               <span style={{ color: "red" }}>*</span>
                             </label>
                             <input
-                              type="number"
+                              type="text"
                               id="existingPanCardNumber"
                               value={existingPanCardNumber}
                               onChange={handleExistingPanCardChange}

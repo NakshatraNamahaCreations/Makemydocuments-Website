@@ -2005,7 +2005,7 @@ const handleRegistrationDateChange = (e) => {
         <span style={{ color: "red" }}>*</span>
       </label>
       <input
-        type="number"
+        type="text"
         id="registrationNumber"
         // onChange={handleRegistrationNumberChange}
         value={registrationNumber}
