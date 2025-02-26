@@ -1442,6 +1442,16 @@ const [addressError, setAddressError] = useState('');
 <meta content="all" name="Slurp"/>
 <meta content="all" name="Scooter"/>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QN4189EDG5');
+        `}
+      </script>
+
 <script>
           {`
             !function(f,b,e,v,n,t,s)

@@ -931,6 +931,16 @@ const [leadId,setLeadId]=useState();
 	<meta content="all" name="Slurp"/>
 	<meta content="all" name="Scooter"/>
 	<meta content="ALL" name="WEBCRAWLERS"/>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QN4189EDG5');
+        `}
+      </script>
 	
 
   <script>
