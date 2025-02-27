@@ -77,7 +77,7 @@ return isValid;
 
     try {
       const response = await axios.post(
-        "https://api.makemydocuments.in/api/lead/createLead",
+        "https://api.makemydocuments.com/api/lead/createLead",
         data,
         {
           headers: {

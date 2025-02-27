@@ -1146,7 +1146,7 @@ const [leadId,setLeadId]=useState();
       console.log("Formatted Mobile Number:", formattedNumber);
 
       const response = await axios.post(
-        "https://api.makemydocuments.in/api/sendOTP",
+        "https://api.makemydocuments.com/api/sendOTP",
         {
           mobilenumber: formattedNumber,
         }
@@ -1243,7 +1243,7 @@ const [leadId,setLeadId]=useState();
 
     try {
       const response = await axios.post(
-        "https://api.makemydocuments.in/api/PG/paytm/initiate",
+        "https://api.makemydocuments.com/api/PG/paytm/initiate",
         requestBody
       );
 
@@ -1326,7 +1326,7 @@ const [leadId,setLeadId]=useState();
       console.log("Formatted Mobile Number for Resend:", formattedNumber);
   
       const config = {
-        url: "https://api.makemydocuments.in/api/sendOTP",
+        url: "https://api.makemydocuments.com/api/sendOTP",
         method: "post",
         data: {
           mobilenumber: formattedNumber,
@@ -1380,7 +1380,7 @@ const [leadId,setLeadId]=useState();
       }
   
       const response = await axios.post(
-        "https://api.makemydocuments.in/api/verifyOTP",
+        "https://api.makemydocuments.com/api/verifyOTP",
         { mobilenumber: formattedNumber, otp: enteredOtp }
       );
   
@@ -1493,7 +1493,7 @@ const [leadId,setLeadId]=useState();
 
     try {
       const response = await axios.post(
-        "https://api.makemydocuments.in/api/lead/createLead",
+        "https://api.makemydocuments.com/api/lead/createLead",
         data,
         {
           headers: {
