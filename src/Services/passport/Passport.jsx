@@ -1700,405 +1700,241 @@ const [leadId,setLeadId]=useState();
       </div>
 
       <div
-        className="content-section"
+  className="content-section d-none d-lg-block"
+  style={{
+    backgroundColor: "#fffff",
+    padding: "30px 15px",
+    borderRadius: "10px",
+    margin: "-1% auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-between"
+  }}
+>
+  {/* Section 1: Documents Required For Fresh Passport */}
+  <div className="d-flex align-items-start w-100 flex-wrap mt-3 gap-3"style={{marginLeft:'14%'}} >
+  {/* Image Section */}
+  <div className="d-flex justify-content-center align-items-center">
+    <div style={{ position: "relative", display: "inline-block" }}>
+      <img
+        src={circleIcon}
+        alt="Circle Background"
+        className="img-fluid"
+        style={{ maxWidth: "100px" }}
+      />
+      <img
+        src={documentsIcon}
+        alt="Documents Icon"
         style={{
-          backgroundColor: "#fffff",
-          padding: "30px 15px",
-          borderRadius: "10px",
-          margin: "-1% auto",
-          marginRight: "72%",
+          position: "absolute",
+          top: "56%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          maxWidth: "50px",
         }}
-      >
-        <div className="row justify-content-center">
-          {/* Main Column for Vertical Layout */}
-          <div className="col-12 col-md-8 position-relative d-none d-lg-block">
-            {/* First Section: Documents */}
-            <div className="text-center mb-5">
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={documentsIcon}
-                  alt="Documents Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "105%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-40%",
-                marginLeft: "50%",
-              }}
-            ></div>
-            <div className="text-center mb-5" style={{marginTop:'-24%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={documentsIcon}
-                  alt="Documents Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "32%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-36%",
-                marginLeft: "50%",
-              }}
-            ></div>
-            <div className="text-center mb-5" style={{marginTop:'-21%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={documentsIcon}
-                  alt="Documents Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "45%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-59%",
-                marginLeft: "50%",
-              }}
-            ></div>
-            <div className="text-center mb-5" style={{marginTop:'-23%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={howIcon}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
+      />
+    </div>
+  </div>
 
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "35%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-37%",
-                marginLeft: "50%",
-              }}
-            ></div>
+  {/* Content Section */}
+  <div>
+    <h4 className="text-primary font-weight-bold mb-2" style={{fontWeight:'bold'}}>Documents Required For Fresh Passport</h4>
 
-            {/* Second Section: How It Works */}
-            <div className="text-center mb-5" style={{marginTop:'-23%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={TimeIcon}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
+    {/* Proof of Identity */}
+    <ul className="pl-3 mb-2" style={{ listStyleType: "disc" }}>
+      <li className="font-weight-bold" style={{fontWeight:'bold'}}>Proof of Identity (Any 01)</li>
+      <li>Aadhar Card</li>
+      <li>Voter ID</li>
+      <li>Pan Card</li>
+      <li>Driving Licence</li>
+    </ul>
 
-            {/* Blue Line */}
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "45%",
-                // margin: '0 auto',
-                marginLeft: "49.8%",
-                marginTop: "-48%",
-                width: "4px",
-              }}
-            ></div>
+    {/* Proof of Address */}
+    <ul className="pl-3 mb-2" style={{ listStyleType: "disc" }}>
+      <li className="font-weight-bold" style={{fontWeight:'bold'}}>Proof of Address (Any 01)</li>
+      <li>Aadhar Card</li>
+      <li>Voter ID</li>
+      <li>Bank Account Passbook</li>
+      <li>Gas Connection Bill / Electricity Bill / Telephone Bill / Water Bill</li>
+      <li>Parents Passport / Spouse Passport</li>
+    </ul>
 
-            {/* Third Section */}
-            <div className="text-center mb-5" style={{marginTop:'-38%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={Price}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="d-none d-lg-block">
-          <div
-            className="mb-5"
-            style={{
-              marginTop: "-130%",
-              marginLeft: "70%",
-            }}
-          >
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Documents Required For Fresh Passport
-            </h4>
-            {/* First List */}
-            <ul
-              style={{
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "bold" }}>Proof of Identity (Any 01)</li>
-              <li>Aadhar Card</li>
-              <li>Voter ID</li>
-              <li>Pan Card</li>
-              <li>Driving Licence</li>
-            </ul>
+    {/* Proof of Birth */}
+    <ul className="pl-3 mb-2" style={{ listStyleType: "disc" }}>
+      <li className="font-weight-bold" style={{fontWeight:'bold'}}>Proof of Birth (Any 01)</li>
+      <li>10th Certificate</li>
+      <li>12th Certificate</li>
+      <li>Higher Education Pass Certificate</li>
+      <li>School Leaving Certificate</li>
+      <li>Income Tax Assessment Order</li>
+    </ul>
+  </div>
+</div>
 
-            {/* Second List */}
-            <ul
-              style={{
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "bold" }}>Proof of Address (Any 01)</li>
-              <li>Aadhar Card</li>
-              <li>Voter ID</li>
-              <li>Bank Account Passbook</li>
-              <li>
-                Gas Connection Bill / Electricity Bill / Telephone Bill / Water
-                Bill
-              </li>
-              <li>Parents Passport / Spouse Passport</li>
-            </ul>
 
-            {/* Third List */}
-            <ul
-              style={{
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "bold" }}>Proof of Birth (Any 01)</li>
-              <li>10th Certificate</li>
-              <li>12th Certificate</li>
-              <li>Higher Education Pass Certificate</li>
-              <li>School Leaving Certificate</li>
-              <li>Income Tax Assessment Order</li>
-            </ul>
-          </div>
-          <div
-            className="mb-5"
-            style={{
-              marginTop: "-5%",
-              marginLeft: "70%",
-            }}
-          >
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Document Required for Renewal / Reissue of Passport
-            </h4>
-            <ul
-              style={{
-                display: "grid",
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "" }}>Original Old Passport</li>
-              <li style={{ fontWeight: "" }}>Id And Present Address Proof</li>
-            </ul>
-          </div>
-          <div style={{ marginLeft: "72%", marginTop: "35%" }}>
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Document Required for Minor Passport
-            </h4>
-            <ul
-              style={{
-                display: "grid",
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "" }}>Birth Certificate</li>
-              <li style={{ fontWeight: "" }}>Both Parents Passport</li>
-            </ul>
-          </div>
-          <div style={{ marginLeft: "72%", marginTop: "22%" }}>
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              How It Works
-            </h4>
-            <ul
-              style={{
-                display: "grid",
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "" }}>Register Online & Make Payment</li>
-              <li style={{ fontWeight: "" }}>Upload Documents</li>
-              <li style={{ fontWeight: "" }}>Get Appointment</li>
-              <li style={{ fontWeight: "" }}>Visit Psk</li>
-              <li style={{ fontWeight: "" }}>Get Delivered</li>
-            </ul>
-          </div>
-          <div style={{ marginLeft: "72%", marginTop: "12%" }}>
-            <h4
-              style={{
-                display: "grid",
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Time Duration
-            </h4>
-            <ul
-              style={{
-                display: "grid",
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "" }}>15-20 working days (Normal)</li>
-              <li style={{ fontWeight: "" }}>5-10 working days (Tatkal)</li>
-            </ul>
-          </div>
-          <div style={{ marginLeft: "72%", marginTop: "20%" }}>
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Charges
-            </h4>
-            <ul
-              style={{
-                display: "grid",
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{}}>
-                <strong>Rs. 2,499</strong> For (Normal Application)
-              </li>
+  {/* Section 2: Document Required for Renewal / Reissue of Passport */}
+  <div className="d-flex align-items-center w-100 flex-wrap mt-3 gap-3" style={{marginLeft:'14%'}}>
+  {/* Image Section */}
+  <div className="d-flex justify-content-center align-items-center">
+    <div style={{ position: "relative", display: "inline-block", marginBottom: "-5px" }}>
+      <img
+        src={circleIcon}
+        alt="Circle Background"
+        className="img-fluid"
+        style={{ maxWidth: "100px" }}
+      />
+      <img
+        src={documentsIcon}
+        alt="Documents Icon"
+        style={{
+          position: "absolute",
+          top: "56%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          maxWidth: "50px",
+        }}
+      />
+    </div>
+  </div>
 
-              <li style={{ fontWeight: "" }}>
-                <strong>Rs. 4,499</strong> For (Tatkal Application)
-              </li>
-              <li style={{ fontWeight: "" }}>
-                <strong>Rs.99</strong> as booking fee. Need to pay while
-                submitting online form (This fee is non-refundable <br />
-                and will be adjusted in the total bill.)
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  {/* Content Section */}
+  <div>
+    <h4 className="text-primary font-weight-bold mb-1" style={{ fontWeight: "bold" }}>
+      Document Required for Renewal / Reissue of Passport
+    </h4>
+    <ul className="pl-3 mb-1" style={{ listStyleType: "disc" }}>
+      <li>Original Old Passport</li>
+      <li>Id And Present Address Proof</li>
+    </ul>
+  </div>
+</div>
+
+
+  {/* Section 3: Document Required for Minor Passport */}
+  <div className="d-flex align-items-center w-100 mt-5 gap-3" style={{marginLeft:'14%'}}>
+  {/* Image Section */}
+  <div style={{ position: "relative", display: "inline-block" }}>
+    <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ maxWidth: "100px" }}/>
+    <img
+      src={documentsIcon}
+      alt="Documents Icon"
+      style={{
+        position: "absolute",
+        top: "56%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+      }}
+    />
+  </div>
+
+  {/* Content Section */}
+  <div>
+    <h4 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>
+      Document Required for Minor Passport
+    </h4>
+    <ul style={{ listStyleType: "disc", paddingLeft: "20px", whiteSpace: "nowrap",  }}>
+      <li>Birth Certificate</li>
+      <li>Both Parents Passport</li>
+    </ul>
+  </div>
+</div>
+
+<div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
+  {/* Image Section */}
+  <div className="d-flex justify-content-center align-items-center">
+    <div style={{ position: "relative", display: "inline-block" }}>
+      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:'100px'}} />
+      <img
+        src={howIcon}
+        alt="How It Works Icon"
+        style={{
+          position: "absolute",
+          top: "56%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      />
+    </div>
+  </div>
+
+  {/* Content Section */}
+  <div>
+    <h4 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>How It Works</h4>
+    <ul style={{ listStyleType: "disc", paddingLeft: "20px", margin: "20px 0" }}>
+      <li>Register Online & Make Payment</li>
+      <li>Upload Documents</li>
+      <li>Get Appointment</li>
+      <li>Visit PSK</li>
+      <li>Get Delivered</li>
+    </ul>
+  </div>
+</div>
+
+
+  {/* Section 3: Time Duration */}
+  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
+  {/* Image Section */}
+  <div className="d-flex justify-content-center align-items-center">
+    <div style={{ position: "relative", display: "inline-block" }}>
+      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:'100px'}} />
+      <img
+        src={TimeIcon}
+        alt="Time Duration Icon"
+        style={{
+          position: "absolute",
+          top: "56%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      />
+    </div>
+  </div>
+
+  {/* Content Section */}
+  <div>
+    <h4 style={{ color: "#007BFF", fontWeight: "bold" }}>Time Duration</h4>
+    <ul style={{ listStyleType: "disc", paddingLeft: "20px", margin: "20px 0" }}>
+      <li>15-20 working days (Normal)</li>
+      <li>5-10 working days (Tatkal)</li>
+    </ul>
+  </div>
+</div>
+
+
+  {/* Section 4: Charges */}
+  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
+  {/* Image Section */}
+  <div className="d-flex justify-content-center align-items-center">
+    <div style={{ position: "relative", display: "inline-block" }}>
+      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:'100px'}} />
+      <img
+        src={Price}
+        alt="Charges Icon"
+        style={{
+          position: "absolute",
+          top: "56%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      />
+    </div>
+  </div>
+
+  {/* Content Section */}
+  <div>
+    <h4 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h4>
+    <ul style={{ listStyleType: "disc", paddingLeft: "20px", margin: "20px 0" }}>
+      <li><strong>Rs. 2,499</strong> For (Normal Application)</li>
+      <li><strong>Rs. 4,499</strong> For (Tatkal Application)</li>
+      <li><strong>Rs. 99</strong> as booking fee. Need to pay while submitting online form (This fee is non-refundable and <br/> will be adjusted in the total bill.)</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+
 
       <div className="document-container d-block d-lg-none" style={{marginTop:'-40%'}}>
   {/* Section for Fresh Passport */}
@@ -2303,6 +2139,7 @@ const [leadId,setLeadId]=useState();
       </ul>
     </div>
   </div>
+  
 </div>
 
 
