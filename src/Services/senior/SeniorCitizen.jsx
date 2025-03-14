@@ -839,259 +839,134 @@ const validateStep3 = () => {
         </div>
 
         <div
-          className="content-section"
-          style={{
-            backgroundColor: "#fffff",
-            padding: "30px 15px",
-            borderRadius: "10px",
-            margin: "-1% auto",
-            marginRight: "72%",
-          }}
-        >
-          <div className="row justify-content-center">
-            {/* Main Column for Vertical Layout */}
-            <div className="d-none d-lg-block col-12 col-md-8 position-relative">
-              {/* First Section: Documents */}
-              <div className="text-center mb-5">
-                <div style={{ position: "relative" }}>
-                  <img
-                    src={circleIcon}
-                    alt="Circle Background"
-                    className="img-fluid"
-                  />
-                  <img
-                    src={documentsIcon}
-                    alt="Documents Icon"
-                    style={{
-                      position: "absolute",
-                      top: "61%",
-                      left: "50%",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                  />
-                </div>
-              </div>
-              <div
-                style={{
-                  borderLeft: "3px solid #007BFF",
-                  height: "50%",
-                  // margin: '0 auto',
-                  width: "4px",
-                  marginTop: "-40%",
-                  marginLeft: "50%",
-                }}
-              ></div>
-
-              <div className="text-center mb-5" style={{ marginTop: "-23%" }}>
-                <div style={{ position: "relative" }}>
-                  <img
-                    src={circleIcon}
-                    alt="Circle Background"
-                    className="img-fluid"
-                  />
-                  <img
-                    src={howIcon}
-                    alt="How It Works Icon"
-                    style={{
-                      position: "absolute",
-                      top: "61%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                  />
-                </div>
-              </div>
-
-              <div
-                style={{
-                  borderLeft: "3px solid #007BFF",
-                  height: "65%",
-                  // margin: '0 auto',
-                  width: "4px",
-                  marginTop: "-65%",
-                  marginLeft: "50%",
-                }}
-              ></div>
-
-              {/* Second Section: How It Works */}
-              <div className="text-center mb-5" style={{ marginTop: "-31%" }}>
-                <div style={{ position: "relative" }}>
-                  <img
-                    src={circleIcon}
-                    alt="Circle Background"
-                    className="img-fluid"
-                  />
-                  <img
-                    src={TimeIcon}
-                    alt="How It Works Icon"
-                    style={{
-                      position: "absolute",
-                      top: "61%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                  />
-                </div>
-              </div>
-
-              {/* Blue Line */}
-              <div
-                style={{
-                  borderLeft: "3px solid #007BFF",
-                  height: "70%",
-                  // margin: '0 auto',
-                  marginLeft: "49.8%",
-                  marginTop: "-48%",
-                  width: "4px",
-                }}
-              ></div>
-
-              {/* Third Section */}
-              <div className="text-center mb-5">
-                <div style={{ position: "relative", marginTop: "-31%" }}>
-                  <img
-                    src={circleIcon}
-                    alt="Circle Background"
-                    className="img-fluid"
-                  />
-                  <img
-                    src={Price}
-                    alt="How It Works Icon"
-                    style={{
-                      position: "absolute",
-                      top: "61%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="d-none d-lg-block">
-            <div
-              className=""
-              style={{
-                marginTop: "-75%",
-                marginLeft: "70%",
-              }}
-            >
-              <h4
-                style={{
-                  color: "#007BFF",
-                  fontWeight: "bold",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                Documents Required For Senior Citizen Card
-              </h4>
-              <ul
-                style={{
-                  display: "grid",
-                  listStyleType: "disc",
-                  paddingLeft: "20px",
-                  whiteSpace: "nowrap",
-                  margin: "20px 0",
-                }}
-              >
-                <li style={{ fontWeight: "" }}>Aadhaar card</li>
-                <li style={{ fontWeight: "" }}>Blood Report</li>
-                <li style={{ fontWeight: "" }}>Two Passport size photo</li>
-              </ul>
-            </div>
-            <div style={{ marginLeft: "72%", marginTop: "10%" }}>
-              <h4
-                style={{
-                  color: "#007BFF",
-                  fontWeight: "bold",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                How It Works
-              </h4>
-              <ul
-                style={{
-                  display: "grid",
-                  listStyleType: "disc",
-                  paddingLeft: "20px",
-                  whiteSpace: "nowrap",
-                  margin: "20px 0",
-                }}
-              >
-                <li style={{ fontWeight: "" }}>Register Online</li>
-                <li style={{ fontWeight: "" }}>Upload Documents</li>
-                <li style={{ fontWeight: "" }}>Payment</li>
-                <li style={{ fontWeight: "" }}>
-                  Online Ekyc (Moble number should be linked with aadhar card)
-                </li>
-                <li style={{ fontWeight: "" }}>Get Delivered</li>
-              </ul>
-            </div>
-            <div style={{ marginLeft: "72%", marginTop: "-2%" }}>
-              <h4
-                style={{
-                  color: "#007BFF",
-                  fontWeight: "bold",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                Time Duration
-              </h4>
-              <ul
-                style={{
-                  listStyleType: "disc",
-                  paddingLeft: "20px",
-                  lineHeight: "1.8",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                <li style={{ fontWeight: "", marginBottom: "10px" }}>
-                  25-30 working days
-                </li>
-              </ul>
-            </div>
-            <div style={{ marginLeft: "72%", marginTop: "35%" }}>
-              <h4
-                style={{
-                  color: "#007BFF",
-                  fontWeight: "bold",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                Charges
-              </h4>
-              <ul
-                style={{
-                  display: "grid",
-                  listStyleType: "disc",
-                  paddingLeft: "20px",
-                  whiteSpace: "nowrap",
-                  margin: "20px 0",
-                }}
-              >
-                <li style={{ fontWeight: "bold" }}>
-                  <span
-                    style={{
-                      textDecoration: "line-through",
-                      marginRight: "10px",
-                    }}
-                  >
-                    Rs.350
-                  </span>
-                  <span style={{ color: "#007BFF" }}>Rs.300</span>
-                </li>
-                <li style={{ fontWeight: "" }}>
-                  If you decide to cancel your order after payment, <br />
-                  please note that a cancellation fee of{" "}
-                  <span style={{ fontWeight: "bold" }}>Rs. 50</span> will apply.
-                </li>
-              </ul>
-            </div>
-          </div>
+  className="content-section"
+  style={{
+    backgroundColor: "#fffff",
+    padding: "30px 15px",
+    borderRadius: "10px",
+    margin: "-1% ",
+    marginLeft:'10%',
+    marginRight: "72%",
+  }}
+>
+  <div className="row justify-content-center">
+    <div className="col-12 col-md-8 position-relative d-none d-lg-block">
+      {/* First Section: Senior Citizen Card */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px", marginTop:'-95%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={documentsIcon}
+            alt="Documents Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
         </div>
+        <div>
+          <h4 className="desktop-text">Documents Required For Senior Citizen Card</h4>
+          <ul className="desktop-ul">
+            <li>Aadhaar card</li>
+            <li>Blood Report</li>
+            <li>Two Passport size photo</li>
+          </ul>
+        </div>
+      </div>
 
+      {/* Second Section: How It Works */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px",marginTop:'-155%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={howIcon}
+            alt="How It Works Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">How It Works</h4>
+          <ul className="desktop-ul">
+            <li>Register Online</li>
+            <li>Upload Documents</li>
+            <li>Payment</li>
+            <li>Online Ekyc (Mobile number should be linked with Aadhaar card)</li>
+            <li>Get Delivered</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Third Section: Time Duration */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px" , marginTop:'-62%'}}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={TimeIcon}
+            alt="Time Duration Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Time Duration</h4>
+          <ul className="desktop-ul">
+            <li>25-30 working days</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Fourth Section: Charges */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px", marginTop:'-77%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={Price}
+            alt="Price Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Charges</h4>
+          <ul className="desktop-ul">
+            <li>
+              <strong>
+                <del style={{ color: "grey" }}>Rs.350</del> Rs.300
+              </strong>
+            </li>
+            <li>
+              If you decide to cancel your order after payment, please note that
+              a cancellation fee of <strong>Rs. 50</strong> will apply.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{/* mobile view */}
         <div
           className="senior-card-container d-block d-lg-none"
           style={{ marginTop: "-18%" }}

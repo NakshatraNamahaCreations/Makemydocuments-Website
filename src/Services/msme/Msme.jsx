@@ -1714,249 +1714,129 @@ const handleNext = () => {
       </div>
 
       <div
-        className="content-section"
-        style={{
-          backgroundColor: "#fffff",
-          padding: "30px 15px",
-          borderRadius: "10px",
-          margin: "3% auto",
-          marginRight: "72%",
-        }}
-      >
-        <div className="row justify-content-center">
-          {/* Main Column for Vertical Layout */}
-          <div className="d-none d-lg-block col-12 col-md-8 position-relative">
-            {/* First Section: Documents */}
-            <div className="text-center mb-5">
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={documentsIcon}
-                  alt="Documents Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "50%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-40%",
-                marginLeft: "50%",
-              }}
-            ></div>
-
-            <div className="text-center mb-5" style={{marginTop:'-23%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={howIcon}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "65%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-65%",
-                marginLeft: "50%",
-              }}
-            ></div>
-
-            {/* Second Section: How It Works */}
-            <div className="text-center mb-5" style={{marginTop:'-31%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={TimeIcon}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Blue Line */}
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "70%",
-                // margin: '0 auto',
-                marginLeft: "49.8%",
-                marginTop: "-48%",
-                width: "4px",
-              }}
-            ></div>
-
-            {/* Third Section */}
-            <div className="text-center mb-5">
-              <div style={{ position: "relative" , marginTop:'-31%'}}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={Price}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="d-none d-lg-block">
-          <div
-            className="mb-5"
+  className="content-section"
+  style={{
+    backgroundColor: "#fffff",
+    padding: "30px 15px",
+    borderRadius: "10px",
+    margin: "3% ",
+    marginLeft:'10%',
+    marginRight: "72%",
+  }}
+>
+  <div className="row justify-content-center">
+    <div className="col-12 col-md-8 position-relative d-none d-lg-block">
+      {/* First Section: Documents Required For MSME Registration */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px", marginTop:'-78%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={documentsIcon}
+            alt="Documents Icon"
             style={{
-              marginTop: "-90%",
-              marginLeft: "70%",
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
             }}
-          >
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Documents Required For MSME Registration
-            </h4>
-            <ul
-              style={{
-                display: "grid",
-
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                whiteSpace: "nowrap",
-                margin: "20px 0",
-              }}
-            >
-              <li style={{ fontWeight: "" }}>Aadhar Card</li>
-              <li style={{ fontWeight: "" }}>Pan Card</li>
-            </ul>
-          </div>
-          <div style={{ marginLeft: "72%", marginTop: "30%" }}>
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              How It Works
-            </h4>
-            <ul
-              style={{
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                lineHeight: "1.8",
-                whiteSpace: "nowrap",
-              }}
-            >
-              <li style={{ padding: "0", marginBottom: "0" }}>
-                Register Online
-              </li>
-              <li style={{ padding: "0", marginBottom: "0" }}>
-                Upload Documents
-              </li>
-              <li style={{ padding: "0", marginBottom: "0" }}>Payment</li>
-              <li style={{ padding: "0", marginBottom: "0" }}>Get Delivered</li>
-            </ul>
-          </div>
-          <div style={{ marginLeft: "72%", marginTop: "10%" }}>
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Time Duration
-            </h4>
-            <ul
-              style={{
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                lineHeight: "1.8",
-                whiteSpace: "nowrap",
-              }}
-            >
-              <li style={{ padding: "0", marginBottom: "0" }}>
-                1-2 working days
-              </li>
-            </ul>
-          </div>
-          <div style={{ marginLeft: "72%", marginTop: "40%" }}>
-            <h4
-              style={{
-                color: "#007BFF",
-                fontWeight: "bold",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Charges
-            </h4>
-            <ul
-              style={{
-                listStyleType: "disc",
-                paddingLeft: "20px",
-                lineHeight: "1.8",
-                whiteSpace: "nowrap",
-              }}
-            >
-              <li style={{ padding: "0", marginBottom: "0" }}>
-                <strong>Rs 500</strong>
-              </li>
-              <li style={{ padding: "0", marginBottom: "0" }}>
-                <strong>Rs 99</strong> as booking/consulting charge. Need to pay
-                while submitting online form
-              </li>
-              {/* <li style={{ fontWeight: 'bold', marginBottom: '10px' }}>Note: Additional charges for stamp paper</li> */}
-            </ul>
-          </div>
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Documents Required For MSME Registration</h4>
+          <ul className="desktop-ul">
+            <li>Aadhar Card</li>
+            <li>Pan Card</li>
+          </ul>
         </div>
       </div>
+
+      {/* Second Section: How It Works */}
+      <div className="d-flex align-items-start mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px" }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={howIcon}
+            alt="How It Works Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">How It Works</h4>
+          <ul className="desktop-ul">
+            <li>Register Online</li>
+            <li>Upload Documents</li>
+            <li>Payment</li>
+            <li>Get Delivered</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Third Section: Time Duration */}
+      <div className="d-flex align-items-start mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px" }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={TimeIcon}
+            alt="Time Duration Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Time Duration</h4>
+          <ul className="desktop-ul">
+            <li>1-2 working days</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Fourth Section: Charges */}
+      <div className="d-flex align-items-start mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px" }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={Price}
+            alt="Price Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Charges</h4>
+          <ul className="desktop-ul">
+            <li>
+              <strong>Rs 500</strong>
+            </li>
+            <li>
+              <strong>Rs 99</strong> as booking/consulting charge. Need to pay while submitting online form.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      {/* mobil view */}
       <div className="msme-container d-block d-lg-none" style={{marginTop:'-18%'}}>
   {/* Documents Section */}
   <div className="msme-section documents-section row-container ">

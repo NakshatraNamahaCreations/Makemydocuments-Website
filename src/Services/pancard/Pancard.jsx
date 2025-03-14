@@ -1869,325 +1869,164 @@ const [isLoading, setIsLoading] = useState(false);
       </div>
 
       <div
-        className="content-section"
-        style={{
-          backgroundColor: "#fffff",
-          padding: "30px 15px",
-          borderRadius: "10px",
-          margin: "-1% auto",
-          marginRight: "72%",
-        }}
-      >
-        <div className="row justify-content-center ">
-          {/* Main Column for Vertical Layout */}
-          <div className="col-12 col-md-8 position-relative d-none d-lg-block">
-            {/* First Section: Documents */}
-            <div className="text-center mb-5">
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={documentsIcon}
-                  alt="Documents Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "30%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-35%",
-                marginLeft: "50%",
-              }}
-            ></div>
-            <div className="text-center mb-5 " style={{marginTop:""}}>
-              <div style={{ position: "relative" ,marginTop:"-23%"}}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={documentsIcon}
-                  alt="Documents Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "30%",
-                // margin: '0 auto',
-                width: "4px",
-                marginTop: "-32%",
-                marginLeft: "50%",
-              }}
-            ></div>
-
-            <div className="text-center mb-5" style={{marginTop:'-29%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={howIcon}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "30%",
-                // margin: '0 auto',
-                marginLeft: "49.8%",
-                marginTop: "-35%",
-                width: "4px",
-              }}
-            ></div>
-
-            {/* Second Section: How It Works */}
-            <div className="text-center mb-5" style={{marginTop:'-24%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={TimeIcon}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Blue Line */}
-            <div
-              style={{
-                borderLeft: "3px solid #007BFF",
-                height: "60%",
-                // margin: '0 auto',
-                marginLeft: "49.8%",
-                marginTop: "-55%",
-                width: "4px",
-              }}
-            ></div>
-
-            {/* Third Section */}
-            <div className="text-center mb-5" style={{marginTop:'-51%'}}>
-              <div style={{ position: "relative" }}>
-                <img
-                  src={circleIcon}
-                  alt="Circle Background"
-                  className="img-fluid"
-                />
-                <img
-                  src={Price}
-                  alt="How It Works Icon"
-                  style={{
-                    position: "absolute",
-                    top: "61%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+  className="content-section"
+  style={{
+    backgroundColor: "#fffff",
+    padding: "30px 15px",
+    borderRadius: "10px",
+    margin: "-1% ",
+    marginLeft:'10%',
+    marginRight: "72%",
+  }}
+>
+  <div className="row justify-content-center">
+    <div className="col-12 col-md-8 position-relative d-none d-lg-block">
+      {/* First Section: Documents */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px" , marginTop:'-28%'}}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={documentsIcon}
+            alt="Documents Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
         </div>
-        <div className="d-none d-lg-block">
-          <div
-            className="desktop-margin mb-5"
-            // style={{
-            //   marginTop: "-105%",
-            //   marginLeft: "70%",
-            // }}
-          >
-            <h4 className="desktop-text"
-              // style={{
-              //   color: "#007BFF",
-              //   fontWeight: "bold",
-              //   whiteSpace: "nowrap",
-              // }}
-            >
-              Documents Required For New Pan Card 
-            </h4>
-            <ul className="desktop-ul"
-              style={{
-                // display: "grid",
-
-                listStyleType: "disc",
-                // paddingLeft: "20px",
-                // whiteSpace: "nowrap",
-                // margin: "20px 0",
-              }}
-            >
-              <li style={{}}>Aadhaar card</li>
-            </ul>
-          </div>
-          <div className="desktop-margin-document" >
-            <h4 className="desktop-margin-document-text"
-              // style={{
-              //   color: "#007BFF",
-              //   fontWeight: "bold",
-              //   whiteSpace: "nowrap",
-              // }}
-            >
-              Documents Required For Correction/Lost/damage Pan Card
-            </h4>
-            <ul className="desktop-ul"
-              style={{
-                listStyleType: "disc",
-                // paddingLeft: "20px",
-                lineHeight: "1.8",
-                // whiteSpace: "nowrap",
-              }}
-            >
-              <li style={{ padding: "0px", rginBottom: "0px" }}>
-                Aadhaar card
-              </li>
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                Existing Pan copy
-              </li>
-            </ul>
-          </div>
-          <div className='desktop-margin-how' >
-            <h4 
-            className="desktop-text-how"
-              // style={{
-              //   color: "#007BFF",
-              //   fontWeight: "bold",
-              //   whiteSpace: "nowrap",
-              // }}
-            >
-              How It Works
-            </h4>
-            <ul  className="desktop-ul"
-              style={{
-                listStyleType: "disc",
-                // paddingLeft: "20px",
-                lineHeight: "1.8",
-                // whiteSpace: "nowrap",
-              }}
-            >
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                Register And Pay Online
-              </li>
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                Upload Documents
-              </li>
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                Online EKYC
-              </li>
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                Get Delivered
-              </li>
-            </ul>
-          </div>
-          <div className='desktop-margin-time' >
-            <h4 className="desktop-text-time"
-              // style={{
-              //   color: "#007BFF",
-              //   fontWeight: "bold",
-              //   whiteSpace: "nowrap",
-              // }}
-            >
-              Time Duration
-            </h4>
-            <ul className="desktop-ul"
-              style={{
-                listStyleType: "disc",
-                // paddingLeft: "20px",
-                lineHeight: "1.8",
-                // whiteSpace: "nowrap",
-              }}
-            >
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                15-20 working days (New Physical Pan Card)
-              </li>
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                20-30 working days (Lost/Correction)
-              </li>
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                E- Pan Card Copy 24 - 48 hrs (New Application Only)
-              </li>
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                Applicant Will Receive Both E- Pan And Physical Card
-              </li>
-            </ul>
-          </div>
-          <div className='desktop-margin-charges' >
-            <h4 className="desktop-text-charges"
-              // style={{
-              //   color: "#007BFF",
-              //   fontWeight: "bold",
-              //   whiteSpace: "nowrap",
-              // }}
-            >
-              Charges
-            </h4>
-            <ul className="desktop-ul"
-              style={{
-                listStyleType: "disc",
-                // paddingLeft: "20px",
-                lineHeight: "1.8",
-                // whiteSpace: "nowrap",
-              }}
-            >
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                <strong>
-                  <del style={{ color: "grey" }}>Rs.399</del> Rs.350
-                </strong>
-              </li>
-
-              <li style={{ padding: "0px", marginBottom: "0px" }}>
-                If you decide to cancel your order after payment, please note
-                that a cancellation fee of <strong>Rs. 50</strong> will apply.
-              </li>
-
-            </ul>
-          </div>
+        <div>
+          <h4 className="desktop-text">Documents Required For New Pan Card</h4>
+          <ul className="desktop-ul">
+            <li>Aadhaar card</li>
+          </ul>
         </div>
-       
-
       </div>
+
+      {/* Second Section */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px", marginTop:'-42%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={documentsIcon}
+            alt="Documents Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Documents Required For Correction/Lost/Damage Pan Card</h4>
+          <ul className="desktop-ul">
+            <li>Aadhaar card</li>
+            <li>Existing Pan copy</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Third Section: How It Works */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px", marginTop:'-79%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={howIcon}
+            alt="How It Works Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              width:'43%',
+              left: "40%",
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">How It Works</h4>
+          <ul className="desktop-ul">
+            <li>Register And Pay Online</li>
+            <li>Upload Documents</li>
+            <li>Online EKYC</li>
+            <li>Get Delivered</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Fourth Section: Time Duration */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px", marginTop:'-79%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={TimeIcon}
+            alt="Time Duration Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              left: "40%",
+              width:'43%',
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Time Duration</h4>
+          <ul className="desktop-ul">
+            <li>15-20 working days (New Physical Pan Card)</li>
+            <li>20-30 working days (Lost/Correction)</li>
+            <li>E- Pan Card Copy 24 - 48 hrs (New Application Only)</li>
+            <li>Applicant Will Receive Both E- Pan And Physical Card</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Fifth Section: Charges */}
+      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
+        <div style={{ position: "relative", minWidth: "80px", marginTop:'-50%' }}>
+          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+          <img
+            src={Price}
+            alt="Price Icon"
+            style={{
+              position: "absolute",
+              top: "58%",
+              width:'43%',
+              left: "40%",
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
+        <div>
+          <h4 className="desktop-text">Charges</h4>
+          <ul className="desktop-ul">
+            <li>
+              <strong>
+                <del style={{ color: "grey" }}>Rs.399</del> Rs.350
+              </strong>
+            </li>
+            <li>
+              If you decide to cancel your order after payment, please note that
+              a cancellation fee of <strong>Rs. 50</strong> will apply.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{/* mobile view */}
 
       <div className="pan-card-container d-block d-lg-none" style={{marginTop:'-21%'}}>
   {/* Documents Required For New Pan Card Section */}

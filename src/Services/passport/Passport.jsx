@@ -1689,7 +1689,7 @@ const [leadId,setLeadId]=useState();
             <p>"Ready to Explore the World? Get Expert <br className="d-block d-lg-none"/>
            Assistance for Your Passport Application Today!"</p>
           </div>
-          <div className="passport-image">
+          <div className="passport-image" style={{marginTop:'10%'}}>
             <img
               src={Image30}
               alt="Rental Agreement"
@@ -1716,12 +1716,12 @@ const [leadId,setLeadId]=useState();
   <div className="d-flex align-items-start w-100 flex-wrap mt-3 gap-3"style={{marginLeft:'14%'}} >
   {/* Image Section */}
   <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block" }}>
+    <div style={{ position: "relative", display: "inline-block" , marginTop:'-36%'}}>
       <img
         src={circleIcon}
         alt="Circle Background"
         className="img-fluid"
-        style={{ maxWidth: "100px" }}
+        // style={{ maxWidth: "100px" }}
       />
       <img
         src={documentsIcon}
@@ -1729,9 +1729,9 @@ const [leadId,setLeadId]=useState();
         style={{
           position: "absolute",
           top: "56%",
-          left: "50%",
+          left: "43%",
           transform: "translate(-50%, -50%)",
-          maxWidth: "50px",
+          maxWidth: "35px",
         }}
       />
     </div>
@@ -1739,7 +1739,7 @@ const [leadId,setLeadId]=useState();
 
   {/* Content Section */}
   <div>
-    <h4 className="text-primary font-weight-bold mb-2" style={{fontWeight:'bold'}}>Documents Required For Fresh Passport</h4>
+    <h5 className="text-primary font-weight-bold mb-2" style={{fontWeight:'bold'}}>Documents Required For Fresh Passport</h5>
 
     {/* Proof of Identity */}
     <ul className="pl-3 mb-2" style={{ listStyleType: "disc" }}>
@@ -1777,12 +1777,12 @@ const [leadId,setLeadId]=useState();
   <div className="d-flex align-items-center w-100 flex-wrap mt-3 gap-3" style={{marginLeft:'14%'}}>
   {/* Image Section */}
   <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block", marginBottom: "-5px" }}>
+    <div style={{ position: "relative", display: "inline-block", marginTop: "-52px" }}>
       <img
         src={circleIcon}
         alt="Circle Background"
         className="img-fluid"
-        style={{ maxWidth: "100px" }}
+        // style={{ maxWidth: "100px" }}
       />
       <img
         src={documentsIcon}
@@ -1790,9 +1790,9 @@ const [leadId,setLeadId]=useState();
         style={{
           position: "absolute",
           top: "56%",
-          left: "50%",
+          left: "43%",
           transform: "translate(-50%, -50%)",
-          maxWidth: "50px",
+          maxWidth: "35px",
         }}
       />
     </div>
@@ -1800,9 +1800,9 @@ const [leadId,setLeadId]=useState();
 
   {/* Content Section */}
   <div>
-    <h4 className="text-primary font-weight-bold mb-1" style={{ fontWeight: "bold" }}>
+    <h5 className="text-primary font-weight-bold mb-1" style={{ fontWeight: "bold" }}>
       Document Required for Renewal / Reissue of Passport
-    </h4>
+    </h5>
     <ul className="pl-3 mb-1" style={{ listStyleType: "disc" }}>
       <li>Original Old Passport</li>
       <li>Id And Present Address Proof</li>
@@ -1814,25 +1814,26 @@ const [leadId,setLeadId]=useState();
   {/* Section 3: Document Required for Minor Passport */}
   <div className="d-flex align-items-center w-100 mt-5 gap-3" style={{marginLeft:'14%'}}>
   {/* Image Section */}
-  <div style={{ position: "relative", display: "inline-block" }}>
-    <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ maxWidth: "100px" }}/>
+  <div style={{ position: "relative", display: "inline-block" , marginTop:'-4%'}}>
+    <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ maxWidth: "" }}/>
     <img
       src={documentsIcon}
       alt="Documents Icon"
       style={{
         position: "absolute",
         top: "56%",
-        left: "50%",
+        left: "43%",
         transform: "translate(-50%, -50%)",
+        maxWidth: "35px",
       }}
     />
   </div>
 
   {/* Content Section */}
   <div>
-    <h4 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>
+    <h5 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>
       Document Required for Minor Passport
-    </h4>
+    </h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", whiteSpace: "nowrap",  }}>
       <li>Birth Certificate</li>
       <li>Both Parents Passport</li>
@@ -1843,16 +1844,17 @@ const [leadId,setLeadId]=useState();
 <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
   {/* Image Section */}
   <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block" }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:'100px'}} />
+    <div style={{ position: "relative", display: "inline-block" , marginTop:'-200%'}}>
+      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:''}} />
       <img
         src={howIcon}
         alt="How It Works Icon"
         style={{
           position: "absolute",
-          top: "56%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
+        top: "56%",
+        left: "43%",
+        transform: "translate(-50%, -50%)",
+        maxWidth: "35px",
         }}
       />
     </div>
@@ -1860,8 +1862,8 @@ const [leadId,setLeadId]=useState();
 
   {/* Content Section */}
   <div>
-    <h4 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>How It Works</h4>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", margin: "20px 0" }}>
+    <h5 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>How It Works</h5>
+    <ul style={{ listStyleType: "disc", paddingLeft: "20px",}}>
       <li>Register Online & Make Payment</li>
       <li>Upload Documents</li>
       <li>Get Appointment</li>
@@ -1876,16 +1878,17 @@ const [leadId,setLeadId]=useState();
   <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
   {/* Image Section */}
   <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block" }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:'100px'}} />
+    <div style={{ position: "relative", display: "inline-block", marginTop:'-111%' }}>
+      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:''}} />
       <img
         src={TimeIcon}
         alt="Time Duration Icon"
         style={{
           position: "absolute",
           top: "56%",
-          left: "50%",
+          left: "43%",
           transform: "translate(-50%, -50%)",
+          maxWidth: "35px",
         }}
       />
     </div>
@@ -1893,8 +1896,8 @@ const [leadId,setLeadId]=useState();
 
   {/* Content Section */}
   <div>
-    <h4 style={{ color: "#007BFF", fontWeight: "bold" }}>Time Duration</h4>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", margin: "20px 0" }}>
+    <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Time Duration</h5>
+    <ul style={{ listStyleType: "disc", paddingLeft: "20px",  }}>
       <li>15-20 working days (Normal)</li>
       <li>5-10 working days (Tatkal)</li>
     </ul>
@@ -1906,16 +1909,17 @@ const [leadId,setLeadId]=useState();
   <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
   {/* Image Section */}
   <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block" }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:'100px'}} />
+    <div style={{ position: "relative", display: "inline-block",  marginTop:'-160%' }}>
+      <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
       <img
         src={Price}
         alt="Charges Icon"
         style={{
           position: "absolute",
           top: "56%",
-          left: "50%",
+          left: "43%",
           transform: "translate(-50%, -50%)",
+          maxWidth: "35px",
         }}
       />
     </div>
@@ -1923,8 +1927,8 @@ const [leadId,setLeadId]=useState();
 
   {/* Content Section */}
   <div>
-    <h4 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h4>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", margin: "20px 0" }}>
+    <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+    <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
       <li><strong>Rs. 2,499</strong> For (Normal Application)</li>
       <li><strong>Rs. 4,499</strong> For (Tatkal Application)</li>
       <li><strong>Rs. 99</strong> as booking fee. Need to pay while submitting online form (This fee is non-refundable and <br/> will be adjusted in the total bill.)</li>
@@ -1936,7 +1940,7 @@ const [leadId,setLeadId]=useState();
 
 
 
-      <div className="document-container d-block d-lg-none" style={{marginTop:'-40%'}}>
+      <div className="document-container d-block d-lg-none" style={{marginTop:'-34%'}}>
   {/* Section for Fresh Passport */}
   <div className="document-section fresh-passport row-container">
     <div className="icon-container">
