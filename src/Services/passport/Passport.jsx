@@ -1707,6 +1707,7 @@ const [leadId,setLeadId]=useState();
     borderRadius: "10px",
     margin: "-1% auto",
     display: "flex",
+    marginLeft:'-8%',
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between"
