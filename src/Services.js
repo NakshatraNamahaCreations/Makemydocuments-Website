@@ -995,15 +995,14 @@ const visadata = [
                 list-style-type: disc; 
                 padding-left: 20px;
                 white-space: nowrap;
-                margin: 20px 0;
-              "
+                margin: 20px 0; "
             >
               <li>India PAN Card</li>
               <li>Passport</li>
               <li>Passport Back</li>
-           <li>Traveler Photo</li>
-           <li>Round Trip Flight Ticket</li>
-           <li>Hotel Booking</li>
+              <li>Traveler Photo</li>
+              <li>Round Trip Flight Ticket</li>
+              <li>Hotel Booking</li>
              
             </ul>
           `,
