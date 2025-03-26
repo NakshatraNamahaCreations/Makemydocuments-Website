@@ -998,9 +998,12 @@ const visadata = [
                 margin: 20px 0;
               "
             >
-              <li>Scan clear color copy of Passport  <br class="d-block d-lg-none" />(first and last page)</li>
-              <li>01 color passport-size photo</li>
-              <li>PAN Card</li>
+              <li>India PAN Card</li>
+              <li>Passport</li>
+              <li>Passport Back</li>
+           <li>Traveler Photo</li>
+           <li>Round Trip Flight Ticket</li>
+           <li>Hotel Booking</li>
              
             </ul>
           `,
