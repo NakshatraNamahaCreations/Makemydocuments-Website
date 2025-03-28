@@ -2209,7 +2209,7 @@ const [isLoading, setIsLoading] = useState(false);
         </div> */}
         <div className="continue-button-container">
   <button className="continue-button" onClick={openPopup} style={{borderRadius:'0px'}}>
-    Continue
+  Apply Now
   </button>
 </div>
 

@@ -1594,6 +1594,62 @@ useLayoutEffect(() => {
     }
   };
 
+
+  const faqs = [
+    {
+      question: "Who needs a PCC?",
+      
+      answer:
+        "Individuals applying for employment, immigration, long-term visas, or residency in another country typically require a PCC.",
+    },
+    {
+      question: "How long is a PCC valid?",
+      answer:
+        "The validity of a PCC varies by country and institution but is generally valid for six months. It's advisable to check the specific requirements of the requesting entity.",
+    },
+    {
+      question: "How long does it take to obtain a PCC?",
+      answer: "The processing time can vary depending on the issuing authority and the applicant's background. It may range from a few days to several weeks.",
+    },
+    {
+      question: "Can I apply for a PCC if I have lived at multiple addresses?",
+      // answer: (
+      //   <ul style={{ listStyleType: "none" }}>
+      //     <li>
+      //       In normal application you will receive your passport within 10 to 15
+      //       working days
+      //     </li>
+      //     <br />
+      //     <li>
+      //       In tatkal application you will receive your passport within 2 to 5
+      //       working days
+      //     </li>
+      //   </ul>
+      // ),
+      answer: "Yes, but you may need to provide additional documentation and undergo verification for each address you've resided at.",
+
+    },
+    {
+      question: "What if my application for a PCC is rejected?",
+      // "answer": "If your application is rejected, you can appeal the decision or provide additional supporting documents for reconsideration. For personalized assistance and to begin your PCC application process, contact Make My Documents today.  Our dedicated team is here to simplify the process and ensure you receive your certificate promptly!"
+      answer :(
+        <div>
+          <p>
+          If your application is rejected, you can appeal the decision or provide additional supporting documents for reconsideration.
+          </p>
+          <p> For personalized assistance and to begin your PCC application process, contact Make My Documents today.  Our dedicated team is here to simplify the process and ensure you receive your certificate promptly!</p>
+        </div>
+      ),
+    }
+    
+    
+  ];
+
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <>
     <Helmet>
@@ -1901,7 +1957,7 @@ useLayoutEffect(() => {
         </div> */}
         <div className="continue-button-container">
   <button className="continue-button" onClick={openPopup} style={{borderRadius:'0px'}}>
-    Continue
+    Apply Now
   </button>
 </div>
 
@@ -2918,7 +2974,155 @@ useLayoutEffect(() => {
         )}
       </div>
 
-      <br />
+      <div
+        className="faq-section"
+        style={{
+          margin: "14px auto",
+          padding: "20px",
+          background: "#FFFFFF",
+          borderRadius: "10px",
+          width: "80%",
+        }}
+      >
+        <h4
+          style={{
+            textAlign: "center",
+            fontWeight: "bold",
+            color: "#007BFF",
+            marginBottom: "20px",
+          }}
+        >
+          FAQs
+        </h4>
+        <p
+          style={{
+            textAlign: "center",
+            fontWeight: "500",
+            marginBottom: "30px",
+          }}
+        >
+          Need help? Contact us for any queries related to us
+        </p>
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="faq-item"
+              style={{ marginBottom: "10px" }}
+            >
+              <button
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                  padding: "10px 20px",
+                  border: "1px solid #007BFF",
+                  borderRadius: "5px",
+                  background: "#F9F9F9",
+                  fontWeight: "500",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleToggle(index)}
+              >
+                {faq.question}
+                <span
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "16px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  {openIndex === index ? "▲" : "▼"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <div
+                  style={{
+                    marginTop: "10px",
+                    padding: "10px 20px",
+                    background: "#F3F3F3",
+                    borderRadius: "5px",
+                    color: "#333",
+                  }}
+                >
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        <br></br>
+        <>
+          <h1 className="faq-tag-title-h3">
+            <strong>Police Clearance Certificate (PCC) Services by Make My Documents</strong>
+          </h1>
+          <p style={{textAlign:'left'}}>
+          At <strong> Make My Documents</strong> , we specialize in assisting individuals in obtaining <strong>Police Clearance Certificates (PCC)</strong> efficiently and hassle-free. Our expert team ensures a seamless experience, guiding you through every step of the process.
+          </p>
+
+          <h2  style={{textAlign:'left', fontSize:'20px'}}>
+            <strong>What is a Police Clearance Certificate (PCC)?</strong>
+          </h2>
+          <p  style={{textAlign:'left'}}>
+          A <strong>Police Clearance Certificate (PCC)</strong> is an official document issued by the police or authorized government agencies, stating that the applicant has no criminal records. It is often required for various purposes such as <strong>employment, immigration, or obtaining visas.
+            </strong>
+          </p>
+
+          <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
+          Importance of a PCC
+          </h2>
+          <div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Employment Opportunities:</strong></h3>
+<p style={{display: 'inline'}}>Many employers, both domestic and international, require a PCC to ensure the credibility and integrity of potential employees.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Immigration and Visas: </strong></h3>
+<p style={{display: 'inline'}}>Countries often mandate a PCC for visa applications, especially for long-term stays, to assess the applicant's background.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Adoption: </strong></h3>
+<p style={{display: 'inline'}}>Individuals seeking to adopt a child may need a PCC to demonstrate their suitability as guardians.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Residency Applications: </strong></h3>
+<p style={{display: 'inline'}}>When applying for residency in another country, a PCC may be required to prove good conduct.</p>
+</div>
+
+<br/>
+
+          <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
+          How Make My Documents Can Help To Get (PCC)
+          </h2>
+          <p>
+          Navigating the process of obtaining a PCC can be complex and time-consuming. At <strong>Make My Documents</strong>, we offer:
+          </p>
+        
+          <div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Expert Guidance: </strong></h3>
+<p style={{display: 'inline'}}>Our knowledgeable team provides step-by-step assistance, ensuring all requirements are met accurately.</p>
+</div>
+<br/>
+<div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Document Preparation: </strong></h3>
+<p style={{display: 'inline'}}>We help in gathering and organizing necessary documents to avoid any delays.</p>
+</div>
+<br/>
+<div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Application Submission: </strong></h3>
+<p style={{display: 'inline'}}>Our service includes submitting your application to the appropriate authorities promptly.</p>
+</div>
+<br/>
+<div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Follow-up Services: </strong></h3>
+<p style={{display: 'inline'}}>We monitor the progress of your application and keep you informed throughout the process.</p>
+</div>
+<br/>
+        </>
+      </div>
     </div>
     </>
   );

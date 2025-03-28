@@ -3768,7 +3768,7 @@ const Services = () => {
         </div> */}
         <div className="text-center-continue">
   <button className="fixed-button" onClick={handleContinue}>
-    CONTINUE
+  Apply Now
   </button>
 </div>
 

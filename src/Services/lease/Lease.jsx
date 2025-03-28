@@ -1250,7 +1250,7 @@ const [leadId,setLeadId]=useState();
     className="continue-button"
     onClick={openPopup}
   >
-    Continue
+      Apply Now
   </button>
 </div>
         {/* Modal Popup */}

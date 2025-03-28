@@ -1258,7 +1258,7 @@ home rental agreement, rent agreement near me, rent agreement bangalore,rent agr
     onClick={openPopup}
     style={{borderRadius:'0px'}}
   >
-    Continue
+     Apply Now
   </button>
 </div>
 

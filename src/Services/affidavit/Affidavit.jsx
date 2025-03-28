@@ -1810,7 +1810,7 @@ useLayoutEffect(() => {
  <div className="continue-button-container">
   <br/>
   <button className="continue-button" onClick={handleContinue} style={{borderRadius:'0px'}}>
-    Continue
+  Apply Now
   </button>
 </div>
 

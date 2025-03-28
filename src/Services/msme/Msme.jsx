@@ -1513,19 +1513,20 @@ const handleNext = () => {
       answer: (
         <div>
           <p>
-            Any person who intends to establish a micro, small, medium
-            enterprise may apply online for MSME/Udyog Aadhaar registration.
-            Someone who belongs to Proprietorship, Hindu Undivided Family (HUF),
-            One Person Company (OPC), Partnership Business, Limited Liability
-            Partnership (LLP), Private Limited or Limited Company, Co-operative
-            Societies or any other group of individuals can easily apply for
-            Micro, Small & Medium Enterprise.
+          Businesses classified as Micro, Small, or Medium Enterprises based on investment and turnover criteria are eligible for MSME Udyam Registration.
           </p>
-          <p style={{ marginTop: "10px" }}>
-            The purpose to include all wide categories of enterprises for
-            registration under this Act, is to ensure that the benefits offered
-            by Government reaches to large portion of Society.
+          
+        </div>
+      ),
+    },
+    {
+      question: "How long does it take to get an MSME certificate?",
+      answer: (
+        <div>
+          <p>
+          The MSME registration process online is quick and can be completed within 1-2 working days.
           </p>
+          
         </div>
       ),
     },
@@ -1589,15 +1590,31 @@ const handleNext = () => {
         "The application will be approved on the basis of the information provided by the applicant.",
     },
     {
-      question: "Can the MSE borrowers get collateral free loans from banks?",
-      answer:
-        "In terms of RBI circular, banks are mandated not to accept collateral security in the case of loans upto Rs 10 lakh extended to units in the MSE sector. Further banks may, on the basis of good track record and financial position of MSE units, increase the limit of dispensation of collateral requirement for loans up to Rs.25 lakh with the approval of the appropriate authority.",
-    },
-    {
       question:
         "Can MSME borrowers get collateral-free loans from financial institutions?",
       answer:
         "MSME borrowers get collateral-free loans from financial institutions",
+    },
+    {
+      question:
+        "What documents are required for MSME registration?",
+      answer:
+        "You typically need an Aadhaar Card, PAN Card, business address proof, and bank details to apply for an MSME certificate online.",
+    },
+    {
+      question:
+        "Is MSME registration mandatory?",
+      answer:
+        "While not mandatory, MSME Udyam Registration provides multiple benefits, making it highly recommended for business growth.",
+    },
+    {
+      question:
+        "What is the validity of an MSME certificate?",
+      answer:
+        (<div>
+          <p>The MSME Registration Certificate (Udyam Certificate) does not expire and remains valid as long as the business meets the MSME criteria.</p>
+          <p>For quick and reliable MSME registration services, contact Make My Documents today! Our team is ready to assist you in obtaining your MSME/Udyam Certificate smoothly and efficiently.</p>
+        </div>),
     },
   ];
 
@@ -1952,7 +1969,7 @@ const handleNext = () => {
         </div> */}
         <div className="continue-button-container">
   <button className="continue-button" onClick={openPopup} style={{borderRadius:'0px'}}>
-    Continue
+  Apply Now
   </button>
 </div>
 
@@ -2740,6 +2757,85 @@ const handleNext = () => {
           ))}
         </div>
         <br></br>
+        <>
+          <h1 className="faq-tag-title-h3">
+            <strong>MSME Registration Services by Make My Documents</strong>
+          </h1>
+          <p style={{textAlign:'left'}}>
+          At <strong>Make My Documents</strong>, we specialize in helping small and medium-sized businesses obtain <strong>MSME Registration</strong> quickly and hassle-free. Whether you need an <strong>Udyam Registration Certificate</strong> for business benefits, subsidies, or government schemes, our expert team ensures a smooth process with end-to-end assistance. Get your <strong>MSME certificate online</strong>   with our professional support.
+          </p>
+
+          <h2  style={{textAlign:'left', fontSize:'20px'}}>
+            <strong>What is MSME Registration?</strong>
+          </h2>
+          <p  style={{textAlign:'left'}}>
+          Micro, Small, and Medium Enterprises <strong> (MSME)</strong> registration, also known as <strong> Udyam Registration</strong>, is an official recognition issued by the Government of India to businesses that qualify under MSME criteria. This certification provides access to various <strong>government benefits, MSME loans, tax exemptions, and financial support</strong> to promote business growth.
+           
+          </p>
+
+          <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
+          Why is MSME Registration Important?
+          </h2>
+          <div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>• Eligibility for Government Schemes:</strong></h3>
+<p style={{display: 'inline'}}>Get access to MSME subsidies, business grants, and low-interest MSME loans.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>• Tax Benefits & Exemptions: </strong></h3>
+<p style={{display: 'inline'}}>Enjoy income tax benefits for MSMEs, reduced GST rates, and financial incentives.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Easier Loan Approvals: </strong></h3>
+<p style={{display: 'inline'}}>Banks and NBFCs provide collateral-free business loans for MSMEs with lower interest rates.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Tender & Contract Preferences:  </strong></h3>
+<p style={{display: 'inline'}}>MSME-registered businesses get priority in government tenders and procurement policies.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Increased Business Credibility:  </strong></h3>
+<p style={{display: 'inline'}}>Having an MSME certificate enhances trust and recognition for your business.</p>
+</div>
+
+<br/>
+
+          <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
+          How Make My Documents Can Help You Register for MSME Easily
+          </h2>
+          <p>
+          Applying for an <strong>MSME registration certificate online</strong> can be complicated. At Make My Documents, we simplify the registration process with:
+          </p>
+          <div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>• Expert Assistance:</strong></h3>
+<p style={{display: 'inline'}}>Our team provides step-by-step guidance for Udyam Registration online. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>• Document Preparation: </strong></h3>
+<p style={{display: 'inline'}}>We ensure that all required MSME registration documents are correctly compiled to avoid rejections. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Quick Application Submission: </strong></h3>
+<p style={{display: 'inline'}}>We submit your MSME registration form online promptly to speed up processing. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Real-time Status Tracking:   </strong></h3>
+<p style={{display: 'inline'}}>Stay updated on your MSME certificate status with our tracking service. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Hassle-Free Processing </strong></h3>
+<p style={{display: 'inline'}}>Get your MSME/Udyam Certificate online without any delays or errors.</p>
+</div>
+<br/>
+          
+        </>
       </div>
     </div>
     </>

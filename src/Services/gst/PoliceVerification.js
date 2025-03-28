@@ -1540,6 +1540,60 @@ const [leadId,setLeadId]=useState();
     }
   };
 
+  const faqs = [
+    {
+      question: "Who needs a Police Verification Certificate?",
+      
+      answer:
+        "Individuals applying for jobs, rental agreements, business registrations, or government security clearance often require a PVC.",
+    },
+    {
+      question: "How long is a Police Verification Certificate valid?",
+      answer:
+        "The validity of a PVC certificate varies by institution and location but typically lasts between six months . Always check with the requesting authority for specific requirements.",
+    },
+    {
+      question: "How long does it take to obtain a PVC?",
+      answer: "Processing times vary, but it usually takes a few days to a few weeks, depending on the police department and background verification.",
+    },
+    {
+      question: "Can I apply for a PVC if I recently moved to a new city?",
+      // answer: (
+      //   <ul style={{ listStyleType: "none" }}>
+      //     <li>
+      //       In normal application you will receive your passport within 10 to 15
+      //       working days
+      //     </li>
+      //     <br />
+      //     <li>
+      //       In tatkal application you will receive your passport within 2 to 5
+      //       working days
+      //     </li>
+      //   </ul>
+      // ),
+      answer: "Yes, but additional address verification may be required, which could extend the processing time.",
+
+    },
+    {
+      question: "What happens if my PVC application is rejected?",
+      answer: (
+        <div>
+          <p>If your application is rejected, you may need to provide additional documents or appeal the decision for reconsideration</p>
+          <p>
+          For quick and reliable Police Verification Certificate (PVC) services, contact Make My Documents today! Our team is ready to assist you in obtaining your certificate smoothly and on time.
+          </p>
+        </div>
+      ),
+    }
+    
+    
+  ];
+
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <>
     <Helmet>
@@ -1887,7 +1941,7 @@ const [leadId,setLeadId]=useState();
         <div className="continue-button-container">
           <br/>
   <button className="continue-button" onClick={openPopup} style={{borderRadius:'0px'}}>
-    Continue
+    Apply Now
   </button>
 </div>
 
@@ -2886,7 +2940,170 @@ const [leadId,setLeadId]=useState();
         )}
       </div>
 
-      <br></br>
+      <div
+        className="faq-section"
+        style={{
+          margin: "14px auto",
+          padding: "20px",
+          background: "#FFFFFF",
+          borderRadius: "10px",
+          width: "80%",
+        }}
+      >
+        <h4
+          style={{
+            textAlign: "center",
+            fontWeight: "bold",
+            color: "#007BFF",
+            marginBottom: "20px",
+          }}
+        >
+          FAQs
+        </h4>
+        <p
+          style={{
+            textAlign: "center",
+            fontWeight: "500",
+            marginBottom: "30px",
+          }}
+        >
+          Need help? Contact us for any queries related to us
+        </p>
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="faq-item"
+              style={{ marginBottom: "10px" }}
+            >
+              <button
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                  padding: "10px 20px",
+                  border: "1px solid #007BFF",
+                  borderRadius: "5px",
+                  background: "#F9F9F9",
+                  fontWeight: "500",
+                  cursor: "pointer",
+                }}
+                onClick={() => handleToggle(index)}
+              >
+                {faq.question}
+                <span
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "16px",
+                    marginLeft: "10px",
+                  }}
+                >
+                  {openIndex === index ? "▲" : "▼"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <div
+                  style={{
+                    marginTop: "10px",
+                    padding: "10px 20px",
+                    background: "#F3F3F3",
+                    borderRadius: "5px",
+                    color: "#333",
+                  }}
+                >
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        <br></br>
+        <>
+          <h1 className="faq-tag-title-h3">
+            <strong>Police Verification Certificate (PVC) Services by Make My Documents</strong>
+          </h1>
+          <p style={{textAlign:'left'}}>
+          At <strong> Make My Documents</strong>, we specialize in assisting individuals in obtaining <strong>Police Verification Certificates (PVC) </strong>quickly and hassle-free. Our expert team ensures a smooth experience, guiding you through every step of the process. If you need a <strong> police clearance certificate for job applications, tenant verification, or business licensing,</strong> we provide fast and reliable assistance.
+          </p>
+
+          <h2  style={{textAlign:'left', fontSize:'20px'}}>
+            <strong>What is a Police Verification Certificate (PVC)?</strong>
+          </h2>
+          <br/>
+          <p  style={{textAlign:'left'}}>
+          A <strong> Police Verification Certificate (PVC)</strong>  is an official document issued by the police or authorized government agencies that verifies an individual’s  <strong>background, criminal record status, and residence history.</strong> It is required for various purposes such as employment verification, tenancy agreements, and security clearances.
+            
+          </p>
+
+          <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
+          Why is a Police Verification Certificate Important?
+          </h2>
+          <div>
+          <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Employment Background Checks: </strong></h3>
+<p style={{display: 'inline'}}>Many companies require a PVC for jobs to verify a candidate’s integrity and ensure workplace security.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Tenant Verification:</strong></h3>
+<p style={{display: 'inline'}}>Landlords often request a tenant police verification certificate to confirm the background of potential tenants.
+
+</p>
+</div>
+<br/>
+
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Business & Vendor Registration: </strong></h3>
+<p style={{display: 'inline'}}>Entrepreneurs may need a PVC for business licensing, vendor registration, or government contracts.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Government Jobs & Security Clearance: </strong></h3>
+<p style={{display: 'inline'}}>Many institutions mandate a PVC for government jobs before issuing ID cards, passes, or work permits.</p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Personal Safety & Trust: </strong></h3>
+<p style={{display: 'inline'}}>A police verification certificate ensures credibility in personal and professional interactions, proving a clean background.</p>
+</div>
+
+<br/>
+
+
+          <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
+          How Make My Documents Can Help You Get a PVC Easily
+          </h2>
+          <p>
+          Obtaining a <strong>Police Verification Certificate online</strong> or through traditional means can be time-consuming. At <strong>Make My Documents
+            </strong>, we simplify the process with:
+          </p>
+          <div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Expert Assistance:  </strong></h3>
+<p style={{display: 'inline'}}>Our team guides you through the PVC application process, ensuring compliance with all requirements. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Document Preparation: </strong></h3>
+<p style={{display: 'inline'}}>We help gather and organize the necessary paperwork to prevent delays or rejections. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Quick Application Submission: </strong></h3>
+<p style={{display: 'inline'}}>Our service includes submitting your PVC request to the relevant authorities promptly. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>• Real-time Status Updates: </strong></h3>
+<p style={{display: 'inline'}}>We track your police verification certificate status and keep you updated at every step. </p>
+</div>
+<br/>
+<div>
+<h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>• Fast & Hassle-Free Processing:  </strong></h3>
+<p style={{display: 'inline'}}>We ensure you get your PVC certificate online or offline without unnecessary delays. </p>
+</div>
+<br/>
+        </>
+      </div>
     </div>
     </>
   );

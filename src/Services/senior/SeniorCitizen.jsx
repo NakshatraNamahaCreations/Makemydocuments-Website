@@ -1115,7 +1115,7 @@ const validateStep3 = () => {
               onClick={openPopup}
               style={{ borderRadius: "0px" }}
             >
-              Continue
+                Apply Now
             </button>
           </div>
 

@@ -221,6 +221,14 @@
   margin-top: -30px; /* Default margin for desktop */
 }
 
+
+.continue-button:hover {
+  background-color: #f0d400; 
+  color: #000; 
+  transform: scale(1.05); 
+}
+
+
 /* Media Query for Mobile View */
 @media (max-width: 768px) {
   .continue-button-container {

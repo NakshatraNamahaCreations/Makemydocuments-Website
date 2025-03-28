@@ -585,6 +585,14 @@
   margin-top: -30%;
 }
 
+.fixed-button:hover{
+ 
+    background-color: #f0d400; 
+    color: #000; 
+    transform: scale(1.05); 
+  
+}
+
 .faq-section-visa{
   margin: 16px auto;
   padding: 20px;

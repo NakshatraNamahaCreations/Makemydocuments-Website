@@ -161,7 +161,7 @@
   color: #000000;
   padding: 12px 50px;
   border: none;
-  border-radius: 30px;
+  border-radius: 8px !important; 
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
@@ -169,28 +169,40 @@
   display: inline-block;
 }
 
+.continue-button:hover {
+  background-color: #f0d400; 
+  color: #000; 
+  transform: scale(1.05); 
+}
+
 /* Media Query for Mobile View */
 @media (max-width: 768px) {
   .continue-button-container {
-    position: fixed; /* Fix button to the bottom of the screen */
+    position: fixed; 
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff; /* Optional: Add background for better contrast */
+    background-color: #ffffff; 
     padding: 10px 0;
     text-align: center;
-    z-index: 1000; /* Ensure the button stays above other content */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    z-index: 1000; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
   }
 
   .continue-button {
-    width: 90%; /* Make the button span most of the screen width */
-    max-width: 400px; /* Set a max width for larger mobile screens */
-    padding: 12px; /* Adjust padding for better UX on mobile */
-    font-size: 14px; /* Adjust font size for better readability */
-    margin: 0 auto; /* Center the button horizontally */
-    border-radius: 20px; /* Slightly rounded corners for better design */
+    width: 90%;
+    max-width: 400px;
+    padding: 12px; 
+    font-size: 14px;
+    margin: 0 auto; 
+    border-radius: 20px;
   }
+  .continue-button:hover {
+    background-color: #f0d400; 
+    color: #000; 
+    transform: scale(1.05); 
+  }
+  
 }
 
 /* Default Styles */
