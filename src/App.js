@@ -171,6 +171,7 @@ const App = () => {
       <Route path="/our_partners" element={<Layout><PartnersPage /></Layout>} />
       <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
       <Route path="/failure" element={<Layout><FailurePayment /></Layout>} />
+      
 
       {/* Custom 404 Page without Header */}
       <Route path="*" element={<Custom404Page />} />

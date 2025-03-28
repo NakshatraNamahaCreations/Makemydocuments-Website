@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 
 const Blogs = () => {
 
-
    
   return (
     <>
@@ -77,8 +76,16 @@ const Blogs = () => {
         </script>
 
   </Helmet>
+
+  <div>
+  
+  </div>
     </>
   );
 };
 
 export default Blogs;
+
+
+
+

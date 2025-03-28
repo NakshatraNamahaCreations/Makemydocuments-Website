@@ -1967,7 +1967,7 @@ const handleNext = () => {
             CONTINUE
           </button>
         </div> */}
-        <div className="continue-button-container">
+        <div className="continue-button-container" style={{marginTop:'-6%'}}>
   <button className="continue-button" onClick={openPopup} style={{borderRadius:'0px'}}>
   Apply Now
   </button>

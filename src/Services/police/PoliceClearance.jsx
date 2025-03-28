@@ -1781,7 +1781,7 @@ useLayoutEffect(() => {
             <div>
               <h4 className="desktop-text">Documents Required (Any One Address Proof)</h4>
               <ul className="desktop-ul">
-              <li>Exsting Passport(M)</li>
+              <li>Existing Passport(M)</li>
                 <li>Aadhaar card</li>
                 
                 <li>Bank statement</li>
