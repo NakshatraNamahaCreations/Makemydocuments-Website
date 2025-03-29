@@ -1637,7 +1637,7 @@ useLayoutEffect(() => {
           <p>
           If your application is rejected, you can appeal the decision or provide additional supporting documents for reconsideration.
           </p>
-          <p> For personalized assistance and to begin your PCC application process, contact Make My Documents today.  Our dedicated team is here to simplify the process and ensure you receive your certificate promptly!</p>
+        
         </div>
       ),
     }
@@ -3064,7 +3064,7 @@ useLayoutEffect(() => {
           <h2  style={{textAlign:'left', fontSize:'20px'}}>
             <strong>What is a Police Clearance Certificate (PCC)?</strong>
           </h2>
-          <p  style={{textAlign:'left'}}>
+          <p  style={{textAlign:'left', marginTop:'1%'}}>
           A <strong>Police Clearance Certificate (PCC)</strong> is an official document issued by the police or authorized government agencies, stating that the applicant has no criminal records. It is often required for various purposes such as <strong>employment, immigration, or obtaining visas.
             </strong>
           </p>
@@ -3072,6 +3072,7 @@ useLayoutEffect(() => {
           <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
           Importance of a PCC
           </h2>
+          <br/>                                          
           <div>
           <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Employment Opportunities:</strong></h3>
 <p style={{display: 'inline'}}>Many employers, both domestic and international, require a PCC to ensure the credibility and integrity of potential employees.</p>
@@ -3097,6 +3098,7 @@ useLayoutEffect(() => {
           <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
           How Make My Documents Can Help To Get (PCC)
           </h2>
+          <br/>
           <p>
           Navigating the process of obtaining a PCC can be complex and time-consuming. At <strong>Make My Documents</strong>, we offer:
           </p>
@@ -3121,6 +3123,7 @@ useLayoutEffect(() => {
 <p style={{display: 'inline'}}>We monitor the progress of your application and keep you informed throughout the process.</p>
 </div>
 <br/>
+<p>For <strong>personalized assistance</strong> and to begin your <strong>PCC application process,</strong> contact <strong>Make My Documents</strong> today. Our dedicated team is here to simplify the process and ensure you receive your certificate promptly!</p>
         </>
       </div>
     </div>

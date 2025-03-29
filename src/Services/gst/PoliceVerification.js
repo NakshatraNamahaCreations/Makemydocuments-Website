@@ -1579,9 +1579,7 @@ const [leadId,setLeadId]=useState();
       answer: (
         <div>
           <p>If your application is rejected, you may need to provide additional documents or appeal the decision for reconsideration</p>
-          <p>
-          For quick and reliable Police Verification Certificate (PVC) services, contact Make My Documents today! Our team is ready to assist you in obtaining your certificate smoothly and on time.
-          </p>
+        
         </div>
       ),
     }
@@ -3039,6 +3037,7 @@ const [leadId,setLeadId]=useState();
           <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
           Why is a Police Verification Certificate Important?
           </h2>
+          <br/>
           <div>
           <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>•	Employment Background Checks: </strong></h3>
 <p style={{display: 'inline'}}>Many companies require a PVC for jobs to verify a candidate’s integrity and ensure workplace security.</p>
@@ -3073,6 +3072,7 @@ const [leadId,setLeadId]=useState();
           <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
           How Make My Documents Can Help You Get a PVC Easily
           </h2>
+          <br/>
           <p>
           Obtaining a <strong>Police Verification Certificate online</strong> or through traditional means can be time-consuming. At <strong>Make My Documents
             </strong>, we simplify the process with:
@@ -3102,6 +3102,7 @@ const [leadId,setLeadId]=useState();
 <p style={{display: 'inline'}}>We ensure you get your PVC certificate online or offline without unnecessary delays. </p>
 </div>
 <br/>
+<p>For <strong>quick and reliable</strong> Police Verification Certificate (PVC) services,<strong>contact Make My Documents today!</strong>  Our team is ready to assist you in obtaining your certificate smoothly and on time.</p>
         </>
       </div>
     </div>

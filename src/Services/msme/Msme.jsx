@@ -1613,7 +1613,7 @@ const handleNext = () => {
       answer:
         (<div>
           <p>The MSME Registration Certificate (Udyam Certificate) does not expire and remains valid as long as the business meets the MSME criteria.</p>
-          <p>For quick and reliable MSME registration services, contact Make My Documents today! Our team is ready to assist you in obtaining your MSME/Udyam Certificate smoothly and efficiently.</p>
+          
         </div>),
     },
   ];
@@ -2768,7 +2768,7 @@ const handleNext = () => {
           <h2  style={{textAlign:'left', fontSize:'20px'}}>
             <strong>What is MSME Registration?</strong>
           </h2>
-          <p  style={{textAlign:'left'}}>
+          <p  style={{textAlign:'left', marginTop:'2%'}}>
           Micro, Small, and Medium Enterprises <strong> (MSME)</strong> registration, also known as <strong> Udyam Registration</strong>, is an official recognition issued by the Government of India to businesses that qualify under MSME criteria. This certification provides access to various <strong>government benefits, MSME loans, tax exemptions, and financial support</strong> to promote business growth.
            
           </p>
@@ -2776,6 +2776,7 @@ const handleNext = () => {
           <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
           Why is MSME Registration Important?
           </h2>
+          <br/>
           <div>
           <h3 style={{fontSize: '16px', display: 'inline', marginRight: '8px'}}><strong>• Eligibility for Government Schemes:</strong></h3>
 <p style={{display: 'inline'}}>Get access to MSME subsidies, business grants, and low-interest MSME loans.</p>
@@ -2806,6 +2807,7 @@ const handleNext = () => {
           <h2  style={{textAlign:'left', fontSize:'20px', fontWeight:'bold'}}>
           How Make My Documents Can Help You Register for MSME Easily
           </h2>
+          <br/>
           <p>
           Applying for an <strong>MSME registration certificate online</strong> can be complicated. At Make My Documents, we simplify the registration process with:
           </p>
@@ -2834,6 +2836,7 @@ const handleNext = () => {
 <p style={{display: 'inline'}}>Get your MSME/Udyam Certificate online without any delays or errors.</p>
 </div>
 <br/>
+<p>For <strong>quick and reliable MSME registration services, contact Make My Documents today!</strong>  Our team is ready to assist you in obtaining your <strong>MSME/Udyam Certificate</strong> smoothly and efficiently.</p>
           
         </>
       </div>

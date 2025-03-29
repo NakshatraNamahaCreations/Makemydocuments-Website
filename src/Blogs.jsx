@@ -88,4 +88,199 @@ export default Blogs;
 
 
 
+// import React, { useState } from "react";
+// import { Helmet } from "react-helmet";
+
+// const Blogs = () => {
+//   const [blogs, setBlogs] = useState([
+//     {
+//       title: "How to Apply for a PAN Card Easily",
+//       summary: "Step-by-step guide to apply PAN card online.",
+//       content: "Learn how to apply for a PAN card in just 10 minutes...",
+//       image: "https://via.placeholder.com/300x180",
+//     },
+//     {
+//       title: "Passport Documents Checklist for 2025",
+//       summary: "Make sure you have all the required documents.",
+//       content: "This guide helps you prepare for passport application...",
+//       image: "https://via.placeholder.com/300x180",
+//     },
+//   ]);
+
+//   const [formData, setFormData] = useState({
+//     title: "",
+//     summary: "",
+//     content: "",
+//     image: "",
+//   });
+
+//   const handleChange = (e) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     if (formData.title && formData.summary && formData.content) {
+//       setBlogs([formData, ...blogs]);
+//       setFormData({ title: "", summary: "", content: "", image: "" });
+//     }
+//   };
+
+//   return (
+//     <>
+//       <Helmet>
+//         <title>Make My Documents Blog | Expert Tips on Document Services</title>
+//         <meta
+//           name="description"
+//           content="Explore our blog for expert tips and insights on document services like PAN cards, passports, visas, MSME certificates, and more."
+//         />
+//         <link rel="canonical" href="https://makemydocuments.com/blogs" />
+//       </Helmet>
+
+//       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "30px 20px" }}>
+//         <h1 style={{ textAlign: "center", marginTop: "10%" }}>
+//           Make My Documents Blog
+//         </h1>
+
+//         {/* Blog Form */}
+//         <div
+//           style={{
+//             background: "#f9f9f9",
+//             padding: "20px",
+//             borderRadius: "8px",
+//             marginBottom: "40px",
+//             boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+//           }}
+//         >
+//           <h2 style={{ marginBottom: "15px" }}>Submit a New Blog</h2>
+//           <form onSubmit={handleSubmit}>
+//             <div style={{ marginBottom: "15px" }}>
+//               <label>Title</label>
+//               <input
+//                 type="text"
+//                 name="title"
+//                 value={formData.title}
+//                 onChange={handleChange}
+//                 required
+//                 style={{
+//                   width: "100%",
+//                   padding: "10px",
+//                   marginTop: "5px",
+//                   border: "1px solid #ccc",
+//                   borderRadius: "4px",
+//                 }}
+//               />
+//             </div>
+
+//             <div style={{ marginBottom: "15px" }}>
+//               <label>Summary</label>
+//               <input
+//                 type="text"
+//                 name="summary"
+//                 value={formData.summary}
+//                 onChange={handleChange}
+//                 required
+//                 style={{
+//                   width: "100%",
+//                   padding: "10px",
+//                   marginTop: "5px",
+//                   border: "1px solid #ccc",
+//                   borderRadius: "4px",
+//                 }}
+//               />
+//             </div>
+
+//             <div style={{ marginBottom: "15px" }}>
+//               <label>Image URL</label>
+//               <input
+//                 type="text"
+//                 name="image"
+//                 value={formData.image}
+//                 onChange={handleChange}
+//                 style={{
+//                   width: "100%",
+//                   padding: "10px",
+//                   marginTop: "5px",
+//                   border: "1px solid #ccc",
+//                   borderRadius: "4px",
+//                 }}
+//               />
+//             </div>
+
+//             <div style={{ marginBottom: "15px" }}>
+//               <label>Content</label>
+//               <textarea
+//                 name="content"
+//                 value={formData.content}
+//                 onChange={handleChange}
+//                 rows="4"
+//                 required
+//                 style={{
+//                   width: "100%",
+//                   padding: "10px",
+//                   marginTop: "5px",
+//                   border: "1px solid #ccc",
+//                   borderRadius: "4px",
+//                 }}
+//               ></textarea>
+//             </div>
+
+//             <button
+//               type="submit"
+//               style={{
+//                 backgroundColor: "#007bff",
+//                 color: "#fff",
+//                 padding: "10px 20px",
+//                 border: "none",
+//                 borderRadius: "4px",
+//                 cursor: "pointer",
+//               }}
+//             >
+//               Submit Blog
+//             </button>
+//           </form>
+//         </div>
+
+//         {/* Blog Cards */}
+//         <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+//           {blogs.map((blog, index) => (
+//             <div
+//               key={index}
+//               style={{
+//                 width: "100%",
+//                 maxWidth: "420px",
+//                 backgroundColor: "#fff",
+//                 borderRadius: "8px",
+//                 boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+//                 overflow: "hidden",
+//                 flex: "1 1 45%",
+//               }}
+//             >
+//               {blog.image && (
+//                 <img
+//                   src={blog.image}
+//                   alt={blog.title}
+//                   style={{ width: "100%", height: "200px", objectFit: "cover" }}
+//                 />
+//               )}
+//               <div style={{ padding: "15px" }}>
+//                 <h3 style={{ margin: "0 0 10px" }}>{blog.title}</h3>
+//                 <p style={{ color: "#666", marginBottom: "10px" }}>
+//                   {blog.summary}
+//                 </p>
+//                 <p style={{ fontSize: "14px", color: "#333" }}>{blog.content}</p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Blogs;
+
+
+
+
 
