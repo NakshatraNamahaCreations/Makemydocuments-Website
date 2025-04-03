@@ -40,6 +40,7 @@ import ContactUs from "./Contact.jsx";
 import PartnersPage from "./Services/PartnersPage.js";
 import PaymentStatus from "./PaymentStatus.js";
 import Custom404Page from "./Custom404Page.js";
+import BlogDetails from "./BlogDetails.jsx";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -125,6 +126,8 @@ const App = () => {
       <Route path="/privacy-policy" element={<Layout><PrivacyPolicy /></Layout>} />
       <Route path="/disclaimer" element={<Layout><Disclaimer /></Layout>} />
       <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
+      <Route  path="/blogs/:id" element={<Layout><BlogDetails/></Layout>} />
+
       <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
       <Route path="/insurance" element={<Layout><Insurance /></Layout>} />
       <Route path="/two-wheeler-insurance" element={<Layout><TwoWheeler /></Layout>} />
