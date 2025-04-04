@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import "./blogs.css"
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -56,7 +57,7 @@ return isValid;
         mobilenumber: mobileNumber || "",
         email: emailId || "",
         district: "N/A",
-        source: "contact page",
+        source: "Blog page",
         time: time && time !== "00:00:00" ? time : new Date().toLocaleTimeString("en-US", { hour12: false }),
         date: date && date !== "0000-00-00" ? date : new Date().toISOString().split("T")[0],
         services: selectedService || "",
@@ -119,15 +120,7 @@ return isValid;
     }
   };
 
-  // const handleEnquiryChange = (e) => {
-  //   setEnquiryForm({ ...enquiryForm, [e.target.name]: e.target.value });
-  // };
 
-  // const handleEnquirySubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log("Enquiry submitted:", enquiryForm);
-  //   setEnquiryForm({ name: "", email: "", phone: "", service: "" });
-  // };
 
   if (loading) {
     return <h2 style={{ marginTop: "10%", textAlign: "center" }}>Loading...</h2>;
@@ -139,19 +132,12 @@ return isValid;
 
   return (
     <div
-      style={{
-        display: "flex",
-        maxWidth: "1200px",
-        margin: "0 auto",
-        padding: "30px 20px",
-        marginTop: "8%",
-        gap: "30px",
-      }}
+     className="blog-details-wrapper"
     >
       {/* Left: Blog Content */}
-      <div style={{ flex: 3 }}>
-        <h1>{blog.title}</h1>
-        <img
+      <div className="blog-content-scrollable">
+        <h1 className="blog-title">{blog.title}</h1>
+        {/* <img
           src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
           alt={blog.title}
           style={{
@@ -161,7 +147,13 @@ return isValid;
             borderRadius: "8px",
             marginBottom: "20px",
           }}
-        />
+        /> */}
+        <img
+  src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
+  alt={blog.title}
+  className="blog-image"
+/>
+
         <div
           style={{
             color: "#555",
@@ -174,19 +166,10 @@ return isValid;
 
       {/* Right: Enquiry Form */}
       <div
-        style={{
-          flex: 1,
-          position: "sticky",
-          top: "100px",
-          height: "fit-content",
-          background: "#fff",
-          padding: "20px",
-          borderRadius: "8px",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-        }}
+       className="enquiry-form-box"
       >
         <h2>Contact Us</h2>
-        <form >
+        <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: "15px" }}>
             <label>Name</label>
             <input
@@ -247,7 +230,7 @@ return isValid;
           </div>
           <button
             type="submit"
-            onSubmit={handleSubmit}
+            
             style={{
               backgroundColor: "#28a745",
               color: "#fff",

@@ -1478,7 +1478,7 @@ const [leadId,setLeadId]=useState();
       adharnumber: aadharNumber || "",
       maritalStatus: maritalStatus || "",
       pancard: "",
-      time: time && time !== "00:00:00" ? time : new Date().toLocaleTimeString("en-US", { hour12: false }),
+      time: time,
       comment: "",
       status: "",
       service: "PassPort",

@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import "./blogs.css"
 
 const Blogs = () => {
-  const [visibleCount, setVisibleCount] = useState(6); // initially show 6
+  const [visibleCount, setVisibleCount] = useState(6); 
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -39,15 +40,10 @@ const Blogs = () => {
       </Helmet>
 
       <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "30px 20px",
-          marginTop: "8%",
-        }}
+         className="blog-container"
       >
         <h1 style={{ textAlign: "center", marginBottom: "30px" }}>
-          Make My Documents Blog
+          Blogs
         </h1>
 
         {/* Blog Cards Grid */}
@@ -73,17 +69,16 @@ const Blogs = () => {
                   overflow: "hidden",
                 }}
               >
-                {blog.image && (
-                  <img
-                    src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
-                    alt={blog.title}
-                    style={{
-                      width: "100%",
-                      height: "200px",
-                      objectFit: "cover",
-                    }}
-                  />
-                )}
+{blog.image && (
+  <Link to={`/blogs/${blog._id}`}>
+    <img
+      className="blog-card-image"
+      src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
+      alt={blog.title}
+    />
+  </Link>
+)}
+
                 <div style={{ padding: "15px" }}>
                   <h3 style={{ marginBottom: "10px" }}>{blog.title}</h3>
                   <div
