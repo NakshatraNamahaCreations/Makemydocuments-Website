@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { Container, Row, Col, Button, Modal, Form } from 'react-bootstrap';
 import "./blogs.css"
 
 const BlogDetails = () => {
@@ -22,7 +23,9 @@ const BlogDetails = () => {
     phone: "",
     service: "",
   });
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
+  
 
   const validateForm = () => {
     let formErrors = {};
@@ -38,13 +41,11 @@ const BlogDetails = () => {
     if (!selectedService) {
       formErrors.selectedService = "Please select a service.";
     }
-console.log("yupp working");
 
-setErrors(formErrors);
-const isValid = Object.keys(formErrors).length === 0;
-setIsFormValid(isValid);
-console.log("Validation Status:", isValid);
-return isValid;
+    setErrors(formErrors);
+    const isValid = Object.keys(formErrors).length === 0;
+    setIsFormValid(isValid);
+    return isValid;
   };
 
 
@@ -76,7 +77,7 @@ return isValid;
           }
         );
       
-          // setShowSuccessModal(true);
+        setShowSuccessModal(true);
           clearFormData(); 
         
       } catch (error) {
@@ -94,7 +95,10 @@ return isValid;
       setIsFormValid(false);
     };
   
-
+    const handleCloseModal = () => {
+      setShowSuccessModal(false);
+      clearFormData(); 
+    }; 
     const handleSubmit = async (event) => {
       event.preventDefault();
       setIsCheck(true); 
@@ -245,6 +249,19 @@ return isValid;
           </button>
         </form>
       </div>
+       <Modal show={showSuccessModal} onHide={handleCloseModal} centered>
+       <Modal.Header closeButton>
+         <Modal.Title>Success</Modal.Title>
+       </Modal.Header>
+       <Modal.Body>
+         Your request has been submitted! Our team will contact you shortly.
+       </Modal.Body>
+       <Modal.Footer>
+         <Button variant="primary" onClick={handleCloseModal}>
+           Close
+         </Button>
+       </Modal.Footer>
+     </Modal>
     </div>
   );
 };
