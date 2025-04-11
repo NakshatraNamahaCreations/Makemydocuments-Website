@@ -568,21 +568,32 @@
  
   }
 }
+
 .text-center-continue{
   text-align: center;
   margin-top: 26%;
 }
 
 .fixed-button {
-  background-color: #fca505;
+  /* background-color: #fca505;
   color: #000000;
   padding: 12px 50px;
   border: none;
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
-  position: static; /* Default for desktop */
-  margin-top: -30%;
+  position: static; 
+  margin-top: -30%; */
+  background-color: #fca505;
+  color: #000000;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px !important; 
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .fixed-button:hover{
@@ -604,18 +615,41 @@
 
 /* Mobile View */
 @media (max-width: 991.98px) {
-  .fixed-button {
+  .text-center-continue{
     position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0d400; 
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1)
+  }
+  .fixed-button {
+    /* position: fixed; 
     bottom: 0; 
-    /* top: 0; */
-    left: 50%; /* Centers the button horizontally */
-    transform: translateX(-50%); /* Adjusts for perfect centering */
-    z-index: 1000; /* Ensures it appears on top */
-    width: 100%; /* Optional: Adjust button width */
-    margin: 0; /* Removes unwanted margins */
+
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1000;
+    width: 100%; 
+    margin: 0;  */
+    width: 90%;
+    max-width: 400px;
+    background-color: #fca505; 
+    padding: 12px; 
+    font-size: 16px;
+    margin: 0 auto; 
+    border-radius: 20px;
+  }
+  .fixed-button{
+    background-color: #f0d400; 
+    color: #000; 
+    transform: scale(1.05); 
   }
   .faq-section-visa{
-    margin: -105px auto;
+    margin: -22px auto;
     padding: 20px;
     background: #FFFFFF;
     border-radius: 10px;

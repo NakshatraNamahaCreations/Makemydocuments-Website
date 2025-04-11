@@ -37,7 +37,75 @@ const Blogs = () => {
           content="Explore our blog for expert tips and insights on document services like PAN cards, passports, visas, MSME certificates, and more."
         />
         <link rel="canonical" href="https://makemydocuments.com/blogs" />
+
+        <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Make My Documents Blog",
+      "description":
+        "Explore expert advice on documents like PAN cards, passports, visas, MSME certifications, and more.",
+      "url": "https://makemydocuments.com/blogs",
+      "blogPost": blogs.slice(0, visibleCount).map((blog) => ({
+        "@type": "BlogPosting",
+        "headline": blog.metaTitle || blog.title,
+        "description": blog.metaDescription || "",
+        "url": `https://makemydocuments.com/blogs/${blog.title}`,
+        "image": `https://api.makemydocuments.com/uploads/blogs/${blog.image}`,
+        "author": {
+          "@type": "Person",
+          "name": "Make My Documents",
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Make My Documents",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
+          },
+        },
+        "datePublished": new Date(blog.createdAt).toISOString(),
+        "dateModified": new Date(blog.createdAt).toISOString(),
+      })),
+    })}
+  </script>
+
+  <script type="application/ld+json">
+{`
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://makemydocuments.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blogs",
+        "item": "https://makemydocuments.com/blogs"
+      }
+    ]
+  }
+`}
+</script>
+
       </Helmet>
+      <div style={{ backgroundColor: "#f4f4f4", padding: "15px 25px", marginTop:'8%' }} className="breadcrumb-title">
+  <nav aria-label="breadcrumb">
+    <ol className="breadcrumb mb-0">
+      <li className="breadcrumb-item" style={{fontWeight:'bold'}}>
+        <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>Home</Link>
+      </li>
+      <li className="breadcrumb-item active" aria-current="page" style={{fontWeight:'bold'}}>
+        Blogs
+      </li>
+    </ol>
+  </nav>
+</div>
 
       <div
          className="blog-container"
@@ -61,7 +129,7 @@ const Blogs = () => {
           >
             {blogs.slice(0, visibleCount).map((blog, index) => (
               <div
-                key={blog._id}
+                key={blog.title}
                 style={{
                   backgroundColor: "#fff",
                   borderRadius: "8px",
@@ -70,7 +138,7 @@ const Blogs = () => {
                 }}
               >
 {blog.image && (
-  <Link to={`/blogs/${blog._id}`}>
+  <Link to={`/blogs/${blog.title}`}>
     <img
       className="blog-card-image"
       src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
@@ -80,7 +148,8 @@ const Blogs = () => {
 )}
 
                 <div style={{ padding: "15px" }}>
-                  <h3 style={{ marginBottom: "10px" }}>{blog.title}</h3>
+                <h3 className="blog-title">{blog.title.replace(/-/g, " ")}</h3>
+
                   <div
                     style={{
                       fontSize: "14px",
@@ -92,8 +161,8 @@ const Blogs = () => {
                       __html: blog.description.substring(0, 120) + "...",
                     }}
                   />
-                  <Link
-                    to={`/blogs/${blog._id}`}
+                  <Link to={`/blogs/${blog.title}`}
+                   
                     style={{
                       display: "inline-block",
                       marginTop: "10px",

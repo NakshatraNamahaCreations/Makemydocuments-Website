@@ -2,13 +2,16 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px;
-    margin-top: 8%;
+    /* margin-top: 8%; */
     overflow: hidden;
   }
   
   @media (max-width: 768px) {
     .blog-container {
-      margin-top: 25%;
+      /* margin-top: 25%; */
+    }
+    .breadcrumb-title{
+      margin-top: 36% !important;
     }
   }
 
@@ -19,7 +22,7 @@
     overflow: hidden;
     margin: 0 auto;
     padding: 30px 20px;
-    margin-top: 8%;
+    /* margin-top: 8%; */
     gap: 30px;
     flex-direction: row; /* Default - desktop */
   }
@@ -27,7 +30,7 @@
   @media (max-width: 768px) {
     .blog-details-wrapper {
       flex-direction: column; /* Mobile view - stack vertically */
-      margin-top: 30%;
+      /* margin-top: 30%; */
     }
     .blog-title{
         font-size: 20px;

@@ -3,9 +3,13 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Container, Row, Col, Button, Modal, Form } from 'react-bootstrap';
 import "./blogs.css"
+import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
-  const { id } = useParams();
+  const { title } = useParams();
+
+  
+  
   const [blog, setBlog] = useState(null);
    const [fullName, setFullName] = useState("");
     const [emailId, setEmailId] = useState("");
@@ -111,11 +115,12 @@ const BlogDetails = () => {
 
   useEffect(() => {
     fetchBlogById();
-  }, [id]);
+  }, [title]);
+  
 
   const fetchBlogById = async () => {
     try {
-      const res = await axios.get(`https://api.makemydocuments.com/api/blogs/${id}`);
+      const res = await axios.get(`https://api.makemydocuments.com/api/blogs/${title}`);
       setBlog(res.data);
     } catch (error) {
       console.error("Error fetching blog:", error);
@@ -135,12 +140,96 @@ const BlogDetails = () => {
   }
 
   return (
+<>
+    <Helmet>
+    <title>{blog.metaTitle || blog.title}</title>
+    <meta name="description" content={blog.metaDescription || "Read our latest blog article."} />
+    <link rel="canonical" href="https://makemydocuments.com/blogs/:title" />
+    <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://makemydocuments.com/blogs/${title}"
+      },
+      "headline": "${blog.metaTitle?.replace(/"/g, '\\"') || blog.title?.replace(/"/g, '\\"')}",
+      "description": "${blog.metaDescription?.replace(/"/g, '\\"') || ""}",
+      "image": "https://api.makemydocuments.com/uploads/blogs/${blog.image}",
+      "author": {
+        "@type": "Person",
+        "name": "Make My Documents",
+        "url": "https://makemydocuments.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Make My Documents",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg"
+        }
+      },
+      "datePublished": "${new Date(blog.createdAt).toISOString()}",
+      "dateModified": "${new Date(blog.createdAt).toISOString()}"
+    }
+    `}
+  </script>
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://makemydocuments.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blogs",
+          "item": "https://makemydocuments.com/blogs"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "${(blog.metaTitle || blog.title)?.replace(/"/g, '\\"')}",
+          "item": "https://makemydocuments.com/blogs/${title}"
+        }
+      ]
+    }
+    `}
+  </script>
+
+    </Helmet>
+
+    {/* Breadcrumb Navigation */}
+<div style={{ backgroundColor: "#f4f4f4", padding: "15px 25px", marginTop: "8%" }} className="breadcrumb-title">
+  <nav aria-label="breadcrumb">
+    <ol className="breadcrumb mb-0">
+      <li className="breadcrumb-item" style={{fontWeight:'bold'}}>
+        <a href="/" style={{ color: "#007bff", textDecoration: "none" }}>Home</a>
+      </li>
+      <li className="breadcrumb-item" style={{fontWeight:'bold'}}>
+        <a href="/blogs" style={{ color: "#007bff", textDecoration: "none" }}>Blogs</a>
+      </li>
+      <li className="breadcrumb-item active" aria-current="page" style={{fontWeight:'bold'}}>
+        {blog?.title?.replace(/-/g, " ")}
+      </li>
+    </ol>
+  </nav>
+</div>
+
     <div
      className="blog-details-wrapper"
     >
       {/* Left: Blog Content */}
       <div className="blog-content-scrollable">
-        <h1 className="blog-title">{blog.title}</h1>
+      <h1 className="blog-title">{blog.title.replace(/-/g, " ")}</h1>
+
         {/* <img
           src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
           alt={blog.title}
@@ -263,6 +352,7 @@ const BlogDetails = () => {
        </Modal.Footer>
      </Modal>
     </div>
+    </>
   );
 };
 
