@@ -6,6 +6,13 @@
         margin-top: 36%;
         white-space: nowrap;
     }
+    .container-passport-agency{
+      flex-direction: column;
+      text-align: center;
+      height: 300px;
+      /* margin-top: 36%; */
+      white-space: nowrap;
+    }
     .passport-image img {
         width: 90%; 
         margin-bottom: 53%;
@@ -29,6 +36,17 @@
 .container-passport {
     display: flex;
     /* margin-top: -32%; */
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    /* height: 500px; */
+    background: linear-gradient(182.42deg, #fca505 2.01%, #ffffff);
+    padding: 20px;
+  }
+
+  .container-passport-agency {
+    display: flex;
+    margin-top: -6%;
     align-items: center;
     justify-content: space-between;
     text-align: left;

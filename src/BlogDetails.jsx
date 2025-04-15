@@ -4,6 +4,7 @@ import axios from "axios";
 import { Container, Row, Col, Button, Modal, Form } from 'react-bootstrap';
 import "./blogs.css"
 import { Helmet } from "react-helmet";
+import Footer from "./Footer";
 
 const BlogDetails = () => {
   const { title } = useParams();
@@ -118,16 +119,32 @@ const BlogDetails = () => {
   }, [title]);
   
 
+  // const fetchBlogById = async () => {
+  //   try {
+  //     const res = await axios.get(`https://api.makemydocuments.com/api/blogs/${title}`);
+  //     setBlog(res.data);
+  //   } catch (error) {
+  //     console.error("Error fetching blog:", error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const fetchBlogById = async () => {
     try {
-      const res = await axios.get(`https://api.makemydocuments.com/api/blogs/${title}`);
-      setBlog(res.data);
+      const res = await axios.get(`https://api.makemydocuments.com/api/blogs`);
+      const blogList = res.data;
+      const matchedBlog = blogList.find(
+        (b) => b.title.toLowerCase() === title.toLowerCase()
+      );
+      setBlog(matchedBlog || null);
     } catch (error) {
       console.error("Error fetching blog:", error);
     } finally {
       setLoading(false);
     }
   };
+  
 
 
 
@@ -144,7 +161,7 @@ const BlogDetails = () => {
     <Helmet>
     <title>{blog.metaTitle || blog.title}</title>
     <meta name="description" content={blog.metaDescription || "Read our latest blog article."} />
-    <link rel="canonical" href="https://makemydocuments.com/blogs/:title" />
+    <link rel="canonical" href={`https://makemydocuments.com/blogs/${title}`} />
     <script type="application/ld+json">
     {`
     {
@@ -352,6 +369,7 @@ const BlogDetails = () => {
        </Modal.Footer>
      </Modal>
     </div>
+    <Footer/>
     </>
   );
 };

@@ -448,6 +448,10 @@
     min-height: 40vh; /* Reduce height for smaller screens */
   }
 
+  .mobile-header{
+    margin-top: -37%;
+  }
+
   .banner-name {
     font-size: 24px; /* Smaller font size for mobile */
     padding: 10px; /* Add padding for better spacing */

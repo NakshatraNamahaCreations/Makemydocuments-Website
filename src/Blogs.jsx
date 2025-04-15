@@ -138,7 +138,7 @@ const Blogs = () => {
                 }}
               >
 {blog.image && (
-  <Link to={`/blogs/${blog.title}`}>
+  <Link to={`/blogs/${blog.title.toLowerCase()}`}>
     <img
       className="blog-card-image"
       src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
@@ -161,7 +161,7 @@ const Blogs = () => {
                       __html: blog.description.substring(0, 120) + "...",
                     }}
                   />
-                  <Link to={`/blogs/${blog.title}`}
+                <Link to={`/blogs/${blog.title.toLowerCase()}`}
                    
                     style={{
                       display: "inline-block",

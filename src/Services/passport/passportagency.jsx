@@ -6,6 +6,7 @@ import TimeIcon from "../../images/Time.svg";
 import Price from "../../images/Price Tag.svg";
 import axios from "axios";
 import { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 import "../passport/passport.css"
 import { ArrowLeft } from "lucide-react";
 import { FaArrowLeft } from "react-icons/fa";
@@ -1198,7 +1199,29 @@ const [leadId,setLeadId]=useState();
     }
   }, [resendCountdown, otpSent]);
 
+ useEffect(() => {
+    const scriptSrc = "https://static.elfsight.com/platform/platform.js";
 
+   
+    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+      const script = document.createElement("script");
+      script.src = scriptSrc;
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+
+      script.onload = () => {
+        if (window.elfsight) {
+          window.elfsight.reload(); 
+        }
+      };
+    } else {
+   
+      if (window.elfsight) {
+        window.elfsight.reload();
+      }
+    }
+  }, []);
 
   const generateOrderId = () => {
     return `ORD${Date.now()}`;
@@ -1679,11 +1702,228 @@ const [leadId,setLeadId]=useState();
             })(window,document,"script","//bat.bing.com/bat.js","uetq");
           `}
         </script>
+        <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Make My Documents",
+        "image": "https://www.makemydocuments.com/logo.png",
+        "@id": "https://makemydocuments.com/passport-agency-in-bangalore",
+        "url": "https://makemydocuments.com/passport-agency-in-bangalore",
+        "telephone": "+91-9429690973",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No 344, 2nd Main Rd, Manjunath Nagar, Mookambika Nagar, Dattatreya Nagar, Hosakerehalli",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "postalCode": "560085",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "12.925435912146988",
+          "longitude": "77.5409615823579"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "10:00",
+            "closes": "17:00"
+          }
+        ],
+        "priceRange": "₹₹",
+        "description": "Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Passport Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "New Passport Applications"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Passport Renewal"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Lost or Stolen Passport Replacement"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Passport Corrections"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Child Passport Applications"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Name Change on Passport"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Expedited Passport Services"
+              }
+            }
+          ]
+        }
+      }
+    `}
+  </script>
+
+  <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Can I track the status of my passport application?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, you can track the status of your passport application online through the Passport Seva Portal. Use the application reference number (ARN) or passport number to check the current status of your application."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I apply for a passport for my minor child?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, you can apply for a passport for your minor child. The process requires both parents' consent and the child’s birth certificate or school ID will be needed as proof of age. Parents must also submit their documents alongside those of the child."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do I change the address on my passport?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To change the address on your passport, you need to apply for a re-issue of the passport with the updated address. Submit proof of your new address (e.g., utility bill, rental agreement) along with your application for passport re-issue."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should I do if I have lost my passport?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "If you've lost your passport, immediately report the loss to the local police station and obtain a police report. Then, apply for a replacement passport through the Passport Seva Portal by submitting the necessary documents, including the police report."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What should I do if there is a mistake on my passport?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "If you find a mistake on your passport, you should immediately apply for a correction through the Passport Seva Portal. Submit the relevant documents to correct the information and the passport will be reissued with the accurate details."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the difference between normal and Tatkal passport services?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Normal passport service takes 7 to 15 working days, while Tatkal service ensures faster processing, usually within 1 to 3 working days. Tatkal service comes with an additional fee for expedited processing."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do I need to have an Aadhaar card for passport application?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "While an Aadhaar card is not mandatory for passport applications, it is recommended as a valid proof of identity and address. If you don’t have one, other documents like voter ID or ration card can also be used."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What happens if my passport application is rejected?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "If your passport application is rejected, the passport authorities will inform you of the reason for rejection. You can rectify the issue, such as providing missing documents or clarifications and reapply for the passport."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do I know if my passport application is approved?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can check the status of your passport application through the Passport Seva Portal using your application reference number (ARN). Once approved, you will be notified and your passport will be dispatched."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I change my name on the passport after marriage?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, you can change your name on the passport after marriage. You need to submit proof of your marriage (marriage certificate) along with a passport re-issue application to update your name in the passport."
+                  }
+                }
+              ]
+            }
+          `}
+        </script>
+
+        <meta property="og:title" content="Get Your Passport Fast | Passport Agency in Bangalore" />
+<meta property="og:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
+<meta property="og:url" content="https://makemydocuments.com/passport-agency-in-bangalore" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" /> 
+<meta property="og:site_name" content="Make My Documents" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Get Your Passport Fast | Passport Agency in Bangalore" />
+<meta name="twitter:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
+<meta name="twitter:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" /> 
+<meta name="twitter:site" content="@makemydocuments" /> 
+
 
     </Helmet>
+     <div style={{ backgroundColor: "#f4f4f4", padding: "15px 25px", marginTop:'8%' }} className="breadcrumb-title">
+          <nav aria-label="breadcrumb">
+            <ol className="breadcrumb mb-0">
+              <li className="breadcrumb-item" style={{fontWeight:'bold'}}>
+                <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>Home</Link>
+              </li>
+              <li className="breadcrumb-item active" aria-current="page" style={{fontWeight:'bold'}}>
+              Passport Agency in Bangalore
+
+    
+              </li>
+            </ol>
+          </nav>
+        </div>
     <div style={{overflow:'hidden'}}>
       <div>
-        <div className="container-passport" style={{height:'480px'}}
+        <div className="container-passport-agency" style={{height:'480px'}}
     //       style={{
     //         background: "linear-gradient(182.42deg, #FCA505 2.01%, #FFFFFF)",
     //         height: '500px',
@@ -1952,7 +2192,7 @@ const [leadId,setLeadId]=useState();
 
 
 
-      <div className="document-container d-block d-lg-none" style={{marginTop:'-34%'}}>
+      <div className="document-container d-block d-lg-none" style={{marginTop:'-7%'}}>
   {/* Section for Fresh Passport */}
   <div className="document-section fresh-passport row-container">
     <div className="icon-container">
@@ -3838,6 +4078,22 @@ const [leadId,setLeadId]=useState();
         )}
       </div>
 
+
+
+{/* reviewsection */}
+<div className="review-section-dubaivisa">
+      <div
+        className="d-flex justify-content-between align-items-center"
+        style={{ marginBottom: "2%" }}
+      >
+      </div>
+      
+      {/* Elfsight Widget Container */}
+      <div
+        className="elfsight-app-7549c18e-0660-4f32-9586-38be6cbceb68"
+        data-elfsight-app-lazy
+      ></div>
+    </div>
       <div
       style={{
         backgroundColor: "#f8f8f8",

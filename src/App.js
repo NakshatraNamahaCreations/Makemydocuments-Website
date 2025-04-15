@@ -42,6 +42,7 @@ import PaymentStatus from "./PaymentStatus.js";
 import Custom404Page from "./Custom404Page.js";
 import BlogDetails from "./BlogDetails.jsx";
 import PassportAgency from "./Services/passport/passportagency.jsx";
+import DubaiVisa from "./Dubaivisa.jsx";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -106,7 +107,7 @@ const Layout = ({ children }) => {
     <>
       {!hideHeader && <Header />}
       <div style={{ minHeight: "calc(100vh - 66px)" }}>{children}</div>
-      {["/", "/about-us", "/terms-conditions", "/privacy-policy", "/disclaimer", "/blogs", "/contact-us"].includes(
+      {["/", "/about-us", "/terms-conditions", "/privacy-policy", "/disclaimer", "/blogs", "/contact-us", ].includes(
         location.pathname
       ) && <Footer />}
     </>
@@ -172,6 +173,9 @@ const App = () => {
       <Route path="/police-clearance-certificate-form" element={<Layout><PoliceClearance /></Layout>} />
       <Route path="/police-clearance-certificate/proceed-to-pay" element={<Layout><PoliceClearance /></Layout>} />
       <Route path="/visa" element={<Layout><TravelVisa /></Layout>} />
+      <Route path="/dubai-tourist-visa-for-indians" element={<Layout><DubaiVisa /></Layout>} />
+
+
       <Route path="/our_partners" element={<Layout><PartnersPage /></Layout>} />
       <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
       <Route path="/failure" element={<Layout><FailurePayment /></Layout>} />
