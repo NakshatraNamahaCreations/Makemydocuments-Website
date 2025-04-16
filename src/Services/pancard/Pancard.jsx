@@ -1040,9 +1040,18 @@ const [isLoading, setIsLoading] = useState(false);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleFullNameChange = (event) => {
-    setFullName(event.target.value);
+  const handleFullNameChange = (e) => {
+    const value = e.target.value;
+    const nameRegex = /^[A-Za-z\s]*$/; // allows only alphabets and spaces
+  
+    if (nameRegex.test(value)) {
+      setFullName(value);
+      setError(""); // clear error when valid
+    } else {
+      setError("Full name should contain only letters and spaces.");
+    }
   };
+  
 
   // const handleDobChange = (event) => {
   //   setDob(event.target.value);

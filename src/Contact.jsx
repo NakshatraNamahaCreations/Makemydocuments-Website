@@ -253,12 +253,12 @@ return isValid;
         >
           <option value="">Select a Service</option>
           <option value="Insurance">Insurance</option>
-          <option value="Travel Visa">Travel visa</option>
+          <option value="Travel visa">Travel visa</option>
           <option value="Rental Agreement">Rental agreement</option>
           <option value="Lease Agreement">Lease agreement</option>
           <option value="Affidavits/ Annexure">Affidavits/Annexture</option>
           <option value="Pan Card">PanCard</option>
-          <option value="Pan Card">Passport</option>
+          <option value="Passport">Passport</option>
           <option value="Senior Citizen Card">Senior Citizen Card</option>
           <option value="Police Verification Certificate">Police verification certificate</option>
           <option value="Food License (FSSAI)">Food License (FSSAI)</option>
