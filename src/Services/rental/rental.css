@@ -252,7 +252,7 @@
 
   .continue-button {
     width: 90%; /* Make the button span most of the screen */
-    max-width: 320px; /* Set a maximum width for larger mobile screens */
+    max-width: 100%; /* Set a maximum width for larger mobile screens */
     margin: 0 auto; /* Center the button horizontally */
     border-radius: 2px;
     

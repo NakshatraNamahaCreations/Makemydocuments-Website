@@ -1908,7 +1908,7 @@ const [leadId,setLeadId]=useState();
 
     </Helmet>
      <div style={{ backgroundColor: "#f4f4f4", padding: "15px 25px", marginTop:'8%' }} className="breadcrumb-title">
-          <nav aria-label="breadcrumb">
+          <nav aria-label="breadcrumb" style={{marginTop:'1%'}}>
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item" style={{fontWeight:'bold'}}>
                 <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>Home</Link>
@@ -1935,7 +1935,7 @@ const [leadId,setLeadId]=useState();
     //       }}
         >
           <div style={{ flex: 1, textAlign: "left", fontWeight: "bold" }}>
-            <h1 style={{fontSize:'24px', fontWeight:'bold'}}>Passport Agency in Bangalore
+            <h1 style={{fontSize:'24px', fontWeight:'bold', marginTop:'10%'}}>Passport Agency in Bangalore
             </h1>
             <p>"Looking to get your passport without the hassle? <br className="d-block d-lg-none"/>
             Our expert team in Bangalore offers seamless <br className="d-block d-lg-none"/>assistance with all your passport-related needs"</p>

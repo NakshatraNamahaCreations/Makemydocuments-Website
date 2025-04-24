@@ -13,6 +13,7 @@
     }
     .container-food img{
       margin-top: -147%;
+      display: none;
     }
     .popupstyle-food .popup-food{
         width: 103%;

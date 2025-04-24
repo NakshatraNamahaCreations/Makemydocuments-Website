@@ -63,13 +63,14 @@
     line-height: 1.8;
     text-align: left;
   }
+  
 
   /* Mobile-Specific Adjustments */
   @media (max-width: 768px) {
     .address-proof-section,
     .how-it-works-section,
     .charges-section {
-      margin: 10px auto; /* Center the sections */
+      margin: 89px auto; /* Center the sections */
       text-align: left; /* Align text to the left */
     }
 
@@ -196,6 +197,7 @@
     font-size: 14px;
     margin: 0 auto; 
     border-radius: 20px;
+    display: block;
   }
   .continue-button:hover {
     background-color: #f0d400; 

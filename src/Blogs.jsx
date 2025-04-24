@@ -95,7 +95,7 @@ const Blogs = () => {
 
       </Helmet>
       <div style={{ backgroundColor: "#f4f4f4", padding: "15px 25px", marginTop:'8%' }} className="breadcrumb-title">
-  <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb" style={{marginTop:'1%'}}>
     <ol className="breadcrumb mb-0">
       <li className="breadcrumb-item" style={{fontWeight:'bold'}}>
         <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>Home</Link>

@@ -25,7 +25,6 @@ import React, { useState , useEffect} from 'react';
     import RectangleSlidingImage from "./images/rectangle sliding.svg";
 
     import girlImage from './images/girl image.jpg';
-
 import ColorCircle1 from '../src/images/cirle-image.svg';
 import Step1Image from '../src/images/step 1 1.svg'
 import Step2Image from '../src/images/step 2.svg'

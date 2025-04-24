@@ -1854,7 +1854,7 @@ const handleNext = () => {
 
 
       {/* mobil view */}
-      <div className="msme-container d-block d-lg-none" style={{marginTop:'-18%'}}>
+      <div className="msme-container d-block d-lg-none" style={{marginTop:'12%'}}>
   {/* Documents Section */}
   <div className="msme-section documents-section row-container ">
     <div className="icon-container">
