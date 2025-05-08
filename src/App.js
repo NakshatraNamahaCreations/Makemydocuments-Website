@@ -43,6 +43,7 @@ import Custom404Page from "./Custom404Page.js";
 import BlogDetails from "./BlogDetails.jsx";
 import PassportAgency from "./Services/passport/passportagency.jsx";
 import DubaiVisa from "./Dubaivisa.jsx";
+import Hongkongvisa from "./Hongkongvisa.jsx";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -174,7 +175,7 @@ const App = () => {
       <Route path="/police-clearance-certificate/proceed-to-pay" element={<Layout><PoliceClearance /></Layout>} />
       <Route path="/visa" element={<Layout><TravelVisa /></Layout>} />
       <Route path="/dubai-tourist-visa-for-indians" element={<Layout><DubaiVisa /></Layout>} />
-
+      <Route path="/hong-kong-tourist-visa-for-indians" element={<Layout><Hongkongvisa /></Layout>} />
 
       <Route path="/our_partners" element={<Layout><PartnersPage /></Layout>} />
       <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
