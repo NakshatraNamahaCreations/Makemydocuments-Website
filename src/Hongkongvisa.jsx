@@ -1659,7 +1659,7 @@ const Hongkongvisa = () => {
                   ref={stickyColumnRef}
                   style={{
                     position: isSticky ? "fixed" : "absolute",
-                    top: isSticky ? "100px" : "auto", // Adjust this to avoid banner overlap
+                    top: isSticky ? "200px" : "auto", // Adjust this to avoid banner overlap
                     right: 0,
                     width: isSticky && stickyColumnRef.current ? `${stickyColumnRef.current.offsetWidth}px` : "auto",
                     zIndex: 1000,
@@ -1715,7 +1715,7 @@ const Hongkongvisa = () => {
                       </button>
                     </div>
                    
-                    <a href="https://wa.me/+919980097315" style={{ textDecoration: "none" }}>
+                    {/* <a href="https://wa.me/+919980097315" style={{ textDecoration: "none" }}>
   <div
     style={{
       backgroundColor: "#f3f3f3",
@@ -1817,7 +1817,7 @@ const Hongkongvisa = () => {
       9am to 9pm
     </p>
   </div>
-</div>
+</div> */}
                   </div>
                 </div>
                 {/* Sticky Bottom Bar for Mobile Only */}
@@ -1839,7 +1839,7 @@ const Hongkongvisa = () => {
 >
  
 
-  <a
+  {/* <a
     href="https://wa.me/+919980097315"
     style={{
       width: "45px",
@@ -1856,7 +1856,7 @@ const Hongkongvisa = () => {
     }}
   >
     <i className="fab fa-whatsapp"></i>
-  </a>
+  </a> */}
   <button
     onClick={handleContinue}
     style={{
@@ -1874,7 +1874,7 @@ const Hongkongvisa = () => {
     Apply Now
   </button>
 
-  <a
+  {/* <a
     href="tel:+919429690973"
     style={{
       width: "45px",
@@ -1890,7 +1890,7 @@ const Hongkongvisa = () => {
     }}
   >
     <i className="fa fa-phone"></i>
-  </a>
+  </a> */}
 </div>
 
 
