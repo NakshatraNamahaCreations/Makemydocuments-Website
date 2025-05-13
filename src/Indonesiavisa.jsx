@@ -1,27 +1,23 @@
-import React, { useState, useEffect, useRef } from "react";
-import bannerimage from "../src/images/UAE_image_banner.jpg";
-import circleIcon from "../src/images/circle1.svg";
-import documentsIcon from "../src/images/documents.svg";
-import TimeIcon from "../src/images/Time.svg";
-import Price from "./images/Price Tag.svg";
-import axios from "axios";
-
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
-
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+// import "./Service.css";
+import circleIcon from "../src/images/circle1.svg";
+import Price from "../src/images/Price Tag.svg";
+import bannerimage from "../src/images/indonesiavisaindian.png";
 import { Helmet } from "react-helmet";
 
 const relatedServices = [
+  { name: "United Arab Emirates", path: "/dubai-visa" },
   { name: "Singapore", path: "/singapore-visa" },
   { name: "United Kingdom", path: "/uk-visa" },
   { name: "Australia", path: "/australia-visa" },
   { name: "Malaysia", path: "/malaysia-visa" },
   { name: "Egypt", path: "/egypet-visa" },
-  { name: "Vietnam", path: "/vietnam-visa" },
   { name: "Hong Kong", path: "/hongkong-visa" },
 
-  { name: "Indonesia", path: "/indonesia-visa" },
+  { name: "Vietnam", path: "/vietnam-visa" },
 
   { name: "Azerbaijan", path: "/azerbaijan-visa" },
   { name: "Oman", path: "/oman-visa" },
@@ -35,7 +31,7 @@ const relatedServices = [
   { name: "Uzbekistan", path: "/uzbekistan-visa" },
 ];
 
-const DubaiVisa = () => {
+const Indonesiavisa = () => {
   // const serviceRef = useRef(null);
   const navigate = useNavigate();
   //   const { services } = useParams();
@@ -94,7 +90,7 @@ const DubaiVisa = () => {
 
   const handleContinue = () => {
     // setShowPopup(true)
-    navigate("/dubai-visa-form");
+    navigate("/vietnam-visa-form");
   };
 
   useEffect(() => {
@@ -116,66 +112,57 @@ const DubaiVisa = () => {
 
   const faqs = [
     {
-      question: " Can I apply for a Dubai tourist visa online? ",
-      // answer: (
-      //   <ul style={{ listStyleType: 'disc' }}>
-      //     <li>Minimizes the conflicts between a tenant and the owner</li>
-      //     <li>Rental/lease agreement acts as an address proof</li>
-      //     <li>Acts as a proof for Bank loans</li>
-      //     <li>Helps in investment & loan</li>
-      //     <li>Vehicle registration</li>
-      //   </ul>
-      // ),
-      answer:
-        "Yes, you can apply for a Dubai tourist visa online through official visa platforms or travel agencies.",
-    },
-    {
-      question: "Is it possible to extend my Dubai tourist visa?",
-      answer:
-        "Yes, a Dubai tourist visa can be extended for up to 30 days, but the extension is subject to approval by immigration authorities.",
-    },
-    {
-      question: "Do I need to book a flight and hotel before applying for the visa?",
-      answer:
-        "Yes, you need to provide flight and hotel booking details as part of the visa application process.",
-    },
-    {
-      question: "Can I apply for a Dubai tourist visa if I have a previous visa rejection? ",
-      answer:
-        "Yes, you can still apply, but previous rejections might affect the approval process depending on the reason.",
-    },
-    {
-      question: "Is health insurance required for a Dubai tourist visa? ",
-      answer:
-        "While not mandatory, travel health insurance is highly recommended for emergencies during your stay.",
-    },
-    {
-      question: "Do I need to submit original documents for a Dubai tourist visa? ",
-      answer:
-        "No, you only need to submit scanned copies of the required documents unless requested otherwise by the authorities.",
-    },
-    {
-      question: "How can I track my Dubai tourist visa application status? ",
-      answer:
-        "You can track your application status online through the visa platform or agency you applied through.",
-    },
-    {
-      question: "Can I get a visa on arrival in Dubai? ",
-      answer:
-        "Indian nationals generally need to apply for a tourist visa before traveling, as visa on arrival is not available for most Indians.",
-    },
-    {
-      question: "Can I travel to other countries in the UAE with a Dubai tourist visa? ",
-      answer:
-        "Yes, a Dubai tourist visa allows travel to other emirates within the UAE, as long as the visa is valid.",
-    },
-    {
-      question: "What is the difference between a tourist visa and a transit visa for Dubai? ",
-      answer:
-        "A tourist visa is for leisure or business stays, while a transit visa is for shortstops (usually 48-96 hours) when passing through Dubai en route to another destination.",
-    },
-  ];
+      question:
+        " What should I do if my passport is not valid for six months? ",
 
+      answer:
+        "Your passport must be valid for at least 6 months from the date of application. If it’s not, renew your passport before applying for the visa.",
+    },
+    {
+      question: "Can I use the Indonesia Tourist Visa for business purposes?",
+      answer:
+        "No, the Indonesia Tourist Visa is strictly for tourism purposes, if you need to attend meetings or conferences, a business visa is required.",
+    },
+    {
+      question: "Do I need to visit the Indonesian embassy for visa processing?",
+      answer:
+        "No, you do not need to visit the embassy in person, you can apply for the Indonesia Tourist Visa online or through an authorized agent.",
+    },
+    {
+      question: "Can I travel to Indonesia with a valid multiple-entry visa?",
+      answer:
+        "No, the Indonesia Tourist Visa is typically issued as a single-entry visa for tourism. For multiple entries, a different visa type is required.",
+    },
+    {
+      question:
+        " Can I extend my Indonesia Tourist Visa?",
+      answer:
+        "Yes, you can extend your Indonesia Tourist Visa for an additional 30 days by applying at the immigration office in Indonesia before your initial visa expires.",
+    },
+    {
+      question: "What happens if my Indonesia Tourist Visa application is rejected?",
+      answer:
+        "If your visa application is rejected, you will need to correct any errors or missing documents and reapply for the visa.",
+    },
+    {
+      question:
+        "Can I travel to Indonesia with a single-entry visa?",
+      answer:
+        "Yes, the Indonesia Tourist Visa is usually a single-entry visa, allowing you to enter the country once within the visa's validity period.",
+    },
+    {
+      question: "Is there any age restriction for applying for an Indonesia Tourist Visa? ",
+      answer:
+        "There is no specific age restriction for the Indonesia Tourist Visa; however, minors may need additional documents like a birth certificate and consent letter from parents.",
+    },
+    {
+      question:
+        "Can I apply for an Indonesia Tourist Visa if I have a pending travel ban?",
+      answer:
+        "If you have a travel ban or previous immigration issues, it may impact your eligibility. Consult with the Indonesian embassy before applying for the Indonesia Tourist Visa.",
+    },
+   
+  ];
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -183,41 +170,54 @@ const DubaiVisa = () => {
 
   return (
     <>
-    <Helmet>
-    <title>Dubai Tourist Visa for Indians | Fees and Application Process</title>
-      <meta name="description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai.
-" />
-      <meta name="keywords" content= "Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-      <link rel="canonical" href="https://makemydocuments.com/dubai-tourist-visa-for-indians" />
-      {/* <meta name="author" content={currentMeta.canonical} /> */}
-      <meta name="rating" content="General" />
-      <meta name="revisit-after" content="2 days" />
-      <meta name="robots" content="ALL, index, follow" />
-      <meta name="distribution" content="Global" />
-      <meta name="rating" content="Safe For All" />
-      <meta name="language" content="English" />
-      <meta httpEquiv="window-target" content="_top" />
-      <meta httpEquiv="pics-label" content="for all ages" />
-      <meta name="GOOGLEBOTS" content="All, FOLLOW" />
-      <meta name="YAHOOBOTS" content="All, FOLLOW" />
-      <meta name="MSNBOTS" content="All, FOLLOW" />
-      <meta name="BINGBOTS" content="All, FOLLOW" />
-      <meta name="Googlebot-Image" content="All" />
-      <meta name="Slurp" content="All" />
-      <meta name="Scooter" content="All" />
-      <meta name="WEBCRAWLERS" content="All" />
+      <Helmet>
+        <title>
+        Indonesia Tourist Visa for Indians - Easy Online Application
+        </title>
+        <meta
+          name="description"
+          content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!"
+        />
+        <meta
+          name="keywords"
+          content=""
+        />
+        <link
+          rel="canonical"
+          href="https://makemydocuments.com/indonesia-tourist-visa-for-indians"
+        />
+        {/* <meta name="author" content={currentMeta.canonical} /> */}
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="2 days" />
+        <meta name="robots" content="ALL, index, follow" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="Safe For All" />
+        <meta name="language" content="English" />
+        <meta httpEquiv="window-target" content="_top" />
+        <meta httpEquiv="pics-label" content="for all ages" />
+        <meta name="GOOGLEBOTS" content="All, FOLLOW" />
+        <meta name="YAHOOBOTS" content="All, FOLLOW" />
+        <meta name="MSNBOTS" content="All, FOLLOW" />
+        <meta name="BINGBOTS" content="All, FOLLOW" />
+        <meta name="Googlebot-Image" content="All" />
+        <meta name="Slurp" content="All" />
+        <meta name="Scooter" content="All" />
+        <meta name="WEBCRAWLERS" content="All" />
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
-      <script>
-        {`
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"
+        ></script>
+        <script>
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QN4189EDG5');
         `}
-      </script>
+        </script>
 
-      <script>
+        <script>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -235,7 +235,7 @@ const DubaiVisa = () => {
           {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=865961251883214&ev=PageView&noscript=1" alt="Meta Pixel" />`}
         </noscript>
 
-         <script>
+        <script>
           {`
             (function(w,d,t,r,u){
               var f,n,i;w[u]=w[u]||[],f=function(){
@@ -258,9 +258,9 @@ const DubaiVisa = () => {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Make My Documents",
-        "image": "https://www.makemydocuments.com/logo.png",
-        "@id": "https://makemydocuments.com/dubai-tourist-visa-for-indians",
-        "url": "https://makemydocuments.com/dubai-tourist-visa-for-indians",
+        "image": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
+        "@id": "https://makemydocuments.com/indonesia-tourist-visa-for-indians",
+        "url": "https://makemydocuments.com/indonesia-tourist-visa-for-indians",
         "telephone": "+91-9429690973",
         "address": {
           "@type": "PostalAddress",
@@ -291,7 +291,7 @@ const DubaiVisa = () => {
           }
         ],
         "priceRange": "₹₹",
-        "description": "Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai.",
+        "description": "Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Visa Services",
@@ -308,7 +308,6 @@ const DubaiVisa = () => {
       }
     `}
   </script>
-
   <script type="application/ld+json">
     {`
       {
@@ -317,103 +316,99 @@ const DubaiVisa = () => {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Can I apply for a Dubai tourist visa online?",
+            "name": "What should I do if my passport is not valid for six months?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, you can apply for a Dubai tourist visa online through official visa platforms or travel agencies."
+              "text": "Your passport must be valid for at least 6 months from the date of application. If it’s not, renew your passport before applying for the visa."
             }
           },
           {
             "@type": "Question",
-            "name": "Is it possible to extend my Dubai tourist visa?",
+            "name": "Can I use the Indonesia Tourist Visa for business purposes?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, a Dubai tourist visa can be extended for up to 30 days, but the extension is subject to approval by immigration authorities."
+              "text": "No, the Indonesia Tourist Visa is strictly for tourism purposes. If you need to attend meetings or conferences, a business visa is required."
             }
           },
           {
             "@type": "Question",
-            "name": "Do I need to book a flight and hotel before applying for the visa?",
+            "name": "Do I need to visit the Indonesian embassy for visa processing?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, you need to provide flight and hotel booking details as part of the visa application process."
+              "text": "No, you do not need to visit the embassy in person. You can apply for the Indonesia Tourist Visa online or through an authorized agent."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I apply for a Dubai tourist visa if I have a previous visa rejection?",
+            "name": "Can I travel to Indonesia with a valid multiple-entry visa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, you can still apply, but previous rejections might affect the approval process depending on the reason."
+              "text": "No, the Indonesia Tourist Visa is typically issued as a single-entry visa for tourism. For multiple entries, a different visa type is required."
             }
           },
           {
             "@type": "Question",
-            "name": "Is health insurance required for a Dubai tourist visa?",
+            "name": "Can I extend my Indonesia Tourist Visa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "While not mandatory, travel health insurance is highly recommended for emergencies during your stay."
+              "text": "Yes, you can extend your Indonesia Tourist Visa for an additional 30 days by applying at the immigration office in Indonesia before your initial visa expires."
             }
           },
           {
             "@type": "Question",
-            "name": "Do I need to submit original documents for a Dubai tourist visa?",
+            "name": "What happens if my Indonesia Tourist Visa application is rejected?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No, you only need to submit scanned copies of the required documents unless requested otherwise by the authorities."
+              "text": "If your visa application is rejected, you will need to correct any errors or missing documents and reapply for the visa."
             }
           },
           {
             "@type": "Question",
-            "name": "How can I track my Dubai tourist visa application status?",
+            "name": "Can I travel to Indonesia with a single-entry visa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can track your application status online through the visa platform or agency you applied through."
+              "text": "Yes, the Indonesia Tourist Visa is usually a single-entry visa, allowing you to enter the country once within the visa's validity period."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I get a visa on arrival in Dubai?",
+            "name": "Is there any age restriction for applying for an Indonesia Tourist Visa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Indian nationals generally need to apply for a tourist visa before traveling, as visa on arrival is not available for most Indians."
+              "text": "There is no specific age restriction for the Indonesia Tourist Visa; however, minors may need additional documents like a birth certificate and consent letter from parents."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I travel to other countries in the UAE with a Dubai tourist visa?",
+            "name": "Can I apply for an Indonesia Tourist Visa if I have a pending travel ban?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, a Dubai tourist visa allows travel to other emirates within the UAE, as long as the visa is valid."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between a tourist visa and a transit visa for Dubai?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A tourist visa is for leisure or business stays, while a transit visa is for shortstops (usually 48-96 hours) when passing through Dubai en route to another destination."
+              "text": "If you have a travel ban or previous immigration issues, it may impact your eligibility. Consult with the Indonesian embassy before applying for the Indonesia Tourist Visa."
             }
           }
         ]
       }
     `}
   </script>
-  <meta property="og:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
-  <meta property="og:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-  <meta property="og:url" content="https://makemydocuments.com/dubai-visa" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
-  <meta property="og:site_name" content="Make My Documents" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
-  <meta name="twitter:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-  <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
-  <meta name="twitter:site" content="@makemydocuments" />
-  
+  <meta property="og:title" content="Indonesia Tourist Visa for Indians - Easy Online Application" />
+<meta property="og:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
+<meta property="og:url" content="https://makemydocuments.com/indonesia-tourist-visa-for-indians" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
+<meta property="og:site_name" content="Make My Documents" />
 
-    </Helmet>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Indonesia Tourist Visa for Indians - Easy Online Application" />
+<meta name="twitter:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
+<meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
+<meta name="twitter:site" content="@makemydocuments" />
+
+
+
+
+      </Helmet>
 
       <div
         style={{
@@ -435,7 +430,8 @@ const DubaiVisa = () => {
               aria-current="page"
               style={{ fontWeight: "bold", fontSize:'14px' }}
             >
-     Dubai Tourist Visa for Indians
+              Indonesia Tourist Visa for Indians
+
 
             </li>
           </ol>
@@ -499,7 +495,7 @@ const DubaiVisa = () => {
                       
                     }}
                   >
-                     Dubai Tourist Visa for Indians
+                   Indonesia Tourist Visa for Indians
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -561,21 +557,18 @@ const DubaiVisa = () => {
     </p>
     <p
       style={{
-        fontSize: "12px",
+        fontSize: "16px",
         fontWeight: "bold",
         color: "#333",
         margin: 0,
         backgroundColor: "#e3f2fd",
         padding: "6px 10px",
         borderRadius: "6px",
-        whiteSpace:'nowrap',
         display: "inline-block",
       }}
     >
-  04 to 05 working days
-
+     05 - 07 working days
     </p>
-  
   </div>
 
   <div style={{ flex: 1, textAlign: "right" }}>
@@ -591,7 +584,7 @@ const DubaiVisa = () => {
     </p>
     <p
       style={{
-        fontSize: "12px",
+        fontSize: "16px",
         fontWeight: "bold",
         color: "#333",
         backgroundColor: "#e3f2fd",
@@ -601,7 +594,7 @@ const DubaiVisa = () => {
         margin: 0,
       }}
     >
-      ₹7,854/-
+      ₹4,550/-
     </p>
   </div>
 </div>
@@ -666,7 +659,8 @@ const DubaiVisa = () => {
       }}
     >
       <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-      Dubai Tourist Visa for Indians
+      Indonesia Tourist Visa for Indians
+
       </h2>
 
       <div
@@ -695,15 +689,12 @@ const DubaiVisa = () => {
       >
         <div>
           <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Processing time</p>
-       
-          <p style={{ margin: 0,  fontSize: "10px", }}> 04 to 05 working days
-
-          </p>
+          <p style={{ margin: 0,  fontSize: "10px", }}>05 - 07 working days          </p>
         </div>
         <div>
           <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Starting from</p>
           <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold",  fontSize: "10px", }}>
-            ₹7,854/-
+            ₹4,550/-
           </p>
         </div>
       </div>
@@ -719,7 +710,7 @@ const DubaiVisa = () => {
                   {/* Charges Section (Scrollable) */}
                     <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{marginLeft:'2%'}}>
   {/* Image Section */}
-  {/* <div className="d-flex justify-content-center align-items-center">
+  <div className="d-flex justify-content-center align-items-center">
     <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
       <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
       <img
@@ -734,25 +725,17 @@ const DubaiVisa = () => {
         }}
       />
     </div>
-  </div> */}
+  </div>
 
   {/* Content Section */}
   <div style={{marginTop:''}}>
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
       <li>
-      UAE 30 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 7,854/-</strong>
-       </li>
-       <li>
-      UAE 30 Days Multiple  Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 14,600/-</strong>
-       </li>
-       <li>
-      UAE 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 12,446/-</strong>
-       </li>
-       <li>
-      UAE 60 Days Multiple Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 19,118/-</strong>
-       </li>
-      
+Indonesia 30 Days Single Entry E-Visa
+      <strong style={{color:'#ff9800'}}>Rs. 4,550/-</strong> </li>
+      <li>Indonesia 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs 12,200/-</strong>
+      </li>
       <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
     
     </ul>
@@ -808,24 +791,12 @@ const DubaiVisa = () => {
       </h5>
       <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
         <li>
-        UAE 30 Days Single Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 7,854</strong>
+        Indonesia 30 Days Single Entry E-Visa {" "}
+          <strong style={{ color: "#ff9800" }}>Rs. 4,550/-</strong>
         </li>
         <li>
-        UAE 30 Days Multiple  Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 14,600</strong>
-        </li>
-        <li>
-        UAE 60 Days Single Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 12,446</strong>
-        </li>
-        <li>
-        UAE 60 Days Multiple Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 19,118</strong>
+        Indonesia 60 Days Single Entry E-Visa <strong style={{ color: "#ff9800" }}> Rs 12,200
+        </strong>
         </li>
         <li>
           <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
@@ -840,64 +811,98 @@ const DubaiVisa = () => {
                   <br />
                   {/* Documents Required Section (Non-scrollable) */}
                   <div
-  className="d-none d-lg-block"
-  style={{
-    marginTop: "20px",
-    paddingLeft: "10px",
-    paddingRight: "10px",
-    paddingTop: "15px",
-    paddingBottom: "15px",
+                  className="d-none d-lg-block"
+                    style={{
+                      marginTop: "20px",
+                      paddingLeft: "10px",
+                      paddingRight: "10px",
+                      paddingTop: "15px",
+                      paddingBottom: "15px",
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                    }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "bold",
+                        marginBottom: "15px",
+                        textAlign: "left",
+                      }}
+                    >
+                     Documents Required For Indonesia Tourist Visa for Indians
+
+                    </h2>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        margin: 0,
+                        color: "#333",
+                      }}
+                    >
+                     - Clear scanned copy of passport front and back copy in colour scanner
+
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        margin: 0,
+                        color: "#333",
+                      }}
+                    >
+                     - Hotel Address Information
+
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        margin: 0,
+                        color: "#333",
+                      }}
+                    >
+                     - Return Flight Ticket
+
+
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        margin: 0,
+                        color: "#333",
+                      }}
+                    >
+                     - Traveler Photo
+
+
+                    </p>
+                  </div>
+                  <div className="d-block d-lg-none" style={{ padding: "15px" }}>
+                  <div style={{
     backgroundColor: "#fff",
     borderRadius: "8px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-  }}
->
-  <h2
-    style={{
-      fontSize: "24px",
-      fontWeight: "bold",
-      marginBottom: "15px",
-      textAlign: "left",
-    }}
-  >
-    Documents Required For Dubai Tourist Visa for Indians
-  </h2>
+    padding: "15px",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+    marginBottom: "20px"
+  }}>
+    <h5 style={{ fontSize: "18px", fontWeight: "bold" }}>Documents Required</h5>
+    <p style={{ fontSize: "14px", marginBottom: 0 }}>
+      - Clear scanned copy of passport front and back copy in colour scanner
 
+    </p>
+    <p style={{ fontSize: "14px", marginBottom: 0 }}>
+      - Hotel Address Information
 
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- India PAN Card  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport Back  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
+    </p>
+    <p style={{ fontSize: "14px", marginBottom: 0 }}>
+      - Return Flight Ticket
+    </p>
+    <p style={{ fontSize: "14px", marginBottom: 0 }}>
+      - Traveler Photo
 
-
- 
-</div>
-
-<div className="d-block d-lg-none" style={{ padding: "15px" }}>
-  <div
-    style={{
-      backgroundColor: "#fff",
-      borderRadius: "8px",
-      padding: "12px",
-      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-      marginBottom: "20px",
-    }}
-  >
-    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>
-    Documents Required For Dubai Tourist Visa for Indians
-    </h5>
-
-    <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- India PAN Card  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport Back  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
+    </p>
   </div>
-</div>
-
+                  </div>
                   <br />
                   {/* How It Works Section (Non-scrollable) */}
                   <div
@@ -1174,7 +1179,123 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.
+                                  "I was worried about the visa process, but the team made it hassle-free. The Indonesia Tourist Visa for Indians was approved quickly, and I received it well within the time frame.
+
+                                  "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    R
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                    Rohit S
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                  marginRight: "10px",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "
+                                  I applied for the Indonesia Tourist Visa for Indians, and the whole process was so convenient. The team kept me updated throughout, and the visa was delivered without any issues.
+                                  "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    A
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                  Ankit
+
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "I was a bit anxious about applying for the Indonesia Tourist Visa for Indians, but the team made everything clear and simple. The visa came through just as promised
                                   "
                                 </p>
                                 <div
@@ -1207,123 +1328,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                    Prakasha N
-
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={{
-                                  width: "30%",
-                                  padding: "20px",
-                                  backgroundColor: "#fff",
-                                  borderRadius: "8px",
-                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                                  marginRight: "10px",
-                                }}
-                              >
-                                <div style={{ marginBottom: "10px" }}>
-                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
-                                </div>
-                                <p
-                                  style={{
-                                    color: "#4B5563",
-                                    marginBottom: "10px",
-                                    fontSize: "14px",
-                                  }}
-                                >
-                                  "
-                                  Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks
-                                  "
-                                </p>
-                                <div
-                                  style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    marginTop: "auto",
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      width: "32px",
-                                      height: "32px",
-                                      borderRadius: "50%",
-                                      backgroundColor: "#E5E7EB",
-                                      color: "#fff",
-                                      fontWeight: "bold",
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                      marginRight: "10px",
-                                    }}
-                                  >
-                                    A
-                                  </div>
-                                  <span
-                                    style={{
-                                      fontWeight: "bold",
-                                      fontSize: "14px",
-                                      color: "#374151",
-                                    }}
-                                  >
-                                 Aneev Sinha
-
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={{
-                                  width: "30%",
-                                  padding: "20px",
-                                  backgroundColor: "#fff",
-                                  borderRadius: "8px",
-                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                                }}
-                              >
-                                <div style={{ marginBottom: "10px" }}>
-                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
-                                </div>
-                                <p
-                                  style={{
-                                    color: "#4B5563",
-                                    marginBottom: "10px",
-                                    fontSize: "14px",
-                                  }}
-                                >
-                                  "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport
-                                  "
-                                </p>
-                                <div
-                                  style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    marginTop: "auto",
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      width: "32px",
-                                      height: "32px",
-                                      borderRadius: "50%",
-                                      backgroundColor: "#E5E7EB",
-                                      color: "#fff",
-                                      fontWeight: "bold",
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                      marginRight: "10px",
-                                    }}
-                                  >
-                                    M
-                                  </div>
-                                  <span
-                                    style={{
-                                      fontWeight: "bold",
-                                      fontSize: "14px",
-                                      color: "#374151",
-                                    }}
-                                  >
-                                   Manoj Mano
+                                    Priya S
                                   </span>
                                 </div>
                               </div>
@@ -1351,7 +1356,8 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "I got my passport very fast wonderful work thank you Murthy sir.
+                                  "I had no issues applying for my Indonesia Tourist Visa for Indians. The step-by-step guidance was perfect, and the support team was always there to help.
+
                                   "
                                 </p>
                                 <div
@@ -1375,7 +1381,7 @@ const DubaiVisa = () => {
                                       marginRight: "10px",
                                     }}
                                   >
-                                    A
+                                    N
                                   </div>
                                   <span
                                     style={{
@@ -1384,7 +1390,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                               Anand Krishna
+                                   Neeraja V
 
                                   </span>
                                 </div>
@@ -1408,7 +1414,8 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "My passport had expired and wanted renewed at the earliest. Mr Ganesh helped me throughout and got it done. Would definitely recommend anyone who’d need the passport.
+                                  "This was the fastest Indonesia Tourist Visa for Indians application I’ve ever done. The whole procedure took just a few days, and I was able to focus on my trip without any worries.
+
                                   ."
                                 </p>
                                 <div
@@ -1432,7 +1439,7 @@ const DubaiVisa = () => {
                                       marginRight: "10px",
                                     }}
                                   >
-                                    A
+                                    K
                                   </div>
                                   <span
                                     style={{
@@ -1441,7 +1448,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Arjun Hande
+                                    Karthik C
                                   </span>
                                 </div>
                               </div>
@@ -1464,7 +1471,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "Good service and cooperation. Received my passport within 10 days from the appointment date. Thank you.
+                                  "I had a great experience applying for my Indonesia Tourist Visa for Indians through this service. The process was smooth, and I received my visa in just 5 days.
 
                                   "
                                 </p>
@@ -1489,7 +1496,7 @@ const DubaiVisa = () => {
                                       marginRight: "10px",
                                     }}
                                   >
-                                    s
+                                    D
                                   </div>
                                   <span
                                     style={{
@@ -1498,8 +1505,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Shiva Raj
-
+                                   Divya P
 
                                   </span>
                                 </div>
@@ -1583,22 +1589,22 @@ const DubaiVisa = () => {
         <div className="carousel-inner">
           {[
             {
-              name: "Prakasha N",
-              initial: "P",
+              name: "Neha",
+              initial: "N",
               review:
-                "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.",
+                "I was worried about the visa process, but the team made it hassle-free. The Indonesia Tourist Visa for Indians was approved quickly, and I received it well within the time frame.",
             },
             {
-              name: "Aneev Sinha",
+              name: "Arjun",
               initial: "A",
               review:
-                "Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks",
+                "I applied for the Indonesia Tourist Visa for Indians, and the whole process was so convenient. The team kept me updated throughout, and the visa was delivered without any issues.",
             },
             {
-              name: " Manoj Mano",
-              initial: "M",
+              name: "Priya S",
+              initial: "P",
               review:
-                "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport",
+                "I was a bit anxious about applying for the Indonesia Tourist Visa for Indians, but the team made everything clear and simple. The visa came through just as promised",
             },
           ].map((item, index) => (
             <div
@@ -2055,299 +2061,206 @@ const DubaiVisa = () => {
                 ))}
               </div>
             </div>
+
             <div
-        className="faq-section-visa"
-        // style={{
-        //   margin: "10px auto",
-        //   padding: "20px",
-        //   background: "#FFFFFF",
-        //   borderRadius: "10px",
-        //   width: "80%",
-        // }}
-      >
-        <h4
-          style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            color: "#007BFF",
-            marginBottom: "20px",
-          }}
-        >
-          FAQs
-        </h4>
-        <p
-          style={{
-            textAlign: "center",
-            fontWeight: "500",
-            marginBottom: "30px",
-          }}
-        >
-          Need help? Contact us for any queries related to us
-        </p>
-        <div className="faq-list">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="faq-item"
-              style={{ marginBottom: "10px" }}
+              className="faq-section-visa"
+              // style={{
+              //   margin: "10px auto",
+              //   padding: "20px",
+              //   background: "#FFFFFF",
+              //   borderRadius: "10px",
+              //   width: "80%",
+              // }}
             >
-              <button
+              <h4
                 style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  padding: "10px 20px",
-                  border: "1px solid #007BFF",
-                  borderRadius: "5px",
-                  background: "#F9F9F9",
-                  fontWeight: "500",
-                  cursor: "pointer",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  color: "#007BFF",
+                  marginBottom: "20px",
                 }}
-                onClick={() => handleToggle(index)}
               >
-               <h5 style={{fontSize:'16px'}}>{faq.question}</h5> 
-                <span
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "16px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
-              {openIndex === index && (
-                <div
-                  style={{
-                    marginTop: "10px",
-                    padding: "10px 20px",
-                    background: "#F3F3F3",
-                    borderRadius: "5px",
-                    color: "#333",
-                  }}
-                >
-                  {faq.answer}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-        <br></br>
-        <>
-          <h2 className="faq-tag-title-h3">
-            <strong>Dubai Tourist Visa for Indians - A Complete Guide 
+                FAQs
+              </h4>
+              <p
+                style={{
+                  textAlign: "center",
+                  fontWeight: "500",
+                  marginBottom: "30px",
+                }}
+              >
+                Need help? Contact us for any queries related to us
+              </p>
+              <div className="faq-list">
+                {faqs.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="faq-item"
+                    style={{ marginBottom: "10px" }}
+                  >
+                    <button
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        width: "100%",
+                        padding: "10px 20px",
+                        border: "1px solid #007BFF",
+                        borderRadius: "5px",
+                        background: "#F9F9F9",
+                        fontWeight: "500",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => handleToggle(index)}
+                    >
+                      <h5 style={{ fontSize: "16px" }}>{faq.question}</h5>
+                      <span
+                        style={{
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          marginLeft: "10px",
+                        }}
+                      >
+                        {openIndex === index ? "▲" : "▼"}
+                      </span>
+                    </button>
+                    {openIndex === index && (
+                      <div
+                        style={{
+                          marginTop: "10px",
+                          padding: "10px 20px",
+                          background: "#F3F3F3",
+                          borderRadius: "5px",
+                          color: "#333",
+                        }}
+                      >
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <br></br>
+              <>
+                <h2 className="faq-tag-title-h3">
+                  <strong>
+                  Indonesia Tourist Visa for Indians - A Complete Guide
+                  </strong>
+                </h2>
+                <br />
+              
+                <p>Indian passport holders are required to apply for a tourist visa to visit Indonesia. Our service simplifies the process of obtaining an Indonesia Tourist Visa, ensuring a quick and hassle-free experience. We guide you through every step of the application, from document submission to visa approval, so you can focus on planning your trip.
+                </p>
 
-            </strong>
-          </h2>
-          <br/>
-          <h2 style={{fontSize:'20px', fontWeight:'bold'}}> Types of Dubai Tourist Visas for Indians
-          </h2>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> 30-Day Tourist Visa: </h3>
-          <p style={{textAlign:'left'}}>
-          The 30-Day Tourist Visa is perfect for travelers who want to explore Dubai for a short period. This visa allows you to stay in Dubai for up to 30 days, providing ample time to explore the city's iconic attractions, shopping destinations and cultural sites. This visa is ideal for a quick vacation or business trip.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> 90-Day Tourist Visa
-          : </h3>
-          <p style={{textAlign:'left'}}>
-          The 90-Day Tourist Visa is designed for those who want to stay in Dubai for a longer duration. With this visa, you can stay up to 90 days, making it perfect for travelers planning a more extended visit. It’s an excellent option for tourists who want to enjoy Dubai at a relaxed pace or who are attending long-term events or activities.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> Multiple Entry Visa
-          : </h3>
-          <p style={{textAlign:'left'}}>
-          The Multiple Entry Visa allows travelers to visit Dubai multiple times within a specific period (usually six months). This visa is ideal for individuals who need to travel to Dubai for business or leisure multiple times during their stay. The multiple-entry option is more flexible and convenient, as you don't need to apply for a new visa every time you travel.
-          </p>
-          <br/>
-          <h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-  Who is Eligible for a Dubai Tourist Visa?
-</h2>
-<br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    <strong>Indian Nationals:</strong> Indian passport holders are eligible to apply for a Dubai tourist visa.
-  </li>
-  <li>
-    <strong>Age Requirement:</strong> Applicants must be 18 years or older. Minors must travel with parents or a guardian.
-  </li>
-  <li>
-    <strong>Valid Passport:</strong> Passport must be valid for at least six months from the date of travel.
-  </li>
-  <li>
-    <strong>Travel Purpose:</strong> The visa is for those visiting Dubai for tourism, leisure, or short business trips.
 
-  </li>
-  <li>
-    <strong>Clear Travel History:</strong> Applicants should have a clean travel history without any prior visa violations or overstay issues.
-  </li>
-  <li>
-    <strong>Return Ticket:</strong> A return flight booking is typically required to prove the intention of returning to India after the visit.
-
-  </li>
-  <li>
-    <strong>Hotel Accommodation:</strong> Proof of hotel booking or accommodation details in Dubai is necessary.
-
-  </li>
-  <li>
-    <strong>No Criminal Record:</strong> A clean criminal background is essential for visa approval.
-
-  </li>
-</ul>
-<br/>
-<h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-Why Choose Dubai as a Travel Destination?
+                <br />
+                <h2 style={{ fontSize: "22px", fontWeight: "bold" }}> What are the Types of Indonesia Visa
 
 </h2>
-<br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    <strong>World-Class Attractions:</strong> Dubai is home to some of the world’s most iconic landmarks, including the Burj Khalifa, Burj Al Arab and Palm Jumeirah.
-  </li>
-  <li>
-    <strong>Shopping Paradise:</strong> Dubai boasts some of the largest malls, including the Dubai Mall, offering a vast range of international brands, luxury goods and entertainment options.
-
-  </li>
-  <li>
-    <strong>Luxury and Comfort:</strong>  The city is renowned for its luxury hotels, resorts and high-end experiences, catering to those seeking a lavish lifestyle.
-
-  </li>
-  <li>
-    <strong>Adventure and Thrills:</strong>  From desert safaris and dune bashing to skydiving over the Palm, Dubai offers thrilling activities for adventure seekers.
-
-
-  </li>
-  <li>
-    <strong>Vibrant Nightlife:</strong> Dubai offers a lively nightlife scene with upscale bars, nightclubs and beach parties.
-
-  </li>
-  <li>
-    <strong>Events and Festivals:</strong> The city hosts various international events, including the Dubai Shopping Festival, Dubai World Cup and global music festivals.
-  </li>
- 
-</ul>
-<br/>
-<h2 style={{fontSize:'16px', fontWeight:'bold'}}>How to Apply for a Dubai Tourist Visa for Indians</h2>
-          
-<br/>
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}>Register Online
-: </h3>
-          <p style={{textAlign:'left'}}>
-          The first step in applying for a Dubai Tourist Visa is to register online through the official visa application platform. You will need to provide basic personal information, such as your name, nationality, passport details, and travel dates.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Upload Documents
-: </h3>
-          <p style={{textAlign:'left'}}>
-          After registering, you’ll need to upload necessary documents like a clear scan of your passport, a recent passport-sized photograph, flight bookings, hotel reservations, and proof of financial stability (e.g., bank statements).
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Documents Verification
-: </h3>
-          <p style={{textAlign:'left'}}>
-          Once the documents are uploaded, they will undergo a verification process. The Dubai immigration authorities will check for document authenticity and ensure that all necessary information has been provided.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Payment
-: </h3>
-          <p style={{textAlign:'left'}}>
-          Next, you’ll be required to make the payment for the visa application. The payment can be made online using various methods, such as debit/credit cards or bank transfers. Once the payment is confirmed, the processing of your visa application begins.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> Receive your E-Visa via E-mail
-
-: </h3>
-          <p style={{textAlign:'left'}}>
-          After processing your application, the approved tourist visa will be sent to your email address in the form of an e-visa. This e-visa will contain all the details about your travel, including the visa validity, entry dates, and duration of stay. Ensure that you print a copy of your e-visa to present at immigration upon arrival in Dubai.
-
-          </p>
-          <br/>
-          <h2 style={{fontSize:'18px', fontWeight:'bold'}}>Things to Know Before Traveling          </h2>
-          <br/>
-          <h3 style={{fontSize:'17px', fontWeight:'bold'}}> Dubai Travel Restrictions </h3>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Health Insurance
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Travel insurance covering health and medical emergencies is often recommended.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Customs Regulations
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Adhere to Dubai’s strict customs regulations, including limits on alcohol and restricted items.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Baggage Allowances
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Be mindful of baggage restrictions and customs allowances for duty-free goods.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Travel Advisories
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Always check for any specific travel advisories or regional restrictions before departure.
-          </p>
-          <br/>
-         
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Travel Restrictions for Certain Nationalities
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Some countries may face specific entry restrictions; always check the latest updates before applying for a visa.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Return Flight 
-
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Proof of a return flight booking or onward travel may be required.
-          </p>
-        <br/>
-          <h3 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-          Important Travel Tips
-
-</h3>
-<p>Here are a few essential travel tips for your visit to Dubai:
+                <br/>
+                <p>
+Indonesia offers several types of visas depending on the purpose of your visit. Here’s a breakdown of the main visa types:
 </p>
 <br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    Always carry a copy of your passport and visa.
 
-  </li>
-  <li>
-  Respect local customs and laws, such as dress codes in public places.
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                Tourist Visa
+                </h3>
+              <p>A Tourist Visa is required for those traveling to Indonesia for leisure or tourism. It allows you to explore the country and enjoy its cultural and natural attractions.
+              </p>
+                <br />
+                
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                Business Visa
+
+                </h3>
+              <p>A Business Visa is essential for individuals traveling to Indonesia for business purposes. Whether attending meetings, conferences, or business-related events, this visa facilitates professional engagements in the country.
+              </p>         
+<br/>
+
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+Social-Cultural Visa
+
+                </h3>
+              <p>The Social-Cultural Visa is designed for visitors traveling for family visits, cultural exchanges, or social purposes. It allows you to stay in Indonesia for personal reasons, such as visiting relatives or participating in cultural programs.
+              </p>         
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+Work Visa
+
+                </h3>
+              <p>If you are planning to work in Indonesia, you will need a Work Visa. This visa is required for employment purposes and ensures you can legally work while in the country.
+              </p>         
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+Transit Visa
+
+                </h3>
+              <p>The Transit Visa is for travelers who are passing through Indonesia on their way to another destination. It allows a short stay in the country while you wait for your next flight or onward journey.
+              </p>         
+<br/>
+
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Indonesia Visa Extension and Renewal</h2>
+<br/>
+<p>If you're planning to extend your stay in Vietnam, you can apply for an extension or renewal of your visa through the appropriate channels. Our team can assist in guiding you through the necessary steps to ensure your stay is extended smoothly.
+</p>
+<br/>
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>How to Avoid Indonesia Visa Rejection?</h2>
+<p>To avoid Indonesia visa rejection, ensure that you:
+</p>
+<p> - Submit accurate and complete documents.
+
+</p>
+<p> - Apply well in advance of your travel date.
+
+</p>
+<p> - Double-check your passport validity (it should be valid for at least 6 months).</p>
+<p> - Provide proof of sufficient funds for your stay in Indonesia.</p>
+<p> - Ensure that your return flight and hotel booking are confirmed.
+</p>
+<br/>
+
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Is there an Indonesia Visa on Arrival for Indian Passport Holders?</h2>
+<br/>
+
+<p>Yes, Indonesia offers a Visa on Arrival (VoA) for Indian passport holders. The Visa on Arrival is available for tourism and business purposes, allowing you to stay for a maximum of 30 days, extendable by another 30 days. Ensure that you have the necessary documents, including a valid passport, return flight ticket, and sufficient funds.</p>
+<br/>
+
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Is travel insurance required for an Indonesia Visa Application?</h2>
+<br/>
+
+<p>Travel insurance is not mandatory when applying for an Indonesia Tourist Visa, but it is highly recommended. Insurance helps cover unexpected events such as medical emergencies, cancellations, or delays, ensuring a safe and stress-free trip.
+</p>
+<br/>
 
 
-  </li>
-  <li>
-  Be mindful of the weather, as Dubai can be extremely hot during summer months.
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Why Choose Make My Document to Apply for an Indonesia Tourist Visa?</h2>
+<br/>
+
+<p>Choosing Make My Document for your Indonesia Tourist Visa application ensures a smooth and hassle-free experience. We provide:</p>
+<br/>
+<p> - Quick and reliable service</p>
+<p> - Expert guidance throughout the application process</p>
+<p> - Secure document submission and verification</p>
+<p> - Fast processing and delivery of your visa</p>
 
 
-  </li>
-  <li>
-  Stay hydrated and carry sunscreen to protect from the sun.
+<br/>
 
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> WThings to Know Before Traveling to Hong Kong
+</h2>
+<br/>
+<p>Before traveling to Indonesia, consider the following tips:</p>
+<br/>
+<p> <strong>Currency:</strong> The local currency is the Indonesian Rupiah (IDR). It's a good idea to carry some local currency for small expenses.</p>
+<p> <strong>Language:</strong> Bahasa Indonesia is the official language, but English is widely spoken in tourist areas.</p>
+<p> <strong>Health:</strong>  Check if any vaccinations are required or recommended before your trip.</p>
+<p> <strong>Cultural Etiquette:</strong> Indonesians are known for their hospitality, but be mindful of local customs, especially in temples and rural areas.</p>
+<p> <strong>Weather:</strong> Indonesia has a tropical climate, so pack light, comfortable clothes and be prepared for rain if traveling during the wet season.</p>
+<br/>
 
-
-  </li>
-  <li>
-  Familiarize yourself with Dubai’s public transport system for easy travel across the city.
-
-
-  </li>
-  <li>
-   Ensure you have travel insurance for emergencies or unforeseen circumstances.
-
-  </li>
- 
-</ul>
-          <br/>
-        </>
-      </div>
-
+              </>
+            </div>
             <br/>
           </div>
         </div>
@@ -2356,4 +2269,4 @@ Why Choose Dubai as a Travel Destination?
   );
 };
 
-export default DubaiVisa;
+export default Indonesiavisa;

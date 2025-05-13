@@ -1,1567 +1,102 @@
-import React, { useState, useEffect } from "react";
-import Image30 from "../../images/passport_image.svg";
+import React, { useState, useEffect, useRef } from "react";
+import bannerimage from "../../images/passportindianbanner.png";
 import circleIcon from "../../images/circle1.svg";
 import documentsIcon from "../../images/documents.svg";
 import TimeIcon from "../../images/Time.svg";
 import Price from "../../images/Price Tag.svg";
 import axios from "axios";
-import { useLayoutEffect } from "react";
+
 import { Link } from "react-router-dom";
 import "../passport/passport.css"
-import { ArrowLeft } from "lucide-react";
-import { FaArrowLeft } from "react-icons/fa";
-import howIcon from "../../images/how.svg";
+
 import { useNavigate, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-const stateData = [
-  {
-    state:"Arunachal Pradesh",
-    districts:[
-
-"Anjaw",
-"Changlang",
-"Dibang Valley",
-"East Kameng",
-"East Siang",
-"Kamle",
-"Kra Daadi",
-"Kurung Kumey",
-"Leparada",
-"Lohit",
-"Longding", 
-"Lower Dibang Valley",
-"Lower Siang",
-"Lower Subansiri",
-"Namsai",
-"Pakke Kessang",
-"Papum Pare ",
-"Shi Yomi",
-"Siang",
-"Tawang", 
-"Tirap", 
-"Upper Siang", 
-"Upper Subansiri",
-"West Kameng", 
-"West Siang"]
-  },
-  {
-    state: "Andhra Pradesh",
-    districts: ["Alluri Sitharama Raju","Anakapalli","Ananthapuramu","Annamayya" ,"Bapatla" , "Chittoor" , "Dr. B.R. Ambedkar Konaseema","East Godavari", "Eluru" ,"Guntur", "Kakinada", "Krishna", "Kurnool","Nandyal", "Ntr", "Palnadu", "Parvathipuram Manyam", "Prakasam", "Sri Potti Sriramulu Nellore", "Sri Sathya Sai", "Srikakulam","Tirupati","Visakhapatnam","Vizianagaram", "West Godavari","Y.S.R."],
-  },
-  {
-    state: "Arunachal Pradesh",
-    districts: ["Anjaw",
-    "Changlang",
-    "Dibang Valley",
-    "East Kameng",
-    "East Siang",
-    "Itanagar Capital Complex",
-    "Kamle",
-    "Kra Daadi",
-    "Kurung Kumey",
-    "Lepa Rada",
-    "Lohit",
-    "Longding",
-    "Lower Dibang Valley",
-    "Lower Siang",
-    "Lower Subansiri",
-    "Namsai",
-    "Pakke-Kessang",
-    "Papum Pare",
-    "Shi-Yomi",
-    "Siang",
-    "Tawang",
-    "Tirap",
-    "Upper Siang",
-    "Upper Subansiri",
-    "West Kameng",
-    "West Siang"],
-  },
-  {
-    state: "Assam",
-    districts: [
-      "Bajali",
-      "Baksa",
-      "Barpeta",
-      "Biswanath",
-      "Bongaigaon",
-      "Cachar",
-      "Charaideo",
-      "Chirang",
-      "Darrang",
-      "Dhemaji",
-      "Dhubri",
-      "Dibrugarh",
-      "Goalpara",
-      "Golaghat",
-      "Hailakandi",
-      "Hojai",
-      "Jorhat",
-      "Kamrup",
-      "Kamrup Metropolitan",
-      "Karbi Anglong",
-      "Karimganj",
-      "Kokrajhar",
-      "Lakhimpur",
-      "Majuli",
-      "Morigaon",
-      "Nagaon",
-      "Nalbari",
-      "Sivasagar",
-      "Sonitpur",
-      "South Salmara-Mankachar",
-      "Tinsukia",
-      "Udalguri",
-      "West Karbi Anglong"
-    ]
-  },  
-  {
-    state: "Bihar",
-    districts: ["Araria", 
-      "Arwal",
-      "Aurangabad", 
-      "Banka",
-      "Begusarai", 
-      "Bhagalpur",
-      "Bhojpur",
-      "Buxar",
-      "Darbhanga", 
-      "Gaya",
-      "Gopalganj", 
-      "Jamui",
-      "Jehanabad", 
-      "Kaimur (Bhabua)",
-      "Katihar",
-      "Khagaria",
-      "Kishanganj", 
-      "Lakhisarai",
-      "Madhepura",
-      "Madhubani",
-      "Munger",
-      "Muzaffarpur", 
-      "Nalanda",
-      "Nawada",
-      "Pashchim Champaran", 
-      "Patna",
-      "Purbi Champaran", 
-      "Purnia",
-      "Rohtas",
-      "Saharsa", 
-      "Samastipur", 
-      "Saran",
-      "Sheikhpura", 
-      "Sheohar",
-      "Sitamarhi",
-      "Siwan",
-      "Supaul",
-      "Vaishali"],
-  },
-  {
-    state: "Chhattisgarh",
-    districts: ["Balod", 
-      "Balodabazar-Bhatapara",
-      "Balrampur-Ramanujganj",
-      "Bastar", 
-      "Bemetara", 
-      "Bijapur", 
-      "Bilaspur", 
-      "Dakshin Bastar Dantewada", 
-      "Dhamtari", 
-      "Durg", 
-      "Gariyaband", 
-      "Gaurela-Pendra-Marwahi", 
-      "Janjgir-Champa", 
-      "Jashpur", 
-      "Kabeerdham", 
-      "Khairagarh-Chhuikhadan-Gandai",
-      "Kondagaon", 
-      "Korba", 
-      "Korea", 
-      "Mahasamund", 
-      "Manendragarh-Chirmiri-Bharatpur(M C B)",
-     " Mohla-Manpur-Ambagarh Chouki", 
-      "Mungeli", 
-      "Narayanpur", 
-      "Raigarh", 
-      "Raipur", 
-      "Rajnandgaon", 
-      "Sakti",
-      "Sarangarh-Bilaigarh",
-      "Sukma", 
-      "Surajpur", 
-      "Surguja", 
-      "Uttar Bastar Kanker"],
-  },
-  {
-    state: "Goa",
-    districts: [ "North Goa",
-      "South Goa"],
-  },
-  {
-    state: "Gujarat",
-    districts: ["Ahmedabad", 
-      "Amreli",
-      "Anand",
-      "Arvalli", 
-     " Banas Kantha", 
-      "Bharuch",
-      "Bhavnagar", 
-      'Botad',
-      "Chhotaudepur", 
-      "Dahod",
-      "Dangs",
-      "Devbhumi Dwarka", 
-      "Gandhinagar",
-      "Gir Somnath",
-      "Jamnagar",
-      "Junagadh",
-      "Kachchh",
-      "Kheda",
-      "Mahesana", 
-      "Mahisagar", 
-      "Morbi",
-      "Narmada", 
-      "Navsari",
-      'Panch Mahals', 
-      "Patan",
-      "Porbandar", 
-      "Rajkot",
-      "Sabar Kantha", 
-      "Surat",
-      "Surendranagar", 
-      "Tapi",
-      "Vadodara", 
-      'Valsad'],
-  },
-  {
-    state: "Haryana",
-    districts: [ "Ambala",
-      "Bhiwani",
-      "Charkhi Dadri",
-      "Faridabad",
-      "Fatehabad",
-      "Gurugram",
-      "Hisar",
-      "Jhajjar",
-      "Jind",
-      "Kaithal",
-      "Karnal",
-      "Kurukshetra",
-      "Mahendragarh",
-      "Nuh",
-      "Palwal",
-      "Panchkula",
-      "Panipat",
-      "Rewari",
-      "Rohtak",
-      "Sirsa",
-      "Sonipat",
-      "Yamunanagar"],
-  },
-  {
-    state:"Jammu and Kashmir",
-    districts :["Anantnag",
-    "Bandipora",
-    "Baramulla",
-    "Budgam",
-    "Doda",
-    "Jammu",
-    "Kathua",
-    "Kishtwar",
-    "Kulgam",
-    "Kupwara",
-    "Poonch",
-    "Pulwama",
-    "Rajouri",
-    "Ramban",
-    "Reasi",
-    "Samba",
-    "Shopian",
-    "Srinagar",
-    "Udhampur"]
-  },
-  {
-    state: "Himachal Pradesh",
-    districts: ["Bilaspur" ,
-      "Chamba",
-      "Hamirpur", 
-      "Kangra", 
-      'Kinnaur' ,
-      'Kullu' ,
-      'Lahaul And Spiti' ,
-      'Mandi' ,
-      'Shimla' ,
-      'Sirmaur', 
-      'Solan' ,
-      'Una'],
-  },
-  {
-    state: "Jharkhand",
-    districts: ["Bokaro", 
-      'Chatra' ,
-      'Deoghar' ,
-      'Dhanbad' ,
-      'Dumka' ,
-      'East Singhbum' ,
-      'Garhwa' ,
-      'Giridih' ,
-      'Godda' ,
-      'Gumla' ,
-      'Hazaribagh', 
-      'Jamtara' ,
-      'Khunti' ,
-      'Koderma' ,
-      'Latehar' ,
-      'Lohardaga', 
-      'Pakur',
-      'Palamu' ,
-      'Ramgarh' ,
-      'Ranchi' ,
-      'Sahebganj' ,
-      'Saraikela Kharsawan' ,
-      'Simdega' ,
-      'West Singhbhu'],
-  },
-  {
-    state: "Karnataka",
-    districts: [
-      "Bagalkot",
-      "Ballari (Bellary)",
-      "Belagavi (Belgaum)",
-      "Bengaluru (Bangalore) Rural",
-      "Bengaluru (Bangalore) Urban",
-      "Bidar",
-      "Chamarajanagar",
-      "Chikballapur",
-      "Chikkamagaluru (Chikmagalur)",
-      "Chitradurga",
-      "Dakshina Kannada",
-      "Davangere",
-      "Dharwad",
-      "Gadag",
-      "Hassan",
-      "Haveri",
-      "Kalaburagi (Gulbarga)",
-      "Kodagu",
-      "Kolar",
-      "Koppal",
-      "Mandya",
-      "Mysuru (Mysore)",
-      "Raichur",
-      "Ramanagara",
-      "Shivamogga (Shimoga)",
-      "Tumakuru (Tumkur)",
-      "Udupi",
-      " Uttara Kannada (Karwar)",
-      " Vijayapura (Bijapur)",
-      "Yadgir",
-    ],
-  },
-  {
-    state: "Kerala",
-    districts: ["Alappuzha",
-      "Ernakulam",
-      "Idukki" ,
-      "Kannur",
-      "Kasaragod", 
-      "Kollam",
-      "Kottayam", 
-      "Kozhikode", 
-      "Malappuram", 
-      "Palakkad",
-      "Pathanamthitta", 
-      "Thiruvananthapuram", 
-      "Thrissur",
-      "Wayanad"],
-  },
-  {
-    state:"Ladakh",
-    districts:["Leh",
-    "Kargil"]
-  },
-  {
-    state: "Madhya Pradesh",
-    districts: [ "Agar Malwa",
-      "Alirajpur",
-      "Anuppur",
-      "Ashoknagar",
-      "Balaghat",
-      "Barwani",
-      "Betul",
-      "Bhind",
-      "Bhopal",
-      "Burhanpur",
-      "Chhatarpur",
-      "Chhindwara",
-      "Damoh",
-      "Datia",
-      "Dewas",
-      "Dhar",
-      "Dindori",
-      "Guna",
-      "Gwalior",
-      "Harda",
-      "Hoshangabad",
-      "Indore",
-      "Jabalpur",
-      "Jhabua",
-      "Katni",
-      "Khandwa",
-      "Khargone",
-      "Mandla",
-      "Mandsaur",
-      "Morena",
-      "Narsinghpur",
-      "Neemuch",
-      "Niwari",
-      "Panna",
-      "Raisen",
-      "Rajgarh",
-      "Ratlam",
-      "Rewa",
-      "Sagar",
-      "Satna",
-      "Sehore",
-      "Seoni",
-      "Shahdol",
-      "Shajapur",
-      "Sheopur",
-      "Shivpuri",
-      "Sidhi",
-      "Singrauli",
-      "Tikamgarh",
-      "Ujjain",
-      "Umaria",
-      "Vidisha"],
-  },
-  {
-    state:"Lakshadweep",
-    districts:["Lakshadweep"]
-  },
-  {
-    state: "Maharashtra",
-    districts: [
-      "Ahilyanagar",
-      "Akola",
-      "Amravati",
-      "Beed",
-      "Bhandara",
-      "Buldhana",
-      "Chandrapur",
-      "Chhatrapati Sambhajinagar",
-      "Dharashiv",
-      "Dhule",
-      "Gadchiroli",
-      "Gondia",
-      "Hingoli",
-      "Jalgaon",
-      "Jalna",
-      "Kolhapur",
-      "Latur",
-      "Mumbai",
-      "Mumbai Suburban",
-      "Nagpur",
-      "Nanded",
-      "Nandurbar",
-      "Nashik",
-      "Palghar",
-      "Parbhani",
-      "Pune",
-      "Raigad",
-      "Ratnagiri",
-      "Sangli",
-      "Satara",
-      "Sindhudurg",
-      "Solapur",
-      "Thane",
-      "Wardha",
-      "Washim",
-      "Yavatmal"
-    ]
-  },
-  
-  {
-    state: "Manipur",
-    districts: [ "Bishnupur",
-      "Chandel",
-      "Churachandpur",
-      "Imphal East",
-      "Imphal West",
-      "Jiribam",
-      "Kakching",
-      "Kamjong",
-      "Kangpokpi",
-      "Noney",
-      "Peren",
-      "Senapati",
-      "Tamenglong",
-      "Thoubal",
-      "Ukhrul"],
-  },
-  {
-    state: "Meghalaya",
-    districts: [ "East Garo Hills",
-      "East Jaintia Hills",
-      "East Khasi Hills",
-      "Eastern West Khasi Hills",
-      "North Garo Hills",
-      "Ri Bhoi",
-      "South Garo Hills",
-      "South West Garo Hills",
-      "South West Khasi Hills",
-      "West Garo Hills",
-      "West Jaintia Hills",
-      "West Khasi Hills"],
-  },
-  {
-    state: "Mizoram",
-    districts: [  "Aizawl",
-      "Champhai",
-      "Hnahthial",
-      "Kolasib",
-      "Lawngtlai",
-      "Lunglei",
-      "Mamit",
-      "Saitual",
-      "Serchhip",
-      "Siaha",
-      "Vaihnuai"],
-  },
-  {
-    state: "Nagaland",
-    districts: [ "Chumoukedima",
-      "Dimapur",
-      "Kiphire",
-      "Kohima",
-      "Longleng",
-      "Mokokchung",
-      "Mon",
-      "Niuland",
-      "Noklak",
-      "Peren",
-      "Phek",
-      "Shamator",
-      "Tseminyu",
-      "Tuensang",
-      "Wokha",
-      "Zunheboto"],
-  },
-  {
-    state: "Odisha",
-    districts: [  "Angul",
-      "Balangir",
-      "Balasore",
-      "Bargarh",
-      "Bhadrak",
-      "Boudh",
-      "Cuttack",
-      "Deogarh",
-      "Dhenkanal",
-      "Gajapati",
-      "Ganjam",
-      "Jagatsinghpur",
-      "Jajpur",
-      "Jharsuguda",
-      "Kalahandi",
-      "Kandhamal",
-      "Kendrapara",
-      "Kendujhar",
-      "Khurda",
-      "Koraput",
-      "Malkangiri",
-      "Mayurbhanj",
-      "Nabarangpur",
-      "Nayagarh",
-      "Nuapada",
-      "Puri",
-      "Rayagada",
-      "Sambalpur",
-      "Subarnapur",
-      "Sundargarh"],
-  },
-  {
-    state: "Punjab",
-    districts: [ "Amritsar",
-      "Barnala",
-      "Bathinda",
-      "Faridkot",
-      "Fatehgarh Sahib",
-      "Firozpur",
-      "Gurdaspur",
-      "Hoshiarpur",
-      "Jalandhar",
-      "Kapurthala",
-      "Ludhiana",
-      "Mansa",
-      "Moga",
-      "Muktsar",
-      "Nawan Shehr",
-      "Patiala",
-      "Rupnagar",
-      "Sahibzada Ajit Singh Nagar (Mohali)",
-      "Sangrur",
-      "Tarn Taran"],
-  },
-  {
-    state: "Rajasthan",
-    districts: [  "Ajmer",
-      "Alwar",
-      "Anupgarh",
-      "Balotra",
-      "Banswara",
-      "Baran",
-      "Barmer",
-      "Beawar",
-      "Bharatpur",
-      "Bhilwara",
-      "Bikaner",
-      "Bundi",
-      "Chittorgarh",
-      "Churu",
-      "Dausa",
-      "Deeg",
-      "Dholpur",
-      "Didwana-Kuchaman",
-      "Dudu",
-      "Dungarpur",
-      "Ganganagar",
-      "Gangapurcity",
-      "Hanumangarh",
-      "Jaipur",
-      "Jaipur (Gramin)",
-      "Jaisalmer",
-      "Jalore",
-      "Jhalawar",
-      "Jhunjhunu",
-      "Jodhpur",
-      "Jodhpur (Gramin)",
-      "Karauli",
-      "Kekri",
-      "Khairthal-Tijara",
-      "Kota",
-      "Nagaur",
-      "Neem Ka Thana",
-      "Pali",
-      "Phalodi",
-      "Shahpura",
-      "Sikar",
-      "Sirohi",
-      "Tonk",
-      "Udaipur",
-      "Pratapgarh",
-      "Rajsamand",
-      "Salumbar",
-      "Sanchore",
-      "Sawai Madhopur"],
-  },
-  {
-    state: "Sikkim",
-    districts: ["Gangtok", "Namchi", "Mangan", "Soreng", "Gyalshing", "Pakyong"],
-  },
-  {
-    state: "Tamil Nadu",
-    districts: ["Ariyalur",
-      "Chengalpattu",
-      "Chennai", 
-      "Coimbatore",
-      "Cuddalore",
-      "Dharmapuri", 
-      "Dindigul",  
-      "Erode", 
-      "Kallakurichi",
-      "Kancheepuram",
-      "Kanniyakumari", 
-      "Karur",
-      "Krishnagiri",
-      "Madurai",
-      "Mayiladuthurai", 
-      "Nagapattinam",
-      "Namakkal",
-      "Perambalur", 
-      "Pudukkottai", 
-      "Ramanathapuram", 
-      "Ranipet",
-      "Salem",
-      "Sivaganga",
-      "Tenkasi",
-      "Thanjavur", 
-      "The Nilgiris", 
-      "Theni", 
-      "Thiruvallur", 
-      "Thiruvarur", 
-      "Thoothukkudi",
-      "Tiruchirappalli", 
-      "Tirunelveli",
-      "Tirupathur", 
-      "Tiruppur",
-      "Tiruvannamalai", 
-      "Vellore",
-      "Viluppuram", 
-      "Virudhunagar",],
-  },
-  {
-    state: "Telangana",
-    districts: [ "Adilabad",
-      "Hyderabad",
-      "Jagtial",
-      "Jangaon",
-      "Jayashankar Bhupalapally",
-      "Jogulamba Gadwal",
-      "Kamareddy",
-      "Karimnagar",
-      "Khammam",
-      "Komaram Bheem Asifabad",
-      "Mahabubabad",
-      "Mahabubnagar",
-      "Mancherial",
-      "Medak",
-      "Medchal-Malkajgiri",
-      "Mulugu",
-      "Nagarkurnool",
-      "Nalgonda",
-      "Nirmal",
-      "Nizamabad",
-      "Peddapalli",
-      "Rajanna Sircilla",
-      "Rangareddy",
-      "Sangareddy",
-      "Siddipet",
-      "Suryapet",
-      "Vikarabad",
-      "Warangal",
-      "Warangal (Rural)",
-      "Yadadri Bhuvanagiri"],
-  },
-  {
-    state: "Tripura",
-    districts: [ "Dhalai",
-      "Gomati",
-      "Khowai",
-      "North Tripura",
-      "South Tripura",
-      "Unakoti",
-      "West Tripura"],
-  },
-  {
-    state: "Uttar Pradesh",
-    districts: [  "Agra",
-      "Aligarh",
-      "Ambedkar Nagar",
-      "Amethi",
-      "Amroha",
-      "Auraiya",
-      "Azamgarh",
-      "Baghpat",
-      "Bahraich",
-      "Ballia",
-      "Banda",
-      "Barabanki",
-      "Bareilly",
-      "Basti",
-      "Bijnor",
-      "Bulandshahr",
-      "Chandauli",
-      "Chitrakoot",
-      "Deoria",
-      "Etah",
-      "Etawah",
-      "Faizabad",
-      "Farrukhabad",
-      "Fatehpur",
-      "Firozabad",
-      "Gautam Buddha Nagar",
-      "Ghaziabad",
-      "Ghazipur",
-      "Gonda",
-      "Gorakhpur",
-      "Hamirpur",
-      "Hapur",
-      "Hardoi",
-      "Hathras",
-      "Jalaun",
-      "Jaunpur",
-      "Jhansi",
-      "Kannauj",
-      "Kanpur Dehat",
-      "Kanpur Nagar",
-      "Kushinagar",
-      "Lakhimpur Kheri",
-      "Lalitpur",
-      "Lucknow",
-      "Mau",
-      "Meerut",
-      "Mirzapur",
-      "Moradabad",
-      "Muzaffarnagar",
-      "Pilibhit",
-      "Pratapgarh",
-      "Raebareli",
-      "Rampur",
-      "Saharanpur",
-      "Sant Kabir Nagar",
-      "Shahjahanpur",
-      "Shamli",
-      "Siddharth Nagar",
-      "Sitapur",
-      "Sonbhadra",
-      "Sultanpur",
-      "Unnao",
-      "Varanasi"],
-  },
-  {
-    state: "Uttarakhand",
-    districts: [ "Almora",
-      "Bageshwar",
-      "Chamoli",
-      "Champawat",
-      "Dehradun",
-      "Haridwar",
-      "Nainital",
-      "Pauri Garhwal",
-      "Pithoragarh",
-      "Rudraprayag",
-      "Tehri Garhwal",
-      "Udham Singh Nagar",
-      "Uttarkashi"],
-  },
-  {
-    state: "West Bengal",
-    districts: ["Alipurduar",
-    "Bankura",
-    "Birbhum",
-    "Cooch Behar",
-    "Dakshin Dinajpur",
-    "Darjeeling",
-    "Hooghly",
-    "Howrah",
-    "Jalpaiguri",
-    "Jhargram",
-    "Kolkata",
-    "Malda",
-    "Murshidabad",
-    "Nadia",
-    "North 24 Parganas",
-    "Paschim Bardhaman",
-    "Paschim Medinipur",
-    "Purba Bardhaman",
-    "Purba Medinipur",
-    "Purulia",
-    "South 24 Parganas",
-    "Uttar Dinajpur"],
-  },
-  {
-    state: "Andaman and Nicobar Islands",
-    districts: ["Port Blair", "Nicobar", "Car Nicobar", "Little Andaman"],
-  },
-  {
-    state: "Chandigarh",
-    districts: ["Chandigarh"],
-  },
-  {
-    state: "Dadra and Nagar Haveli and Daman and Diu",
-    districts: ["Daman", "Diu", "Silvassa"],
-  },
-
-  {
-    state: "Delhi",
-    districts: ["Central",
-      "East",
-     " New Delhi ",
-      "North",
-      "North East ",
-      "North West ",
-      "Shahdara" ,
-      "South" ,
-     " South East ",
-      "South West" ,
-      "West"],
-  },
-  {
-    state: "Puducherry",
-    districts: ["Puducherry", "Karaikal", ],
-  },
+const relatedServices = [
+  { name: "Insurance", path: "/insurance" },
+  { name: "Travel Visa", path: "/visa" },
+  { name: "Police Verification", path: "/policeverification" },
+  { name: "Police Clearance Certificate", path: "/police-clearance-certificate" },
+  { name: "Pan Card", path: "/pan-card" },
+  { name: "Affidavits / Annexure", path: "/affidavits" },
 ];
 
-const relatedServices = [
-    { name: "Insurance", path: "/insurance" },
-    { name: "Travel Visa", path: "/visa" },
-    { name: "Police Verification", path: "/policeverification" },
-    { name: "Police Clearance Certificate", path: "/police-clearance-certificate" },
-    { name: "Pan Card", path: "/pan-card" },
-    { name: "Affidavits / Annexure", path: "/affidavits" },
-  ];
-
 const PassportAgency = () => {
-     const navigate = useNavigate();
-      const location = useLocation();
+  // const serviceRef = useRef(null);
+  const navigate = useNavigate();
+  //   const { services } = useParams();
+  const [visibleCount, setVisibleCount] = useState(3);
   const [openIndex, setOpenIndex] = useState(null);
-  const [showPopup, setShowPopup] = useState(false);
-  const [currentStep, setCurrentStep] = useState(1);
-  const [maskedNumber, setMaskedNumber] = useState("XXXX-XXXX-XXXX");
-  const [resendCountdown, setResendCountdown] = useState(30);
-  const [isCompleted, setIsCompleted] = useState(false);
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [otp, setOtp] = useState(["", "", "", ""]);
-  const [fullName, setFullName] = useState("");
-  const [emailId, setEmailId] = useState("");
-  const [nearbypolicestation, setNearByPoliceStation] = useState("");
-  const [selectedOption, setSelectedOption] = useState("");
-  const [houseStreetName, setHouseStreetName] = useState("");
-  const [villageTownCity, setVillageTownCity] = useState("");
-  const [dob, setDob] = useState("");
-  const [selectedGender, setSelectedGender] = useState("");
-  const [fatherName, setFatherName] = useState("");
-  const [motherName, setMotherName] = useState("");
-  const [pincode, setPincode] = useState("");
-  const [aadharNumber, setAadharNumber] = useState("");
-  const [qualification, setQualification] = useState("");
-  const [selectedState, setSelectedState] = useState("");
-  const [applyingFor, setApplyingFor] = useState("");
-  // const [userData, setUserData] = useState(null);
-  const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+
+  const [blogs, setBlogs] = useState([]);
+  const [isSticky, setIsSticky] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
   const [active, setActive] = useState(null);
-//   const navigate = useNavigate();
-
-const handleClick = (service) => {
+  const stickyColumnRef = useRef(null);
+  const firstColumnRef = useRef(null);
+  const stopStickyRef = useRef(null);
+  const handleClick = (service) => {
     setActive(service.name);
     navigate(service.path);
   };
-
-
-  useLayoutEffect(() => {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  }, []);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  const [showOtpSection, setShowOtpSection] = useState(true);
-  const [typeofapplication, setTypeOfApplication] = useState(true);
-  const openPopup = () => {
-       setShowPopup(true);
-       navigate("/passport-form"); // Update the URL
-     };
-   
-     // Function to close the popup and revert the URL
-     const closePopup = () => {
-       setShowPopup(false);
-       navigate("/passport"); // Revert the URL
-       setCurrentStep(1);
-       setIsCompleted(false);
-     };
-   
-     React.useEffect(() => {
-      if (location.pathname === "/passport-form" || location.pathname === "/passport/proceed-to-pay") {
-        setShowPopup(true);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const stickyColumn = stickyColumnRef.current;
+      const firstColumn = firstColumnRef.current;
+      const stopSection = stopStickyRef.current;
+  
+      if (!stickyColumn || !firstColumn || !stopSection) return;
+  
+      const bannerHeight = document.querySelector('.breadcrumb-title')?.offsetHeight || 0;
+      const scrollTop = window.scrollY;
+      const firstColumnTop = firstColumn.getBoundingClientRect().top + window.scrollY;
+      const stopSectionTop = stopSection.getBoundingClientRect().top + window.scrollY;
+      const stickyOffset = 100; // adjust for margin if needed
+  
+      if (
+        scrollTop > firstColumnTop - bannerHeight - stickyOffset &&
+        scrollTop + stickyColumn.offsetHeight < stopSectionTop
+      ) {
+        setIsSticky(true);
       } else {
-        setShowPopup(false);
+        setIsSticky(false);
       }
-    }, [location.pathname]);
-    
-  const [typeofbooklet, setTypeOfBooklet] = useState("");
-  const [surname, setSurName] = useState('');
-  const [registrationNumber, setSeletedRegistrationNumber] = useState("");
-  const [placeofbirth, setPlaceOfBirth ] = useState('');
-  const handleDob = (e) => setDob(e.target.value);
-  const handleQualification = (e) => setQualification(e.target.value);
-  const handleNearbyPoliceStation =(e) => setNearByPoliceStation (e.target.value)
- const  handleSurName = (e) => setSurName(e.target.value);
-  const handleMaritalStatus = (e) => setMaritalStatus(e.target.value);
-  const handleFullNameChange = (event) => {
-    setFullName(event.target.value);
-  };
-  const handlePlaceOfBirth =(e) => setPlaceOfBirth (e.target.value);
-  const handleTypeOfBooklet = (e) => setTypeOfBooklet(e.target.value);
-  const handleMotherName = (e) => setMotherName(e.target.value);
-  const handleFatherName = (e) => setFatherName(e.target.value);
-  // const handleGender = (e) => setSelectedGender(e.target.value);
-  const handleTypeOfApplication = (e) => setTypeOfApplication(e.target.value);
-  const handleEmailIdChange = (e) => setEmailId(e.target.value);
-  const handleVillageTownCityChange = (e) => setVillageTownCity(e.target.value);
-  const handleStateChange = (e) => setSelectedState(e.target.value);
-  const handleDistrictChange = (e) => setSelectedDistrict(e.target.value);
-  const handleRegistrationNumber = (e) =>
-    setSeletedRegistrationNumber(e.target.value);
-  const handleApplyingFor = (e) => setApplyingFor(e.target.value);
-  const [applicationType, setApplicationType] = useState("");
-  const [passportBookletType, setPassportBookletType] = useState("");
-  const [educationQualification, setEducationQualification] = useState("");
-  const [employmentType, setEmploymentType] = useState("");
-  const [maritalStatus, setMaritalStatus] = useState("");
-  // const [maritalstatus, setMaritalStatus]=useState("");
-  const [gender, setGender] = useState("");
-  const getMaskedMobileNumber = (number) => {
-    if (!number || number.length < 3) return ""; // Return empty if number is too short
-    const firstTwo = number.slice(0, 2); // First two digits
-    const lastDigit = number.slice(-1); // Last digit
-    const masked = `${firstTwo}******${lastDigit}`; // Mask the middle digits
-    return masked;
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+
+
+  const handleContinue = () => {
+    // setShowPopup(true)
+    navigate("/passport-form");
   };
 
-  const [spouseName, setSpouseName] = useState("");
-  const [errorMessages, setErrorMessages] = useState({});
-const [leadId,setLeadId]=useState();
-  const selectedStateData = stateData.find(
-    (stateObj) => stateObj.state === selectedState
-  );
-  const districts = selectedStateData ? selectedStateData.districts : [];
-
-
-  const handleGenderChange = (event) => {
-    setSelectedGender(event.target.value);
-  };
-
-
-  // Navigate steps
-  const validateStep = () => {
-    let errors = {};
-    switch (currentStep) {
-      case 1:
-        const applyingForOptions =
-          document.getElementsByName("agreementOption");
-        if (!Array.from(applyingForOptions).some((option) => option.checked)) {
-          errors.applyingFor = "Please select an option.";
-        }
-        break;
-      case 2:
-      case 2:
-        if (!applicationType) {
-          errors.applicationType = "Please select a type of application.";
-        }
-        if (!passportBookletType) {
-          errors.passportBookletType =
-            "Please select a type of passport booklet.";
-        }
-        if (!selectedGender) {
-          errors.selectedGender = "Please select your gender.";
-        }
-        break;
-
-        case 3:
-          if (!fullName.trim()) {
-              errors.fullName = "Given Name is required.";
-          }
-          if (!surname.trim()) {
-              errors.surname = "Surname is required.";
-          }
-          if (!dob) {
-              errors.dob = "Date of Birth is required.";
-          } else {
-              const selectedDate = new Date(dob);
-              const year = selectedDate.getFullYear();
-
-              if (year.toString().length !== 4) {
-                  errors.dob = "Year must be a 4-digit number.";
-              } else if (selectedDate > new Date()) {
-                  errors.dob = "Date of Birth cannot be in the future.";
-              }
-          }
-          if (!placeofbirth.trim()) {
-              errors.place = "Place of Birth is required.";
-          }
-          break;
-      case 4:
-        if (!qualification) {
-          errors.qualification = "Please select your education qualification.";
-        }
-        if (!employmentType) {
-          errors.employment = "Please select your employment type.";
-        }
-        break;
-      case 5:
-        if (!maritalStatus) {
-          errors.maritalStatus = "Please select your marital status.";
-        }
-        break;
-      case 6:
-        if (!fatherName) {
-          errors.fatherName = "Father's Given Name is required.";
-        }
-        if (!motherName) {
-          errors.motherName = "Mother's Given Name is required.";
-        }
-        break;
-      case 7:
-        if (!villageTownCity) {
-          errors.villageTownCity = "House No. and Street Name is required.";
-        }
-        if (!selectedState) {
-          errors.selectedState = "State is required.";
-        }
-        if (!selectedDistrict) {
-          errors.selectedDistrict = "District is required.";
-        }
-        if (!document.getElementById("pincode").value) {
-          errors.pincode = "Pin Code is required.";
-        }
-        if (!emailId) {
-          errors.emailId = "Email ID is required.";
-        }
-        if (!mobileNumber) {
-          errors.mobileNumber = "Mobile Number is required.";
-        }
-        break;
-      default:
-        break;
-    }
-    return errors;
-  };
-
-  const nextStep = () => {
-    const errors = validateStep();
-    if (Object.keys(errors).length === 0) {
-      setErrorMessages({});
-      if (currentStep < 7) setCurrentStep(currentStep + 1);
-    } else {
-      setErrorMessages(errors);
-    }
-  };
-
-  const prevStep = () => {
-    if (currentStep > 1) setCurrentStep(currentStep - 1);
-  };
-
-  const handleMobileNumberChange = (e) => setMobileNumber(e.target.value);
-
-  const handleChange = (value, index) => {
-    if (!/^\d?$/.test(value)) return;
-    const newOtp = [...otp];
-    newOtp[index] = value;
-    setOtp(newOtp);
-    if (value && index < otp.length - 1) {
-      document.getElementById(`otp-input-${index + 1}`).focus();
-    }
-  };
-  const handleBackspace = (e, index) => {
-    if (e.key === "Backspace") {
-      const newOtp = [...otp];
-      newOtp[index] = "";
-      setOtp(newOtp);
-
-      // Move focus to the previous input
-      if (index > 0) {
-        document.getElementById(`otp-input-${index - 1}`).focus();
-      }
-    }
-  };
-
-  const [otpSent, setOtpSent] = useState(false);
-
-  const handleSendOtp = async () => {
-    try {
-      let formattedNumber = mobileNumber.trim();
-      if (!/^\d{10}$/.test(formattedNumber)) {
-        alert("Please enter a valid 10-digit mobile number.");
-        return;
-      }
-      formattedNumber = `91${formattedNumber}`;
-      console.log("Formatted Mobile Number:", formattedNumber);
-
-      const response = await axios.post(
-        "https://api.makemydocuments.com/api/sendOTP",
-        {
-          mobilenumber: formattedNumber,
-        }
-      );
-
-      if (response.status === 200) {
-        console.log("API Response:", response.data);
-        if (response.data.status === "success") {
-          setOtpSent(true);
-          setResendCountdown(30);
-        } else {
-          alert(response.data.message || "Error sending OTP.");
-        }
-      } else {
-        throw new Error(`Unexpected response status: ${response.status}`);
-      }
-    } catch (error) {
-      console.error("Error sending OTP:", error);
-      alert("An error occurred while sending OTP. Please try again.");
-    }
-  };
-
-  React.useEffect(() => {
-    if (resendCountdown > 0 && otpSent) {
-      const timer = setInterval(() => {
-        setResendCountdown((prev) => prev - 1);
-      }, 1000);
-      return () => clearInterval(timer);
-    } else if (resendCountdown === 0) {
-      setOtpSent(false); // Reset otpSent when countdown reaches zero
-    }
-  }, [resendCountdown, otpSent]);
-
- useEffect(() => {
-    const scriptSrc = "https://static.elfsight.com/platform/platform.js";
-
-   
-    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
-      const script = document.createElement("script");
-      script.src = scriptSrc;
-      script.async = true;
-      script.defer = true;
-      document.body.appendChild(script);
-
-      script.onload = () => {
-        if (window.elfsight) {
-          window.elfsight.reload(); 
-        }
-      };
-    } else {
-   
-      if (window.elfsight) {
-        window.elfsight.reload();
-      }
-    }
+  useEffect(() => {
+    fetchBlogs();
   }, []);
 
-  const generateOrderId = () => {
-    return `ORD${Date.now()}`;
-  };
-
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-
-    // Only allow numeric input and limit it to 6 digits
-    if (/^\d{0,6}$/.test(value)) {
-      setPincode(value);
-      setErrorMessages((prevErrors) => ({
-        ...prevErrors,
-        pincode: "", // Clear error if the input is valid
-      }));
-    }
-  };
-
-  const handleBlur = () => {
-    // Validate pin code length when user leaves input field
-    if (pincode.length !== 6) {
-      setErrorMessages((prevErrors) => ({
-        ...prevErrors,
-        pincode: "Pin Code must be exactly 6 digits.",
-      }));
-    }
-  };
-
-  const [userDetails, setUserDetails] = useState(null); // Holds user details
-  const [orderid, setOrderID] = useState();
-  const [paidAmount, setPaidAmount] = React.useState(99); 
-  const [paymentSuccess, setPaymentSuccess] = React.useState(false);
-  
-  const handleProceedToPay = async () => {
-    const txnBaseAmount = userDetails?.baseAmount || 0;
-    const txnFee = 99;
-    const txnAmount = txnBaseAmount + txnFee;
-
-    const custId = userDetails?.name
-      ? `CUST_${userDetails.name.toUpperCase()}`
-      : "CUST0012";
-
-    // ✅ Generate Unique Order ID if not available
-    const orderId = userDetails?.orderid || `ORD_${Date.now()}`;
-
-    const requestBody = {
-      MID: "MAKEMY09422872921500",
-      ORDER_ID: orderId,
-      CUST_ID: custId,
-      INDUSTRY_TYPE_ID: "Retail",
-      CHANNEL_ID: "WEB",
-      TXN_AMOUNT: txnAmount.toString(),
-      WEBSITE: "DEFAULT",
-      SERVICE: "PassPort",
-      id: leadId,
-      mobilenumber: userDetails.mobile,
-    };
-
-    console.log("Sending Payment Payload:", requestBody);
-
+  const fetchBlogs = async () => {
     try {
-      const response = await axios.post(
-        "https://api.makemydocuments.com/api/PG/paytm/initiate",
-        requestBody
+      const response = await axios.get(
+        "https://api.makemydocuments.com/api/blogs"
       );
-
-      console.log("Paytm Response:", response.data);
-
-      if (response.data.paramList && response.data.CHECKSUMHASH) {
-        const paramList = response.data.paramList;
-        const paytmTxnUrl =
-          "https://secure.paytmpayments.com/theia/processTransaction";
-        // https://secure.paytmpayments.com/theia/processTransaction
-
-        // Create a form dynamically
-        const form = document.createElement("form");
-        form.method = "POST";
-        form.action = paytmTxnUrl;
-
-        // Append all parameters as hidden inputs
-        Object.keys(paramList).forEach((key) => {
-          const input = document.createElement("input");
-          input.type = "hidden";
-          input.name = key;
-          input.value = paramList[key];
-          form.appendChild(input);
-        });
-
-        // Append form to the body and submit
-        document.body.appendChild(form);
-        form.submit();
-
-        setPaidAmount(txnAmount);
-      } else {
-        setError("Payment initiation failed.");
-      }
-    } catch (err) {
-      console.error(
-        "Payment API Error:",
-        err.response ? err.response.data : err.message
-      );
-      setError("Error initiating payment.");
-    }
-  };
-  
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0); // Opens at the top without scrolling
-  // }, []);
-
-  const checkPaymentStatus = async (orderid) => {
-    try {
-      const statusResponse = await axios.get(
-        `https://makemydocuments.nakshatranamahacreations.in/payment-status.php?orderid=${orderid}`
-      );
-  
-      if (statusResponse.status === 200) {
-        console.log("Payment Status Response:", statusResponse.data);
-  
-       
-        if (statusResponse.data.status === "SUCCESS") {
-          // alert("Payment was successful!");
-        } else {
-          // alert("Payment failed or is pending.");
-        }
-      } else {
-        // alert("Unable to fetch payment status. Please try again.");
-      }
+      setBlogs(response.data.slice(0, 3));
+      setLoading(false);
     } catch (error) {
-      console.error("Error fetching payment status:", error);
-      // alert("An error occurred while fetching the payment status.");
-    }
-  };
-
-  const [isResending, setIsResending] = useState(false);
-  const handleResend = async () => {
-    try {
-      let formattedNumber = mobileNumber.trim();
-      if (!/^91\d{10}$/.test(formattedNumber)) {
-        formattedNumber = `91${formattedNumber}`;
-      }
-  
-      console.log("Formatted Mobile Number for Resend:", formattedNumber);
-  
-      const config = {
-        url: "https://api.makemydocuments.com/api/sendOTP",
-        method: "post",
-        data: {
-          mobilenumber: formattedNumber,
-        },
-      };
-      const response = await axios(config);
-  
-      if (response.status === 200 && response.data.status === "success") {
-        console.log("Resend OTP Response:", response.data);
-        setResendCountdown(30); 
-        startCountdown(); 
-       
-      } else {
-    
-      }
-    } catch (error) {
-      console.error("Error resending OTP:", error);
-    } finally {
-      setIsResending(false); 
-    }
-  };
-  
-
-  const startCountdown = () => {
-    let countdownValue = resendCountdown;
-    const interval = setInterval(() => {
-      if (countdownValue > 0) {
-        countdownValue -= 1;
-        setResendCountdown(countdownValue);
-      } else {
-        clearInterval(interval);
-      }
-    }, 1000);
-  };
-  const handleVerify = async () => {
-    try {
-      let formattedNumber = mobileNumber.trim();
-  
-      if (!/^\d{10}$/.test(formattedNumber)) {
-        alert("Please enter a valid 10-digit mobile number.");
-        return;
-      }
-  
-      formattedNumber = `${formattedNumber}`;
-      console.log("Formatted Mobile Number:", formattedNumber);
-  
-      const enteredOtp = otp.join("").trim();
-      if (!enteredOtp || enteredOtp.length !== 4) {
-        alert("Please enter a valid 4-digit OTP.");
-        return;
-      }
-  
-      const response = await axios.post(
-        "https://api.makemydocuments.com/api/verifyOTP",
-        { mobilenumber: formattedNumber, otp: enteredOtp }
-      );
-  
-      if (response.status === 200) {
-        console.log("OTP Verification Response:", response.data);
-        if (response.data.status === "success") {
-          // alert("OTP Verified Successfully!");
-          setShowOtpSection(false);
-  
-          // Finish submission first
-          finishSubmission();
-          navigate("/passport/proceed-to-pay");
-          // await sendMessage(formattedNumber);
-        } else {
-          alert(response.data.message || "Error verifying OTP.");
-        }
-      } else {
-        throw new Error(`Unexpected response status: ${response.status}`);
-      }
-    } catch (error) {
-      console.error("Error verifying OTP:", error);
-      alert("An error occurred while verifying OTP. Please try again.");
-    }
-  };
-
-
-  const sendMessage = async (formattedNumber) => {
-    try {
-      const name = fullName || "User"; // Assuming `fullName` is available in your state
-      const url = `https://makemydocuments.nakshatranamahacreations.in/message-insurance.php?mobile=${formattedNumber}&name=${encodeURIComponent(
-        name
-      )}`;
-
-      const response = await axios.get(url);
-
-      if (response.status === 200) {
-        console.log("Message sent successfully:", response.data);
-      } else {
-        console.error("Error sending message:", response.data);
-      }
-    } catch (error) {
-      console.error("Error while sending message:", error);
-      alert("An error occurred while sending the message. Please try again.");
-    }
-  };
-  
-    const [date, setDate] = useState(null);  // Manage date state
-          const [time, setTime] = useState(null);  // Manage time state
-         
-          useEffect(() => {
-            if (!date) {
-              setDate(new Date().toISOString().split("T")[0]); // Set the current date once when the component mounts
-            }
-            if (!time) {
-              setTime(new Date().toLocaleTimeString("en-US", { hour12: false })); // Set the current time once when the component mounts
-            }
-          }, []); 
-
-  const [selectedDistrict, setSelectedDistrict] = useState("");
-  const finishSubmission = () => {
-    submitDataToAPI();
-    if (mobileNumber) {
-      setMaskedNumber(getMaskedMobileNumber(mobileNumber));
-    }
-    setIsCompleted(true);
-  };
-  const submitDataToAPI = async () => {
-    const data = {
-      orderid:orderid || "",
-      name: fullName || "",
-      mobilenumber: mobileNumber || "",
-      email: emailId || "",
-      services: selectedOption || "",
-      address: villageTownCity || "", 
-      district: selectedDistrict || "",
-      date: date,
-      dob: dob || "",
-      insurance_registration_number: registrationNumber || "",
-      paidAmount: "99",
-      qualification: qualification || "",
-      typeofapplication: typeofapplication || "",
-      applying_for: applyingFor || "",
-      applicationType : applicationType ||"",
-      // PGID:`ORD_${Date.now()}`,
-      passportBookletType : passportBookletType || "",
-      gender: selectedGender || "",
-      spouseName : spouseName || "",
-      placeofbirth : placeofbirth || "",
-      nearby_police_station : nearbypolicestation || "",
-      fathername: fatherName || "",
-      surname : surname || "",
-      mothername: motherName || "",
-      employmentType : employmentType  || "",
-      pincode: pincode || "",
-      adharnumber: aadharNumber || "",
-      maritalStatus: maritalStatus || "",
-      pancard: "",
-      time: time,
-      comment: "",
-      status: "",
-      service: "PassPort",
-    
-      // existingpancardnumber: existingPanCardNumber || "",
-      village: villageTownCity || "",
-      state: selectedState || "", 
-      // "pancard-district": selectedDistrict || "",
-    };
-
-    console.log("Data being sent to API:", data);
-
-    try {
-      const response = await axios.post(
-        "https://api.makemydocuments.com/api/lead/createLead",
-        data,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      console.log("API Response:", response.data);
-    
-
-        if (response.data.status === "success") {
-          const leadData = response.data.lead;
-    
-          setLeadId(leadData._id); // Correctly setting the lead ID
-          setUserDetails({
-            name: leadData.name || "",
-            mobilenumber: leadData.mobilenumber || "",
-            orderid: leadData.orderId || "",
-            services: leadData.services || "N/A",
-            paidAmount: leadData.paidAmount || "₹99",
-            // PGID: leadData.PGID,
-          });
-      } else {
-      }
-    } catch (error) {
-      console.error("Error while saving data:", error);
-      // alert("An error occurred while saving your details. Please try again.");
+      console.error("Error fetching blogs:", error);
+      setLoading(false);
     }
   };
 
@@ -1624,13 +159,14 @@ const [leadId,setLeadId]=useState();
     },
   ];
 
+
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <>
-    <Helmet>
+      <Helmet>
     <title>Get Your Passport Fast | Passport Agency in Bangalore
     </title>
 <meta name="description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.
@@ -1907,261 +443,333 @@ const [leadId,setLeadId]=useState();
 
 
     </Helmet>
-     <div style={{ backgroundColor: "#f4f4f4", padding: "15px 25px", marginTop:'8%' }} className="breadcrumb-title">
-          <nav aria-label="breadcrumb" style={{marginTop:'1%'}}>
-            <ol className="breadcrumb mb-0">
-              <li className="breadcrumb-item" style={{fontWeight:'bold'}}>
-                <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>Home</Link>
-              </li>
-              <li className="breadcrumb-item active" aria-current="page" style={{fontWeight:'bold'}}>
-              Passport Agency in Bangalore
 
-    
-              </li>
-            </ol>
-          </nav>
-        </div>
-    <div style={{overflow:'hidden'}}>
-      <div>
-        <div className="container-passport-agency" style={{height:'480px'}}
-    //       style={{
-    //         background: "linear-gradient(182.42deg, #FCA505 2.01%, #FFFFFF)",
-    //         height: '500px',
-    // paddingTop: '20px',
-    // display: 'flex',
-    // alignItems: 'center',
-    // justifyContent: 'space-between',
-    // padding: '0 20px'
-    //       }}
-        >
-          <div style={{ flex: 1, textAlign: "left", fontWeight: "bold" }}>
-            <h1 style={{fontSize:'24px', fontWeight:'bold', marginTop:'10%'}}>Passport Agency in Bangalore
-            </h1>
-            <p>"Looking to get your passport without the hassle? <br className="d-block d-lg-none"/>
-            Our expert team in Bangalore offers seamless <br className="d-block d-lg-none"/>assistance with all your passport-related needs"</p>
-          </div>
-          <div className="passport-image" style={{marginTop:'10%'}}>
-            <img
-              src={Image30}
-              alt="Rental Agreement"
-              // style={{ maxWidth: '80%', height: '20%', marginTop:'20%' }}
-            />
-          </div>
-        </div>
+      <div
+        style={{
+          backgroundColor: "#f4f4f4",
+          padding: "15px 25px",
+          marginTop: "8%",
+        }}
+        className="breadcrumb-title"
+      >
+        <nav aria-label="breadcrumb" style={{ marginTop: "1%" }}>
+          <ol className="breadcrumb mb-0">
+            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize:'14px' }}>
+              <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>
+                Home
+              </Link>
+            </li>
+            <li
+              className="breadcrumb-item active"
+              aria-current="page"
+              style={{ fontWeight: "bold", fontSize:'14px' }}
+            >
+             Passport Agency in Bangalore
+
+
+
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <div style={{ overflow: "hidden" }}>
+        <div className="mobile-header">
+          {/* Header Section */}
+          <div style={{ margin: 0, fontFamily: "Poppins, sans-serif" }}>
+            {/* Banner Section */}
+            <div style={{ width: "100%" }} className="d-none d-lg-block">
+              <div
+                style={{
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  minHeight: "65vh",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  position: "relative",
+                  overflow: "hidden",
+                }}
+              >
+                {/* Container for Image */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    zIndex: 1,
+                  }}
+                >
+                  <img
+                    src={bannerimage}
+                    alt="Hong Kong Visa"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+
+                {/* Container for Text */}
+                <div
+                  style={{
+                    position: "relative",
+                    zIndex: 2,
+                    textAlign: "left",
+                    color: "#333",
+                    padding: "20px",
+                    marginRight: "auto",
+                  }}
+                >
+                  <h1
+                    style={{
+                      fontSize: "36px",
+                      fontWeight: "bold",
+                      margin: 0,
+                      
+                    }}
+                  >
+                    Passport Agency in Bangalore
+                  </h1>
+
+                  {/* Approval Rate Badge */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#e6f7fa",
+                      padding: "5px 10px",
+                      borderRadius: "5px",
+                      marginTop: "10px",
+                      width: "fit-content",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: "18px",
+                        color: "#00c4cc",
+                        marginRight: "5px",
+                      }}
+                    >
+                      ⭐
+                    </span>
+                    <span
+                      style={{
+                        fontSize: "14px",
+                        color: "#000000",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      99% Visa Approved on Time
+                    </span>
+                  </div>
+
+                  {/* Visa Details */}
+                  <div
+  style={{
+    display: "flex",
+    justifyContent: "space-between",
+    marginTop: "20px",
+    width: "100%",
+    maxWidth: "320px",
+ 
+    // padding: "15px",
+    borderRadius: "10px",
+  
+  }}
+>
+  <div style={{ flex: 1 }}>
+    <p
+      style={{
+        fontSize: "14px",
+        marginBottom: "5px",
+        color: "#333",
+        fontWeight: "600",
+      }}
+    >
+      Processing time
+    </p>
+    <p
+      style={{
+        fontSize: "12px",
+        fontWeight: "bold",
+        color: "#333",
+        margin: 0,
+        backgroundColor: "#e3f2fd",
+        padding: "6px 10px",
+        borderRadius: "6px",
+        whiteSpace:'nowrap',
+        display: "inline-block",
+      }}
+    >
+     15-20 working days (Normal)
+   
+    </p>
+    <p
+      style={{
+        fontSize: "12px",
+        fontWeight: "bold",
+        color: "#333",
+        margin: 0,
+        backgroundColor: "#e3f2fd",
+        padding: "6px 10px",
+        borderRadius: "6px",
+        whiteSpace:'nowrap',
+        display: "inline-block",
+      }}
+    >
+  
+     5-10 working days (Tatkal)
+    </p>
+  </div>
+
+  <div style={{ flex: 1, textAlign: "right" }}>
+    <p
+      style={{
+        fontSize: "14px",
+        marginBottom: "5px",
+        color: "#333",
+        fontWeight: "600",
+      }}
+    >
+      Starting from
+    </p>
+    <p
+      style={{
+        fontSize: "12px",
+        fontWeight: "bold",
+        color: "#333",
+        backgroundColor: "#e3f2fd",
+        padding: "6px 10px",
+        borderRadius: "6px",
+        display: "inline-block",
+        margin: 0,
+      }}
+    >
+      ₹2,499/-
+    </p>
+  </div>
+</div>
+<div style={{ marginTop: "20px" }}>
+  <button
+    onClick={handleContinue}
+    style={{
+      backgroundColor: "#fea400 ",
+      color: "#333",
+      padding: "12px 24px",
+      border: "none",
+      borderRadius: "6px",
+      fontSize: "16px",
+      fontWeight: "bold",
+      cursor: "pointer",
+      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+      transition: "background-color 0.3s ease",
+    }}
+    onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
+    onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
+  >
+    Apply Now
+  </button>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div style={{ width: "100%" }} className="d-block d-lg-none">
+  <div
+    style={{
+      position: "relative",
+      width: "100%",
+      overflow: "hidden",
+      marginTop:'36%'
+    }}
+  >
+    {/* Image */}
+    <img
+      src={bannerimage}
+      alt="Hong Kong Visa"
+      style={{
+        width: "100%",
+        height: "auto",
+        objectFit: "cover",
+      }}
+    />
+
+    {/* Text Container */}
+    <div
+      style={{
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        background:
+          "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
+        color: "#fff",
+        padding: "15px",
+      }}
+    >
+      <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+      Passport Agency in Bangalore
+
+
+      </h2>
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          backgroundColor: "#e6f7fa",
+          color: "#000",
+          padding: "3px 8px",
+          borderRadius: "5px",
+          fontSize: "10px",
+          fontWeight: "500",
+          marginBottom: "10px",
+          width: "fit-content",
+        }}
+      >
+        ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
       </div>
 
       <div
-  className="content-section d-none d-lg-block"
-  style={{
-    backgroundColor: "#fffff",
-    padding: "30px 15px",
-    borderRadius: "10px",
-    margin: "-1% auto",
-    display: "flex",
-    marginLeft:'-8%',
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-between"
-  }}
->
-  {/* Section 1: Documents Required For Fresh Passport */}
-  <div className="d-flex align-items-start w-100 flex-wrap mt-3 gap-3"style={{marginLeft:'14%'}} >
-  {/* Image Section */}
-  <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block" , marginTop:'-36%'}}>
-      <img
-        src={circleIcon}
-        alt="Circle Background"
-        className="img-fluid"
-        // style={{ maxWidth: "100px" }}
-      />
-      <img
-        src={documentsIcon}
-        alt="Documents Icon"
         style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
+          display: "flex",
+          justifyContent: "space-between",
+          fontSize: "10px",
         }}
-      />
+      >
+        <div>
+          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Processing time</p>
+          <p style={{ margin: 0,  fontSize: "10px", }}>15-20 working days (Normal)
+          </p>
+          <p style={{ margin: 0,  fontSize: "10px", }}>5-10 working days (Tatkal)
+
+          </p>
+        </div>
+        <div>
+          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Starting from</p>
+          <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold",  fontSize: "10px", }}>
+            ₹2,499/-
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-
-  {/* Content Section */}
-  <div>
-    <h5 className="text-primary font-weight-bold mb-2" style={{fontWeight:'bold'}}>Documents Required For Fresh Passport</h5>
-
-    {/* Proof of Identity */}
-    <ul className="pl-3 mb-2" style={{ listStyleType: "disc" }}>
-      <li className="font-weight-bold" style={{fontWeight:'bold'}}>Proof of Identity (Any 01)</li>
-      <li>Aadhar Card</li>
-      <li>Voter ID</li>
-      <li>Pan Card</li>
-      <li>Driving Licence</li>
-    </ul>
-
-    {/* Proof of Address */}
-    <ul className="pl-3 mb-2" style={{ listStyleType: "disc" }}>
-      <li className="font-weight-bold" style={{fontWeight:'bold'}}>Proof of Address (Any 01)</li>
-      <li>Aadhar Card</li>
-      <li>Voter ID</li>
-      <li>Bank Account Passbook</li>
-      <li>Gas Connection Bill / Electricity Bill / Telephone Bill / Water Bill</li>
-      <li>Parents Passport / Spouse Passport</li>
-    </ul>
-
-    {/* Proof of Birth */}
-    <ul className="pl-3 mb-2" style={{ listStyleType: "disc" }}>
-      <li className="font-weight-bold" style={{fontWeight:'bold'}}>Proof of Birth (Any 01)</li>
-      <li>10th Certificate</li>
-      <li>12th Certificate</li>
-      <li>Higher Education Pass Certificate</li>
-      <li>School Leaving Certificate</li>
-      <li>Income Tax Assessment Order</li>
-    </ul>
-  </div>
 </div>
 
 
-  {/* Section 2: Document Required for Renewal / Reissue of Passport */}
-  <div className="d-flex align-items-center w-100 flex-wrap mt-3 gap-3" style={{marginLeft:'14%'}}>
+            <div className="container my-5">
+              <div className="row" style={{ position: "relative" }}>
+                {/* Left Column () */} 
+                <div className="col-md-8" ref={firstColumnRef} >
+                  {/* Charges Section (Scrollable) */}
+                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{marginLeft:'2%'}}>
   {/* Image Section */}
-  <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block", marginTop: "-52px" }}>
-      <img
-        src={circleIcon}
-        alt="Circle Background"
-        className="img-fluid"
-        // style={{ maxWidth: "100px" }}
-      />
-      <img
-        src={documentsIcon}
-        alt="Documents Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div>
-
-  {/* Content Section */}
-  <div>
-    <h5 className="text-primary font-weight-bold mb-1" style={{ fontWeight: "bold" }}>
-      Document Required for Renewal / Reissue of Passport
-    </h5>
-    <ul className="pl-3 mb-1" style={{ listStyleType: "disc" }}>
-      <li>Original Old Passport</li>
-      <li>Id And Present Address Proof</li>
-    </ul>
-  </div>
-</div>
-
-
-  {/* Section 3: Document Required for Minor Passport */}
-  <div className="d-flex align-items-center w-100 mt-5 gap-3" style={{marginLeft:'14%'}}>
-  {/* Image Section */}
-  <div style={{ position: "relative", display: "inline-block" , marginTop:'-4%'}}>
-    <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ maxWidth: "" }}/>
-    <img
-      src={documentsIcon}
-      alt="Documents Icon"
-      style={{
-        position: "absolute",
-        top: "56%",
-        left: "43%",
-        transform: "translate(-50%, -50%)",
-        maxWidth: "35px",
-      }}
-    />
-  </div>
-
-  {/* Content Section */}
-  <div>
-    <h5 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>
-      Document Required for Minor Passport
-    </h5>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", whiteSpace: "nowrap",  }}>
-      <li>Birth Certificate</li>
-      <li>Both Parents Passport</li>
-    </ul>
-  </div>
-</div>
-
-<div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
-  {/* Image Section */}
-  <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block" , marginTop:'-200%'}}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:''}} />
-      <img
-        src={howIcon}
-        alt="How It Works Icon"
-        style={{
-          position: "absolute",
-        top: "56%",
-        left: "43%",
-        transform: "translate(-50%, -50%)",
-        maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div>
-
-  {/* Content Section */}
-  <div>
-    <h5 style={{ color: "#007BFF", fontWeight: "bold", whiteSpace: "nowrap" }}>How It Works</h5>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px",}}>
-      <li>Register Online & Make Payment</li>
-      <li>Upload Documents</li>
-      <li>Get Appointment</li>
-      <li>Visit PSK</li>
-      <li>Get Delivered</li>
-    </ul>
-  </div>
-</div>
-
-
-  {/* Section 3: Time Duration */}
-  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
-  {/* Image Section */}
-  <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block", marginTop:'-111%' }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{maxWidth:''}} />
-      <img
-        src={TimeIcon}
-        alt="Time Duration Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div>
-
-  {/* Content Section */}
-  <div>
-    <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Time Duration</h5>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px",  }}>
-      <li>15-20 working days (Normal)</li>
-      <li>5-10 working days (Tatkal)</li>
-    </ul>
-  </div>
-</div>
-
-
-  {/* Section 4: Charges */}
-  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3" style={{marginLeft:'14%'}}>
-  {/* Image Section */}
-  <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block",  marginTop:'-160%' }}>
+  {/* <div className="d-flex justify-content-center align-items-center">
+    <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
       <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
       <img
         src={Price}
@@ -2175,1971 +783,1352 @@ const [leadId,setLeadId]=useState();
         }}
       />
     </div>
-  </div>
+  </div> */}
 
   {/* Content Section */}
-  <div>
+  <div style={{marginTop:''}}>
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li><strong>Rs. 2,499</strong> For (Normal Application)</li>
-      <li><strong>Rs. 4,499</strong> For (Tatkal Application)</li>
-      <li><strong>Rs. 99</strong> as booking fee. Need to pay while submitting online form (This fee is non-refundable and <br/> will be adjusted in the total bill.)</li>
+      <li><strong style={{color:'#ff9800'}}>Rs. 2,499</strong>
+      For (Normal Application)
+       </li>
+       <li><strong style={{color:'#ff9800'}}>Rs. 4,499</strong>
+       For (Tatkal Application)
+       </li>
+      <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
+    
     </ul>
   </div>
 </div>
-
-</div>
-
-
-
-      <div className="document-container d-block d-lg-none" style={{marginTop:'-7%'}}>
-  {/* Section for Fresh Passport */}
-  <div className="document-section fresh-passport row-container">
-    <div className="icon-container">
-      <div style={{ position: "relative", }}>
-        <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ width:"50%"}}/>
-        <img
-          src={documentsIcon}
-          alt="Documents Icon"
-          style={{
-            position: "absolute",
-            top: "71%",
-            left: "50%",
-            width:'20px',
-            transform: "translate(-50%, -50%)",
-          }}
-        />
-      </div>
-    </div>
-    <div className="content-container">
-      <h4 className="section-title" style={{ textAlign: "left" }}>
-        Documents Required For Fresh <br /> Passport
-      </h4>
-      <ul className="document-list" style={{ listStyleType: "disc",}}>
-        <li className="list-title">Proof of Identity (Any 01)</li>
-        <li >Aadhar Card</li>
-        <li >Voter ID</li>
-        <li >Pan Card</li>
-        <li >Driving Licence</li>
-      </ul>
-      <ul className="document-list" style={{ listStyleType: "disc",}}>
-        <li className="list-title">Proof of Identity (Any 01)</li>
-        <li >Aadhar Card</li>
-        <li >Voter ID</li>
-        <li >Bank Account Passbook</li>
-        <li >Gas Connection Bill / Electricity Bill / Telephone Bill / Water Bill</li>
-        <li >Parents Passport / Spouse Passport</li>
-      </ul>
-      <ul className="document-list" style={{ listStyleType: "disc",}}>
-        <li className="list-title">Proof of Identity (Any 01)</li>
-        <li >10th Certificate</li>
-        <li >12th Certificate</li>
-        <li>Higher Educational Pass Certificate</li>
-        <li >School leaving Certificate</li>
-        <li>Income Tax Assessment Order</li>
-      </ul>
-    </div>
-  </div>
-
-  {/* Section for Renewal / Reissue */}
-  <div className="document-section renewal-passport row-container">
-    <div className="icon-container">
-      <div style={{ position: "relative", }}>
-        <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ width:"50%"}}/>
-        <img
-          src={documentsIcon}
-          alt="Documents Icon"
-          style={{
-            position: "absolute",
-            top: "71%",
-            width:'20px',
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        />
-      </div>
-    </div>
-    <div className="content-container">
-      <h4 className="section-title" style={{ textAlign: "left" }}>
-        Document Required for Renewal / <br /> Reissue of Passport
-      </h4>
-      <ul className="document-list"  style={{ listStyleType: "disc",}}>
-        <li >Original Old Passport</li>
-        <li>Id And Present Address Proof</li>
-      </ul>
-    </div>
-  </div>
-
-  {/* Section for Minor Passport */}
-  <div className="document-section minor-passport row-container">
-    <div className="icon-container">
-      <div style={{ position: "relative" ,  }}>
-        <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ width:"50%"}}/>
-        <img
-          src={documentsIcon}
-          alt="Documents Icon"
-          style={{
-            position: "absolute",
-            top: "71%",
-            width:'20px',
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        />
-      </div>
-    </div>
-    <div className="content-container">
-      <h4 className="section-title" style={{ textAlign: "left" }}>
-        Document Required for Minor <br/> Passport
-      </h4>
-      <ul className="document-list" style={{ listStyleType: "disc",}}>
-        <li >Birth Certificate</li>
-        <li >Both Parents Passport</li>
-      </ul>
-    </div>
-  </div>
-
-  {/* Section for How It Works */}
-  <div className="document-section how-it-works row-container">
-    <div className="icon-container">
-      <div style={{ position: "relative" ,  }}>
-        <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ width:"50%"}}/>
-        <img
-          src={howIcon}
-          alt="How It Works Icon"
-          style={{
-            position: "absolute",
-            top: "71%",
-            width:'20px',
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        />
-      </div>
-    </div>
-    <div className="content-container">
-      <h4 className="section-title" style={{ textAlign: "left" }}>
-        How It Works
-      </h4>
-      <ul className="document-list" style={{ listStyleType: "disc",}}>
-        <li >Register Online & Make Payment</li>
-        <li >Upload Documents</li>
-        <li>Get Appointment</li>
-        <li >Visit Psk</li>
-        <li >Get Delivered</li>
-      </ul>
-    </div>
-  </div>
-
-  {/* Section for Time Duration */}
-  <div className="document-section time-duration row-container">
-    <div className="icon-container">
-      <div style={{ position: "relative", }}>
-        <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ width:"50%"}}/>
-        <img
-          src={TimeIcon}
-          alt="Time Icon"
-          style={{
-            position: "absolute",
-            top: "71%",
-            width:'20px',
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        />
-      </div>
-    </div>
-    <div className="content-container">
-      <h4 className="section-title" style={{ textAlign: "left" }}>
-        Time Duration
-      </h4>
-      <ul className="document-list" style={{ listStyleType: "disc",}}>
-        <li >15-20 working days (Normal)</li>
-        <li >5-10 working days (Tatkal)</li>
-      </ul>
-    </div>
-  </div>
-
-  {/* Section for Charges */}
-  <div className="document-section charges-section row-container">
-    <div className="icon-container">
-      <div style={{ position: "relative",  }}>
-        <img src={circleIcon} alt="Circle Background" className="img-fluid" style={{ width:"50%"}}/>
-        <img
-          src={Price}
-          alt="Charges Icon"
-          style={{
-            position: "absolute",
-            top: "70%",
-            width:'20px',
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        />
-      </div>
-    </div>
-    <div className="content-container">
-      <h4 className="section-title" style={{ textAlign: "left" }}>
-        Charges
-      </h4>
-      <ul className="document-list" style={{ listStyleType: "disc",}}>
-        <li >
-          <strong>Rs. 2,499</strong> For (Normal Application)
-        </li>
-        <li >
-          <strong>Rs. 4,499</strong> For (Tatkal Application)
-        </li>
-        <li>
-          <strong>Rs.99</strong> as booking fee. Need to pay while submitting online form (This fee is non-refundable and will be adjusted in the total bill.)
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-</div>
-
-
-
-
-      <div>
-        {/* Get Quotes Button */}
-        {/* <div style={{ textAlign: "center", marginTop: "4%" }}>
-          <button
-            style={{
-              backgroundColor: "#FCA505",
-              color: "#000000",
-              padding: "12px 50px",
-              border: "none",
-              borderRadius: "30px",
-              fontWeight: "bold",
-              cursor: "pointer",
-              fontSize: "16px",
-              marginRight: "40%",
-              marginTop: "-30%",
-            }}
-            onClick={openPopup}
-          >
-            CONTINUE
-          </button>
-        </div> */}
-        <div className="continue-button-container">
-  <button className="continue-button" onClick={openPopup} style={{borderRadius:'0px'}}>
-  Apply Now
-  </button>
-</div>
-
-        {/* Modal Popup */}
-        {showPopup && (
-          <div
-           className="popupstyle-passport"
-            style={{
-              position: "fixed",
-              top: "100px",
-              left: "0",
-              width: "100%",
-              height: "86%",
-              // backgroundColor: "rgba(26, 118, 216, 0.9)",
-              backgroundColor: "#126ece",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              zIndex: "9999",
-            }}
-          >
-            <div className="popup-passport"
-              // style={{
-              //   backgroundColor: "#FFFFFF",
-              //   padding: "40px",
-              //   borderRadius: "28px",
-              //   width: "70%",
-              //   maxHeight: "90%",
-              //   overflowY: "auto",
-              //   textAlign: "center",
-              //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-              // }}
-            >
-              {/* Stepper */}
-              {!isCompleted ? (
-                <>
-                  <div className="stepper-passport"
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      marginBottom: "30px",
-                    }}
-                  >
-                    {Array.from({ length: 7 }).map((_, index) => (
-                      <React.Fragment key={index}>
-                        <div className="step-container"
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            flexDirection: "column",
-                            flex: 1,
-                          }}
-                        >
-                          <button className="button-passport-stepper"
-                            onClick={() => setCurrentStep(index + 1)} // Make step clickable
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              backgroundColor:
-                                currentStep >= index + 1 ? "#4285F4" : "#ccc",
-                              color: "white",
-                              borderRadius: "50%",
-                              lineHeight: "50px",
-                              fontWeight: "bold",
-                              border: "none",
-                              cursor: "pointer",
-                              outline: "none",
-                            }}
-                          >
-                            {index + 1}
-                          </button>
-                          {/* Optional Step Labels */}
-                          {/* <span style={{ marginTop: "10px", fontSize: "16px" }}>Step {index + 1}</span> */}
-                        </div>
-
-                        {/* Add Connection Divider Between Steps */}
-                        {index < 6 && (
-                          <div
-                            style={{
-                              height: "2px",
-                              flex: 1,
-                              backgroundColor:
-                                currentStep > index + 1 ? "#4285F4" : "#ccc",
-                              alignSelf: "center",
-                              
-                            }}
-                             className="step-divider"
-                          />
-                        )}
-                      </React.Fragment>
-                    ))}
-                  </div>
-
-                  <div style={{ marginBottom: "20px" }}>
-                    {currentStep === 1 && (
-                      <div style={{ textAlign: "center" }}>
-                        <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>
-                          Applying For
-                          <span style={{ color: "red" }}>*</span>
-                        </h5>
-
-                        {/* Radio Buttons */}
-                        <div
-                        
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "flex-start",
-                            marginLeft: "4%",
-                            textAlign:'left',
-                            width: "fit-content",
-                            gap: "20px",
-                          }}
-                        >
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value=" Fresh Passport"
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Fresh Passport 
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value="Re-issue of Passport "
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Re-issue of Passport 
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value="Change In Existing Personal Particulars "
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Change In Existing Personal Particulars 
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value="Damaged Passport"
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Damaged Passport 
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value="Exhaustion Of Pages"
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Exhaustion Of Pages  
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value="Lost Passport"
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Lost Passport
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value="Validity Expired More Than 3 Years Ago "
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Validity Expired More Than 3 Years Ago 
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="agreementOption"
-                              value="Validity Expired Within 3 Years/Due To Expire"
-                              onChange={handleApplyingFor}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Validity Expired Within 3 Years/Due To Expire
-                          </label>
-                        </div>
-                        {errorMessages.applyingFor && (
-                          <p style={{ color: "red" }}>
-                            {errorMessages.applyingFor}
-                          </p>
-                        )}
-                      </div>
-                    )}
-                    {currentStep === 2 && (
-                      <div style={{ textAlign: "center" }}>
-                        <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>
-                          Application Details
-                          <span style={{ color: "red" }}>*</span>
-                        </h5>
-
-                        {/* Type of Application */}
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "flex-start",
-                            marginLeft: "4%",
-                            width: "fit-content",
-                            gap: "20px",
-                          }}
-                        >
-                          <h5 style={{ fontWeight: "600", fontSize: "22px" }}>
-                            Type of Application
-                          </h5>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="applicationType"
-                              value="normal"
-                              onChange={(e) =>
-                                setApplicationType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Normal
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="applicationType"
-                              value="tatkal"
-                              onChange={(e) =>
-                                setApplicationType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Tatkal
-                          </label>
-                          {errorMessages.applicationType && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.applicationType}
-                            </p>
-                          )}
-                        </div>
-                        <br />
-                        {/* Type of Passport Booklet */}
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "flex-start",
-                            marginLeft: "4%",
-                            width: "fit-content",
-                            gap: "20px",
-                          }}
-                        >
-                          <h5 style={{ fontWeight: "600", fontSize: "22px", textAlign:'left' }}>
-                            Type of Passport Booklet
-                          </h5>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="passportBookletType"
-                              value="36Pages"
-                              onChange={(e) =>
-                                setPassportBookletType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            36 Pages
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="passportBookletType"
-                              value="60Pages"
-                              onChange={(e) =>
-                                setPassportBookletType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            60 Pages
-                          </label>
-                          {errorMessages.passportBookletType && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.passportBookletType}
-                            </p>
-                          )}
-                        </div>
-                        <br />
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "flex-start",
-                            marginLeft: "4%",
-                            width: "fit-content",
-                            gap: "20px",
-                          }}
-                        >
-                          <h5 style={{ fontWeight: "600", fontSize: "22px" }}>
-                            Gender<span style={{ color: "red" }}>*</span>
-                          </h5>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="gender"
-                              value="female"
-                              onChange={handleGenderChange}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Female
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="gender"
-                              value="male"
-                              onChange={handleGenderChange}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Male
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="gender"
-                              value="transgender"
-                              onChange={handleGenderChange}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Transgender
-                          </label>
-                          {errorMessages.selectedGender && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.selectedGender}
-                            </p>
-                          )}
-                       
-                        </div>
-                      </div>
-                    )}
-                    {currentStep === 3 && (
-                      <div style={{ textAlign: "center" }}>
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            htmlFor="givenname"
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            Given Name
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            value={fullName}
-                            onChange={handleFullNameChange}
-                            id="givernname"
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "4px",
-                            }}
-                          />
-                           {errorMessages.fullName && (
-                <p style={{ color: "red" }}>{errorMessages.fullName}</p>
-            )}
-                        </div>
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            htmlFor="surname"
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            Surname<span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            value={surname}
-                            onChange={handleSurName}
-                            id="ownerFatherName"
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "4px",
-                            }}
-                          />
-                             {errorMessages.surname && (
-                <p style={{ color: "red" }}>{errorMessages.surname}</p>
-            )}
-                        </div>
-
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            htmlFor="dateOfBirth"
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            Date of Birth
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="date"
-                            id="dateOfBirth"
-                            value={dob}
-                            onChange={handleDob}
-                            max={new Date().toISOString().split("T")[0]}
-                            placeholder="Enter Date of Birth"
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "4px",
-                            }}
-                          />
-                           {errorMessages.dob && (
-                <p style={{ color: "red" }}>{errorMessages.dob}</p>
-            )}
-                        </div>
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            htmlFor="place"
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            Place of Birth (Village/ Town / City) *
-                          </label>
-                          <input
-                            type="text"
-                            value={placeofbirth}
-                            onChange={handlePlaceOfBirth}
-                            id="place"
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "4px",
-                            }}
-                          />
-                           {errorMessages.place && (
-                <p style={{ color: "red" }}>{errorMessages.place}</p>
-            )}
-                        </div>
-{/* 
-                        {errorMessages.place && (
-                          <p style={{ color: "red" }}>{errorMessages.place}</p>
-                        )} */}
-                      </div>
-                    )}
-                    {currentStep === 4 && (
-                      <div style={{ textAlign: "center" }}>
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "flex-start",
-                            marginLeft: "4%",
-                            width: "fit-content",
-                            gap: "20px",
-                          }}
-                        >
-                          <p style={{ fontWeight: "600", fontSize: "18px" }}>
-                            Education Qualification
-                          </p>
-
-                          {/* Education Qualification Radio Buttons */}
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="qualification"
-                              value="graduateAndAbove"
-                              onChange={handleQualification}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Graduate And Above
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="qualification"
-                              value="10thPassAndAbove"
-                              onChange={handleQualification}
-                              style={{ marginRight: "10px" }}
-                            />
-                            10th Pass And Above
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="qualification"
-                              value="below10th"
-                              onChange={handleQualification}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Below 10th
-                          </label>
-
-                          <p style={{ fontWeight: "600", fontSize: "18px" }}>
-                            Employment Type
-                          </p>
-
-                          {/* Employment Type Radio Buttons */}
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="employmentType"
-                              value="government"
-                              onChange={(e) =>
-                                setEmploymentType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Government
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="employmentType"
-                              value="private"
-                              onChange={(e) =>
-                                setEmploymentType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Private
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="employmentType"
-                              value="selfEmployed"
-                              onChange={(e) =>
-                                setEmploymentType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Self Employed
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="employmentType"
-                              value="student"
-                              onChange={(e) =>
-                                setEmploymentType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Student
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="employmentType"
-                              value="homeMaker"
-                              onChange={(e) =>
-                                setEmploymentType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Home Maker
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="employmentType"
-                              value="retired"
-                              onChange={(e) =>
-                                setEmploymentType(e.target.value)
-                              }
-                              style={{ marginRight: "10px" }}
-                            />
-                            Retired
-                          </label>
-
-                          {errorMessages.qualification && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.qualification}
-                            </p>
-                          )}
-                          {errorMessages.employment && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.employment}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    )}
-                    {currentStep === 5 && (
-                      <div style={{ textAlign: "center" }}>
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "flex-start",
-                            marginLeft: "4%",
-                            width: "fit-content",
-                            gap: "20px",
-                          }}
-                        >
-                          <p style={{ color: "#1A76D8", fontWeight: "600" }}>
-                            Marital Status{" "}
-                            <span style={{ color: "red" }}>*</span>
-                          </p>
-
-                          {/* Marital Status Radio Buttons */}
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="maritalStatus"
-                              value="single"
-                              onChange={(e) => setMaritalStatus(e.target.value)}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Single
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="maritalStatus"
-                              value="married"
-                              onChange={(e) => setMaritalStatus(e.target.value)}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Married
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="maritalStatus"
-                              value="widowWidower"
-                              onChange={(e) => setMaritalStatus(e.target.value)}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Widow/Widower
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="maritalStatus"
-                              value="separated"
-                              onChange={(e) => setMaritalStatus(e.target.value)}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Separated
-                          </label>
-                          <label
-                            style={{
-                              fontSize: "18px",
-                              fontWeight: "500",
-                              color: "#333",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name="maritalStatus"
-                              value="divorced"
-                              onChange={(e) => setMaritalStatus(e.target.value)}
-                              style={{ marginRight: "10px" }}
-                            />
-                            Divorced
-                          </label>
-                        </div>
-                        {errorMessages.maritalStatus && (
-                          <p style={{ color: "red" }}>
-                            {errorMessages.maritalStatus}
-                          </p>
-                        )}
-                      </div>
-                    )}
-                    {currentStep === 6 && (
-                      <div style={{ textAlign: "center" }}>
-                        <div style={{ marginBottom: "20px" }}>
-                          <label
-                            style={{ fontSize: "20px", fontWeight: "600" }}
-                          >
-                            Present Residential Address
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                        </div>
-
-                        {/* Father's Given Name */}
-                        <div
-                          style={{
-                            marginBottom: "40px",
-                            textAlign: "left",
-                            marginTop: "26px",
-                          }}
-                        >
-                          <label
-                            style={{ fontSize: "16px", fontWeight: "bold" }}
-                          >
-                            Father's Given Name
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            value={fatherName}
-                            onChange={handleFatherName}
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              padding: "10px",
-                              marginTop: "10px",
-                              border: "1px solid orange",
-                              borderRadius: "4px",
-                            }}
-                          />
-                          {errorMessages.fatherName && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.fatherName}
-                            </p>
-                          )}
-                        </div>
-
-                        {/* Mother's Given Name */}
-                        <div
-                          style={{ marginBottom: "40px", textAlign: "left" }}
-                        >
-                          <label
-                            style={{ fontSize: "16px", fontWeight: "bold" }}
-                          >
-                            Mother's Given Name{" "}
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            value={motherName}
-                            onChange={handleMotherName}
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              padding: "10px",
-                              marginTop: "10px",
-                              border: "1px solid orange",
-                              borderRadius: "4px",
-                            }}
-                          />
-                          {errorMessages.motherName && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.motherName}
-                            </p>
-                          )}
-                        </div>
-
-                        {/* Spouse's Given Name - Conditionally Rendered */}
-                        {maritalStatus !== "single" &&
-                          maritalStatus !== "widowWidower" &&
-                          maritalStatus !== "divorced" && (
-                            <div
-                              style={{
-                                marginBottom: "40px",
-                                textAlign: "left",
-                              }}
-                            >
-                              <label
-                                style={{ fontSize: "16px", fontWeight: "bold" }}
-                              >
-                                Spouse's Given Name{" "}
-                                <span style={{ color: "red" }}>*</span>
-                              </label>
-                              <input
-                                type="text"
-                                value={spouseName}
-                                onChange={(e) => setSpouseName(e.target.value)}
-                                placeholder=""
-                                style={{
-                                  width: "100%",
-                                  padding: "10px",
-                                  marginTop: "10px",
-                                  border: "1px solid orange",
-                                  borderRadius: "4px",
-                                }}
-                              />
-                            </div>
-                          )}
-                      </div>
-                    )}
-
-                    {currentStep === 7 && (
-                      <div style={{ textAlign: "center" }}>
-                        {/* Step 3 Heading */}
-                        <p style={{ color: "#1A76D8", fontWeight: "600" }}>
-                          Present Residential Address
-                          <span style={{ color: "red" }}>*</span>
-                        </p>
-
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            //  htmlFor="ownerName"
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            House No. and Street Name
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            value={villageTownCity}
-                            onChange={handleVillageTownCityChange}
-                            id=""
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "4px",
-                            }}
-                          />
-                          {errorMessages.villageTownCity && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.villageTownCity}
-                            </p>
-                          )}
-                        </div>
-
-                        <div>
-                          {/* State Dropdown */}
-                          <div
-                            style={{ marginBottom: "20px", textAlign: "left" }}
-                          >
-                            <label
-                              htmlFor="state"
-                              style={{
-                                display: "block",
-                                marginBottom: "10px",
-                                fontSize: "16px",
-                                fontWeight: "500",
-                              }}
-                            >
-                              State<span style={{ color: "red" }}>*</span>
-                            </label>
-                            <select
-                              id="state"
-                              value={selectedState}
-                              onChange={handleStateChange}
-                              style={{
-                                width: "100%",
-                                height: "45px",
-                                fontSize: "16px",
-                                border: "1px solid #ccc",
-                                borderRadius: "4px",
-                              }}
-                            >
-                              <option value="">Select State</option>
-                              {stateData.map((stateObj, index) => (
-                                <option key={index} value={stateObj.state}>
-                                  {stateObj.state}
-                                </option>
-                              ))}
-                            </select>
-                            {errorMessages.selectedState && (
-                              <p style={{ color: "red" }}>
-                                {errorMessages.selectedState}
-                              </p>
-                            )}
-                          </div>
-
-                          {/* District Dropdown */}
-                          {selectedState && (
-                            <div
-                              style={{
-                                marginBottom: "20px",
-                                textAlign: "left",
-                              }}
-                            >
-                              <label
-                                htmlFor="district"
-                                style={{
-                                  display: "block",
-                                  marginBottom: "10px",
-                                  fontSize: "16px",
-                                  fontWeight: "500",
-                                }}
-                              >
-                                District<span style={{ color: "red" }}>*</span>
-                              </label>
-                              <select
-                                id="district"
-                                value={selectedDistrict}
-                                onChange={handleDistrictChange}
-                                style={{
-                                  width: "100%",
-                                  height: "45px",
-                                  fontSize: "16px",
-                                  border: "1px solid #ccc",
-                                  borderRadius: "4px",
-                                }}
-                              >
-                                <option value="">Select District</option>
-                                {districts.map((district, index) => (
-                                  <option key={index} value={district}>
-                                    {district}
-                                  </option>
-                                ))}
-                              </select>
-                              {errorMessages.selectedDistrict && (
-                                <p style={{ color: "red" }}>
-                                  {errorMessages.selectedDistrict}
-                                </p>
-                              )}
-                            </div>
-                          )}
-                        </div>
-
-                        <div style={{ marginBottom: "20px", textAlign: "left" }}>
-      <label
-        htmlFor="pincode"
-        style={{
-          display: "block",
-          marginBottom: "10px",
-          fontSize: "16px",
-          fontWeight: "500",
-        }}
-      >
-        Pin Code <span style={{ color: "red" }}>*</span>
-      </label>
-      <input
-        type="text"
-        id="pincode"
-        value={pincode} // Bind the input value to the state
-        onChange={handleInputChange} // Handle changes to input
-        onBlur={handleBlur} // Validate when input loses focus
-        maxLength="6" // Restrict input length to 6 characters
-        placeholder="Enter Pin Code"
-        style={{
-          width: "100%",
-          height: "45px",
-          padding: "10px",
-          fontSize: "16px",
-          border: `2px solid ${errorMessages.pincode ? "red" : "#FCA505"}`, // Red border if there's an error
-          borderRadius: "4px",
-        }}
-      />
-      {errorMessages.pincode && (
-        <p style={{ color: "red", fontSize: "14px", textAlign: "left" }}>
-          {errorMessages.pincode}
-        </p>
-      )}
-    </div>
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            htmlFor=""
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            Email ID <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            value={emailId}
-                            onChange={handleEmailIdChange}
-                            id=""
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "4px",
-                            }}
-                          />
-                          {errorMessages.emailId && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.emailId}
-                            </p>
-                          )}
-                        </div>
-
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            //  htmlFor="ownerName"
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            Nearest Police Station
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id=""
-                            value={nearbypolicestation}
-                            onChange={handleNearbyPoliceStation}
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "4px",
-                            }}
-                          />
-                        </div>
-                        <div
-                          style={{ marginBottom: "20px", textAlign: "left" }}
-                        >
-                          <label
-                            //  htmlFor="ownerName"
-                            style={{
-                              display: "block",
-                              marginBottom: "10px",
-                              fontSize: "16px",
-                              fontWeight: "500",
-                            }}
-                          >
-                            Mobile Number
-                            <span style={{ color: "red" }}>*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id=""
-                            value={mobileNumber}
-                            onChange={handleMobileNumberChange}
-                            placeholder=""
-                            style={{
-                              width: "100%",
-                              height: "45px",
-                              padding: "10px",
-                              fontSize: "16px",
-                              border: "2px solid #FCA505",
-                              borderRadius: "10px",
-                            }}
-                          />
-                          {errorMessages.mobileNumber && (
-                            <p style={{ color: "red" }}>
-                              {errorMessages.mobileNumber}
-                            </p>
-                          )}
-                        </div>
-
-                        <p
-                          style={{
-                            marginTop: "20px",
-                            fontSize: "14px",
-                            textAlign: "left",
-                          }}
-                        >
-                          By clicking submit, you agree to our{" "}
-                          <a
-                            href="/terms-conditions"
-                            style={{
-                              color: "#007BFF",
-                              textDecoration: "underline",
-                            }}
-                          >
-                            Terms & Conditions
-                          </a>{" "}
-                          and{" "}
-                          <a
-                            href="/privacy-policy"
-                            style={{
-                              color: "#007BFF",
-                              textDecoration: "underline",
-                            }}
-                          >
-                            Privacy Policy
-                          </a>
-                          .
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      marginTop: "20px",
-                    }}
-                  >
-                    {currentStep > 1 && (
-                     <>
-                     {/* Desktop Button */}
-                     {!isMobile && (
-                       <button
-                         onClick={prevStep}
-                         className="desktop-back-btn"
-                         style={{
-                           padding: "10px 20px",
-                           backgroundColor: "#FCA505",
-                           color: "#000000",
-                           border: "none",
-                           borderRadius: "5px",
-                           cursor: "pointer",
-                           marginTop:'2%',
-                           height:'1%'
-                         }}
-                       >
-                         Back
-                       </button>
-                     )}
-                     
-                     {/* Mobile Button */}
-                     {isMobile && (
-                       <button
-                         onClick={prevStep}
-                         className="mobile-back-btn"
-                         style={{
-                           padding: "10px",
-                           backgroundColor: "#FCA505",
-                           color: "#000000",
-                           border: "none",
-                           borderRadius: "50%",
-                           cursor: "pointer",
-                           width: "40px",
-                           height: "40px",
-                           display: "flex",
-                           alignItems: "center",
-                           justifyContent: "center",
-                           position: "absolute",
-                           top: "10px", // Adjust for positioning
-                           left: "10px",
-                         }}
-                       >
-                         <ArrowLeft size={20} />
-                       </button>
-                     )}
-                     </>
-                    )}
-
-                    {currentStep < 7 ? (
-                      // <button
-                      //   onClick={nextStep}
-                      //   // onClick={()=>console.log("test009897", )}
-
-                      //   style={{
-                      //     padding: "10px 20px",
-                      //     backgroundColor: "#FCA505",
-                      //     color: "#000000",
-                      //     border: "none",
-                      //     borderRadius: "5px",
-                      //     cursor: "pointer",
-                      //   }}
-                      // >
-                      //   Next
-                      // </button>
-                      <div className="next-button-container">
-  <button className="next-button" onClick={nextStep}>
-    Next
-  </button>
-</div>
-
-                    ) : (
-                      // <button
-                      //   onClick={() => {
-                      //     if (!mobileNumber) {
-                      //       setError("Mobile number is required.");
-                      //       return;
-                      //     }
-                      //     handleSendOtp();
-                      //     setShowOtpSection(true);
-                      //     setError("");
-                      //     setIsCompleted(true);
-                      //   }}
-                      //   style={{
-                      //     padding: "10px 20px",
-                      //     backgroundColor: "FCA505",
-                      //     color: "#000000",
-                      //     border: "none",
-                      //     borderRadius: "5px",
-                      //     cursor: "pointer",
-                      //   }}
-                      // >
-                      //   SUBMIT
-                      // </button>
-                      <div className="submit-button-container">
-                      <button
-                        className="submit-button"
-                        onClick={() => {
-                          // Perform the 7th step validation
-                          let errors = {};
-                    
-                          // 7th Step Validation
-                          if (!villageTownCity) {
-                            errors.villageTownCity = "House No. and Street Name is required.";
-                          }
-                          if (!selectedState) {
-                            errors.selectedState = "State is required.";
-                          }
-                          if (!selectedDistrict) {
-                            errors.selectedDistrict = "District is required.";
-                          }
-                          if (!pincode) {
-                            errors.pincode = "Pin Code is required.";
-                          } else if (!/^\d{6}$/.test(pincode)) {
-                            errors.pincode = "Pin Code must be exactly 6 digits.";
-                          }
-                          if (!emailId) {
-                            errors.emailId = "Email ID is required.";
-                          }
-                          if (!nearbypolicestation) {
-                            errors.nearbypolicestation = "Nearest Police Station is required.";
-                        }
-                        
-                          if (!mobileNumber) {
-                            errors.mobileNumber = "Mobile Number is required.";
-                          } else if (!/^\d{10}$/.test(mobileNumber)) {
-                            errors.mobileNumber = "Mobile Number must be exactly 10 digits.";
-                          }
-                    
-                          // If there are errors, set them and do not proceed
-                          if (Object.keys(errors).length > 0) {
-                            setErrorMessages(errors);
-                            return;
-                          }
-                    
-                          // Clear errors if validation passes
-                          setErrorMessages({});
-                          setError("");
-                    
-                          // Proceed with OTP and submission
-                          handleSendOtp();
-                          setShowOtpSection(true);
-                          setIsCompleted(true);
-                        }}
-                        style={{ backgroundColor: '#fca505' }}
-                      >
-                        Submit
-                      </button>
-                    </div>
-                    
-
-                    )}
-                  </div>
-                </>
-              ) : (
-                <div style={{ textAlign: "center", padding: "20px" }}>
-                  {showOtpSection ? (
-                    <div>
-                      <h4 style={{ color: "#007BFF", fontWeight: "bold" }}>
-                        OTP sent on{" "}
-                        {mobileNumber
-                          ? mobileNumber.replace(/.(?=.{4})/g, "*")
-                          : ""}
-                      </h4>
-                      <div style={{ margin: "20px 0" }}>
-                        <label
-                          style={{ fontWeight: "500", marginBottom: "10px" }}
-                        >
-                          Enter OTP <span style={{ color: "red" }}>*</span>
-                        </label>
-                        <div
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            gap: "10px",
-                          }}
-                        >
-                          {otp.map((digit, index) => (
-                            <input
-                              key={index}
-                              id={`otp-input-${index}`}
-                              type="text"
-                              maxLength="1"
-                              value={digit}
-                              onChange={(e) =>
-                                handleChange(e.target.value, index)
-                              }
-                              onKeyDown={(e) => handleBackspace(e, index)}
-                              style={{
-                                width: "50px",
-                                height: "50px",
-                                textAlign: "center",
-                                fontSize: "18px",
-                                border: "1px solid #ccc",
-                                borderRadius: "5px",
-                              }}
-                            />
-                          ))}
-                        </div>
-                      </div>
-
-                      <div style={{ marginTop: "20px", textAlign: "center" }}>
-                        <p style={{ fontSize: "14px", color: "#888" }}>
-                          {resendCountdown > 0 ? (
-                            <>Not Received? Resend in {resendCountdown}s</>
-                          ) : (
-                            <a
-                              href="#"
-                              onClick={handleResend}
-                              style={{
-                                textDecoration: "none",
-                                color: isResending ? "#ccc" : "#007BFF",
-                                pointerEvents: isResending ? "none" : "auto",
-                              }}
-                            >
-                              Resend OTP
-                            </a>
-                          )}
-                        </p>
-                      </div>
-
-                      <div className="verify-button-container">
-  <button
-    onClick={() => {
-      handleVerify().then((isVerified) => {
-        if (isVerified) {
-          finishSubmission();
-        
-        } else {
-          setError("OTP verification failed.");
-        }
-      });
+<div
+  className="d-block d-lg-none"
+  style={{
+    padding: "15px",
+    backgroundColor: "#ffffff",
+    borderRadius: "10px",
+    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+    margin: "15px",
+  }}
+>
+  {/* Charges Section */}
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      marginBottom: "20px",
     }}
-    style={{color:'#000', fontWeight:'bold'}}
-    className="verify-button"
   >
-    Verify
-  </button>
-</div>
-
-                    </div>
-                  ) : (
-                    <>
-                 {location.pathname === "/passport/proceed-to-pay" && (
-                    <>
-       
-            
-                <h2 style={styles.thankYouMessage}>Thank You for Your Submission!</h2>
-                <div style={{ padding: "10px", maxWidth: "600px", margin: "auto" }}>
-  {/* Name and Mobile Number (Responsive) */}
-  <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-    <div style={{ flex: "1 1 45%", minWidth: "200px" }}>
-      <label style={{ fontWeight: "bold", display: "block", marginBottom: "5px", textAlign:'left' }}>Name</label>
-      <input type="text" value={userDetails?.name || "N/A"} readOnly 
-             style={{ width: "100%", padding: "8px", border: "1px solid #ccc", borderRadius: "5px" }} />
-    </div>
-    <div style={{ flex: "1 1 45%", minWidth: "200px" }}>
-      <label style={{ fontWeight: "bold", display: "block", marginBottom: "5px", textAlign:'left' }}>Mobile Number</label>
-      <input type="text" value={userDetails?.mobilenumber || "N/A"} readOnly 
-             style={{ width: "100%", padding: "8px", border: "1px solid #ccc", borderRadius: "5px" }} />
-    </div>
-  </div>
-
-  {/* Order ID and Services (Responsive) */}
-  <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "10px" }}>
-    <div style={{ flex: "1 1 45%", minWidth: "200px" }}>
-      <label style={{ fontWeight: "bold", display: "block", marginBottom: "5px", textAlign:'left' }}>Order ID</label>
-      <input type="text" value={userDetails?.orderid} readOnly 
-             style={{ width: "100%", padding: "8px", border: "1px solid #ccc", borderRadius: "5px" }} />
-    </div>
-    <div style={{ flex: "1 1 45%", minWidth: "200px" }}>
-      <label style={{ fontWeight: "bold", display: "block", marginBottom: "5px" , textAlign:'left'}}>Services</label>
-      <input type="text" value={applyingFor} readOnly 
-             style={{ width: "100%", padding: "8px", border: "1px solid #ccc", borderRadius: "5px" }} />
-    </div>
-  </div>
-
-  {/* Amount Booking Fee */}
-  <div style={{ marginTop: "10px" }}>
-    <label style={{ fontWeight: "bold", display: "block", marginBottom: "5px" , textAlign:'left'}}>
-      Amount (Booking Fee)
-      {/* <p style={{ fontSize: "12px", margin: "5px 0" }} className="d-none d-lg-block">
-        You can pay the balance amount post documents verification by our consultant:
-      </p> */}
-    </label>
-    <input type="text" value={paidAmount || "₹0"} readOnly 
-           style={{ width: "100%", padding: "8px", border: "1px solid #ccc", borderRadius: "5px" }} />
-    <p style={{ fontSize: "12px", marginTop: "5px" }} >
-      You can pay the balance amount post documents verification by our consultant:
-    </p>
-  </div>
-</div>
-
-
-
-             
-                <div className="proceed-button-container">
-  <button
-    onClick={handleProceedToPay}
-    className="proceed-button"
-    style={{color:'#000', fontWeight:'bold'}}
-    disabled={isLoading} // Disable button while loading
-  >
-    {isLoading ? "Loading..." : "Proceed to Pay"}
-  </button>
-</div>
-
-      {/* Spinner */}
-      {isLoading && (
-        <div style={styles.spinnerContainer}>
-          <div style={styles.spinner}></div>
-        </div>
-      )}
-           
-       
-          </>
-          )}
-
-          </>
-                  )}
-                </div>
-              )}
-
-              {/* Close Button */}
-              <button
-                onClick={closePopup}
-                  className="d-none d-lg-block"
-                style={{
-                  position: "absolute",
-                  top: "25px",
-                  left: "8%",
-                  background: "#000000",
-                  border: "1px solid #FCA505",
-                  fontSize: "20px",
-                  padding: "8px",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                  color: "#fff",
-                }}
-              >
-                <FaArrowLeft />
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
-
-
-
-{/* reviewsection */}
-<div className="review-section-dubaivisa">
-      <div
-        className="d-flex justify-content-between align-items-center"
-        style={{ marginBottom: "2%" }}
-      >
-      </div>
-      
-      {/* Elfsight Widget Container */}
-      <div
-        className="elfsight-app-7549c18e-0660-4f32-9586-38be6cbceb68"
-        data-elfsight-app-lazy
-      ></div>
-    </div>
-      <div
+    <div
       style={{
-        backgroundColor: "#f8f8f8",
-        padding: "30px 20px",
-        borderRadius: "10px",
-        textAlign: "center",
-        margin: "40px auto",
-        maxWidth: "1000px",
+        position: "relative",
+        display: "inline-block",
+        width: "100px",
+        height: "100px",
       }}
     >
-      <h2 style={{ fontWeight: "bold", fontSize: "24px", marginBottom: "20px" }}>
-        Our Other Related Services
-      </h2>
-
-      <div
+      <img
+        src={circleIcon}
+        alt="Circle"
+        style={{ width: "100%", height: "100%" }}
+      />
+      <img
+        src={Price}
+        alt="Price Icon"
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "12px",
-          justifyContent: "center",
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "26px",
+        }}
+      />
+    </div>
+    <div>
+      <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+        Charges
+      </h5>
+      <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+        <li><strong style={{ color: "#ff9800" }}>Rs. 2,499</strong>
+        For (Normal Application)
+        {" "}
+          
+        </li>
+        <li><strong style={{ color: "#ff9800" }}>Rs. 4,499 </strong>
+        For (Tatkal Application)
+        {" "}
+        </li>
+        <li>
+          <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+          Need to pay while submitting online form (This amount will be
+          adjusted in total bill)
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+                  <br />
+                  {/* Documents Required Section (Non-scrollable) */}
+                  <div
+  className="d-none d-lg-block"
+  style={{
+    marginTop: "20px",
+    paddingLeft: "10px",
+    paddingRight: "10px",
+    paddingTop: "15px",
+    paddingBottom: "15px",
+    backgroundColor: "#fff",
+    borderRadius: "8px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "24px",
+      fontWeight: "bold",
+      marginBottom: "15px",
+      textAlign: "left",
+    }}
+  >
+    Documents Required For Fresh Passport
+  </h2>
+
+  <h4 style={{fontWeight:'600', fontSize:'20px'}}>Proof of Identity (Any 01)</h4>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Aadhar Card</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Voter ID</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Pan Card</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Driving Licence</p>
+
+  <h4 style={{fontWeight:'600',  fontSize:'20px'}} className="mt-3">Proof of Address (Any 01)</h4>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Aadhar Card</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Voter ID</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Bank Account Passbook</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Gas / Electricity / Telephone / Water Bill</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Parents Passport / Spouse Passport</p>
+
+  <h4 style={{fontWeight:'600',  fontSize:'20px'}} className="mt-3">Proof of Birth (Any 01)</h4>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- 10th Certificate</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- 12th Certificate</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Higher Education Pass Certificate</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- School Leaving Certificate</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Income Tax Assessment Order</p>
+
+  <h3 style={{fontWeight:'600',  fontSize:'20px'}} className="mt-4">Document Required for Renewal / Reissue of Passport</h3>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Original Old Passport</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- ID and Present Address Proof</p>
+
+  <h3  style={{fontWeight:'600',  fontSize:'20px'}} className="mt-4">Document Required for Minor Passport</h3>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Birth Certificate</p>
+  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Both Parents Passport</p>
+</div>
+
+<div className="d-block d-lg-none" style={{ padding: "15px" }}>
+  <div
+    style={{
+      backgroundColor: "#fff",
+      borderRadius: "8px",
+      padding: "12px",
+      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+      marginBottom: "20px",
+    }}
+  >
+    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>
+      Documents Required For Fresh Passport
+    </h5>
+
+    <h6 style={{ fontSize: "14px", fontWeight: "bold" }}>Proof of Identity (Any 01)</h6>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Aadhar Card</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Voter ID</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Pan Card</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Driving Licence</p>
+
+    <h6 style={{ fontSize: "14px", fontWeight: "bold", marginTop: "10px" }}>Proof of Address (Any 01)</h6>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Aadhar Card</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Voter ID</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Bank Account Passbook</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Gas / Electricity / Telephone / Water Bill</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Parents Passport / Spouse Passport</p>
+
+    <h6 style={{ fontSize: "14px", fontWeight: "bold", marginTop: "10px" }}>Proof of Birth (Any 01)</h6>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- 10th Certificate</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- 12th Certificate</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Higher Education Pass Certificate</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- School Leaving Certificate</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Income Tax Assessment Order</p>
+
+    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginTop: "15px" }}>
+      Document Required for Renewal / Reissue of Passport
+    </h5>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Original Old Passport</p>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- ID and Present Address Proof</p>
+
+    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginTop: "15px" }}>
+      Document Required for Minor Passport
+    </h5>
+    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Birth Certificate</p>
+    <p style={{ fontSize: "13px", marginBottom: "0" }}>- Both Parents Passport</p>
+  </div>
+</div>
+
+                  <br />
+                  {/* How It Works Section (Non-scrollable) */}
+                  <div
+                    style={{
+                      marginTop: "20px",
+                      paddingLeft: "10px",
+                      paddingRight: "10px",
+                      paddingTop: "15px",
+                      paddingBottom: "15px",
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                    }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "bold",
+                        marginBottom: "20px",
+                        textAlign: "left",
+                      }}
+                    >
+                      How It Works
+                    </h2>
+                    <div style={{ position: "relative", paddingLeft: "40px" }}>
+                      <div
+                        style={{
+                          position: "absolute",
+                          left: "15px",
+                          top: "0",
+                          height: "calc(100% - 8px)",
+                          width: "2px",
+                          backgroundColor: "#1976D2",
+                        }}
+                      />
+                      <div
+                        style={{ position: "relative", marginBottom: "40px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 1: Register Online
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                            }}
+                          >
+                        Fill all the basic details in the application on our secure portal.
+
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        style={{ position: "relative", marginBottom: "40px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 2: Upload Documents
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                            }}
+                          >
+                            Submit the required documents via WhatsApp or email.
+
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        style={{ position: "relative", marginBottom: "40px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 3: Documents Verification
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                              marginBottom: "10px",
+                            }}
+                          >
+                            Our experts review your documents for accuracy and compliance.
+
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        style={{ position: "relative", marginBottom: "40px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 4: Payment
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                            }}
+                          >
+                            Complete the payment securely to process your
+                            application.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        style={{ position: "relative", marginBottom: "20px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 5: Receive your E-Visa via E-mail
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                            }}
+                          >
+                            Get your approved E-Visa conveniently delivered to
+                            your inbox.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  {/* Client Reviews */}
+                  <div
+                    className="col-md-12  d-none d-lg-block"
+                    style={{ padding: "20px", backgroundColor: "#f0f4f8" }}
+                  >
+                    <div
+                      style={{ padding: "20px", backgroundColor: "#f9fafb" }}
+                    >
+                      <h4
+                        style={{
+                          color: "#FF6F20",
+                          marginBottom: "20px",
+                          fontWeight: "bold",
+                          fontSize: "24px",
+                        }}
+                      >
+                        Our Client Reviews
+                      </h4>
+                      <div
+                        id="reviewCarousel"
+                        className="carousel slide"
+                        data-bs-ride="carousel"
+                        data-bs-interval="3000"
+                      >
+                        <div className="carousel-inner">
+                          <div className="carousel-item active">
+                            <div className="d-flex justify-content-between">
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                  marginRight: "10px",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.
+                                  "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    P
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                    Prakasha N
+
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                  marginRight: "10px",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "
+                                  Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks
+                                  "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    A
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                 Aneev Sinha
+
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport
+                                  "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    M
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                   Manoj Mano
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="carousel-item">
+                            <div className="d-flex justify-content-between">
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                  marginRight: "10px",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "I got my passport very fast wonderful work thank you Murthy sir.
+                                  "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    A
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                               Anand Krishna
+
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "My passport had expired and wanted renewed at the earliest. Mr Ganesh helped me throughout and got it done. Would definitely recommend anyone who’d need the passport.
+                                  ."
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    A
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                   Arjun Hande
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "Good service and cooperation. Received my passport within 10 days from the appointment date. Thank you.
+
+                                  "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    s
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                   Shiva Raj
+
+
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {/* Carousel Controls */}
+<button
+  className="carousel-control-prev"
+  type="button"
+  data-bs-target="#reviewCarousel"
+  data-bs-slide="prev"
+  style={{
+    width: "40px",
+    height: "40px",
+    top: "45%",
+    left: "-30px",
+    backgroundColor: "#fff",
+    borderRadius: "50%",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+    border: "none",
+  }}
+>
+  <span
+    className="carousel-control-prev-icon"
+    aria-hidden="true"
+    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+  ></span>
+  <span className="visually-hidden">Previous</span>
+</button>
+
+<button
+  className="carousel-control-next"
+  type="button"
+  data-bs-target="#reviewCarousel"
+  data-bs-slide="next"
+  style={{
+    width: "40px",
+    height: "40px",
+    top: "45%",
+    right: "-30px",
+    backgroundColor: "#fff",
+    borderRadius: "50%",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+    border: "none",
+  }}
+>
+  <span
+    className="carousel-control-next-icon"
+    aria-hidden="true"
+    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+  ></span>
+  <span className="visually-hidden">Next</span>
+</button>
+
+                      </div>
+                    </div>
+                  </div>
+                  {window.innerWidth <= 768 && (
+  <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
+    <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+      <h4
+        style={{
+          color: "#007bff",
+          marginBottom: "20px",
+          fontWeight: "bold",
+          fontSize: "22px",
+          textAlign: "center",
         }}
       >
-        {relatedServices.map((service, index) => (
-          <button
-            key={index}
-            onClick={() => handleClick(service)}
-            style={{
-              padding: "10px 20px",
-              borderRadius: "999px",
-              border: `1px solid ${active === service.name ? "#000" : "#ccc"}`,
-              backgroundColor: active === service.name ? "#212529" : "#fff",
-              color: active === service.name ? "#fff" : "#000",
-              cursor: "pointer",
-              fontSize: "14px",
-              fontWeight: "500",
-              transition: "all 0.3s ease",
-              whiteSpace: "nowrap",
-            }}
-          >
-            {service.name}
-          </button>
-        ))}
-      </div>
-    </div>
+        Our Client Reviews
+      </h4>
 
       <div
+        id="mobileReviewCarousel"
+        className="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <div className="carousel-inner">
+          {[
+            {
+              name: "Prakasha N",
+              initial: "P",
+              review:
+                "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.",
+            },
+            {
+              name: "Aneev Sinha",
+              initial: "A",
+              review:
+                "Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks",
+            },
+            {
+              name: " Manoj Mano",
+              initial: "M",
+              review:
+                "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport",
+            },
+          ].map((item, index) => (
+            <div
+              className={`carousel-item ${index === 0 ? "active" : ""}`}
+              key={index}
+            >
+              <div
+                style={{
+                  backgroundColor: "#fff",
+                  padding: "15px",
+                  borderRadius: "8px",
+                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                  marginBottom: "10px",
+                }}
+              >
+                <div
+                  style={{
+                    color: "#FFAA00",
+                    fontSize: "18px",
+                    marginBottom: "5px",
+                  }}
+                >
+                  ★★★★★
+                </div>
+                <p
+                  style={{
+                    color: "#4B5563",
+                    fontSize: "14px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  {item.review}
+                </p>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <div
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      borderRadius: "50%",
+                      backgroundColor: "#E5E7EB",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginRight: "10px",
+                      fontWeight: "bold",
+                      color: "#000",
+                    }}
+                  >
+                    {item.initial}
+                  </div>
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "14px",
+                      color: "#374151",
+                    }}
+                  >
+                    {item.name}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Optional carousel controls */}
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#mobileReviewCarousel"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true" style={{marginLeft:'-120%'}}></span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#mobileReviewCarousel"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true" style={{marginRight:'-80%'}}></span>
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
+
+                </div>
+
+                
+
+                {/* Right Column () */}
+                <div
+                  className="col-md-4 d-none d-lg-block"
+                  ref={stickyColumnRef}
+                  style={{
+                    position: isSticky ? "fixed" : "absolute",
+                    top: isSticky ? "200px" : "auto", // Adjust this to avoid banner overlap
+                    right: 0,
+                    width: isSticky && stickyColumnRef.current ? `${stickyColumnRef.current.offsetWidth}px` : "auto",
+                    zIndex: 1000,
+                  }}
+                  
+                >
+                  <div
+                    style={{
+                      backgroundColor: "#1976D2",
+                      padding: "20px",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                      zIndex: 1000,
+                    }}
+                  >
+                    <div
+                      style={{
+                        backgroundColor: "#ff9800",
+                        color: "#333",
+                        padding: "5px",
+                        borderRadius: "5px",
+                        fontWeight: "bold",
+                        marginBottom: "15px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <p style={{ fontSize: "14px" }}>
+                        It takes less than 2 minutes to Apply
+                      </p>
+                    </div>
+                    <div
+                      style={{
+                        backgroundColor: "#f3f3f3",
+                        padding: "5px",
+                        borderRadius: "5px",
+                        marginBottom: "15px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <button
+                      onClick={handleContinue}
+                        style={{
+                          backgroundColor: "",
+                          color: "#000",
+                          border: "none",
+                          padding: "10px 20px",
+                          fontSize: "14px",
+                          fontWeight: "bold",
+                          borderRadius: "5px",
+                        }}
+                      >
+                        Apply Online
+                      </button>
+                    </div>
+                   
+                    {/* <a href="https://wa.me/+919980097315" style={{ textDecoration: "none" }}>
+  <div
+    style={{
+      backgroundColor: "#f3f3f3",
+      color: "#000",
+      padding: "5px",
+      borderRadius: "5px",
+      marginBottom: "15px",
+      display: "flex",
+      alignItems: "center",
+    }}
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp Icon"
+      style={{ width: "20px", marginRight: "10px" }}
+    />
+    <div>
+      <p
+        style={{
+          fontSize: "14px",
+          margin: 0,
+          color:'#fff',
+          backgroundColor: "#128C7E",
+          padding: "3px 5px",
+          borderRadius: "3px",
+        }}
+      >
+        Visa on WhatsApp
+      </p>
+      <p style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
+        +91 9980097315
+      </p>
+    </div>
+  </div>
+</a>
+
+<a href="tel:+919429690973" style={{ textDecoration: "none" }}>
+  <div
+    style={{
+      backgroundColor: "#f3f3f3",
+      color: "#000",
+      padding: "5px",
+      borderRadius: "5px",
+      marginBottom: "15px",
+      display: "flex",
+      alignItems: "center",
+    }}
+  >
+    <i
+      className="fa fa-phone"
+      style={{
+        fontSize: "20px",
+        marginRight: "10px",
+        color: "#408bdd",
+      }}
+    ></i>
+    <div>
+      <p
+        style={{
+          fontSize: "14px",
+          margin: 0,
+          backgroundColor: "#128C7E",
+          padding: "3px 5px",
+          color:'#fff',
+          borderRadius: "3px",
+        }}
+      >
+        Call us on
+      </p>
+      <p style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
+        94296 90973
+      </p>
+    </div>
+  </div>
+</a>
+
+
+<div
+  style={{
+    backgroundColor: "#f3f3f3",
+    color: "#000",
+    padding: "5px",
+    borderRadius: "5px",
+    marginBottom: "15px",
+    display: "flex",
+    alignItems: "center",
+  }}
+>
+  <i className="fas fa-clock" style={{ marginRight: "10px", fontSize: "16px" }}></i>
+  <div>
+    <p style={{ fontSize: "14px", margin: 0 }}>Timing</p>
+    <p
+      style={{
+        fontSize: "16px",
+        fontWeight: "bold",
+        margin: 0,
+      }}
+    >
+      9am to 9pm
+    </p>
+  </div>
+</div> */}
+                  </div>
+                </div>
+                {/* Sticky Bottom Bar for Mobile Only */}
+                <div
+                
+  style={{
+    position: "fixed",
+    bottom: 0,
+    left: 0,
+    width: "100%",
+    backgroundColor: "#ffffff",
+    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
+    display: window.innerWidth <= 768 ? "flex" : "none",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 15px",
+    zIndex: 9999,
+  }}
+>
+ 
+
+  {/* <a
+    href="https://wa.me/+919980097315"
+    style={{
+      width: "45px",
+      height: "45px",
+      backgroundColor: "#25d366",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      borderRadius: "8px",
+      marginRight: "10px",
+      color: "#fff",
+      fontSize: "20px",
+      textDecoration: "none",
+    }}
+  >
+    <i className="fab fa-whatsapp"></i>
+  </a> */}
+  <button
+    onClick={handleContinue}
+    style={{
+      flex: 1,
+      marginRight: "10px",
+      padding: "10px",
+      backgroundColor: "#007bff",
+      color: "#fff",
+      border: "none",
+      borderRadius: "8px",
+      fontWeight: "bold",
+      fontSize: "14px",
+    }}
+  >
+    Apply Now
+  </button>
+
+  {/* <a
+    href="tel:+919429690973"
+    style={{
+      width: "45px",
+      height: "45px",
+      backgroundColor: "#ff9800",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      borderRadius: "8px",
+      color: "#fff",
+      fontSize: "20px",
+      textDecoration: "none",
+    }}
+  >
+    <i className="fa fa-phone"></i>
+  </a> */}
+</div>
+
+
+              </div>
+            </div>
+
+            <div
+                 ref={stopStickyRef}
+              style={{
+                backgroundColor: "#f8f8f8",
+                padding: "30px 20px",
+                borderRadius: "10px",
+                textAlign: "center",
+                margin: "40px auto",
+                maxWidth: "1000px",
+              }}
+            >
+              <h2
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "24px",
+                  marginBottom: "20px",
+                }}
+              >
+                Our Other Country Visa Services
+              </h2>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "12px",
+                  justifyContent: "center",
+                }}
+              >
+                {relatedServices.map((service, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleClick(service)}
+                    style={{
+                      padding: "10px 20px",
+                      borderRadius: "999px",
+                      border: `1px solid ${
+                        active === service.name ? "#000" : "#ccc"
+                      }`,
+                      backgroundColor:
+                        active === service.name ? "#212529" : "#fff",
+                      color: active === service.name ? "#fff" : "#000",
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      fontWeight: "500",
+                      transition: "all 0.3s ease",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {service.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h2 style={{ textAlign: "center", marginBottom: "30px" }}>
+                Explore Our Latest Blogs
+              </h2>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+                  gap: "20px",
+                  margin: "40px",
+                }}
+              >
+                {blogs.slice(0, visibleCount).map((blog, index) => (
+                  <div
+                    key={blog.title}
+                    style={{
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+                      overflow: "hidden",
+                    }}
+                  >
+                    {blog.image && (
+                      <Link to={`/blogs/${blog.title.toLowerCase()}`}>
+                        <img
+                          className="blog-card-image"
+                          src={`https://api.makemydocuments.com/uploads/blogs/${blog.image}`}
+                          alt={blog.title}
+                        />
+                      </Link>
+                    )}
+
+                    <div style={{ padding: "15px" }}>
+                      <h3 className="blog-title">
+                        {blog.title.replace(/-/g, " ")}
+                      </h3>
+
+                      <div
+                        style={{
+                          fontSize: "14px",
+                          color: "#333",
+                          overflow: "hidden",
+                          height: "60px",
+                        }}
+                        dangerouslySetInnerHTML={{
+                          __html: blog.description.substring(0, 120) + "...",
+                        }}
+                      />
+                      <Link
+                        to={`/blogs/${blog.title.toLowerCase()}`}
+                        style={{
+                          display: "inline-block",
+                          marginTop: "10px",
+                          color: "#007bff",
+                          textDecoration: "underline",
+                          fontWeight: "500",
+                        }}
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div
         className="faq-section"
         style={{
           margin: "14px auto",
@@ -4392,80 +2381,13 @@ After successful verification, your passport will be printed and dispatched to y
 <br/>
         </>
       </div>
-    </div>
+
+            <br/>
+          </div>
+        </div>
+      </div>
     </>
   );
-};
-
-const styles = {
-  paymentSummary: {
-    maxWidth: "600px",
-    margin: "20px auto",
-    padding: "20px",
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-    backgroundColor: "#f9f9f9",
-    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
-  },
-  thankYouMessage: {
-    textAlign: "center",
-    color: "#007BFF",
-    marginBottom: "20px",
-  },
-  infoBox: {
-    marginBottom: "20px",
-  },
-  inputGroup: {
-    display: "flex",
-    alignItems: "center",
-    margin: "10px 0",
-  },
-  label: {
-    flex: "1",
-    fontWeight: "bold",
-    color: "#333",
-  },
-  input: {
-    flex: "2",
-    padding: "10px",
-    border: "1px solid #ccc",
-    borderRadius: "4px",
-    fontSize: "16px",
-    marginLeft: "10px",
-    width: "45%",
-  },
-  proceedButton: {
-    backgroundColor: "#fca505",
-    color: "#fff",
-    border: "none",
-    borderRadius: "5px",
-    padding: "10px 20px",
-    fontSize: "16px",
-    cursor: "pointer",
-    transition: "background-color 0.3s",
-  },
-  spinnerContainer: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    zIndex: 9999,
-  },
-  spinner: {
-    width: "50px",
-    height: "50px",
-    border: "5px solid #ccc",
-    borderTop: "5px solid #007bff",
-    borderRadius: "50%",
-    animation: "spin 1s linear infinite",
-  },
-  "@keyframes spin": {
-    "0%": { transform: "rotate(0deg)" },
-    "100%": { transform: "rotate(360deg)" },
-  },
 };
 
 export default PassportAgency;

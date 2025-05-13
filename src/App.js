@@ -44,6 +44,8 @@ import BlogDetails from "./BlogDetails.jsx";
 import PassportAgency from "./Services/passport/passportagency.jsx";
 import DubaiVisa from "./Dubaivisa.jsx";
 import Hongkongvisa from "./Hongkongvisa.jsx";
+import Vietnam from "./Vietnam.jsx";
+import Indonesiavisa from "./Indonesiavisa.jsx";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -181,6 +183,8 @@ const App = () => {
       <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
       <Route path="/failure" element={<Layout><FailurePayment /></Layout>} />
       <Route path="/passport-agency-in-bangalore" element={<Layout><PassportAgency /></Layout>} />
+      <Route path="/vietnam-tourist-visa-for-indians" element={<Layout><Vietnam/></Layout>}></Route>
+      <Route path="/indonesia-tourist-visa-for-indians" element={<Layout><Indonesiavisa/></Layout>}></Route>
       {/* Custom 404 Page without Header */}
       <Route path="*" element={<Custom404Page />} />
     </Routes>

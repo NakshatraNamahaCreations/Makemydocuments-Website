@@ -1,24 +1,20 @@
-import React, { useState, useEffect, useRef } from "react";
-import bannerimage from "../src/images/UAE_image_banner.jpg";
-import circleIcon from "../src/images/circle1.svg";
-import documentsIcon from "../src/images/documents.svg";
-import TimeIcon from "../src/images/Time.svg";
-import Price from "./images/Price Tag.svg";
-import axios from "axios";
-
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
-
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+// import "./Service.css";
+import circleIcon from "../src/images/circle1.svg";
+import Price from "../src/images/Price Tag.svg";
+import bannerimage from "../src/images/vieatnamindian-banner.png";
 import { Helmet } from "react-helmet";
 
 const relatedServices = [
+  { name: "United Arab Emirates", path: "/dubai-visa" },
   { name: "Singapore", path: "/singapore-visa" },
   { name: "United Kingdom", path: "/uk-visa" },
   { name: "Australia", path: "/australia-visa" },
   { name: "Malaysia", path: "/malaysia-visa" },
   { name: "Egypt", path: "/egypet-visa" },
-  { name: "Vietnam", path: "/vietnam-visa" },
   { name: "Hong Kong", path: "/hongkong-visa" },
 
   { name: "Indonesia", path: "/indonesia-visa" },
@@ -35,7 +31,7 @@ const relatedServices = [
   { name: "Uzbekistan", path: "/uzbekistan-visa" },
 ];
 
-const DubaiVisa = () => {
+const Vietnam = () => {
   // const serviceRef = useRef(null);
   const navigate = useNavigate();
   //   const { services } = useParams();
@@ -94,7 +90,7 @@ const DubaiVisa = () => {
 
   const handleContinue = () => {
     // setShowPopup(true)
-    navigate("/dubai-visa-form");
+    navigate("/vietnam-visa-form");
   };
 
   useEffect(() => {
@@ -116,66 +112,62 @@ const DubaiVisa = () => {
 
   const faqs = [
     {
-      question: " Can I apply for a Dubai tourist visa online? ",
-      // answer: (
-      //   <ul style={{ listStyleType: 'disc' }}>
-      //     <li>Minimizes the conflicts between a tenant and the owner</li>
-      //     <li>Rental/lease agreement acts as an address proof</li>
-      //     <li>Acts as a proof for Bank loans</li>
-      //     <li>Helps in investment & loan</li>
-      //     <li>Vehicle registration</li>
-      //   </ul>
-      // ),
+      question:
+        " Can I re-enter Vietnam with a single entry visa? ",
+
       answer:
-        "Yes, you can apply for a Dubai tourist visa online through official visa platforms or travel agencies.",
+        "No, a single entry visa allows only one entry. You'll need a multiple entry visa to re-enter.",
     },
     {
-      question: "Is it possible to extend my Dubai tourist visa?",
+      question: " Is travel insurance mandatory for Vietnam?",
       answer:
-        "Yes, a Dubai tourist visa can be extended for up to 30 days, but the extension is subject to approval by immigration authorities.",
+        "No, it's not mandatory, but it is highly recommended for safety during your trip.",
     },
     {
-      question: "Do I need to book a flight and hotel before applying for the visa?",
+      question: "What if my visa application is rejected?",
       answer:
-        "Yes, you need to provide flight and hotel booking details as part of the visa application process.",
+        "You will be notified with the reason for rejection, and you can reapply after correcting the issues.",
     },
     {
-      question: "Can I apply for a Dubai tourist visa if I have a previous visa rejection? ",
+      question: "Can I apply for a Vietnam visa for someone else?",
       answer:
-        "Yes, you can still apply, but previous rejections might affect the approval process depending on the reason.",
+        "Yes, you can submit an application on behalf of another person with their documents and consent.",
     },
     {
-      question: "Is health insurance required for a Dubai tourist visa? ",
+      question:
+        "Can I enter Vietnam on the exact date mentioned on the E-Visa?",
       answer:
-        "While not mandatory, travel health insurance is highly recommended for emergencies during your stay.",
+        "Yes, you can enter Vietnam on or after the entry date printed on your E-Visa.",
     },
     {
-      question: "Do I need to submit original documents for a Dubai tourist visa? ",
+      question: "What happens if I overstay my visa in Vietnam?",
       answer:
-        "No, you only need to submit scanned copies of the required documents unless requested otherwise by the authorities.",
+        "Overstaying may lead to fines or travel bans. It's best to apply for an extension before expiry.",
     },
     {
-      question: "How can I track my Dubai tourist visa application status? ",
+      question:
+        " Do children need a separate Vietnam visa?",
       answer:
-        "You can track your application status online through the visa platform or agency you applied through.",
+        "Yes, every traveler including infants and children must have an individual visa.",
     },
     {
-      question: "Can I get a visa on arrival in Dubai? ",
+      question: "Can I convert a tourist visa to a business visa after arrival? ",
       answer:
-        "Indian nationals generally need to apply for a tourist visa before traveling, as visa on arrival is not available for most Indians.",
+        "No, visa conversion is not allowed within Vietnam. You must apply for a new visa type.",
     },
     {
-      question: "Can I travel to other countries in the UAE with a Dubai tourist visa? ",
+      question:
+        "What should I do if I lose my E-Visa copy?",
       answer:
-        "Yes, a Dubai tourist visa allows travel to other emirates within the UAE, as long as the visa is valid.",
+        "You can re-download it from your email or request assistance from your visa service provider.",
     },
     {
-      question: "What is the difference between a tourist visa and a transit visa for Dubai? ",
+      question:
+        "Can I apply for a Vietnam visa while already abroad? ",
       answer:
-        "A tourist visa is for leisure or business stays, while a transit visa is for shortstops (usually 48-96 hours) when passing through Dubai en route to another destination.",
+        "Yes, Indian citizens can apply online from any country with internet access.",
     },
   ];
-
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -183,41 +175,54 @@ const DubaiVisa = () => {
 
   return (
     <>
-    <Helmet>
-    <title>Dubai Tourist Visa for Indians | Fees and Application Process</title>
-      <meta name="description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai.
-" />
-      <meta name="keywords" content= "Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-      <link rel="canonical" href="https://makemydocuments.com/dubai-tourist-visa-for-indians" />
-      {/* <meta name="author" content={currentMeta.canonical} /> */}
-      <meta name="rating" content="General" />
-      <meta name="revisit-after" content="2 days" />
-      <meta name="robots" content="ALL, index, follow" />
-      <meta name="distribution" content="Global" />
-      <meta name="rating" content="Safe For All" />
-      <meta name="language" content="English" />
-      <meta httpEquiv="window-target" content="_top" />
-      <meta httpEquiv="pics-label" content="for all ages" />
-      <meta name="GOOGLEBOTS" content="All, FOLLOW" />
-      <meta name="YAHOOBOTS" content="All, FOLLOW" />
-      <meta name="MSNBOTS" content="All, FOLLOW" />
-      <meta name="BINGBOTS" content="All, FOLLOW" />
-      <meta name="Googlebot-Image" content="All" />
-      <meta name="Slurp" content="All" />
-      <meta name="Scooter" content="All" />
-      <meta name="WEBCRAWLERS" content="All" />
+      <Helmet>
+        <title>
+        Vietnam Tourist Visa for Indians – Fast & Easy Approval
+        </title>
+        <meta
+          name="description"
+          content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000."
+        />
+        <meta
+          name="keywords"
+          content=""
+        />
+        <link
+          rel="canonical"
+          href="https://makemydocuments.com/vietnam-tourist-visa-for-indians"
+        />
+        {/* <meta name="author" content={currentMeta.canonical} /> */}
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="2 days" />
+        <meta name="robots" content="ALL, index, follow" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="Safe For All" />
+        <meta name="language" content="English" />
+        <meta httpEquiv="window-target" content="_top" />
+        <meta httpEquiv="pics-label" content="for all ages" />
+        <meta name="GOOGLEBOTS" content="All, FOLLOW" />
+        <meta name="YAHOOBOTS" content="All, FOLLOW" />
+        <meta name="MSNBOTS" content="All, FOLLOW" />
+        <meta name="BINGBOTS" content="All, FOLLOW" />
+        <meta name="Googlebot-Image" content="All" />
+        <meta name="Slurp" content="All" />
+        <meta name="Scooter" content="All" />
+        <meta name="WEBCRAWLERS" content="All" />
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
-      <script>
-        {`
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"
+        ></script>
+        <script>
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QN4189EDG5');
         `}
-      </script>
+        </script>
 
-      <script>
+        <script>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -235,7 +240,7 @@ const DubaiVisa = () => {
           {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=865961251883214&ev=PageView&noscript=1" alt="Meta Pixel" />`}
         </noscript>
 
-         <script>
+        <script>
           {`
             (function(w,d,t,r,u){
               var f,n,i;w[u]=w[u]||[],f=function(){
@@ -253,63 +258,63 @@ const DubaiVisa = () => {
           `}
         </script>
         <script type="application/ld+json">
-    {`
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Make My Documents",
-        "image": "https://www.makemydocuments.com/logo.png",
-        "@id": "https://makemydocuments.com/dubai-tourist-visa-for-indians",
-        "url": "https://makemydocuments.com/dubai-tourist-visa-for-indians",
-        "telephone": "+91-9429690973",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "No 344, 2nd Main Rd, Manjunath Nagar, Mookambika Nagar, Dattatreya Nagar, Hosakerehalli",
-          "addressLocality": "Bengaluru",
-          "addressRegion": "Karnataka",
-          "postalCode": "560085",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "12.925435912146988",
-          "longitude": "77.5409615823579"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "10:00",
-            "closes": "17:00"
-          }
-        ],
-        "priceRange": "₹₹",
-        "description": "Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Visa Services",
-          "itemListElement": [
+          {`
             {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "New Tourist Visa Applications"
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Make My Documents",
+              "image": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
+              "@id": "https://makemydocuments.com/vietnam-tourist-visa-for-indians",
+              "url": "https://makemydocuments.com/vietnam-tourist-visa-for-indians",
+              "telephone": "+91-9429690973",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "No 344, 2nd Main Rd, Manjunath Nagar, Mookambika Nagar, Dattatreya Nagar, Hosakerehalli",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "postalCode": "560085",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "12.925435912146988",
+                "longitude": "77.5409615823579"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ],
+                  "opens": "10:00",
+                  "closes": "17:00"
+                }
+              ],
+              "priceRange": "₹₹",
+              "description": "Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000.",
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Visa Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "New Tourist Visa Applications"
+                    }
+                  }
+                ]
               }
             }
-          ]
-        }
-      }
-    `}
-  </script>
+          `}
+        </script>
 
-  <script type="application/ld+json">
+        <script type="application/ld+json">
     {`
       {
         "@context": "https://schema.org",
@@ -317,103 +322,104 @@ const DubaiVisa = () => {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Can I apply for a Dubai tourist visa online?",
+            "name": "Can I re-enter Vietnam with a single entry visa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, you can apply for a Dubai tourist visa online through official visa platforms or travel agencies."
+              "text": "No, a single entry visa allows only one entry. You'll need a multiple entry visa to re-enter."
             }
           },
           {
             "@type": "Question",
-            "name": "Is it possible to extend my Dubai tourist visa?",
+            "name": "Is travel insurance mandatory for Vietnam?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, a Dubai tourist visa can be extended for up to 30 days, but the extension is subject to approval by immigration authorities."
+              "text": "No, it's not mandatory, but it is highly recommended for safety during your trip."
             }
           },
           {
             "@type": "Question",
-            "name": "Do I need to book a flight and hotel before applying for the visa?",
+            "name": "What if my visa application is rejected?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, you need to provide flight and hotel booking details as part of the visa application process."
+              "text": "You will be notified with the reason for rejection, and you can reapply after correcting the issues."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I apply for a Dubai tourist visa if I have a previous visa rejection?",
+            "name": "Can I apply for a Vietnam visa for someone else?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, you can still apply, but previous rejections might affect the approval process depending on the reason."
+              "text": "Yes, you can submit an application on behalf of another person with their documents and consent."
             }
           },
           {
             "@type": "Question",
-            "name": "Is health insurance required for a Dubai tourist visa?",
+            "name": "Can I enter Vietnam on the exact date mentioned on the E-Visa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "While not mandatory, travel health insurance is highly recommended for emergencies during your stay."
+              "text": "Yes, you can enter Vietnam on or after the entry date printed on your E-Visa."
             }
           },
           {
             "@type": "Question",
-            "name": "Do I need to submit original documents for a Dubai tourist visa?",
+            "name": "What happens if I overstay my visa in Vietnam?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No, you only need to submit scanned copies of the required documents unless requested otherwise by the authorities."
+              "text": "Overstaying may lead to fines or travel bans. It's best to apply for an extension before expiry."
             }
           },
           {
             "@type": "Question",
-            "name": "How can I track my Dubai tourist visa application status?",
+            "name": "Do children need a separate Vietnam visa?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can track your application status online through the visa platform or agency you applied through."
+              "text": "Yes, every traveler including infants and children must have an individual visa."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I get a visa on arrival in Dubai?",
+            "name": "Can I convert a tourist visa to a business visa after arrival?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Indian nationals generally need to apply for a tourist visa before traveling, as visa on arrival is not available for most Indians."
+              "text": "No, visa conversion is not allowed within Vietnam. You must apply for a new visa type."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I travel to other countries in the UAE with a Dubai tourist visa?",
+            "name": "What should I do if I lose my E-Visa copy?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, a Dubai tourist visa allows travel to other emirates within the UAE, as long as the visa is valid."
+              "text": "You can re-download it from your email or request assistance from your visa service provider."
             }
           },
           {
             "@type": "Question",
-            "name": "What is the difference between a tourist visa and a transit visa for Dubai?",
+            "name": "Can I apply for a Vietnam visa while already abroad?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A tourist visa is for leisure or business stays, while a transit visa is for shortstops (usually 48-96 hours) when passing through Dubai en route to another destination."
+              "text": "Yes, Indian citizens can apply online from any country with internet access."
             }
           }
         ]
       }
     `}
   </script>
-  <meta property="og:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
-  <meta property="og:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-  <meta property="og:url" content="https://makemydocuments.com/dubai-visa" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
-  <meta property="og:site_name" content="Make My Documents" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
-  <meta name="twitter:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-  <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
-  <meta name="twitter:site" content="@makemydocuments" />
-  
+<meta property="og:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
+<meta property="og:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
+<meta property="og:url" content="https://makemydocuments.com/vietnam-tourist-visa-for-indians" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
+<meta property="og:site_name" content="Make My Documents" />
 
-    </Helmet>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
+<meta name="twitter:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
+<meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
+<meta name="twitter:site" content="@makemydocuments" />
+
+
+      </Helmet>
 
       <div
         style={{
@@ -435,7 +441,8 @@ const DubaiVisa = () => {
               aria-current="page"
               style={{ fontWeight: "bold", fontSize:'14px' }}
             >
-     Dubai Tourist Visa for Indians
+              Vietnam Tourist Visa for Indians
+
 
             </li>
           </ol>
@@ -499,7 +506,7 @@ const DubaiVisa = () => {
                       
                     }}
                   >
-                     Dubai Tourist Visa for Indians
+                   Vietnam Tourist Visa for Indians
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -561,21 +568,18 @@ const DubaiVisa = () => {
     </p>
     <p
       style={{
-        fontSize: "12px",
+        fontSize: "16px",
         fontWeight: "bold",
         color: "#333",
         margin: 0,
         backgroundColor: "#e3f2fd",
         padding: "6px 10px",
         borderRadius: "6px",
-        whiteSpace:'nowrap',
         display: "inline-block",
       }}
     >
-  04 to 05 working days
-
+      07 - 10 working days
     </p>
-  
   </div>
 
   <div style={{ flex: 1, textAlign: "right" }}>
@@ -591,7 +595,7 @@ const DubaiVisa = () => {
     </p>
     <p
       style={{
-        fontSize: "12px",
+        fontSize: "16px",
         fontWeight: "bold",
         color: "#333",
         backgroundColor: "#e3f2fd",
@@ -601,7 +605,7 @@ const DubaiVisa = () => {
         margin: 0,
       }}
     >
-      ₹7,854/-
+      ₹4,000/-
     </p>
   </div>
 </div>
@@ -666,7 +670,7 @@ const DubaiVisa = () => {
       }}
     >
       <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-      Dubai Tourist Visa for Indians
+      Vietnam Tourist Visa for Indians
       </h2>
 
       <div
@@ -695,15 +699,12 @@ const DubaiVisa = () => {
       >
         <div>
           <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Processing time</p>
-       
-          <p style={{ margin: 0,  fontSize: "10px", }}> 04 to 05 working days
-
-          </p>
+          <p style={{ margin: 0,  fontSize: "10px", }}>07 - 10 working days          </p>
         </div>
         <div>
           <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Starting from</p>
           <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold",  fontSize: "10px", }}>
-            ₹7,854/-
+            ₹4,000/-
           </p>
         </div>
       </div>
@@ -719,7 +720,7 @@ const DubaiVisa = () => {
                   {/* Charges Section (Scrollable) */}
                     <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{marginLeft:'2%'}}>
   {/* Image Section */}
-  {/* <div className="d-flex justify-content-center align-items-center">
+  <div className="d-flex justify-content-center align-items-center">
     <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
       <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
       <img
@@ -734,25 +735,16 @@ const DubaiVisa = () => {
         }}
       />
     </div>
-  </div> */}
+  </div>
 
   {/* Content Section */}
   <div style={{marginTop:''}}>
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li>
-      UAE 30 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 7,854/-</strong>
-       </li>
-       <li>
-      UAE 30 Days Multiple  Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 14,600/-</strong>
-       </li>
-       <li>
-      UAE 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 12,446/-</strong>
-       </li>
-       <li>
-      UAE 60 Days Multiple Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 19,118/-</strong>
-       </li>
-      
+      <li>Vietnam 30 Days Single Entry E-Visa 
+      <strong style={{color:'#ff9800'}}>Rs. 3,950/-</strong> </li>
+      <li>Vietnam 90 Days Multiple Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs 14,199/-</strong>
+      </li>
       <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
     
     </ul>
@@ -808,24 +800,12 @@ const DubaiVisa = () => {
       </h5>
       <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
         <li>
-        UAE 30 Days Single Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 7,854</strong>
+        Vietnam 30 Days Single Entry E-Visa{" "}
+          <strong style={{ color: "#ff9800" }}>Rs. 3950/-</strong>
         </li>
         <li>
-        UAE 30 Days Multiple  Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 14,600</strong>
-        </li>
-        <li>
-        UAE 60 Days Single Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 12,446</strong>
-        </li>
-        <li>
-        UAE 60 Days Multiple Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 19,118</strong>
+        Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: "#ff9800" }}> Rs 14,199
+        </strong>
         </li>
         <li>
           <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
@@ -840,64 +820,80 @@ const DubaiVisa = () => {
                   <br />
                   {/* Documents Required Section (Non-scrollable) */}
                   <div
-  className="d-none d-lg-block"
-  style={{
-    marginTop: "20px",
-    paddingLeft: "10px",
-    paddingRight: "10px",
-    paddingTop: "15px",
-    paddingBottom: "15px",
+                  className="d-none d-lg-block"
+                    style={{
+                      marginTop: "20px",
+                      paddingLeft: "10px",
+                      paddingRight: "10px",
+                      paddingTop: "15px",
+                      paddingBottom: "15px",
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                    }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "bold",
+                        marginBottom: "15px",
+                        textAlign: "left",
+                      }}
+                    >
+                      Documents Required For Vietnam Tourist Visa for Indians
+
+                    </h2>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        margin: 0,
+                        color: "#333",
+                      }}
+                    >
+                     - Passport
+
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        margin: 0,
+                        color: "#333",
+                      }}
+                    >
+                     - Traveler Photo
+
+                    </p>
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        margin: 0,
+                        color: "#333",
+                      }}
+                    >
+                     - Flight Tickets
+
+                    </p>
+                  </div>
+                  <div className="d-block d-lg-none" style={{ padding: "15px" }}>
+                  <div style={{
     backgroundColor: "#fff",
     borderRadius: "8px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-  }}
->
-  <h2
-    style={{
-      fontSize: "24px",
-      fontWeight: "bold",
-      marginBottom: "15px",
-      textAlign: "left",
-    }}
-  >
-    Documents Required For Dubai Tourist Visa for Indians
-  </h2>
-
-
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- India PAN Card  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport Back  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
-
-
- 
-</div>
-
-<div className="d-block d-lg-none" style={{ padding: "15px" }}>
-  <div
-    style={{
-      backgroundColor: "#fff",
-      borderRadius: "8px",
-      padding: "12px",
-      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-      marginBottom: "20px",
-    }}
-  >
-    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>
-    Documents Required For Dubai Tourist Visa for Indians
-    </h5>
-
-    <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- India PAN Card  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport Back  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
+    padding: "15px",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+    marginBottom: "20px"
+  }}>
+    <h5 style={{ fontSize: "18px", fontWeight: "bold" }}>Documents Required</h5>
+    <p style={{ fontSize: "14px", marginBottom: 0 }}>
+      - Passport
+    </p>
+    <p style={{ fontSize: "14px", marginBottom: 0 }}>
+      - Traveler Photo
+    </p>
+    <p style={{ fontSize: "14px", marginBottom: 0 }}>
+      - Flight Tickets
+    </p>
   </div>
-</div>
-
+                  </div>
                   <br />
                   {/* How It Works Section (Non-scrollable) */}
                   <div
@@ -1174,8 +1170,121 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.
+                                  "Excellent service! They handled my document processing with professionalism and kept me updated at every stage. Highly recommended.
                                   "
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    R
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                    Rohit S
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                  marginRight: "10px",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "
+                                  What stood out for me was the transparency. No hidden charges, clear communication, and timely delivery. I’ve already referred them to three friends!"
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    A
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                  Ankit
+
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "The team knew exactly what was needed for Indian applicants and avoided all the common errors. Entry at Ho Chi Minh airport was seamless."
                                 </p>
                                 <div
                                   style={{
@@ -1207,123 +1316,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                    Prakasha N
-
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={{
-                                  width: "30%",
-                                  padding: "20px",
-                                  backgroundColor: "#fff",
-                                  borderRadius: "8px",
-                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                                  marginRight: "10px",
-                                }}
-                              >
-                                <div style={{ marginBottom: "10px" }}>
-                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
-                                </div>
-                                <p
-                                  style={{
-                                    color: "#4B5563",
-                                    marginBottom: "10px",
-                                    fontSize: "14px",
-                                  }}
-                                >
-                                  "
-                                  Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks
-                                  "
-                                </p>
-                                <div
-                                  style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    marginTop: "auto",
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      width: "32px",
-                                      height: "32px",
-                                      borderRadius: "50%",
-                                      backgroundColor: "#E5E7EB",
-                                      color: "#fff",
-                                      fontWeight: "bold",
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                      marginRight: "10px",
-                                    }}
-                                  >
-                                    A
-                                  </div>
-                                  <span
-                                    style={{
-                                      fontWeight: "bold",
-                                      fontSize: "14px",
-                                      color: "#374151",
-                                    }}
-                                  >
-                                 Aneev Sinha
-
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={{
-                                  width: "30%",
-                                  padding: "20px",
-                                  backgroundColor: "#fff",
-                                  borderRadius: "8px",
-                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                                }}
-                              >
-                                <div style={{ marginBottom: "10px" }}>
-                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
-                                </div>
-                                <p
-                                  style={{
-                                    color: "#4B5563",
-                                    marginBottom: "10px",
-                                    fontSize: "14px",
-                                  }}
-                                >
-                                  "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport
-                                  "
-                                </p>
-                                <div
-                                  style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    marginTop: "auto",
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      width: "32px",
-                                      height: "32px",
-                                      borderRadius: "50%",
-                                      backgroundColor: "#E5E7EB",
-                                      color: "#fff",
-                                      fontWeight: "bold",
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                      marginRight: "10px",
-                                    }}
-                                  >
-                                    M
-                                  </div>
-                                  <span
-                                    style={{
-                                      fontWeight: "bold",
-                                      fontSize: "14px",
-                                      color: "#374151",
-                                    }}
-                                  >
-                                   Manoj Mano
+                                    Priya S
                                   </span>
                                 </div>
                               </div>
@@ -1351,7 +1344,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "I got my passport very fast wonderful work thank you Murthy sir.
+                                  "Highly recommended! My Vietnam travel plan was last minute, but they still managed to get my visa approved in time with no hassles.
                                   "
                                 </p>
                                 <div
@@ -1375,7 +1368,7 @@ const DubaiVisa = () => {
                                       marginRight: "10px",
                                     }}
                                   >
-                                    A
+                                    N
                                   </div>
                                   <span
                                     style={{
@@ -1384,7 +1377,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                               Anand Krishna
+                                   Neeraja V
 
                                   </span>
                                 </div>
@@ -1408,7 +1401,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "My passport had expired and wanted renewed at the earliest. Mr Ganesh helped me throughout and got it done. Would definitely recommend anyone who’d need the passport.
+                                  "Professional and prompt service! They took care of everything including formatting my passport scan and photo for the visa portal
                                   ."
                                 </p>
                                 <div
@@ -1432,7 +1425,7 @@ const DubaiVisa = () => {
                                       marginRight: "10px",
                                     }}
                                   >
-                                    A
+                                    K
                                   </div>
                                   <span
                                     style={{
@@ -1441,7 +1434,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Arjun Hande
+                                    Karthik C
                                   </span>
                                 </div>
                               </div>
@@ -1464,8 +1457,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "Good service and cooperation. Received my passport within 10 days from the appointment date. Thank you.
-
+                                  "Affordable and efficient! I didn’t expect such fast service without any hidden fees. Will definitely use them again for my next trip.
                                   "
                                 </p>
                                 <div
@@ -1489,7 +1481,7 @@ const DubaiVisa = () => {
                                       marginRight: "10px",
                                     }}
                                   >
-                                    s
+                                    D
                                   </div>
                                   <span
                                     style={{
@@ -1498,8 +1490,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Shiva Raj
-
+                                   Divya P
 
                                   </span>
                                 </div>
@@ -1583,22 +1574,22 @@ const DubaiVisa = () => {
         <div className="carousel-inner">
           {[
             {
-              name: "Prakasha N",
-              initial: "P",
+              name: "Neha",
+              initial: "N",
               review:
-                "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.",
+                "Super smooth process! I received my Hong Kong visa faster than expected. Highly professional!",
             },
             {
-              name: "Aneev Sinha",
+              name: "Arjun",
               initial: "A",
               review:
-                "Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks",
+                "They made the documentation process easy and clear. Great support throughout.",
             },
             {
-              name: " Manoj Mano",
-              initial: "M",
+              name: "Priya S",
+              initial: "P",
               review:
-                "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport",
+                "Excellent service! Very reliable and timely delivery of my visa documents.",
             },
           ].map((item, index) => (
             <div
@@ -2055,299 +2046,182 @@ const DubaiVisa = () => {
                 ))}
               </div>
             </div>
+
             <div
-        className="faq-section-visa"
-        // style={{
-        //   margin: "10px auto",
-        //   padding: "20px",
-        //   background: "#FFFFFF",
-        //   borderRadius: "10px",
-        //   width: "80%",
-        // }}
-      >
-        <h4
-          style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            color: "#007BFF",
-            marginBottom: "20px",
-          }}
-        >
-          FAQs
-        </h4>
-        <p
-          style={{
-            textAlign: "center",
-            fontWeight: "500",
-            marginBottom: "30px",
-          }}
-        >
-          Need help? Contact us for any queries related to us
-        </p>
-        <div className="faq-list">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="faq-item"
-              style={{ marginBottom: "10px" }}
+              className="faq-section-visa"
+              // style={{
+              //   margin: "10px auto",
+              //   padding: "20px",
+              //   background: "#FFFFFF",
+              //   borderRadius: "10px",
+              //   width: "80%",
+              // }}
             >
-              <button
+              <h4
                 style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  padding: "10px 20px",
-                  border: "1px solid #007BFF",
-                  borderRadius: "5px",
-                  background: "#F9F9F9",
-                  fontWeight: "500",
-                  cursor: "pointer",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  color: "#007BFF",
+                  marginBottom: "20px",
                 }}
-                onClick={() => handleToggle(index)}
               >
-               <h5 style={{fontSize:'16px'}}>{faq.question}</h5> 
-                <span
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "16px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
-              {openIndex === index && (
-                <div
-                  style={{
-                    marginTop: "10px",
-                    padding: "10px 20px",
-                    background: "#F3F3F3",
-                    borderRadius: "5px",
-                    color: "#333",
-                  }}
-                >
-                  {faq.answer}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-        <br></br>
-        <>
-          <h2 className="faq-tag-title-h3">
-            <strong>Dubai Tourist Visa for Indians - A Complete Guide 
+                FAQs
+              </h4>
+              <p
+                style={{
+                  textAlign: "center",
+                  fontWeight: "500",
+                  marginBottom: "30px",
+                }}
+              >
+                Need help? Contact us for any queries related to us
+              </p>
+              <div className="faq-list">
+                {faqs.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="faq-item"
+                    style={{ marginBottom: "10px" }}
+                  >
+                    <button
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        width: "100%",
+                        padding: "10px 20px",
+                        border: "1px solid #007BFF",
+                        borderRadius: "5px",
+                        background: "#F9F9F9",
+                        fontWeight: "500",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => handleToggle(index)}
+                    >
+                      <h5 style={{ fontSize: "16px" }}>{faq.question}</h5>
+                      <span
+                        style={{
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          marginLeft: "10px",
+                        }}
+                      >
+                        {openIndex === index ? "▲" : "▼"}
+                      </span>
+                    </button>
+                    {openIndex === index && (
+                      <div
+                        style={{
+                          marginTop: "10px",
+                          padding: "10px 20px",
+                          background: "#F3F3F3",
+                          borderRadius: "5px",
+                          color: "#333",
+                        }}
+                      >
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <br></br>
+              <>
+                <h2 className="faq-tag-title-h3">
+                  <strong>
+                  Vietnam Tourist Visa for Indians - A Complete Guide
+                  </strong>
+                </h2>
+                <br />
+              
+                <p>Indian citizens planning to visit Vietnam for tourism purposes must apply for a Vietnam Tourist Visa. The visa is issued in electronic format (E-Visa) and allows entry for specified durations. The application process is entirely online and takes approximately 7 to 10 working days. Travelers must submit basic personal information, passport details, and a recent photograph.</p>
+<p>Visa approval is subject to document verification, and travelers will receive their E-Visa directly by email. The visa must be printed and carried during travel.</p>
 
-            </strong>
-          </h2>
-          <br/>
-          <h2 style={{fontSize:'20px', fontWeight:'bold'}}> Types of Dubai Tourist Visas for Indians
-          </h2>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> 30-Day Tourist Visa: </h3>
-          <p style={{textAlign:'left'}}>
-          The 30-Day Tourist Visa is perfect for travelers who want to explore Dubai for a short period. This visa allows you to stay in Dubai for up to 30 days, providing ample time to explore the city's iconic attractions, shopping destinations and cultural sites. This visa is ideal for a quick vacation or business trip.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> 90-Day Tourist Visa
-          : </h3>
-          <p style={{textAlign:'left'}}>
-          The 90-Day Tourist Visa is designed for those who want to stay in Dubai for a longer duration. With this visa, you can stay up to 90 days, making it perfect for travelers planning a more extended visit. It’s an excellent option for tourists who want to enjoy Dubai at a relaxed pace or who are attending long-term events or activities.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> Multiple Entry Visa
-          : </h3>
-          <p style={{textAlign:'left'}}>
-          The Multiple Entry Visa allows travelers to visit Dubai multiple times within a specific period (usually six months). This visa is ideal for individuals who need to travel to Dubai for business or leisure multiple times during their stay. The multiple-entry option is more flexible and convenient, as you don't need to apply for a new visa every time you travel.
-          </p>
-          <br/>
-          <h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-  Who is Eligible for a Dubai Tourist Visa?
-</h2>
+                <br />
+                <h2 style={{ fontSize: "22px", fontWeight: "bold" }}>What are the Types of Vietnam Visa                </h2>
+                <br/>
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                E-Visa
+                </h3>
+              <p>The E-Visa is a digital visa issued online for short-term stays. It is valid for 30 days and is available for both tourism and business purposes.
+              </p>
+                <br />
+                
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                Tourist Visa
+                </h3>
+              <p>Issued for leisure travel, sightseeing, or family visits. Indian citizens can apply online and receive it via email without visiting an embassy.
+              </p>         
 <br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    <strong>Indian Nationals:</strong> Indian passport holders are eligible to apply for a Dubai tourist visa.
-  </li>
-  <li>
-    <strong>Age Requirement:</strong> Applicants must be 18 years or older. Minors must travel with parents or a guardian.
-  </li>
-  <li>
-    <strong>Valid Passport:</strong> Passport must be valid for at least six months from the date of travel.
-  </li>
-  <li>
-    <strong>Travel Purpose:</strong> The visa is for those visiting Dubai for tourism, leisure, or short business trips.
 
-  </li>
-  <li>
-    <strong>Clear Travel History:</strong> Applicants should have a clean travel history without any prior visa violations or overstay issues.
-  </li>
-  <li>
-    <strong>Return Ticket:</strong> A return flight booking is typically required to prove the intention of returning to India after the visit.
-
-  </li>
-  <li>
-    <strong>Hotel Accommodation:</strong> Proof of hotel booking or accommodation details in Dubai is necessary.
-
-  </li>
-  <li>
-    <strong>No Criminal Record:</strong> A clean criminal background is essential for visa approval.
-
-  </li>
-</ul>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+Business Visa
+                </h3>
+              <p>Designed for individuals visiting Vietnam for work, meetings, or business-related activities. It often requires additional documentation like an invitation letter.
+              </p>         
 <br/>
-<h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-Why Choose Dubai as a Travel Destination?
-
-</h2>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+Visa on Arrival
+                </h3>
+              <p>Applicable only with a prior approval letter obtained online. Travelers receive the visa at a Vietnam airport after presenting the letter and paying a stamping fee.
+              </p>         
 <br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    <strong>World-Class Attractions:</strong> Dubai is home to some of the world’s most iconic landmarks, including the Burj Khalifa, Burj Al Arab and Palm Jumeirah.
-  </li>
-  <li>
-    <strong>Shopping Paradise:</strong> Dubai boasts some of the largest malls, including the Dubai Mall, offering a vast range of international brands, luxury goods and entertainment options.
 
-  </li>
-  <li>
-    <strong>Luxury and Comfort:</strong>  The city is renowned for its luxury hotels, resorts and high-end experiences, catering to those seeking a lavish lifestyle.
-
-  </li>
-  <li>
-    <strong>Adventure and Thrills:</strong>  From desert safaris and dune bashing to skydiving over the Palm, Dubai offers thrilling activities for adventure seekers.
-
-
-  </li>
-  <li>
-    <strong>Vibrant Nightlife:</strong> Dubai offers a lively nightlife scene with upscale bars, nightclubs and beach parties.
-
-  </li>
-  <li>
-    <strong>Events and Festivals:</strong> The city hosts various international events, including the Dubai Shopping Festival, Dubai World Cup and global music festivals.
-  </li>
- 
-</ul>
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Vietnam Visa Extension and Renewal</h2>
 <br/>
-<h2 style={{fontSize:'16px', fontWeight:'bold'}}>How to Apply for a Dubai Tourist Visa for Indians</h2>
-          
+<p>Visa extension or renewal options are available for travelers who wish to extend their stay in Vietnam:</p>
 <br/>
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}>Register Online
-: </h3>
-          <p style={{textAlign:'left'}}>
-          The first step in applying for a Dubai Tourist Visa is to register online through the official visa application platform. You will need to provide basic personal information, such as your name, nationality, passport details, and travel dates.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Upload Documents
-: </h3>
-          <p style={{textAlign:'left'}}>
-          After registering, you’ll need to upload necessary documents like a clear scan of your passport, a recent passport-sized photograph, flight bookings, hotel reservations, and proof of financial stability (e.g., bank statements).
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Documents Verification
-: </h3>
-          <p style={{textAlign:'left'}}>
-          Once the documents are uploaded, they will undergo a verification process. The Dubai immigration authorities will check for document authenticity and ensure that all necessary information has been provided.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Payment
-: </h3>
-          <p style={{textAlign:'left'}}>
-          Next, you’ll be required to make the payment for the visa application. The payment can be made online using various methods, such as debit/credit cards or bank transfers. Once the payment is confirmed, the processing of your visa application begins.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> Receive your E-Visa via E-mail
-
-: </h3>
-          <p style={{textAlign:'left'}}>
-          After processing your application, the approved tourist visa will be sent to your email address in the form of an e-visa. This e-visa will contain all the details about your travel, including the visa validity, entry dates, and duration of stay. Ensure that you print a copy of your e-visa to present at immigration upon arrival in Dubai.
-
-          </p>
-          <br/>
-          <h2 style={{fontSize:'18px', fontWeight:'bold'}}>Things to Know Before Traveling          </h2>
-          <br/>
-          <h3 style={{fontSize:'17px', fontWeight:'bold'}}> Dubai Travel Restrictions </h3>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Health Insurance
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Travel insurance covering health and medical emergencies is often recommended.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Customs Regulations
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Adhere to Dubai’s strict customs regulations, including limits on alcohol and restricted items.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Baggage Allowances
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Be mindful of baggage restrictions and customs allowances for duty-free goods.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Travel Advisories
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Always check for any specific travel advisories or regional restrictions before departure.
-          </p>
-          <br/>
-         
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Travel Restrictions for Certain Nationalities
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Some countries may face specific entry restrictions; always check the latest updates before applying for a visa.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Return Flight 
-
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Proof of a return flight booking or onward travel may be required.
-          </p>
-        <br/>
-          <h3 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-          Important Travel Tips
-
-</h3>
-<p>Here are a few essential travel tips for your visit to Dubai:
+<p> - <strong>Extension for Extra Stay:</strong> You can apply for a visa extension through Vietnam’s immigration authority before the visa expiry date.
+</p>
+<p> - <strong>Renewal After Expiry:</strong> If the visa is about to expire or not extendable, a renewal allows fresh entry permission with new validity.
 </p>
 <br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    Always carry a copy of your passport and visa.
+<p>Processing time varies and it is recommended to apply at least one week before the current visa expires. Overstaying without a valid extension or renewal may result in fines or travel restrictions.
+</p>
+<br/>
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Why Choose Make My Document to Apply for a Vietnam Tourist Visa?</h2>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}> Expert Guidance at Every Step:</h3>
+<p>Our team handles all document reviews, form submissions, and status tracking for your convenience.</p>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}> Secure and Transparent Process:</h3>
+<p>All data is securely handled, with real-time updates and no hidden charges in the final billing.</p>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}> High Approval Success Rate:</h3>
+<p>With a 99% approval record, we ensure your application meets Vietnam’s tourism visa requirements accurately.</p>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Quick Support & Easy Dashboard Access:</h3>
+<p>Track your visa status, upload documents, and receive support easily through a user-friendly dashboard.</p>
+<br/>
+<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Things to Know Before Traveling to Vietnam</h2>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Carry Printed E-Visa:
+</h3>
+<p>Always print and carry a hard copy of your E-Visa for verification at Vietnamese immigration checkpoints.</p>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Passport Must Be Valid for 6+ Months:
+</h3>
+<p>Your passport must have a minimum validity of six months from your intended date of entry into Vietnam.</p>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Health & Travel Insurance Advised:
 
-  </li>
-  <li>
-  Respect local customs and laws, such as dress codes in public places.
+</h3>
+<p>Though optional, travel insurance is strongly recommended to cover unexpected medical or trip-related issues.
+</p>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Currency Exchange in Vietnam:
+</h3>
+<p>The Vietnamese Dong (VND) is the official currency; ensure you exchange or withdraw cash after arrival.
+</p>
+<br/>
+<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Follow Entry Regulations:
+</h3>
+<p>Comply with Vietnam's immigration and health rules to avoid delays or issues during your entry.
+</p>
+<br/>
 
-
-  </li>
-  <li>
-  Be mindful of the weather, as Dubai can be extremely hot during summer months.
-
-
-  </li>
-  <li>
-  Stay hydrated and carry sunscreen to protect from the sun.
-
-
-
-  </li>
-  <li>
-  Familiarize yourself with Dubai’s public transport system for easy travel across the city.
-
-
-  </li>
-  <li>
-   Ensure you have travel insurance for emergencies or unforeseen circumstances.
-
-  </li>
- 
-</ul>
-          <br/>
-        </>
-      </div>
-
+              </>
+            </div>
             <br/>
           </div>
         </div>
@@ -2356,4 +2230,4 @@ Why Choose Dubai as a Travel Destination?
   );
 };
 
-export default DubaiVisa;
+export default Vietnam;
