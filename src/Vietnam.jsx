@@ -741,8 +741,7 @@ const Vietnam = () => {
   <div style={{marginTop:''}}>
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li>Vietnam 30 Days Single Entry E-Visa 
-      <strong style={{color:'#ff9800'}}>Rs. 3,950/-</strong> </li>
+      <li>Vietnam 30 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 3,950/-</strong> </li>
       <li>Vietnam 90 Days Multiple Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs 14,199/-</strong>
       </li>
       <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>

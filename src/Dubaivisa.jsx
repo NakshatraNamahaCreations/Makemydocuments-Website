@@ -741,16 +741,16 @@ const DubaiVisa = () => {
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
       <li>
-      UAE 30 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 7,854/-</strong>
+      UAE 30 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 7,854/-</strong>
        </li>
        <li>
-      UAE 30 Days Multiple  Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 14,600/-</strong>
+      UAE 30 Days Multiple  Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 14,600/-</strong>
        </li>
        <li>
-      UAE 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 12,446/-</strong>
+      UAE 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 12,446/-</strong>
        </li>
        <li>
-      UAE 60 Days Multiple Entry E-Visa <strong style={{color:'#ff9800'}}>Rs: 19,118/-</strong>
+      UAE 60 Days Multiple Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 19,118/-</strong>
        </li>
       
       <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
@@ -810,22 +810,22 @@ const DubaiVisa = () => {
         <li>
         UAE 30 Days Single Entry E-Visa
         {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 7,854</strong>
+        <strong style={{ color: "#ff9800" }}>Rs: 7,854/-</strong>
         </li>
         <li>
         UAE 30 Days Multiple  Entry E-Visa
         {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 14,600</strong>
+        <strong style={{ color: "#ff9800" }}>Rs: 14,600/-</strong>
         </li>
         <li>
         UAE 60 Days Single Entry E-Visa
         {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 12,446</strong>
+        <strong style={{ color: "#ff9800" }}>Rs: 12,446/-</strong>
         </li>
         <li>
         UAE 60 Days Multiple Entry E-Visa
         {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 19,118</strong>
+        <strong style={{ color: "#ff9800" }}>Rs: 19,118/-</strong>
         </li>
         <li>
           <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.

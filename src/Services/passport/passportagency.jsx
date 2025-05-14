@@ -561,7 +561,7 @@ const PassportAgency = () => {
                         fontWeight: "bold",
                       }}
                     >
-                      99% Visa Approved on Time
+                      99% Delivered on time
                     </span>
                   </div>
 
@@ -731,7 +731,7 @@ const PassportAgency = () => {
           width: "fit-content",
         }}
       >
-        ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
+        ⭐ <span style={{ marginLeft: "6px" }}>99% Delivered on time</span>
       </div>
 
       <div
@@ -789,11 +789,9 @@ const PassportAgency = () => {
   <div style={{marginTop:''}}>
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li><strong style={{color:'#ff9800'}}>Rs. 2,499</strong>
-      For (Normal Application)
+      <li><strong style={{color:'#ff9800'}}>Rs. 2,499/-</strong> For (Normal Application)
        </li>
-       <li><strong style={{color:'#ff9800'}}>Rs. 4,499</strong>
-       For (Tatkal Application)
+       <li><strong style={{color:'#ff9800'}}>Rs. 4,499/-</strong>  For (Tatkal Application)
        </li>
       <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
     
@@ -849,13 +847,11 @@ const PassportAgency = () => {
         Charges
       </h5>
       <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-        <li><strong style={{ color: "#ff9800" }}>Rs. 2,499</strong>
-        For (Normal Application)
+        <li><strong style={{ color: "#ff9800" }}>Rs. 2,499/-</strong> For (Normal Application)
         {" "}
           
         </li>
-        <li><strong style={{ color: "#ff9800" }}>Rs. 4,499 </strong>
-        For (Tatkal Application)
+        <li><strong style={{ color: "#ff9800" }}>Rs. 4,499/- </strong> For (Tatkal Application)
         {" "}
         </li>
         <li>
@@ -1154,8 +1150,119 @@ const PassportAgency = () => {
                               margin: 0,
                             }}
                           >
-                            Complete the payment securely to process your
-                            application.
+                            Make a secure online payment to proceed with the application service.
+
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        style={{ position: "relative", marginBottom: "40px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 5: Get Appointment
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                            }}
+                          >
+                          We schedule your Passport Seva Kendra (PSK) appointment as per your preferred date and time.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        style={{ position: "relative", marginBottom: "40px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 6: Visit PSK
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                            }}
+                          >
+                       Visit the designated PSK center with your original documents for biometric and verification.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        style={{ position: "relative", marginBottom: "40px" }}
+                      >
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "-33px",
+                            top: "5px",
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "#1976D2",
+                            borderRadius: "50%",
+                            border: "2px solid #fff",
+                          }}
+                        />
+                        <div>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              fontWeight: "bold",
+                              marginBottom: "5px",
+                              color: "#333",
+                            }}
+                          >
+                            Step 7:  Police Verification
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              color: "#555",
+                              margin: 0,
+                            }}
+                          >
+                       The local police department conducts a verification at your provided address.
                           </p>
                         </div>
                       </div>
@@ -1183,7 +1290,7 @@ const PassportAgency = () => {
                               color: "#333",
                             }}
                           >
-                            Step 5: Receive your E-Visa via E-mail
+                            Step 8:  Get Delivered
                           </h3>
                           <p
                             style={{
@@ -1192,8 +1299,7 @@ const PassportAgency = () => {
                               margin: 0,
                             }}
                           >
-                            Get your approved E-Visa conveniently delivered to
-                            your inbox.
+                          Once approved, your passport is printed and delivered to your doorstep.
                           </p>
                         </div>
                       </div>
@@ -2026,7 +2132,7 @@ const PassportAgency = () => {
                   marginBottom: "20px",
                 }}
               >
-                Our Other Country Visa Services
+                Our Other Related Services
               </h2>
 
               <div

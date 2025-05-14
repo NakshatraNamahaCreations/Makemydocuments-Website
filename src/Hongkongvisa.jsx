@@ -739,7 +739,7 @@ const Hongkongvisa = () => {
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
       <li>Multiple Entry 14 Days Hong Kong E-Visa <strong style={{color:'#ff9800'}}>Rs. 1332/-</strong> </li>
-      <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
+      <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This amount will a be adjusted in total bill)</li>
     
     </ul>
   </div>
@@ -963,8 +963,8 @@ const Hongkongvisa = () => {
                               margin: 0,
                             }}
                           >
-                            Submit the required documents directly through the
-                            dashboard.
+                           Submit the required documents via WhatsApp or email.
+
                           </p>
                         </div>
                       </div>

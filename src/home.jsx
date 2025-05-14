@@ -66,7 +66,7 @@ const services = [
   { name: 'Passport', route: '/passport', image: <AdditionalImage1 className="box-image scale-tilt" /> },
   { name: 'Senior Citizen Card', route: '/senior-citizen-card', image: <AdditionalImage2 className="box-image scale-tilt" /> },
   { name: 'Police Verification Certificate', route: '/policeverification', image: <AdditionalImage3 className="box-image scale-tilt" /> },
-  { name: 'Food License (FSSAI)', route: '/food-license', image: <AdditionalImage4 className="box-image scale-tilt" /> },
+  // { name: 'Food License (FSSAI)', route: '/food-license', image: <AdditionalImage4 className="box-image scale-tilt" /> },
   { name: 'MSME Certification', route: '/msme-registration', image: <AdditionalImage5 className="box-image scale-tilt" /> },
   { name: 'Police Clearance Certificate', route: '/police-clearance-certificate', image: <AdditionalImage6 className="box-image scale-tilt" /> },
 ];

@@ -732,8 +732,7 @@ const Indonesiavisa = () => {
     <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
     <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
       <li>
-Indonesia 30 Days Single Entry E-Visa
-      <strong style={{color:'#ff9800'}}>Rs. 4,550/-</strong> </li>
+Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,550/-</strong> </li>
       <li>Indonesia 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs 12,200/-</strong>
       </li>
       <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
