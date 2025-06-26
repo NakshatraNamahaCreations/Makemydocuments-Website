@@ -53,15 +53,15 @@ const PassportAgency = () => {
       const stickyColumn = stickyColumnRef.current;
       const firstColumn = firstColumnRef.current;
       const stopSection = stopStickyRef.current;
-  
+
       if (!stickyColumn || !firstColumn || !stopSection) return;
-  
+
       const bannerHeight = document.querySelector('.breadcrumb-title')?.offsetHeight || 0;
       const scrollTop = window.scrollY;
       const firstColumnTop = firstColumn.getBoundingClientRect().top + window.scrollY;
       const stopSectionTop = stopSection.getBoundingClientRect().top + window.scrollY;
       const stickyOffset = 100; // adjust for margin if needed
-  
+
       if (
         scrollTop > firstColumnTop - bannerHeight - stickyOffset &&
         scrollTop + stickyColumn.offsetHeight < stopSectionTop
@@ -71,11 +71,11 @@ const PassportAgency = () => {
         setIsSticky(false);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
 
 
   const handleContinue = () => {
@@ -167,43 +167,43 @@ const PassportAgency = () => {
   return (
     <>
       <Helmet>
-    <title>Get Your Passport Fast | Passport Agency in Bangalore
-    </title>
-<meta name="description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.
+        <title>Get Your Passport Fast | Passport Agency in Bangalore
+        </title>
+        <meta name="description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.
 "/>
-<meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application"/>
-<link rel="canonical" href="https://makemydocuments.com/passport-agency-in-bangalore
+        <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application" />
+        <link rel="canonical" href="https://makemydocuments.com/passport-agency-in-bangalore
 " />
-<meta name="rating" CONTENT="General"/>
-<meta name="revisit-after" CONTENT="2 days"/>
-<meta name="robots" content=" ALL, index, follow"/>
-<meta name="distribution" content="Global" />
-<meta name="rating" content="Safe For All" />
-<meta name="language" content="English" />
-<meta http-equiv="window-target" content="_top"/>
-<meta http-equiv="pics-label" content="for all ages"/>
-<meta name="rating" content="general"/>
-<meta content="All, FOLLOW" name="GOOGLEBOTS"/>
-<meta content="All, FOLLOW" name="YAHOOBOTS"/>
-<meta content="All, FOLLOW" name="MSNBOTS"/>
-<meta content="All, FOLLOW" name="BINGBOTS"/>
-<meta content="all" name="Googlebot-Image"/>
-<meta content="all" name="Slurp"/>
-<meta content="all" name="Scooter"/>
-<meta content="ALL" name="WEBCRAWLERS"/>
+        <meta name="rating" CONTENT="General" />
+        <meta name="revisit-after" CONTENT="2 days" />
+        <meta name="robots" content=" ALL, index, follow" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="Safe For All" />
+        <meta name="language" content="English" />
+        <meta http-equiv="window-target" content="_top" />
+        <meta http-equiv="pics-label" content="for all ages" />
+        <meta name="rating" content="general" />
+        <meta content="All, FOLLOW" name="GOOGLEBOTS" />
+        <meta content="All, FOLLOW" name="YAHOOBOTS" />
+        <meta content="All, FOLLOW" name="MSNBOTS" />
+        <meta content="All, FOLLOW" name="BINGBOTS" />
+        <meta content="all" name="Googlebot-Image" />
+        <meta content="all" name="Slurp" />
+        <meta content="all" name="Scooter" />
+        <meta content="ALL" name="WEBCRAWLERS" />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
-      <script>
-        {`
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
+        <script>
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QN4189EDG5');
         `}
-      </script>
+        </script>
 
 
-<script>
+        <script>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -239,7 +239,7 @@ const PassportAgency = () => {
           `}
         </script>
         <script type="application/ld+json">
-    {`
+          {`
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -335,9 +335,9 @@ const PassportAgency = () => {
         }
       }
     `}
-  </script>
+        </script>
 
-  <script type="application/ld+json">
+        <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
@@ -429,20 +429,20 @@ const PassportAgency = () => {
         </script>
 
         <meta property="og:title" content="Get Your Passport Fast | Passport Agency in Bangalore" />
-<meta property="og:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
-<meta property="og:url" content="https://makemydocuments.com/passport-agency-in-bangalore" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" /> 
-<meta property="og:site_name" content="Make My Documents" />
+        <meta property="og:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
+        <meta property="og:url" content="https://makemydocuments.com/passport-agency-in-bangalore" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
+        <meta property="og:site_name" content="Make My Documents" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Get Your Passport Fast | Passport Agency in Bangalore" />
-<meta name="twitter:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
-<meta name="twitter:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" /> 
-<meta name="twitter:site" content="@makemydocuments" /> 
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Get Your Passport Fast | Passport Agency in Bangalore" />
+        <meta name="twitter:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
+        <meta name="twitter:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
+        <meta name="twitter:site" content="@makemydocuments" />
 
 
-    </Helmet>
+      </Helmet>
 
       <div
         style={{
@@ -454,7 +454,7 @@ const PassportAgency = () => {
       >
         <nav aria-label="breadcrumb" style={{ marginTop: "1%" }}>
           <ol className="breadcrumb mb-0">
-            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize:'14px' }}>
+            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize: '14px' }}>
               <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>
                 Home
               </Link>
@@ -462,12 +462,9 @@ const PassportAgency = () => {
             <li
               className="breadcrumb-item active"
               aria-current="page"
-              style={{ fontWeight: "bold", fontSize:'14px' }}
+              style={{ fontWeight: "bold", fontSize: '14px' }}
             >
-             Passport Agency in Bangalore
-
-
-
+              Passport Agency in Bangalore
             </li>
           </ol>
         </nav>
@@ -527,7 +524,7 @@ const PassportAgency = () => {
                       fontSize: "36px",
                       fontWeight: "bold",
                       margin: 0,
-                      
+
                     }}
                   >
                     Passport Agency in Bangalore
@@ -567,111 +564,111 @@ const PassportAgency = () => {
 
                   {/* Visa Details */}
                   <div
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    marginTop: "20px",
-    width: "100%",
-    maxWidth: "320px",
- 
-    // padding: "15px",
-    borderRadius: "10px",
-  
-  }}
->
-  <div style={{ flex: 1 }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Processing time
-    </p>
-    <p
-      style={{
-        fontSize: "12px",
-        fontWeight: "bold",
-        color: "#333",
-        margin: 0,
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        whiteSpace:'nowrap',
-        display: "inline-block",
-      }}
-    >
-     15-20 working days (Normal)
-   
-    </p>
-    <p
-      style={{
-        fontSize: "12px",
-        fontWeight: "bold",
-        color: "#333",
-        margin: 0,
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        whiteSpace:'nowrap',
-        display: "inline-block",
-      }}
-    >
-  
-     5-10 working days (Tatkal)
-    </p>
-  </div>
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginTop: "20px",
+                      width: "100%",
+                      maxWidth: "320px",
 
-  <div style={{ flex: 1, textAlign: "right" }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Starting from
-    </p>
-    <p
-      style={{
-        fontSize: "12px",
-        fontWeight: "bold",
-        color: "#333",
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        display: "inline-block",
-        margin: 0,
-      }}
-    >
-      ₹2,499/-
-    </p>
-  </div>
-</div>
-<div style={{ marginTop: "20px" }}>
-  <button
-    onClick={handleContinue}
-    style={{
-      backgroundColor: "#fea400 ",
-      color: "#333",
-      padding: "12px 24px",
-      border: "none",
-      borderRadius: "6px",
-      fontSize: "16px",
-      fontWeight: "bold",
-      cursor: "pointer",
-      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-      transition: "background-color 0.3s ease",
-    }}
-    onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
-    onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
-  >
-    Apply Now
-  </button>
-</div>
+                      // padding: "15px",
+                      borderRadius: "10px",
+
+                    }}
+                  >
+                    <div style={{ flex: 1 }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Processing time
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          margin: 0,
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          whiteSpace: 'nowrap',
+                          display: "inline-block",
+                        }}
+                      >
+                        15-20 working days (Normal)
+
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          margin: 0,
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          whiteSpace: 'nowrap',
+                          display: "inline-block",
+                        }}
+                      >
+
+                        5-10 working days (Tatkal)
+                      </p>
+                    </div>
+
+                    <div style={{ flex: 1, textAlign: "right" }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Starting from
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          display: "inline-block",
+                          margin: 0,
+                        }}
+                      >
+                        ₹2,499/-
+                      </p>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: "20px" }}>
+                    <button
+                      onClick={handleContinue}
+                      style={{
+                        backgroundColor: "#fea400 ",
+                        color: "#333",
+                        padding: "12px 24px",
+                        border: "none",
+                        borderRadius: "6px",
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                        transition: "background-color 0.3s ease",
+                      }}
+                      onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
+                      onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
+                    >
+                      Apply Now
+                    </button>
+                  </div>
 
 
                 </div>
@@ -679,96 +676,96 @@ const PassportAgency = () => {
             </div>
 
             <div style={{ width: "100%" }} className="d-block d-lg-none">
-  <div
-    style={{
-      position: "relative",
-      width: "100%",
-      overflow: "hidden",
-      marginTop:'36%'
-    }}
-  >
-    {/* Image */}
-    <img
-      src={bannerimage}
-      alt="Hong Kong Visa"
-      style={{
-        width: "100%",
-        height: "auto",
-        objectFit: "cover",
-      }}
-    />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  overflow: "hidden",
+                  marginTop: '36%'
+                }}
+              >
+                {/* Image */}
+                <img
+                  src={bannerimage}
+                  alt="Hong Kong Visa"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
+                  }}
+                />
 
-    {/* Text Container */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        background:
-          "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
-        color: "#fff",
-        padding: "15px",
-      }}
-    >
-      <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-      Passport Agency in Bangalore
+                {/* Text Container */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background:
+                      "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
+                    color: "#fff",
+                    padding: "15px",
+                  }}
+                >
+                  <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+                    Passport Agency in Bangalore
 
 
-      </h2>
+                  </h2>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "#e6f7fa",
-          color: "#000",
-          padding: "3px 8px",
-          borderRadius: "5px",
-          fontSize: "10px",
-          fontWeight: "500",
-          marginBottom: "10px",
-          width: "fit-content",
-        }}
-      >
-        ⭐ <span style={{ marginLeft: "6px" }}>99% Delivered on time</span>
-      </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#e6f7fa",
+                      color: "#000",
+                      padding: "3px 8px",
+                      borderRadius: "5px",
+                      fontSize: "10px",
+                      fontWeight: "500",
+                      marginBottom: "10px",
+                      width: "fit-content",
+                    }}
+                  >
+                    ⭐ <span style={{ marginLeft: "6px" }}>99% Delivered on time</span>
+                  </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "10px",
-        }}
-      >
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Processing time</p>
-          <p style={{ margin: 0,  fontSize: "10px", }}>15-20 working days (Normal)
-          </p>
-          <p style={{ margin: 0,  fontSize: "10px", }}>5-10 working days (Tatkal)
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Processing time</p>
+                      <p style={{ margin: 0, fontSize: "10px", }}>15-20 working days (Normal)
+                      </p>
+                      <p style={{ margin: 0, fontSize: "10px", }}>5-10 working days (Tatkal)
 
-          </p>
-        </div>
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Starting from</p>
-          <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold",  fontSize: "10px", }}>
-            ₹2,499/-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                      </p>
+                    </div>
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
+                      <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
+                        ₹2,499/-
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
             <div className="container my-5">
               <div className="row" style={{ position: "relative" }}>
-                {/* Left Column () */} 
+                {/* Left Column () */}
                 <div className="col-md-8" ref={firstColumnRef} >
                   {/* Charges Section (Scrollable) */}
-                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{marginLeft:'2%'}}>
-  {/* Image Section */}
-  {/* <div className="d-flex justify-content-center align-items-center">
+                  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+                    {/* Image Section */}
+                    {/* <div className="d-flex justify-content-center align-items-center">
     <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
       <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
       <img
@@ -785,187 +782,187 @@ const PassportAgency = () => {
     </div>
   </div> */}
 
-  {/* Content Section */}
-  <div style={{marginTop:''}}>
-    <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li><strong style={{color:'#ff9800'}}>Rs. 2,499/-</strong> For (Normal Application)
-       </li>
-       <li><strong style={{color:'#ff9800'}}>Rs. 4,499/-</strong>  For (Tatkal Application)
-       </li>
-      <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
-    
-    </ul>
-  </div>
-</div>
-<div
-  className="d-block d-lg-none"
-  style={{
-    padding: "15px",
-    backgroundColor: "#ffffff",
-    borderRadius: "10px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-    margin: "15px",
-  }}
->
-  {/* Charges Section */}
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "10px",
-      marginBottom: "20px",
-    }}
-  >
-    <div
-      style={{
-        position: "relative",
-        display: "inline-block",
-        width: "100px",
-        height: "100px",
-      }}
-    >
-      <img
-        src={circleIcon}
-        alt="Circle"
-        style={{ width: "100%", height: "100%" }}
-      />
-      <img
-        src={Price}
-        alt="Price Icon"
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          width: "26px",
-        }}
-      />
-    </div>
-    <div>
-      <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-        Charges
-      </h5>
-      <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-        <li><strong style={{ color: "#ff9800" }}>Rs. 2,499/-</strong> For (Normal Application)
-        {" "}
-          
-        </li>
-        <li><strong style={{ color: "#ff9800" }}>Rs. 4,499/- </strong> For (Tatkal Application)
-        {" "}
-        </li>
-        <li>
-          <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-          Need to pay while submitting online form (This amount will be
-          adjusted in total bill)
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+                    {/* Content Section */}
+                    <div style={{ marginTop: '' }}>
+                      <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                        <li><strong style={{ color: '#ff9800' }}>Rs. 2,499/-</strong> For (Normal Application)
+                        </li>
+                        <li><strong style={{ color: '#ff9800' }}>Rs. 4,499/-</strong>  For (Tatkal Application)
+                        </li>
+                        <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    className="d-block d-lg-none"
+                    style={{
+                      padding: "15px",
+                      backgroundColor: "#ffffff",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                      margin: "15px",
+                    }}
+                  >
+                    {/* Charges Section */}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "relative",
+                          display: "inline-block",
+                          width: "100px",
+                          height: "100px",
+                        }}
+                      >
+                        <img
+                          src={circleIcon}
+                          alt="Circle"
+                          style={{ width: "100%", height: "100%" }}
+                        />
+                        <img
+                          src={Price}
+                          alt="Price Icon"
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            width: "26px",
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                          Charges
+                        </h5>
+                        <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                          <li><strong style={{ color: "#ff9800" }}>Rs. 2,499/-</strong> For (Normal Application)
+                            {" "}
+
+                          </li>
+                          <li><strong style={{ color: "#ff9800" }}>Rs. 4,499/- </strong> For (Tatkal Application)
+                            {" "}
+                          </li>
+                          <li>
+                            <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                            Need to pay while submitting online form (This amount will be
+                            adjusted in total bill)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
                   <br />
                   {/* Documents Required Section (Non-scrollable) */}
                   <div
-  className="d-none d-lg-block"
-  style={{
-    marginTop: "20px",
-    paddingLeft: "10px",
-    paddingRight: "10px",
-    paddingTop: "15px",
-    paddingBottom: "15px",
-    backgroundColor: "#fff",
-    borderRadius: "8px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-  }}
->
-  <h2
-    style={{
-      fontSize: "24px",
-      fontWeight: "bold",
-      marginBottom: "15px",
-      textAlign: "left",
-    }}
-  >
-    Documents Required For Fresh Passport
-  </h2>
+                    className="d-none d-lg-block"
+                    style={{
+                      marginTop: "20px",
+                      paddingLeft: "10px",
+                      paddingRight: "10px",
+                      paddingTop: "15px",
+                      paddingBottom: "15px",
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                    }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "bold",
+                        marginBottom: "15px",
+                        textAlign: "left",
+                      }}
+                    >
+                      Documents Required For Fresh Passport
+                    </h2>
 
-  <h4 style={{fontWeight:'600', fontSize:'20px'}}>Proof of Identity (Any 01)</h4>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Aadhar Card</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Voter ID</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Pan Card</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Driving Licence</p>
+                    <h4 style={{ fontWeight: '600', fontSize: '20px' }}>Proof of Identity (Any 01)</h4>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Aadhar Card</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Voter ID</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Pan Card</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Driving Licence</p>
 
-  <h4 style={{fontWeight:'600',  fontSize:'20px'}} className="mt-3">Proof of Address (Any 01)</h4>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Aadhar Card</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Voter ID</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Bank Account Passbook</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Gas / Electricity / Telephone / Water Bill</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Parents Passport / Spouse Passport</p>
+                    <h4 style={{ fontWeight: '600', fontSize: '20px' }} className="mt-3">Proof of Address (Any 01)</h4>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Aadhar Card</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Voter ID</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Bank Account Passbook</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Gas / Electricity / Telephone / Water Bill</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Parents Passport / Spouse Passport</p>
 
-  <h4 style={{fontWeight:'600',  fontSize:'20px'}} className="mt-3">Proof of Birth (Any 01)</h4>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- 10th Certificate</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- 12th Certificate</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Higher Education Pass Certificate</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- School Leaving Certificate</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Income Tax Assessment Order</p>
+                    <h4 style={{ fontWeight: '600', fontSize: '20px' }} className="mt-3">Proof of Birth (Any 01)</h4>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- 10th Certificate</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- 12th Certificate</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Higher Education Pass Certificate</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- School Leaving Certificate</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Income Tax Assessment Order</p>
 
-  <h3 style={{fontWeight:'600',  fontSize:'20px'}} className="mt-4">Document Required for Renewal / Reissue of Passport</h3>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Original Old Passport</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- ID and Present Address Proof</p>
+                    <h3 style={{ fontWeight: '600', fontSize: '20px' }} className="mt-4">Document Required for Renewal / Reissue of Passport</h3>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Original Old Passport</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- ID and Present Address Proof</p>
 
-  <h3  style={{fontWeight:'600',  fontSize:'20px'}} className="mt-4">Document Required for Minor Passport</h3>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Birth Certificate</p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Both Parents Passport</p>
-</div>
+                    <h3 style={{ fontWeight: '600', fontSize: '20px' }} className="mt-4">Document Required for Minor Passport</h3>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Birth Certificate</p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Both Parents Passport</p>
+                  </div>
 
-<div className="d-block d-lg-none" style={{ padding: "15px" }}>
-  <div
-    style={{
-      backgroundColor: "#fff",
-      borderRadius: "8px",
-      padding: "12px",
-      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-      marginBottom: "20px",
-    }}
-  >
-    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>
-      Documents Required For Fresh Passport
-    </h5>
+                  <div className="d-block d-lg-none" style={{ padding: "15px" }}>
+                    <div
+                      style={{
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        padding: "12px",
+                        boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <h5 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>
+                        Documents Required For Fresh Passport
+                      </h5>
 
-    <h6 style={{ fontSize: "14px", fontWeight: "bold" }}>Proof of Identity (Any 01)</h6>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Aadhar Card</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Voter ID</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Pan Card</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Driving Licence</p>
+                      <h6 style={{ fontSize: "14px", fontWeight: "bold" }}>Proof of Identity (Any 01)</h6>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Aadhar Card</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Voter ID</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Pan Card</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Driving Licence</p>
 
-    <h6 style={{ fontSize: "14px", fontWeight: "bold", marginTop: "10px" }}>Proof of Address (Any 01)</h6>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Aadhar Card</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Voter ID</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Bank Account Passbook</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Gas / Electricity / Telephone / Water Bill</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Parents Passport / Spouse Passport</p>
+                      <h6 style={{ fontSize: "14px", fontWeight: "bold", marginTop: "10px" }}>Proof of Address (Any 01)</h6>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Aadhar Card</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Voter ID</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Bank Account Passbook</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Gas / Electricity / Telephone / Water Bill</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Parents Passport / Spouse Passport</p>
 
-    <h6 style={{ fontSize: "14px", fontWeight: "bold", marginTop: "10px" }}>Proof of Birth (Any 01)</h6>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- 10th Certificate</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- 12th Certificate</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Higher Education Pass Certificate</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- School Leaving Certificate</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Income Tax Assessment Order</p>
+                      <h6 style={{ fontSize: "14px", fontWeight: "bold", marginTop: "10px" }}>Proof of Birth (Any 01)</h6>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- 10th Certificate</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- 12th Certificate</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Higher Education Pass Certificate</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- School Leaving Certificate</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Income Tax Assessment Order</p>
 
-    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginTop: "15px" }}>
-      Document Required for Renewal / Reissue of Passport
-    </h5>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Original Old Passport</p>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- ID and Present Address Proof</p>
+                      <h5 style={{ fontSize: "16px", fontWeight: "bold", marginTop: "15px" }}>
+                        Document Required for Renewal / Reissue of Passport
+                      </h5>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Original Old Passport</p>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- ID and Present Address Proof</p>
 
-    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginTop: "15px" }}>
-      Document Required for Minor Passport
-    </h5>
-    <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Birth Certificate</p>
-    <p style={{ fontSize: "13px", marginBottom: "0" }}>- Both Parents Passport</p>
-  </div>
-</div>
+                      <h5 style={{ fontSize: "16px", fontWeight: "bold", marginTop: "15px" }}>
+                        Document Required for Minor Passport
+                      </h5>
+                      <p style={{ fontSize: "13px", marginBottom: "5px" }}>- Birth Certificate</p>
+                      <p style={{ fontSize: "13px", marginBottom: "0" }}>- Both Parents Passport</p>
+                    </div>
+                  </div>
 
                   <br />
                   {/* How It Works Section (Non-scrollable) */}
@@ -1035,7 +1032,7 @@ const PassportAgency = () => {
                               margin: 0,
                             }}
                           >
-                        Fill all the basic details in the application on our secure portal.
+                            Fill all the basic details in the application on our secure portal.
 
                           </p>
                         </div>
@@ -1188,7 +1185,7 @@ const PassportAgency = () => {
                               margin: 0,
                             }}
                           >
-                          We schedule your Passport Seva Kendra (PSK) appointment as per your preferred date and time.
+                            We schedule your Passport Seva Kendra (PSK) appointment as per your preferred date and time.
                           </p>
                         </div>
                       </div>
@@ -1225,7 +1222,7 @@ const PassportAgency = () => {
                               margin: 0,
                             }}
                           >
-                       Visit the designated PSK center with your original documents for biometric and verification.
+                            Visit the designated PSK center with your original documents for biometric and verification.
                           </p>
                         </div>
                       </div>
@@ -1262,7 +1259,7 @@ const PassportAgency = () => {
                               margin: 0,
                             }}
                           >
-                       The local police department conducts a verification at your provided address.
+                            The local police department conducts a verification at your provided address.
                           </p>
                         </div>
                       </div>
@@ -1299,7 +1296,7 @@ const PassportAgency = () => {
                               margin: 0,
                             }}
                           >
-                          Once approved, your passport is printed and delivered to your doorstep.
+                            Once approved, your passport is printed and delivered to your doorstep.
                           </p>
                         </div>
                       </div>
@@ -1445,7 +1442,7 @@ const PassportAgency = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                 Aneev Sinha
+                                    Aneev Sinha
 
                                   </span>
                                 </div>
@@ -1502,7 +1499,7 @@ const PassportAgency = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Manoj Mano
+                                    Manoj Mano
                                   </span>
                                 </div>
                               </div>
@@ -1563,7 +1560,7 @@ const PassportAgency = () => {
                                       color: "#374151",
                                     }}
                                   >
-                               Anand Krishna
+                                    Anand Krishna
 
                                   </span>
                                 </div>
@@ -1620,7 +1617,7 @@ const PassportAgency = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Arjun Hande
+                                    Arjun Hande
                                   </span>
                                 </div>
                               </div>
@@ -1677,7 +1674,7 @@ const PassportAgency = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Shiva Raj
+                                    Shiva Raj
 
 
                                   </span>
@@ -1687,188 +1684,188 @@ const PassportAgency = () => {
                           </div>
                         </div>
                         {/* Carousel Controls */}
-<button
-  className="carousel-control-prev"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="prev"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    left: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-prev-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Previous</span>
-</button>
+                        <button
+                          className="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="prev"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            left: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Previous</span>
+                        </button>
 
-<button
-  className="carousel-control-next"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="next"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    right: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-next-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Next</span>
-</button>
+                        <button
+                          className="carousel-control-next"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="next"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            right: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Next</span>
+                        </button>
 
                       </div>
                     </div>
                   </div>
                   {window.innerWidth <= 768 && (
-  <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
-    <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
-      <h4
-        style={{
-          color: "#007bff",
-          marginBottom: "20px",
-          fontWeight: "bold",
-          fontSize: "22px",
-          textAlign: "center",
-        }}
-      >
-        Our Client Reviews
-      </h4>
+                    <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
+                      <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+                        <h4
+                          style={{
+                            color: "#007bff",
+                            marginBottom: "20px",
+                            fontWeight: "bold",
+                            fontSize: "22px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Our Client Reviews
+                        </h4>
 
-      <div
-        id="mobileReviewCarousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="4000"
-      >
-        <div className="carousel-inner">
-          {[
-            {
-              name: "Prakasha N",
-              initial: "P",
-              review:
-                "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.",
-            },
-            {
-              name: "Aneev Sinha",
-              initial: "A",
-              review:
-                "Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks",
-            },
-            {
-              name: " Manoj Mano",
-              initial: "M",
-              review:
-                "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport",
-            },
-          ].map((item, index) => (
-            <div
-              className={`carousel-item ${index === 0 ? "active" : ""}`}
-              key={index}
-            >
-              <div
-                style={{
-                  backgroundColor: "#fff",
-                  padding: "15px",
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                  marginBottom: "10px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#FFAA00",
-                    fontSize: "18px",
-                    marginBottom: "5px",
-                  }}
-                >
-                  ★★★★★
+                        <div
+                          id="mobileReviewCarousel"
+                          className="carousel slide"
+                          data-bs-ride="carousel"
+                          data-bs-interval="4000"
+                        >
+                          <div className="carousel-inner">
+                            {[
+                              {
+                                name: "Prakasha N",
+                                initial: "P",
+                                review:
+                                  "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.",
+                              },
+                              {
+                                name: "Aneev Sinha",
+                                initial: "A",
+                                review:
+                                  "Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks",
+                              },
+                              {
+                                name: " Manoj Mano",
+                                initial: "M",
+                                review:
+                                  "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport",
+                              },
+                            ].map((item, index) => (
+                              <div
+                                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                                key={index}
+                              >
+                                <div
+                                  style={{
+                                    backgroundColor: "#fff",
+                                    padding: "15px",
+                                    borderRadius: "8px",
+                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                    marginBottom: "10px",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      color: "#FFAA00",
+                                      fontSize: "18px",
+                                      marginBottom: "5px",
+                                    }}
+                                  >
+                                    ★★★★★
+                                  </div>
+                                  <p
+                                    style={{
+                                      color: "#4B5563",
+                                      fontSize: "14px",
+                                      marginBottom: "10px",
+                                    }}
+                                  >
+                                    {item.review}
+                                  </p>
+                                  <div style={{ display: "flex", alignItems: "center" }}>
+                                    <div
+                                      style={{
+                                        width: "32px",
+                                        height: "32px",
+                                        borderRadius: "50%",
+                                        backgroundColor: "#E5E7EB",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        marginRight: "10px",
+                                        fontWeight: "bold",
+                                        color: "#000",
+                                      }}
+                                    >
+                                      {item.initial}
+                                    </div>
+                                    <span
+                                      style={{
+                                        fontWeight: "bold",
+                                        fontSize: "14px",
+                                        color: "#374151",
+                                      }}
+                                    >
+                                      {item.name}
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Optional carousel controls */}
+                          <button
+                            className="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="prev"
+                          >
+                            <span className="carousel-control-prev-icon" aria-hidden="true" style={{ marginLeft: '-120%' }}></span>
+                          </button>
+                          <button
+                            className="carousel-control-next"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="next"
+                          >
+                            <span className="carousel-control-next-icon" aria-hidden="true" style={{ marginRight: '-80%' }}></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+
                 </div>
-                <p
-                  style={{
-                    color: "#4B5563",
-                    fontSize: "14px",
-                    marginBottom: "10px",
-                  }}
-                >
-                  {item.review}
-                </p>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <div
-                    style={{
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      backgroundColor: "#E5E7EB",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginRight: "10px",
-                      fontWeight: "bold",
-                      color: "#000",
-                    }}
-                  >
-                    {item.initial}
-                  </div>
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                      color: "#374151",
-                    }}
-                  >
-                    {item.name}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Optional carousel controls */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" style={{marginLeft:'-120%'}}></span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" style={{marginRight:'-80%'}}></span>
-        </button>
-      </div>
-    </div>
-  </div>
-)}
 
 
-                </div>
-
-                
 
                 {/* Right Column () */}
                 <div
@@ -1881,7 +1878,7 @@ const PassportAgency = () => {
                     width: isSticky && stickyColumnRef.current ? `${stickyColumnRef.current.offsetWidth}px` : "auto",
                     zIndex: 1000,
                   }}
-                  
+
                 >
                   <div
                     style={{
@@ -1917,7 +1914,7 @@ const PassportAgency = () => {
                       }}
                     >
                       <button
-                      onClick={handleContinue}
+                        onClick={handleContinue}
                         style={{
                           backgroundColor: "",
                           color: "#000",
@@ -1931,7 +1928,7 @@ const PassportAgency = () => {
                         Apply Online
                       </button>
                     </div>
-                   
+
                     {/* <a href="https://wa.me/+919980097315" style={{ textDecoration: "none" }}>
   <div
     style={{
@@ -2039,24 +2036,24 @@ const PassportAgency = () => {
                 </div>
                 {/* Sticky Bottom Bar for Mobile Only */}
                 <div
-                
-  style={{
-    position: "fixed",
-    bottom: 0,
-    left: 0,
-    width: "100%",
-    backgroundColor: "#ffffff",
-    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
-    display: window.innerWidth <= 768 ? "flex" : "none",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 15px",
-    zIndex: 9999,
-  }}
->
- 
 
-  {/* <a
+                  style={{
+                    position: "fixed",
+                    bottom: 0,
+                    left: 0,
+                    width: "100%",
+                    backgroundColor: "#ffffff",
+                    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
+                    display: window.innerWidth <= 768 ? "flex" : "none",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "10px 15px",
+                    zIndex: 9999,
+                  }}
+                >
+
+
+                  {/* <a
     href="https://wa.me/+919980097315"
     style={{
       width: "45px",
@@ -2074,24 +2071,24 @@ const PassportAgency = () => {
   >
     <i className="fab fa-whatsapp"></i>
   </a> */}
-  <button
-    onClick={handleContinue}
-    style={{
-      flex: 1,
-      marginRight: "10px",
-      padding: "10px",
-      backgroundColor: "#007bff",
-      color: "#fff",
-      border: "none",
-      borderRadius: "8px",
-      fontWeight: "bold",
-      fontSize: "14px",
-    }}
-  >
-    Apply Now
-  </button>
+                  <button
+                    onClick={handleContinue}
+                    style={{
+                      flex: 1,
+                      marginRight: "10px",
+                      padding: "10px",
+                      backgroundColor: "#007bff",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: "8px",
+                      fontWeight: "bold",
+                      fontSize: "14px",
+                    }}
+                  >
+                    Apply Now
+                  </button>
 
-  {/* <a
+                  {/* <a
     href="tel:+919429690973"
     style={{
       width: "45px",
@@ -2108,14 +2105,14 @@ const PassportAgency = () => {
   >
     <i className="fa fa-phone"></i>
   </a> */}
-</div>
+                </div>
 
 
               </div>
             </div>
 
             <div
-                 ref={stopStickyRef}
+              ref={stopStickyRef}
               style={{
                 backgroundColor: "#f8f8f8",
                 padding: "30px 20px",
@@ -2150,9 +2147,8 @@ const PassportAgency = () => {
                     style={{
                       padding: "10px 20px",
                       borderRadius: "999px",
-                      border: `1px solid ${
-                        active === service.name ? "#000" : "#ccc"
-                      }`,
+                      border: `1px solid ${active === service.name ? "#000" : "#ccc"
+                        }`,
                       backgroundColor:
                         active === service.name ? "#212529" : "#fff",
                       color: active === service.name ? "#fff" : "#000",
@@ -2235,260 +2231,260 @@ const PassportAgency = () => {
               </div>
             </div>
             <div
-        className="faq-section"
-        style={{
-          margin: "14px auto",
-          padding: "20px",
-          background: "#FFFFFF",
-          borderRadius: "10px",
-          width: "80%",
-        }}
-      >
-        <h4
-          style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            color: "#007BFF",
-            marginBottom: "20px",
-          }}
-        >
-          FAQs
-        </h4>
-        <p
-          style={{
-            textAlign: "center",
-            fontWeight: "500",
-            marginBottom: "30px",
-          }}
-        >
-          Need help? Contact us for any queries related to us
-        </p>
-        <div className="faq-list">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="faq-item"
-              style={{ marginBottom: "10px" }}
+              className="faq-section"
+              style={{
+                margin: "14px auto",
+                padding: "20px",
+                background: "#FFFFFF",
+                borderRadius: "10px",
+                width: "80%",
+              }}
             >
-              <button
+              <h4
                 style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  padding: "10px 20px",
-                  border: "1px solid #007BFF",
-                  borderRadius: "5px",
-                  background: "#F9F9F9",
-                  fontWeight: "500",
-                  cursor: "pointer",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  color: "#007BFF",
+                  marginBottom: "20px",
                 }}
-                onClick={() => handleToggle(index)}
               >
-                <h5 style={{fontSize:'16px'}}>{faq.question}</h5>
-                <span
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "16px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  {openIndex === index ? "▲" : "▼"}
+                FAQs
+              </h4>
+              <p
+                style={{
+                  textAlign: "center",
+                  fontWeight: "500",
+                  marginBottom: "30px",
+                }}
+              >
+                Need help? Contact us for any queries related to us
+              </p>
+              <div className="faq-list">
+                {faqs.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="faq-item"
+                    style={{ marginBottom: "10px" }}
+                  >
+                    <button
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        width: "100%",
+                        padding: "10px 20px",
+                        border: "1px solid #007BFF",
+                        borderRadius: "5px",
+                        background: "#F9F9F9",
+                        fontWeight: "500",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => handleToggle(index)}
+                    >
+                      <h5 style={{ fontSize: '16px' }}>{faq.question}</h5>
+                      <span
+                        style={{
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          marginLeft: "10px",
+                        }}
+                      >
+                        {openIndex === index ? "▲" : "▼"}
+                      </span>
+                    </button>
+                    {openIndex === index && (
+                      <div
+                        style={{
+                          marginTop: "10px",
+                          padding: "10px 20px",
+                          background: "#F3F3F3",
+                          borderRadius: "5px",
+                          color: "#333",
+                        }}
+                      >
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <br></br>
+              <>
+                <h2 className="faq-tag-title-h3">
+                  <strong>Passport Agency in Bangalore
+                  </strong>
+                </h2>
+                <p style={{ textAlign: 'left' }}>
+                  Are you looking for reliable and efficient passport services in Bangalore? Whether you are applying for your first passport, renewing an existing one or need assistance with a lost or damaged passport, we are here to guide you through the entire process. Our Passport Agency in Bangalore offers expert assistance to ensure that your application is submitted correctly and processed without any delays.
+
+                </p>
+                <p style={{ textAlign: 'left' }}>
+                  With years of experience in handling passport applications, we provide a range of services including guidance for online applications, document verification and personalized support for both individual and family passport needs. If you need help navigating the requirements or fast-tracking your application, our team is dedicated to making the process smooth and hassle-free. Let our team take care of your passport needs with professionalism and efficiency.
+
+                </p>
+                <br />
+
+                <h2 style={{ textAlign: 'left', fontSize: '18px' }}>
+                  <strong>Types of Indian Passports            </strong>
+                </h2>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Ordinary Passport (Blue Passport)
+                </h3>
+                <p style={{ textAlign: 'left' }}>
+                  The standard passport issued to Indian citizens for general travel purposes. It is valid for 10 years for adults and 5 years for minors. This passport is suitable for regular citizens traveling abroad for tourism, business, or personal reasons.
+
+                </p>
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Diplomatic Passport (Maroon Passport)</h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  Issued to high-ranking government officials, diplomats and representatives of the Indian government. It allows easier travel and visa facilitation as it is meant for official government duties. This passport is typically issued to Indian Foreign Service (IFS) officers and individuals representing India abroad.
+                </p>
+
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Official Passport (White Passport)
+                </h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  Provided to government employees traveling on official government business or service. It is issued for official trips and diplomatic work but differs from a diplomatic passport in terms of eligibility. This passport is granted to those working in ministries, public sector undertakings, or government bodies.
+
+                </p>
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Emergency (Tatkal) Passport (Blue Passport)
+                </h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  Issued in urgent cases when individuals need to travel quickly due to emergencies such as medical, family emergencies, or work-related reasons. It is processed faster than the normal passport and is available for both adults and minors.</p>
+
+                <h2 style={{ fontSize: '16px', fontWeight: 'bold' }}> Eligibility for Passport Application
+                </h2>
+
+                <p style={{ textAlign: 'left' }}>
+                  When applying for a passport, it is important to ensure that you meet the necessary eligibility criteria to avoid delays. As a trusted Passport Agency in Bangalore, we guide you through the entire process, making sure you fulfill all the required conditions. Our team in Bangalore provides clear instructions and assistance to help you gather the necessary documents and meet the eligibility requirements.
+                </p>
+                <br />
+                <h3 style={{ textAlign: 'left', fontSize: '18px' }}>
+                  <strong>Who Can Apply for a Passport in Bangalore?
+                  </strong>
+                </h3>
+                <br />
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}> Age Requirements
+
+                </h4>
+
+                <p style={{ textAlign: 'left' }}>
+                  To apply for a passport in Bangalore, applicants must meet the age criteria set by the government. Adults aged 18 years or older can apply for an adult passport. For minors under the age of 18, a parent or legal guardian must apply on their behalf and specific documentation is required to prove the child's identity and relationship to the parent or guardian.</p>
+
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}> Residency Requirements
+                </h4>
+
+                <p style={{ textAlign: 'left' }}>
+                  Applicants must be residents of India to apply for a passport in Bangalore. Proof of residence is often required, such as utility bills, rent agreements or Aadhaar cards, to verify that the applicant resides in the jurisdiction of the Bangalore Passport Office.
+                </p>
+
+
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>Specific Eligibility for Minors and Adults
+                </h4>
+
+                <p style={{ textAlign: 'left' }}>
+                  For adults, the eligibility is straightforward, requiring valid identification and address proof. Minors, on the other hand, must have both parents consent and a valid birth certificate or school ID as proof of age. Parents must submit their own documents along with those of the child to support the application.
+                </p>
+                <br />
+
+                <h3 style={{ textAlign: 'left', fontSize: '18px' }}>
+                  <strong> Special Considerations
+                  </strong>
+                </h3>
+                <br />
+
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>Persons with Criminal Records
+
+                </h4>
+
+                <p style={{ textAlign: 'left' }}>
+                  Individuals with a criminal record may face restrictions or additional scrutiny when applying for a passport. If the applicant has been convicted of a criminal offense, the passport authorities will assess the situation. Depending on the nature of the offense and whether a police clearance certificate (PCC) is needed, the applicant may face delays or rejections.
+
+                </p>
+
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>First-Time Applicants vs. Renewal</h4>
+
+                <p style={{ textAlign: 'left' }}>
+                  First-time applicants and those renewing their passports follow different processes. For first-time applicants, there is a need to provide all necessary documents for identity, address and citizenship verification. Renewal applications are simpler, but the applicant must ensure that their existing passport is valid or expired for less than three years. If the passport has been expired for longer, additional documentation may be required.</p>
+                <br />
+                <h2 style={{ textAlign: 'left', fontSize: '18px' }}>
+                  <strong>  Why Choose Our Passport Services?
+                  </strong>
+                </h2>
+                <br />
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Trusted Passport Agency in Bangalore
+                </h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  We are a well-established and reliable passport agency, trusted by thousands of customers in Bangalore. Our experienced team ensures that your application is handled with the utmost care and professionalism. You can count on us to deliver accurate and timely passport services.</p>
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> Efficient and Quick Passport Processing
+                </h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  We prioritize efficiency to ensure your passport application is processed quickly. With our streamlined procedures and expert guidance, we minimize delays and help you receive your passport in the shortest possible time. Choose us for a fast, hassle-free experience.</p>
+
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> Personalized Assistance for Passport Applications</h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  Our team provides personalized assistance at every step of the passport application process. Whether you're applying for the first time or renewing your passport, we are here to guide you through the requirements and help with document verification. We ensure your process runs smoothly.</p>
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> Transparent and Affordable Service Fees
+                </h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  We believe in clear and upfront communication with no hidden charges. Our service fees are competitive and we provide value for your money with quality services. You will know exactly what to expect, ensuring peace of mind throughout your passport journey.
+                </p>
+
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Comprehensive Support for All Passport Needs
+
+                </h3>
+
+                <p style={{ textAlign: 'left' }}>
+                  Whether you're applying for a Tatkal passport, renewing your current passport or dealing with a lost or damaged passport, we offer comprehensive support. Our expertise covers all passport services and we are always available to assist with your unique needs.
+
+                </p>
+                <br />
+                <h2 style={{ textAlign: 'left', fontSize: '18px' }}>
+                  <strong>  The Passport Application Process
+                  </strong>
+                </h2>
+                <br />
+                <span style={{ fontSize: '16px', fontWeight: 'bold' }}>Step 1: Schedule Your Appointment</span>
+
+                <p style={{ textAlign: 'left' }}>
+                  The first step is to schedule an appointment through the official Passport Seva Portal. Choose the date and time for your visit to the Passport Seva Kendra (PSK) in Bangalore. Make sure to select the appropriate category of service (normal, Tatkal, etc.) based on your needs.</p>
+
+                <span style={{ fontSize: '16px', fontWeight: 'bold' }}>Step 2: Submit Your Documents
                 </span>
-              </button>
-              {openIndex === index && (
-                <div
-                  style={{
-                    marginTop: "10px",
-                    padding: "10px 20px",
-                    background: "#F3F3F3",
-                    borderRadius: "5px",
-                    color: "#333",
-                  }}
-                >
-                  {faq.answer}
-                </div>
-              )}
+
+                <p style={{ textAlign: 'left' }}>
+                  On the day of your appointment, visit the Passport Seva Kendra with your original documents and their copies. Documents typically include proof of identity, address and date of birth. Ensure that all documents are verified and ready for submission to avoid delays.</p>
+
+                <span style={{ fontSize: '16px', fontWeight: 'bold' }}>Step 3: Attend the Passport Interview
+                </span>
+
+                <p style={{ textAlign: 'left' }}>
+                  During your visit, you will have to attend a brief interview with a passport officer. The officer will verify your documents, take your biometric details (photo and fingerprints) and confirm your personal information. It’s a straightforward process, ensuring all details are accurate before proceeding.</p>
+
+                <span style={{ fontSize: '16px', fontWeight: 'bold' }}>Step 4: Passport Dispatch and Delivery
+                </span>
+
+                <p style={{ textAlign: 'left' }}>
+                  After successful verification, your passport will be printed and dispatched to your address. You can track your passport status online to monitor its progress. Once dispatched, it will be delivered to your home, usually within 7-15 working days, depending on the service type (normal or Tatkal).</p>
+
+                {/* <h2 style={{fontSize:'16px'}}> Our Customers Testimonials</h2> */}
+                <br />
+              </>
             </div>
-          ))}
-        </div>
-        <br></br>
-        <>
-          <h2 className="faq-tag-title-h3">
-            <strong>Passport Agency in Bangalore
-            </strong>
-          </h2>
-          <p style={{textAlign:'left'}}>
-          Are you looking for reliable and efficient passport services in Bangalore? Whether you are applying for your first passport, renewing an existing one or need assistance with a lost or damaged passport, we are here to guide you through the entire process. Our Passport Agency in Bangalore offers expert assistance to ensure that your application is submitted correctly and processed without any delays.
 
-          </p>
-          <p style={{textAlign:'left'}}>
-          With years of experience in handling passport applications, we provide a range of services including guidance for online applications, document verification and personalized support for both individual and family passport needs. If you need help navigating the requirements or fast-tracking your application, our team is dedicated to making the process smooth and hassle-free. Let our team take care of your passport needs with professionalism and efficiency.
-
-          </p>
-          <br/>
-
-          <h2  style={{textAlign:'left', fontSize:'18px'}}>
-            <strong>Types of Indian Passports            </strong>
-          </h2>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Ordinary Passport (Blue Passport)
-          </h3>
-          <p  style={{textAlign:'left'}}>
-          The standard passport issued to Indian citizens for general travel purposes. It is valid for 10 years for adults and 5 years for minors. This passport is suitable for regular citizens traveling abroad for tourism, business, or personal reasons.
-
-          </p>
-
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Diplomatic Passport (Maroon Passport)</h3>
-
-          <p  style={{textAlign:'left'}}>
-          Issued to high-ranking government officials, diplomats and representatives of the Indian government. It allows easier travel and visa facilitation as it is meant for official government duties. This passport is typically issued to Indian Foreign Service (IFS) officers and individuals representing India abroad.
-          </p>
-
-
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Official Passport (White Passport)
-          </h3>
-
-<p  style={{textAlign:'left'}}>
-Provided to government employees traveling on official government business or service. It is issued for official trips and diplomatic work but differs from a diplomatic passport in terms of eligibility. This passport is granted to those working in ministries, public sector undertakings, or government bodies.
-
-</p>
-
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}>Emergency (Tatkal) Passport (Blue Passport)
-          </h3>
-
-<p  style={{textAlign:'left'}}>
-Issued in urgent cases when individuals need to travel quickly due to emergencies such as medical, family emergencies, or work-related reasons. It is processed faster than the normal passport and is available for both adults and minors.</p>
-
-<h2 style={{fontSize:'16px', fontWeight:'bold'}}> Eligibility for Passport Application 
-          </h2>
-
-<p  style={{textAlign:'left'}}>
-When applying for a passport, it is important to ensure that you meet the necessary eligibility criteria to avoid delays. As a trusted Passport Agency in Bangalore, we guide you through the entire process, making sure you fulfill all the required conditions. Our team in Bangalore provides clear instructions and assistance to help you gather the necessary documents and meet the eligibility requirements.
-</p>
-<br/>
-<h3  style={{textAlign:'left', fontSize:'18px'}}>
-            <strong>Who Can Apply for a Passport in Bangalore?
-            </strong>
-          </h3>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Age Requirements
-
-          </h4>
-
-<p  style={{textAlign:'left'}}>
-To apply for a passport in Bangalore, applicants must meet the age criteria set by the government. Adults aged 18 years or older can apply for an adult passport. For minors under the age of 18, a parent or legal guardian must apply on their behalf and specific documentation is required to prove the child's identity and relationship to the parent or guardian.</p>
-
-<h4 style={{fontSize:'16px', fontWeight:'bold'}}> Residency Requirements
-</h4>
-
-<p  style={{textAlign:'left'}}>
-Applicants must be residents of India to apply for a passport in Bangalore. Proof of residence is often required, such as utility bills, rent agreements or Aadhaar cards, to verify that the applicant resides in the jurisdiction of the Bangalore Passport Office.
-</p>
-
-
-<h4 style={{fontSize:'16px', fontWeight:'bold'}}>Specific Eligibility for Minors and Adults
-</h4>
-
-<p  style={{textAlign:'left'}}>
-For adults, the eligibility is straightforward, requiring valid identification and address proof. Minors, on the other hand, must have both parents consent and a valid birth certificate or school ID as proof of age. Parents must submit their own documents along with those of the child to support the application.
-</p>
-<br/>
-
-<h3  style={{textAlign:'left', fontSize:'18px'}}>
-            <strong> Special Considerations
-            </strong>
-          </h3>
-          <br/>
-         
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Persons with Criminal Records
-
-</h4>
-
-<p  style={{textAlign:'left'}}>
-Individuals with a criminal record may face restrictions or additional scrutiny when applying for a passport. If the applicant has been convicted of a criminal offense, the passport authorities will assess the situation. Depending on the nature of the offense and whether a police clearance certificate (PCC) is needed, the applicant may face delays or rejections.
-
-</p>
-
-<h4 style={{fontSize:'16px', fontWeight:'bold'}}>First-Time Applicants vs. Renewal</h4>
-
-<p  style={{textAlign:'left'}}>
-First-time applicants and those renewing their passports follow different processes. For first-time applicants, there is a need to provide all necessary documents for identity, address and citizenship verification. Renewal applications are simpler, but the applicant must ensure that their existing passport is valid or expired for less than three years. If the passport has been expired for longer, additional documentation may be required.</p>
-<br/>
-<h2  style={{textAlign:'left', fontSize:'18px'}}>
-            <strong>  Why Choose Our Passport Services?
-            </strong>
-          </h2>
-          <br/>
-
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Trusted Passport Agency in Bangalore
-          </h3>
-
-<p  style={{textAlign:'left'}}>
-We are a well-established and reliable passport agency, trusted by thousands of customers in Bangalore. Our experienced team ensures that your application is handled with the utmost care and professionalism. You can count on us to deliver accurate and timely passport services.</p>
-
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}> Efficient and Quick Passport Processing
-          </h3>
-
-<p  style={{textAlign:'left'}}>
-We prioritize efficiency to ensure your passport application is processed quickly. With our streamlined procedures and expert guidance, we minimize delays and help you receive your passport in the shortest possible time. Choose us for a fast, hassle-free experience.</p>
-
-
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}> Personalized Assistance for Passport Applications</h3>
-
-<p  style={{textAlign:'left'}}>
-Our team provides personalized assistance at every step of the passport application process. Whether you're applying for the first time or renewing your passport, we are here to guide you through the requirements and help with document verification. We ensure your process runs smoothly.</p>
-
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}> Transparent and Affordable Service Fees
-</h3>
-
-<p  style={{textAlign:'left'}}>
-We believe in clear and upfront communication with no hidden charges. Our service fees are competitive and we provide value for your money with quality services. You will know exactly what to expect, ensuring peace of mind throughout your passport journey.
-</p>
-
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}>Comprehensive Support for All Passport Needs
-
-</h3>
-
-<p  style={{textAlign:'left'}}>
-Whether you're applying for a Tatkal passport, renewing your current passport or dealing with a lost or damaged passport, we offer comprehensive support. Our expertise covers all passport services and we are always available to assist with your unique needs.
-
-</p>
-<br/>
-<h2  style={{textAlign:'left', fontSize:'18px'}}>
-            <strong>  The Passport Application Process
-            </strong>
-          </h2>
-          <br/>
-          <span style={{fontSize:'16px', fontWeight:'bold'}}>Step 1: Schedule Your Appointment</span>
-
-<p  style={{textAlign:'left'}}>
-The first step is to schedule an appointment through the official Passport Seva Portal. Choose the date and time for your visit to the Passport Seva Kendra (PSK) in Bangalore. Make sure to select the appropriate category of service (normal, Tatkal, etc.) based on your needs.</p>
-
-<span style={{fontSize:'16px', fontWeight:'bold'}}>Step 2: Submit Your Documents
-</span>
-
-<p  style={{textAlign:'left'}}>
-On the day of your appointment, visit the Passport Seva Kendra with your original documents and their copies. Documents typically include proof of identity, address and date of birth. Ensure that all documents are verified and ready for submission to avoid delays.</p>
-
-<span style={{fontSize:'16px', fontWeight:'bold'}}>Step 3: Attend the Passport Interview
-</span>
-
-<p  style={{textAlign:'left'}}>
-During your visit, you will have to attend a brief interview with a passport officer. The officer will verify your documents, take your biometric details (photo and fingerprints) and confirm your personal information. It’s a straightforward process, ensuring all details are accurate before proceeding.</p>
-
-<span style={{fontSize:'16px', fontWeight:'bold'}}>Step 4: Passport Dispatch and Delivery
-</span>
-
-<p  style={{textAlign:'left'}}>
-After successful verification, your passport will be printed and dispatched to your address. You can track your passport status online to monitor its progress. Once dispatched, it will be delivered to your home, usually within 7-15 working days, depending on the service type (normal or Tatkal).</p>
-
-{/* <h2 style={{fontSize:'16px'}}> Our Customers Testimonials</h2> */}
-<br/>
-        </>
-      </div>
-
-            <br/>
+            <br />
           </div>
         </div>
       </div>

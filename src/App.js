@@ -46,13 +46,18 @@ import DubaiVisa from "./Dubaivisa.jsx";
 import Hongkongvisa from "./Hongkongvisa.jsx";
 import Vietnam from "./Vietnam.jsx";
 import Indonesiavisa from "./Indonesiavisa.jsx";
+import PassportAgentinChennai from "./Services/passport/PassportAgentinChennai.jsx";
+import PassportAgentinHyderabad from "./Services/passport/PassportAgentinHyderabad.jsx";
+import PassportAgentinMumbai from "./Services/passport/PassportAgentinMumbai.jsx";
+import PassportAgentinPune from "./Services/passport/PassportAgentinPune.jsx";
+
 
 const Layout = ({ children }) => {
   const location = useLocation();
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
-  
+
   useEffect(() => {
     const allowedPages = ["/", "/insurance", "/visa", "/contact-us"];
     const isAllowedPage = allowedPages.includes(location.pathname);
@@ -110,7 +115,7 @@ const Layout = ({ children }) => {
     <>
       {!hideHeader && <Header />}
       <div style={{ minHeight: "calc(100vh - 66px)" }}>{children}</div>
-      {["/", "/about-us", "/terms-conditions", "/privacy-policy", "/disclaimer", "/blogs", "/contact-us", ].includes(
+      {["/", "/about-us", "/terms-conditions", "/privacy-policy", "/disclaimer", "/blogs", "/contact-us",].includes(
         location.pathname
       ) && <Footer />}
     </>
@@ -120,74 +125,78 @@ const Layout = ({ children }) => {
 const App = () => {
   return (
     <BrowserRouter>
-    <Routes>
-      {/* Wrap valid routes inside Layout */}
-      <Route path="/" element={<Layout><Home /></Layout>} />
-      <Route path="/:services" element={ <Services />} />
-      <Route path="/:services-form" element={  <Services />}/>
-      <Route path="/:services/proceed-to-pay" element={  <Services />}/>
-      <Route path="/about-us" element={<Layout><About /></Layout>} />   
-      <Route path="/terms-conditions" element={<Layout><Terms /></Layout>} />
-      <Route path="/privacy-policy" element={<Layout><PrivacyPolicy /></Layout>} />
-      <Route path="/disclaimer" element={<Layout><Disclaimer /></Layout>} />
-      <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
-      <Route  path="/blogs/:title" element={<Layout><BlogDetails/></Layout>} />
+      <Routes>
+        {/* Wrap valid routes inside Layout */}
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/:services" element={<Services />} />
+        <Route path="/:services-form" element={<Services />} />
+        <Route path="/:services/proceed-to-pay" element={<Services />} />
+        <Route path="/about-us" element={<Layout><About /></Layout>} />
+        <Route path="/terms-conditions" element={<Layout><Terms /></Layout>} />
+        <Route path="/privacy-policy" element={<Layout><PrivacyPolicy /></Layout>} />
+        <Route path="/disclaimer" element={<Layout><Disclaimer /></Layout>} />
+        <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
+        <Route path="/blogs/:title" element={<Layout><BlogDetails /></Layout>} />
 
-      <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
-      <Route path="/insurance" element={<Layout><Insurance /></Layout>} />
-      <Route path="/two-wheeler-insurance" element={<Layout><TwoWheeler /></Layout>} />
-      <Route path="/two-wheeler-insurance-info" element={<Layout><TwoWheeler /></Layout>} />
-      <Route path="/car-insurance" element={<Layout><FourWheeler /></Layout>} />
-      <Route path="/car-insurance-info" element={<Layout><FourWheeler /></Layout>} />
-      <Route path="/commercial-insurance-instruction" element={<Layout><CommercialVehicle /></Layout>} />
-      <Route path="/commercial-insurance" element={<Layout><CommercialVehicle /></Layout>} />
-      <Route path="/health-insurance" element={<Layout><Health /></Layout>} />
-      <Route path="/health-insurance-info" element={<Layout><Health /></Layout>} />
-      <Route path="/life-insurance" element={<Layout><Life /></Layout>} />
-      <Route path="/life-insurance-info" element={<Layout><Life /></Layout>} />
-      <Route path="/rental-agreement" element={<Layout><Rental /></Layout>} />
-      <Route path="/rental-agreement-form" element={<Layout><Rental /></Layout>} />
-      <Route path="/rental-agreement/proceed-to-pay" element={<Layout><Rental /></Layout>} />
-      <Route path="/lease-agreement" element={<Layout><Lease /></Layout>} />
-      <Route path="/lease-agreement-form" element={<Layout><Lease /></Layout>} />
-      <Route path="/lease-agreement/proceed-to-pay" element={<Layout><Lease /></Layout>} />
-      <Route path="/affidavits" element={<Layout><Affidavit /></Layout>} />
-      <Route path="/affidavits/:selectedAffidavit" element={<Layout><Affidavit /></Layout>} />
-      <Route path="/affidavits/:selectedAffidavit/proceed-to-pay" element={<Layout><Affidavit /></Layout>} />
-      <Route path="/pan-card" element={<Layout><Pancard /></Layout>} />
-      <Route path="/pan-card/proceed-to-pay" element={<Layout><Pancard /></Layout>} />
-      <Route path="/pan-card-form" element={<Layout><Pancard /></Layout>} />
-      <Route path="/passport" element={<Layout><Passport /></Layout>} />
-      <Route path="/passport-form" element={<Layout><Passport /></Layout>} />
-      <Route path="/passport/proceed-to-pay" element={<Layout><Passport /></Layout>} />
-      <Route path="/senior-citizen-card" element={<Layout><SeniorCitizen /></Layout>} />
-      <Route path="/senior-citizen-card-form" element={<Layout><SeniorCitizen /></Layout>} />
-      <Route path="/senior-citizen-card/proceed-to-pay" element={<Layout><SeniorCitizen /></Layout>} /> 
-      <Route path="/msme-registration" element={<Layout><Msme /></Layout>} />
-      <Route path="/msme-registration-form" element={<Layout><Msme /></Layout>} />
-      <Route path="/msme-registration/proceed-to-pay" element={<Layout><Msme /></Layout>} />
-      <Route path="/food-license" element={<Layout><Food /></Layout>} />
-      <Route path="/food-license-form" element={<Layout><Food /></Layout>} />
-      <Route path="/food-license/proceed-to-pay" element={<Layout><Food /></Layout>} />
-      <Route path="/policeverification" element={<Layout><PoliceVerification /></Layout>} />
-      <Route path="/policeverification-form" element={<Layout><PoliceVerification /></Layout>} />
-      <Route path="/policeverification/proceed-to-pay" element={<Layout><PoliceVerification /></Layout>} />
-      <Route path="/police-clearance-certificate" element={<Layout><PoliceClearance /></Layout>} />
-      <Route path="/police-clearance-certificate-form" element={<Layout><PoliceClearance /></Layout>} />
-      <Route path="/police-clearance-certificate/proceed-to-pay" element={<Layout><PoliceClearance /></Layout>} />
-      <Route path="/visa" element={<Layout><TravelVisa /></Layout>} />
-      <Route path="/dubai-tourist-visa-for-indians" element={<Layout><DubaiVisa /></Layout>} />
-      <Route path="/hong-kong-tourist-visa-for-indians" element={<Layout><Hongkongvisa /></Layout>} />
+        <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
+        <Route path="/insurance" element={<Layout><Insurance /></Layout>} />
+        <Route path="/two-wheeler-insurance" element={<Layout><TwoWheeler /></Layout>} />
+        <Route path="/two-wheeler-insurance-info" element={<Layout><TwoWheeler /></Layout>} />
+        <Route path="/car-insurance" element={<Layout><FourWheeler /></Layout>} />
+        <Route path="/car-insurance-info" element={<Layout><FourWheeler /></Layout>} />
+        <Route path="/commercial-insurance-instruction" element={<Layout><CommercialVehicle /></Layout>} />
+        <Route path="/commercial-insurance" element={<Layout><CommercialVehicle /></Layout>} />
+        <Route path="/health-insurance" element={<Layout><Health /></Layout>} />
+        <Route path="/health-insurance-info" element={<Layout><Health /></Layout>} />
+        <Route path="/life-insurance" element={<Layout><Life /></Layout>} />
+        <Route path="/life-insurance-info" element={<Layout><Life /></Layout>} />
+        <Route path="/rental-agreement" element={<Layout><Rental /></Layout>} />
+        <Route path="/rental-agreement-form" element={<Layout><Rental /></Layout>} />
+        <Route path="/rental-agreement/proceed-to-pay" element={<Layout><Rental /></Layout>} />
+        <Route path="/lease-agreement" element={<Layout><Lease /></Layout>} />
+        <Route path="/lease-agreement-form" element={<Layout><Lease /></Layout>} />
+        <Route path="/lease-agreement/proceed-to-pay" element={<Layout><Lease /></Layout>} />
+        <Route path="/affidavits" element={<Layout><Affidavit /></Layout>} />
+        <Route path="/affidavits/:selectedAffidavit" element={<Layout><Affidavit /></Layout>} />
+        <Route path="/affidavits/:selectedAffidavit/proceed-to-pay" element={<Layout><Affidavit /></Layout>} />
+        <Route path="/pan-card" element={<Layout><Pancard /></Layout>} />
+        <Route path="/pan-card/proceed-to-pay" element={<Layout><Pancard /></Layout>} />
+        <Route path="/pan-card-form" element={<Layout><Pancard /></Layout>} />
+        <Route path="/passport" element={<Layout><Passport /></Layout>} />
+        <Route path="/passport-form" element={<Layout><Passport /></Layout>} />
+        <Route path="/passport/proceed-to-pay" element={<Layout><Passport /></Layout>} />
+        <Route path="/senior-citizen-card" element={<Layout><SeniorCitizen /></Layout>} />
+        <Route path="/senior-citizen-card-form" element={<Layout><SeniorCitizen /></Layout>} />
+        <Route path="/senior-citizen-card/proceed-to-pay" element={<Layout><SeniorCitizen /></Layout>} />
+        <Route path="/msme-registration" element={<Layout><Msme /></Layout>} />
+        <Route path="/msme-registration-form" element={<Layout><Msme /></Layout>} />
+        <Route path="/msme-registration/proceed-to-pay" element={<Layout><Msme /></Layout>} />
+        <Route path="/food-license" element={<Layout><Food /></Layout>} />
+        <Route path="/food-license-form" element={<Layout><Food /></Layout>} />
+        <Route path="/food-license/proceed-to-pay" element={<Layout><Food /></Layout>} />
+        <Route path="/policeverification" element={<Layout><PoliceVerification /></Layout>} />
+        <Route path="/policeverification-form" element={<Layout><PoliceVerification /></Layout>} />
+        <Route path="/policeverification/proceed-to-pay" element={<Layout><PoliceVerification /></Layout>} />
+        <Route path="/police-clearance-certificate" element={<Layout><PoliceClearance /></Layout>} />
+        <Route path="/police-clearance-certificate-form" element={<Layout><PoliceClearance /></Layout>} />
+        <Route path="/police-clearance-certificate/proceed-to-pay" element={<Layout><PoliceClearance /></Layout>} />
+        <Route path="/visa" element={<Layout><TravelVisa /></Layout>} />
+        <Route path="/dubai-tourist-visa-for-indians" element={<Layout><DubaiVisa /></Layout>} />
+        <Route path="/hong-kong-tourist-visa-for-indians" element={<Layout><Hongkongvisa /></Layout>} />
 
-      <Route path="/our_partners" element={<Layout><PartnersPage /></Layout>} />
-      <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
-      <Route path="/failure" element={<Layout><FailurePayment /></Layout>} />
-      <Route path="/passport-agency-in-bangalore" element={<Layout><PassportAgency /></Layout>} />
-      <Route path="/vietnam-tourist-visa-for-indians" element={<Layout><Vietnam/></Layout>}></Route>
-      <Route path="/indonesia-tourist-visa-for-indians" element={<Layout><Indonesiavisa/></Layout>}></Route>
-      {/* Custom 404 Page without Header */}
-      <Route path="*" element={<Custom404Page />} />
-    </Routes>
+        <Route path="/our_partners" element={<Layout><PartnersPage /></Layout>} />
+        <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
+        <Route path="/failure" element={<Layout><FailurePayment /></Layout>} />
+        <Route path="/passport-agency-in-bangalore" element={<Layout><PassportAgency /></Layout>} />
+        <Route path="/passport-agent-in-chennai" element={<Layout><PassportAgentinChennai /></Layout>} />
+        <Route path="/passport-agent-in-hyderabad" element={<Layout><PassportAgentinHyderabad /></Layout>} />
+        <Route path="/passport-agent-in-mumbai" element={<Layout><PassportAgentinMumbai /></Layout>} />
+        <Route path="/passport-agent-in-pune" element={<Layout><PassportAgentinPune /></Layout>} />
+        <Route path="/vietnam-tourist-visa-for-indians" element={<Layout><Vietnam /></Layout>}></Route>
+        <Route path="/indonesia-tourist-visa-for-indians" element={<Layout><Indonesiavisa /></Layout>}></Route>
+        {/* Custom 404 Page without Header */}
+        <Route path="*" element={<Custom404Page />} />
+      </Routes>
     </BrowserRouter>
   );
 };
