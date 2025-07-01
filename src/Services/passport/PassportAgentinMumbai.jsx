@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import bannerimage from "../../images/passportindianbanner.png";
 import circleIcon from "../../images/circle1.svg";
-import documentsIcon from "../../images/documents.svg";
-import TimeIcon from "../../images/Time.svg";
+// import documentsIcon from "../../images/documents.svg";
+// import TimeIcon from "../../images/Time.svg";
 import Price from "../../images/Price Tag.svg";
 import axios from "axios";
 
 import { Link } from "react-router-dom";
 import "../passport/passport.css"
 
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const relatedServices = [
@@ -25,7 +25,7 @@ const PassportAgentinMumbai = () => {
     // const serviceRef = useRef(null);
     const navigate = useNavigate();
     //   const { services } = useParams();
-    const [visibleCount, setVisibleCount] = useState(3);
+    const [visibleCount] = useState(3);
     const [openIndex, setOpenIndex] = useState(null);
 
     const [blogs, setBlogs] = useState([]);
@@ -245,8 +245,8 @@ const PassportAgentinMumbai = () => {
         "@type": "LocalBusiness",
         "name": "Make My Documents",
         "image": "https://www.makemydocuments.com/logo.png",
-        "@id": "https://makemydocuments.com/passport-agent-in-chennai",
-        "url": "https://makemydocuments.com/passport-agent-in-chennai",
+        "@id": "https://makemydocuments.com/passport-agent-in-mumbai",
+        "url": "https://makemydocuments.com/passport-agent-in-mumbai",
         "telephone": "+91-9429690973",
         "address": {
           "@type": "PostalAddress",
@@ -439,7 +439,7 @@ const PassportAgentinMumbai = () => {
                 <meta property="og:site_name" content="Make My Documents" />
 
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Leading Passport Agent in Chennai | Expert Passport Services" />
+                <meta name="twitter:title" content="Leading Passport Agent in Mumbai | Expert Passport Services" />
                 <meta name="twitter:description" content="Make My Document is a trusted Passport Agent in Mumbai, offering expert services for passport new applications, renewals and replacements. Contact us today." />
                 <meta name="twitter:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
                 <meta name="twitter:site" content="@makemydocuments" />
@@ -712,7 +712,7 @@ const PassportAgentinMumbai = () => {
                                     }}
                                 >
                                     <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-                                        Passport Agent in Chennai
+                                        Passport Agent in Mumbai
 
 
                                     </h2>
@@ -2397,7 +2397,7 @@ const PassportAgentinMumbai = () => {
                                 <p style={{ textAlign: 'left' }}>
                                         <span style={{ fontWeight: 'bold' }}> Make My Documents</span>  assists individuals with:</p>
                                 <p style={{ textAlign: 'left' }}>
-                                    Residents of Chennai and nearby areas who are Indian citizens can apply for various passport services. This inclues:</p>
+                                    Residents of Mumbai and nearby areas who are Indian citizens can apply for various passport services. This inclues:</p>
                                 <p style={{ textAlign: 'left' }}>
                                     ●  <span style={{ fontWeight: 'bold' }}>Document Preparation</span><br />
                                     We help arrange and review all required documents like proof of address, identity, DOB, and annexures.

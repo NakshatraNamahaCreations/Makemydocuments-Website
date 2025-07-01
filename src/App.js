@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import {
   Routes,
   Route,
   useLocation,
-  Navigate,
+  // Navigate,
   BrowserRouter,
 } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -18,7 +18,7 @@ import FourWheeler from "./Services/FourWheeler.jsx";
 import CommercialVehicle from "./Services/CommercialVehicle.jsx";
 import Health from "./Services/Health.jsx";
 import Life from "./Services/Life.jsx";
-import Contact from "./Contact.jsx";
+// import Contact from "./Contact.jsx";
 import Rental from "./Services/rental/Rental.jsx";
 import Lease from "./Services/lease/Lease.jsx";
 import Affidavit from "./Services/affidavit/Affidavit.jsx";
@@ -137,7 +137,6 @@ const App = () => {
         <Route path="/disclaimer" element={<Layout><Disclaimer /></Layout>} />
         <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
         <Route path="/blogs/:title" element={<Layout><BlogDetails /></Layout>} />
-
         <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
         <Route path="/insurance" element={<Layout><Insurance /></Layout>} />
         <Route path="/two-wheeler-insurance" element={<Layout><TwoWheeler /></Layout>} />
