@@ -50,6 +50,7 @@ import PassportAgentinChennai from "./Services/passport/PassportAgentinChennai.j
 import PassportAgentinHyderabad from "./Services/passport/PassportAgentinHyderabad.jsx";
 import PassportAgentinMumbai from "./Services/passport/PassportAgentinMumbai.jsx";
 import PassportAgentinPune from "./Services/passport/PassportAgentinPune.jsx";
+import PassportAgentinMysore from "./Services/passport/PassportAgentinMysore.jsx";
 
 
 const Layout = ({ children }) => {
@@ -191,6 +192,7 @@ const App = () => {
         <Route path="/passport-agent-in-hyderabad" element={<Layout><PassportAgentinHyderabad /></Layout>} />
         <Route path="/passport-agent-in-mumbai" element={<Layout><PassportAgentinMumbai /></Layout>} />
         <Route path="/passport-agent-in-pune" element={<Layout><PassportAgentinPune /></Layout>} />
+        <Route path="/passport-agent-in-mysore" element={<Layout><PassportAgentinMysore /></Layout>} />
         <Route path="/vietnam-tourist-visa-for-indians" element={<Layout><Vietnam /></Layout>}></Route>
         <Route path="/indonesia-tourist-visa-for-indians" element={<Layout><Indonesiavisa /></Layout>}></Route>
         {/* Custom 404 Page without Header */}
