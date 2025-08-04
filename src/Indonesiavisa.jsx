@@ -63,15 +63,15 @@ const Indonesiavisa = () => {
       const stickyColumn = stickyColumnRef.current;
       const firstColumn = firstColumnRef.current;
       const stopSection = stopStickyRef.current;
-  
+
       if (!stickyColumn || !firstColumn || !stopSection) return;
-  
+
       const bannerHeight = document.querySelector('.breadcrumb-title')?.offsetHeight || 0;
       const scrollTop = window.scrollY;
       const firstColumnTop = firstColumn.getBoundingClientRect().top + window.scrollY;
       const stopSectionTop = stopSection.getBoundingClientRect().top + window.scrollY;
       const stickyOffset = 100; // adjust for margin if needed
-  
+
       if (
         scrollTop > firstColumnTop - bannerHeight - stickyOffset &&
         scrollTop + stickyColumn.offsetHeight < stopSectionTop
@@ -81,11 +81,11 @@ const Indonesiavisa = () => {
         setIsSticky(false);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
 
 
   const handleContinue = () => {
@@ -161,7 +161,7 @@ const Indonesiavisa = () => {
       answer:
         "If you have a travel ban or previous immigration issues, it may impact your eligibility. Consult with the Indonesian embassy before applying for the Indonesia Tourist Visa.",
     },
-   
+
   ];
 
   const handleToggle = (index) => {
@@ -172,7 +172,7 @@ const Indonesiavisa = () => {
     <>
       <Helmet>
         <title>
-        Indonesia Tourist Visa for Indians - Easy Online Application
+          Indonesia Tourist Visa for Indians - Easy Online Application
         </title>
         <meta
           name="description"
@@ -253,7 +253,7 @@ const Indonesiavisa = () => {
           `}
         </script>
         <script type="application/ld+json">
-    {`
+          {`
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -307,9 +307,9 @@ const Indonesiavisa = () => {
         }
       }
     `}
-  </script>
-  <script type="application/ld+json">
-    {`
+        </script>
+        <script type="application/ld+json">
+          {`
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -389,24 +389,24 @@ const Indonesiavisa = () => {
         ]
       }
     `}
-  </script>
+        </script>
 
-  <meta property="og:title" content="Indonesia Tourist Visa for Indians - Easy Online Application" />
-<meta property="og:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
-<meta property="og:url" content="https://makemydocuments.com/indonesia-tourist-visa-for-indians" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
-<meta property="og:site_name" content="Make My Documents" />
+        <meta property="og:title" content="Indonesia Tourist Visa for Indians - Easy Online Application" />
+        <meta property="og:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
+        <meta property="og:url" content="https://makemydocuments.com/indonesia-tourist-visa-for-indians" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta property="og:site_name" content="Make My Documents" />
 
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Indonesia Tourist Visa for Indians - Easy Online Application" />
-<meta name="twitter:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
-<meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
-<meta name="twitter:site" content="@makemydocuments" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Indonesia Tourist Visa for Indians - Easy Online Application" />
+        <meta name="twitter:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
+        <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta name="twitter:site" content="@makemydocuments" />
 
-<script>
-{`!function(e,t,n,s,u,a){
+        <script>
+          {`!function(e,t,n,s,u,a){
   e.twq||(s=e.twq=function(){
     s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
   },s.version='1.1',s.queue=[],u=t.createElement(n),
@@ -414,16 +414,16 @@ const Indonesiavisa = () => {
   a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
 }(window,document,'script');
 twq('config','onik3');`}
-</script>
+        </script>
 
-<script type="text/javascript">
-{`_linkedin_partner_id = "7447820";
+        <script type="text/javascript">
+          {`_linkedin_partner_id = "7447820";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
-</script>
+        </script>
 
-<script type="text/javascript">
-{`(function(l) {
+        <script type="text/javascript">
+          {`(function(l) {
   if (!l) {
     window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
     window.lintrk.q=[];
@@ -434,11 +434,11 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
   b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
   s.parentNode.insertBefore(b, s);
 })(window.lintrk);`}
-</script>
+        </script>
 
-<noscript dangerouslySetInnerHTML={{
-  __html: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7447820&fmt=gif" />`
-}} />
+        <noscript dangerouslySetInnerHTML={{
+          __html: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7447820&fmt=gif" />`
+        }} />
 
 
 
@@ -454,7 +454,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       >
         <nav aria-label="breadcrumb" style={{ marginTop: "1%" }}>
           <ol className="breadcrumb mb-0">
-            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize:'14px' }}>
+            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize: '14px' }}>
               <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>
                 Home
               </Link>
@@ -462,7 +462,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             <li
               className="breadcrumb-item active"
               aria-current="page"
-              style={{ fontWeight: "bold", fontSize:'14px' }}
+              style={{ fontWeight: "bold", fontSize: '14px' }}
             >
               Indonesia Tourist Visa for Indians
 
@@ -526,10 +526,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                       fontSize: "36px",
                       fontWeight: "bold",
                       margin: 0,
-                      
+
                     }}
                   >
-                   Indonesia Tourist Visa for Indians
+                    Indonesia Tourist Visa for Indians
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -566,93 +566,93 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
                   {/* Visa Details */}
                   <div
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    marginTop: "20px",
-    width: "100%",
-    maxWidth: "320px",
- 
-    // padding: "15px",
-    borderRadius: "10px",
-  
-  }}
->
-  <div style={{ flex: 1 }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Processing time
-    </p>
-    <p
-      style={{
-        fontSize: "16px",
-        fontWeight: "bold",
-        color: "#333",
-        margin: 0,
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        display: "inline-block",
-      }}
-    >
-     05 - 07 working days
-    </p>
-  </div>
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginTop: "20px",
+                      width: "100%",
+                      maxWidth: "320px",
 
-  <div style={{ flex: 1, textAlign: "right" }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Starting from
-    </p>
-    <p
-      style={{
-        fontSize: "16px",
-        fontWeight: "bold",
-        color: "#333",
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        display: "inline-block",
-        margin: 0,
-      }}
-    >
-      ₹4,550/-
-    </p>
-  </div>
-</div>
-<div style={{ marginTop: "20px" }}>
-  <button
-    onClick={handleContinue}
-    style={{
-      backgroundColor: "#fea400 ",
-      color: "#333",
-      padding: "12px 24px",
-      border: "none",
-      borderRadius: "6px",
-      fontSize: "16px",
-      fontWeight: "bold",
-      cursor: "pointer",
-      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-      transition: "background-color 0.3s ease",
-    }}
-    onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
-    onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
-  >
-    Apply Now
-  </button>
-</div>
+                      // padding: "15px",
+                      borderRadius: "10px",
+
+                    }}
+                  >
+                    <div style={{ flex: 1 }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Processing time
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          margin: 0,
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          display: "inline-block",
+                        }}
+                      >
+                        05 - 07 working days
+                      </p>
+                    </div>
+
+                    <div style={{ flex: 1, textAlign: "right" }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Starting from
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          display: "inline-block",
+                          margin: 0,
+                        }}
+                      >
+                        ₹5,109/-
+                      </p>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: "20px" }}>
+                    <button
+                      onClick={handleContinue}
+                      style={{
+                        backgroundColor: "#fea400 ",
+                        color: "#333",
+                        padding: "12px 24px",
+                        border: "none",
+                        borderRadius: "6px",
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                        transition: "background-color 0.3s ease",
+                      }}
+                      onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
+                      onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
+                    >
+                      Apply Now
+                    </button>
+                  </div>
 
 
                 </div>
@@ -660,191 +660,186 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             </div>
 
             <div style={{ width: "100%" }} className="d-block d-lg-none">
-  <div
-    style={{
-      position: "relative",
-      width: "100%",
-      overflow: "hidden",
-      marginTop:'36%'
-    }}
-  >
-    {/* Image */}
-    <img
-      src={bannerimage}
-      alt="Hong Kong Visa"
-      style={{
-        width: "100%",
-        height: "auto",
-        objectFit: "cover",
-      }}
-    />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  overflow: "hidden",
+                  marginTop: '36%'
+                }}
+              >
+                {/* Image */}
+                <img
+                  src={bannerimage}
+                  alt="Hong Kong Visa"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
+                  }}
+                />
 
-    {/* Text Container */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        background:
-          "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
-        color: "#fff",
-        padding: "15px",
-      }}
-    >
-      <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-      Indonesia Tourist Visa for Indians
+                {/* Text Container */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background:
+                      "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
+                    color: "#fff",
+                    padding: "15px",
+                  }}
+                >
+                  <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+                    Indonesia Tourist Visa for Indians
 
-      </h2>
+                  </h2>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "#e6f7fa",
-          color: "#000",
-          padding: "3px 8px",
-          borderRadius: "5px",
-          fontSize: "10px",
-          fontWeight: "500",
-          marginBottom: "10px",
-          width: "fit-content",
-        }}
-      >
-        ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
-      </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#e6f7fa",
+                      color: "#000",
+                      padding: "3px 8px",
+                      borderRadius: "5px",
+                      fontSize: "10px",
+                      fontWeight: "500",
+                      marginBottom: "10px",
+                      width: "fit-content",
+                    }}
+                  >
+                    ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
+                  </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "10px",
-        }}
-      >
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Processing time</p>
-          <p style={{ margin: 0,  fontSize: "10px", }}>05 - 07 working days          </p>
-        </div>
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Starting from</p>
-          <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold",  fontSize: "10px", }}>
-            ₹4,550/-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Processing time</p>
+                      <p style={{ margin: 0, fontSize: "10px", }}>05 - 07 working days          </p>
+                    </div>
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
+                      <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
+                        ₹5,109/-
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
             <div className="container my-5">
               <div className="row" style={{ position: "relative" }}>
-                {/* Left Column () */} 
+                {/* Left Column () */}
                 <div className="col-md-8" ref={firstColumnRef} >
                   {/* Charges Section (Scrollable) */}
-                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{marginLeft:'2%'}}>
-  {/* Image Section */}
-  <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
-      <img
-        src={Price}
-        alt="Charges Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div>
+                  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+                    {/* Image Section */}
+                    <div className="d-flex justify-content-center align-items-center">
+                      <div style={{ position: "relative", display: "inline-block", marginTop: '-100%', marginLeft: '' }}>
+                        <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+                        <img
+                          src={Price}
+                          alt="Charges Icon"
+                          style={{
+                            position: "absolute",
+                            top: "56%",
+                            left: "43%",
+                            transform: "translate(-50%, -50%)",
+                            maxWidth: "35px",
+                          }}
+                        />
+                      </div>
+                    </div>
 
-  {/* Content Section */}
-  <div style={{marginTop:''}}>
-    <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li>
-Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,550/-</strong> </li>
-      <li>Indonesia 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs 12,200/-</strong>
-      </li>
-      <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
-    
-    </ul>
-  </div>
-</div>
-<div
-  className="d-block d-lg-none"
-  style={{
-    padding: "15px",
-    backgroundColor: "#ffffff",
-    borderRadius: "10px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-    margin: "15px",
-  }}
->
-  {/* Charges Section */}
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "10px",
-      marginBottom: "20px",
-    }}
-  >
-    <div
-      style={{
-        position: "relative",
-        display: "inline-block",
-        width: "100px",
-        height: "100px",
-      }}
-    >
-      <img
-        src={circleIcon}
-        alt="Circle"
-        style={{ width: "100%", height: "100%" }}
-      />
-      <img
-        src={Price}
-        alt="Price Icon"
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          width: "26px",
-        }}
-      />
-    </div>
-    <div>
-      <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-        Charges
-      </h5>
-      <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-        <li>
-        Indonesia 30 Days Single Entry E-Visa {" "}
-          <strong style={{ color: "#ff9800" }}>Rs. 4,550/-</strong>
-        </li>
-        <li>
-        Indonesia 60 Days Single Entry E-Visa <strong style={{ color: "#ff9800" }}> Rs 12,200
-        </strong>
-        </li>
-        <li>
-          <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-          Need to pay while submitting online form (This amount will be
-          adjusted in total bill)
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+                    {/* Content Section */}
+                    <div style={{ marginTop: '' }}>
+                      <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                        <li>
+                          Indonesia 30 Days Single Entry E-Visa  <strong style={{ color: '#ff9800' }}>Rs. 5,109/-</strong> </li>
+
+                        <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    className="d-block d-lg-none"
+                    style={{
+                      padding: "15px",
+                      backgroundColor: "#ffffff",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                      margin: "15px",
+                    }}
+                  >
+                    {/* Charges Section */}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "relative",
+                          display: "inline-block",
+                          width: "100px",
+                          height: "100px",
+                        }}
+                      >
+                        <img
+                          src={circleIcon}
+                          alt="Circle"
+                          style={{ width: "100%", height: "100%" }}
+                        />
+                        <img
+                          src={Price}
+                          alt="Price Icon"
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            width: "26px",
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                          Charges
+                        </h5>
+                        <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                          <li>
+                            Indonesia 30 Days Single Entry E-Visa {" "}
+                            <strong style={{ color: "#ff9800" }}>Rs. 5,109/-</strong>
+                          </li>
+                          <li>
+                            <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                            Need to pay while submitting online form (This amount will be
+                            adjusted in total bill)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
                   <br />
                   {/* Documents Required Section (Non-scrollable) */}
                   <div
-                  className="d-none d-lg-block"
+                    className="d-none d-lg-block"
                     style={{
                       marginTop: "20px",
                       paddingLeft: "10px",
@@ -864,7 +859,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                         textAlign: "left",
                       }}
                     >
-                     Documents Required For Indonesia Tourist Visa for Indians
+                      Documents Required For Indonesia Tourist Visa for Indians
 
                     </h2>
                     <p
@@ -874,7 +869,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                         color: "#333",
                       }}
                     >
-                     - Clear scanned copy of passport front and back copy in colour scanner
+                      - Clear scanned copy of passport front and back copy in colour scanner
 
                     </p>
                     <p
@@ -884,7 +879,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                         color: "#333",
                       }}
                     >
-                     - Hotel Address Information
+                      - Hotel Address Information
 
                     </p>
                     <p
@@ -894,7 +889,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                         color: "#333",
                       }}
                     >
-                     - Return Flight Ticket
+                      - Return Flight Ticket
 
 
                     </p>
@@ -905,36 +900,36 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                         color: "#333",
                       }}
                     >
-                     - Traveler Photo
+                      - Traveler Photo
 
 
                     </p>
                   </div>
                   <div className="d-block d-lg-none" style={{ padding: "15px" }}>
-                  <div style={{
-    backgroundColor: "#fff",
-    borderRadius: "8px",
-    padding: "15px",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    marginBottom: "20px"
-  }}>
-    <h5 style={{ fontSize: "18px", fontWeight: "bold" }}>Documents Required</h5>
-    <p style={{ fontSize: "14px", marginBottom: 0 }}>
-      - Clear scanned copy of passport front and back copy in colour scanner
+                    <div style={{
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      padding: "15px",
+                      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                      marginBottom: "20px"
+                    }}>
+                      <h5 style={{ fontSize: "18px", fontWeight: "bold" }}>Documents Required</h5>
+                      <p style={{ fontSize: "14px", marginBottom: 0 }}>
+                        - Clear scanned copy of passport front and back copy in colour scanner
 
-    </p>
-    <p style={{ fontSize: "14px", marginBottom: 0 }}>
-      - Hotel Address Information
+                      </p>
+                      <p style={{ fontSize: "14px", marginBottom: 0 }}>
+                        - Hotel Address Information
 
-    </p>
-    <p style={{ fontSize: "14px", marginBottom: 0 }}>
-      - Return Flight Ticket
-    </p>
-    <p style={{ fontSize: "14px", marginBottom: 0 }}>
-      - Traveler Photo
+                      </p>
+                      <p style={{ fontSize: "14px", marginBottom: 0 }}>
+                        - Return Flight Ticket
+                      </p>
+                      <p style={{ fontSize: "14px", marginBottom: 0 }}>
+                        - Traveler Photo
 
-    </p>
-  </div>
+                      </p>
+                    </div>
                   </div>
                   <br />
                   {/* How It Works Section (Non-scrollable) */}
@@ -1004,7 +999,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                               margin: 0,
                             }}
                           >
-                        Fill all the basic details in the application on our secure portal.
+                            Fill all the basic details in the application on our secure portal.
 
                           </p>
                         </div>
@@ -1304,7 +1299,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                                       color: "#374151",
                                     }}
                                   >
-                                  Ankit
+                                    Ankit
 
                                   </span>
                                 </div>
@@ -1423,7 +1418,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                                       color: "#374151",
                                     }}
                                   >
-                                   Neeraja V
+                                    Neeraja V
 
                                   </span>
                                 </div>
@@ -1538,7 +1533,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                                       color: "#374151",
                                     }}
                                   >
-                                   Divya P
+                                    Divya P
 
                                   </span>
                                 </div>
@@ -1547,188 +1542,188 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                           </div>
                         </div>
                         {/* Carousel Controls */}
-<button
-  className="carousel-control-prev"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="prev"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    left: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-prev-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Previous</span>
-</button>
+                        <button
+                          className="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="prev"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            left: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Previous</span>
+                        </button>
 
-<button
-  className="carousel-control-next"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="next"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    right: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-next-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Next</span>
-</button>
+                        <button
+                          className="carousel-control-next"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="next"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            right: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Next</span>
+                        </button>
 
                       </div>
                     </div>
                   </div>
                   {window.innerWidth <= 768 && (
-  <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
-    <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
-      <h4
-        style={{
-          color: "#007bff",
-          marginBottom: "20px",
-          fontWeight: "bold",
-          fontSize: "22px",
-          textAlign: "center",
-        }}
-      >
-        Our Client Reviews
-      </h4>
+                    <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
+                      <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+                        <h4
+                          style={{
+                            color: "#007bff",
+                            marginBottom: "20px",
+                            fontWeight: "bold",
+                            fontSize: "22px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Our Client Reviews
+                        </h4>
 
-      <div
-        id="mobileReviewCarousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="4000"
-      >
-        <div className="carousel-inner">
-          {[
-            {
-              name: "Neha",
-              initial: "N",
-              review:
-                "I was worried about the visa process, but the team made it hassle-free. The Indonesia Tourist Visa for Indians was approved quickly, and I received it well within the time frame.",
-            },
-            {
-              name: "Arjun",
-              initial: "A",
-              review:
-                "I applied for the Indonesia Tourist Visa for Indians, and the whole process was so convenient. The team kept me updated throughout, and the visa was delivered without any issues.",
-            },
-            {
-              name: "Priya S",
-              initial: "P",
-              review:
-                "I was a bit anxious about applying for the Indonesia Tourist Visa for Indians, but the team made everything clear and simple. The visa came through just as promised",
-            },
-          ].map((item, index) => (
-            <div
-              className={`carousel-item ${index === 0 ? "active" : ""}`}
-              key={index}
-            >
-              <div
-                style={{
-                  backgroundColor: "#fff",
-                  padding: "15px",
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                  marginBottom: "10px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#FFAA00",
-                    fontSize: "18px",
-                    marginBottom: "5px",
-                  }}
-                >
-                  ★★★★★
+                        <div
+                          id="mobileReviewCarousel"
+                          className="carousel slide"
+                          data-bs-ride="carousel"
+                          data-bs-interval="4000"
+                        >
+                          <div className="carousel-inner">
+                            {[
+                              {
+                                name: "Neha",
+                                initial: "N",
+                                review:
+                                  "I was worried about the visa process, but the team made it hassle-free. The Indonesia Tourist Visa for Indians was approved quickly, and I received it well within the time frame.",
+                              },
+                              {
+                                name: "Arjun",
+                                initial: "A",
+                                review:
+                                  "I applied for the Indonesia Tourist Visa for Indians, and the whole process was so convenient. The team kept me updated throughout, and the visa was delivered without any issues.",
+                              },
+                              {
+                                name: "Priya S",
+                                initial: "P",
+                                review:
+                                  "I was a bit anxious about applying for the Indonesia Tourist Visa for Indians, but the team made everything clear and simple. The visa came through just as promised",
+                              },
+                            ].map((item, index) => (
+                              <div
+                                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                                key={index}
+                              >
+                                <div
+                                  style={{
+                                    backgroundColor: "#fff",
+                                    padding: "15px",
+                                    borderRadius: "8px",
+                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                    marginBottom: "10px",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      color: "#FFAA00",
+                                      fontSize: "18px",
+                                      marginBottom: "5px",
+                                    }}
+                                  >
+                                    ★★★★★
+                                  </div>
+                                  <p
+                                    style={{
+                                      color: "#4B5563",
+                                      fontSize: "14px",
+                                      marginBottom: "10px",
+                                    }}
+                                  >
+                                    {item.review}
+                                  </p>
+                                  <div style={{ display: "flex", alignItems: "center" }}>
+                                    <div
+                                      style={{
+                                        width: "32px",
+                                        height: "32px",
+                                        borderRadius: "50%",
+                                        backgroundColor: "#E5E7EB",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        marginRight: "10px",
+                                        fontWeight: "bold",
+                                        color: "#000",
+                                      }}
+                                    >
+                                      {item.initial}
+                                    </div>
+                                    <span
+                                      style={{
+                                        fontWeight: "bold",
+                                        fontSize: "14px",
+                                        color: "#374151",
+                                      }}
+                                    >
+                                      {item.name}
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Optional carousel controls */}
+                          <button
+                            className="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="prev"
+                          >
+                            <span className="carousel-control-prev-icon" aria-hidden="true" style={{ marginLeft: '-120%' }}></span>
+                          </button>
+                          <button
+                            className="carousel-control-next"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="next"
+                          >
+                            <span className="carousel-control-next-icon" aria-hidden="true" style={{ marginRight: '-80%' }}></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+
                 </div>
-                <p
-                  style={{
-                    color: "#4B5563",
-                    fontSize: "14px",
-                    marginBottom: "10px",
-                  }}
-                >
-                  {item.review}
-                </p>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <div
-                    style={{
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      backgroundColor: "#E5E7EB",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginRight: "10px",
-                      fontWeight: "bold",
-                      color: "#000",
-                    }}
-                  >
-                    {item.initial}
-                  </div>
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                      color: "#374151",
-                    }}
-                  >
-                    {item.name}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Optional carousel controls */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" style={{marginLeft:'-120%'}}></span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" style={{marginRight:'-80%'}}></span>
-        </button>
-      </div>
-    </div>
-  </div>
-)}
 
 
-                </div>
-
-                
 
                 {/* Right Column () */}
                 <div
@@ -1741,7 +1736,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                     width: isSticky && stickyColumnRef.current ? `${stickyColumnRef.current.offsetWidth}px` : "auto",
                     zIndex: 1000,
                   }}
-                  
+
                 >
                   <div
                     style={{
@@ -1777,7 +1772,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                       }}
                     >
                       <button
-                      onClick={handleContinue}
+                        onClick={handleContinue}
                         style={{
                           backgroundColor: "",
                           color: "#000",
@@ -1791,7 +1786,7 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                         Apply Online
                       </button>
                     </div>
-                   
+
                     {/* <a href="https://wa.me/+919980097315" style={{ textDecoration: "none" }}>
   <div
     style={{
@@ -1899,24 +1894,24 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                 </div>
                 {/* Sticky Bottom Bar for Mobile Only */}
                 <div
-                
-  style={{
-    position: "fixed",
-    bottom: 0,
-    left: 0,
-    width: "100%",
-    backgroundColor: "#ffffff",
-    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
-    display: window.innerWidth <= 768 ? "flex" : "none",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 15px",
-    zIndex: 9999,
-  }}
->
- 
 
-  {/* <a
+                  style={{
+                    position: "fixed",
+                    bottom: 0,
+                    left: 0,
+                    width: "100%",
+                    backgroundColor: "#ffffff",
+                    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
+                    display: window.innerWidth <= 768 ? "flex" : "none",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "10px 15px",
+                    zIndex: 9999,
+                  }}
+                >
+
+
+                  {/* <a
     href="https://wa.me/+919980097315"
     style={{
       width: "45px",
@@ -1934,24 +1929,24 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
   >
     <i className="fab fa-whatsapp"></i>
   </a> */}
-  <button
-    onClick={handleContinue}
-    style={{
-      flex: 1,
-      marginRight: "10px",
-      padding: "10px",
-      backgroundColor: "#007bff",
-      color: "#fff",
-      border: "none",
-      borderRadius: "8px",
-      fontWeight: "bold",
-      fontSize: "14px",
-    }}
-  >
-    Apply Now
-  </button>
+                  <button
+                    onClick={handleContinue}
+                    style={{
+                      flex: 1,
+                      marginRight: "10px",
+                      padding: "10px",
+                      backgroundColor: "#007bff",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: "8px",
+                      fontWeight: "bold",
+                      fontSize: "14px",
+                    }}
+                  >
+                    Apply Now
+                  </button>
 
-  {/* <a
+                  {/* <a
     href="tel:+919429690973"
     style={{
       width: "45px",
@@ -1968,14 +1963,14 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
   >
     <i className="fa fa-phone"></i>
   </a> */}
-</div>
+                </div>
 
 
               </div>
             </div>
 
             <div
-                 ref={stopStickyRef}
+              ref={stopStickyRef}
               style={{
                 backgroundColor: "#f8f8f8",
                 padding: "30px 20px",
@@ -2010,9 +2005,8 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                     style={{
                       padding: "10px 20px",
                       borderRadius: "999px",
-                      border: `1px solid ${
-                        active === service.name ? "#000" : "#ccc"
-                      }`,
+                      border: `1px solid ${active === service.name ? "#000" : "#ccc"
+                        }`,
                       backgroundColor:
                         active === service.name ? "#212529" : "#fff",
                       color: active === service.name ? "#fff" : "#000",
@@ -2097,13 +2091,13 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
 
             <div
               className="faq-section-visa"
-              // style={{
-              //   margin: "10px auto",
-              //   padding: "20px",
-              //   background: "#FFFFFF",
-              //   borderRadius: "10px",
-              //   width: "80%",
-              // }}
+            // style={{
+            //   margin: "10px auto",
+            //   padding: "20px",
+            //   background: "#FFFFFF",
+            //   borderRadius: "10px",
+            //   width: "80%",
+            // }}
             >
               <h4
                 style={{
@@ -2177,11 +2171,11 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
               <>
                 <h2 className="faq-tag-title-h3">
                   <strong>
-                  Indonesia Tourist Visa for Indians - A Complete Guide
+                    Indonesia Tourist Visa for Indians - A Complete Guide
                   </strong>
                 </h2>
                 <br />
-              
+
                 <p>Indian passport holders are required to apply for a tourist visa to visit Indonesia. Our service simplifies the process of obtaining an Indonesia Tourist Visa, ensuring a quick and hassle-free experience. We guide you through every step of the application, from document submission to visa approval, so you can focus on planning your trip.
                 </p>
 
@@ -2189,112 +2183,112 @@ Indonesia 30 Days Single Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs. 4,5
                 <br />
                 <h2 style={{ fontSize: "22px", fontWeight: "bold" }}> What are the Types of Indonesia Visa
 
-</h2>
-                <br/>
-                <p>
-Indonesia offers several types of visas depending on the purpose of your visit. Here’s a breakdown of the main visa types:
-</p>
-<br/>
-
-                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-                Tourist Visa
-                </h3>
-              <p>A Tourist Visa is required for those traveling to Indonesia for leisure or tourism. It allows you to explore the country and enjoy its cultural and natural attractions.
-              </p>
+                </h2>
                 <br />
-                
+                <p>
+                  Indonesia offers several types of visas depending on the purpose of your visit. Here’s a breakdown of the main visa types:
+                </p>
+                <br />
+
                 <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-                Business Visa
+                  Tourist Visa
+                </h3>
+                <p>A Tourist Visa is required for those traveling to Indonesia for leisure or tourism. It allows you to explore the country and enjoy its cultural and natural attractions.
+                </p>
+                <br />
+
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Business Visa
 
                 </h3>
-              <p>A Business Visa is essential for individuals traveling to Indonesia for business purposes. Whether attending meetings, conferences, or business-related events, this visa facilitates professional engagements in the country.
-              </p>         
-<br/>
+                <p>A Business Visa is essential for individuals traveling to Indonesia for business purposes. Whether attending meetings, conferences, or business-related events, this visa facilitates professional engagements in the country.
+                </p>
+                <br />
 
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-Social-Cultural Visa
-
-                </h3>
-              <p>The Social-Cultural Visa is designed for visitors traveling for family visits, cultural exchanges, or social purposes. It allows you to stay in Indonesia for personal reasons, such as visiting relatives or participating in cultural programs.
-              </p>         
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-Work Visa
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Social-Cultural Visa
 
                 </h3>
-              <p>If you are planning to work in Indonesia, you will need a Work Visa. This visa is required for employment purposes and ensures you can legally work while in the country.
-              </p>         
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-Transit Visa
+                <p>The Social-Cultural Visa is designed for visitors traveling for family visits, cultural exchanges, or social purposes. It allows you to stay in Indonesia for personal reasons, such as visiting relatives or participating in cultural programs.
+                </p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Work Visa
 
                 </h3>
-              <p>The Transit Visa is for travelers who are passing through Indonesia on their way to another destination. It allows a short stay in the country while you wait for your next flight or onward journey.
-              </p>         
-<br/>
+                <p>If you are planning to work in Indonesia, you will need a Work Visa. This visa is required for employment purposes and ensures you can legally work while in the country.
+                </p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Transit Visa
 
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Indonesia Visa Extension and Renewal</h2>
-<br/>
-<p>If you're planning to extend your stay in Vietnam, you can apply for an extension or renewal of your visa through the appropriate channels. Our team can assist in guiding you through the necessary steps to ensure your stay is extended smoothly.
-</p>
-<br/>
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>How to Avoid Indonesia Visa Rejection?</h2>
-<p>To avoid Indonesia visa rejection, ensure that you:
-</p>
-<p> - Submit accurate and complete documents.
+                </h3>
+                <p>The Transit Visa is for travelers who are passing through Indonesia on their way to another destination. It allows a short stay in the country while you wait for your next flight or onward journey.
+                </p>
+                <br />
 
-</p>
-<p> - Apply well in advance of your travel date.
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Indonesia Visa Extension and Renewal</h2>
+                <br />
+                <p>If you're planning to extend your stay in Vietnam, you can apply for an extension or renewal of your visa through the appropriate channels. Our team can assist in guiding you through the necessary steps to ensure your stay is extended smoothly.
+                </p>
+                <br />
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}>How to Avoid Indonesia Visa Rejection?</h2>
+                <p>To avoid Indonesia visa rejection, ensure that you:
+                </p>
+                <p> - Submit accurate and complete documents.
 
-</p>
-<p> - Double-check your passport validity (it should be valid for at least 6 months).</p>
-<p> - Provide proof of sufficient funds for your stay in Indonesia.</p>
-<p> - Ensure that your return flight and hotel booking are confirmed.
-</p>
-<br/>
+                </p>
+                <p> - Apply well in advance of your travel date.
 
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Is there an Indonesia Visa on Arrival for Indian Passport Holders?</h2>
-<br/>
+                </p>
+                <p> - Double-check your passport validity (it should be valid for at least 6 months).</p>
+                <p> - Provide proof of sufficient funds for your stay in Indonesia.</p>
+                <p> - Ensure that your return flight and hotel booking are confirmed.
+                </p>
+                <br />
 
-<p>Yes, Indonesia offers a Visa on Arrival (VoA) for Indian passport holders. The Visa on Arrival is available for tourism and business purposes, allowing you to stay for a maximum of 30 days, extendable by another 30 days. Ensure that you have the necessary documents, including a valid passport, return flight ticket, and sufficient funds.</p>
-<br/>
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Is there an Indonesia Visa on Arrival for Indian Passport Holders?</h2>
+                <br />
 
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Is travel insurance required for an Indonesia Visa Application?</h2>
-<br/>
+                <p>Yes, Indonesia offers a Visa on Arrival (VoA) for Indian passport holders. The Visa on Arrival is available for tourism and business purposes, allowing you to stay for a maximum of 30 days, extendable by another 30 days. Ensure that you have the necessary documents, including a valid passport, return flight ticket, and sufficient funds.</p>
+                <br />
 
-<p>Travel insurance is not mandatory when applying for an Indonesia Tourist Visa, but it is highly recommended. Insurance helps cover unexpected events such as medical emergencies, cancellations, or delays, ensuring a safe and stress-free trip.
-</p>
-<br/>
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Is travel insurance required for an Indonesia Visa Application?</h2>
+                <br />
 
-
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Why Choose Make My Document to Apply for an Indonesia Tourist Visa?</h2>
-<br/>
-
-<p>Choosing Make My Document for your Indonesia Tourist Visa application ensures a smooth and hassle-free experience. We provide:</p>
-<br/>
-<p> - Quick and reliable service</p>
-<p> - Expert guidance throughout the application process</p>
-<p> - Secure document submission and verification</p>
-<p> - Fast processing and delivery of your visa</p>
+                <p>Travel insurance is not mandatory when applying for an Indonesia Tourist Visa, but it is highly recommended. Insurance helps cover unexpected events such as medical emergencies, cancellations, or delays, ensuring a safe and stress-free trip.
+                </p>
+                <br />
 
 
-<br/>
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Why Choose Make My Document to Apply for an Indonesia Tourist Visa?</h2>
+                <br />
 
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> WThings to Know Before Traveling to Hong Kong
-</h2>
-<br/>
-<p>Before traveling to Indonesia, consider the following tips:</p>
-<br/>
-<p> <strong>Currency:</strong> The local currency is the Indonesian Rupiah (IDR). It's a good idea to carry some local currency for small expenses.</p>
-<p> <strong>Language:</strong> Bahasa Indonesia is the official language, but English is widely spoken in tourist areas.</p>
-<p> <strong>Health:</strong>  Check if any vaccinations are required or recommended before your trip.</p>
-<p> <strong>Cultural Etiquette:</strong> Indonesians are known for their hospitality, but be mindful of local customs, especially in temples and rural areas.</p>
-<p> <strong>Weather:</strong> Indonesia has a tropical climate, so pack light, comfortable clothes and be prepared for rain if traveling during the wet season.</p>
-<br/>
+                <p>Choosing Make My Document for your Indonesia Tourist Visa application ensures a smooth and hassle-free experience. We provide:</p>
+                <br />
+                <p> - Quick and reliable service</p>
+                <p> - Expert guidance throughout the application process</p>
+                <p> - Secure document submission and verification</p>
+                <p> - Fast processing and delivery of your visa</p>
+
+
+                <br />
+
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}> WThings to Know Before Traveling to Hong Kong
+                </h2>
+                <br />
+                <p>Before traveling to Indonesia, consider the following tips:</p>
+                <br />
+                <p> <strong>Currency:</strong> The local currency is the Indonesian Rupiah (IDR). It's a good idea to carry some local currency for small expenses.</p>
+                <p> <strong>Language:</strong> Bahasa Indonesia is the official language, but English is widely spoken in tourist areas.</p>
+                <p> <strong>Health:</strong>  Check if any vaccinations are required or recommended before your trip.</p>
+                <p> <strong>Cultural Etiquette:</strong> Indonesians are known for their hospitality, but be mindful of local customs, especially in temples and rural areas.</p>
+                <p> <strong>Weather:</strong> Indonesia has a tropical climate, so pack light, comfortable clothes and be prepared for rain if traveling during the wet season.</p>
+                <br />
 
               </>
             </div>
-            <br/>
+            <br />
           </div>
         </div>
       </div>

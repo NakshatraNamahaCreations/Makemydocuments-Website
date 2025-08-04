@@ -63,15 +63,15 @@ const Vietnam = () => {
       const stickyColumn = stickyColumnRef.current;
       const firstColumn = firstColumnRef.current;
       const stopSection = stopStickyRef.current;
-  
+
       if (!stickyColumn || !firstColumn || !stopSection) return;
-  
+
       const bannerHeight = document.querySelector('.breadcrumb-title')?.offsetHeight || 0;
       const scrollTop = window.scrollY;
       const firstColumnTop = firstColumn.getBoundingClientRect().top + window.scrollY;
       const stopSectionTop = stopSection.getBoundingClientRect().top + window.scrollY;
       const stickyOffset = 100; // adjust for margin if needed
-  
+
       if (
         scrollTop > firstColumnTop - bannerHeight - stickyOffset &&
         scrollTop + stickyColumn.offsetHeight < stopSectionTop
@@ -81,11 +81,11 @@ const Vietnam = () => {
         setIsSticky(false);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
 
 
   const handleContinue = () => {
@@ -177,7 +177,7 @@ const Vietnam = () => {
     <>
       <Helmet>
         <title>
-        Vietnam Tourist Visa for Indians – Fast & Easy Approval
+          Vietnam Tourist Visa for Indians – Fast & Easy Approval
         </title>
         <meta
           name="description"
@@ -315,7 +315,7 @@ const Vietnam = () => {
         </script>
 
         <script type="application/ld+json">
-    {`
+          {`
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -403,23 +403,23 @@ const Vietnam = () => {
         ]
       }
     `}
-  </script>
+        </script>
 
-<meta property="og:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
-<meta property="og:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
-<meta property="og:url" content="https://makemydocuments.com/vietnam-tourist-visa-for-indians" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
-<meta property="og:site_name" content="Make My Documents" />
+        <meta property="og:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
+        <meta property="og:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
+        <meta property="og:url" content="https://makemydocuments.com/vietnam-tourist-visa-for-indians" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta property="og:site_name" content="Make My Documents" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
-<meta name="twitter:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
-<meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
-<meta name="twitter:site" content="@makemydocuments" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
+        <meta name="twitter:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
+        <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta name="twitter:site" content="@makemydocuments" />
 
-<script>
-{`!function(e,t,n,s,u,a){
+        <script>
+          {`!function(e,t,n,s,u,a){
   e.twq||(s=e.twq=function(){
     s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
   },s.version='1.1',s.queue=[],u=t.createElement(n),
@@ -427,16 +427,16 @@ const Vietnam = () => {
   a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
 }(window,document,'script');
 twq('config','onik3');`}
-</script>
+        </script>
 
-<script type="text/javascript">
-{`_linkedin_partner_id = "7447820";
+        <script type="text/javascript">
+          {`_linkedin_partner_id = "7447820";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
-</script>
+        </script>
 
-<script type="text/javascript">
-{`(function(l) {
+        <script type="text/javascript">
+          {`(function(l) {
   if (!l) {
     window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
     window.lintrk.q=[];
@@ -447,11 +447,11 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
   b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
   s.parentNode.insertBefore(b, s);
 })(window.lintrk);`}
-</script>
+        </script>
 
-<noscript dangerouslySetInnerHTML={{
-  __html: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7447820&fmt=gif" />`
-}} />
+        <noscript dangerouslySetInnerHTML={{
+          __html: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7447820&fmt=gif" />`
+        }} />
 
       </Helmet>
 
@@ -465,7 +465,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       >
         <nav aria-label="breadcrumb" style={{ marginTop: "1%" }}>
           <ol className="breadcrumb mb-0">
-            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize:'14px' }}>
+            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize: '14px' }}>
               <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>
                 Home
               </Link>
@@ -473,7 +473,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             <li
               className="breadcrumb-item active"
               aria-current="page"
-              style={{ fontWeight: "bold", fontSize:'14px' }}
+              style={{ fontWeight: "bold", fontSize: '14px' }}
             >
               Vietnam Tourist Visa for Indians
 
@@ -537,10 +537,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                       fontSize: "36px",
                       fontWeight: "bold",
                       margin: 0,
-                      
+
                     }}
                   >
-                   Vietnam Tourist Visa for Indians
+                    Vietnam Tourist Visa for Indians
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -577,93 +577,93 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
                   {/* Visa Details */}
                   <div
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    marginTop: "20px",
-    width: "100%",
-    maxWidth: "320px",
- 
-    // padding: "15px",
-    borderRadius: "10px",
-  
-  }}
->
-  <div style={{ flex: 1 }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Processing time
-    </p>
-    <p
-      style={{
-        fontSize: "16px",
-        fontWeight: "bold",
-        color: "#333",
-        margin: 0,
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        display: "inline-block",
-      }}
-    >
-      07 - 10 working days
-    </p>
-  </div>
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginTop: "20px",
+                      width: "100%",
+                      maxWidth: "320px",
 
-  <div style={{ flex: 1, textAlign: "right" }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Starting from
-    </p>
-    <p
-      style={{
-        fontSize: "16px",
-        fontWeight: "bold",
-        color: "#333",
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        display: "inline-block",
-        margin: 0,
-      }}
-    >
-      ₹4,000/-
-    </p>
-  </div>
-</div>
-<div style={{ marginTop: "20px" }}>
-  <button
-    onClick={handleContinue}
-    style={{
-      backgroundColor: "#fea400 ",
-      color: "#333",
-      padding: "12px 24px",
-      border: "none",
-      borderRadius: "6px",
-      fontSize: "16px",
-      fontWeight: "bold",
-      cursor: "pointer",
-      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-      transition: "background-color 0.3s ease",
-    }}
-    onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
-    onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
-  >
-    Apply Now
-  </button>
-</div>
+                      // padding: "15px",
+                      borderRadius: "10px",
+
+                    }}
+                  >
+                    <div style={{ flex: 1 }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Processing time
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          margin: 0,
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          display: "inline-block",
+                        }}
+                      >
+                        07 - 10 working days
+                      </p>
+                    </div>
+
+                    <div style={{ flex: 1, textAlign: "right" }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Starting from
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          display: "inline-block",
+                          margin: 0,
+                        }}
+                      >
+                        ₹4,371/-
+                      </p>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: "20px" }}>
+                    <button
+                      onClick={handleContinue}
+                      style={{
+                        backgroundColor: "#fea400 ",
+                        color: "#333",
+                        padding: "12px 24px",
+                        border: "none",
+                        borderRadius: "6px",
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                        transition: "background-color 0.3s ease",
+                      }}
+                      onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
+                      onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
+                    >
+                      Apply Now
+                    </button>
+                  </div>
 
 
                 </div>
@@ -671,189 +671,194 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             </div>
 
             <div style={{ width: "100%" }} className="d-block d-lg-none">
-  <div
-    style={{
-      position: "relative",
-      width: "100%",
-      overflow: "hidden",
-      marginTop:'36%'
-    }}
-  >
-    {/* Image */}
-    <img
-      src={bannerimage}
-      alt="Hong Kong Visa"
-      style={{
-        width: "100%",
-        height: "auto",
-        objectFit: "cover",
-      }}
-    />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  overflow: "hidden",
+                  marginTop: '36%'
+                }}
+              >
+                {/* Image */}
+                <img
+                  src={bannerimage}
+                  alt="Hong Kong Visa"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
+                  }}
+                />
 
-    {/* Text Container */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        background:
-          "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
-        color: "#fff",
-        padding: "15px",
-      }}
-    >
-      <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-      Vietnam Tourist Visa for Indians
-      </h2>
+                {/* Text Container */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background:
+                      "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
+                    color: "#fff",
+                    padding: "15px",
+                  }}
+                >
+                  <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+                    Vietnam Tourist Visa for Indians
+                  </h2>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "#e6f7fa",
-          color: "#000",
-          padding: "3px 8px",
-          borderRadius: "5px",
-          fontSize: "10px",
-          fontWeight: "500",
-          marginBottom: "10px",
-          width: "fit-content",
-        }}
-      >
-        ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
-      </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#e6f7fa",
+                      color: "#000",
+                      padding: "3px 8px",
+                      borderRadius: "5px",
+                      fontSize: "10px",
+                      fontWeight: "500",
+                      marginBottom: "10px",
+                      width: "fit-content",
+                    }}
+                  >
+                    ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
+                  </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "10px",
-        }}
-      >
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Processing time</p>
-          <p style={{ margin: 0,  fontSize: "10px", }}>07 - 10 working days          </p>
-        </div>
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Starting from</p>
-          <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold",  fontSize: "10px", }}>
-            ₹4,000/-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Processing time</p>
+                      <p style={{ margin: 0, fontSize: "10px", }}>07 - 10 working days          </p>
+                    </div>
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
+                      <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
+                        ₹4,371/-
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
             <div className="container my-5">
               <div className="row" style={{ position: "relative" }}>
-                {/* Left Column () */} 
+                {/* Left Column () */}
                 <div className="col-md-8" ref={firstColumnRef} >
                   {/* Charges Section (Scrollable) */}
-                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{marginLeft:'2%'}}>
-  {/* Image Section */}
-  <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
-      <img
-        src={Price}
-        alt="Charges Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div>
+                  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+                    {/* Image Section */}
+                    <div className="d-flex justify-content-center align-items-center">
+                      <div style={{ position: "relative", display: "inline-block", marginTop: '-100%', marginLeft: '' }}>
+                        <img src={circleIcon} alt="Circle Background" className="img-fluid" />
+                        <img
+                          src={Price}
+                          alt="Charges Icon"
+                          style={{
+                            position: "absolute",
+                            top: "56%",
+                            left: "43%",
+                            transform: "translate(-50%, -50%)",
+                            maxWidth: "35px",
+                          }}
+                        />
+                      </div>
+                    </div>
 
-  {/* Content Section */}
-  <div style={{marginTop:''}}>
-    <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li>Vietnam 30 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 3,950/-</strong> </li>
-      <li>Vietnam 90 Days Multiple Entry E-Visa  <strong style={{color:'#ff9800'}}>Rs 14,199/-</strong>
-      </li>
-      <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
-    
-    </ul>
-  </div>
-</div>
-<div
-  className="d-block d-lg-none"
-  style={{
-    padding: "15px",
-    backgroundColor: "#ffffff",
-    borderRadius: "10px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-    margin: "15px",
-  }}
->
-  {/* Charges Section */}
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "10px",
-      marginBottom: "20px",
-    }}
-  >
-    <div
-      style={{
-        position: "relative",
-        display: "inline-block",
-        width: "100px",
-        height: "100px",
-      }}
-    >
-      <img
-        src={circleIcon}
-        alt="Circle"
-        style={{ width: "100%", height: "100%" }}
-      />
-      <img
-        src={Price}
-        alt="Price Icon"
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          width: "26px",
-        }}
-      />
-    </div>
-    <div>
-      <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-        Charges
-      </h5>
-      <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-        <li>
-        Vietnam 30 Days Single Entry E-Visa{" "}
-          <strong style={{ color: "#ff9800" }}>Rs. 3950/-</strong>
-        </li>
-        <li>
-        Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: "#ff9800" }}> Rs 14,199
-        </strong>
-        </li>
-        <li>
-          <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-          Need to pay while submitting online form (This amount will be
-          adjusted in total bill)
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+                    {/* Content Section */}
+                    <div style={{ marginTop: '' }}>
+                      <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                        <li>Vietnam 30 Days Single Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 4,371/-</strong> </li>
+                         <li>Vietnam 30 Days Multiple Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 12,492/-</strong> </li>
+                        <li>Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: '#ff9800' }}>Rs 14,573/-</strong>
+                        </li>
+                        <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    className="d-block d-lg-none"
+                    style={{
+                      padding: "15px",
+                      backgroundColor: "#ffffff",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                      margin: "15px",
+                    }}
+                  >
+                    {/* Charges Section */}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "relative",
+                          display: "inline-block",
+                          width: "100px",
+                          height: "100px",
+                        }}
+                      >
+                        <img
+                          src={circleIcon}
+                          alt="Circle"
+                          style={{ width: "100%", height: "100%" }}
+                        />
+                        <img
+                          src={Price}
+                          alt="Price Icon"
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            width: "26px",
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                          Charges
+                        </h5>
+                        <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                          <li>
+                            Vietnam 30 Days Single Entry E-Visa{" "}
+                            <strong style={{ color: "#ff9800" }}>Rs. 4,371/-</strong>
+                          </li>
+                               <li>
+                            Vietnam 30 Days Multiple Entry E-Visa{" "}
+                            <strong style={{ color: "#ff9800" }}>Rs. 12,492/-</strong>
+                          </li>
+                          <li>
+                            Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: "#ff9800" }}> Rs 14,573
+                            </strong>
+                          </li>
+                          <li>
+                            <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                            Need to pay while submitting online form (This amount will be
+                            adjusted in total bill)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
                   <br />
                   {/* Documents Required Section (Non-scrollable) */}
                   <div
-                  className="d-none d-lg-block"
+                    className="d-none d-lg-block"
                     style={{
                       marginTop: "20px",
                       paddingLeft: "10px",
@@ -883,7 +888,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                         color: "#333",
                       }}
                     >
-                     - Passport
+                      - Passport
 
                     </p>
                     <p
@@ -893,7 +898,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                         color: "#333",
                       }}
                     >
-                     - Traveler Photo
+                      - Traveler Photo
 
                     </p>
                     <p
@@ -903,29 +908,29 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                         color: "#333",
                       }}
                     >
-                     - Flight Tickets
+                      - Flight Tickets
 
                     </p>
                   </div>
                   <div className="d-block d-lg-none" style={{ padding: "15px" }}>
-                  <div style={{
-    backgroundColor: "#fff",
-    borderRadius: "8px",
-    padding: "15px",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    marginBottom: "20px"
-  }}>
-    <h5 style={{ fontSize: "18px", fontWeight: "bold" }}>Documents Required</h5>
-    <p style={{ fontSize: "14px", marginBottom: 0 }}>
-      - Passport
-    </p>
-    <p style={{ fontSize: "14px", marginBottom: 0 }}>
-      - Traveler Photo
-    </p>
-    <p style={{ fontSize: "14px", marginBottom: 0 }}>
-      - Flight Tickets
-    </p>
-  </div>
+                    <div style={{
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      padding: "15px",
+                      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                      marginBottom: "20px"
+                    }}>
+                      <h5 style={{ fontSize: "18px", fontWeight: "bold" }}>Documents Required</h5>
+                      <p style={{ fontSize: "14px", marginBottom: 0 }}>
+                        - Passport
+                      </p>
+                      <p style={{ fontSize: "14px", marginBottom: 0 }}>
+                        - Traveler Photo
+                      </p>
+                      <p style={{ fontSize: "14px", marginBottom: 0 }}>
+                        - Flight Tickets
+                      </p>
+                    </div>
                   </div>
                   <br />
                   {/* How It Works Section (Non-scrollable) */}
@@ -995,7 +1000,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                               margin: 0,
                             }}
                           >
-                        Fill all the basic details in the application on our secure portal.
+                            Fill all the basic details in the application on our secure portal.
 
                           </p>
                         </div>
@@ -1203,8 +1208,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "Excellent service! They handled my document processing with professionalism and kept me updated at every stage. Highly recommended.
-                                  "
+                                  "Quick and reliable visa processing for Vietnam. I got my Vietnam Visa within a few days, thanks to the Make My Documents team. They were responsive and made the whole process stress-free."
                                 </p>
                                 <div
                                   style={{
@@ -1236,7 +1240,8 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                       color: "#374151",
                                     }}
                                   >
-                                    Rohit S
+                                    Manish Choudhary
+
                                   </span>
                                 </div>
                               </div>
@@ -1260,8 +1265,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "
-                                  What stood out for me was the transparency. No hidden charges, clear communication, and timely delivery. I’ve already referred them to three friends!"
+                                  "Great help for last-minute travel. I had to travel urgently and didn’t know how to get the Vietnam visa on time. Their team guided me through the express process and got it done fast."
                                 </p>
                                 <div
                                   style={{
@@ -1284,7 +1288,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                       marginRight: "10px",
                                     }}
                                   >
-                                    A
+                                    J
                                   </div>
                                   <span
                                     style={{
@@ -1293,7 +1297,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                       color: "#374151",
                                     }}
                                   >
-                                  Ankit
+                                    Pooja Sinha
 
                                   </span>
                                 </div>
@@ -1317,7 +1321,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "The team knew exactly what was needed for Indian applicants and avoided all the common errors. Entry at Ho Chi Minh airport was seamless."
+                                  "Smooth experience for my honeymoon trip. They took care of everything—documents, application, and updates. We got our Vietnam tourist visa without any hassle. Totally worth it."
                                 </p>
                                 <div
                                   style={{
@@ -1349,7 +1353,8 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                       color: "#374151",
                                     }}
                                   >
-                                    Priya S
+                                    Rajesh Kumar
+
                                   </span>
                                 </div>
                               </div>
@@ -1377,8 +1382,64 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "Highly recommended! My Vietnam travel plan was last minute, but they still managed to get my visa approved in time with no hassles.
-                                  "
+                                  "Handled my Vietnam visa from start to end. They provided a clear list of documents and did the filing on my behalf. I didn’t have to deal with any confusion or embassy follow-ups."
+                                </p>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    marginTop: "auto",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      width: "32px",
+                                      height: "32px",
+                                      borderRadius: "50%",
+                                      backgroundColor: "#E5E7EB",
+                                      color: "#fff",
+                                      fontWeight: "bold",
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginRight: "10px",
+                                    }}
+                                  >
+                                    L
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontWeight: "bold",
+                                      fontSize: "14px",
+                                      color: "#374151",
+                                    }}
+                                  >
+                                    Anjali Bhatt
+
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "30%",
+                                  padding: "20px",
+                                  backgroundColor: "#fff",
+                                  borderRadius: "8px",
+                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                  marginRight: "10px",
+                                }}
+                              >
+                                <div style={{ marginBottom: "10px" }}>
+                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                </div>
+                                <p
+                                  style={{
+                                    color: "#4B5563",
+                                    marginBottom: "10px",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  "Perfect for travelers who want peace of mind. This was my first time applying for a Vietnam visa, and I’m glad I found Make My Documents. The process was clear, and their support was consistent."
                                 </p>
                                 <div
                                   style={{
@@ -1410,7 +1471,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                       color: "#374151",
                                     }}
                                   >
-                                   Neeraja V
+                                    Sameer Jain
 
                                   </span>
                                 </div>
@@ -1422,6 +1483,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                   backgroundColor: "#fff",
                                   borderRadius: "8px",
                                   boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                  marginRight: "10px",
                                 }}
                               >
                                 <div style={{ marginBottom: "10px" }}>
@@ -1434,64 +1496,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "Professional and prompt service! They took care of everything including formatting my passport scan and photo for the visa portal
-                                  ."
-                                </p>
-                                <div
-                                  style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    marginTop: "auto",
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      width: "32px",
-                                      height: "32px",
-                                      borderRadius: "50%",
-                                      backgroundColor: "#E5E7EB",
-                                      color: "#fff",
-                                      fontWeight: "bold",
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                      marginRight: "10px",
-                                    }}
-                                  >
-                                    K
-                                  </div>
-                                  <span
-                                    style={{
-                                      fontWeight: "bold",
-                                      fontSize: "14px",
-                                      color: "#374151",
-                                    }}
-                                  >
-                                    Karthik C
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={{
-                                  width: "30%",
-                                  padding: "20px",
-                                  backgroundColor: "#fff",
-                                  borderRadius: "8px",
-                                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                                }}
-                              >
-                                <div style={{ marginBottom: "10px" }}>
-                                  <div style={{ color: "#FFAA00" }}>★★★★★</div>
-                                </div>
-                                <p
-                                  style={{
-                                    color: "#4B5563",
-                                    marginBottom: "10px",
-                                    fontSize: "14px",
-                                  }}
-                                >
-                                  "Affordable and efficient! I didn’t expect such fast service without any hidden fees. Will definitely use them again for my next trip.
-                                  "
+                                  "Excellent coordination and timely updates.I had some doubts about the Vietnam visa validity and entry requirements. Their team was super patient, explained everything clearly, and kept me informed throughout. Got my visa without any stress."
                                 </p>
                                 <div
                                   style={{
@@ -1523,7 +1528,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                       color: "#374151",
                                     }}
                                   >
-                                   Divya P
+                                    Neeraj Deshpande K
 
                                   </span>
                                 </div>
@@ -1532,188 +1537,205 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                           </div>
                         </div>
                         {/* Carousel Controls */}
-<button
-  className="carousel-control-prev"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="prev"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    left: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-prev-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Previous</span>
-</button>
+                        <button
+                          className="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="prev"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            left: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Previous</span>
+                        </button>
 
-<button
-  className="carousel-control-next"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="next"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    right: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-next-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Next</span>
-</button>
-
+                        <button
+                          className="carousel-control-next"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="next"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            right: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Next</span>
+                        </button>
                       </div>
                     </div>
                   </div>
                   {window.innerWidth <= 768 && (
-  <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
-    <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
-      <h4
-        style={{
-          color: "#007bff",
-          marginBottom: "20px",
-          fontWeight: "bold",
-          fontSize: "22px",
-          textAlign: "center",
-        }}
-      >
-        Our Client Reviews
-      </h4>
+                    <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
+                      <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+                        <h4
+                          style={{
+                            color: "#007bff",
+                            marginBottom: "20px",
+                            fontWeight: "bold",
+                            fontSize: "22px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Our Client Reviews
+                        </h4>
 
-      <div
-        id="mobileReviewCarousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="4000"
-      >
-        <div className="carousel-inner">
-          {[
-            {
-              name: "Neha",
-              initial: "N",
-              review:
-                "Super smooth process! I received my Hong Kong visa faster than expected. Highly professional!",
-            },
-            {
-              name: "Arjun",
-              initial: "A",
-              review:
-                "They made the documentation process easy and clear. Great support throughout.",
-            },
-            {
-              name: "Priya S",
-              initial: "P",
-              review:
-                "Excellent service! Very reliable and timely delivery of my visa documents.",
-            },
-          ].map((item, index) => (
-            <div
-              className={`carousel-item ${index === 0 ? "active" : ""}`}
-              key={index}
-            >
-              <div
-                style={{
-                  backgroundColor: "#fff",
-                  padding: "15px",
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                  marginBottom: "10px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#FFAA00",
-                    fontSize: "18px",
-                    marginBottom: "5px",
-                  }}
-                >
-                  ★★★★★
+                        <div
+                          id="mobileReviewCarousel"
+                          className="carousel slide"
+                          data-bs-ride="carousel"
+                          data-bs-interval="4000"
+                        >
+                          <div className="carousel-inner">
+                            {[
+                              {
+                                name: "Manish Choudhary",
+                                initial: "R ",
+                                review:
+                                  "Quick and reliable visa processing for Vietnam. I got my Vietnam Visa within a few days, thanks to the Make My Documents team. They were responsive and made the whole process stress-free.",
+                              },
+                              {
+                                name: "Pooja Sinha",
+                                initial: "J",
+                                review:
+                                  "Great help for last-minute travel. I had to travel urgently and didn’t know how to get the Vietnam visa on time. Their team guided me through the express process and got it done fast.",
+                              },
+                              {
+                                name: "Rajesh Kumar",
+                                initial: "P",
+                                review:
+                                  "Smooth experience for my honeymoon trip. They took care of everything—documents, application, and updates. We got our Vietnam tourist visa without any hassle. Totally worth it.",
+                              },
+                              {
+                                name: "Anjali Bhatt",
+                                initial: "L",
+                                review:
+                                  "Handled my Vietnam visa from start to end. They provided a clear list of documents and did the filing on my behalf. I didn’t have to deal with any confusion or embassy follow-ups.",
+                              },
+                              {
+                                name: "Sameer Jain",
+                                initial: "N",
+                                review:
+                                  "Perfect for travelers who want peace of mind. This was my first time applying for a Vietnam visa, and I’m glad I found Make My Documents. The process was clear, and their support was consistent.",
+                              },
+                              {
+                                name: "Neeraj Deshpande K",
+                                initial: "K",
+                                review:
+                                  "Excellent coordination and timely updates. I had some doubts about the Vietnam visa validity and entry requirements. Their team was super patient, explained everything clearly, and kept me informed throughout. Got my visa without any stress.",
+                              },
+                            ].map((item, index) => (
+                              <div
+                                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                                key={index}
+                              >
+                                <div
+                                  style={{
+                                    backgroundColor: "#fff",
+                                    padding: "15px",
+                                    borderRadius: "8px",
+                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                    marginBottom: "10px",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      color: "#FFAA00",
+                                      fontSize: "18px",
+                                      marginBottom: "5px",
+                                    }}
+                                  >
+                                    ★★★★★
+                                  </div>
+                                  <p
+                                    style={{
+                                      color: "#4B5563",
+                                      fontSize: "14px",
+                                      marginBottom: "10px",
+                                    }}
+                                  >
+                                    {item.review}
+                                  </p>
+                                  <div style={{ display: "flex", alignItems: "center" }}>
+                                    <div
+                                      style={{
+                                        width: "32px",
+                                        height: "32px",
+                                        borderRadius: "50%",
+                                        backgroundColor: "#E5E7EB",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        marginRight: "10px",
+                                        fontWeight: "bold",
+                                        color: "#000",
+                                      }}
+                                    >
+                                      {item.initial}
+                                    </div>
+                                    <span
+                                      style={{
+                                        fontWeight: "bold",
+                                        fontSize: "14px",
+                                        color: "#374151",
+                                      }}
+                                    >
+                                      {item.name}
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Optional carousel controls */}
+                          <button
+                            className="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="prev"
+                          >
+                            <span className="carousel-control-prev-icon" aria-hidden="true" style={{ marginLeft: '-120%' }}></span>
+                          </button>
+                          <button
+                            className="carousel-control-next"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="next"
+                          >
+                            <span className="carousel-control-next-icon" aria-hidden="true" style={{ marginRight: '-80%' }}></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+
                 </div>
-                <p
-                  style={{
-                    color: "#4B5563",
-                    fontSize: "14px",
-                    marginBottom: "10px",
-                  }}
-                >
-                  {item.review}
-                </p>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <div
-                    style={{
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      backgroundColor: "#E5E7EB",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginRight: "10px",
-                      fontWeight: "bold",
-                      color: "#000",
-                    }}
-                  >
-                    {item.initial}
-                  </div>
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                      color: "#374151",
-                    }}
-                  >
-                    {item.name}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Optional carousel controls */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" style={{marginLeft:'-120%'}}></span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" style={{marginRight:'-80%'}}></span>
-        </button>
-      </div>
-    </div>
-  </div>
-)}
 
 
-                </div>
-
-                
 
                 {/* Right Column () */}
                 <div
@@ -1726,7 +1748,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                     width: isSticky && stickyColumnRef.current ? `${stickyColumnRef.current.offsetWidth}px` : "auto",
                     zIndex: 1000,
                   }}
-                  
+
                 >
                   <div
                     style={{
@@ -1762,7 +1784,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                       }}
                     >
                       <button
-                      onClick={handleContinue}
+                        onClick={handleContinue}
                         style={{
                           backgroundColor: "",
                           color: "#000",
@@ -1776,7 +1798,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                         Apply Online
                       </button>
                     </div>
-                   
+
                     {/* <a href="https://wa.me/+919980097315" style={{ textDecoration: "none" }}>
   <div
     style={{
@@ -1884,24 +1906,24 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                 </div>
                 {/* Sticky Bottom Bar for Mobile Only */}
                 <div
-                
-  style={{
-    position: "fixed",
-    bottom: 0,
-    left: 0,
-    width: "100%",
-    backgroundColor: "#ffffff",
-    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
-    display: window.innerWidth <= 768 ? "flex" : "none",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 15px",
-    zIndex: 9999,
-  }}
->
- 
 
-  {/* <a
+                  style={{
+                    position: "fixed",
+                    bottom: 0,
+                    left: 0,
+                    width: "100%",
+                    backgroundColor: "#ffffff",
+                    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
+                    display: window.innerWidth <= 768 ? "flex" : "none",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "10px 15px",
+                    zIndex: 9999,
+                  }}
+                >
+
+
+                  {/* <a
     href="https://wa.me/+919980097315"
     style={{
       width: "45px",
@@ -1919,24 +1941,24 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
   >
     <i className="fab fa-whatsapp"></i>
   </a> */}
-  <button
-    onClick={handleContinue}
-    style={{
-      flex: 1,
-      marginRight: "10px",
-      padding: "10px",
-      backgroundColor: "#007bff",
-      color: "#fff",
-      border: "none",
-      borderRadius: "8px",
-      fontWeight: "bold",
-      fontSize: "14px",
-    }}
-  >
-    Apply Now
-  </button>
+                  <button
+                    onClick={handleContinue}
+                    style={{
+                      flex: 1,
+                      marginRight: "10px",
+                      padding: "10px",
+                      backgroundColor: "#007bff",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: "8px",
+                      fontWeight: "bold",
+                      fontSize: "14px",
+                    }}
+                  >
+                    Apply Now
+                  </button>
 
-  {/* <a
+                  {/* <a
     href="tel:+919429690973"
     style={{
       width: "45px",
@@ -1953,14 +1975,14 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
   >
     <i className="fa fa-phone"></i>
   </a> */}
-</div>
+                </div>
 
 
               </div>
             </div>
 
             <div
-                 ref={stopStickyRef}
+              ref={stopStickyRef}
               style={{
                 backgroundColor: "#f8f8f8",
                 padding: "30px 20px",
@@ -1995,9 +2017,8 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                     style={{
                       padding: "10px 20px",
                       borderRadius: "999px",
-                      border: `1px solid ${
-                        active === service.name ? "#000" : "#ccc"
-                      }`,
+                      border: `1px solid ${active === service.name ? "#000" : "#ccc"
+                        }`,
                       backgroundColor:
                         active === service.name ? "#212529" : "#fff",
                       color: active === service.name ? "#fff" : "#000",
@@ -2082,13 +2103,13 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
             <div
               className="faq-section-visa"
-              // style={{
-              //   margin: "10px auto",
-              //   padding: "20px",
-              //   background: "#FFFFFF",
-              //   borderRadius: "10px",
-              //   width: "80%",
-              // }}
+            // style={{
+            //   margin: "10px auto",
+            //   padding: "20px",
+            //   background: "#FFFFFF",
+            //   borderRadius: "10px",
+            //   width: "80%",
+            // }}
             >
               <h4
                 style={{
@@ -2162,100 +2183,100 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
               <>
                 <h2 className="faq-tag-title-h3">
                   <strong>
-                  Vietnam Tourist Visa for Indians - A Complete Guide
+                    Vietnam Tourist Visa for Indians - A Complete Guide
                   </strong>
                 </h2>
                 <br />
-              
+
                 <p>Indian citizens planning to visit Vietnam for tourism purposes must apply for a Vietnam Tourist Visa. The visa is issued in electronic format (E-Visa) and allows entry for specified durations. The application process is entirely online and takes approximately 7 to 10 working days. Travelers must submit basic personal information, passport details, and a recent photograph.</p>
-<p>Visa approval is subject to document verification, and travelers will receive their E-Visa directly by email. The visa must be printed and carried during travel.</p>
+                <p>Visa approval is subject to document verification, and travelers will receive their E-Visa directly by email. The visa must be printed and carried during travel.</p>
 
                 <br />
                 <h2 style={{ fontSize: "22px", fontWeight: "bold" }}>What are the Types of Vietnam Visa                </h2>
-                <br/>
-                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-                E-Visa
-                </h3>
-              <p>The E-Visa is a digital visa issued online for short-term stays. It is valid for 30 days and is available for both tourism and business purposes.
-              </p>
                 <br />
-                
                 <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-                Tourist Visa
+                  E-Visa
                 </h3>
-              <p>Issued for leisure travel, sightseeing, or family visits. Indian citizens can apply online and receive it via email without visiting an embassy.
-              </p>         
-<br/>
+                <p>The E-Visa is a digital visa issued online for short-term stays. It is valid for 30 days and is available for both tourism and business purposes.
+                </p>
+                <br />
 
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-Business Visa
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Tourist Visa
                 </h3>
-              <p>Designed for individuals visiting Vietnam for work, meetings, or business-related activities. It often requires additional documentation like an invitation letter.
-              </p>         
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
-Visa on Arrival
+                <p>Issued for leisure travel, sightseeing, or family visits. Indian citizens can apply online and receive it via email without visiting an embassy.
+                </p>
+                <br />
+
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Business Visa
                 </h3>
-              <p>Applicable only with a prior approval letter obtained online. Travelers receive the visa at a Vietnam airport after presenting the letter and paying a stamping fee.
-              </p>         
-<br/>
+                <p>Designed for individuals visiting Vietnam for work, meetings, or business-related activities. It often requires additional documentation like an invitation letter.
+                </p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Visa on Arrival
+                </h3>
+                <p>Applicable only with a prior approval letter obtained online. Travelers receive the visa at a Vietnam airport after presenting the letter and paying a stamping fee.
+                </p>
+                <br />
 
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Vietnam Visa Extension and Renewal</h2>
-<br/>
-<p>Visa extension or renewal options are available for travelers who wish to extend their stay in Vietnam:</p>
-<br/>
-<p> - <strong>Extension for Extra Stay:</strong> You can apply for a visa extension through Vietnam’s immigration authority before the visa expiry date.
-</p>
-<p> - <strong>Renewal After Expiry:</strong> If the visa is about to expire or not extendable, a renewal allows fresh entry permission with new validity.
-</p>
-<br/>
-<p>Processing time varies and it is recommended to apply at least one week before the current visa expires. Overstaying without a valid extension or renewal may result in fines or travel restrictions.
-</p>
-<br/>
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Why Choose Make My Document to Apply for a Vietnam Tourist Visa?</h2>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}> Expert Guidance at Every Step:</h3>
-<p>Our team handles all document reviews, form submissions, and status tracking for your convenience.</p>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}> Secure and Transparent Process:</h3>
-<p>All data is securely handled, with real-time updates and no hidden charges in the final billing.</p>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}> High Approval Success Rate:</h3>
-<p>With a 99% approval record, we ensure your application meets Vietnam’s tourism visa requirements accurately.</p>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Quick Support & Easy Dashboard Access:</h3>
-<p>Track your visa status, upload documents, and receive support easily through a user-friendly dashboard.</p>
-<br/>
-<h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Things to Know Before Traveling to Vietnam</h2>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Carry Printed E-Visa:
-</h3>
-<p>Always print and carry a hard copy of your E-Visa for verification at Vietnamese immigration checkpoints.</p>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Passport Must Be Valid for 6+ Months:
-</h3>
-<p>Your passport must have a minimum validity of six months from your intended date of entry into Vietnam.</p>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Health & Travel Insurance Advised:
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Vietnam Visa Extension and Renewal</h2>
+                <br />
+                <p>Visa extension or renewal options are available for travelers who wish to extend their stay in Vietnam:</p>
+                <br />
+                <p> - <strong>Extension for Extra Stay:</strong> You can apply for a visa extension through Vietnam’s immigration authority before the visa expiry date.
+                </p>
+                <p> - <strong>Renewal After Expiry:</strong> If the visa is about to expire or not extendable, a renewal allows fresh entry permission with new validity.
+                </p>
+                <br />
+                <p>Processing time varies and it is recommended to apply at least one week before the current visa expires. Overstaying without a valid extension or renewal may result in fines or travel restrictions.
+                </p>
+                <br />
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}> Why Choose Make My Document to Apply for a Vietnam Tourist Visa?</h2>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}> Expert Guidance at Every Step:</h3>
+                <p>Our team handles all document reviews, form submissions, and status tracking for your convenience.</p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}> Secure and Transparent Process:</h3>
+                <p>All data is securely handled, with real-time updates and no hidden charges in the final billing.</p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}> High Approval Success Rate:</h3>
+                <p>With a 99% approval record, we ensure your application meets Vietnam’s tourism visa requirements accurately.</p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Quick Support & Easy Dashboard Access:</h3>
+                <p>Track your visa status, upload documents, and receive support easily through a user-friendly dashboard.</p>
+                <br />
+                <h2 style={{ fontSize: "20px", fontWeight: "bold" }}>Things to Know Before Traveling to Vietnam</h2>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Carry Printed E-Visa:
+                </h3>
+                <p>Always print and carry a hard copy of your E-Visa for verification at Vietnamese immigration checkpoints.</p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Passport Must Be Valid for 6+ Months:
+                </h3>
+                <p>Your passport must have a minimum validity of six months from your intended date of entry into Vietnam.</p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Health & Travel Insurance Advised:
 
-</h3>
-<p>Though optional, travel insurance is strongly recommended to cover unexpected medical or trip-related issues.
-</p>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Currency Exchange in Vietnam:
-</h3>
-<p>The Vietnamese Dong (VND) is the official currency; ensure you exchange or withdraw cash after arrival.
-</p>
-<br/>
-<h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Follow Entry Regulations:
-</h3>
-<p>Comply with Vietnam's immigration and health rules to avoid delays or issues during your entry.
-</p>
-<br/>
+                </h3>
+                <p>Though optional, travel insurance is strongly recommended to cover unexpected medical or trip-related issues.
+                </p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Currency Exchange in Vietnam:
+                </h3>
+                <p>The Vietnamese Dong (VND) is the official currency; ensure you exchange or withdraw cash after arrival.
+                </p>
+                <br />
+                <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>Follow Entry Regulations:
+                </h3>
+                <p>Comply with Vietnam's immigration and health rules to avoid delays or issues during your entry.
+                </p>
+                <br />
 
               </>
             </div>
-            <br/>
+            <br />
           </div>
         </div>
       </div>
