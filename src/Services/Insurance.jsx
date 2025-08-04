@@ -91,7 +91,6 @@ const InsurancePage = () => {
 <meta name="description" content="Click here to get instant insurance coverage for bikes, health, life, and cards, with no paperwork, no inspections, and the ability to download policies instantly. 100% online process for all types of insurance."/>
 <meta name="keywords" content="bike insurance, two wheeler insurance, health insurance, life insurance, car insurance, motorcycle insurance, scooter insurance, insurance renewal, bike insurance online, health insurance online, life insurance online, motorcycle policy, two wheeler insurance renewal, instant bike insurance, health and life policies, card insurance online, buy insurance online, renew insurance online, no inspection, paperless insurance"/>
 <meta name="author" content="https://makemydocuments.com/insurance "/>
-<link rel="canonical" href="https://www.makemydocuments.com/insurance" />
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>

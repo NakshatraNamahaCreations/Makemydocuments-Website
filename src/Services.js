@@ -30,8 +30,6 @@ import { Helmet } from "react-helmet";
 import Custom404Page from "./Custom404Page";
 import Header from "./Header";
 
-
-
 const stateData = [
   {
     state: "Arunachal Pradesh",
@@ -2566,7 +2564,6 @@ const Services = () => {
   const getMinReturningDate = () => {
     return travellingDate; // The returning date must be after or on the same day as the travelling date
   };
-
 
   useEffect(() => {
     // Validate the returning date when travelling date or returning date changes

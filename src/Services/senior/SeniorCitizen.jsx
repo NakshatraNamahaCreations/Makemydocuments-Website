@@ -702,7 +702,6 @@ const validateStep3 = () => {
           name="author"
           content="https://makemydocuments.com/senior-citizen-card"
         />
-          <link rel="canonical" href="https://www.makemydocuments.com/senior-citizen-card" />
         <meta name="rating" CONTENT="General" />
         <meta name="revisit-after" CONTENT="2 days" />
         <meta name="robots" content=" ALL, index, follow" />
