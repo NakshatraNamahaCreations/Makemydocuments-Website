@@ -30,6 +30,8 @@ import { Helmet } from "react-helmet";
 import Custom404Page from "./Custom404Page";
 import Header from "./Header";
 
+
+
 const stateData = [
   {
     state: "Arunachal Pradesh",
@@ -982,7 +984,7 @@ const stateData = [
 const visadata = [
   {
     name: "United Arab Emirated",
-    routeName: "dubai-visa",
+    routeName: "dubai-tourist-visa-for-indians",
     img: "arabImage1",
     bannerimage: UAEImage,
     data: [
@@ -1443,7 +1445,7 @@ const visadata = [
   },
   {
     name: "Egypet",
-    routeName: "egypet-visa",
+    routeName: "egypt-visa",
     img: "egyptimage",
     bannerimage: Egyptimage,
     data: [
@@ -1694,7 +1696,7 @@ const visadata = [
   },
   {
     name: "Indonesia",
-    routeName: "indonesia-visa",
+    routeName: "indonesia-tourist-visa-for-indians",
     img: "indonesiimage",
     bannerimage: IndonsiaImage,
     data: [
@@ -2564,6 +2566,7 @@ const Services = () => {
   const getMinReturningDate = () => {
     return travellingDate; // The returning date must be after or on the same day as the travelling date
   };
+
 
   useEffect(() => {
     // Validate the returning date when travelling date or returning date changes

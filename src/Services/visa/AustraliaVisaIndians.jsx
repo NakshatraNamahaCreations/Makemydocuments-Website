@@ -80,7 +80,7 @@ const AustraliaVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/australia-visa-form");
     };
 
     useEffect(() => {

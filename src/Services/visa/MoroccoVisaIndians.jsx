@@ -80,7 +80,7 @@ const MoroccoVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/morocco-visa-form");
     };
 
     useEffect(() => {
@@ -461,7 +461,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                     margin: 0,
                                                 }}
                                             >
-                                                Morocco 30 Days Single Entry E-Visa Rs. ₹9,053/-
+                                               ₹9,053/-
                                             </p>
 
 
@@ -567,7 +567,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Morocco 30 Days Single Entry E-Visa ₹9,053/-
+                                              ₹9,053/-
                                             </p>
 
                                         </div>

@@ -1,4 +1,4 @@
-import React, {  useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   Routes,
   Route,
@@ -51,6 +51,22 @@ import PassportAgentinHyderabad from "./Services/passport/PassportAgentinHyderab
 import PassportAgentinMumbai from "./Services/passport/PassportAgentinMumbai.jsx";
 import PassportAgentinPune from "./Services/passport/PassportAgentinPune.jsx";
 import PassportAgentinMysore from "./Services/passport/PassportAgentinMysore.jsx";
+import SingaporeVisaIndians from "./Services/visa/SingaporeVisaIndians.jsx";
+import UKVisaIndians from "./Services/visa/UKVisaIndians.jsx";
+import AustraliaVisaIndians from "./Services/visa/AustraliaVisaIndians.jsx";
+import MalaysiaVisaIndians from "./Services/visa/MalaysiaVisaIndians.jsx";
+import EgyptVisaIndians from "./Services/visa/EgyptVisaIndians.jsx";
+import VietnamVisaIndians from "./Services/visa/VietnamVisaIndians.jsx";
+import HongKongVisaIndians from "./Services/visa/HongKongVisaIndians.jsx";
+import IndonesiaVisaIndians from "./Services/visa/IndonesiaVisaIndians.jsx";
+import AzerbaijanVisaIndians from "./Services/visa/AzerbaijanVisaIndians.jsx";
+import OmanVisaIndians from "./Services/visa/OmanVisaIndians.jsx";
+import MoroccoVisaIndians from "./Services/visa/MoroccoVisaIndians.jsx";
+import BahrainVisaIndians from "./Services/visa/BahrainVisaIndians.jsx";
+import QatarVisaIndians from "./Services/visa/QatarVisaIndians.jsx";
+import RussiaVisaIndians from "./Services/visa/RussiaVisaIndians.jsx";
+import UzbekistanVisaIndians from "./Services/visa/UzbekistanVisaIndians.jsx";
+import { Navigate } from "react-router-dom";
 
 
 const Layout = ({ children }) => {
@@ -181,8 +197,6 @@ const App = () => {
         <Route path="/police-clearance-certificate-form" element={<Layout><PoliceClearance /></Layout>} />
         <Route path="/police-clearance-certificate/proceed-to-pay" element={<Layout><PoliceClearance /></Layout>} />
         <Route path="/visa" element={<Layout><TravelVisa /></Layout>} />
-        <Route path="/dubai-tourist-visa-for-indians" element={<Layout><DubaiVisa /></Layout>} />
-        <Route path="/hong-kong-tourist-visa-for-indians" element={<Layout><Hongkongvisa /></Layout>} />
 
         <Route path="/our_partners" element={<Layout><PartnersPage /></Layout>} />
         <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
@@ -193,11 +207,45 @@ const App = () => {
         <Route path="/passport-agent-in-mumbai" element={<Layout><PassportAgentinMumbai /></Layout>} />
         <Route path="/passport-agent-in-pune" element={<Layout><PassportAgentinPune /></Layout>} />
         <Route path="/passport-agent-in-mysore" element={<Layout><PassportAgentinMysore /></Layout>} />
+
+
         <Route path="/vietnam-tourist-visa-for-indians" element={<Layout><Vietnam /></Layout>}></Route>
         <Route path="/indonesia-tourist-visa-for-indians" element={<Layout><Indonesiavisa /></Layout>}></Route>
-        {/* Custom 404 Page without Header */}
+        <Route path="/singapore-visa" element={<Layout><SingaporeVisaIndians /></Layout>}></Route>
+        <Route path="/uk-visa" element={<Layout><UKVisaIndians /></Layout>}></Route>
+        <Route path="/australia-visa" element={<Layout><AustraliaVisaIndians /></Layout>}></Route>
+        <Route path="/malaysia-visa" element={<Layout><MalaysiaVisaIndians /></Layout>}></Route>
+        <Route path="/egypt-visa" element={<Layout><EgyptVisaIndians /></Layout>}></Route>
+        {/* <Route path="/vietnam-visa" element={<Layout><VietnamVisaIndians /></Layout>}></Route> */}
+        {/* <Route path="/hongkong-visa" element={<Layout><HongKongVisaIndians /></Layout>}></Route> */}
+        {/* <Route path="/indonesia-visa" element={<Layout><IndonesiaVisaIndians /></Layout>}></Route> */}
+        <Route path="/azerbaijan-visa" element={<Layout><AzerbaijanVisaIndians /></Layout>}></Route>
+        <Route path="/oman-visa" element={<Layout><OmanVisaIndians /></Layout>}></Route>
+        <Route path="/morocco-visa" element={<Layout><MoroccoVisaIndians /></Layout>}></Route>
+        <Route path="/bahrain-visa" element={<Layout><BahrainVisaIndians /></Layout>}></Route>
+        <Route path="/qatar-visa" element={<Layout><QatarVisaIndians /></Layout>}></Route>
+        <Route path="/russia-visa" element={<Layout><RussiaVisaIndians /></Layout>}></Route>
+        <Route path="/uzbekistan-visa" element={<Layout><UzbekistanVisaIndians /></Layout>}></Route>
+       <Route path="/dubai-tourist-visa-for-indians" element={<Layout><DubaiVisa /></Layout>} />
+        <Route path="/hong-kong-tourist-visa-for-indians" element={<Layout><Hongkongvisa /></Layout>} />
+
+
+        <Route path="/dubai-visa" element={<Navigate to="/dubai-tourist-visa-for-indians" replace />} />
+        <Route path="/hongkong-visa" element={<Navigate to="/hong-kong-tourist-visa-for-indians" replace />} />
+        <Route path="/vietnam-visa" element={<Navigate to="/vietnam-tourist-visa-for-indians" replace />} />
+        <Route path="/indonesia-visa" element={<Navigate to="/indonesia-tourist-visa-for-indians" replace />} />
+
+
+
+
+
+        {/* Custom 404 Page without Header  */}
         <Route path="*" element={<Custom404Page />} />
+
+
       </Routes>
+
+
     </BrowserRouter>
   );
 };

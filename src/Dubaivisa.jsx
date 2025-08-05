@@ -67,15 +67,15 @@ const DubaiVisa = () => {
       const stickyColumn = stickyColumnRef.current;
       const firstColumn = firstColumnRef.current;
       const stopSection = stopStickyRef.current;
-  
+
       if (!stickyColumn || !firstColumn || !stopSection) return;
-  
+
       const bannerHeight = document.querySelector('.breadcrumb-title')?.offsetHeight || 0;
       const scrollTop = window.scrollY;
       const firstColumnTop = firstColumn.getBoundingClientRect().top + window.scrollY;
       const stopSectionTop = stopSection.getBoundingClientRect().top + window.scrollY;
       const stickyOffset = 100; // adjust for margin if needed
-  
+
       if (
         scrollTop > firstColumnTop - bannerHeight - stickyOffset &&
         scrollTop + stickyColumn.offsetHeight < stopSectionTop
@@ -85,16 +85,16 @@ const DubaiVisa = () => {
         setIsSticky(false);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
 
 
   const handleContinue = () => {
     // setShowPopup(true)
-    navigate("/dubai-visa-form");
+    navigate("/dubai-tourist-visa-for-indians-form");
   };
 
   useEffect(() => {
@@ -183,41 +183,41 @@ const DubaiVisa = () => {
 
   return (
     <>
-    <Helmet>
-    <title>Dubai Tourist Visa for Indians | Fees and Application Process</title>
-      <meta name="description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai.
+      <Helmet>
+        <title>Dubai Tourist Visa for Indians | Fees and Application Process</title>
+        <meta name="description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai.
 " />
-      <meta name="keywords" content= "Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-      <link rel="canonical" href="https://makemydocuments.com/dubai-tourist-visa-for-indians" />
-      {/* <meta name="author" content={currentMeta.canonical} /> */}
-      <meta name="rating" content="General" />
-      <meta name="revisit-after" content="2 days" />
-      <meta name="robots" content="ALL, index, follow" />
-      <meta name="distribution" content="Global" />
-      <meta name="rating" content="Safe For All" />
-      <meta name="language" content="English" />
-      <meta httpEquiv="window-target" content="_top" />
-      <meta httpEquiv="pics-label" content="for all ages" />
-      <meta name="GOOGLEBOTS" content="All, FOLLOW" />
-      <meta name="YAHOOBOTS" content="All, FOLLOW" />
-      <meta name="MSNBOTS" content="All, FOLLOW" />
-      <meta name="BINGBOTS" content="All, FOLLOW" />
-      <meta name="Googlebot-Image" content="All" />
-      <meta name="Slurp" content="All" />
-      <meta name="Scooter" content="All" />
-      <meta name="WEBCRAWLERS" content="All" />
+        <meta name="keywords" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
+        <link rel="canonical" href="https://makemydocuments.com/dubai-tourist-visa-for-indians" />
+        {/* <meta name="author" content={currentMeta.canonical} /> */}
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="2 days" />
+        <meta name="robots" content="ALL, index, follow" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="Safe For All" />
+        <meta name="language" content="English" />
+        <meta httpEquiv="window-target" content="_top" />
+        <meta httpEquiv="pics-label" content="for all ages" />
+        <meta name="GOOGLEBOTS" content="All, FOLLOW" />
+        <meta name="YAHOOBOTS" content="All, FOLLOW" />
+        <meta name="MSNBOTS" content="All, FOLLOW" />
+        <meta name="BINGBOTS" content="All, FOLLOW" />
+        <meta name="Googlebot-Image" content="All" />
+        <meta name="Slurp" content="All" />
+        <meta name="Scooter" content="All" />
+        <meta name="WEBCRAWLERS" content="All" />
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
-      <script>
-        {`
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
+        <script>
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QN4189EDG5');
         `}
-      </script>
+        </script>
 
-      <script>
+        <script>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -235,7 +235,7 @@ const DubaiVisa = () => {
           {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=865961251883214&ev=PageView&noscript=1" alt="Meta Pixel" />`}
         </noscript>
 
-         <script>
+        <script>
           {`
             (function(w,d,t,r,u){
               var f,n,i;w[u]=w[u]||[],f=function(){
@@ -253,7 +253,7 @@ const DubaiVisa = () => {
           `}
         </script>
         <script type="application/ld+json">
-    {`
+          {`
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -307,10 +307,10 @@ const DubaiVisa = () => {
         }
       }
     `}
-  </script>
+        </script>
 
-  <script type="application/ld+json">
-    {`
+        <script type="application/ld+json">
+          {`
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -398,22 +398,22 @@ const DubaiVisa = () => {
         ]
       }
     `}
-  </script>
-  <meta property="og:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
-  <meta property="og:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-  <meta property="og:url" content="https://makemydocuments.com/dubai-visa" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
-  <meta property="og:site_name" content="Make My Documents" />
+        </script>
+        <meta property="og:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
+        <meta property="og:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
+        <meta property="og:url" content="https://makemydocuments.com/dubai-visa" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta property="og:site_name" content="Make My Documents" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
-  <meta name="twitter:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-  <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
-  <meta name="twitter:site" content="@makemydocuments" />
-  
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
+        <meta name="twitter:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
+        <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta name="twitter:site" content="@makemydocuments" />
 
-    </Helmet>
+
+      </Helmet>
 
       <div
         style={{
@@ -425,7 +425,7 @@ const DubaiVisa = () => {
       >
         <nav aria-label="breadcrumb" style={{ marginTop: "1%" }}>
           <ol className="breadcrumb mb-0">
-            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize:'14px' }}>
+            <li className="breadcrumb-item" style={{ fontWeight: "bold", fontSize: '14px' }}>
               <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>
                 Home
               </Link>
@@ -433,9 +433,9 @@ const DubaiVisa = () => {
             <li
               className="breadcrumb-item active"
               aria-current="page"
-              style={{ fontWeight: "bold", fontSize:'14px' }}
+              style={{ fontWeight: "bold", fontSize: '14px' }}
             >
-     Dubai Tourist Visa for Indians
+              Dubai Tourist Visa for Indians
 
             </li>
           </ol>
@@ -496,10 +496,10 @@ const DubaiVisa = () => {
                       fontSize: "36px",
                       fontWeight: "bold",
                       margin: 0,
-                      
+
                     }}
                   >
-                     Dubai Tourist Visa for Indians
+                    Dubai Tourist Visa for Indians
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -536,96 +536,96 @@ const DubaiVisa = () => {
 
                   {/* Visa Details */}
                   <div
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    marginTop: "20px",
-    width: "100%",
-    maxWidth: "320px",
- 
-    // padding: "15px",
-    borderRadius: "10px",
-  
-  }}
->
-  <div style={{ flex: 1 }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Processing time
-    </p>
-    <p
-      style={{
-        fontSize: "12px",
-        fontWeight: "bold",
-        color: "#333",
-        margin: 0,
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        whiteSpace:'nowrap',
-        display: "inline-block",
-      }}
-    >
-  04 to 05 working days
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginTop: "20px",
+                      width: "100%",
+                      maxWidth: "320px",
 
-    </p>
-  
-  </div>
+                      // padding: "15px",
+                      borderRadius: "10px",
 
-  <div style={{ flex: 1, textAlign: "right" }}>
-    <p
-      style={{
-        fontSize: "14px",
-        marginBottom: "5px",
-        color: "#333",
-        fontWeight: "600",
-      }}
-    >
-      Starting from
-    </p>
-    <p
-      style={{
-        fontSize: "12px",
-        fontWeight: "bold",
-        color: "#333",
-        backgroundColor: "#e3f2fd",
-        padding: "6px 10px",
-        borderRadius: "6px",
-        display: "inline-block",
-        margin: 0,
-      }}
-    >
-      ₹7,854/-
-    </p>
-  </div>
-</div>
-<div style={{ marginTop: "20px" }}>
-  <button
-    onClick={handleContinue}
-    style={{
-      backgroundColor: "#fea400 ",
-      color: "#333",
-      padding: "12px 24px",
-      border: "none",
-      borderRadius: "6px",
-      fontSize: "16px",
-      fontWeight: "bold",
-      cursor: "pointer",
-      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-      transition: "background-color 0.3s ease",
-    }}
-    onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
-    onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
-  >
-    Apply Now
-  </button>
-</div>
+                    }}
+                  >
+                    <div style={{ flex: 1 }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Processing time
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          margin: 0,
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          whiteSpace: 'nowrap',
+                          display: "inline-block",
+                        }}
+                      >
+                        04 to 05 working days
+
+                      </p>
+
+                    </div>
+
+                    <div style={{ flex: 1, textAlign: "right" }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Starting from
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          display: "inline-block",
+                          margin: 0,
+                        }}
+                      >
+                        ₹7,854/-
+                      </p>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: "20px" }}>
+                    <button
+                      onClick={handleContinue}
+                      style={{
+                        backgroundColor: "#fea400 ",
+                        color: "#333",
+                        padding: "12px 24px",
+                        border: "none",
+                        borderRadius: "6px",
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                        transition: "background-color 0.3s ease",
+                      }}
+                      onMouseOver={(e) => (e.target.style.backgroundColor = "#fea400")}
+                      onMouseOut={(e) => (e.target.style.backgroundColor = "#fea400")}
+                    >
+                      Apply Now
+                    </button>
+                  </div>
 
 
                 </div>
@@ -633,93 +633,93 @@ const DubaiVisa = () => {
             </div>
 
             <div style={{ width: "100%" }} className="d-block d-lg-none">
-  <div
-    style={{
-      position: "relative",
-      width: "100%",
-      overflow: "hidden",
-      marginTop:'36%'
-    }}
-  >
-    {/* Image */}
-    <img
-      src={bannerimage}
-      alt="Hong Kong Visa"
-      style={{
-        width: "100%",
-        height: "auto",
-        objectFit: "cover",
-      }}
-    />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  overflow: "hidden",
+                  marginTop: '36%'
+                }}
+              >
+                {/* Image */}
+                <img
+                  src={bannerimage}
+                  alt="Hong Kong Visa"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
+                  }}
+                />
 
-    {/* Text Container */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        background:
-          "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
-        color: "#fff",
-        padding: "15px",
-      }}
-    >
-      <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-      Dubai Tourist Visa for Indians
-      </h2>
+                {/* Text Container */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background:
+                      "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
+                    color: "#fff",
+                    padding: "15px",
+                  }}
+                >
+                  <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+                    Dubai Tourist Visa for Indians
+                  </h2>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "#e6f7fa",
-          color: "#000",
-          padding: "3px 8px",
-          borderRadius: "5px",
-          fontSize: "10px",
-          fontWeight: "500",
-          marginBottom: "10px",
-          width: "fit-content",
-        }}
-      >
-        ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
-      </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#e6f7fa",
+                      color: "#000",
+                      padding: "3px 8px",
+                      borderRadius: "5px",
+                      fontSize: "10px",
+                      fontWeight: "500",
+                      marginBottom: "10px",
+                      width: "fit-content",
+                    }}
+                  >
+                    ⭐ <span style={{ marginLeft: "6px" }}>99% Visa Approved on Time</span>
+                  </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "10px",
-        }}
-      >
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Processing time</p>
-       
-          <p style={{ margin: 0,  fontSize: "10px", }}> 04 to 05 working days
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      fontSize: "10px",
+                    }}
+                  >
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Processing time</p>
 
-          </p>
-        </div>
-        <div>
-          <p style={{ margin: 0, fontWeight: "bold",  fontSize: "10px", }}>Starting from</p>
-          <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold",  fontSize: "10px", }}>
-            ₹7,854/-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                      <p style={{ margin: 0, fontSize: "10px", }}> 04 to 05 working days
+
+                      </p>
+                    </div>
+                    <div>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
+                      <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
+                        ₹7,854/-
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
             <div className="container my-5">
               <div className="row" style={{ position: "relative" }}>
-                {/* Left Column () */} 
+                {/* Left Column () */}
                 <div className="col-md-8" ref={firstColumnRef} >
                   {/* Charges Section (Scrollable) */}
-                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{marginLeft:'2%'}}>
-  {/* Image Section */}
-  {/* <div className="d-flex justify-content-center align-items-center">
+                  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+                    {/* Image Section */}
+                    {/* <div className="d-flex justify-content-center align-items-center">
     <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
       <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
       <img
@@ -736,167 +736,167 @@ const DubaiVisa = () => {
     </div>
   </div> */}
 
-  {/* Content Section */}
-  <div style={{marginTop:''}}>
-    <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-    <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-      <li>
-      UAE 30 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 7,854/-</strong>
-       </li>
-       <li>
-      UAE 30 Days Multiple  Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 14,600/-</strong>
-       </li>
-       <li>
-      UAE 60 Days Single Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 12,446/-</strong>
-       </li>
-       <li>
-      UAE 60 Days Multiple Entry E-Visa <strong style={{color:'#ff9800'}}>Rs. 19,118/-</strong>
-       </li>
-      
-      <li> <strong style={{color:'#ff9800'}}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br/>(This mount will a be adjusted in total bill)</li>
-    
-    </ul>
-  </div>
-</div>
-<div
-  className="d-block d-lg-none"
-  style={{
-    padding: "15px",
-    backgroundColor: "#ffffff",
-    borderRadius: "10px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-    margin: "15px",
-  }}
->
-  {/* Charges Section */}
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "10px",
-      marginBottom: "20px",
-    }}
-  >
-    <div
-      style={{
-        position: "relative",
-        display: "inline-block",
-        width: "100px",
-        height: "100px",
-      }}
-    >
-      <img
-        src={circleIcon}
-        alt="Circle"
-        style={{ width: "100%", height: "100%" }}
-      />
-      <img
-        src={Price}
-        alt="Price Icon"
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          width: "26px",
-        }}
-      />
-    </div>
-    <div>
-      <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-        Charges
-      </h5>
-      <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-        <li>
-        UAE 30 Days Single Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 7,854/-</strong>
-        </li>
-        <li>
-        UAE 30 Days Multiple  Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 14,600/-</strong>
-        </li>
-        <li>
-        UAE 60 Days Single Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 12,446/-</strong>
-        </li>
-        <li>
-        UAE 60 Days Multiple Entry E-Visa
-        {" "}
-        <strong style={{ color: "#ff9800" }}>Rs: 19,118/-</strong>
-        </li>
-        <li>
-          <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-          Need to pay while submitting online form (This amount will be
-          adjusted in total bill)
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+                    {/* Content Section */}
+                    <div style={{ marginTop: '' }}>
+                      <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                        <li>
+                          UAE 30 Days Single Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 7,854/-</strong>
+                        </li>
+                        <li>
+                          UAE 30 Days Multiple  Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 14,600/-</strong>
+                        </li>
+                        <li>
+                          UAE 60 Days Single Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 12,446/-</strong>
+                        </li>
+                        <li>
+                          UAE 60 Days Multiple Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 19,118/-</strong>
+                        </li>
+
+                        <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    className="d-block d-lg-none"
+                    style={{
+                      padding: "15px",
+                      backgroundColor: "#ffffff",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                      margin: "15px",
+                    }}
+                  >
+                    {/* Charges Section */}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "relative",
+                          display: "inline-block",
+                          width: "100px",
+                          height: "100px",
+                        }}
+                      >
+                        <img
+                          src={circleIcon}
+                          alt="Circle"
+                          style={{ width: "100%", height: "100%" }}
+                        />
+                        <img
+                          src={Price}
+                          alt="Price Icon"
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            width: "26px",
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                          Charges
+                        </h5>
+                        <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                          <li>
+                            UAE 30 Days Single Entry E-Visa
+                            {" "}
+                            <strong style={{ color: "#ff9800" }}>Rs: 7,854/-</strong>
+                          </li>
+                          <li>
+                            UAE 30 Days Multiple  Entry E-Visa
+                            {" "}
+                            <strong style={{ color: "#ff9800" }}>Rs: 14,600/-</strong>
+                          </li>
+                          <li>
+                            UAE 60 Days Single Entry E-Visa
+                            {" "}
+                            <strong style={{ color: "#ff9800" }}>Rs: 12,446/-</strong>
+                          </li>
+                          <li>
+                            UAE 60 Days Multiple Entry E-Visa
+                            {" "}
+                            <strong style={{ color: "#ff9800" }}>Rs: 19,118/-</strong>
+                          </li>
+                          <li>
+                            <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                            Need to pay while submitting online form (This amount will be
+                            adjusted in total bill)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
                   <br />
                   {/* Documents Required Section (Non-scrollable) */}
                   <div
-  className="d-none d-lg-block"
-  style={{
-    marginTop: "20px",
-    paddingLeft: "10px",
-    paddingRight: "10px",
-    paddingTop: "15px",
-    paddingBottom: "15px",
-    backgroundColor: "#fff",
-    borderRadius: "8px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-  }}
->
-  <h2
-    style={{
-      fontSize: "24px",
-      fontWeight: "bold",
-      marginBottom: "15px",
-      textAlign: "left",
-    }}
-  >
-    Documents Required For Dubai Tourist Visa for Indians
-  </h2>
+                    className="d-none d-lg-block"
+                    style={{
+                      marginTop: "20px",
+                      paddingLeft: "10px",
+                      paddingRight: "10px",
+                      paddingTop: "15px",
+                      paddingBottom: "15px",
+                      backgroundColor: "#fff",
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                    }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "bold",
+                        marginBottom: "15px",
+                        textAlign: "left",
+                      }}
+                    >
+                      Documents Required For Dubai Tourist Visa for Indians
+                    </h2>
 
 
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- India PAN Card  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport Back  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
-  <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- India PAN Card  </p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport  </p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Passport Back  </p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
+                    <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
 
 
- 
-</div>
 
-<div className="d-block d-lg-none" style={{ padding: "15px" }}>
-  <div
-    style={{
-      backgroundColor: "#fff",
-      borderRadius: "8px",
-      padding: "12px",
-      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-      marginBottom: "20px",
-    }}
-  >
-    <h5 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>
-    Documents Required For Dubai Tourist Visa for Indians
-    </h5>
+                  </div>
 
-    <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- India PAN Card  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport Back  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
-  <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
-  </div>
-</div>
+                  <div className="d-block d-lg-none" style={{ padding: "15px" }}>
+                    <div
+                      style={{
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        padding: "12px",
+                        boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <h5 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>
+                        Documents Required For Dubai Tourist Visa for Indians
+                      </h5>
+
+                      <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- India PAN Card  </p>
+                      <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport  </p>
+                      <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Passport Back  </p>
+                      <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Traveler Photo  </p>
+                      <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Round Trip Flight Ticket  </p>
+                      <p style={{ fontSize: "13px", color: "#333", margin: 0 }}>- Hotel Booking  </p>
+                    </div>
+                  </div>
 
                   <br />
                   {/* How It Works Section (Non-scrollable) */}
@@ -966,7 +966,7 @@ const DubaiVisa = () => {
                               margin: 0,
                             }}
                           >
-                        Fill all the basic details in the application on our secure portal.
+                            Fill all the basic details in the application on our secure portal.
 
                           </p>
                         </div>
@@ -1174,8 +1174,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.
-                                  "
+                                  "The process was super smooth! I applied for my Dubai tourist visa and got it within 3 days. The team was very helpful and guided me at every step. Highly recommended for anyone looking for a hassle-free Dubai visa service."
                                 </p>
                                 <div
                                   style={{
@@ -1207,7 +1206,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                    Prakasha N
+                                    Neha Sharma
 
                                   </span>
                                 </div>
@@ -1232,9 +1231,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "
-                                  Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks
-                                  "
+                                  "I was a bit confused about the Dubai visa documentation, but their team made it so simple. They handled everything professionally and kept me updated until I received my visa. Excellent service for Indians applying for Dubai tourist visas."
                                 </p>
                                 <div
                                   style={{
@@ -1266,7 +1263,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                 Aneev Sinha
+                                    Rahul Mehta
 
                                   </span>
                                 </div>
@@ -1290,8 +1287,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport
-                                  "
+                                  "I needed an urgent Dubai tourist visa for a family trip, and they ensured it was processed on time. Very responsive and reliable. Their expert assistance made the entire visa process stress-free."
                                 </p>
                                 <div
                                   style={{
@@ -1323,7 +1319,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Manoj Mano
+                                    Priya Reddy
                                   </span>
                                 </div>
                               </div>
@@ -1351,8 +1347,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "I got my passport very fast wonderful work thank you Murthy sir.
-                                  "
+                                  "Best service for Dubai tourist visas! Their team clarified all my doubts and provided a checklist that made document preparation easy. I received my visa faster than expected. Great experience."
                                 </p>
                                 <div
                                   style={{
@@ -1384,7 +1379,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                               Anand Krishna
+                                    Karan Gupta
 
                                   </span>
                                 </div>
@@ -1408,8 +1403,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "My passport had expired and wanted renewed at the earliest. Mr Ganesh helped me throughout and got it done. Would definitely recommend anyone who’d need the passport.
-                                  ."
+                                  "Applying for a Dubai tourist visa through them was a great decision. I was worried about delays, but they handled my application swiftly and professionally. Truly impressed with their transparency and timely updates."
                                 </p>
                                 <div
                                   style={{
@@ -1441,7 +1435,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Arjun Hande
+                                    Aditi Desai
                                   </span>
                                 </div>
                               </div>
@@ -1464,9 +1458,7 @@ const DubaiVisa = () => {
                                     fontSize: "14px",
                                   }}
                                 >
-                                  "Good service and cooperation. Received my passport within 10 days from the appointment date. Thank you.
-
-                                  "
+                                  "Perfect for first-time travelers! I had no idea about Dubai visa formalities, but their step-by-step support made it simple. The visa was delivered to my inbox within 4 days. Highly efficient and trustworthy service."
                                 </p>
                                 <div
                                   style={{
@@ -1498,7 +1490,7 @@ const DubaiVisa = () => {
                                       color: "#374151",
                                     }}
                                   >
-                                   Shiva Raj
+                                    Sameer Khan
 
 
                                   </span>
@@ -1508,188 +1500,206 @@ const DubaiVisa = () => {
                           </div>
                         </div>
                         {/* Carousel Controls */}
-<button
-  className="carousel-control-prev"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="prev"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    left: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-prev-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Previous</span>
-</button>
+                        <button
+                          className="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="prev"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            left: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Previous</span>
+                        </button>
 
-<button
-  className="carousel-control-next"
-  type="button"
-  data-bs-target="#reviewCarousel"
-  data-bs-slide="next"
-  style={{
-    width: "40px",
-    height: "40px",
-    top: "45%",
-    right: "-30px",
-    backgroundColor: "#fff",
-    borderRadius: "50%",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    border: "none",
-  }}
->
-  <span
-    className="carousel-control-next-icon"
-    aria-hidden="true"
-    style={{ filter: "invert(1)", width: "20px", height: "20px" }}
-  ></span>
-  <span className="visually-hidden">Next</span>
-</button>
+                        <button
+                          className="carousel-control-next"
+                          type="button"
+                          data-bs-target="#reviewCarousel"
+                          data-bs-slide="next"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "45%",
+                            right: "-30px",
+                            backgroundColor: "#fff",
+                            borderRadius: "50%",
+                            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                            border: "none",
+                          }}
+                        >
+                          <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
+                            style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                          ></span>
+                          <span className="visually-hidden">Next</span>
+                        </button>
 
                       </div>
                     </div>
                   </div>
                   {window.innerWidth <= 768 && (
-  <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
-    <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
-      <h4
-        style={{
-          color: "#007bff",
-          marginBottom: "20px",
-          fontWeight: "bold",
-          fontSize: "22px",
-          textAlign: "center",
-        }}
-      >
-        Our Client Reviews
-      </h4>
+                    <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
+                      <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+                        <h4
+                          style={{
+                            color: "#007bff",
+                            marginBottom: "20px",
+                            fontWeight: "bold",
+                            fontSize: "22px",
+                            textAlign: "center",
+                          }}
+                        >
+                          Our Client Reviews
+                        </h4>
 
-      <div
-        id="mobileReviewCarousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="4000"
-      >
-        <div className="carousel-inner">
-          {[
-            {
-              name: "Prakasha N",
-              initial: "P",
-              review:
-                "I really appreciate Suneetha Madam and Murthy Sir helped lot and very helpful ,Got my passport and delivered on time. The entire process was smooth, and I appreciate the timely communication and professionalism.",
-            },
-            {
-              name: "Aneev Sinha",
-              initial: "A",
-              review:
-                "Definitely the most convenient Passport Service I have seen. Process is very clearly defined which made it easy to follow through. The person is also very helpful and polite. Thanks",
-            },
-            {
-              name: " Manoj Mano",
-              initial: "M",
-              review:
-                "Smooth translation and Sunitha helped me get the passport in real fast.. appreciate and thanks Sunitha for your assistance and hassle free delivery of passport",
-            },
-          ].map((item, index) => (
-            <div
-              className={`carousel-item ${index === 0 ? "active" : ""}`}
-              key={index}
-            >
-              <div
-                style={{
-                  backgroundColor: "#fff",
-                  padding: "15px",
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
-                  marginBottom: "10px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#FFAA00",
-                    fontSize: "18px",
-                    marginBottom: "5px",
-                  }}
-                >
-                  ★★★★★
+                        <div
+                          id="mobileReviewCarousel"
+                          className="carousel slide"
+                          data-bs-ride="carousel"
+                          data-bs-interval="4000"
+                        >
+                          <div className="carousel-inner">
+                            {[
+                              {
+                                name: "Neha Sharma",
+                                initial: "P",
+                                review:
+                                  "The process was super smooth! I applied for my Dubai tourist visa and got it within 3 days. The team was very helpful and guided me at every step. Highly recommended for anyone looking for a hassle-free Dubai visa service.",
+                              },
+                              {
+                                name: "Rahul Mehta",
+                                initial: "A",
+                                review:
+                                  "I was a bit confused about the Dubai visa documentation, but their team made it so simple. They handled everything professionally and kept me updated until I received my visa. Excellent service for Indians applying for Dubai tourist visas.",
+                              },
+                              {
+                                name: "Priya Reddy",
+                                initial: "M",
+                                review:
+                                  "I needed an urgent Dubai tourist visa for a family trip, and they ensured it was processed on time. Very responsive and reliable. Their expert assistance made the entire visa process stress-free.",
+                              },
+                              {
+                                name: "Karan Gupta",
+                                initial: "P",
+                                review:
+                                  "Best service for Dubai tourist visas! Their team clarified all my doubts and provided a checklist that made document preparation easy. I received my visa faster than expected. Great experience.",
+                              },
+                              {
+                                name: "Aditi Desai",
+                                initial: "A",
+                                review:
+                                  "Applying for a Dubai tourist visa through them was a great decision. I was worried about delays, but they handled my application swiftly and professionally. Truly impressed with their transparency and timely updates.",
+                              },
+                              {
+                                name: "Sameer Khan",
+                                initial: "M",
+                                review:
+                                  "Perfect for first-time travelers! I had no idea about Dubai visa formalities, but their step-by-step support made it simple. The visa was delivered to my inbox within 4 days. Highly efficient and trustworthy service.",
+                              }
+                            ].map((item, index) => (
+                              <div
+                                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                                key={index}
+                              >
+                                <div
+                                  style={{
+                                    backgroundColor: "#fff",
+                                    padding: "15px",
+                                    borderRadius: "8px",
+                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                    marginBottom: "10px",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      color: "#FFAA00",
+                                      fontSize: "18px",
+                                      marginBottom: "5px",
+                                    }}
+                                  >
+                                    ★★★★★
+                                  </div>
+                                  <p
+                                    style={{
+                                      color: "#4B5563",
+                                      fontSize: "14px",
+                                      marginBottom: "10px",
+                                    }}
+                                  >
+                                    {item.review}
+                                  </p>
+                                  <div style={{ display: "flex", alignItems: "center" }}>
+                                    <div
+                                      style={{
+                                        width: "32px",
+                                        height: "32px",
+                                        borderRadius: "50%",
+                                        backgroundColor: "#E5E7EB",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        marginRight: "10px",
+                                        fontWeight: "bold",
+                                        color: "#000",
+                                      }}
+                                    >
+                                      {item.initial}
+                                    </div>
+                                    <span
+                                      style={{
+                                        fontWeight: "bold",
+                                        fontSize: "14px",
+                                        color: "#374151",
+                                      }}
+                                    >
+                                      {item.name}
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Optional carousel controls */}
+                          <button
+                            className="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="prev"
+                          >
+                            <span className="carousel-control-prev-icon" aria-hidden="true" style={{ marginLeft: '-120%' }}></span>
+                          </button>
+                          <button
+                            className="carousel-control-next"
+                            type="button"
+                            data-bs-target="#mobileReviewCarousel"
+                            data-bs-slide="next"
+                          >
+                            <span className="carousel-control-next-icon" aria-hidden="true" style={{ marginRight: '-80%' }}></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+
                 </div>
-                <p
-                  style={{
-                    color: "#4B5563",
-                    fontSize: "14px",
-                    marginBottom: "10px",
-                  }}
-                >
-                  {item.review}
-                </p>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <div
-                    style={{
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      backgroundColor: "#E5E7EB",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginRight: "10px",
-                      fontWeight: "bold",
-                      color: "#000",
-                    }}
-                  >
-                    {item.initial}
-                  </div>
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                      color: "#374151",
-                    }}
-                  >
-                    {item.name}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Optional carousel controls */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" style={{marginLeft:'-120%'}}></span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#mobileReviewCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" style={{marginRight:'-80%'}}></span>
-        </button>
-      </div>
-    </div>
-  </div>
-)}
 
 
-                </div>
-
-                
 
                 {/* Right Column () */}
                 <div
@@ -1702,7 +1712,7 @@ const DubaiVisa = () => {
                     width: isSticky && stickyColumnRef.current ? `${stickyColumnRef.current.offsetWidth}px` : "auto",
                     zIndex: 1000,
                   }}
-                  
+
                 >
                   <div
                     style={{
@@ -1738,7 +1748,7 @@ const DubaiVisa = () => {
                       }}
                     >
                       <button
-                      onClick={handleContinue}
+                        onClick={handleContinue}
                         style={{
                           backgroundColor: "",
                           color: "#000",
@@ -1752,7 +1762,7 @@ const DubaiVisa = () => {
                         Apply Online
                       </button>
                     </div>
-                   
+
                     {/* <a href="https://wa.me/+919980097315" style={{ textDecoration: "none" }}>
   <div
     style={{
@@ -1860,24 +1870,24 @@ const DubaiVisa = () => {
                 </div>
                 {/* Sticky Bottom Bar for Mobile Only */}
                 <div
-                
-  style={{
-    position: "fixed",
-    bottom: 0,
-    left: 0,
-    width: "100%",
-    backgroundColor: "#ffffff",
-    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
-    display: window.innerWidth <= 768 ? "flex" : "none",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 15px",
-    zIndex: 9999,
-  }}
->
- 
 
-  {/* <a
+                  style={{
+                    position: "fixed",
+                    bottom: 0,
+                    left: 0,
+                    width: "100%",
+                    backgroundColor: "#ffffff",
+                    boxShadow: "0 -2px 6px rgba(0,0,0,0.1)",
+                    display: window.innerWidth <= 768 ? "flex" : "none",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "10px 15px",
+                    zIndex: 9999,
+                  }}
+                >
+
+
+                  {/* <a
     href="https://wa.me/+919980097315"
     style={{
       width: "45px",
@@ -1895,24 +1905,24 @@ const DubaiVisa = () => {
   >
     <i className="fab fa-whatsapp"></i>
   </a> */}
-  <button
-    onClick={handleContinue}
-    style={{
-      flex: 1,
-      marginRight: "10px",
-      padding: "10px",
-      backgroundColor: "#007bff",
-      color: "#fff",
-      border: "none",
-      borderRadius: "8px",
-      fontWeight: "bold",
-      fontSize: "14px",
-    }}
-  >
-    Apply Now
-  </button>
+                  <button
+                    onClick={handleContinue}
+                    style={{
+                      flex: 1,
+                      marginRight: "10px",
+                      padding: "10px",
+                      backgroundColor: "#007bff",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: "8px",
+                      fontWeight: "bold",
+                      fontSize: "14px",
+                    }}
+                  >
+                    Apply Now
+                  </button>
 
-  {/* <a
+                  {/* <a
     href="tel:+919429690973"
     style={{
       width: "45px",
@@ -1929,14 +1939,14 @@ const DubaiVisa = () => {
   >
     <i className="fa fa-phone"></i>
   </a> */}
-</div>
+                </div>
 
 
               </div>
             </div>
 
             <div
-                 ref={stopStickyRef}
+              ref={stopStickyRef}
               style={{
                 backgroundColor: "#f8f8f8",
                 padding: "30px 20px",
@@ -1971,9 +1981,8 @@ const DubaiVisa = () => {
                     style={{
                       padding: "10px 20px",
                       borderRadius: "999px",
-                      border: `1px solid ${
-                        active === service.name ? "#000" : "#ccc"
-                      }`,
+                      border: `1px solid ${active === service.name ? "#000" : "#ccc"
+                        }`,
                       backgroundColor:
                         active === service.name ? "#212529" : "#fff",
                       color: active === service.name ? "#fff" : "#000",
@@ -2056,299 +2065,299 @@ const DubaiVisa = () => {
               </div>
             </div>
             <div
-        className="faq-section-visa"
-        // style={{
-        //   margin: "10px auto",
-        //   padding: "20px",
-        //   background: "#FFFFFF",
-        //   borderRadius: "10px",
-        //   width: "80%",
-        // }}
-      >
-        <h4
-          style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            color: "#007BFF",
-            marginBottom: "20px",
-          }}
-        >
-          FAQs
-        </h4>
-        <p
-          style={{
-            textAlign: "center",
-            fontWeight: "500",
-            marginBottom: "30px",
-          }}
-        >
-          Need help? Contact us for any queries related to us
-        </p>
-        <div className="faq-list">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="faq-item"
-              style={{ marginBottom: "10px" }}
+              className="faq-section-visa"
+            // style={{
+            //   margin: "10px auto",
+            //   padding: "20px",
+            //   background: "#FFFFFF",
+            //   borderRadius: "10px",
+            //   width: "80%",
+            // }}
             >
-              <button
+              <h4
                 style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  padding: "10px 20px",
-                  border: "1px solid #007BFF",
-                  borderRadius: "5px",
-                  background: "#F9F9F9",
-                  fontWeight: "500",
-                  cursor: "pointer",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  color: "#007BFF",
+                  marginBottom: "20px",
                 }}
-                onClick={() => handleToggle(index)}
               >
-               <h5 style={{fontSize:'16px'}}>{faq.question}</h5> 
-                <span
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "16px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  {openIndex === index ? "▲" : "▼"}
-                </span>
-              </button>
-              {openIndex === index && (
-                <div
-                  style={{
-                    marginTop: "10px",
-                    padding: "10px 20px",
-                    background: "#F3F3F3",
-                    borderRadius: "5px",
-                    color: "#333",
-                  }}
-                >
-                  {faq.answer}
-                </div>
-              )}
+                FAQs
+              </h4>
+              <p
+                style={{
+                  textAlign: "center",
+                  fontWeight: "500",
+                  marginBottom: "30px",
+                }}
+              >
+                Need help? Contact us for any queries related to us
+              </p>
+              <div className="faq-list">
+                {faqs.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="faq-item"
+                    style={{ marginBottom: "10px" }}
+                  >
+                    <button
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        width: "100%",
+                        padding: "10px 20px",
+                        border: "1px solid #007BFF",
+                        borderRadius: "5px",
+                        background: "#F9F9F9",
+                        fontWeight: "500",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => handleToggle(index)}
+                    >
+                      <h5 style={{ fontSize: '16px' }}>{faq.question}</h5>
+                      <span
+                        style={{
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          marginLeft: "10px",
+                        }}
+                      >
+                        {openIndex === index ? "▲" : "▼"}
+                      </span>
+                    </button>
+                    {openIndex === index && (
+                      <div
+                        style={{
+                          marginTop: "10px",
+                          padding: "10px 20px",
+                          background: "#F3F3F3",
+                          borderRadius: "5px",
+                          color: "#333",
+                        }}
+                      >
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <br></br>
+              <>
+                <h2 className="faq-tag-title-h3">
+                  <strong>Dubai Tourist Visa for Indians - A Complete Guide
+
+                  </strong>
+                </h2>
+                <br />
+                <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}> Types of Dubai Tourist Visas for Indians
+                </h2>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> 30-Day Tourist Visa: </h3>
+                <p style={{ textAlign: 'left' }}>
+                  The 30-Day Tourist Visa is perfect for travelers who want to explore Dubai for a short period. This visa allows you to stay in Dubai for up to 30 days, providing ample time to explore the city's iconic attractions, shopping destinations and cultural sites. This visa is ideal for a quick vacation or business trip.
+                </p>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> 90-Day Tourist Visa
+                  : </h3>
+                <p style={{ textAlign: 'left' }}>
+                  The 90-Day Tourist Visa is designed for those who want to stay in Dubai for a longer duration. With this visa, you can stay up to 90 days, making it perfect for travelers planning a more extended visit. It’s an excellent option for tourists who want to enjoy Dubai at a relaxed pace or who are attending long-term events or activities.
+                </p>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> Multiple Entry Visa
+                  : </h3>
+                <p style={{ textAlign: 'left' }}>
+                  The Multiple Entry Visa allows travelers to visit Dubai multiple times within a specific period (usually six months). This visa is ideal for individuals who need to travel to Dubai for business or leisure multiple times during their stay. The multiple-entry option is more flexible and convenient, as you don't need to apply for a new visa every time you travel.
+                </p>
+                <br />
+                <h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
+                  Who is Eligible for a Dubai Tourist Visa?
+                </h2>
+                <br />
+                <ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
+                  <li>
+                    <strong>Indian Nationals:</strong> Indian passport holders are eligible to apply for a Dubai tourist visa.
+                  </li>
+                  <li>
+                    <strong>Age Requirement:</strong> Applicants must be 18 years or older. Minors must travel with parents or a guardian.
+                  </li>
+                  <li>
+                    <strong>Valid Passport:</strong> Passport must be valid for at least six months from the date of travel.
+                  </li>
+                  <li>
+                    <strong>Travel Purpose:</strong> The visa is for those visiting Dubai for tourism, leisure, or short business trips.
+
+                  </li>
+                  <li>
+                    <strong>Clear Travel History:</strong> Applicants should have a clean travel history without any prior visa violations or overstay issues.
+                  </li>
+                  <li>
+                    <strong>Return Ticket:</strong> A return flight booking is typically required to prove the intention of returning to India after the visit.
+
+                  </li>
+                  <li>
+                    <strong>Hotel Accommodation:</strong> Proof of hotel booking or accommodation details in Dubai is necessary.
+
+                  </li>
+                  <li>
+                    <strong>No Criminal Record:</strong> A clean criminal background is essential for visa approval.
+
+                  </li>
+                </ul>
+                <br />
+                <h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
+                  Why Choose Dubai as a Travel Destination?
+
+                </h2>
+                <br />
+                <ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
+                  <li>
+                    <strong>World-Class Attractions:</strong> Dubai is home to some of the world’s most iconic landmarks, including the Burj Khalifa, Burj Al Arab and Palm Jumeirah.
+                  </li>
+                  <li>
+                    <strong>Shopping Paradise:</strong> Dubai boasts some of the largest malls, including the Dubai Mall, offering a vast range of international brands, luxury goods and entertainment options.
+
+                  </li>
+                  <li>
+                    <strong>Luxury and Comfort:</strong>  The city is renowned for its luxury hotels, resorts and high-end experiences, catering to those seeking a lavish lifestyle.
+
+                  </li>
+                  <li>
+                    <strong>Adventure and Thrills:</strong>  From desert safaris and dune bashing to skydiving over the Palm, Dubai offers thrilling activities for adventure seekers.
+
+
+                  </li>
+                  <li>
+                    <strong>Vibrant Nightlife:</strong> Dubai offers a lively nightlife scene with upscale bars, nightclubs and beach parties.
+
+                  </li>
+                  <li>
+                    <strong>Events and Festivals:</strong> The city hosts various international events, including the Dubai Shopping Festival, Dubai World Cup and global music festivals.
+                  </li>
+
+                </ul>
+                <br />
+                <h2 style={{ fontSize: '16px', fontWeight: 'bold' }}>How to Apply for a Dubai Tourist Visa for Indians</h2>
+
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Register Online
+                  : </h3>
+                <p style={{ textAlign: 'left' }}>
+                  The first step in applying for a Dubai Tourist Visa is to register online through the official visa application platform. You will need to provide basic personal information, such as your name, nationality, passport details, and travel dates.
+                </p>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Upload Documents
+                  : </h3>
+                <p style={{ textAlign: 'left' }}>
+                  After registering, you’ll need to upload necessary documents like a clear scan of your passport, a recent passport-sized photograph, flight bookings, hotel reservations, and proof of financial stability (e.g., bank statements).
+                </p>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Documents Verification
+                  : </h3>
+                <p style={{ textAlign: 'left' }}>
+                  Once the documents are uploaded, they will undergo a verification process. The Dubai immigration authorities will check for document authenticity and ensure that all necessary information has been provided.
+                </p>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Payment
+                  : </h3>
+                <p style={{ textAlign: 'left' }}>
+                  Next, you’ll be required to make the payment for the visa application. The payment can be made online using various methods, such as debit/credit cards or bank transfers. Once the payment is confirmed, the processing of your visa application begins.
+                </p>
+                <br />
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> Receive your E-Visa via E-mail
+
+                  : </h3>
+                <p style={{ textAlign: 'left' }}>
+                  After processing your application, the approved tourist visa will be sent to your email address in the form of an e-visa. This e-visa will contain all the details about your travel, including the visa validity, entry dates, and duration of stay. Ensure that you print a copy of your e-visa to present at immigration upon arrival in Dubai.
+
+                </p>
+                <br />
+                <h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>Things to Know Before Traveling          </h2>
+                <br />
+                <h3 style={{ fontSize: '17px', fontWeight: 'bold' }}> Dubai Travel Restrictions </h3>
+                <br />
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}> Health Insurance
+                  : </h4>
+                <p style={{ textAlign: 'left' }}>
+                  Travel insurance covering health and medical emergencies is often recommended.
+                </p>
+                <br />
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>Customs Regulations
+                  : </h4>
+                <p style={{ textAlign: 'left' }}>
+                  Adhere to Dubai’s strict customs regulations, including limits on alcohol and restricted items.
+                </p>
+                <br />
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>Baggage Allowances
+                  : </h4>
+                <p style={{ textAlign: 'left' }}>
+                  Be mindful of baggage restrictions and customs allowances for duty-free goods.
+                </p>
+                <br />
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>Travel Advisories
+                  : </h4>
+                <p style={{ textAlign: 'left' }}>
+                  Always check for any specific travel advisories or regional restrictions before departure.
+                </p>
+                <br />
+
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}> Travel Restrictions for Certain Nationalities
+                  : </h4>
+                <p style={{ textAlign: 'left' }}>
+                  Some countries may face specific entry restrictions; always check the latest updates before applying for a visa.
+                </p>
+                <br />
+                <h4 style={{ fontSize: '16px', fontWeight: 'bold' }}> Return Flight
+
+                  : </h4>
+                <p style={{ textAlign: 'left' }}>
+                  Proof of a return flight booking or onward travel may be required.
+                </p>
+                <br />
+                <h3 style={{ fontSize: '18px', fontWeight: 'bold' }}>
+                  Important Travel Tips
+
+                </h3>
+                <p>Here are a few essential travel tips for your visit to Dubai:
+                </p>
+                <br />
+                <ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
+                  <li>
+                    Always carry a copy of your passport and visa.
+
+                  </li>
+                  <li>
+                    Respect local customs and laws, such as dress codes in public places.
+
+
+                  </li>
+                  <li>
+                    Be mindful of the weather, as Dubai can be extremely hot during summer months.
+
+
+                  </li>
+                  <li>
+                    Stay hydrated and carry sunscreen to protect from the sun.
+
+
+
+                  </li>
+                  <li>
+                    Familiarize yourself with Dubai’s public transport system for easy travel across the city.
+
+
+                  </li>
+                  <li>
+                    Ensure you have travel insurance for emergencies or unforeseen circumstances.
+
+                  </li>
+
+                </ul>
+                <br />
+              </>
             </div>
-          ))}
-        </div>
-        <br></br>
-        <>
-          <h2 className="faq-tag-title-h3">
-            <strong>Dubai Tourist Visa for Indians - A Complete Guide 
 
-            </strong>
-          </h2>
-          <br/>
-          <h2 style={{fontSize:'20px', fontWeight:'bold'}}> Types of Dubai Tourist Visas for Indians
-          </h2>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> 30-Day Tourist Visa: </h3>
-          <p style={{textAlign:'left'}}>
-          The 30-Day Tourist Visa is perfect for travelers who want to explore Dubai for a short period. This visa allows you to stay in Dubai for up to 30 days, providing ample time to explore the city's iconic attractions, shopping destinations and cultural sites. This visa is ideal for a quick vacation or business trip.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> 90-Day Tourist Visa
-          : </h3>
-          <p style={{textAlign:'left'}}>
-          The 90-Day Tourist Visa is designed for those who want to stay in Dubai for a longer duration. With this visa, you can stay up to 90 days, making it perfect for travelers planning a more extended visit. It’s an excellent option for tourists who want to enjoy Dubai at a relaxed pace or who are attending long-term events or activities.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> Multiple Entry Visa
-          : </h3>
-          <p style={{textAlign:'left'}}>
-          The Multiple Entry Visa allows travelers to visit Dubai multiple times within a specific period (usually six months). This visa is ideal for individuals who need to travel to Dubai for business or leisure multiple times during their stay. The multiple-entry option is more flexible and convenient, as you don't need to apply for a new visa every time you travel.
-          </p>
-          <br/>
-          <h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-  Who is Eligible for a Dubai Tourist Visa?
-</h2>
-<br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    <strong>Indian Nationals:</strong> Indian passport holders are eligible to apply for a Dubai tourist visa.
-  </li>
-  <li>
-    <strong>Age Requirement:</strong> Applicants must be 18 years or older. Minors must travel with parents or a guardian.
-  </li>
-  <li>
-    <strong>Valid Passport:</strong> Passport must be valid for at least six months from the date of travel.
-  </li>
-  <li>
-    <strong>Travel Purpose:</strong> The visa is for those visiting Dubai for tourism, leisure, or short business trips.
-
-  </li>
-  <li>
-    <strong>Clear Travel History:</strong> Applicants should have a clean travel history without any prior visa violations or overstay issues.
-  </li>
-  <li>
-    <strong>Return Ticket:</strong> A return flight booking is typically required to prove the intention of returning to India after the visit.
-
-  </li>
-  <li>
-    <strong>Hotel Accommodation:</strong> Proof of hotel booking or accommodation details in Dubai is necessary.
-
-  </li>
-  <li>
-    <strong>No Criminal Record:</strong> A clean criminal background is essential for visa approval.
-
-  </li>
-</ul>
-<br/>
-<h2 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-Why Choose Dubai as a Travel Destination?
-
-</h2>
-<br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    <strong>World-Class Attractions:</strong> Dubai is home to some of the world’s most iconic landmarks, including the Burj Khalifa, Burj Al Arab and Palm Jumeirah.
-  </li>
-  <li>
-    <strong>Shopping Paradise:</strong> Dubai boasts some of the largest malls, including the Dubai Mall, offering a vast range of international brands, luxury goods and entertainment options.
-
-  </li>
-  <li>
-    <strong>Luxury and Comfort:</strong>  The city is renowned for its luxury hotels, resorts and high-end experiences, catering to those seeking a lavish lifestyle.
-
-  </li>
-  <li>
-    <strong>Adventure and Thrills:</strong>  From desert safaris and dune bashing to skydiving over the Palm, Dubai offers thrilling activities for adventure seekers.
-
-
-  </li>
-  <li>
-    <strong>Vibrant Nightlife:</strong> Dubai offers a lively nightlife scene with upscale bars, nightclubs and beach parties.
-
-  </li>
-  <li>
-    <strong>Events and Festivals:</strong> The city hosts various international events, including the Dubai Shopping Festival, Dubai World Cup and global music festivals.
-  </li>
- 
-</ul>
-<br/>
-<h2 style={{fontSize:'16px', fontWeight:'bold'}}>How to Apply for a Dubai Tourist Visa for Indians</h2>
-          
-<br/>
-<h3 style={{fontSize:'16px', fontWeight:'bold'}}>Register Online
-: </h3>
-          <p style={{textAlign:'left'}}>
-          The first step in applying for a Dubai Tourist Visa is to register online through the official visa application platform. You will need to provide basic personal information, such as your name, nationality, passport details, and travel dates.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Upload Documents
-: </h3>
-          <p style={{textAlign:'left'}}>
-          After registering, you’ll need to upload necessary documents like a clear scan of your passport, a recent passport-sized photograph, flight bookings, hotel reservations, and proof of financial stability (e.g., bank statements).
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Documents Verification
-: </h3>
-          <p style={{textAlign:'left'}}>
-          Once the documents are uploaded, they will undergo a verification process. The Dubai immigration authorities will check for document authenticity and ensure that all necessary information has been provided.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}>Payment
-: </h3>
-          <p style={{textAlign:'left'}}>
-          Next, you’ll be required to make the payment for the visa application. The payment can be made online using various methods, such as debit/credit cards or bank transfers. Once the payment is confirmed, the processing of your visa application begins.
-          </p>
-          <br/>
-          <h3 style={{fontSize:'16px', fontWeight:'bold'}}> Receive your E-Visa via E-mail
-
-: </h3>
-          <p style={{textAlign:'left'}}>
-          After processing your application, the approved tourist visa will be sent to your email address in the form of an e-visa. This e-visa will contain all the details about your travel, including the visa validity, entry dates, and duration of stay. Ensure that you print a copy of your e-visa to present at immigration upon arrival in Dubai.
-
-          </p>
-          <br/>
-          <h2 style={{fontSize:'18px', fontWeight:'bold'}}>Things to Know Before Traveling          </h2>
-          <br/>
-          <h3 style={{fontSize:'17px', fontWeight:'bold'}}> Dubai Travel Restrictions </h3>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Health Insurance
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Travel insurance covering health and medical emergencies is often recommended.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Customs Regulations
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Adhere to Dubai’s strict customs regulations, including limits on alcohol and restricted items.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Baggage Allowances
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Be mindful of baggage restrictions and customs allowances for duty-free goods.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}>Travel Advisories
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Always check for any specific travel advisories or regional restrictions before departure.
-          </p>
-          <br/>
-         
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Travel Restrictions for Certain Nationalities
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Some countries may face specific entry restrictions; always check the latest updates before applying for a visa.
-          </p>
-          <br/>
-          <h4 style={{fontSize:'16px', fontWeight:'bold'}}> Return Flight 
-
-: </h4>
-          <p style={{textAlign:'left'}}>
-          Proof of a return flight booking or onward travel may be required.
-          </p>
-        <br/>
-          <h3 style={{ fontSize: '18px', fontWeight: 'bold' }}>
-          Important Travel Tips
-
-</h3>
-<p>Here are a few essential travel tips for your visit to Dubai:
-</p>
-<br/>
-<ul style={{ textAlign: 'left', paddingLeft: '18px', listStyleType: 'disc' }}>
-  <li>
-    Always carry a copy of your passport and visa.
-
-  </li>
-  <li>
-  Respect local customs and laws, such as dress codes in public places.
-
-
-  </li>
-  <li>
-  Be mindful of the weather, as Dubai can be extremely hot during summer months.
-
-
-  </li>
-  <li>
-  Stay hydrated and carry sunscreen to protect from the sun.
-
-
-
-  </li>
-  <li>
-  Familiarize yourself with Dubai’s public transport system for easy travel across the city.
-
-
-  </li>
-  <li>
-   Ensure you have travel insurance for emergencies or unforeseen circumstances.
-
-  </li>
- 
-</ul>
-          <br/>
-        </>
-      </div>
-
-            <br/>
+            <br />
           </div>
         </div>
       </div>

@@ -80,7 +80,7 @@ const OmanVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/oman-visa-form");
     };
 
     useEffect(() => {
@@ -462,23 +462,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                     margin: 0,
                                                 }}
                                             >
-                                                Oman 10 Day E-Visa Rs. ₹4,015/-
+                                                ₹4,015/-
                                             </p>
-                                            <p
-                                                style={{
-                                                    fontSize: "12px",
-                                                    fontWeight: "bold",
-                                                    color: "#333",
-                                                    backgroundColor: "#e3f2fd",
-                                                    padding: "6px 10px",
-                                                    borderRadius: "6px",
-                                                    display: "inline-block",
-                                                    margin: 0,
-                                                }}
-                                            >
-                                                Oman 30 Day E-Visa Rs. ₹7,776/-
-                                            </p>
-
+                                  
 
                                         </div>
                                     </div>
@@ -582,11 +568,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Oman 10 Day E-Visa ₹4,015/-
+                                               ₹4,015/-
                                             </p>
-                                            <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Oman 30 Day E-Visa ₹7,776/-
-                                            </p>
+                                        
                                         </div>
                                     </div>
                                 </div>

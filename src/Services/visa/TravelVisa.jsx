@@ -32,13 +32,13 @@ import { Helmet } from "react-helmet";
 const visadata = [
   {
     name: "United Arab Emirated",
-    routeName: "dubai-visa",
-    img: arabImage1, // Use the imported image variable
+      routeName: "dubai-tourist-visa-for-indians",
+    img: arabImage1,
   },
   {
     name: "Singapore",
     routeName: "singapore-visa",
-    img: singapurImage, // Use the imported image variable
+    img: singapurImage,
   },
   {
     name: "United Kingdom",
@@ -57,22 +57,22 @@ const visadata = [
   },
   {
     name: "Egypet",
-    routeName:"egypet-visa",
+    routeName:"egypt-visa",
     img: egyptimage,
   },
   {
     name: "Vietnam",
-    routeName:"vietnam-visa",
+    routeName:"vietnam-tourist-visa-for-indians",
     img: vietnamimage,
   },
   {
     name: "Hong Kong",
-    routeName:"hongkong-visa",
+    routeName:"hong-kong-tourist-visa-for-indians",
     img: hongkong,
   },
   {
     name: "Indonesia",
-    routeName:"indonesia-visa",
+    routeName:"indonesia-tourist-visa-for-indians",
     img: indonesiimage,
   },
   {
@@ -182,6 +182,8 @@ const TravelVisa = () => {
 
 <meta name="description" content="Apply for your tourist visa online with ease. No paperwork, no hassles—get your visa approved quickly and download your visa instantly. Complete online process for tourist visas worldwide."/>
 <meta name="keywords" content="tourist visa, apply tourist visa online, visa application, tourist visa approval, travel visa, online tourist visa, tourist visa services, easy visa application, tourist visa online, how to apply tourist visa, instant visa approval, download tourist visa, no paperwork tourist visa, hassle-free tourist visa"/>
+
+<link rel="canonical" href="https://www.makemydocuments.com/visa" />
 <meta name="author" content="https://makemydocuments.com/visa "/>
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>

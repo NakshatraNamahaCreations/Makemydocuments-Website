@@ -80,7 +80,7 @@ const HongKongVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/hongkong-visa-form");
     };
 
     useEffect(() => {
