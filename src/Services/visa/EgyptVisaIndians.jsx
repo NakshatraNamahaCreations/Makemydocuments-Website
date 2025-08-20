@@ -80,7 +80,7 @@ const EgyptVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/egypt-visa-form");
     };
 
     useEffect(() => {
@@ -471,22 +471,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                     margin: 0,
                                                 }}
                                             >
-                                                30 days Single Entry E-Visa   ₹4,798/-
+                                                 ₹4,798/-
                                             </p>
-                                            <p
-                                                style={{
-                                                    fontSize: "12px",
-                                                    fontWeight: "bold",
-                                                    color: "#333",
-                                                    backgroundColor: "#e3f2fd",
-                                                    padding: "6px 10px",
-                                                    borderRadius: "6px",
-                                                    display: "inline-block",
-                                                    margin: 0,
-                                                }}
-                                            >
-                                                30 days Multiple Entry E-Visa ₹6,580/-
-                                            </p>
+                                    
                                         </div>
                                     </div>
                                     <div style={{ marginTop: "20px" }}>
@@ -588,11 +575,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                30 days Single Entry E-Visa   ₹4,798/-
+                                                 ₹4,798/-
                                             </p>
-                                            <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                30 days Multiple Entry E-Visa ₹6,580/-
-                                            </p>
+                                        
                                         </div>
                                     </div>
                                 </div>

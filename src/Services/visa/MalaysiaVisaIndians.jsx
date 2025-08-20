@@ -80,7 +80,7 @@ const MalaysiaVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/malaysia-visa-form");
     };
 
     useEffect(() => {

@@ -80,7 +80,7 @@ const UKVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/uk-visa-form");
     };
 
     useEffect(() => {

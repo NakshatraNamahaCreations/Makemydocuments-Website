@@ -463,36 +463,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                     margin: 0,
                                                 }}
                                             >
-                                                Vietnam 30 Days Singal Entry E-Visa ₹4,371/-
+                                              ₹4,371/-
                                             </p>
-                                            <p
-                                                style={{
-                                                    fontSize: "12px",
-                                                    fontWeight: "bold",
-                                                    color: "#333",
-                                                    backgroundColor: "#e3f2fd",
-                                                    padding: "6px 10px",
-                                                    borderRadius: "6px",
-                                                    display: "inline-block",
-                                                    margin: 0,
-                                                }}
-                                            >
-                                                Vietnam 30 Days Multiple Entry E-Visa ₹12,492/-
-                                            </p>
-                                            <p
-                                                style={{
-                                                    fontSize: "12px",
-                                                    fontWeight: "bold",
-                                                    color: "#333",
-                                                    backgroundColor: "#e3f2fd",
-                                                    padding: "6px 10px",
-                                                    borderRadius: "6px",
-                                                    display: "inline-block",
-                                                    margin: 0,
-                                                }}
-                                            >
-                                                Vietnam 90 Days Multiple Entry E-Visa ₹14,553/-
-                                            </p>
+                                         
+                                         
                                         </div>
                                     </div>
                                     <div style={{ marginTop: "20px" }}>
@@ -595,14 +569,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Vietnam 30 Days Singal Entry E-Visa ₹4,371/-
+                                                 ₹4,371/-
                                             </p>
-                                            <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Vietnam 30 Days Multiple Entry E-Visa ₹12,492/-
-                                            </p>
-                                            <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Vietnam 90 Days Multiple Entry E-Visa ₹14,553/-
-                                            </p>
+                                         
 
                                         </div>
                                     </div>

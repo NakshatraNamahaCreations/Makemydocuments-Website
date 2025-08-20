@@ -80,7 +80,7 @@ const RussiaVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/russia-visa-form");
     };
 
     useEffect(() => {
@@ -461,7 +461,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                     margin: 0,
                                                 }}
                                             >
-                                                Russia E-Visa Rs. ₹3,850/-
+                                                ₹3,850/-
                                             </p>
 
 
@@ -567,7 +567,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Russia E-Visa ₹3,850/-
+                                               ₹3,850/-
                                             </p>
 
                                         </div>

@@ -167,12 +167,12 @@ const PassportAgency = () => {
   return (
     <>
       <Helmet>
-        <title>Get Your Passport Fast | Passport Agency in Bangalore
+        <title>Get Your Passport Fast | Passport Agent in Bangalore
         </title>
-        <meta name="description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.
+        <meta name="description" content="Need your passport fast? Our passport agent in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.
 "/>
         <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application" />
-        <link rel="canonical" href="https://makemydocuments.com/passport-agency-in-bangalore
+        <link rel="canonical" href="https://makemydocuments.com/passport-agent-in-bangalore
 " />
         <meta name="rating" CONTENT="General" />
         <meta name="revisit-after" CONTENT="2 days" />
@@ -245,8 +245,8 @@ const PassportAgency = () => {
         "@type": "LocalBusiness",
         "name": "Make My Documents",
         "image": "https://www.makemydocuments.com/logo.png",
-        "@id": "https://makemydocuments.com/passport-agency-in-bangalore",
-        "url": "https://makemydocuments.com/passport-agency-in-bangalore",
+        "@id": "https://makemydocuments.com/passport-agent-in-bangalore",
+        "url": "https://makemydocuments.com/passport-agent-in-bangalore",
         "telephone": "+91-9429690973",
         "address": {
           "@type": "PostalAddress",
@@ -277,7 +277,7 @@ const PassportAgency = () => {
           }
         ],
         "priceRange": "₹₹",
-        "description": "Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.",
+        "description": "Need your passport fast? Our passport agent in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process.",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Passport Services",
@@ -428,16 +428,16 @@ const PassportAgency = () => {
           `}
         </script>
 
-        <meta property="og:title" content="Get Your Passport Fast | Passport Agency in Bangalore" />
-        <meta property="og:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
-        <meta property="og:url" content="https://makemydocuments.com/passport-agency-in-bangalore" />
+        <meta property="og:title" content="Get Your Passport Fast | Passport Agent in Bangalore" />
+        <meta property="og:description" content="Need your passport fast? Our passport agent in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
+        <meta property="og:url" content="https://makemydocuments.com/passport-agent-in-bangalore" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
         <meta property="og:site_name" content="Make My Documents" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Get Your Passport Fast | Passport Agency in Bangalore" />
-        <meta name="twitter:description" content="Need your passport fast? Our passport agency in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
+        <meta name="twitter:title" content="Get Your Passport Fast | Passport Agent in Bangalore" />
+        <meta name="twitter:description" content="Need your passport fast? Our passport agent in Bangalore provides expert assistance for new applications, renewals and corrections to ensure a smooth process." />
         <meta name="twitter:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
         <meta name="twitter:site" content="@makemydocuments" />
 
@@ -498,7 +498,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
               aria-current="page"
               style={{ fontWeight: "bold", fontSize: '14px' }}
             >
-              Passport Agency in Bangalore
+              Passport Agent in Bangalore
             </li>
           </ol>
         </nav>
@@ -561,7 +561,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
                     }}
                   >
-                    Passport Agency in Bangalore
+                    Passport Agent in Bangalore
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -743,7 +743,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                   }}
                 >
                   <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-                    Passport Agency in Bangalore
+                    Passport Agent in Bangalore
 
 
                   </h2>
@@ -2345,11 +2345,11 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
               <br></br>
               <>
                 <h2 className="faq-tag-title-h3">
-                  <strong>Passport Agency in Bangalore
+                  <strong>Passport Agent in Bangalore
                   </strong>
                 </h2>
                 <p style={{ textAlign: 'left' }}>
-                  Are you looking for reliable and efficient passport services in Bangalore? Whether you are applying for your first passport, renewing an existing one or need assistance with a lost or damaged passport, we are here to guide you through the entire process. Our Passport Agency in Bangalore offers expert assistance to ensure that your application is submitted correctly and processed without any delays.
+                  Are you looking for reliable and efficient passport services in Bangalore? Whether you are applying for your first passport, renewing an existing one or need assistance with a lost or damaged passport, we are here to guide you through the entire process. Our Passport Agent in Bangalore offers expert assistance to ensure that your application is submitted correctly and processed without any delays.
 
                 </p>
                 <p style={{ textAlign: 'left' }}>
@@ -2394,7 +2394,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                 </h2>
 
                 <p style={{ textAlign: 'left' }}>
-                  When applying for a passport, it is important to ensure that you meet the necessary eligibility criteria to avoid delays. As a trusted Passport Agency in Bangalore, we guide you through the entire process, making sure you fulfill all the required conditions. Our team in Bangalore provides clear instructions and assistance to help you gather the necessary documents and meet the eligibility requirements.
+                  When applying for a passport, it is important to ensure that you meet the necessary eligibility criteria to avoid delays. As a trusted Passport Agent in Bangalore, we guide you through the entire process, making sure you fulfill all the required conditions. Our team in Bangalore provides clear instructions and assistance to help you gather the necessary documents and meet the eligibility requirements.
                 </p>
                 <br />
                 <h3 style={{ textAlign: 'left', fontSize: '18px' }}>
@@ -2451,11 +2451,11 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                 </h2>
                 <br />
 
-                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Trusted Passport Agency in Bangalore
+                <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}>Trusted Passport Agent in Bangalore
                 </h3>
 
                 <p style={{ textAlign: 'left' }}>
-                  We are a well-established and reliable passport agency, trusted by thousands of customers in Bangalore. Our experienced team ensures that your application is handled with the utmost care and professionalism. You can count on us to deliver accurate and timely passport services.</p>
+                  We are a well-established and reliable passport agent, trusted by thousands of customers in Bangalore. Our experienced team ensures that your application is handled with the utmost care and professionalism. You can count on us to deliver accurate and timely passport services.</p>
 
                 <h3 style={{ fontSize: '16px', fontWeight: 'bold' }}> Efficient and Quick Passport Processing
                 </h3>

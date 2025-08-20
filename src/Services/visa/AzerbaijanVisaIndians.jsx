@@ -80,7 +80,7 @@ const AzerbaijanVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/azerbaijan-visa-form");
     };
 
     useEffect(() => {
@@ -460,7 +460,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                     margin: 0,
                                                 }}
                                             >
-                                                Azerbaijan 30 days Single Entry E-Visa ₹4,498/-
+                                               ₹4,498/-
                                             </p>
 
                                         </div>
@@ -565,7 +565,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
-                                                Azerbaijan 30 days Single Entry E-Visa ₹4,498/-
+                                                 ₹4,498/-
                                             </p>
 
                                         </div>

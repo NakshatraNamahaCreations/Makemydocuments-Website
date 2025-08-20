@@ -80,7 +80,7 @@ const SingaporeVisaIndians = () => {
 
     const handleContinue = () => {
         // setShowPopup(true)
-        navigate("/passport-form");
+        navigate("/singapore-visa-form");
     };
 
     useEffect(() => {

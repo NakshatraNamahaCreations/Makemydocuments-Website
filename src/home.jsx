@@ -180,6 +180,8 @@ useLayoutEffect(() => {
       <title>Make My Documents™ | Online Document consultancy</title>
 <meta name="description" content=" Make My Documents Is The Smartest Way To Get Your Documents Done.Services: Pan card, Passport, Rental Agreement, Insurance, Senior Citizen Card, Etc. "/>
 <meta name="keywords" content="make my documents, passport, pan card, rental agreement, senior citzen card, bike insurance, car insurance, health insurance,  food license"/>
+
+<link rel="canonical" href="https://www.makemydocuments.com/" />
 <meta name="author" content="https://makemydocuments.com/"/>
 <meta name="rating" CONTENT="General"/>
 <meta name="revisit-after" CONTENT="2 days"/>

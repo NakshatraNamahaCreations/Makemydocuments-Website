@@ -933,6 +933,7 @@ useLayoutEffect(() => {
 <meta name="keywords" content="rental agreement, rental agreement online, how to create rental agreement,rental agreement near me, rental agreement bangalore, online rental agreement, online rent agreement near me, rent agreement, notarized rent agreement online, house rental agreement, online house rental agreement,
 home rental agreement, rent agreement near me, rent agreement bangalore,rent agreement online bangalore, rental agreement karnataka, online agreement services."/>
 <meta name="author" content="https://makemydocuments.com/rental-agreement"/>
+<link rel="canonical" href="https://www.makemydocuments.com/rental-agreement" />
 <meta name="rating" CONTENT="General"/>
 <meta name="revisit-after" CONTENT="2 days"/>
 <meta name="robots" content=" ALL, index, follow"/>
@@ -1063,7 +1064,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         >
           What We Do!
         </h2>
-        <p style={{ textAlign: "left", padding: "2%", fontWeight: "600" }}>
+        <p style={{ textAlign: "left" ,   padding: "2%", fontWeight: "600" }}>
           <span style={{}}>Make My Documents Online Agreements Service.</span>
           <br />
           <span style={{}}>Service available only in Karnataka.</span>
