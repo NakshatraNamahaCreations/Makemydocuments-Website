@@ -234,8 +234,12 @@ const App = () => {
         <Route path="/hongkong-visa" element={<Navigate to="/hong-kong-tourist-visa-for-indians" replace />} />
         <Route path="/vietnam-visa" element={<Navigate to="/vietnam-tourist-visa-for-indians" replace />} />
         <Route path="/indonesia-visa" element={<Navigate to="/indonesia-tourist-visa-for-indians" replace />} />
+<<<<<<< HEAD
         
         <Route path="/passport-agency-in-bangalore"element={<Navigate to="/passport-agent-in-bangalore" replace />} />
+=======
+
+>>>>>>> b7e34e8d6f4818334c811ef51161d26a8adfa53c
 
 
 
