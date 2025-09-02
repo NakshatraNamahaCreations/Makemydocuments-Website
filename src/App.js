@@ -69,6 +69,7 @@ import UzbekistanVisaIndians from "./Services/visa/UzbekistanVisaIndians.jsx";
 import { Navigate } from "react-router-dom";
 
 
+
 const Layout = ({ children }) => {
   const location = useLocation();
   // useEffect(() => {
@@ -216,9 +217,7 @@ const App = () => {
         <Route path="/australia-visa" element={<Layout><AustraliaVisaIndians /></Layout>}></Route>
         <Route path="/malaysia-visa" element={<Layout><MalaysiaVisaIndians /></Layout>}></Route>
         <Route path="/egypt-visa" element={<Layout><EgyptVisaIndians /></Layout>}></Route>
-        {/* <Route path="/vietnam-visa" element={<Layout><VietnamVisaIndians /></Layout>}></Route> */}
-        {/* <Route path="/hongkong-visa" element={<Layout><HongKongVisaIndians /></Layout>}></Route> */}
-        {/* <Route path="/indonesia-visa" element={<Layout><IndonesiaVisaIndians /></Layout>}></Route> */}
+    
         <Route path="/azerbaijan-visa" element={<Layout><AzerbaijanVisaIndians /></Layout>}></Route>
         <Route path="/oman-visa" element={<Layout><OmanVisaIndians /></Layout>}></Route>
         <Route path="/morocco-visa" element={<Layout><MoroccoVisaIndians /></Layout>}></Route>
@@ -234,12 +233,8 @@ const App = () => {
         <Route path="/hongkong-visa" element={<Navigate to="/hong-kong-tourist-visa-for-indians" replace />} />
         <Route path="/vietnam-visa" element={<Navigate to="/vietnam-tourist-visa-for-indians" replace />} />
         <Route path="/indonesia-visa" element={<Navigate to="/indonesia-tourist-visa-for-indians" replace />} />
-<<<<<<< HEAD
-        
+      
         <Route path="/passport-agency-in-bangalore"element={<Navigate to="/passport-agent-in-bangalore" replace />} />
-=======
-
->>>>>>> b7e34e8d6f4818334c811ef51161d26a8adfa53c
 
 
 

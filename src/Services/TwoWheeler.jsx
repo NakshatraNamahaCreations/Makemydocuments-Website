@@ -1381,57 +1381,80 @@ const TwoWheeler = () => {
 
   const faqs = [
     {
-      question: "How many types of bike insurance are there?",
+      question: " How many types of two-wheeler insurance are available in India?",
       answer:
-        "At the time of buying two-wheeler insurance, you will come across two types of policies - Comprehensive and Third Party Liability.",
+        " There are mainly two types of bike insurance – Third-Party Liability Insurance (mandatory by law) and Comprehensive Insurance (covers both own damage and third-party liabilities). Some insurers also offer Multi-Year Insurance for added convenience.",
     },
     {
-      question: "Difference between comprehensive and third-party liability?",
-      answer:
-        "Comprehensive insurance covers both third-party liabilities and damage to your own vehicle, while third-party liability only covers damage caused to others.",
-    },
-    {
-      question:
-        "What are the benefits of buying two-wheeler insurance plans online?",
-      answer:
-        "Buying insurance online is fast, convenient, and cost-effective. You can easily compare policies, avoid paperwork, and receive your policy instantly.",
-    },
-    {
-      question: "What is covered under two-wheeler insurance?",
-      answer:
-        "Two-wheeler insurance typically covers accidental damage, theft, natural disasters, man-made disasters, and third-party liabilities.",
-    },
-    {
-      question: "What's not covered under two-wheeler insurance?",
-      answer:
-        "Damage due to normal wear and tear, mechanical or electrical failure, and accidents while riding under the influence of alcohol are not covered.",
+      question: "What is the difference between comprehensive and third-party bike insurance?",
+answer: (
+  <div>
+    <p>Third-Party Insurance covers damages to another person, vehicle, or property but not your own bike.</p>
+    <p>Comprehensive Insurance covers both third-party liabilities and own damage (accident, theft, fire, or natural disasters).</p>
+  </div>
+)
+
     },
     {
       question:
-        "What is Multi-Year Two-Wheeler Insurance? What are the benefits?",
+        "What is IDV in bike insurance?",
       answer:
-        "Multi-Year Insurance allows you to cover your bike for multiple years in one go, saving you from annual renewals and potential premium hikes.",
+        "IDV stands for Insured Declared Value. It is the maximum amount your insurer will pay if your two-wheeler is stolen or completely damaged. Higher IDV means better coverage but slightly higher premiums.",
     },
     {
-      question: "How much will I get paid for a bike damage claim?",
-      answer:
-        "The compensation depends on the extent of damage, policy terms, and the bike's insured declared value (IDV).",
+      question: "What is not covered under two-wheeler insurance?",
+answer: (
+  <div>
+    <p>Common exclusions include:</p>
+    <ul>
+    <li>Riding without a valid driving license</li>
+    <li>Drunk driving accidents</li>
+    <li>Mechanical/electrical breakdowns</li>
+    <li>Wear and tear of parts</li>
+    <li>Using the bike for illegal activities</li>
+    </ul>
+  </div>
+)
+
     },
     {
-      question: "What are the types of claims in a bike insurance policy?",
+      question: "What is Multi-Year Two-Wheeler Insurance?",
       answer:
-        "The two main types of claims are cashless claims (settled directly with the workshop) and reimbursement claims (you pay first, then get reimbursed).",
+        "Multi-Year Insurance allows you to buy coverage for 2–3 years at once, protecting you from annual premium hikes and avoiding the hassle of yearly renewals.",
     },
     {
       question:
-        "What are the documents which would be required for making a successful claim?",
+        "What happens if my two-wheeler insurance policy expires?",
+      answer:
+        " If your bike insurance is not renewed on time, your vehicle becomes uninsured and illegal to drive. You may face penalties, and you’ll also lose protection against theft or accidents. Renewal after expiry often requires a vehicle inspection.",
+    },
+    {
+      question: "How can I make a bike insurance claim online?",
+    answer: (
+  <div>
+    <p>To file a claim:</p>
+    <ul>
+    
+    <li>Inform your insurer immediately.</li>
+    <li>Submit necessary documents (RC, policy details, claim form, photos of damage).</li>
+    <li>Get inspection done (if required).</li>
+    <li>Once approved, claims are settled directly with the garage (cashless) or reimbursed to you.</li>
+    </ul>
+  </div>
+) 
+    
+    },
+  
+    {
+      question:
+        "Is it better to buy two-wheeler insurance online or offline?",
+      answer:
+        "Buying insurance online is faster, cheaper, and more transparent. You can compare policies instantly, get the best premium, and download your policy immediately. Offline agents often charge extra and involve more paperwork.",
+    },
+    {
+      question: "What are the documents which would be required for making a successful claim",
       answer:
         "To make a successful claim you should submit your driving license, RC book of the bike, insurance document and claim form. In case of third party claim or if the bike is stolen, police FIR is also required.",
-    },
-    {
-      question: "What is IDV?",
-      answer:
-        "IDV is short for Insured Declared Value. It represents the market value of the bike less depreciation based on the bike’s age. IDV is maximum sum insured offered by the policy which represents the maximum liability undertaken by the insurance company to compensate you in case of TCL or theft of the bike.",
     },
     {
       question: "What would happen if the policy is not renewed on time?",
@@ -2802,6 +2825,148 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         )}
       </div>
 
+
+
+<br />
+<br />
+
+
+
+
+      <div
+        className="py-0"
+        style={{ padding: "0", width: "77%", margin: "0 auto" }}
+      >
+        <h3 className="faq-tag-title-h3">
+          <strong>Protect Your Two-Wheeler with Ease – Simple & Stress-Free Insurance Services</strong>
+        </h3>
+        <p style={{ textAlign: "left" }}>
+          Owning a two-wheeler gives you the freedom to ride anywhere, anytime. But with that freedom comes responsibility—keeping your bike legally protected and financially secure. Two-wheeler insurance is not just a legal requirement in India; it’s your safety net against accidents, theft, damages, and third-party liabilities.
+        </p>
+<p style={{ textAlign: "left" }}>
+         At Make My Documents, we make two-wheeler insurance applications simple, fast, and hassle-free. With our 100% online services, you can compare policies, get instant quotes, and download your policy—all from the comfort of your home. 
+        </p>
+        <h5 style={{ textAlign: "left" }}>
+          <strong>Documents Required for Two-Wheeler Insurance</strong>
+        </h5>
+        <p style={{ textAlign: "left" }}>
+         To apply or renew your bike insurance, you’ll need:
+        </p>
+
+        <ul
+          style={{
+            textAlign: "left",
+            paddingLeft: "18px",
+            listStyleType: "disc",
+          }}
+        >
+          <li>Registration Copy (RC) of your two-wheeler</li>
+          <li> Old Policy Details (only if you are renewing)</li>
+   
+        </ul>
+<p style={{ textAlign: "left" }}>
+         That’s it! With these simple documents, our team will help you secure the right policy without confusion or delays.
+        </p>
+        <h5 style={{ textAlign: "left" }}>
+          <strong>How It Works with Make My Documents</strong>
+        </h5>
+        <p style={{ textAlign: "left" }}>
+        Our process is designed to be transparent, quick, and stress-free:
+        </p>
+  <ul
+          style={{
+            textAlign: "left",
+            paddingLeft: "18px",
+            listStyleType: "disc",
+          }}
+        >
+          <li><strong>Register Online – </strong>Enter your basic details on our website.</li>
+          <li><strong>Get Quotation via Email/WhatsApp – </strong>Receive instant quotes from top insurers. </li>
+          <li> <strong>Compare Policies –</strong> Choose the best plan that fits your budget and needs.</li>
+         <li> <strong>Make Payment –</strong> Pay securely online.</li>
+         <li> <strong>Download Your Policy Instantly –</strong> No waiting, no delays—get your e-policy instantly. </li>
+        </ul>
+
+
+
+
+        <h5 style={{ textAlign: "left" }}>
+          <strong>Why Buy Two-Wheeler Insurance Online?</strong>
+        </h5>
+
+         <p style={{ textAlign: "left" }}>
+        Buying your bike insurance online with Make My Document comes with several benefits:
+        </p>
+        <ul
+          style={{
+            textAlign: "left",
+            paddingLeft: "18px",
+            listStyleType: "disc",
+          }}
+        >
+          <li><strong>Instant Comparison –</strong> View multiple policy options at once.</li>
+          <li><strong>Best Premium Rates –</strong> Save money with competitive quotes.</li>
+          <li><strong>Paperless Process –</strong> No physical visits, no long forms.</li>
+          <li><strong>24/7 Support –</strong> We’re always available to guide you.</li>
+          <li><strong>Instant Policy Download –</strong> Ride worry-free without waiting for documents.</li> 
+      
+        </ul>
+        <h5 style={{ textAlign: "left" }}>
+          <strong> Types of Two-Wheeler Insurance</strong>
+        </h5>
+        <p style={{ textAlign: "left" }}>
+        When choosing an insurance plan, it’s important to know your options:
+        </p>
+
+         <ul
+          style={{
+            textAlign: "left",
+            paddingLeft: "18px",
+            listStyleType: "disc",
+          }}
+        >
+          <li><strong>Third-Party Liability Insurance –</strong>Mandatory by law, it covers damages caused to another person, vehicle, or property.</li>
+          <li><strong>Comprehensive Insurance –</strong>Provides complete coverage, including damage to your own two-wheeler, theft, fire, natural calamities, and third-party liabilities.</li>
+          <li><strong>Multi-Year Insurance –</strong> Save time and money by buying coverage for multiple years in one go.</li>
+         
+        </ul>
+
+           <h5 style={{ textAlign: "left" }}>
+          <strong>Why Choose to Make My Documents?</strong>
+        </h5>
+        <p style={{ textAlign: "left" }}>
+       There are plenty of agents and websites out there, but here’s why thousands trust Make My Document:
+        </p>
+           <ul
+          style={{
+            textAlign: "left",
+            paddingLeft: "18px",
+            listStyleType: "disc",
+          }}
+        >
+          <li>Transparent pricing with no hidden charges</li>
+          <li>Fast and 100% online process</li>
+          <li>Wide range of insurers to compare</li>
+          <li>Expert guidance at every step</li>
+         <li>Hassle-free claim support when needed</li>
+        </ul>
+         <p style={{ textAlign: "left" }}>
+       With us, protecting your two-wheeler is easier than ever.
+        </p>
+
+        <h5 style={{ textAlign: "left" }}>
+          <strong>Your Bike Insurance Today</strong>
+        </h5>
+        <p style={{ textAlign: "left" }}>
+       Don’t wait until your policy expires or an unexpected accident occurs. Secure your two-wheeler today with Make My Documents and enjoy stress-free rides knowing you’re protected.
+        </p>
+      </div>
+
+
+
+
+
+
       {/* FAQ Section */}
       <div
         className="faq-section"
@@ -2884,6 +3049,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       </div>
       <br/>
     </div>
+
+    
+      <br />
+    
   </>
   );
 };
