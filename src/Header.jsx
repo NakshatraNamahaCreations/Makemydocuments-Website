@@ -123,10 +123,7 @@ const Header = ({className}) => {
           <PoliceIcon className="me-2" />
           Police Verification
         </Link>
-        <Link className="dropdown-item" to="/food-license" onClick={() => handleDropdownClick("/food-license")}>
-          <FoodLicenseIcon className="me-2" />
-          Food License (FSSAI)
-        </Link>
+       
         <Link className="dropdown-item" to="/msme-registration" onClick={() => handleDropdownClick("/msme-registration")}>
           <MSMEIcon className="me-2" />
           MSME Certificate
