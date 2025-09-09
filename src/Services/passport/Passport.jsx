@@ -1527,15 +1527,7 @@ const [leadId,setLeadId]=useState();
   const faqs = [
     {
       question: "Who qualifies for an Indian passport?",
-      // answer: (
-      //   <ul style={{ listStyleType: 'disc' }}>
-      //     <li>Minimizes the conflicts between a tenant and the owner</li>
-      //     <li>Rental/lease agreement acts as an address proof</li>
-      //     <li>Acts as a proof for Bank loans</li>
-      //     <li>Helps in investment & loan</li>
-      //     <li>Vehicle registration</li>
-      //   </ul>
-      // ),
+ 
       answer:
         "You can qualify for Indian citizenship by being born in the country, being born elsewhere but with at least one Indian parent, or by being granted citizenship through a naturalization process. If none of these categories apply you will not be classed as an Indian citizen, and will not be entitled to an Indian passport.",
     },
@@ -3861,7 +3853,701 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         )}
       </div>
 
-      <div
+                    <div className="col-md-12  d-none d-lg-block"
+                                        style={{ padding: "20px", backgroundColor: "#f0f4f8", margin: "10px auto", width: "80%", }}
+                                    >
+                                        <div
+                                            style={{ padding: "20px", backgroundColor: "#f9fafb" }}
+                                        >
+                                            <h4
+                                                style={{
+                                                    color: "#FF6F20",
+                                                    marginBottom: "20px",
+                                                    fontWeight: "bold",
+                                                    fontSize: "24px",
+                                                }}
+                                            >
+                                                Our Client Reviews
+                                            </h4>
+                                            <div
+                                                id="reviewCarousel"
+                                                className="carousel slide"
+                                                data-bs-ride="carousel"
+                                                data-bs-interval="3000"
+                                            >
+                                                <div className="carousel-inner">
+                                                    <div className="carousel-item active">
+                                                        <div className="d-flex justify-content-between">
+                                                            <div
+                                                                style={{
+                                                                    width: "30%",
+                                                                    padding: "20px",
+                                                                    backgroundColor: "#fff",
+                                                                    borderRadius: "8px",
+                                                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                                                    marginRight: "10px",
+                                                                }}
+                                                            >
+                                                                <div style={{ marginBottom: "10px" }}>
+                                                                    <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                                                </div>
+                                                                <p
+                                                                    style={{
+                                                                        color: "#4B5563",
+                                                                        marginBottom: "10px",
+                                                                        fontSize: "14px",
+                                                                    }}
+                                                                > "Sunitha from Make.My.Document is professional, very helpful, and has excellent communication. She made my passport process easy and hassle-free."
+                                                                </p>
+                                                                <div
+                                                                    style={{
+                                                                        display: "flex",
+                                                                        alignItems: "center",
+                                                                        marginTop: "auto",
+                                                                    }}
+                                                                >
+                                                                    <div
+                                                                        style={{
+                                                                            width: "32px",
+                                                                            height: "32px",
+                                                                            borderRadius: "50%",
+                                                                            backgroundColor: "#E5E7EB",
+                                                                            color: "#fff",
+                                                                            fontWeight: "bold",
+                                                                            display: "flex",
+                                                                            justifyContent: "center",
+                                                                            alignItems: "center",
+                                                                            marginRight: "10px",
+                                                                        }}
+                                                                    >
+                                                                        N
+                                                                    </div>
+                                                                    <span
+                                                                        style={{
+                                                                            fontWeight: "bold",
+                                                                            fontSize: "14px",
+                                                                            color: "#374151",
+                                                                        }}
+                                                                    >
+                                                                       Charlspinto Pinto
+
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style={{
+                                                                    width: "30%",
+                                                                    padding: "20px",
+                                                                    backgroundColor: "#fff",
+                                                                    borderRadius: "8px",
+                                                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                                                    marginRight: "10px",
+                                                                }}
+                                                            >
+                                                                <div style={{ marginBottom: "10px" }}>
+                                                                    <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                                                </div>
+                                                                <p
+                                                                    style={{
+                                                                        color: "#4B5563",
+                                                                        marginBottom: "10px",
+                                                                        fontSize: "14px",
+                                                                    }}
+                                                                >
+                                                                    "Very nice service! Understands the needs and provides quick resolution!! Thank you for helping us renew our passport in a day through tatkal"
+                                                                </p>
+                                                                <div
+                                                                    style={{
+                                                                        display: "flex",
+                                                                        alignItems: "center",
+                                                                        marginTop: "auto",
+                                                                    }}
+                                                                >
+                                                                    <div
+                                                                        style={{
+                                                                            width: "32px",
+                                                                            height: "32px",
+                                                                            borderRadius: "50%",
+                                                                            backgroundColor: "#E5E7EB",
+                                                                            color: "#fff",
+                                                                            fontWeight: "bold",
+                                                                            display: "flex",
+                                                                            justifyContent: "center",
+                                                                            alignItems: "center",
+                                                                            marginRight: "10px",
+                                                                        }}
+                                                                    >
+                                                                        R
+                                                                    </div>
+                                                                    <span
+                                                                        style={{
+                                                                            fontWeight: "bold",
+                                                                            fontSize: "14px",
+                                                                            color: "#374151",
+                                                                        }}
+                                                                    >
+                                                                      Rekha Naveen
+
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style={{
+                                                                    width: "30%",
+                                                                    padding: "20px",
+                                                                    backgroundColor: "#fff",
+                                                                    borderRadius: "8px",
+                                                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                                                }}
+                                                            >
+                                                                <div style={{ marginBottom: "10px" }}>
+                                                                    <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                                                </div>
+                                                                <p
+                                                                    style={{
+                                                                        color: "#4B5563",
+                                                                        marginBottom: "10px",
+                                                                        fontSize: "14px",
+                                                                    }}
+                                                                >
+                                                                    "helped me to get the passport I would like to strongly recommend to the make my documents, thank you so much make my documents team"
+                                                                </p>
+                                                                <div
+                                                                    style={{
+                                                                        display: "flex",
+                                                                        alignItems: "center",
+                                                                        marginTop: "auto",
+                                                                    }}
+                                                                >
+                                                                    <div
+                                                                        style={{
+                                                                            width: "32px",
+                                                                            height: "32px",
+                                                                            borderRadius: "50%",
+                                                                            backgroundColor: "#E5E7EB",
+                                                                            color: "#fff",
+                                                                            fontWeight: "bold",
+                                                                            display: "flex",
+                                                                            justifyContent: "center",
+                                                                            alignItems: "center",
+                                                                            marginRight: "10px",
+                                                                        }}
+                                                                    >
+                                                                        S
+                                                                    </div>
+                                                                    <span
+                                                                        style={{
+                                                                            fontWeight: "bold",
+                                                                            fontSize: "14px",
+                                                                            color: "#374151",
+                                                                        }}
+                                                                    >
+                                                                       kumar harish
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="carousel-item">
+                                                        <div className="d-flex justify-content-between">
+                                                            <div
+                                                                style={{
+                                                                    width: "30%",
+                                                                    padding: "20px",
+                                                                    backgroundColor: "#fff",
+                                                                    borderRadius: "8px",
+                                                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                                                    marginRight: "10px",
+                                                                }}
+                                                            >
+                                                                <div style={{ marginBottom: "10px" }}>
+                                                                    <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                                                </div>
+                                                                <p
+                                                                    style={{
+                                                                        color: "#4B5563",
+                                                                        marginBottom: "10px",
+                                                                        fontSize: "14px",
+                                                                    }}
+                                                                >
+                                                                    "Makemy Documents service is excellent! I received my documents well before the expected time. Their professionalism and prompt delivery truly impressed me. I strongly recommend their services to others!"
+                                                                </p>
+                                                                <div
+                                                                    style={{
+                                                                        display: "flex",
+                                                                        alignItems: "center",
+                                                                        marginTop: "auto",
+                                                                    }}
+                                                                >
+                                                                    <div
+                                                                        style={{
+                                                                            width: "32px",
+                                                                            height: "32px",
+                                                                            borderRadius: "50%",
+                                                                            backgroundColor: "#E5E7EB",
+                                                                            color: "#fff",
+                                                                            fontWeight: "bold",
+                                                                            display: "flex",
+                                                                            justifyContent: "center",
+                                                                            alignItems: "center",
+                                                                            marginRight: "10px",
+                                                                        }}
+                                                                    >
+                                                                        M
+                                                                    </div>
+                                                                    <span
+                                                                        style={{
+                                                                            fontWeight: "bold",
+                                                                            fontSize: "14px",
+                                                                            color: "#374151",
+                                                                        }}
+                                                                    >
+                                                                       Gangadhar S Poojary
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style={{
+                                                                    width: "30%",
+                                                                    padding: "20px",
+                                                                    backgroundColor: "#fff",
+                                                                    borderRadius: "8px",
+                                                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                                                }}
+                                                            >
+                                                                <div style={{ marginBottom: "10px" }}>
+                                                                    <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                                                </div>
+                                                                <p
+                                                                    style={{
+                                                                        color: "#4B5563",
+                                                                        marginBottom: "10px",
+                                                                        fontSize: "14px",
+                                                                    }}
+                                                                >
+                                                                    "Thanks to make my documents team and especially suneetha , to help me in getting passport, perfect date fix and got by 30 days thanks"
+                                                                </p>
+
+                                                                <div
+                                                                    style={{
+                                                                        display: "flex",
+                                                                        alignItems: "center",
+                                                                        marginTop: "auto",
+                                                                    }}
+                                                                >
+                                                                    <div
+                                                                        style={{
+                                                                            width: "32px",
+                                                                            height: "32px",
+                                                                            borderRadius: "50%",
+                                                                            backgroundColor: "#E5E7EB",
+                                                                            color: "#fff",
+                                                                            fontWeight: "bold",
+                                                                            display: "flex",
+                                                                            justifyContent: "center",
+                                                                            alignItems: "center",
+                                                                            marginRight: "10px",
+                                                                        }}
+                                                                    >
+                                                                        K
+                                                                    </div>
+                                                                    <span
+                                                                        style={{
+                                                                            fontWeight: "bold",
+                                                                            fontSize: "14px",
+                                                                            color: "#374151",
+                                                                        }}
+                                                                    >
+                                                                        Vishwa
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style={{
+                                                                    width: "30%",
+                                                                    padding: "20px",
+                                                                    backgroundColor: "#fff",
+                                                                    borderRadius: "8px",
+                                                                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                                                }}
+                                                            >
+                                                                <div style={{ marginBottom: "10px" }}>
+                                                                    <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                                                                </div>
+                                                                <p
+                                                                    style={{
+                                                                        color: "#4B5563",
+                                                                        marginBottom: "10px",
+                                                                        fontSize: "14px",
+                                                                    }}
+                                                                >
+                                                                    "Make My Documents team made the entire process so simple and stress-free. I got my passport much earlier than expected. Truly reliable and highly recommended!"
+                                                                </p>
+                                                                <div
+                                                                    style={{
+                                                                        display: "flex",
+                                                                        alignItems: "center",
+                                                                        marginTop: "auto",
+                                                                    }}
+                                                                >
+                                                                    <div
+                                                                        style={{
+                                                                            width: "32px",
+                                                                            height: "32px",
+                                                                            borderRadius: "50%",
+                                                                            backgroundColor: "#E5E7EB",
+                                                                            color: "#fff",
+                                                                            fontWeight: "bold",
+                                                                            display: "flex",
+                                                                            justifyContent: "center",
+                                                                            alignItems: "center",
+                                                                            marginRight: "10px",
+                                                                        }}
+                                                                    >
+                                                                          R
+                                                                    </div>
+                                                                    <span
+                                                                        style={{
+                                                                            fontWeight: "bold",
+                                                                            fontSize: "14px",
+                                                                            color: "#374151",
+                                                                        }}
+                                                                    >
+                                                                      Anjali R
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {/* Carousel Controls */}
+                                                <button
+                                                    className="carousel-control-prev"
+                                                    type="button"
+                                                    data-bs-target="#reviewCarousel"
+                                                    data-bs-slide="prev"
+                                                    style={{
+                                                        width: "40px",
+                                                        height: "40px",
+                                                        top: "45%",
+                                                        left: "-30px",
+                                                        backgroundColor: "#fff",
+                                                        borderRadius: "50%",
+                                                        boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                                                        border: "none",
+                                                    }}
+                                                >
+                                                    <span
+                                                        className="carousel-control-prev-icon"
+                                                        aria-hidden="true"
+                                                        style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                                                    ></span>
+                                                    <span className="visually-hidden">Previous</span>
+                                                </button>
+
+                                                <button
+                                                    className="carousel-control-next"
+                                                    type="button"
+                                                    data-bs-target="#reviewCarousel"
+                                                    data-bs-slide="next"
+                                                    style={{
+                                                        width: "40px",
+                                                        height: "40px",
+                                                        top: "45%",
+                                                        right: "-30px",
+                                                        backgroundColor: "#fff",
+                                                        borderRadius: "50%",
+                                                        boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                                                        border: "none",
+                                                    }}
+                                                >
+                                                    <span
+                                                        className="carousel-control-next-icon"
+                                                        aria-hidden="true"
+                                                        style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                                                    ></span>
+                                                    <span className="visually-hidden">Next</span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                         </div>
+                                            {window.innerWidth <= 768 && (
+                                        <div style={{ padding: "20px", backgroundColor: "#f0f4f8" }} className="d-block d-lg-none">
+                                            <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+                                                <h4
+                                                    style={{
+                                                        color: "#007bff",
+                                                        marginBottom: "20px",
+                                                        fontWeight: "bold",
+                                                        fontSize: "22px",
+                                                        textAlign: "center",
+                                                    }}
+                                                >
+                                                    Our Client Reviews
+                                                </h4>
+
+                                                <div
+                                                    id="mobileReviewCarousel"
+                                                    className="carousel slide"
+                                                    data-bs-ride="carousel"
+                                                    data-bs-interval="4000"
+                                                >
+                                                    <div className="carousel-inner">
+                                                        {[
+                                                            {
+                                                                name: "Charlspinto Pinto",
+                                                                initial: "V",
+                                                                review:
+                                                                    "Sunitha from Make.My.Document is professional, very helpful, and has excellent communication. She made my passport process easy and hassle-free",
+                                                            },
+                                                            {
+                                                                name: "Rekha Naveen",
+                                                                initial: "H",
+                                                                review:
+                                                                    "Very nice service! Understands the needs and provides quick resolution!! Thank you for helping us renew our passport in a day through tatkal",
+                                                            },
+                                                             {
+                                                                name: "kumar harish",
+                                                                initial: "K",
+                                                                review:
+                                                                    "helped me to get the passport I would like to strongly recommend to the make my documents, thank you so much make my documents team",
+                                                            },
+                                                             {
+                                                                name: "Gangadhar S Poojary",
+                                                                initial: "S",
+                                                                review:
+                                                                    "Makemy Documents service is excellent! I received my documents well before the expected time. Their professionalism and prompt delivery truly impressed me. I strongly recommend their services to others!",
+                                                            },
+                                                             {
+                                                                name: "Vishwa",
+                                                                initial: "V",
+                                                                review:
+                                                                    "Thanks to make my documents team and especially suneetha , to help me in getting passport, perfect date fix and got by 30 days thanks",
+                                                            },
+                                                             {
+                                                                name: "Anjali R",
+                                                                initial: "R",
+                                                                review:
+                                                                    "Make My Documents team made the entire process so simple and stress-free. I got my passport much earlier than expected. Truly reliable and highly recommended!",
+                                                            },
+                                                         
+                                                        ].map((item, index) => (
+                                                            <div
+                                                                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                                                                key={index}
+                                                            >
+                                                                <div
+                                                                    style={{
+                                                                        backgroundColor: "#fff",
+                                                                        padding: "15px",
+                                                                        borderRadius: "8px",
+                                                                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                                                                        marginBottom: "10px",
+                                                                    }}
+                                                                >
+                                                                    <div
+                                                                        style={{
+                                                                            color: "#FFAA00",
+                                                                            fontSize: "18px",
+                                                                            marginBottom: "5px",
+                                                                        }}
+                                                                    >
+                                                                        ★★★★★
+                                                                    </div>
+                                                                    <p
+                                                                        style={{
+                                                                            color: "#4B5563",
+                                                                            fontSize: "14px",
+                                                                            marginBottom: "10px",
+                                                                        }}
+                                                                    >
+                                                                        {item.review}
+                                                                    </p>
+                                                                    <div style={{ display: "flex", alignItems: "center" }}>
+                                                                        <div
+                                                                            style={{
+                                                                                width: "32px",
+                                                                                height: "32px",
+                                                                                borderRadius: "50%",
+                                                                                backgroundColor: "#E5E7EB",
+                                                                                display: "flex",
+                                                                                alignItems: "center",
+                                                                                justifyContent: "center",
+                                                                                marginRight: "10px",
+                                                                                fontWeight: "bold",
+                                                                                color: "#000",
+                                                                            }}
+                                                                        >
+                                                                            {item.initial}
+                                                                        </div>
+                                                                        <span
+                                                                            style={{
+                                                                                fontWeight: "bold",
+                                                                                fontSize: "14px",
+                                                                                color: "#374151",
+                                                                            }}
+                                                                        >
+                                                                            {item.name}
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+
+                                                    {/* Optional carousel controls */}
+                                                    <button
+                                                        className="carousel-control-prev"
+                                                        type="button"
+                                                        data-bs-target="#mobileReviewCarousel"
+                                                        data-bs-slide="prev"
+                                                    >
+                                                        <span className="carousel-control-prev-icon" aria-hidden="true" style={{ marginLeft: '-120%' }}></span>
+                                                    </button>
+                                                    <button
+                                                        className="carousel-control-next"
+                                                        type="button"
+                                                        data-bs-target="#mobileReviewCarousel"
+                                                        data-bs-slide="next"
+                                                    >
+                                                        <span className="carousel-control-next-icon" aria-hidden="true" style={{ marginRight: '-80%' }}></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+     
+        <br></br>
+
+             
+        <div style={{   margin: "14px auto",
+          padding: "20px",
+          background: "#FFFFFF",
+          borderRadius: "10px",
+          width: "80%",}}>
+          <h1 className="faq-tag-title-h3">
+            <strong>Comprehensive Passport Services - Make My Documents</strong>
+          </h1>
+          <p style={{textAlign:'left'}}>
+            Do you have plans to travel abroad and require a trustworthy passport agent to indicate the way, then, don't look beyond the Make My Documents. We are a squad of passport agents with great experience and are willingly at your disposal to offer you rapid, effective, and problem-less passport services. No matter if it is your holiday, education abroad, career relocation, or whatsoever, do not hesitate to contact us, and we will make your passport the least of your worries.
+          </p>
+
+          <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Why Choose Our Passport Services?</strong>
+          </h2>
+          <p  style={{textAlign:'left'}}>
+          
+          We at Make My Documents, value the significance that an up-to-date passport has for travels out of the country. Our squad specializes in handling diverse passport assignments that will be exactly up to your expectations, like:
+
+          </p>
+
+          <p  style={{textAlign:'left'}}>
+            <strong>New Passport Applications:</strong> Are you going to live in another country? Just with our help, you will manage to submit a new passport application without any mistakes.
+          </p>
+          <p  style={{textAlign:'left'}}>
+            <strong>Passport Renewals:</strong> Is your passport about to expire? Our quick passport renewal services will enable you to take off as planned without any delays.
+          </p>
+          <p style={{textAlign:'left'}}>
+            <strong>Passport Corrections:</strong> Are there incorrect details in your passport which need to be corrected? We do passport correction work swiftly so that you have no problems when traveling.
+          </p>
+          <p  style={{textAlign:'left'}}>
+            <strong>Lost or Stolen Passport Replacement:</strong> In case you have lost or had your passport stolen, we will support you step by step until you receive a replacement.
+          </p>
+          <p  style={{textAlign:'left'}}>
+            <strong>Name Change on Passport:</strong> Has your name changed recently? We help you change your passport to your new name.
+          </p>
+          <p  style={{textAlign:'left'}}>
+            <strong>Child Passport Applications:</strong> Are you planning to travel with your children? We show you all the necessary steps to get a child’s passport.
+          </p>
+          <p  style={{textAlign:'left'}}>
+            <strong>Passport Expedite Services:</strong> Do you need your passport as soon as possible? Our rushed passport services allow you to get your passport without delay.
+          </p>
+
+          <h3  style={{textAlign:'left', fontSize:"20px"}}>
+            <strong> Expertise You Can Rely On</strong>
+          </h3>
+          <p  style={{textAlign:'left'}}>
+            Understanding the current passport requirements and regulations can be quite a task. The skilled team of passport agents is constantly updated with the newest changes so that your application complies with all the requirements. We make sure each and every detail of the application process is correct, from your completed forms to the delivery of your application at the passport office.
+          </p>
+
+          <h3  style={{textAlign:'left', fontSize:"20px"}}>
+            <strong>Exceptional Customer Service</strong>
+          </h3>
+          <p  style={{textAlign:'left'}}>
+           We at Make My Documents, are committed to providing the best customer service possible. We recognize that applying for a passport may be complicated. That is why we provide our help and support to you at every step of the way, without taking half your breath or patience. The regular check-ups and support that we provide during the application process, confirm your easy-walking right from the beginning to the end.
+          </p>
+
+          <h3  style={{textAlign:'left', fontSize:"20px"}}>
+            <strong>Fast and Efficient Turnaround Times</strong>
+          </h3>
+          <p  style={{textAlign:'left'}}>
+           We understand that when it comes to obtaining a passport, the clock is ticking. Our short waiting times mean that as soon as possible, you can be holding your passport, hence planning your trip will be what you should turn your attention to. Be it a vacation prepared for in the near future, a business trip abroad, or any other reason that requires a passport; we are fully committed to facilitating the processing of your viaje.
+          </p>
+
+          <h3  style={{textAlign:'left',fontSize:"20px"}}>
+            <strong>Competitive Pricing</strong>
+          </h3>
+          <p  style={{textAlign:'left'}}>
+           Getting a passport should not be the reason that your account gets overdrawn. At Make My Documents, we provide pricing for passport services at competitive rates. We adhere to the principle of offering high-quality services at reasonably priced rates, on the condition that our clients get their money's worth.
+          </p>
+           <p  style={{textAlign:'left'}}>
+           If you require passport services, please get in touch with Make My Documents. The members of our staff who have expertise and are well equipped with the right information are on standby to offer you the assistance you require for your next international adventure. Do not procrastinate and come along to make a booking. It is the first step that takes one to the accomplishment of the passport.
+          </p>
+ <h2  className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Different Passport types in India: An overview that covers all the grounds for a smooth application process</strong>
+          </h2>
+    <p  style={{textAlign:'left'}}>
+           Do you want to know how to apply for an Indian passport? The various kinds of passports are so confusing, and the application process is hard to grasp. With Make My Documentation, we make the process a breeze for you, from the start until the end of it, with no hassles at all. Personal, business, or diplomatic travel — we accommodate them all. Check out the distinctions among the different types of Indian passports.
+          </p>
+          <h3  style={{textAlign:'left',fontSize:"20px"}}>
+            <strong>Ordinary Passport (Blue Passport)</strong>
+          </h3>
+            <p  style={{textAlign:'left'}}>
+           Besides a blue passport, the Indian citizens are usually handed the Ordinary Passport, and it is the most frequent type of passport. It is the easiest type of foreign travel, including tours, businessmen, cultural and educational exchanges. It is valid for 10 years and consequently is quite user-friendly for frequent fliers.
+          </p>
+          <p style={{textAlign:'left'}}>
+            <strong>Main attributes:</strong>
+          </p>
+          <ul>
+            <li>Traveling is the main reason it is adapted to.</li>
+              <li>Last for 10 years.</li>
+                <li>Can be renewed when it expires.</li>
+                  <li>Official Passport (White Passport)</li>
+          </ul>
+           <p style={{textAlign:'left'}}>
+          The White Passport or Official Passport is assigned to those who, as representatives of the Indian government, have to travel abroad to take care of the official work. It is a government employee, an ambassador, or a delegate who attends an international conference.
+          </p>
+
+          <p style={{textAlign:'left'}}>
+            <strong>Main attributes:</strong>
+          </p>
+          <ul>
+            <li>It is a passport for official government travel only.</li>
+              <li>Depending on the time of the task, the validity varies.</li>
+                <li>The application process is easy through government channels.</li>
+                  <li>Diplomatic Passport (Maroon Passport)</li>
+          </ul>
+           <p style={{textAlign:'left'}}>
+          Indian diplomats, consular staff, and their family members use the Diplomatic Passport. It is a passport that makes diplomatic duties easier and provides certain privileges and immunities while in a foreign country.
+          </p>
+          <p style={{textAlign:'left'}}>
+            <strong>Main attributes:</strong>
+          </p>
+          <ul>
+            <li>Only for diplomats and consular officials.</li>
+              <li>It gives diplomatic immunity and privileges along with it.</li>
+                <li>The validity of the passport is equal to the duration of the diplomatic mission.</li>
+          </ul>
+           <p style={{textAlign:'left'}}>
+          The issues and troubles one has to face to have an Indian passport are known by Make My Documents. Our expert team is always ready to assist and guide you in the whole smooth and effective process of the application form.
+          </p>
+        </div>
+      </div>
+
+
+
+       <div
         className="faq-section"
         style={{
           margin: "14px auto",
@@ -3939,211 +4625,13 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             </div>
           ))}
         </div>
-        <br></br>
-        <>
-          <h3 className="faq-tag-title-h3">
-            <strong>Comprehensive Passport Services - Make My Documents</strong>
-          </h3>
-          <p style={{textAlign:'left'}}>
-            Are you planning an international journey and need a reliable
-            passport agent to help you navigate the process? Look no further
-            than <strong>Make My Documents</strong>. Our team of experienced
-            passport agents is dedicated to providing you with fast, efficient,
-            and hassle-free passport services. Whether you're planning a
-            vacation, studying abroad, or relocating to another country, we are
-            here to assist you in obtaining your passport quickly and easily.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Why Choose Our Passport Services?</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            At <strong>Make My Documents</strong>, we understand the importance
-            of having a valid passport for international travel. Our team
-            specializes in a wide range of passport services to meet your needs,
-            including:
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>New Passport Applications:</strong> Starting a new chapter
-            abroad? We help you get your new passport application right the
-            first time.
-          </p>
-          <p  style={{textAlign:'left'}}>
-            <strong>Passport Renewals:</strong> Is your passport nearing its
-            expiration date? We offer swift passport renewal services to ensure
-            your travel plans remain uninterrupted.
-          </p>
-          <p style={{textAlign:'left'}}>
-            <strong>Passport Corrections:</strong> Need to correct errors in
-            your passport? We handle passport corrections efficiently to prevent
-            any travel complications.
-          </p>
-          <p  style={{textAlign:'left'}}>
-            <strong>Lost or Stolen Passport Replacement:</strong> If you've lost
-            your passport or it has been stolen, we can help you navigate the
-            process of getting a replacement.
-          </p>
-          <p  style={{textAlign:'left'}}>
-            <strong>Name Change on Passport:</strong> Have you changed your name
-            recently? We assist with updating your passport to reflect your new
-            name.
-          </p>
-          <p  style={{textAlign:'left'}}>
-            <strong>Child Passport Applications:</strong> Traveling with
-            children? We guide you through the specific requirements for
-            obtaining a child’s passport.
-          </p>
-          <p  style={{textAlign:'left'}}>
-            <strong>Passport Expedite Services:</strong> Need your passport
-            urgently? Our expedited passport services ensure you receive your
-            passport as quickly as possible.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Expertise You Can Rely On</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            Navigating the latest passport regulations and requirements can be
-            challenging. Our team of experienced passport agents stays
-            up-to-date with the latest changes, ensuring your application meets
-            all necessary criteria. We handle every detail of your passport
-            application process, from filling out the forms accurately to
-            submitting your application to the passport office on your behalf.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Exceptional Customer Service</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            At <strong>Make My Documents</strong>, we pride ourselves on
-            providing exceptional customer service. We understand that the
-            passport application process can be overwhelming, and we are here to
-            make it as easy and stress-free as possible. Our personalized
-            guidance and support throughout the application process ensure that
-            you have a seamless experience from start to finish.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Fast and Efficient Turnaround Times</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            We know that time is of the essence when it comes to obtaining a
-            passport. Our fast turnaround times mean you can have your passport
-            in hand as soon as possible, allowing you to focus on planning your
-            trip. Whether you need a passport for an upcoming vacation, a
-            business trip, or any other reason, we work diligently to expedite
-            your application.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Competitive Pricing</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            Obtaining a passport shouldn’t break the bank. At{" "}
-            <strong>Make My Documents</strong>, we offer competitive pricing for
-            all our passport services. We believe in providing high-quality
-            services at affordable rates, ensuring that you receive the best
-            value for your money.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            If you need passport services, contact{" "}
-            <strong>Make My Documents</strong>. Our experienced agents are ready
-            to help you embark on your next international adventure. Schedule an
-            appointment today and take the first step towards obtaining your
-            passport.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>
-              Types of Indian Passports: Your Comprehensive Guide to Easy
-              Applications
-            </strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            Are you looking to apply for an Indian passport? Navigating through
-            the various types of passports and understanding the application
-            process can be daunting. At <strong>Make My Documents</strong>, we
-            simplify the process for you, ensuring a hassle-free experience from
-            start to finish. Whether you need a passport for personal travel,
-            business trips, or diplomatic purposes, we’ve got you covered.
-            Here’s everything you need to know about the different types of
-            Indian passports.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Ordinary Passport (Blue Passport)</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            The Ordinary Passport, also known as the Blue Passport, is the most
-            common type issued to Indian citizens. It's ideal for regular
-            international travel, including vacations, business trips, and
-            student exchanges. With a validity of 10 years, it offers
-            convenience for frequent travelers.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Key Features:</strong>
-          </p>
-          <ul>
-            <li>Suitable for general travel purposes</li>
-            <li>Valid for 10 years</li>
-            <li>Available for renewal upon expiry</li>
-          </ul>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Official Passport (White Passport)</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            The Official Passport, or White Passport, is issued to individuals
-            representing the Indian government on official business abroad. This
-            includes government employees, delegates, and officials attending
-            international conferences.
-          </p>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Key Features:</strong>
-          </p>
-          <ul>
-            <li>Issued for official government travel</li>
-            <li>Validity varies based on the assignment duration</li>
-            <li>Streamlined application process through government channels</li>
-          </ul>
-
-          <p  style={{textAlign:'left'}}>
-            <strong>Diplomatic Passport (Maroon Passport)</strong>
-          </p>
-          <p  style={{textAlign:'left'}}>
-            The Diplomatic Passport is reserved for Indian diplomats and
-            consular staff, as well as their families. This passport facilitates
-            diplomatic duties and provides certain privileges and immunities in
-            foreign countries.
-          </p>
-
-          <p style={{textAlign:'left'}} >
-            <strong>Key Features:</strong>
-          </p>
-          <ul style={{textAlign:'left'}}>
-            <li>Exclusively for diplomats and consular officials</li>
-            <li>Offers diplomatic immunity and privileges</li>
-            <li>
-              Validity aligns with the tenure of the diplomatic assignment
-            </li>
-          </ul>
-
-          <p style={{textAlign:'left'}}>
-            At <strong>Make My Documents</strong>, we understand the
-            complexities involved in obtaining an Indian passport. Our expert
-            team is dedicated to providing you with personalized assistance,
-            ensuring a smooth and efficient application process.
-          </p>
-        </>
-      </div>
     </div>
+    
     </>
   );
-};
+};  <p  style={{textAlign:'left'}}>
+           
+          </p>
 
 const styles = {
   paymentSummary: {

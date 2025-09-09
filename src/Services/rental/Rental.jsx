@@ -864,60 +864,54 @@ useLayoutEffect(() => {
   };
   const faqs = [
     {
-      question: "Benefits of Rental Agreement?",
-      answer: (
-        <ul style={{ listStyleType: "disc" }}>
-          <li>Minimizes the conflicts between a tenant and the owner</li>
-          <li>Rental/lease agreement acts as an address proof</li>
-          <li>Acts as a proof for Bank loans</li>
-          <li>Helps in investment & loan</li>
-          <li>Vehicle registration</li>
-        </ul>
-      ),
+      question: "What is the validity of a rental agreement in Bangalore?",
+      answer:  "Most rental agreements are made for 11 months to avoid registration charges. They can be renewed as needed.",
     },
     {
-      question: "Difference between comprehensive and third-party liability?",
+      question: "Do I need to visit any office to get a rental agreement?",
       answer:
-        "Comprehensive insurance covers both third-party liabilities and damage to your own vehicle, while third-party liability only covers damage caused to others.",
+        "No. Our process is completely online. The agreement is delivered to your doorstep.",
     },
     {
-      question: "What is the different between rental/lease agreement?",
+      question: "WWhat is the value of stamp paper required?",
       answer:
-        "Leasing is defined as a contract between lessor and lessee whereby the lessor buys the asset and lets the lessee use the asset for a particular period. Renting is to allow the other party to occupy or use the asset for a short time, in return for a fixed payment.",
+        "The value of stamp paper depends on the rent, deposit, and property details. Commonly used values are Rs. 20, Rs. 50, or Rs. 100.",
     },
     {
-      question: "what is stamp paper?",
+      question: "Do I need notarization for a rental agreement?",
       answer:
-        "Stamp papers which are used for execution of documents are called as Non-Judicial Stamp Papers. ... Stamp Duty paid in respect of Non-Judicial Stamp Paper is paid under The Indian Stamp Act, 1899 and Stamp Duty paid in respect of Judicial Stamp Paper is paid under the Court Fees Act, 1870",
+        "Notarization is not mandatory but is often recommended for added legal validity.",
     },
     {
-      question: "Do I need to visit any office to get Rental agreement?",
+      question: "How long does it take to get the final agreement?",
       answer:
-        "No its completely online process once you registered in our website we create draft and it will be print on stamp paper, and it get dispatched to address.",
+        "You will receive the draft within 60 minutes and the final stamped agreement within 1–2 working days.",
+    },
+
+
+    {
+      question: "Can I make changes to the agreement before it is finalized?",
+      answer: "Yes, you can review the draft and request edits before the final stamping and delivery.",
     },
     {
-      question: "How will I get my Rental agreement?",
-      answer: "It will get dispatched through courier.",
-    },
-    {
-      question: "What is the value of stamp paper for Rental agreement?",
+      question: "Is police verification mandatory for tenants in Bangalore?",
       answer:
-        "The Rental/Lease agreement must be printed on a Non-Judicial Stamp Paper with a value of Rs.100/- or more.",
+        "Police verification is not mandatory but highly recommended to ensure safety and avoid legal issues.",
     },
     {
-      question: "What is validity of Rental agreement?",
+      question: "Can I create a rental agreement for commercial properties?",
       answer:
-        "In the usual practice, a landlord and a tenant make a rent agreement for a period of 11 months, with an option for a periodic renewal.",
+        "Yes, we offer agreements for both residential and commercial properties as per your requirements.",
     },
     {
-      question: "what is Notarized Rental agreement?",
+      question: "What documents are required from the landlord and tenant?",
       answer:
-        "A notarized agreement is a document that has been marked with a notary stamp, which indicates that the signature on the document is legal. A notary officers is the witness when you sign and then places the stamp near your signature.",
+        "You’ll need Aadhaar, PAN, and passport-sized photos of both parties along with property details.",
     },
     {
-      question: "Is agreement required to be notarised?",
+      question: "Can I get a soft copy of the agreement?",
       answer:
-        "A contract typically does not have to be notarized. A notary public  provides an acknowledgment that the signature appearing on the document is that of the person whose signature it purports to be. There is a requirement that some documents be notarized, such as a real property deed.",
+        "Yes, a soft copy of the agreement will be emailed to you for your records before delivery.",
     },
   ];
 
@@ -1296,7 +1290,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
      Apply Now
   </button>
 </div>
+         
 
+
+            
         {/* Modal Popup */}
         {showPopup && (
           <div  className="popupstyle-rental"
@@ -2957,6 +2954,120 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         )}
       </div>
 
+      <br /> <br />
+        <div style={{   margin: "14px auto",
+          padding: "20px",
+          background: "#FFFFFF",
+          borderRadius: "10px",
+          width: "80%",}}>
+          <h1 className="faq-tag-title-h3">
+            <strong>Online Rental Agreement in Bangalore</strong>
+          </h1>
+          <p style={{textAlign:'left'}}>
+            Renting a home or commercial property in Bangalore can be an exciting journey, but it also comes with important legal formalities. One of the most crucial steps is creating a rental agreement that clearly defines the terms and conditions between the landlord and the tenant. Without a proper agreement, disputes may arise, and both parties may face legal and financial risks.
+          </p>
+ <p  style={{textAlign:'left'}}>
+           At Make My Documents, we simplify the entire process of preparing an online rental agreement in Bangalore. Our service ensures that you receive a legally valid, professionally drafted rental agreement without the stress of visiting government offices or lawyers. With our quick, affordable, and transparent process, you can have your rental agreement ready in just a couple of days.
+            </p>
+          <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>What is a Rental Agreement?</strong>
+          </h2>
+        <p  style={{textAlign:'left'}}>
+           A rental agreement is a legally binding contract between a landlord and a tenant that outlines the terms of renting a property. It defines important aspects such as:
+            </p>
+              <ul>
+         <li> Monthly rent amount and payment schedule</li>
+           <li>Security deposit details </li>
+            <li>Duration of tenancy (commonly 11 months in Bangalore) </li>
+             <li>Responsibilities of landlord and tenant </li>
+              <li>Maintenance and utility charges </li>
+               <li>Termination or renewal clauses </li>
+          </ul>
+ <p  style={{textAlign:'left'}}>
+           A well-drafted rental agreement protects both parties by providing clarity and preventing disputes. It also serves as valid address proof for tenants in Bangalore, which is often required for banks, schools, and other formal purposes.
+            </p>
+             <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Why Online Rental Agreement in Bangalore?</strong>
+          </h2>
+
+             <p  style={{textAlign:'left'}}>
+           Traditionally, rental agreements were made by visiting lawyers, notary offices, or government offices. This process was time-consuming and involved multiple visits, delays, and unnecessary expenses.
+            </p>
+ <p  style={{textAlign:'left'}}>
+           With online rental agreement services, you can now complete the entire process from the comfort of your home. Here’s why it’s better:
+            </p>
+          <ul>
+          <li><strong> Convenience: </strong> Apply online without visiting any office. </li>
+          <li><strong>Speed: </strong> Draft shared within 60 minutes, agreement delivered in 1–2 working days.</li> 
+          <li><strong>Legal Accuracy: </strong> Drafted by experts, ensuring compliance with Karnataka laws.</li> 
+          <li><strong> Transparency: </strong> No hidden charges—only Rs. 50 booking fee and Rs. 300 drafting fee (plus stamp duty). </li> 
+          <li><strong>Doorstep Delivery: </strong> Get the finalized agreement delivered to your address.</li> 
+          </ul>
+         <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>How Our Rental Agreement Process Works</strong>
+          </h2>
+          <p  style={{textAlign:'left'}}>
+           At Make My Documents, we follow a simple and efficient process to ensure you get your rental agreement quickly:
+            </p>
+             <ul>
+         <li><strong>Register Online –  </strong> Fill out the online form with your details.</li>
+           <li><strong>Drafting – </strong> Our legal team prepares a customized draft agreement.</li>
+            <li><strong>Review Draft – </strong> Receive the draft by email within 60 minutes for approval.</li>
+             <li><strong>Payment – </strong> Pay securely online (Rs. 50 booking + Rs. 300 drafting fee).</li>
+              <li><strong>Doorstep Delivery – </strong> Get your stamped rental agreement delivered within 1–2 working days. </li>
+          </ul>
+ <p  style={{textAlign:'left'}}>
+           This smooth and transparent process makes us one of the most reliable rental agreement service providers in Bangalore.
+            </p>
+  <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Benefits of Our Rental Agreement Service</strong>
+          </h2>
+             <p  style={{textAlign:'left'}}>
+           Choosing Make My Documents for your rental agreement in Bangalore comes with several advantages:
+            </p>
+           <ul>
+         <li> Legally valid and accurate agreements</li>
+           <li> Affordable charges with no hidden costs</li>
+            <li> Quick turnaround time</li>
+             <li> Expert legal drafting</li>
+              <li> Doorstep delivery of final document</li>
+               <li>Custom clauses for rent, deposit, maintenance, pets, and more</li>
+                <li>Residential and commercial rental agreements</li>
+          </ul>
+           <p  style={{textAlign:'left'}}>
+           Whether you are a tenant moving into an apartment or a landlord renting out your property, our service ensures that both sides are legally protected.
+            </p>
+
+              <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Why Choose Us in Bangalore?</strong>
+          </h2>
+           <p  style={{textAlign:'left'}}>
+       Bangalore is one of India’s fastest-growing cities, with thousands of rental transactions happening every day. From professionals renting apartments in Whitefield and Koramangala to students looking for PGs in Jayanagar or landlords leasing commercial spaces in MG Road, the demand for quick and reliable rental agreements is constant.
+            </p>
+            <p  style={{textAlign:'left'}}>
+       At Make My Documents, we understand the unique needs of Bangalore residents and provide fast, affordable, and legally compliant rental agreement services. Our commitment to transparency, accuracy, and customer satisfaction makes us a trusted choice for thousands of clients across the city.
+            </p>
+              <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Apply Now – Get Your Rental Agreement Online</strong>
+          </h2>
+           <p  style={{textAlign:'left'}}>
+       If you are a tenant or landlord in Bangalore, don’t waste time with complicated paperwork or unreliable services. With Make My Documents, your rental agreement is just a few clicks away.
+            </p>
+           <ul>
+         <li> Quick Online Application</li>
+           <li> Expert Legal Drafting</li>
+            <li>Affordable Pricing </li>
+           <li> Doorstep Delivery</li>
+
+          </ul>
+  <p  style={{textAlign:'left'}}>
+       Apply today and experience the easiest way to create a rental agreement in Bangalore. Let us handle the legalities so you can enjoy a stress-free rental experience.
+            </p>
+        </div>
+   
+
+
+
       <div
         className="faq-section"
         style={{
@@ -3036,76 +3147,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
           ))}
         </div>
         <br></br>
-        <>
-        <p style={{ textAlign: "left",  fontFamily: "Poppins, sans-serif", }}>
-  Welcome to Make My Documents, your one-stop destination for all your
-  rental agreement needs. We understand that renting a property can be
-  a complex process, which is why we offer a hassle-free solution to
-  help you secure your rental agreement quickly and easily.
-</p>
-
-<p style={{ textAlign: "left" ,  fontFamily: "Poppins, sans-serif",}}>
-  Our team of legal experts has extensive experience in drafting
-  rental agreements that meet all legal requirements. We provide
-  comprehensive rental agreement services, including new rental
-  agreements, rental agreement renewals, and rental agreement
-  amendments. We also offer customized rental agreement solutions
-  tailored to your unique needs.
-</p>
-
-
-
-          <p style={{ textAlign: "left",  fontFamily: "Poppins, sans-serif", }}>
-            At Make My Documents, we take pride in providing exceptional
-            customer service. We understand that your time is valuable, which is
-            why we offer a seamless online rental agreement application process.
-          </p>
-
-          <p style={{ textAlign: "left", fontFamily: "Poppins, sans-serif", }}>
-            Our online rental agreement form allows you to apply from the
-            comfort of your own home, and our team will guide you through every
-            step of the process. Our rental agreement services include all the
-            necessary legal clauses and terms to protect both the landlord and
-            the tenant. We also provide guidance on security deposits, rent
-            payment schedules, and any other special requirements you may have.
-          </p>
-
-          <p style={{ textAlign: "left", fontFamily: "Poppins, sans-serif", }}>
-            Our rental agreement services are competitively priced, so you won't
-            have to break the bank to secure your rental agreement. Plus, our
-            fast turnaround times mean that you can have your rental agreement
-            in hand as soon as possible.
-          </p>
-
-          <p style={{ textAlign: "left", fontFamily: "Poppins, sans-serif", }}>
-            Whether you need a rental agreement for your house, room, or
-            commercial property, Make My Documents has got you covered. We offer
-            e-registration of rental agreements, lease agreements, and notarized
-            rental agreements to suit your specific requirements. Our services
-            also include guidance on stamp duty for rental agreements, rent
-            agreement validity, rental agreement cancellation, and rental
-            agreement renewal.
-          </p>
-
-          <p style={{ textAlign: "left", fontFamily: "Poppins, sans-serif", }}>
-            If you're in need of a rental agreement, look no further than Make
-            My Documents. Contact us today to learn more about our rental
-            agreement services and to schedule an appointment with one of our
-            legal experts. We look forward to helping you secure your rental
-            agreement and enjoy a hassle-free renting experience.
-          </p>
-
-          <p style={{ textAlign: "left", fontFamily: "Poppins, sans-serif", }}>
-            We also ensure that our rental agreement services are compliant with
-            the latest legal and regulatory requirements, giving you peace of
-            mind. Our easy-to-use online platform and step-by-step support make
-            the entire process smooth and efficient. At Make My Documents, we
-            are committed to delivering reliable, transparent, and
-            customer-focused solutions to cater to your rental agreement needs.
-            With our expertise and dedication, you can trust us to simplify your
-            rental agreement process, saving you time and effort.
-          </p>
-        </>
+       
       </div>
     </div>
     </>

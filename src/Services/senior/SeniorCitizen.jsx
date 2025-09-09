@@ -111,9 +111,9 @@ const SeniorCitizen = () => {
   }, [location.pathname]);
 
   useLayoutEffect(() => {
-      document.documentElement.scrollTop = 0;
-      document.body.scrollTop = 0;
-    }, []);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, []);
 
   const [registrationNumber, setSeletedRegistrationNumber] = useState("");
   // const [bloodgroup, setBloodGroup] =useState('');
@@ -159,75 +159,71 @@ const SeniorCitizen = () => {
 
     // Address Validation
     if (!villageTownCity.trim()) {
-        newErrors.villageTownCity = "Address is required.";
+      newErrors.villageTownCity = "Address is required.";
     }
 
     // State Validation
     if (!selectedState.trim()) {
-        newErrors.selectedState = "State is required.";
+      newErrors.selectedState = "State is required.";
     }
 
     // District Validation
     if (!selectedDistrict.trim()) {
-        newErrors.selectedDistrict = "District is required.";
+      newErrors.selectedDistrict = "District is required.";
     }
 
     // Pin Code Validation
     if (!pincode.trim()) {
-        newErrors.pincode = "Pin Code is required.";
+      newErrors.pincode = "Pin Code is required.";
     } else if (!/^\d{6}$/.test(pincode.trim())) {
-        newErrors.pincode = "Pin Code must be exactly 6 digits.";
+      newErrors.pincode = "Pin Code must be exactly 6 digits.";
     }
 
     console.log("Validation Errors (Step 2):", newErrors); // Debugging line
     return newErrors;
-};
+  };
 
+  const validateStep3 = () => {
+    const newErrors = {};
 
-
-const validateStep3 = () => {
-  const newErrors = {};
-
-  // Mobile Number Validation
-  if (!mobileNumber) {
+    // Mobile Number Validation
+    if (!mobileNumber) {
       newErrors.mobileNumber = "Mobile Number is required.";
-  } else if (!/^\d{10}$/.test(mobileNumber)) {
+    } else if (!/^\d{10}$/.test(mobileNumber)) {
       newErrors.mobileNumber = "Mobile Number must be exactly 10 digits.";
-  }
+    }
 
-  // Email ID Validation
-  if (!emailId) {
+    // Email ID Validation
+    if (!emailId) {
       newErrors.emailId = "Email Id is required.";
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailId)) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailId)) {
       newErrors.emailId = "Please enter a valid Email Id.";
-  }
+    }
 
-  return newErrors;
-};
-
+    return newErrors;
+  };
 
   // Navigate steps with validation
   const nextStep = () => {
     let validationErrors = {};
 
     if (currentStep === 1) {
-        validationErrors = validateStep1();
+      validationErrors = validateStep1();
     } else if (currentStep === 2) {
-        validationErrors = validateStep2(); // Ensure this function returns errors
+      validationErrors = validateStep2(); // Ensure this function returns errors
     } else if (currentStep === 3) {
-        validationErrors = validateStep3();
+      validationErrors = validateStep3();
     }
 
     if (Object.keys(validationErrors).length > 0) {
-        setErrors(validationErrors); // Display errors if validation fails
+      setErrors(validationErrors); // Display errors if validation fails
     } else {
-        setErrors({});
-        if (currentStep < 3) {
-            setCurrentStep(currentStep + 1); // Move to the next step only if no errors
-        }
+      setErrors({});
+      if (currentStep < 3) {
+        setCurrentStep(currentStep + 1); // Move to the next step only if no errors
+      }
     }
-};
-
+  };
 
   const prevStep = () => {
     if (currentStep > 1) setCurrentStep(currentStep - 1);
@@ -652,30 +648,52 @@ const validateStep3 = () => {
 
   const faqs = [
     {
-      question: "What is benefits of senior citizen card?",
-      answer: (
-        <ul style={{ listStyleType: "disc" }}>
-          <li>Flight fare concession</li>
-          <li>Railway fair concession</li>
-          <li>Bus pass and bus fare concession (BMTC & KSRTC)</li>
-          <li>Income tax exemption</li>
-          <li>Senior citizen monthly pension</li>
-        </ul>
-      ),
-    },
-    {
-      question: "What is the eligibility criteria of Senior Citizen Card?",
-      answer: "The applicant must be at least 60 years of age.",
-    },
-    {
-      question: "Do I need to visit any office to submit and documents?",
+      question: "Who is eligible for a Senior Citizen Card in India?",
       answer:
-        "No its completely online process you can send your documents through WhatsApp or E-mail.",
+        "Anyone aged 60 years and above can apply for a Senior Citizen Card.",
     },
     {
-      question: "How will I get the senior citizen card?",
+      question: "Can I apply online for a Senior Citizen Card?",
       answer:
-        "Once its approved we will share you and soft copy via email or WhatsApp you can take color printout and laminate it.",
+        "Yes! With Make My Documents, the entire application process is online.",
+    },
+    {
+      question: "What documents are needed for a Senior Citizen Card?",
+      answer:
+        "You’ll need Aadhaar, date of birth proof, address proof, and passport-size photographs.",
+    },
+    {
+      question: "How long does it take to get the Senior Citizen Card?",
+      answer:
+        "It usually takes 7–10 working days once your application is verified.",
+    },
+    {
+      question: "Is the Senior Citizen Card valid across India?",
+      answer: "Yes, it is a nationally recognized identity document.",
+    },
+    {
+      question: "Can family members apply on behalf of senior citizens?",
+      answer:
+        "Absolutely! Family members can apply online for elderly applicants.",
+    },
+    {
+      question: "What are the benefits of a Senior Citizen Card?",
+      answer:
+        "It offers healthcare discounts, travel concessions, pension schemes, and tax benefits.",
+    },
+    {
+      question: "Is there an expiry date for the Senior Citizen Card?",
+      answer: "No, it remains valid for a lifetime unless reissued.",
+    },
+    {
+      question: "How can I track my application status?",
+      answer: "You can track it online through our Make My Documents portal.",
+    },
+    {
+      question:
+        "Why choose Make My Documents over direct government application?",
+      answer:
+        "We provide end-to-end guidance, error-free filing, and doorstep delivery for your convenience.",
     },
   ];
 
@@ -702,7 +720,10 @@ const validateStep3 = () => {
           name="author"
           content="https://makemydocuments.com/senior-citizen-card"
         />
-          <link rel="canonical" href="https://www.makemydocuments.com/senior-citizen-card" />
+        <link
+          rel="canonical"
+          href="https://www.makemydocuments.com/senior-citizen-card"
+        />
         <meta name="rating" CONTENT="General" />
         <meta name="revisit-after" CONTENT="2 days" />
         <meta name="robots" content=" ALL, index, follow" />
@@ -721,16 +742,18 @@ const validateStep3 = () => {
         <meta content="all" name="Scooter" />
         <meta content="ALL" name="WEBCRAWLERS" />
 
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
-      <script>
-        {`
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"
+        ></script>
+        <script>
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-QN4189EDG5');
         `}
-      </script>
+        </script>
 
         <script>
           {`
@@ -769,7 +792,7 @@ const validateStep3 = () => {
         </script>
 
         <script>
-{`!function(e,t,n,s,u,a){
+          {`!function(e,t,n,s,u,a){
   e.twq||(s=e.twq=function(){
     s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
   },s.version='1.1',s.queue=[],u=t.createElement(n),
@@ -777,16 +800,16 @@ const validateStep3 = () => {
   a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
 }(window,document,'script');
 twq('config','onik3');`}
-</script>
+        </script>
 
-<script type="text/javascript">
-{`_linkedin_partner_id = "7447820";
+        <script type="text/javascript">
+          {`_linkedin_partner_id = "7447820";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
-</script>
+        </script>
 
-<script type="text/javascript">
-{`(function(l) {
+        <script type="text/javascript">
+          {`(function(l) {
   if (!l) {
     window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
     window.lintrk.q=[];
@@ -797,12 +820,13 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
   b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
   s.parentNode.insertBefore(b, s);
 })(window.lintrk);`}
-</script>
+        </script>
 
-<noscript dangerouslySetInnerHTML={{
-  __html: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7447820&fmt=gif" />`
-}} />
-
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7447820&fmt=gif" />`,
+          }}
+        />
       </Helmet>
       <div style={{ overflow: "hidden" }}>
         <div
@@ -876,134 +900,190 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         </div>
 
         <div
-  className="content-section"
-  style={{
-    backgroundColor: "#fffff",
-    padding: "30px 15px",
-    borderRadius: "10px",
-    margin: "-1% ",
-    marginLeft:'10%',
-    marginRight: "72%",
-  }}
->
-  <div className="row justify-content-center">
-    <div className="col-12 col-md-8 position-relative d-none d-lg-block">
-      {/* First Section: Senior Citizen Card */}
-      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
-        <div style={{ position: "relative", minWidth: "80px", marginTop:'-95%' }}>
-          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
-          <img
-            src={documentsIcon}
-            alt="Documents Icon"
-            style={{
-              position: "absolute",
-              top: "58%",
-              left: "40%",
-              width:'43%',
-              transform: "translate(-50%, -50%)",
-            }}
-          />
-        </div>
-        <div>
-          <h4 className="desktop-text">Documents Required For Senior Citizen Card</h4>
-          <ul className="desktop-ul">
-            <li>Aadhaar card</li>
-            <li>Blood Report</li>
-            <li>Two Passport size photo</li>
-          </ul>
-        </div>
-      </div>
+          className="content-section"
+          style={{
+            backgroundColor: "#fffff",
+            padding: "30px 15px",
+            borderRadius: "10px",
+            margin: "-1% ",
+            marginLeft: "10%",
+            marginRight: "72%",
+          }}
+        >
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-8 position-relative d-none d-lg-block">
+              {/* First Section: Senior Citizen Card */}
+              <div
+                className="d-flex align-items-center mb-5"
+                style={{ gap: "20px" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    minWidth: "80px",
+                    marginTop: "-95%",
+                  }}
+                >
+                  <img
+                    src={circleIcon}
+                    alt="Circle Background"
+                    className="img-fluid"
+                  />
+                  <img
+                    src={documentsIcon}
+                    alt="Documents Icon"
+                    style={{
+                      position: "absolute",
+                      top: "58%",
+                      left: "40%",
+                      width: "43%",
+                      transform: "translate(-50%, -50%)",
+                    }}
+                  />
+                </div>
+                <div>
+                  <h4 className="desktop-text">
+                    Documents Required For Senior Citizen Card
+                  </h4>
+                  <ul className="desktop-ul">
+                    <li>Aadhaar card</li>
+                    <li>Blood Report</li>
+                    <li>Two Passport size photo</li>
+                  </ul>
+                </div>
+              </div>
 
-      {/* Second Section: How It Works */}
-      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
-        <div style={{ position: "relative", minWidth: "80px",marginTop:'-155%' }}>
-          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
-          <img
-            src={howIcon}
-            alt="How It Works Icon"
-            style={{
-              position: "absolute",
-              top: "58%",
-              left: "40%",
-              width:'43%',
-              transform: "translate(-50%, -50%)",
-            }}
-          />
-        </div>
-        <div>
-          <h4 className="desktop-text">How It Works</h4>
-          <ul className="desktop-ul">
-            <li>Register Online</li>
-            <li>Upload Documents</li>
-            <li>Payment</li>
-            <li>Online Ekyc (Mobile number should be linked with Aadhaar card)</li>
-            <li>Get Delivered</li>
-          </ul>
-        </div>
-      </div>
+              {/* Second Section: How It Works */}
+              <div
+                className="d-flex align-items-center mb-5"
+                style={{ gap: "20px" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    minWidth: "80px",
+                    marginTop: "-155%",
+                  }}
+                >
+                  <img
+                    src={circleIcon}
+                    alt="Circle Background"
+                    className="img-fluid"
+                  />
+                  <img
+                    src={howIcon}
+                    alt="How It Works Icon"
+                    style={{
+                      position: "absolute",
+                      top: "58%",
+                      left: "40%",
+                      width: "43%",
+                      transform: "translate(-50%, -50%)",
+                    }}
+                  />
+                </div>
+                <div>
+                  <h4 className="desktop-text">How It Works</h4>
+                  <ul className="desktop-ul">
+                    <li>Register Online</li>
+                    <li>Upload Documents</li>
+                    <li>Payment</li>
+                    <li>
+                      Online Ekyc (Mobile number should be linked with Aadhaar
+                      card)
+                    </li>
+                    <li>Get Delivered</li>
+                  </ul>
+                </div>
+              </div>
 
-      {/* Third Section: Time Duration */}
-      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
-        <div style={{ position: "relative", minWidth: "80px" , marginTop:'-62%'}}>
-          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
-          <img
-            src={TimeIcon}
-            alt="Time Duration Icon"
-            style={{
-              position: "absolute",
-              top: "58%",
-              left: "40%",
-              width:'43%',
-              transform: "translate(-50%, -50%)",
-            }}
-          />
-        </div>
-        <div>
-          <h4 className="desktop-text">Time Duration</h4>
-          <ul className="desktop-ul">
-            <li>25-30 working days</li>
-          </ul>
-        </div>
-      </div>
+              {/* Third Section: Time Duration */}
+              <div
+                className="d-flex align-items-center mb-5"
+                style={{ gap: "20px" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    minWidth: "80px",
+                    marginTop: "-62%",
+                  }}
+                >
+                  <img
+                    src={circleIcon}
+                    alt="Circle Background"
+                    className="img-fluid"
+                  />
+                  <img
+                    src={TimeIcon}
+                    alt="Time Duration Icon"
+                    style={{
+                      position: "absolute",
+                      top: "58%",
+                      left: "40%",
+                      width: "43%",
+                      transform: "translate(-50%, -50%)",
+                    }}
+                  />
+                </div>
+                <div>
+                  <h4 className="desktop-text">Time Duration</h4>
+                  <ul className="desktop-ul">
+                    <li>25-30 working days</li>
+                  </ul>
+                </div>
+              </div>
 
-      {/* Fourth Section: Charges */}
-      <div className="d-flex align-items-center mb-5" style={{gap: '20px'}}>
-        <div style={{ position: "relative", minWidth: "80px", marginTop:'-77%' }}>
-          <img src={circleIcon} alt="Circle Background" className="img-fluid" />
-          <img
-            src={Price}
-            alt="Price Icon"
-            style={{
-              position: "absolute",
-              top: "58%",
-              left: "40%",
-              width:'43%',
-              transform: "translate(-50%, -50%)",
-            }}
-          />
+              {/* Fourth Section: Charges */}
+              <div
+                className="d-flex align-items-center mb-5"
+                style={{ gap: "20px" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    minWidth: "80px",
+                    marginTop: "-77%",
+                  }}
+                >
+                  <img
+                    src={circleIcon}
+                    alt="Circle Background"
+                    className="img-fluid"
+                  />
+                  <img
+                    src={Price}
+                    alt="Price Icon"
+                    style={{
+                      position: "absolute",
+                      top: "58%",
+                      left: "40%",
+                      width: "43%",
+                      transform: "translate(-50%, -50%)",
+                    }}
+                  />
+                </div>
+                <div>
+                  <h4 className="desktop-text">Charges</h4>
+                  <ul className="desktop-ul">
+                    <li>
+                      <strong>
+                        <del style={{ color: "grey" }}>Rs.350</del> Rs.300
+                      </strong>
+                    </li>
+                    <li>
+                      If you decide to cancel your order after payment, please
+                      note that a cancellation fee of <strong>Rs. 50</strong>{" "}
+                      will apply.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h4 className="desktop-text">Charges</h4>
-          <ul className="desktop-ul">
-            <li>
-              <strong>
-                <del style={{ color: "grey" }}>Rs.350</del> Rs.300
-              </strong>
-            </li>
-            <li>
-              If you decide to cancel your order after payment, please note that
-              a cancellation fee of <strong>Rs. 50</strong> will apply.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-
-{/* mobile view */}
+        {/* mobile view */}
         <div
           className="senior-card-container d-block d-lg-none"
           style={{ marginTop: "-18%" }}
@@ -1152,10 +1232,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
               onClick={openPopup}
               style={{ borderRadius: "0px" }}
             >
-                Apply Now
+              Apply Now
             </button>
           </div>
-
+          <br /> <br />
           {/* Modal Popup */}
           {showPopup && (
             <div
@@ -1395,7 +1475,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                   onChange={(e) => {
                                     const selectedDate = e.target.value;
                                     const year = selectedDate.split("-")[0];
-                              
+
                                     // Validate if the year is exactly 4 digits
                                     if (/^\d{4}$/.test(year)) {
                                       setDob(selectedDate);
@@ -1556,10 +1636,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                               ))}
                             </select>
                             {errors.selectedState && (
-    <span style={{ color: "red" }}>
-        {errors.selectedState}
-    </span>
-)}
+                              <span style={{ color: "red" }}>
+                                {errors.selectedState}
+                              </span>
+                            )}
                           </div>
 
                           {selectedState && (
@@ -1600,10 +1680,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                 ))}
                               </select>
                               {errors.selectedDistrict && (
-    <span style={{ color: "red" }}>
-        {errors.selectedDistrict}
-    </span>
-)}
+                                <span style={{ color: "red" }}>
+                                  {errors.selectedDistrict}
+                                </span>
+                              )}
                             </div>
                           )}
                           {/* Pin Code Input */}
@@ -1853,32 +1933,31 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                         //   SUBMIT
                         // </button>
                         <div className="submit-button-container">
-  <button
-    className="submit-button"
-    onClick={() => {
-      // Perform Step 3 validation
-      const validationErrors = validateStep3();
+                          <button
+                            className="submit-button"
+                            onClick={() => {
+                              // Perform Step 3 validation
+                              const validationErrors = validateStep3();
 
-      // If there are validation errors, show them and prevent submission
-      if (Object.keys(validationErrors).length > 0) {
-        setErrors(validationErrors);
-        return;
-      }
+                              // If there are validation errors, show them and prevent submission
+                              if (Object.keys(validationErrors).length > 0) {
+                                setErrors(validationErrors);
+                                return;
+                              }
 
-      // Clear previous errors if validation passes
-      setErrors({});
-      setError("");
+                              // Clear previous errors if validation passes
+                              setErrors({});
+                              setError("");
 
-      // Proceed with OTP handling and submission
-      handleSendOtp();
-      setShowOtpSection(true);
-      setIsCompleted(true);
-    }}
-  >
-    Submit
-  </button>
-</div>
-
+                              // Proceed with OTP handling and submission
+                              handleSendOtp();
+                              setShowOtpSection(true);
+                              setIsCompleted(true);
+                            }}
+                          >
+                            Submit
+                          </button>
+                        </div>
                       )}
                     </div>
                   </>
@@ -2066,6 +2145,770 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             </div>
           )}
         </div>
+        <div
+          className="col-md-12  d-none d-lg-block"
+          style={{
+            padding: "20px",
+            backgroundColor: "#f0f4f8",
+            margin: "10px auto",
+            width: "80%",
+          }}
+        >
+          <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+            <h4
+              style={{
+                color: "#FF6F20",
+                marginBottom: "20px",
+                fontWeight: "bold",
+                fontSize: "24px",
+              }}
+            >
+              Our Client Reviews
+            </h4>
+            <div
+              id="reviewCarousel"
+              className="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="3000"
+            >
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="d-flex justify-content-between">
+                    <div
+                      style={{
+                        width: "30%",
+                        padding: "20px",
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                        marginRight: "10px",
+                      }}
+                    >
+                      <div style={{ marginBottom: "10px" }}>
+                        <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                      </div>
+                      <p
+                        style={{
+                          color: "#4B5563",
+                          marginBottom: "10px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        {" "}
+                        "Make My Documents were terrifically fast with customer
+                        care even on when they are on weekly holidays. Instant
+                        response, Instant Action and Instant Results. My
+                        appreciation and congratulations in getting the sr
+                        citizen card."
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            backgroundColor: "#E5E7EB",
+                            color: "#fff",
+                            fontWeight: "bold",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginRight: "10px",
+                          }}
+                        >
+                          N
+                        </div>
+                        <span
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: "14px",
+                            color: "#374151",
+                          }}
+                        >
+                          PT Giridharan
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        width: "30%",
+                        padding: "20px",
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                        marginRight: "10px",
+                      }}
+                    >
+                      <div style={{ marginBottom: "10px" }}>
+                        <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                      </div>
+                      <p
+                        style={{
+                          color: "#4B5563",
+                          marginBottom: "10px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        "Very honest with work. Soft spoken and dedicated.
+                        Patiently handles given task in time."
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            backgroundColor: "#E5E7EB",
+                            color: "#fff",
+                            fontWeight: "bold",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginRight: "10px",
+                          }}
+                        >
+                          R
+                        </div>
+                        <span
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: "14px",
+                            color: "#374151",
+                          }}
+                        >
+                          Dr. Ratna
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        width: "30%",
+                        padding: "20px",
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                      }}
+                    >
+                      <div style={{ marginBottom: "10px" }}>
+                        <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                      </div>
+                      <p
+                        style={{
+                          color: "#4B5563",
+                          marginBottom: "10px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        "I really appreciate the team it's really a wonderful
+                        service and immediate response"
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            backgroundColor: "#E5E7EB",
+                            color: "#fff",
+                            fontWeight: "bold",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginRight: "10px",
+                          }}
+                        >
+                          S
+                        </div>
+                        <span
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: "14px",
+                            color: "#374151",
+                          }}
+                        >
+                          Mehdipatnam Branch
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="d-flex justify-content-between">
+                    <div
+                      style={{
+                        width: "30%",
+                        padding: "20px",
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                        marginRight: "10px",
+                      }}
+                    >
+                      <div style={{ marginBottom: "10px" }}>
+                        <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                      </div>
+                      <p
+                        style={{
+                          color: "#4B5563",
+                          marginBottom: "10px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        "Mr Ganesh was very quick in assisting me, good
+                        knowledge, good time sense, wish his a great career"
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            backgroundColor: "#E5E7EB",
+                            color: "#fff",
+                            fontWeight: "bold",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginRight: "10px",
+                          }}
+                        >
+                          M
+                        </div>
+                        <span
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: "14px",
+                            color: "#374151",
+                          }}
+                        >
+                          Anand M
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        width: "30%",
+                        padding: "20px",
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                      }}
+                    >
+                      <div style={{ marginBottom: "10px" }}>
+                        <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                      </div>
+                      <p
+                        style={{
+                          color: "#4B5563",
+                          marginBottom: "10px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        "I have Made a payment for a senior citizen card to my
+                        father. Post making the payment they said due to some
+                        technical issues they were not able to proceed."
+                      </p>
+
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            backgroundColor: "#E5E7EB",
+                            color: "#fff",
+                            fontWeight: "bold",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginRight: "10px",
+                          }}
+                        >
+                          K
+                        </div>
+                        <span
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: "14px",
+                            color: "#374151",
+                          }}
+                        >
+                          Sreetheja Adusumilli
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        width: "30%",
+                        padding: "20px",
+                        backgroundColor: "#fff",
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                      }}
+                    >
+                      <div style={{ marginBottom: "10px" }}>
+                        <div style={{ color: "#FFAA00" }}>★★★★★</div>
+                      </div>
+                      <p
+                        style={{
+                          color: "#4B5563",
+                          marginBottom: "10px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        "Very prompt service and polite staff. They guided me
+                        step by step and ensured everything was done smoothly."
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            backgroundColor: "#E5E7EB",
+                            color: "#fff",
+                            fontWeight: "bold",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginRight: "10px",
+                          }}
+                        >
+                          R
+                        </div>
+                        <span
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: "14px",
+                            color: "#374151",
+                          }}
+                        >
+                          Raghavendra S.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Carousel Controls */}
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#reviewCarousel"
+                data-bs-slide="prev"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  top: "45%",
+                  left: "-30px",
+                  backgroundColor: "#fff",
+                  borderRadius: "50%",
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                  border: "none",
+                }}
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                  style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#reviewCarousel"
+                data-bs-slide="next"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  top: "45%",
+                  right: "-30px",
+                  backgroundColor: "#fff",
+                  borderRadius: "50%",
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                  border: "none",
+                }}
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                  style={{ filter: "invert(1)", width: "20px", height: "20px" }}
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        {window.innerWidth <= 768 && (
+          <div
+            style={{ padding: "20px", backgroundColor: "#f0f4f8" }}
+            className="d-block d-lg-none"
+          >
+            <div style={{ padding: "20px", backgroundColor: "#f9fafb" }}>
+              <h4
+                style={{
+                  color: "#007bff",
+                  marginBottom: "20px",
+                  fontWeight: "bold",
+                  fontSize: "22px",
+                  textAlign: "center",
+                }}
+              >
+                Our Client Reviews
+              </h4>
+
+              <div
+                id="mobileReviewCarousel"
+                className="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="4000"
+              >
+                <div className="carousel-inner">
+                  {[
+                    {
+                      name: "PT Giridharan",
+                      initial: "V",
+                      review:
+                        "Make My Documents were terrifically fast with customer care even on when they are on weekly holidays. Instant response, Instant Action and Instant Results. My appreciation and congratulations in getting the sr citizen card.",
+                    },
+                    {
+                      name: "Dr. Ratna",
+                      initial: "H",
+                      review:
+                        "Very honest with work Soft spoken and dedicated. Patiently handles given task in time.",
+                    },
+                    {
+                      name: "Mehdipatnam Branch",
+                      initial: "K",
+                      review:
+                        "I really appreciate the team it's really a wonderful service and immediate response",
+                    },
+                    {
+                      name: "Anand M",
+                      initial: "S",
+                      review:
+                        "Mr Ganesh was very quick in assisting me, good knowledge, good time sense, wish his a great career",
+                    },
+                    {
+                      name: "Sreetheja Adusumilli",
+                      initial: "V",
+                      review:
+                        "I have Made a payment for a senior citizen card to my father. Post making the payment they said due to some technical issues they were not able to proceed",
+                    },
+                    {
+                      name: "Raghavendra S",
+                      initial: "R",
+                      review:
+                        "Very prompt service and polite staff. They guided me step by step and ensured everything was done smoothly.",
+                    },
+                  ].map((item, index) => (
+                    <div
+                      className={`carousel-item ${index === 0 ? "active" : ""}`}
+                      key={index}
+                    >
+                      <div
+                        style={{
+                          backgroundColor: "#fff",
+                          padding: "15px",
+                          borderRadius: "8px",
+                          boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        <div
+                          style={{
+                            color: "#FFAA00",
+                            fontSize: "18px",
+                            marginBottom: "5px",
+                          }}
+                        >
+                          ★★★★★
+                        </div>
+                        <p
+                          style={{
+                            color: "#4B5563",
+                            fontSize: "14px",
+                            marginBottom: "10px",
+                          }}
+                        >
+                          {item.review}
+                        </p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                          <div
+                            style={{
+                              width: "32px",
+                              height: "32px",
+                              borderRadius: "50%",
+                              backgroundColor: "#E5E7EB",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              marginRight: "10px",
+                              fontWeight: "bold",
+                              color: "#000",
+                            }}
+                          >
+                            {item.initial}
+                          </div>
+                          <span
+                            style={{
+                              fontWeight: "bold",
+                              fontSize: "14px",
+                              color: "#374151",
+                            }}
+                          >
+                            {item.name}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Optional carousel controls */}
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#mobileReviewCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                    style={{ marginLeft: "-120%" }}
+                  ></span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#mobileReviewCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                    style={{ marginRight: "-80%" }}
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <div
+          style={{
+            margin: "14px auto",
+            padding: "20px",
+            background: "#FFFFFF",
+            borderRadius: "10px",
+            width: "80%",
+          }}
+        >
+          <h1 className="faq-tag-title-h3">
+            <strong>Senior Citizen Card Services – Make My Documents</strong>
+          </h1>
+          <h2
+            className="faq-tag-title-h3"
+            style={{ textAlign: "left", fontSize: "22px" }}
+          >
+            <strong>
+              Apply for Your Senior Citizen Card Online with Ease{" "}
+            </strong>
+          </h2>
+          <p style={{ textAlign: "left" }}>
+            Are you or your family members over the age of 60 and looking for a
+            senior citizen card to avail of government benefits, travel
+            concessions, and healthcare perks. Make My Documents makes it easier
+            for you to get your Senior Citizen ID card quickly and hassle-free
+            by simplifying the whole process. If it is just a declaration of
+            age, security benefits, or an identity verification, we make sure
+            that our team of professionals performs your application the right
+            way and on time.
+          </p>
+
+          <h2
+            className="faq-tag-title-h3"
+            style={{ textAlign: "left", fontSize: "22px" }}
+          >
+            <strong>Why You Need a Senior Citizen Card </strong>
+          </h2>
+          <p style={{ textAlign: "left" }}>
+            The Senior Citizen Card is the most important identification
+            document for people who are 60 years old and above. The card gives
+            access to:
+          </p>
+          <ul>
+            <li>
+              <strong>Healthcare Benefits: </strong> Medical prioritization with
+              less expense at clinics and hospitals.
+            </li>
+            <li>
+              <strong>Travel Discounts: </strong> Lower transportation costs for
+              bus, train, and air travels throughout India.
+            </li>
+            <li>
+              <strong>Financial Concessions: </strong> Special banking services,
+              pension plans, and tax benefits.
+            </li>
+            <li>
+              <strong>Government Schemes: </strong> Convenience in the senior
+              citizen welfare program and subsidies.
+            </li>
+            <li>
+              <strong>Official Age Proof: </strong> Also considered one of the
+              most authentic and widely accepted proofs of identity and age.
+            </li>
+          </ul>
+          <h2
+            className="faq-tag-title-h3"
+            style={{ textAlign: "left", fontSize: "22px" }}
+          >
+            <strong>
+              Why Choose Make My Documents for Senior Citizen Card Services
+            </strong>
+          </h2>
+          <ul>
+            <li>
+              <strong> Easy Online Process: </strong> No need to stand in line,
+              just take a few minutes to fill out a form at your convenience.
+            </li>
+            <li>
+              <strong>Professional Help: </strong> Our specialists will guide
+              you through the paperwork, even with the verification and
+              tracking.
+            </li>
+            <li>
+              <strong> Quick Service: </strong> Your card will be delivered at a
+              short notice and you will not have to make several trips to the
+              administration office.
+            </li>
+            <li>
+              <strong>Safe and Private: </strong> The security of your
+              information is our utmost priority.
+            </li>
+          </ul>
+          <h2
+            className="faq-tag-title-h3"
+            style={{ textAlign: "left", fontSize: "22px" }}
+          >
+            <strong>How to Apply for a Senior Citizen Card</strong>
+          </h2>
+          <p style={{ textAlign: "left" }}>
+            Making a through Make My Documents is a quick process that doesn't
+            take much time or effort:
+          </p>
+          <ul>
+            <li>
+              <strong> Register Online: </strong> Open our webpage and select
+              the Senior Citizen Card service.
+            </li>
+            <li>
+              <strong> Dispatch Documents for the Job: </strong> Send the
+              scanned ID proof, location proof, and a passport-size picture of
+              yourself.
+            </li>
+            <li>
+              <strong>Carry out eKYC: </strong> Verify your identity securely
+              online.
+            </li>
+            <li>
+              <strong> Follow the Application: </strong> Keep track of where
+              your card is.
+            </li>
+            <li>
+              <strong> Receive the Card: </strong> Have your Senior Citizen Card
+              delivered to your home.
+            </li>
+          </ul>
+          <h2
+            className="faq-tag-title-h3"
+            style={{ textAlign: "left", fontSize: "22px" }}
+          >
+            <strong>Documents Required for Senior Citizen Card</strong>
+          </h2>
+          <p style={{ textAlign: "left" }}>
+            First of all, you need to ensure that you have the documents listed
+            below available:
+          </p>
+          <ul>
+            <li>
+              <strong> Aadhar Card</strong>{" "}
+            </li>
+            <li>
+              <strong> New Passport size photos.</strong>{" "}
+            </li>
+          </ul>
+          <h2
+            className="faq-tag-title-h3"
+            style={{ textAlign: "left", fontSize: "22px" }}
+          >
+            <strong>Benefits of Applying Through Make My Documents</strong>
+          </h2>
+          <ul>
+            <li>
+              First off, a valid Aadhaar Card or any government ID will do.
+            </li>
+             <li>
+              Next, a document to prove your date of birth (Birth Certificate, Passport, etc.).
+            </li>
+             <li>
+              A recent passport size photograph of you.
+            </li>
+             <li>
+              And finally, any house address (Electricity Bill, Ration Card, etc.).
+            </li>
+             <li>
+              You no longer have to wait in long lines or fill complex forms.
+            </li>
+             <li>
+              The documentation experts of our company will provide you with a step-by-step guide.
+            </li>
+             <li>
+              If you have made some mistake or you need to reapply, you will get a quick solution.
+            </li>
+             <li>
+              Moreover, elderly people and their families will be given special assistance by the customer support team.  
+            </li>
+          </ul>
+        </div>
 
         <div
           className="faq-section"
@@ -2146,104 +2989,6 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             ))}
           </div>
           <br></br>
-          <>
-            <p style={{ textAlign: "left" }}>
-              Welcome to the one-stop destination for all your Senior Citizen
-              Card needs. At Make My Senior Citizen Card, we are dedicated to
-              making the process of obtaining your Senior Citizen Card as smooth
-              and convenient as possible. Here's everything you need to know
-              about the Senior Citizen Card and our services:
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Benefits: The Senior Citizen Card offers a
-              host of benefits, including discounts on various services,
-              priority access, healthcare subsidies, and more, enhancing the
-              quality of life for senior citizens.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              How to Get a Senior Citizen Card: Our experienced team will assist
-              you through every step of the Senior Citizen Card application
-              process. From filling out forms to submitting your application,
-              we've got you covered.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Application: We provide comprehensive support
-              for new Senior Citizen Card applications, ensuring you have all
-              the necessary documents and information to complete the process
-              successfully.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Eligibility for Senior Citizen Card: To obtain a Senior Citizen
-              Card, you need to meet specific eligibility criteria, which
-              typically include age and residency requirements.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Requirements: We will help you gather all the
-              required documents, including proof of age, residency, and income,
-              as per the eligibility criteria in your region.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Discounts: The Senior Citizen Card unlocks
-              various discounts on services such as transportation, healthcare,
-              and dining, allowing you to enjoy substantial savings.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Scheme: Each region may have its own Senior
-              Citizen Card scheme, offering different benefits and
-              opportunities. We'll guide you through the options available in
-              your area.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Online: We facilitate online application
-              processes, ensuring that you can apply for your Senior Citizen
-              Card from the comfort of your home.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Documents: Our team will assist you in
-              preparing and submitting the necessary documents to support your
-              Senior Citizen Card application.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Process: We simplify the Senior Citizen Card
-              application process, making it easy and stress-free for you.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card Application Form: We'll provide you with the
-              necessary forms and guide you in completing them accurately.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen ID Card: The Senior Citizen Card is often referred
-              to as the Senior Citizen ID card, and we are here to help you
-              obtain it.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              Senior Citizen Card for Government Benefits: The Senior Citizen
-              Card may open doors to various government benefits, and we'll
-              ensure you have access to them.
-            </p>
-
-            <p style={{ textAlign: "left" }}>
-              If you're in need of Senior Citizen Card services in Karnataka,
-              your journey starts here with Make My Documents. Contact us today
-              to learn more about our services and to schedule an appointment
-              with one of our experienced agents. We look forward to assisting
-              you in obtaining your Senior Citizen Card and unlocking a world of
-              benefits and discounts.
-            </p>
-          </>
         </div>
       </div>
     </>

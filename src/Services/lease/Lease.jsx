@@ -845,60 +845,53 @@ const [leadId,setLeadId]=useState();
 
   const faqs = [
     {
-      question: "Benefits of Lease Agreement?",
-      answer: (
-        <ul style={{ listStyleType: "disc" }}>
-          <li>Minimizes the conflicts between a tenant and the owner</li>
-          <li>Rental/lease agreement acts as an address proof</li>
-          <li>Acts as a proof for Bank loans</li>
-          <li>Helps in investment & loan</li>
-          <li>Vehicle registration</li>
-        </ul>
-      ),
+      question: "What is the difference between a rental and lease agreement?",
+      answer:  "A rental agreement is usually short-term (11 months), while a lease agreement is long-term (1 year or more) and often requires registration.",
+
     },
     {
-      question: "Difference between comprehensive and third-party liability?",
+      question: "Do I need to visit an office to get my lease agreement?",
       answer:
-        "Comprehensive insurance covers both third-party liabilities and damage to your own vehicle, while third-party liability only covers damage caused to others.",
+        "No. Our service is 100% online, and your finalized agreement will be delivered to your doorstep.",
     },
     {
-      question: "What is the different between rental/lease agreement?",
+      question: "What is the value of stamp paper for a lease agreement in Karnataka?",
       answer:
-        "Leasing is defined as a contract between lessor and lessee whereby the lessor buys the asset and lets the lessee use the asset for a particular period. Renting is to allow the other party to occupy or use the asset for a short time, in return for a fixed payment.",
+        "The value varies based on rent, deposit, and duration. We guide you on the exact requirement.",
     },
     {
-      question: "what is stamp paper?",
+      question: "Is notarization mandatory for lease agreements?",
       answer:
-        "Stamp papers which are used for execution of documents are called as Non-Judicial Stamp Papers. ... Stamp Duty paid in respect of Non-Judicial Stamp Paper is paid under The Indian Stamp Act, 1899 and Stamp Duty paid in respect of Judicial Stamp Paper is paid under the Court Fees Act, 1870",
+        " Notarization is not mandatory but is recommended to add extra legal validity.",
     },
     {
-      question: "Do I need to visit any office to get lease agreement?",
+      question: "How long is a lease agreement valid?",
       answer:
-        "No its completely online process once you registered in our website we create draft and it will be print on stamp paper, and it get dispatched to address.",
+        "Lease agreements are generally valid for 12 months or longer, depending on the terms agreed between landlord and tenant.",
     },
     {
-      question: "How will I get my lease agreement?",
-      answer: "It will get dispatched through courier.",
+      question: "Who keeps the original lease agreement?",
+      answer: "Both landlord and tenant should keep a signed copy of the lease agreement for legal reference.",
     },
     {
-      question: "What is the value of stamp paper for lease agreement?",
+      question: "Can I make changes to the lease agreement after signing?",
       answer:
-        "The Rental/Lease agreement must be printed on a Non-Judicial Stamp Paper with a value of Rs.100/- or more.",
+        "Yes, changes can be made through an addendum or mutual agreement signed by both parties.",
     },
     {
-      question: "What is validity of lease agreement?",
+      question: "Do lease agreements need to be registered?",
       answer:
-        "In the usual practice, a landlord and a tenant make a rent agreement for a period of 11 months, with an option for a periodic renewal.",
+        "Yes, lease agreements for 12 months or more are legally required to be registered with the local sub-registrar.",
     },
     {
-      question: "what is Notarized lease agreement?",
+      question: "What happens if either party breaks the lease early?",
       answer:
-        "A notarized agreement is a document that has been marked with a notary stamp, which indicates that the signature on the document is legal. A notary officers is the witness when you sign and then places the stamp near your signature.",
+        "Breaking a lease early usually requires notice and may involve a penalty or forfeiture of the deposit, depending on the terms.",
     },
     {
-      question: "Is agreement required to be notarised?",
+      question: "Are digital signatures valid for lease agreements?",
       answer:
-        "A contract typically does not have to be notarized. A notary public  provides an acknowledgment that the signature appearing on the document is that of the person whose signature it purports to be. There is a requirement that some documents be notarized, such as a real property deed.",
+        "Yes, digital signatures are legally valid and accepted for most online lease agreements in India.",
     },
   ];
 
@@ -1288,6 +1281,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       Apply Now
   </button>
 </div>
+       
+
+
+
         {/* Modal Popup */}
         {showPopup && (
           <div  className="popupstyle-lease"
@@ -2943,7 +2940,130 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
           </div>
         )}
       </div>
+        <br /> <br />
 
+        <div style={{   margin: "14px auto",
+          padding: "20px",
+          background: "#FFFFFF",
+          borderRadius: "10px",
+          width: "80%",}}>
+          <h1 className="faq-tag-title-h3">
+            <strong>Online Lease Agreement Services in Bangalore  – Fast, Easy & Hassle-Free</strong>
+          </h1>
+          <p style={{textAlign:'left'}}>
+          When it comes to renting or leasing a property, one of the most important steps is securing a legally valid lease agreement. A well-drafted lease agreement ensures that both the landlord and the tenant have clear terms and conditions, reducing the chances of disputes in the future. At Make My Documents, we specialize in providing online lease agreement services in Karnataka, designed to make the process simple, quick, and completely hassle-free.
+            </p>
+         <p  style={{textAlign:'left'}}>
+          Our aim is to give you peace of mind by offering a smooth experience from start to finish—right from applying online to receiving your finalized lease agreement at your doorstep.
+            </p>
+          <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>What is a Lease Agreement?</strong>
+          </h2>
+     <p  style={{textAlign:'left'}}>
+           A lease agreement is a legal contract between a landlord and a tenant that allows the tenant to use the property for a specified period in exchange for rent. Unlike a short-term rental agreement, lease agreements are usually longer in duration (often one year or more) and may require registration depending on the state’s legal requirements.
+            </p>
+            <p  style={{textAlign:'left'}}>
+           A lease agreement typically includes:
+            </p>
+        <ul>
+         <li> Rent amount and due date</li>
+           <li> Security deposit terms</li>
+            <li>Duration of lease (usually 12 months or longer) </li>
+             <li>Responsibilities of landlord and tenant </li>
+              <li>Maintenance and repair conditions </li>
+               <li>Renewal and termination clauses </li>
+          </ul>
+           <p  style={{textAlign:'left'}}>
+           Having a lease agreement in place provides legal protection, transparency, and peace of mind for both parties.
+            </p>
+            <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>What We Do</strong>
+          </h2>
+           <p  style={{textAlign:'left'}}>
+             At Make My Documents, we provide a wide range of online lease agreement services to suit your needs, including:
+            </p>
+            <ul>
+         <li><strong> New Lease Agreements – </strong> For tenants and landlords starting a fresh contract. </li>
+          <li><strong> Lease Agreement Renewals – </strong> Extending your existing agreement with updated terms.</li>
+          <li><strong> Lease Amendments – </strong> Making changes to an ongoing lease contract. </li>
+          <li><strong> Customized Lease Agreements – </strong> Adding specific clauses tailored to your requirements.</li>
+          <li><strong> Notarized Lease Agreements – </strong> Strengthening the legal validity of your document.</li>
+          <li><strong> Guidance on Stamp Duty – </strong> Helping you determine the correct value of stamp paper required.</li>
+          </ul>
+            <p  style={{textAlign:'left'}}>
+           With us, you can be sure that every agreement is prepared by experienced legal professionals who ensure compliance with Karnataka’s legal standards.
+            </p>
+            <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>How It Works</strong>
+          </h2>
+           <p  style={{textAlign:'left'}}>
+             Our lease agreement process is straightforward and designed to save you time:
+            </p>
+            <ul>
+         <li><strong> Register Online – </strong> Submit your details using our simple online form.</li>
+          <li><strong> Drafting – </strong> Our experts prepare a lease agreement based on your inputs. </li>
+          <li><strong> Review Draft – </strong> You will receive the draft in your email within 60 minutes for review.</li>
+          <li><strong> Payment – </strong>  Pay the nominal service fee (Rs. 50 booking + Rs. 300 drafting fee; extra for stamp paper).</li>
+          <li><strong> Doorstep Delivery – </strong> The finalized stamped lease agreement will be delivered to your home or office within 1–2 working days.</li>
+          </ul>
+             <p  style={{textAlign:'left'}}>
+            This online process ensures a fast, secure, and hassle-free experience.
+            </p>
+                <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Charges</strong>
+          </h2>
+         
+            <ul>
+         <li> Drafting Fee: Rs. 300  </li>
+          <li> Booking/Consulting Fee: Rs. 50 (payable while submitting the form)</li>
+          <li>Stamp Paper Charges: Additional, based on property details and lease duration </li>
+
+          </ul>
+ <p  style={{textAlign:'left'}}>
+         We keep our pricing transparent, ensuring you know exactly what you are paying for.
+            </p>
+                <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Benefits of Our Lease Agreement Service</strong>
+          </h2>
+           <p  style={{textAlign:'left'}}>
+            When you choose Make My Documents, you get more than just a document—you get a complete service designed around your convenience.
+            </p>
+            <ul>
+         <li>  Legally Valid Documents prepared by legal experts</li>
+           <li> Quick Drafting – draft delivered within 60 minutes</li>
+            <li> Fast Processing – final document within 1–2 days </li>
+            <li> Affordable Pricing without hidden costs</li>
+            <li>  Doorstep Delivery of stamped agreements</li>
+            <li> Customized Clauses to suit your unique needs </li>
+            <li>  Complete Guidance on stamp duty and notarization</li>
+          </ul>
+
+             <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Why Choose to Make My Documents?</strong>
+          </h2>
+           <p  style={{textAlign:'left'}}>
+      In a busy city like Bangalore and across Karnataka, tenants and landlords want fast, reliable, and affordable solutions for legal paperwork. That’s exactly what we deliver. With our expertise, customer-first approach, and transparent pricing, we have become a trusted name in online lease agreement services.
+            </p>
+            <p  style={{textAlign:'left'}}>
+       Whether you are leasing a house, apartment, office, or commercial property, we make sure your agreement is legally sound and delivered to you without stress. Our step-by-step support ensures that you are guided through the entire process with ease.
+            </p>
+              <h2 className="faq-tag-title-h3" style={{textAlign:'left', fontSize: "22px"}}>
+            <strong>Apply Now – Get Your Lease Agreement Online </strong>
+          </h2>
+           <p  style={{textAlign:'left'}}>
+       Don’t let paperwork slow down your property rental process. With Make My Documents, you can secure your lease agreement online in Karnataka quickly, affordably, and without hassle.
+            </p>
+           <ul>
+         <li> Easy Online Registration</li>
+           <li> Expert Legal Drafting</li>
+            <li>Fast Turnaround </li>
+           <li> Affordable Pricing</li>
+           <li> Doorstep Delivery</li>
+          </ul>
+  <p  style={{textAlign:'left'}}>
+      Start your application today and experience the most convenient way to prepare your lease agreement. Let us handle the legalities so you can focus on what matters most.
+       </p>
+        </div>
       <div
         className="faq-section"
         style={{
@@ -3023,74 +3143,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
           ))}
         </div>
         <br></br>
-        <>
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            Welcome to Make My Documents, your one-stop destination for all your
-            Lease agreement needs. We understand that renting a property can be
-            a complex process, which is why we offer a hassle-free solution to
-            help you secure your Lease agreement quickly and easily.
-          </p>
-
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            Our team of legal experts has extensive experience in drafting lease
-            agreements that meet all legal requirements. We provide
-            comprehensive Lease agreement services, including new lease
-            agreements, Lease agreement renewals, and Lease agreement
-            amendments. We also offer customized lease agreement solutions
-            tailored to your unique needs.
-          </p>
-
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            At Make My Documents, we take pride in providing exceptional
-            customer service. We understand that your time is valuable, which is
-            why we offer a seamless online Lease agreement application process.
-          </p>
-
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            Our online Lease agreement form allows you to apply from the comfort
-            of your own home, and our team will guide you through every step of
-            the process. Our lease agreement services include all the necessary
-            legal clauses and terms to protect both the landlord and the tenant.
-            We also provide guidance on security deposits, rent payment
-            schedules, and any other special requirements you may have.
-          </p>
-
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            Our Lease agreement services are competitively priced, so you won't
-            have to break the bank to secure your lease agreement. Plus, our
-            fast turnaround times mean that you can have your lease agreement in
-            hand as soon as possible.
-          </p>
-
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            Whether you need a lease agreement for your house, room, or
-            commercial property, Make My Documents has got you covered. We offer
-            e-registration of lease agreements, lease agreements, and notarized
-            lease agreements to suit your specific requirements. Our services
-            also include guidance on stamp duty for lease agreements, rent
-            agreement validity, lease agreement cancellation, and lease
-            agreement renewal.
-          </p>
-
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            If you're in need of a lease agreement, look no further than Make My
-            Documents. Contact us today to learn more about our lease agreement
-            services and to schedule an appointment with one of our legal
-            experts. We look forward to helping you secure your lease agreement
-            and enjoy a hassle-free renting experience.
-          </p>
-
-          <p style={{ fontFamily: "Poppins, sans-serif", textAlign: "left" }}>
-            We also ensure that our lease agreement services are compliant with
-            the latest legal and regulatory requirements, giving you peace of
-            mind. Our easy-to-use online platform and step-by-step support make
-            the entire process smooth and efficient. At Make My Documents, we
-            are committed to delivering reliable, transparent, and
-            customer-focused solutions to cater to your lease agreement needs.
-            With our expertise and dedication, you can trust us to simplify your
-            lease agreement process, saving you time and effort.
-          </p>
-        </>
+      
       </div>
     </div>
     </>
