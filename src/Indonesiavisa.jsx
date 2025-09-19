@@ -395,14 +395,14 @@ const Indonesiavisa = () => {
         <meta property="og:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
         <meta property="og:url" content="https://makemydocuments.com/indonesia-tourist-visa-for-indians" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta property="og:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
         <meta property="og:site_name" content="Make My Documents" />
 
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Indonesia Tourist Visa for Indians - Easy Online Application" />
         <meta name="twitter:description" content="Apply for an Indonesia Tourist Visa for Indians with a simple online process. Get expert guidance and reliable visa approval in 5-7 working days. Start your journey!" />
-        <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta name="twitter:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
         <meta name="twitter:site" content="@makemydocuments" />
 
         <script>

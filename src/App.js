@@ -56,9 +56,9 @@ import UKVisaIndians from "./Services/visa/UKVisaIndians.jsx";
 import AustraliaVisaIndians from "./Services/visa/AustraliaVisaIndians.jsx";
 import MalaysiaVisaIndians from "./Services/visa/MalaysiaVisaIndians.jsx";
 import EgyptVisaIndians from "./Services/visa/EgyptVisaIndians.jsx";
-import VietnamVisaIndians from "./Services/visa/VietnamVisaIndians.jsx";
-import HongKongVisaIndians from "./Services/visa/HongKongVisaIndians.jsx";
-import IndonesiaVisaIndians from "./Services/visa/IndonesiaVisaIndians.jsx";
+// import VietnamVisaIndians from "./Services/visa/VietnamVisaIndians.jsx";
+// import HongKongVisaIndians from "./Services/visa/HongKongVisaIndians.jsx";
+// import IndonesiaVisaIndians from "./Services/visa/IndonesiaVisaIndians.jsx";
 import AzerbaijanVisaIndians from "./Services/visa/AzerbaijanVisaIndians.jsx";
 import OmanVisaIndians from "./Services/visa/OmanVisaIndians.jsx";
 import MoroccoVisaIndians from "./Services/visa/MoroccoVisaIndians.jsx";
@@ -67,6 +67,18 @@ import QatarVisaIndians from "./Services/visa/QatarVisaIndians.jsx";
 import RussiaVisaIndians from "./Services/visa/RussiaVisaIndians.jsx";
 import UzbekistanVisaIndians from "./Services/visa/UzbekistanVisaIndians.jsx";
 import { Navigate } from "react-router-dom";
+import PassportNew from "./Services/passport/PassportNew.jsx";
+import TravelVisaNew from "./Services/visa/TravelVisaNew.jsx";
+import RentalNew from "./Services/rental/RentalNew.jsx";
+import LeaseNew from "./Services/lease/LeaseNew.jsx";
+import PancardNew from "./Services/pancard/PancardNew.jsx";
+import SeniorCitizenNew from "./Services/senior/SeniorCitizenNew.jsx";
+import PoliceVerificationNew from "./Services/gst/PoliceVerificationNew.jsx";
+import PoliceClearenceNew from "./Services/police/PoliceClearenceNew.jsx";
+import MemsNew from "./Services/msme/MemsNew.jsx";
+
+import PassportLandingPage from "./Services/passport/PassportLandingPage.jsx";
+import AffidavitNew from "./Services/affidavit/AffidavitNew.jsx";
 
 
 
@@ -77,7 +89,7 @@ const Layout = ({ children }) => {
   // }, []);
 
   useEffect(() => {
-    const allowedPages = ["/", "/insurance", "/visa", "/contact-us"];
+    const allowedPages = ["/", "/insurance", "/tourist-visa", "/contact-us"];
     const isAllowedPage = allowedPages.includes(location.pathname);
 
     const removeWhatsAppWidget = () => {
@@ -167,37 +179,37 @@ const App = () => {
         <Route path="/health-insurance-info" element={<Layout><Health /></Layout>} />
         <Route path="/life-insurance" element={<Layout><Life /></Layout>} />
         <Route path="/life-insurance-info" element={<Layout><Life /></Layout>} />
-        <Route path="/rental-agreement" element={<Layout><Rental /></Layout>} />
+        {/* <Route path="/rental-agreement" element={<Layout><Rental /></Layout>} /> */}
         <Route path="/rental-agreement-form" element={<Layout><Rental /></Layout>} />
         <Route path="/rental-agreement/proceed-to-pay" element={<Layout><Rental /></Layout>} />
-        <Route path="/lease-agreement" element={<Layout><Lease /></Layout>} />
+        {/* <Route path="/lease-agreement" element={<Layout><Lease /></Layout>} /> */}
         <Route path="/lease-agreement-form" element={<Layout><Lease /></Layout>} />
         <Route path="/lease-agreement/proceed-to-pay" element={<Layout><Lease /></Layout>} />
-        <Route path="/affidavits" element={<Layout><Affidavit /></Layout>} />
+        {/* <Route path="/affidavits" element={<Layout><Affidavit /></Layout>} /> */}
         <Route path="/affidavits/:selectedAffidavit" element={<Layout><Affidavit /></Layout>} />
         <Route path="/affidavits/:selectedAffidavit/proceed-to-pay" element={<Layout><Affidavit /></Layout>} />
-        <Route path="/pan-card" element={<Layout><Pancard /></Layout>} />
+        {/* <Route path="/pan-card" element={<Layout><Pancard /></Layout>} /> */}
         <Route path="/pan-card/proceed-to-pay" element={<Layout><Pancard /></Layout>} />
         <Route path="/pan-card-form" element={<Layout><Pancard /></Layout>} />
-        <Route path="/passport" element={<Layout><Passport /></Layout>} />
+        {/* <Route path="/passport" element={<Layout><Passport /></Layout>} /> */}
         <Route path="/passport-form" element={<Layout><Passport /></Layout>} />
         <Route path="/passport/proceed-to-pay" element={<Layout><Passport /></Layout>} />
-        <Route path="/senior-citizen-card" element={<Layout><SeniorCitizen /></Layout>} />
+        {/* <Route path="/senior-citizen-card" element={<Layout><SeniorCitizen /></Layout>} /> */}
         <Route path="/senior-citizen-card-form" element={<Layout><SeniorCitizen /></Layout>} />
         <Route path="/senior-citizen-card/proceed-to-pay" element={<Layout><SeniorCitizen /></Layout>} />
-        <Route path="/msme-registration" element={<Layout><Msme /></Layout>} />
+        {/* <Route path="/msme-registration" element={<Layout><Msme /></Layout>} /> */}
         <Route path="/msme-registration-form" element={<Layout><Msme /></Layout>} />
         <Route path="/msme-registration/proceed-to-pay" element={<Layout><Msme /></Layout>} />
         <Route path="/food-license" element={<Layout><Food /></Layout>} />
         <Route path="/food-license-form" element={<Layout><Food /></Layout>} />
         <Route path="/food-license/proceed-to-pay" element={<Layout><Food /></Layout>} />
-        <Route path="/policeverification" element={<Layout><PoliceVerification /></Layout>} />
+        {/* <Route path="/police-verification" element={<Layout><PoliceVerification /></Layout>} /> */}
         <Route path="/policeverification-form" element={<Layout><PoliceVerification /></Layout>} />
         <Route path="/policeverification/proceed-to-pay" element={<Layout><PoliceVerification /></Layout>} />
-        <Route path="/police-clearance-certificate" element={<Layout><PoliceClearance /></Layout>} />
+        {/* <Route path="/police-clearance-certificate" element={<Layout><PoliceClearance /></Layout>} /> */}
         <Route path="/police-clearance-certificate-form" element={<Layout><PoliceClearance /></Layout>} />
         <Route path="/police-clearance-certificate/proceed-to-pay" element={<Layout><PoliceClearance /></Layout>} />
-        <Route path="/visa" element={<Layout><TravelVisa /></Layout>} />
+        {/* <Route path="/visa" element={<Layout><TravelVisa /></Layout>} /> */}
 
         <Route path="/our_partners" element={<Layout><PartnersPage /></Layout>} />
         <Route path="/request_success" element={<Layout><PaymentStatus /></Layout>} />
@@ -229,10 +241,27 @@ const App = () => {
         <Route path="/hong-kong-tourist-visa-for-indians" element={<Layout><Hongkongvisa /></Layout>} />
 
 
+
+<Route path="/passport" element={<Layout><PassportNew /></Layout>}></Route>
+<Route path="/tourist-visa" element={<Layout><TravelVisaNew /></Layout>} />
+  <Route path="/rental-agreement" element={<Layout><RentalNew /></Layout>} />
+   <Route path="/lease-agreement" element={<Layout><LeaseNew /></Layout>} />
+ {/* <Route path="/pan-card-new" element={<Layout><PancardNew /></Layout>} /> */}
+ <Route path="/pan-card" element={<Layout><PancardNew /></Layout>} />
+ <Route path="/senior-citizen-card" element={<Layout><SeniorCitizenNew /></Layout>} />
+ <Route path="/policeverification" element={<Layout><PoliceVerificationNew /></Layout>} />
+ <Route path="/police-clearance-certificate" element={<Layout><PoliceClearenceNew /></Layout>} />
+ <Route path="/msme-registration" element={<Layout><MemsNew /></Layout>} />
+ <Route path="/apply-passport-online" element={<Layout><PassportLandingPage /></Layout>} />
+ <Route path="/affidavits" element={<Layout><AffidavitNew /></Layout>} />
+
         <Route path="/dubai-visa" element={<Navigate to="/dubai-tourist-visa-for-indians" replace />} />
         <Route path="/hongkong-visa" element={<Navigate to="/hong-kong-tourist-visa-for-indians" replace />} />
         <Route path="/vietnam-visa" element={<Navigate to="/vietnam-tourist-visa-for-indians" replace />} />
         <Route path="/indonesia-visa" element={<Navigate to="/indonesia-tourist-visa-for-indians" replace />} />
+      <Route path="/indonesia-visa" element={<Navigate to="/indonesia-tourist-visa-for-indians" replace />} />
+
+
       
         <Route path="/passport-agency-in-bangalore"element={<Navigate to="/passport-agent-in-bangalore" replace />} />
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import './InsurancePage.css'; 
 import { Link } from 'react-router-dom';
 import vehiclesIcon from '../../images/Visa_image1.svg';
-import oneImage from '../../images/1.svg';
+import oneImage from '../../images/1.png';
 import twoImage from '../../images/2.svg';
 import threeImage from '../../images/3.svg';
 import visaImage2 from '../../images/Visa_image2.svg';

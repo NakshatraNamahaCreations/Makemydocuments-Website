@@ -18,8 +18,9 @@ import React, { useState , useEffect} from 'react';
     import { ReactComponent as AdditionalImage5 } from "./images/msmecertification.svg";  
     import { ReactComponent as AdditionalImage6 } from "./images/policeclearence.svg"; 
     import { ReactComponent as CircleImage } from "./images/circle.svg";
-    import { ReactComponent as Wave } from "./images/wave.svg";
-    import oneImage from './images/1.svg';
+    import  wave from "./images/wave.png";
+    
+    import oneImage from './images/1.png';
     import twoImage from './images/2.svg';
     import threeImage from './images/3.svg';
     import RectangleSlidingImage from "./images/rectangle sliding.svg";
@@ -58,7 +59,7 @@ import AirplaneImage from "./images/airoplane.svg";
 
 const services = [
   { name: 'Insurance', route: '/insurance', image: <NewImage1 className="box-image scale-tilt" /> },
-  { name: 'Travel Visa', route: '/visa', image: <NewImage2 className="box-image scale-tilt" /> },
+  { name: 'Travel Visa', route: '/tourist-visa', image: <NewImage2 className="box-image scale-tilt" /> },
   { name: 'Rental Agreement', route: '/rental-agreement', image: <NewImage3 className="box-image scale-tilt" /> },
   { name: 'Lease Agreement', route: '/lease-agreement', image: <NewImage4 className="box-image scale-tilt" /> },
   { name: 'Affidavits/  Annexure', route: '/affidavits', image: <NewImage5 className="box-image scale-tilt" /> },
@@ -181,7 +182,7 @@ useLayoutEffect(() => {
 <meta name="description" content=" Make My Documents Is The Smartest Way To Get Your Documents Done.Services: Pan card, Passport, Rental Agreement, Insurance, Senior Citizen Card, Etc. "/>
 <meta name="keywords" content="make my documents, passport, pan card, rental agreement, senior citzen card, bike insurance, car insurance, health insurance,  food license"/>
 
-<link rel="canonical" href="https://www.makemydocuments.com/" />
+<link rel="canonical" href="https://makemydocuments.com/" />
 <meta name="author" content="https://makemydocuments.com/"/>
 <meta name="rating" CONTENT="General"/>
 <meta name="revisit-after" CONTENT="2 days"/>
@@ -358,7 +359,12 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
   <section className="wave-section-desktop d-none d-lg-block">
   <div className="wave-wrapper-desktop" style={{height:'auto', position:'relative', width:'100%',marginTop:'-28%', marginLeft:'4%'}}>
     {/* Wave SVG */}
-    <Wave className="wave-svg-desktop" style={{display:'block', height:'auto', marginLeft:'12%', width:'80%', }}/>
+   <img
+      src={wave}
+      alt="Decorative wave"
+      className="wave-svg-desktop"
+      style={{ display: 'block', height: 'auto', marginLeft: '12%', width: '80%' }}
+    />
 
   
 

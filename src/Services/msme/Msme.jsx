@@ -1625,8 +1625,8 @@ const handleNext = () => {
   return (
     <>
     <Helmet>
-    <title> Apply MSME Certificate Online | Online MSME Registration | Udyam Certificate </title>
-<meta name="description" content="Click here to apply for MSME Certificate and get it at the earliest with expert advice and guidance. MSME Registration (Udyam Certificate) made simple and hassle-free."/>
+    <title> MSME Registration Online | Udyam Certificate Application </title>
+<meta name="description" content="Apply MSME certificate online with expert support. Quick Udyam registration process, secure guidance, and instant certificate approval for your business needs."/>
 <meta name="keywords" content="MSME certificate, apply MSME certificate, MSME registration, MSME certificate online, MSME certificate application, Udyam registration, Udyam certificate, online MSME registration India, MSME application, MSME agents near me, how to apply for MSME certificate, MSME registration form, MSME registration near me, MSME registration portal, documents required for MSME certificate, MSME certificate process, MSME site, new MSME certificate apply, Udyam certificate application, online Udyam registration"/>
 <link rel="canonical" href="https://makemydocuments.com/msme-certificate"/>
 <meta name="rating" content="General"/>
@@ -1749,7 +1749,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             //   fontWeight: "bold",
             // }}
           >
-            MSME registration Online
+            MSME registration 
           </h2>
 
           {/* Form section */}

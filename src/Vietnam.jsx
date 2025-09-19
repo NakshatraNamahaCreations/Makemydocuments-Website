@@ -409,13 +409,13 @@ const Vietnam = () => {
         <meta property="og:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
         <meta property="og:url" content="https://makemydocuments.com/vietnam-tourist-visa-for-indians" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta property="og:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
         <meta property="og:site_name" content="Make My Documents" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
         <meta name="twitter:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
-        <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta name="twitter:image" content="https//makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
         <meta name="twitter:site" content="@makemydocuments" />
 
         <script>

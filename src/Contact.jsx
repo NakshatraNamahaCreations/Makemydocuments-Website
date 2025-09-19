@@ -131,7 +131,7 @@ return isValid;
 <meta name="description" content="Reach out to Make My Documents for hassle-free assistance with PAN cards, passports, travel visas, senior citizen cards, insurance policies, and more. Contact us today!"/>
 <meta name="keywords" content="contact Make My Documents, document consultancy, PAN card help, passport assistance, insurance services, senior citizen card, travel visa support, PCC, PVC"/>
 <meta name="author" content="https://makemydocuments.com/"/>
-<link rel="canonical" href="https://www.makemydocuments.com/contact-us" />
+<link rel="canonical" href="https://makemydocuments.com/contact-us" />
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>

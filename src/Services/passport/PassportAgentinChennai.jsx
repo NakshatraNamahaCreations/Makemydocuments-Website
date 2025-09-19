@@ -800,104 +800,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                 {/* Left Column () */}
                                 <div className="col-md-8" ref={firstColumnRef} >
                                     {/* Charges Section (Scrollable) */}
-                                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
-                                        {/* Image Section */}
-                                        {/* <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
-      <img
-        src={Price}
-        alt="Charges Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div> */}
-
-                                        {/* Content Section */}
-                                        <div style={{ marginTop: '' }}>
-                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-                                                <li><strong style={{ color: '#ff9800' }}>Rs. 2,499/-</strong> For (Normal Application)
-                                                </li>
-                                                <li><strong style={{ color: '#ff9800' }}>Rs. 4,499/-</strong>  For (Tatkal Application)
-                                                </li>
-                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="d-block d-lg-none"
-                                        style={{
-                                            padding: "15px",
-                                            backgroundColor: "#ffffff",
-                                            borderRadius: "10px",
-                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-                                            margin: "15px",
-                                        }}
-                                    >
-                                        {/* Charges Section */}
-                                        <div
-                                            style={{
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "10px",
-                                                marginBottom: "20px",
-                                            }}
-                                        >
-                                            <div
-                                                style={{
-                                                    position: "relative",
-                                                    display: "inline-block",
-                                                    width: "100px",
-                                                    height: "100px",
-                                                }}
-                                            >
-                                                <img
-                                                    src={circleIcon}
-                                                    alt="Circle"
-                                                    style={{ width: "100%", height: "100%" }}
-                                                />
-                                                <img
-                                                    src={Price}
-                                                    alt="Price Icon"
-                                                    style={{
-                                                        position: "absolute",
-                                                        top: "50%",
-                                                        left: "50%",
-                                                        transform: "translate(-50%, -50%)",
-                                                        width: "26px",
-                                                    }}
-                                                />
-                                            </div>
-                                            <div>
-                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-                                                    Charges
-                                                </h5>
-                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 2,499/-</strong> For (Normal Application)
-                                                        {" "}
-
-                                                    </li>
-                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 4,499/- </strong> For (Tatkal Application)
-                                                        {" "}
-                                                    </li>
-                                                    <li>
-                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-                                                        Need to pay while submitting online form (This amount will be
-                                                        adjusted in total bill)
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                   
                                     <br />
                                     {/* Documents Required Section (Non-scrollable) */}
                                     <div
@@ -1340,6 +1243,88 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         </div>
                                     </div>
                                     <br />
+                                     <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+                                    
+                                        {/* Content Section */}
+                                        <div style={{ marginTop: '' }}>
+                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                                                <li><strong style={{ color: '#ff9800' }}>Rs. 2,499/-</strong> For (Normal Application)
+                                                </li>
+                                                <li><strong style={{ color: '#ff9800' }}>Rs. 4,499/-</strong>  For (Tatkal Application)
+                                                </li>
+                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="d-block d-lg-none"
+                                        style={{
+                                            padding: "15px",
+                                            backgroundColor: "#ffffff",
+                                            borderRadius: "10px",
+                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                                            margin: "15px",
+                                        }}
+                                    >
+                                        {/* Charges Section */}
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: "10px",
+                                                marginBottom: "20px",
+                                            }}
+                                        >
+                                            <div
+                                                style={{
+                                                    position: "relative",
+                                                    display: "inline-block",
+                                                    width: "100px",
+                                                    height: "100px",
+                                                }}
+                                            >
+                                                <img
+                                                    src={circleIcon}
+                                                    alt="Circle"
+                                                    style={{ width: "100%", height: "100%" }}
+                                                />
+                                                <img
+                                                    src={Price}
+                                                    alt="Price Icon"
+                                                    style={{
+                                                        position: "absolute",
+                                                        top: "50%",
+                                                        left: "50%",
+                                                        transform: "translate(-50%, -50%)",
+                                                        width: "26px",
+                                                    }}
+                                                />
+                                            </div>
+                                            <div>
+                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                                                    Charges
+                                                </h5>
+                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 2,499/-</strong> For (Normal Application)
+                                                        {" "}
+
+                                                    </li>
+                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 4,499/- </strong> For (Tatkal Application)
+                                                        {" "}
+                                                    </li>
+                                                    <li>
+                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                                                        Need to pay while submitting online form (This amount will be
+                                                        adjusted in total bill)
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                                            <br />
                                     {/* Client Reviews */}
                                     <div
                                         className="col-md-12  d-none d-lg-block"

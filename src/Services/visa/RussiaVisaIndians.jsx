@@ -530,10 +530,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
                                     }}
                                 >
-                                    <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+                                    <p style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
                                         Qatar Visa for Indians
 
-                                    </h2>
+                                    </p>
 
                                     <div
                                         style={{

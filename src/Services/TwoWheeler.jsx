@@ -5,7 +5,7 @@ import vehiclesIcon from "../images/Twowheeler.svg";
 import circleIcon from "../images/circle1.svg";
 import documentsIcon from "../images/documents.svg";
 import howIcon from "../images/how.svg";
-import thirdImage from "../images/third.svg";
+import thirdImage from "../images/third.png";
 import "./twowheeler.css"
 import { useLayoutEffect } from "react";
 import Header from "../Header";

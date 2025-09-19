@@ -258,7 +258,7 @@ const DubaiVisa = () => {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Make My Documents",
-        "image": "https://www.makemydocuments.com/logo.png",
+        "image": "https://makemydocuments.com/logo.png",
         "@id": "https://makemydocuments.com/dubai-tourist-visa-for-indians",
         "url": "https://makemydocuments.com/dubai-tourist-visa-for-indians",
         "telephone": "+91-9429690973",
@@ -403,13 +403,13 @@ const DubaiVisa = () => {
         <meta property="og:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
         <meta property="og:url" content="https://makemydocuments.com/dubai-visa" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta property="og:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
         <meta property="og:site_name" content="Make My Documents" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Dubai Tourist Visa for Indians | Fees and Application Process" />
         <meta name="twitter:description" content="Apply for a Dubai tourist visa for Indians with a simple online process. Get all the details on eligibility, visa types, etc., to plan your trip to Dubai." />
-        <meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta name="twitter:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
         <meta name="twitter:site" content="@makemydocuments" />
 
 

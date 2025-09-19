@@ -8,7 +8,7 @@ import circleIcon from "../images/circle1.svg";
 import documentsIcon from "../images/documents.svg";
 import howIcon from "../images/how.svg";
 import { ArrowLeft } from "lucide-react";
-import thirdImage from "../images/third.svg";
+import thirdImage from "../images/third.png";
 import axios from "axios";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";

@@ -5,7 +5,7 @@ import vehiclesIcon from "../images/four_wheeler_image.png";
 import circleIcon from "../images/circle1.svg";
 import documentsIcon from "../images/documents.svg";
 import howIcon from "../images/how.svg";
-import thirdImage from "../images/third.svg";
+import thirdImage from "../images/third.png";
 import axios from "axios";
 import { useLayoutEffect } from "react";
 import { ArrowLeft } from "lucide-react";

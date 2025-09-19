@@ -265,7 +265,7 @@ const Hongkongvisa = () => {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Make My Documents",
-        "image": "https://www.makemydocuments.com/logo.png",
+        "image": "https://makemydocuments.com/logo.png",
         "@id": "https://makemydocuments.com/hong-kong-tourist-visa-for-indians",
         "url": "https://makemydocuments.com/hong-kong-tourist-visa-for-indians",
         "telephone": "+91-9429690973",
@@ -410,12 +410,12 @@ const Hongkongvisa = () => {
 <meta property="og:description" content="Apply for a Hong Kong Tourist Visa for Indians. Get step-by-step guidance on requirements, documents, and the application process for a hassle-free trip." />
 <meta property="og:url" content="https://makemydocuments.com/hong-kong-tourist-visa-for-indians" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
+<meta property="og:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
 <meta property="og:site_name" content="Make My Documents" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Hong Kong Tourist Visa for Indians - Easy Application Guide" />
 <meta name="twitter:description" content="Apply for a Hong Kong Tourist Visa for Indians. Get step-by-step guidance on requirements, documents, and the application process for a hassle-free trip." />
-<meta name="twitter:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
+<meta name="twitter:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" /> 
 <meta name="twitter:site" content="@makemydocuments" />
 
 <script>

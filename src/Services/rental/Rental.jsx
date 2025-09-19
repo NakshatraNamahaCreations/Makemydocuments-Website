@@ -862,6 +862,7 @@ useLayoutEffect(() => {
       // alert("An error occurred while saving your details. Please try again.");
     }
   };
+  
   const faqs = [
     {
       question: "What is the validity of a rental agreement in Bangalore?",

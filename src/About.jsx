@@ -16,7 +16,7 @@ const About = () => {
         <title>About Us | Make My Documents™ - Your Trusted Online Document Consultancy</title>
         <meta name="description" content="Learn about Make My Documents™, a trusted online platform simplifying document-related services like PAN card, Passport, Insurance, and Senior Citizen Cards. Your hassle-free solution to all documentation needs." />
         <meta name="keywords" content="about Make My Documents, document consultancy, online document services, PAN card, passport, insurance, senior citizen card, document support, hassle-free documentation" />
-       <link rel="canonical" href="https://www.makemydocuments.com/about-us" />
+       <link rel="canonical" href="https://makemydocuments.com/about-us" />
               <meta name="author" content="https://makemydocuments.com/about-us" />
         <meta name="rating" content="General" />
         <meta name="revisit-after" content="2 days" />

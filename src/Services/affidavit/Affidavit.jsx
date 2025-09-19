@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Image30 from '../../images/affidavit_image.png';
 import circleIcon from '../../images/circle1.svg';
 import documentsIcon from '../../images/documents.svg';
+import bannerimage from "../../images/AffidavitBanner1.png";
 import howIcon from "../../../src/images/how.svg";
 import { useLayoutEffect } from "react";
 import Price from '../../images/Price Tag.svg';
@@ -1519,28 +1520,236 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
       </Helmet>
       <div className='' style={{ overflow: "hidden" }}>
-        <div className='affidavit-container' style={{
+            <div className="mobile-header">
+          {/* Header Section */}
+          <div style={{ marginTop:"90px", fontFamily: "Poppins, sans-serif" }}>
+            {/* Banner Section */}
+            <div style={{ width: "100%" }} className="d-none d-lg-block">
+              <div
+                style={{
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  minHeight: "65vh",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  position: "relative",
+                  overflow: "hidden",
+                }}
+              >
+                {/* Container for Image */}
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    zIndex: 1,
+                  }}
+                >
+                  <img
+                    src={bannerimage}
+                    alt="bannerimage"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
 
-          background: 'linear-gradient(182.42deg, #FCA505 2.01%, #FFFFFF)',
-          minHeight: '60vh',
-          paddingTop: '20px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '0 20px'
-        }}>
-          <div style={{ flex: 1, textAlign: 'left', fontWeight: 'bold' }} className='affidavit-text-content'>
-            <h2 >
-              Apply for Affidavit
-            </h2>
-          </div>
+                {/* Container for Text */}
+                <div
+                  style={{
+                    position: "relative",
+                    zIndex: 2,
+                    textAlign: "left",
+                    color: "#333",
+                    padding: "20px",
+                    marginRight: "auto",
+                  }}
+                >
+                  <h1
+                    style={{
+                      fontSize: "34px",
+                      fontWeight: "bold",
+                      margin: 0,
+                    }}
+                  >
+                   Apply for Affidavits Online  
+                  </h1>
 
+               
 
-          <div className='image-affidaviticon'>
-            <img src={Image30} alt="Lease Agreement" style={{ width: '89%', height: '20%', marginTop: '' }} />
-          </div>
-        </div>
-        <div style={{ marginTop: "-37px", marginLeft: "171px" }}>
+                  {/* Visa Details */}
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginTop: "20px",
+                      width: "100%",
+                      maxWidth: "320px",
+
+                      // padding: "15px",
+                      borderRadius: "10px",
+                    }}
+                  >
+                  
+
+                    {/* <div style={{ flex: 1, textAlign: "right" }}>
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          marginBottom: "5px",
+                          color: "#333",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Starting from
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: "bold",
+                          color: "#333",
+                          backgroundColor: "#e3f2fd",
+                          padding: "6px 10px",
+                          borderRadius: "6px",
+                          display: "inline-block",
+                          margin: 0,
+                        }}
+                      >
+                        ₹2,499/-
+                      </p>
+                    </div> */}
+                  </div>
+                  {/* <div style={{ marginTop: "20px" }}>
+                    <button
+                      onClick={handleContinue}
+                      style={{
+                        backgroundColor: "#fea400 ",
+                        color: "#333",
+                        padding: "12px 24px",
+                        border: "none",
+                        borderRadius: "6px",
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                        transition: "background-color 0.3s ease",
+                      }}
+                      onMouseOver={(e) =>
+                        (e.target.style.backgroundColor = "#fea400")
+                      }
+                      onMouseOut={(e) =>
+                        (e.target.style.backgroundColor = "#fea400")
+                      }
+                    >
+                      Apply Now
+                    </button>
+                  </div> */}
+                </div>
+              </div>
+            </div>
+
+            <div style={{ width: "100%" }} className="d-block d-lg-none">
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  overflow: "hidden",
+                  marginTop: "37%",
+                }}
+              >
+                {/* Image */}
+                <img
+                  src={bannerimage}
+                  alt="Hong Kong Visa"
+                  style={{
+                    width: "100%",
+                    height: "150",
+                    objectFit: "cover",
+                  }}
+                />
+
+                {/* Text Container */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background:
+                      "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
+                    color: "#fff",
+                    padding: "10px",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      fontWeight: "bold",
+                      marginBottom: "8px",
+                    }}
+                  >
+                   Apply for Affidavits Online 
+                  </p>
+
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#e6f7fa",
+                      color: "#000",
+                      padding: "3px 8px",
+                      borderRadius: "5px",
+                      fontSize: "10px",
+                      fontWeight: "500",
+                      marginBottom: "10px",
+                      width: "fit-content",
+                    }}
+                  >
+                    ⭐{" "}
+                    <span style={{ marginLeft: "6px" }}>
+                      99% Delivered on time
+                    </span>
+                  </div>
+
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      fontSize: "10px",
+                    }}
+                  >
+                  
+                    {/* <div>
+                      <p
+                        style={{
+                          margin: 0,
+                          fontWeight: "bold",
+                          fontSize: "10px",
+                        }}
+                      >
+                        Starting from
+                      </p>
+                      <p
+                        style={{
+                          margin: 0,
+                          color: "#ffc107",
+                          fontWeight: "bold",
+                          fontSize: "10px",
+                        }}
+                      >
+                        ₹2,499/-
+                      </p>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+        <div style={{ marginTop: "50px", marginLeft: "171px" }}>
 
 
           {/* Select Affidavit Section */}
@@ -2166,19 +2375,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                             </>
                           )}
                           {currentStep < 1 ? (
-                            //  <button
-                            //    onClick={nextStep}
-                            //    style={{
-                            //      padding: "10px 20px",
-                            //      backgroundColor: "#FCA505",
-                            //      color: "#000000",
-                            //      border: "none",
-                            //      borderRadius: "5px",
-                            //      cursor: "pointer",
-                            //    }}
-                            //  >
-                            //    Next
-                            //  </button>
+                           
                             <div className="next-button-container">
                               <button className="next-button" onClick={nextStep}>
                                 Next
@@ -2186,54 +2383,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                             </div>
 
                           ) : (
-                            // <button
-                            // onClick={() => {
-                            //   if (!fullName) {
-                            //     setError("Name is required.");
-                            //     return;
-                            //   }
-                            //   if (!mobileNumber) {
-                            //     setError("Mobile number is required."); 
-                            //     return;
-                            //   }
-                            //   if (!emailId) {
-                            //     setError("Email ID is required.");
-                            //     return;
-                            //   }
-                            //   if (!villageTownCity) {
-                            //     setError("Address is required.");
-                            //     return;
-                            //   }
-                            //   if (!selectedState) {
-                            //     setError("State is required.");
-                            //     return;
-                            //   }
-                            //   if (!selectedDistrict) {
-                            //     setError("District is required.");
-                            //     return;
-                            //   }
-                            //   if (!pincode) {
-                            //     setError("pincode is required");
-                            //     return;
-                            //   }
-                            //   handleSendOtp();  
-                            //   setShowOtpSection(true);  
-                            //   setError(""); 
-                            //   setIsCompleted(true)
-                            // }}
-                            //   style={{
-                            //     padding: "10px 20px",
-                            //     backgroundColor: "#FCA505",
-                            //     color: "#000000",
-                            //     border: "none",
-                            //     alignContent:'center',
-                            //     alignItems:'center',
-                            //     borderRadius: "5px",
-                            //     cursor: "pointer",
-                            //   }}
-                            // >
-                            //   SUBMIT
-                            // </button>
+                         
                             <div className="submit-button-container">
                               <button
                                 className="submit-button"

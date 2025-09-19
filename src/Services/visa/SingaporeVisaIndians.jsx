@@ -537,10 +537,10 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         padding: "15px",
                                     }}
                                 >
-                                    <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
+                                    <p style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
                                         Singapore Visa for Indians | Tourist visa Help
 
-                                    </h2>
+                                    </p>
 
                                     <div
                                         style={{

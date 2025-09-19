@@ -166,320 +166,150 @@ const PassportAgentinMumbai = () => {
 
     return (
         <>
-            <Helmet>
-                <title>Leading Passport Agent in Mumbai | Trusted Passport Services
+          <Helmet>
+  {/* Core SEO */}
+  <title>Leading Passport Agent in Mumbai | Trusted Passport Services
                 </title>
-                <meta name="description" content="Make My Document is a trusted Passport Agent in Mumbai, offering expert services for passport new applications, renewals and replacements. Contact us today.
-"/>
-                <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application" />
-                <link rel="canonical" href="https://makemydocuments.com/passport-agent-in-mumbai
-" />
-                <meta name="rating" CONTENT="General" />
-                <meta name="revisit-after" CONTENT="2 days" />
-                <meta name="robots" content=" ALL, index, follow" />
-                <meta name="distribution" content="Global" />
-                <meta name="rating" content="Safe For All" />
-                <meta name="language" content="English" />
-                <meta http-equiv="window-target" content="_top" />
-                <meta http-equiv="pics-label" content="for all ages" />
-                <meta name="rating" content="general" />
-                <meta content="All, FOLLOW" name="GOOGLEBOTS" />
-                <meta content="All, FOLLOW" name="YAHOOBOTS" />
-                <meta content="All, FOLLOW" name="MSNBOTS" />
-                <meta content="All, FOLLOW" name="BINGBOTS" />
-                <meta content="all" name="Googlebot-Image" />
-                <meta content="all" name="Slurp" />
-                <meta content="all" name="Scooter" />
-                <meta content="ALL" name="WEBCRAWLERS" />
+                <meta name="description" content="Make My Document is a trusted Passport Agent in Mumbai, offering expert services for passport new applications, renewals and replacements. Contact us today."/>
 
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN4189EDG5"></script>
-                <script>
-                    {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-QN4189EDG5');
-        `}
-                </script>
+  <link rel="canonical" href="https://makemydocuments.com/passport-agent-in-mumbai" />
+  <meta name="robots" content="index, follow" />
 
+  <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application" />
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Passport Agent in Mumbai | Apply Passport Online Help" />
+  <meta property="og:description" content="New passport, renewal, reissue, corrections and PSK appointment booking in Mumbai—accurate forms, quick updates, expert support." />
+  <meta property="og:url" content="https://makemydocuments.com/passport-agent-in-mumbai" />
+  <meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
+  <meta property="og:site_name" content="Make My Documents" />
 
-                <script>
-                    {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '865961251883214');
-            fbq('track', 'PageView');
-          `}
-                </script>
-                <noscript>
-                    {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=865961251883214&ev=PageView&noscript=1" alt="Meta Pixel" />`}
-                </noscript>
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Passport Agent in Mumbai | Apply Passport Online Help" />
+  <meta name="twitter:description" content="New passport, renewal, reissue and PSK appointment booking in Mumbai with expert guidance." />
+  <meta name="twitter:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
 
-                <script>
-                    {`
-            (function(w,d,t,r,u){
-              var f,n,i;w[u]=w[u]||[],f=function(){
-                var o={ti:"56340877", enableAutoSpaTracking: true};
-                o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
-              },
-              n=d.createElement(t),n.src=r,n.async=1,
-              n.onload=n.onreadystatechange=function(){
-                var s=this.readyState;
-                s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
-              },
-              i=d.getElementsByTagName(t)[0];
-              i.parentNode.insertBefore(n,i)
-            })(window,document,"script","//bat.bing.com/bat.js","uetq");
-          `}
-                </script>
-                <script type="application/ld+json">
-                    {`
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Make My Documents",
-        "image": "https://www.makemydocuments.com/logo.png",
-        "@id": "https://makemydocuments.com/passport-agent-in-mumbai",
-        "url": "https://makemydocuments.com/passport-agent-in-mumbai",
-        "telephone": "+91-9429690973",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "No 344, 2nd Main Rd, Manjunath Nagar, Mookambika Nagar, Dattatreya Nagar, Hosakerehalli",
-          "addressLocality": "Bengaluru",
-          "addressRegion": "Karnataka",
-          "postalCode": "560085",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "12.925435912146988",
-          "longitude": "77.5409615823579"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "10:00",
-            "closes": "17:00"
-          }
-        ],
-        "priceRange": "₹₹",
-        "description": "Make My Document is a trusted Passport Agent in Mumbai, offering expert services for passport new applications, renewals and replacements. Contact us today.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Passport Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "New Passport Applications"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Passport Renewal"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Lost or Stolen Passport Replacement"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Passport Corrections"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Child Passport Applications"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Name Change on Passport"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Expedited Passport Services"
-              }
-            }
-          ]
+  {/* Structured Data: LocalBusiness (update address if your office is in Mumbai) */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Make My Documents",
+      "image": "https://www.makemydocuments.com/logo.png",
+      "@id": "https://makemydocuments.com/passport-agent-in-mumbai",
+      "url": "https://makemydocuments.com/passport-agent-in-mumbai",
+      "telephone": "+91-9429690973",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No 344, 2nd Main Rd, Manjunath Nagar, Mookambika Nagar, Dattatreya Nagar, Hosakerehalli",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560085",
+        "addressCountry": "IN"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 12.9254359, "longitude": 77.5409616 },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "10:00",
+          "closes": "17:00"
         }
+      ],
+      "priceRange": "₹₹",
+      "description": "Passport agent in Mumbai for new applications, renewals, reissue and corrections with PSK appointment booking and file tracking.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Passport Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New Passport Applications" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Passport Renewal / Reissue" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lost or Stolen Passport Replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Passport Corrections (Name/Address/DOB)" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Minor/Child Passport Applications" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tatkal (Expedited) Passport Services" } }
+        ]
       }
-    `}
-                </script>
+    })}
+  </script>
 
-                <script type="application/ld+json">
-                    {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "How long does it take to get a passport in Mumbai?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "For normal processing, it usually takes 25–30 days. Tatkal applications are faster (1–3 days)."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can I apply for a passport online myself?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, but many people prefer agent support to avoid form errors and delays"
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do I need to visit the Passport Seva Kendra in person?",
-          "acceptedAnswer",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":"Yes, biometric data and document verification require personal appearance."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is the cost of passport application?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "It depends on age, type (normal/tatkal), and number of pages. We guide you on the latest fee structure."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What documents are needed for a minor’s passport?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Proof of age, address, parent’s passport/ID, and annexures are required. We’ll provide a complete checklist."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can I apply for a passport without an Aadhaar card?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "While Aadhaar is preferred, other address proofs like voter ID, bank passbook, etc., are acceptable."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What if my police verification fails?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We assist with re-application or re-verification support based on the reason for failure."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you provide doorstep document pickup in Mumbai",
-          "acceptedAnswer",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, in selected locations. Please contact our team for availability."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is Tatkal service available for passport renewal?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, but eligibility depends on past police verification and certain criteria."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How can I track my passport status?",
-          "acceptedAnswer",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Once your application is submitted, we help you track it using the file number on the official portal."
-                  }
-                }
-              ]
-            }
-          `}
-                </script>
+  {/* Structured Data: FAQPage */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does a passport take in Mumbai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Normal processing is about 25–30 working days. Tatkal can be 1–3 days after verification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I apply online myself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, although expert assistance helps avoid errors that cause delays or rejections."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to visit the Passport Seva Kendra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Biometrics and document verification are completed in person at PSK/POPSK."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What fees apply?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Government fees vary by age, booklet pages and mode (Normal/Tatkal). We share the latest slab before submission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if police verification is pending or fails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We guide on the right proofs and help with follow-ups or re-verification depending on the reason."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Tatkal available for renewals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, subject to eligibility and previous verification status."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you help with minors’ passports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—document checklist and consent/annexures are provided for smooth processing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I track my passport file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide the file number and help track it on the official portal until delivery."
+          }
+        }
+      ]
+    })}
+  </script>
+</Helmet>
 
-                <meta property="og:title" content="Leading Passport Agent in Mumbai | Trusted Passport Services" />
-                <meta property="og:description" content="Make My Document is a trusted Passport Agent in Mumbai, offering expert services for passport new applications, renewals and replacements. Contact us today." />
-                <meta property="og:url" content="https://makemydocuments.com/passport-agent-in-mumbai" />
-                <meta property="og:type" content="website" />
-                <meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
-                <meta property="og:site_name" content="Make My Documents" />
 
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Leading Passport Agent in Mumbai | Expert Passport Services" />
-                <meta name="twitter:description" content="Make My Document is a trusted Passport Agent in Mumbai, offering expert services for passport new applications, renewals and replacements. Contact us today." />
-                <meta name="twitter:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
-                <meta name="twitter:site" content="@makemydocuments" />
-
-<script>
-{`!function(e,t,n,s,u,a){
-  e.twq||(s=e.twq=function(){
-    s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-  },s.version='1.1',s.queue=[],u=t.createElement(n),
-  u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
-  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
-}(window,document,'script');
-twq('config','onik3');`}
-</script>
-
-<script type="text/javascript">
-{`_linkedin_partner_id = "7447820";
-window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
-</script>
-
-<script type="text/javascript">
-{`(function(l) {
-  if (!l) {
-    window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-    window.lintrk.q=[];
-  }
-  var s = document.getElementsByTagName("script")[0];
-  var b = document.createElement("script");
-  b.type = "text/javascript"; b.async = true;
-  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-  s.parentNode.insertBefore(b, s);
-})(window.lintrk);`}
-</script>
-
-<noscript dangerouslySetInnerHTML={{
-  __html: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7447820&fmt=gif" />`
-}} />
-
-            </Helmet>
 
             <div
                 style={{
@@ -536,7 +366,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                 >
                                     <img
                                         src={bannerimage}
-                                        alt="Hong Kong Visa"
+                                        alt="Passport agent in mumbai banner"
                                         style={{
                                             width: "100%",
                                             height: "auto",
@@ -800,110 +630,12 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                 {/* Left Column () */}
                                 <div className="col-md-8" ref={firstColumnRef} >
                                     {/* Charges Section (Scrollable) */}
-                                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
-                                        {/* Image Section */}
-                                        {/* <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
-      <img
-        src={Price}
-        alt="Charges Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div> */}
+                                  
 
-                                        {/* Content Section */}
-                                        <div style={{ marginTop: '' }}>
-                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-                                                <li><strong style={{ color: '#ff9800' }}>Rs. 2,499/-</strong> For (Normal Application)
-                                                </li>
-                                                <li><strong style={{ color: '#ff9800' }}>Rs. 4,499/-</strong>  For (Tatkal Application)
-                                                </li>
-                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="d-block d-lg-none"
-                                        style={{
-                                            padding: "15px",
-                                            backgroundColor: "#ffffff",
-                                            borderRadius: "10px",
-                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-                                            margin: "15px",
-                                        }}
-                                    >
-                                        {/* Charges Section */}
-                                        <div
-                                            style={{
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "10px",
-                                                marginBottom: "20px",
-                                            }}
-                                        >
-                                            <div
-                                                style={{
-                                                    position: "relative",
-                                                    display: "inline-block",
-                                                    width: "100px",
-                                                    height: "100px",
-                                                }}
-                                            >
-                                                <img
-                                                    src={circleIcon}
-                                                    alt="Circle"
-                                                    style={{ width: "100%", height: "100%" }}
-                                                />
-                                                <img
-                                                    src={Price}
-                                                    alt="Price Icon"
-                                                    style={{
-                                                        position: "absolute",
-                                                        top: "50%",
-                                                        left: "50%",
-                                                        transform: "translate(-50%, -50%)",
-                                                        width: "26px",
-                                                    }}
-                                                />
-                                            </div>
-                                            <div>
-                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-                                                    Charges
-                                                </h5>
-                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 2,499/-</strong> For (Normal Application)
-                                                        {" "}
-
-                                                    </li>
-                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 4,499/- </strong> For (Tatkal Application)
-                                                        {" "}
-                                                    </li>
-                                                    <li>
-                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-                                                        Need to pay while submitting online form (This amount will be
-                                                        adjusted in total bill)
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <br />
-                                    {/* Documents Required Section (Non-scrollable) */}
                                     <div
                                         className="d-none d-lg-block"
                                         style={{
-                                            marginTop: "20px",
+                                     
                                             paddingLeft: "10px",
                                             paddingRight: "10px",
                                             paddingTop: "15px",
@@ -1336,6 +1068,87 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                         Once approved, your passport is printed and delivered to your doorstep.
                                                     </p>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                      <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+
+                                        {/* Content Section */}
+                                        <div style={{ marginTop: '' }}>
+                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                                                <li><strong style={{ color: '#ff9800' }}>Rs. 2,499/-</strong> For (Normal Application)
+                                                </li>
+                                                <li><strong style={{ color: '#ff9800' }}>Rs. 4,499/-</strong>  For (Tatkal Application)
+                                                </li>
+                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="d-block d-lg-none"
+                                        style={{
+                                            padding: "15px",
+                                            backgroundColor: "#ffffff",
+                                            borderRadius: "10px",
+                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                                            margin: "15px",
+                                        }}
+                                    >
+                                        {/* Charges Section */}
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: "10px",
+                                                marginBottom: "20px",
+                                            }}
+                                        >
+                                            <div
+                                                style={{
+                                                    position: "relative",
+                                                    display: "inline-block",
+                                                    width: "100px",
+                                                    height: "100px",
+                                                }}
+                                            >
+                                                <img
+                                                    src={circleIcon}
+                                                    alt="Circle"
+                                                    style={{ width: "100%", height: "100%" }}
+                                                />
+                                                <img
+                                                    src={Price}
+                                                    alt="Price Icon"
+                                                    style={{
+                                                        position: "absolute",
+                                                        top: "50%",
+                                                        left: "50%",
+                                                        transform: "translate(-50%, -50%)",
+                                                        width: "26px",
+                                                    }}
+                                                />
+                                            </div>
+                                            <div>
+                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                                                    Charges
+                                                </h5>
+                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 2,499/-</strong> For (Normal Application)
+                                                        {" "}
+
+                                                    </li>
+                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 4,499/- </strong> For (Tatkal Application)
+                                                        {" "}
+                                                    </li>
+                                                    <li>
+                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                                                        Need to pay while submitting online form (This amount will be
+                                                        adjusted in total bill)
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>

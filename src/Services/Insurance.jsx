@@ -7,7 +7,7 @@ import mmd4Image from "../images/MMD 4.svg";
 import { useLayoutEffect } from "react";
 import checklistIcon from "../images/notebook.svg";
 import vehiclesIcon from "../images/image 29.svg";
-import oneImage from "../images/1.svg";
+import oneImage from "../images/1.png";
 import twoImage from "../images/2.svg";
 import threeImage from "../images/3.svg";
 import bikeImage from "../images/bike.svg";
@@ -16,6 +16,7 @@ import tempoImage from "../images/tempo.svg";
 import healthImage from "../images/health.svg";
 import lifeImage from "../images/life.svg";
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 const InsurancePage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -100,12 +101,12 @@ const InsurancePage = () => {
   return (
     <>
     <Helmet>
-    <title>Insurance Services - Buy/Renew Bike, Health, Life, Card Insurance Policies Online</title>
+    <title>Buy & Renew Insurance Online | Bike, Health, Life, Card</title>
 
-<meta name="description" content="Click here to get instant insurance coverage for bikes, health, life, and cards, with no paperwork, no inspections, and the ability to download policies instantly. 100% online process for all types of insurance."/>
+<meta name="description" content=" Buy or renew bike, health, life & card insurance online. Fast approvals, secure process, and instant policy downloads without extra steps - Apply online"/>
 <meta name="keywords" content="bike insurance, two wheeler insurance, health insurance, life insurance, car insurance, motorcycle insurance, scooter insurance, insurance renewal, bike insurance online, health insurance online, life insurance online, motorcycle policy, two wheeler insurance renewal, instant bike insurance, health and life policies, card insurance online, buy insurance online, renew insurance online, no inspection, paperless insurance"/>
 <meta name="author" content="https://makemydocuments.com/insurance "/>
-<link rel="canonical" href="https://www.makemydocuments.com/insurance" />
+<link rel="canonical" href="https://makemydocuments.com/insurance" />
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>
@@ -206,6 +207,35 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 }} />
 
     </Helmet>
+     <div
+            style={{
+              backgroundColor: "#f4f4f4",
+              padding: "15px 25px",
+              marginTop: "8%",
+            }}
+            className="breadcrumb-title"
+          >
+            <nav aria-label="breadcrumb" style={{ marginTop: "1%" }}>
+              <ol className="breadcrumb mb-0">
+                <li
+                  className="breadcrumb-item"
+                  style={{ fontWeight: "bold", fontSize: "14px" }}
+                >
+                  <Link to="/" style={{ color: "#007bff", textDecoration: "none" }}>
+                    Home
+                  </Link>
+                </li>
+                <li
+                  className="breadcrumb-item active"
+                  aria-current="page"
+                  style={{ fontWeight: "bold", fontSize: "14px" }}
+                >
+                 Insurance Services
+                </li>
+              </ol>
+            </nav>
+          </div>
+    
     <div style={{overflow:'hidden'}} >
       
     <div
@@ -221,12 +251,12 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       }} >
       <div
         className="row justify-content-start align-items-center"
-        style={{ minHeight: "125%" , marginTop:''}}
+        style={{ minHeight: "125%", padding:"20px" }}
       >
         {/* Left side: Text content */}
-        <div className="col-12 col-md-6 text-left" >
-          <div className="text-content">
-            <h2>Protect Your Future with Ease</h2>
+        <div className="col-12 col-md-6 text-left">
+          <div className="text-content ">
+            <h2> <strong>Protect Your Future with Ease</strong> </h2>
             <p>Insurance applications made simple and stress-free.</p>
           </div>
 
