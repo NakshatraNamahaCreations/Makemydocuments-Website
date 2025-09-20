@@ -266,8 +266,8 @@ const TravelVisaNew = () => {
 <meta name="description" content="Apply online for tourist visas worldwide. Fast, simple, and reliable service with instant approval updates. Start your travel plans today."/>
 <meta name="keywords" content="tourist visa, apply tourist visa online, visa application, tourist visa approval, travel visa, online tourist visa, tourist visa services, easy visa application, tourist visa online, how to apply tourist visa, instant visa approval, download tourist visa, no paperwork tourist visa, hassle-free tourist visa"/>
 
-<link rel="canonical" href="https://www.makemydocuments.com/visa" />
-<meta name="author" content="https://makemydocuments.com/visa "/>
+<link rel="canonical" href="https://www.makemydocuments.com/tourist-visa" />
+<meta name="author" content="https://makemydocuments.com/tourist-visa"/>
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>
@@ -393,7 +393,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
               aria-current="page"
               style={{ fontWeight: "bold", fontSize: "14px" }}
             >
-             Travel Visa 
+            Tourist Visa 
             </li>
           </ol>
         </nav>

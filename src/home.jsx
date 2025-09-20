@@ -59,7 +59,7 @@ import AirplaneImage from "./images/airoplane.svg";
 
 const services = [
   { name: 'Insurance', route: '/insurance', image: <NewImage1 className="box-image scale-tilt" /> },
-  { name: 'Travel Visa', route: '/tourist-visa', image: <NewImage2 className="box-image scale-tilt" /> },
+  { name: 'Tourist Visa', route: '/tourist-visa', image: <NewImage2 className="box-image scale-tilt" /> },
   { name: 'Rental Agreement', route: '/rental-agreement', image: <NewImage3 className="box-image scale-tilt" /> },
   { name: 'Lease Agreement', route: '/lease-agreement', image: <NewImage4 className="box-image scale-tilt" /> },
   { name: 'Affidavits/  Annexure', route: '/affidavits', image: <NewImage5 className="box-image scale-tilt" /> },
@@ -549,7 +549,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         <div className="rectangle-text">
           <h1>Ready for your next destination?</h1>
           <p>Leave the visa paperwork to us!</p>
-          <a href="/visa" style={{ textDecoration: 'none' }}>
+          <a href="/tourist-visa" style={{ textDecoration: 'none' }}>
             <button
               style={{
                 display: 'block',
@@ -689,7 +689,7 @@ license promptly so you can focus on building your business.
         </Link>
       </div>
       <div className="carousel-item">
-      <Link to="/visa">
+      <Link to="/tourist-visa">
         <div className="slide-container">
           <img
             src={RectangleSlidingImage}
