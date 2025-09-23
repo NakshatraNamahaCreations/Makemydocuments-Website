@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
     { name: "Insurance", path: "/insurance" },
-    { name: "Travel Visa", path: "/visa" },
+     { name: "Tourist Visa", path: "/tourist-visa" },
     { name: "Police Verification", path: "/policeverification" },
     { name: "Police Clearance Certificate", path: "/police-clearance-certificate" },
     { name: "Pan Card", path: "/pan-card" },
@@ -612,80 +612,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
     </div>
   </div> */}
 
-                                        {/* Content Section */}
-                                        <div style={{ marginTop: '' }}>
-                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-                                                <li><strong style={{ color: '#ff9800' }}>Rs. 10,999/-</strong> For (Normal Application)
-                                                </li>
-                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
-
-                                            </ul>
-                                        </div>
+                                       
                                     </div>
-                                    <div
-                                        className="d-block d-lg-none"
-                                        style={{
-                                            padding: "15px",
-                                            backgroundColor: "#ffffff",
-                                            borderRadius: "10px",
-                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-                                            margin: "15px",
-                                        }}
-                                    >
-                                        {/* Charges Section */}
-                                        <div
-                                            style={{
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "10px",
-                                                marginBottom: "20px",
-                                            }}
-                                        >
-                                            <div
-                                                style={{
-                                                    position: "relative",
-                                                    display: "inline-block",
-                                                    width: "100px",
-                                                    height: "100px",
-                                                }}
-                                            >
-                                                <img
-                                                    src={circleIcon}
-                                                    alt="Circle"
-                                                    style={{ width: "100%", height: "100%" }}
-                                                />
-                                                <img
-                                                    src={Price}
-                                                    alt="Price Icon"
-                                                    style={{
-                                                        position: "absolute",
-                                                        top: "50%",
-                                                        left: "50%",
-                                                        transform: "translate(-50%, -50%)",
-                                                        width: "26px",
-                                                    }}
-                                                />
-                                            </div>
-                                            <div>
-                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-                                                    Charges
-                                                </h5>
-                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 10,999/-</strong> For (Normal Application)
-                                                        {" "}
-
-                                                    </li>
-
-                                                    <li>
-                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-                                                        Need to pay while submitting online form (This amount will be
-                                                        adjusted in total bill)
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                  
 
                                     <br />
                                     {/* Documents Required Section (Non-scrollable) */}
@@ -964,6 +893,81 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
 
 
+                                        </div>
+                                    </div>
+
+                                     {/* Content Section */}
+                                       {/*} <div style={{ marginTop: '50px' }}>
+                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                                                <li><strong style={{ color: '#ff9800' }}>Rs. 10,999/-</strong> For (Normal Application)
+                                                </li>
+                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                                            </ul>
+                                        </div>*/}
+
+                                          <div
+                                        className="d-block"
+                                        style={{
+                                            padding: "15px",
+                                            backgroundColor: "#ffffff",
+                                            borderRadius: "10px",
+                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                                            margin: "15px",
+                                        }}
+                                    >
+                                        {/* Charges Section */}
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: "10px",
+                                                marginBottom: "20px",
+                                            }}
+                                        >
+                                            {/*} <div
+                                                style={{
+                                                    position: "relative",
+                                                    display: "inline-block",
+                                                    width: "100px",
+                                                    height: "100px",
+                                                }}
+                                            >
+                                               <img
+                                                    src={circleIcon}
+                                                    alt="Circle"
+                                                    style={{ width: "100%", height: "100%" }}
+                                                />
+                                                <img
+                                                    src={Price}
+                                                    alt="Price Icon"
+                                                    style={{
+                                                        position: "absolute",
+                                                        top: "50%",
+                                                        left: "50%",
+                                                        transform: "translate(-50%, -50%)",
+                                                        width: "26px",
+                                                    }}
+                                                />
+                                            </div>*/}
+                                            <div>
+                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                                                    Charges
+                                                </h5>
+                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 10,999/-</strong> For (Normal Application)
+                                                        {" "}
+
+                                                    </li>
+
+                                                    <li>
+                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                                                        Need to pay while submitting online form (This amount will be
+                                                        adjusted in total bill)
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <br />

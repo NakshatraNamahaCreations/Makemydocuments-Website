@@ -41,6 +41,7 @@ import ContactUs from "../src/Contact.jsx";
 import PartnersPage from "./Services/PartnersPage.js";
 import PaymentStatus from "./PaymentStatus.js";
 import Custom404Page from './Custom404Page.js';
+import TravelVisaNew from './Services/visa/TravelVisaNew.jsx';
 
 const Layout = ({ children }) => {
     // const navigate = useNavigate();
@@ -51,7 +52,7 @@ const Layout = ({ children }) => {
   }, [location.pathname]); 
 
   useEffect(() => {
-    const allowedPages = ["/", "/insurance", "/visa", "/contact-us"];
+    const allowedPages = ["/", "/insurance", "/tourist-visa", "/contact-us"];
   
     const isAllowedPage = allowedPages.includes(location.pathname);
   
@@ -159,7 +160,7 @@ const App = () => {
     "/passport", "/passport-form", "/senior-citizen-card", "/senior-citizen-card-form",
     "/msme-registration", "/msme-registration-form", "/food-license", "/food-license-form",
     "/policeverification", "/policeverification-form", "/police-clearance-certificate",
-    "/police-clearance-certificate-form", "/visa", "/our_partners", "/request_success",
+    "/police-clearance-certificate-form", "/tourist-visa", "/our_partners", "/request_success",
     "/failure"
   ].includes(location.pathname);
   
@@ -213,7 +214,7 @@ const App = () => {
                 <Route path="/policeverification-form" element={<PoliceVerification />} />
                 <Route path="/police-clearance-certificate" element={<PoliceClearance />} />
                 <Route path="/police-clearance-certificate-form" element={<PoliceClearance />} />
-                <Route path="/visa" element={<TravelVisa />} />
+                <Route path="/tourist-visa" element={<TravelVisaNew />} />
                 <Route path="/our_partners" element={<PartnersPage />} />
                 <Route path="/request_success" element={<PaymentStatus />} />
                 <Route path="/failure" element={<FailurePayment />} />

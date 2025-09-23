@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
   { name: "Insurance", path: "/insurance" },
-  { name: "Travel Visa", path: "/visa" },
+  { name: "Tourist Visa", path: "/tourist-visa" },
   { name: "Police Verification", path: "/policeverification" },
   {
     name: "Police Clearance Certificate",
@@ -1006,9 +1006,9 @@ const SeniorCitizenNew = () => {
                       >
                         <li>
                           <strong style={{ color: "#ff9800" }}>
-                            Rs. .300/-
+                            Rs. 300/-
                           </strong>{" "}
-                          For (Normal Application)
+                          For Application
                         </li>
                         <li>
                          If you decide to cancel your order after payment, please note that a cancellation fee of Rs. 50 will apply.

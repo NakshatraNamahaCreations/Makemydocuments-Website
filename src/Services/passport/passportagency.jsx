@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
   { name: "Insurance", path: "/insurance" },
-  { name: "Travel Visa", path: "/visa" },
+   { name: "Tourist Visa", path: "/tourist-visa" },
   { name: "Police Verification", path: "/policeverification" },
   { name: "Police Clearance Certificate", path: "/police-clearance-certificate" },
   { name: "Pan Card", path: "/pan-card" },

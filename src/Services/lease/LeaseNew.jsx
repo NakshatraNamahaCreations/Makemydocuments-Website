@@ -15,7 +15,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
   { name: "Insurance", path: "/insurance" },
-  { name: "Travel Visa", path: "/visa" },
+  { name: "Tourist Visa", path: "/tourist-visa" },
   { name: "Police Verification", path: "/policeverification" },
   {
     name: "Police Clearance Certificate",
@@ -877,7 +877,7 @@ const LeaseNew = () => {
                     <br />
                   </div>
                     {/* Content Section */}
-                    <div style={{ marginTop: "10px" }}>
+                   {/*} <div style={{ marginTop: "10px" }}>
                       <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>
                         Charges
                       </h5>
@@ -888,7 +888,7 @@ const LeaseNew = () => {
                           <strong style={{ color: "#ff9800" }}>
                             Rs. Rs 300/-
                           </strong>{" "}
-                          For (Normal Application)
+                          For Application
                         </li>
                         <li>
                           <strong style={{ color: "#ff9800" }}>
@@ -899,9 +899,9 @@ Note: Additional charges for stamp paper
                         </li>
                     
                       </ul>
-                    </div>
+                    </div>*/}
                     <div
-                    className="d-block d-lg-none"
+                    className="d-block"
                     style={{
                       padding: "15px",
                       backgroundColor: "#ffffff",
@@ -919,7 +919,7 @@ Note: Additional charges for stamp paper
                         marginBottom: "20px",
                       }}
                     >
-                      <div
+                     {/*} <div
                         style={{
                           position: "relative",
                           display: "inline-block",
@@ -943,29 +943,29 @@ Note: Additional charges for stamp paper
                             width: "26px",
                           }}
                         />
-                      </div>
+                      </div>*/}
                       <div>
                         <h5
                           style={{
                             color: "#007BFF",
                             fontWeight: "bold",
-                            fontSize: "16px",
+                            fontSize: "18px",
                           }}
                         >
                           Charges
                         </h5>
                         <ul
                           style={{
-                            fontSize: "14px",
+                            fontSize: "15px",
                             paddingLeft: "15px",
                             marginBottom: 0,
                           }}
                         >
                           <li>
                             <strong style={{ color: "#ff9800" }}>
-                              Rs. Rs 300/-
+                              Rs. 300/-
                             </strong>{" "}
-                            For (Normal Application){" "}
+                            For Application{" "}
                           </li>
                           <li>
                             <strong style={{ color: "#ff9800" }}>

@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
   { name: "Insurance", path: "/insurance" },
-  { name: "Travel Visa", path: "/visa" },
+  { name: "Tourist Visa", path: "/tourist-visa" },
   { name: "Police Verification", path: "/policeverification" },
   {
     name: "Police Clearance Certificate",
@@ -799,7 +799,7 @@ Documents Required For MSME Registration
                           <strong style={{ color: "#ff9800" }}>
                             Rs. 500/-
                           </strong>{" "}
-                          For (Normal Application)
+                          For  Application
                         </li>
                         <li>
                        Rs 99 as booking/consulting charge. Need to pay while submitting online form.
@@ -876,7 +876,7 @@ Documents Required For MSME Registration
                             <strong style={{ color: "#ff9800" }}>
                               Rs. 500/-
                             </strong>{" "}
-                            For (Normal Application){" "}
+                            For Application{" "}
                           </li>
                      
                           <li>

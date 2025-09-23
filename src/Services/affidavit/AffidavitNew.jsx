@@ -895,7 +895,7 @@ const validAffidavits = [
 
 const relatedServices = [
   { name: "Insurance", path: "/insurance" },
-  { name: "Travel Visa", path: "/visa" },
+  { name: "Travel Visa", path: "/tourist-visa" },
   { name: "Police Verification", path: "/policeverification" },
   {
     name: "Police Clearance Certificate",

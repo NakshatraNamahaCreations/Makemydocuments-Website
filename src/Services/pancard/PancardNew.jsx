@@ -15,7 +15,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
   { name: "Insurance", path: "/insurance" },
-  { name: "Travel Visa", path: "/visa" },
+  { name: "Tourist Visa", path: "/tourist-visa" },
   { name: "Police Verification", path: "/policeverification" },
   {
     name: "Police Clearance Certificate",
@@ -933,7 +933,7 @@ const PancardNew = () => {
                           <strong style={{ color: "#ff9800" }}>
                             Rs. 350/-
                           </strong>{" "}
-                          For (Normal Application)
+                          For Application
                         </li>
                         <li>
                           {/* <strong style={{ color: "#ff9800" }}>
@@ -1032,26 +1032,29 @@ If you decide to cancel your order after payment, please note that a cancellatio
                         >
                           <li>
                             <strong style={{ color: "#ff9800" }}>
-                              Rs. 2,499/-
+                              Rs. 350/-
                             </strong>{" "}
-                            For (Normal Application){" "}
+                            For Application{" "}
                           </li>
+                         
                           <li>
-                            <strong style={{ color: "#ff9800" }}>
-                              Rs. 4,499/-{" "}
-                            </strong>{" "}
-                            For (Tatkal Application){" "}
-                          </li>
-                          <li>
-                            <strong style={{ color: "#ff9800" }}>
-                              Rs. 99/-
-                            </strong>{" "}
-                            as booking fee. Need to pay while submitting online
-                            form (This amount will be adjusted in total bill)
-                          </li>
+                          {/* <strong style={{ color: "#ff9800" }}>
+                            Rs. 4,499/-
+                          </strong>{" "} */}
+                         
+If you decide to cancel your order after payment, please note that a cancellation fee of Rs. 50 will apply.
+                        </li>
                         </ul>
                       </div>
+                      </div>
                     </div>
+                    <div style={{
+                      padding: "15px",
+                      backgroundColor: "#ffffff",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                      margin: "15px",
+                    }} className="d-block d-lg-none">
                         <div
                       style={{
                         display: "flex",
@@ -1085,7 +1088,7 @@ If you decide to cancel your order after payment, please note that a cancellatio
                           }}
                         />
                       </div>
-                      <div>
+                      <div >
                         <h5
                           style={{
                             color: "#007BFF",

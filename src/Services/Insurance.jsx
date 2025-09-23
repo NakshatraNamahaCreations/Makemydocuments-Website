@@ -251,7 +251,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       }} >
       <div
         className="row justify-content-start align-items-center"
-        style={{ minHeight: "125%", padding:"20px" }}
+        style={{ minHeight: "125%", padding:"20px" , margin:"0"}}
       >
         {/* Left side: Text content */}
         <div className="col-12 col-md-6 text-left">

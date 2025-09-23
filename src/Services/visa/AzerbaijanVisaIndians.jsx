@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
     { name: "Insurance", path: "/insurance" },
-    { name: "Travel Visa", path: "/visa" },
+    { name: "Tourist Visa", path: "/tourist-visa" },
     { name: "Police Verification", path: "/policeverification" },
     { name: "Police Clearance Certificate", path: "/police-clearance-certificate" },
     { name: "Pan Card", path: "/pan-card" },
@@ -603,7 +603,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
   </div> */}
 
                                         {/* Content Section */}
-                                        <div style={{ marginTop: '' }}>
+                                       {/*} <div style={{ marginTop: '' }}>
                                             <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
                                             <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
                                                 <li><strong style={{ color: '#ff9800' }}>Rs. 4,498/-</strong> For Azerbaijan 30 days Single Entry E-Visa
@@ -611,20 +611,20 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                 <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
 
                                             </ul>
-                                        </div>
+                                        </div>*/}
                                     </div>
-                                    <div
-                                        className="d-block d-lg-none"
+                                   {/*} <div
+                                        className="d-block"
                                         style={{
                                             padding: "15px",
                                             backgroundColor: "#ffffff",
                                             borderRadius: "10px",
-                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                                            
                                             margin: "15px",
                                         }}
                                     >
                                         {/* Charges Section */}
-                                        <div
+                                       {/*} <div
                                             style={{
                                                 display: "flex",
                                                 alignItems: "center",
@@ -632,7 +632,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                 marginBottom: "20px",
                                             }}
                                         >
-                                            <div
+                                           {/*} <div
                                                 style={{
                                                     position: "relative",
                                                     display: "inline-block",
@@ -657,32 +657,16 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                     }}
                                                 />
                                             </div>
-                                            <div>
-                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-                                                    Charges
-                                                </h5>
-                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 4,498/-</strong> For Azerbaijan 30 days Single Entry E-Visa
-                                                        {" "}
-
-                                                    </li>
-
-                                                    <li>
-                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-                                                        Need to pay while submitting online form (This amount will be
-                                                        adjusted in total bill)
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            
                                         </div>
-                                    </div>
+                                    </div>*/}
 
                                     <br />
                                     {/* Documents Required Section (Non-scrollable) */}
                                     <div
                                         className="d-none d-lg-block"
                                         style={{
-                                            marginTop: "20px",
+                                            marginTop: "-80px",
                                             paddingLeft: "10px",
                                             paddingRight: "10px",
                                             paddingTop: "15px",
@@ -929,6 +913,24 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
                                         </div>
                                     </div>
+
+                                    <div style={{padding:"20px", borderRadius:"10px", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)"}} className="mt-5 mb-5">
+                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "20px" }}>
+                                                    Charges
+                                                </h5>
+                                                <ul style={{ fontSize: "16px", paddingLeft: "15px", marginBottom: 0 }}>
+                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 4,498/-</strong> For Azerbaijan 30 days Single Entry E-Visa
+                                                        {" "}
+
+                                                    </li>
+
+                                                    <li>
+                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                                                        Need to pay while submitting online form (This amount will be
+                                                        adjusted in total bill)
+                                                    </li>
+                                                </ul>
+                                            </div>
                                     <br />
                                     {/* Client Reviews */}
                                     <div

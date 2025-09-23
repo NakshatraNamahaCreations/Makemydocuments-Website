@@ -91,9 +91,9 @@ const Header = ({className}) => {
           <InsuranceIcon className="me-2" />
           Insurance
         </Link>
-        <Link className="dropdown-item" to="/visa" onClick={() => handleDropdownClick("/visa")}>
+        <Link className="dropdown-item" to="/tourist-visa" onClick={() => handleDropdownClick("/tourist-visa")}>
           <VisaIcon className="me-2" />
-          Travel Visa
+          Tourist Visa
         </Link>
         <Link className="dropdown-item" to="/rental-agreement" onClick={() => handleDropdownClick("/rental-agreement")}>
           <RentalIcon className="me-2" />

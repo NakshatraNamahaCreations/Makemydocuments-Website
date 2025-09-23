@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet";
 
 const relatedServices = [
   { name: "Insurance", path: "/insurance" },
-  { name: "Travel Visa", path: "/visa" },
+  { name: "Tourist Visa", path: "/tourist-visa" },
   { name: "Police Verification", path: "/policeverification" },
   {
     name: "Police Clearance Certificate",
@@ -584,7 +584,7 @@ const PoliceClearenceNew = () => {
                       - Existing Passport(M)
                     </p>
                         <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>
-                        - Passport size photo
+                        - Aadhar Card
                         </p>
                 
   <p style={{ fontSize: "16px", color: "#333", margin: 0 }}>
@@ -886,7 +886,7 @@ const PoliceClearenceNew = () => {
                           <strong style={{ color: "#ff9800" }}>
                             Rs. 1000/-
                           </strong>{" "}
-                          For (Normal Application)
+                          For Application
                         </li>
                         <li>
                        Rs.99 as booking fee. Need to pay while submitting online form (This fee
@@ -964,7 +964,7 @@ is non-refundable and will be adjusted in the total bill.)
                             <strong style={{ color: "#ff9800" }}>
                               Rs. 1000/-
                             </strong>{" "}
-                            For (Normal Application){" "}
+                            For Application{" "}
                           </li>
                      
                           <li>
