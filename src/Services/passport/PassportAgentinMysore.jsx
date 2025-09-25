@@ -177,7 +177,7 @@ const PassportAgentinMysore = () => {
         />
         <link
           rel="canonical"
-          href="https://makemydocuments.com/passport-agent-in-mysore"
+          href="https://www.makemydocuments.com/passport-agent-in-mysore"
         />
 
         <meta name="rating" CONTENT="General" />
@@ -254,10 +254,10 @@ const PassportAgentinMysore = () => {
           "@graph": [
             {
               "@type": "LocalBusiness",
-              "@id": "https://makemydocuments.com/passport-agent-in-mysore",
+              "@id": "https://www.makemydocuments.com/passport-agent-in-mysore",
               "name": "Make My Documents",
-              "image": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
-              "url": "https://makemydocuments.com/passport-agent-in-mysore",
+              "image": "https://www.makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
+              "url": "https://www.makemydocuments.com/passport-agent-in-mysore",
               "telephone": "+91-9429690973",
               "address": {
                 "@type": "PostalAddress",
@@ -757,15 +757,15 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                     padding: "15px",
                   }}
                 >
-                  <h2
+                  <p
                     style={{
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginBottom: "8px",
                     }}
                   >
-                    passport-agent-in-mysore
-                  </h2>
+                    Passport Agent in Mysore
+                  </p>
 
                   <div
                     style={{
@@ -812,7 +812,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                       </p>
                     </div>
                     <div>
-                      <p
+                      {/* <p
                         style={{
                           margin: 0,
                           fontWeight: "bold",
@@ -830,7 +830,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                         }}
                       >
                         ₹2,499/-
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -2023,7 +2023,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                 name: "Fatima , Colaba",
                                 initial: "S.",
                                 review:
-                                  "They guided me patiently through every step. Very reliable passport agent in Mumbai.",
+                                  "They guided me patiently through every step. Very reliable passport agent in Mysore.",
                               },
                               {
                                 name: "Karan , Borivali",

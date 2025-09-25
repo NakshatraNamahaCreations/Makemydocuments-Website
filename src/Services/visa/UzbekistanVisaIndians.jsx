@@ -128,22 +128,21 @@ const UzbekistanVisaIndians = () => {
             question: "Do I need to visit the Uzbekistan embassy in person?",
             answer: "Most applications can be submitted online or through agents. We assist to minimize or avoid embassy visits.",
         },
-        {
-            question: "What happens if my Russia visa application is rejected?",
-            answer:
-                "If rejected, we analyze the reasons and assist with reapplication or alternative visa options.",
-        },
-        {
-            question: "Can you help with invitation letters for Russia visa?",
-            answer:
-                "Yes, we assist in obtaining and preparing invitation letters required for tourist visas.",
-        },
-        {
-            question: "What are your charges for Russia visa assistance?",
-            answer:
-                "Our fees depend on the visa type and services provided. Contact us for a detailed and transparent quote.",
-        },
-
+      {
+    question: "Do I need to submit my passport for an Uzbekistan e-visa?",
+    answer:
+        "For an e-visa, you only need to upload scanned copies of your passport and supporting documents. For sticker visas, the physical passport submission is required.",
+},
+{
+    question: "What are your charges for Uzbekistan visa assistance?",
+    answer:
+        "Our service fees vary depending on the visa type and the level of support you require. Please contact us for a clear and detailed quote.",
+},
+{
+    question: "Can you provide guidance on documents required for an Uzbekistan visa?",
+    answer:
+        "Yes, we give you a checklist of required documents such as a valid passport, photographs, invitation letters (if needed), and proof of travel and accommodation.",
+},
     ];
 
 
@@ -347,7 +346,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                         position: "relative",
                                         zIndex: 2,
                                         textAlign: "left",
-                                        color: "#333",
+                                        color: "#fff",
                                         padding: "20px",
                                         marginRight: "auto",
                                     }}
@@ -414,7 +413,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                 style={{
                                                     fontSize: "14px",
                                                     marginBottom: "5px",
-                                                    color: "#333",
+                                                     color: "#fff",
                                                     fontWeight: "600",
                                                 }}
                                             >
@@ -443,7 +442,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                 style={{
                                                     fontSize: "14px",
                                                     marginBottom: "5px",
-                                                    color: "#333",
+                                                     color: "#fff",
                                                     fontWeight: "600",
                                                 }}
                                             >
@@ -585,102 +584,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                 {/* Left Column () */}
                                 <div className="col-md-8" ref={firstColumnRef} >
                                     {/* Charges Section (Scrollable) */}
-                                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
-                                        {/* Image Section */}
-                                        {/* <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
-      <img
-        src={Price}
-        alt="Charges Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div> */}
-
-                                        {/* Content Section */}
-                                        <div style={{ marginTop: '' }}>
-                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-                                                <li><strong style={{ color: '#ff9800' }}>Rs. ₹3,850/-</strong> For Uzbekistan E-Visa
-                                                </li>
-                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="d-block d-lg-none"
-                                        style={{
-                                            padding: "15px",
-                                            backgroundColor: "#ffffff",
-                                            borderRadius: "10px",
-                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-                                            margin: "15px",
-                                        }}
-                                    >
-                                        {/* Charges Section */}
-                                        <div
-                                            style={{
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "10px",
-                                                marginBottom: "20px",
-                                            }}
-                                        >
-                                            <div
-                                                style={{
-                                                    position: "relative",
-                                                    display: "inline-block",
-                                                    width: "100px",
-                                                    height: "100px",
-                                                }}
-                                            >
-                                                <img
-                                                    src={circleIcon}
-                                                    alt="Circle"
-                                                    style={{ width: "100%", height: "100%" }}
-                                                />
-                                                <img
-                                                    src={Price}
-                                                    alt="Price Icon"
-                                                    style={{
-                                                        position: "absolute",
-                                                        top: "50%",
-                                                        left: "50%",
-                                                        transform: "translate(-50%, -50%)",
-                                                        width: "26px",
-                                                    }}
-                                                />
-                                            </div>
-                                            <div>
-                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-                                                    Charges
-                                                </h5>
-                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 3,850/-</strong> For Uzbekistan E-Visa
-                                                        {" "}
-
-                                                    </li>
-
-                                                    <li>
-                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-                                                        Need to pay while submitting online form (This amount will be
-                                                        adjusted in total bill)
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <br />
-                                    {/* Documents Required Section (Non-scrollable) */}
+                                    
                                     <div
                                         className="d-none d-lg-block"
                                         style={{
@@ -933,6 +837,83 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
 
 
+                                        </div>
+                                    </div>
+                                    <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+                                     
+
+                                        {/* Content Section */}
+                                        <div style={{ marginTop: '' }}>
+                                            <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                                            <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                                                <li><strong style={{ color: '#ff9800' }}>Rs. ₹3,850/-</strong> For Uzbekistan E-Visa
+                                                </li>
+                                                <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="d-block d-lg-none"
+                                        style={{
+                                            padding: "15px",
+                                            backgroundColor: "#ffffff",
+                                            borderRadius: "10px",
+                                            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                                            margin: "15px",
+                                        }}
+                                    >
+                                        {/* Charges Section */}
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: "10px",
+                                                marginBottom: "20px",
+                                            }}
+                                        >
+                                            <div
+                                                style={{
+                                                    position: "relative",
+                                                    display: "inline-block",
+                                                    width: "100px",
+                                                    height: "100px",
+                                                }}
+                                            >
+                                                <img
+                                                    src={circleIcon}
+                                                    alt="Circle"
+                                                    style={{ width: "100%", height: "100%" }}
+                                                />
+                                                <img
+                                                    src={Price}
+                                                    alt="Price Icon"
+                                                    style={{
+                                                        position: "absolute",
+                                                        top: "50%",
+                                                        left: "50%",
+                                                        transform: "translate(-50%, -50%)",
+                                                        width: "26px",
+                                                    }}
+                                                />
+                                            </div>
+                                            <div>
+                                                <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                                                    Charges
+                                                </h5>
+                                                <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                                                    <li><strong style={{ color: "#ff9800" }}>Rs. 3,850/-</strong> For Uzbekistan E-Visa
+                                                        {" "}
+
+                                                    </li>
+
+                                                    <li>
+                                                        <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                                                        Need to pay while submitting online form (This amount will be
+                                                        adjusted in total bill)
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <br />

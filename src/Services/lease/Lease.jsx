@@ -906,8 +906,8 @@ const [leadId,setLeadId]=useState();
       <meta name="description" content="Now get your lease agreement online, Lease Agreement simple online process.Register online, Drafting, Review Drafting, Payment, Doorstep Delivery"/>
      <meta name="keywords" content="lease agreement, lease agreement online, how to create lease agreement,lease agreement near me, lease agreement bangalore, online lease agreement, online lease agreement near me, lease agreement, notarized lease agreement online, house lease agreement, online house lease agreement, 
      home lease agreement, lease agreement near me, lease agreement bangalore,lease agreement online bangalore, lease agreement karnataka, online agreement services."/>
-     <meta name="author" content="https://makemydocuments.com/lease-agreement"/>
-     <link rel="canonical" href="https://makemydocuments.com/lease-agreement" />
+     <meta name="author" content="https://www.makemydocuments.com/lease-agreement"/>
+     <link rel="canonical" href="https://www.makemydocuments.com/lease-agreement" />
 	<meta name="rating" CONTENT="General"/>
 	<meta name="revisit-after" CONTENT="2 days"/>
 	<meta name="robots" content=" ALL, index, follow"/>

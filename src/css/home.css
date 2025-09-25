@@ -35,11 +35,12 @@ body {
   color: #000;
 }
 
+/* ---------- Desktop / Tablet (default) ---------- */
 .home-text h1 {
-  font-size: 30px;
+  font-size: 1.875rem;   /* 30px */
   font-weight: bold;
-  margin-bottom: 30px;
-  line-height: 0.4;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .home-text h1 span {
@@ -47,10 +48,53 @@ body {
 }
 
 .home-text p {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 1.125rem;   /* 18px */
+  margin-bottom: 1.875rem; /* 30px */
   line-height: 1.6;
 }
+
+/* ---------- Mobile (<768px) ---------- */
+@media (max-width: 768px) {
+  .home-text h1 {
+    font-size: 1.25rem;   /* 20px */
+    margin-bottom: 1rem;  /* 16px */
+    line-height: 1.3;
+  }
+
+  .home-text p {
+    font-size: 0.95rem;   /* ~15px */
+    margin-bottom: 1rem;  /* 16px */
+    line-height: 1.5;
+  }
+}
+
+/* ---------- Small Mobile (<480px) ---------- */
+@media (max-width: 480px) {
+  .home-text h1 {
+    font-size: 1.125rem;  /* 18px */
+    margin-bottom: 0.75rem; /* 12px */
+    line-height: 1.3;
+  }
+
+  .home-text p {
+    font-size: 0.875rem;  /* 14px */
+    margin-bottom: 0.75rem; /* 12px */
+    line-height: 1.4;
+  }
+}
+
+/* Default: show image */
+.home-images {
+  display: block;
+}
+
+/* Hide image on screens <768px */
+@media (max-width: 768px) {
+  .home-images {
+    display: none !important;
+  }
+}
+
 
 .search-bar {
   display: flex;
@@ -1025,18 +1069,27 @@ body {
   word-wrap: nowrap;
 }
 
+@media (max-width: 425px) {
+
+  .home-text {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+   margin-top:89% !important;
+  }
+}
 
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column;
     text-align: center;
-    margin-top: -40%;
+    margin-top: -50%;
+ 
   }
 
   .home-text {
-    max-width: 100%;
+    max-width: 100% !important;
     margin-bottom: 20px;
-    margin-top: 173%;
+    margin-top:30%;
   }
 
   .home-images {
@@ -1048,8 +1101,9 @@ body {
     max-width: 300px;
   }
   .home-text h1 {
- font-size: 14px;
+ font-size: 17px;
     display: inline;
+    margin-bottom: 10px;
   }
 
   .home-book-image {
@@ -1325,3 +1379,101 @@ body {
   top: 12%;
   left: 15%; /* Adjust as per design */
 }
+
+/* ----- Base (desktop / tablet) ----- */
+.home-section {
+  overflow-x: hidden;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+   justify-content: center; 
+  min-height: 70vh;
+  position: relative;
+  margin-top: 10%;
+}
+
+.home-text {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.home-title {
+  margin: 0 0 0.25rem 0;
+  font-weight: 700;
+}
+
+/* subtitle in rem with fluid cap */
+.hero-subtitle {
+  font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+  line-height: 1.4;
+}
+
+/* search bar desktop/tablet */
+.home-search input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.home-images {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* make sure the SVG/IMG scales nicely */
+.home-image {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+}
+
+/* ----- Mobile (<768px) ----- */
+@media (max-width: 768px) {
+
+  .home-section {
+    height: 350px;
+  }
+  .home-container {
+    /* stack and push image to bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: calc(100vh - var(--nav-height, 64px));
+    padding-top: 0.75rem;
+    gap: 1rem;
+  }
+
+  .home-text {
+    order: 1;
+    width: 100%;
+  }
+
+  /* hide search on mobile */
+  .home-search {
+    display: none;
+  }
+
+  .home-images {
+    order: 2;
+    margin-top: auto;               /* pushes image block to bottom */
+    height: 38vh;                   /* space reserved for banner */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;          /* align actual graphic to bottom */
+  }
+
+  .home-image {
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    object-fit: contain;            /* no cropping; stays neat */
+  }
+}
+

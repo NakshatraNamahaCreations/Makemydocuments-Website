@@ -1657,7 +1657,7 @@ useLayoutEffect(() => {
 <title> Apply Police Clearance Certificate Online | PCC Application India </title>
 <meta name="description" content="Get your Police Clearance Certificate (PCC) hassle-free with expert guidance. Apply online for immigration, employment, or travel needs. Fast and reliable service."/>
 <meta name="keywords" content="police clearance certificate, PCC application, apply PCC online, PCC application India, police clearance certificate online, PCC for visa, PCC agents near me, PCC for employment, police verification certificate, PCC document requirements, online PCC service, how to apply PCC, PCC process, police certificate for immigration, PCC Bangalore, police clearance certificate for travel, police clearance certificate India, PCC near me, apply police certificate online"/>
-<link rel="canonical" href="https://makemydocuments.com/police-clearance-certificate"/>
+<link rel="canonical" href="https://www.makemydocuments.com/police-clearance-certificate"/>
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>

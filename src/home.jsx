@@ -1,4 +1,5 @@
 import React, { useState , useEffect} from 'react';
+import bannerBg from "./images/HomeBanner1.png";
     import "./css/home.css"; 
     import {Helmet} from "react-helmet";
     import { useLayoutEffect } from "react";
@@ -182,8 +183,8 @@ useLayoutEffect(() => {
 <meta name="description" content=" Make My Documents Is The Smartest Way To Get Your Documents Done.Services: Pan card, Passport, Rental Agreement, Insurance, Senior Citizen Card, Etc. "/>
 <meta name="keywords" content="make my documents, passport, pan card, rental agreement, senior citzen card, bike insurance, car insurance, health insurance,  food license"/>
 
-<link rel="canonical" href="https://makemydocuments.com/" />
-<meta name="author" content="https://makemydocuments.com/"/>
+<link rel="canonical" href="https://www.makemydocuments.com/" />
+<meta name="author" content="https://www.makemydocuments.com/"/>
 <meta name="rating" CONTENT="General"/>
 <meta name="revisit-after" CONTENT="2 days"/>
 <meta name="robots" content=" ALL, index, follow"/>
@@ -288,9 +289,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
       </Helmet>
         <div className='mobile-responsive' style={{overflow:"hidden"}}>
-        <section className="home-section" style={{overflowX:'hidden',}}>
+        {/* <section className="home-section" style={{overflowX:'hidden',}}>
             <div className="container home-container">
-            {/* Text Content */}
+           
             <div className="home-text" style={{textAlign:'left'}}>
                 <h1 style={{textAlign:'left'}}>We are India's</h1>
                 <h1 style={{textAlign:'left'}}>#1* Online Documents Consultancy.</h1>
@@ -313,7 +314,38 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             </div>    
             <BookImage className="home-book-image" />
             </div>
-        </section>
+        </section> */}
+
+  <section className="home-section">
+    <div className="container home-container">
+      {/* TEXT */}
+      <div className="home-text">
+        <h1 className="home-title">We are India's <br />#1* Online Documents Consultancy.</h1>
+
+        <p className="hero-subtitle mb-4">
+          Efficiently Organized, Expertly Delivered <br />
+          Accurate Drafting, Fast Turnaround, Hassle-Free Execution
+        </p>
+
+        {/* Search (hidden <768px) */}
+        <div className="home-search">
+          <input
+            type="text"
+            placeholder="Search and select which documents you want to get ready!"
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+        </div>
+      </div>
+
+      {/* IMAGE */}
+      <div className="home-images">
+        <HomeImage className="home-image" />
+      </div>
+    </div>
+  </section>
+
+
         <section className="boxes-section">
   <div className="boxes-container">
     {(searchTerm ? filteredServices : services).map((service, index) => (
@@ -535,8 +567,6 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
       </div>
     </div>
   </div>
-
-
 
 
 
@@ -893,4 +923,3 @@ license promptly so you can focus on building your business.
     };
 
     export default Home;
-

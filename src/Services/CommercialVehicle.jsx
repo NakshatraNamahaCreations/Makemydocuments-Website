@@ -1541,7 +1541,7 @@ const CommercialVehicle = () => {
         />
         <meta
           name="author"
-          content="https://makemydocuments.com/commercial-vehicle-insurance"
+          content="https://www.makemydocuments.com/commercial-vehicle-insurance"
         />
         <meta name="rating" content="General" />
         <meta name="revisit-after" content="2 days" />

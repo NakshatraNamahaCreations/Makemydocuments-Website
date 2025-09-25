@@ -172,7 +172,7 @@ const PassportAgentinMumbai = () => {
                 </title>
                 <meta name="description" content="Make My Document is a trusted Passport Agent in Mumbai, offering expert services for passport new applications, renewals and replacements. Contact us today."/>
 
-  <link rel="canonical" href="https://makemydocuments.com/passport-agent-in-mumbai" />
+  <link rel="canonical" href="https://www.makemydocuments.com/passport-agent-in-mumbai" />
   <meta name="robots" content="index, follow" />
 
   <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application" />
@@ -180,7 +180,7 @@ const PassportAgentinMumbai = () => {
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Passport Agent in Mumbai | Apply Passport Online Help" />
   <meta property="og:description" content="New passport, renewal, reissue, corrections and PSK appointment booking in Mumbai—accurate forms, quick updates, expert support." />
-  <meta property="og:url" content="https://makemydocuments.com/passport-agent-in-mumbai" />
+  <meta property="og:url" content="https://www.makemydocuments.com/passport-agent-in-mumbai" />
   <meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
   <meta property="og:site_name" content="Make My Documents" />
 
@@ -197,8 +197,8 @@ const PassportAgentinMumbai = () => {
       "@type": "LocalBusiness",
       "name": "Make My Documents",
       "image": "https://www.makemydocuments.com/logo.png",
-      "@id": "https://makemydocuments.com/passport-agent-in-mumbai",
-      "url": "https://makemydocuments.com/passport-agent-in-mumbai",
+      "@id": "https://www.makemydocuments.com/passport-agent-in-mumbai",
+      "url": "https://www.makemydocuments.com/passport-agent-in-mumbai",
       "telephone": "+91-9429690973",
       "address": {
         "@type": "PostalAddress",
@@ -614,10 +614,10 @@ const PassportAgentinMumbai = () => {
                                             </p>
                                         </div>
                                         <div>
-                                            <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
+                                            {/* <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
                                                 ₹2,499/-
-                                            </p>
+                                            </p> */}
                                         </div>
                                     </div>
                                 </div>

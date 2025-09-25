@@ -1546,8 +1546,8 @@ const AffidavitNew = () => {
         <title> Apply for Affidavits Online – Name Change Marriage Signature </title>
         <meta name="description" content="Get legal affidavits online in just 1–2 days. Services include name change, marriage, minor, signature, and one-and-the-same-person affidavits." />
         <meta name="keywords" content=" name change affidavit, name change affidavit online, how to get name change affidavit, how to create name change affidavit, create name change affidavit " />
-        <meta name="author" content="https://makemydocuments.com/name-change-affidavit" />
-        <link rel="canonical" href="https://makemydocuments.com/affidavits" />
+        <meta name="author" content="https://www.makemydocuments.com/name-change-affidavit" />
+        <link rel="canonical" href="https://www.makemydocuments.com/affidavits" />
         <meta name="rating" CONTENT="General" />
         <meta name="revisit-after" CONTENT="2 days" />
         <meta name="robots" content=" ALL, index, follow" />
@@ -1573,8 +1573,8 @@ const AffidavitNew = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Make My Documents",
-    "url": "https://makemydocuments.com/affidavits",
-    "image": "https://makemydocuments.com/logo.png",
+    "url": "https://www.makemydocuments.com/affidavits",
+    "image": "https://www.makemydocuments.com/logo.png",
     "telephone": "+91-9429690973",
     "priceRange": "₹₹",
     "address": {
@@ -1650,11 +1650,12 @@ const AffidavitNew = () => {
         }} />
 
       </Helmet>
- <div
+      
+      <div
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -1740,7 +1741,7 @@ const AffidavitNew = () => {
                   </h1>
 
                   {/* Approval Rate Badge */}
-                  {/* <div
+                  <div
                     style={{
                       display: "flex",
                       alignItems: "center",
@@ -1769,7 +1770,7 @@ const AffidavitNew = () => {
                     >
                       99% Delivered on time
                     </span>
-                  </div> */}
+                  </div>
 
                   {/* Visa Details */}
                   <div
@@ -1813,31 +1814,7 @@ const AffidavitNew = () => {
                       </p>
                     </div> */}
                   </div>
-                  {/* <div style={{ marginTop: "20px" }}>
-                    <button
-                      onClick={handleContinue}
-                      style={{
-                        backgroundColor: "#fea400 ",
-                        color: "#333",
-                        padding: "12px 24px",
-                        border: "none",
-                        borderRadius: "6px",
-                        fontSize: "16px",
-                        fontWeight: "bold",
-                        cursor: "pointer",
-                        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-                        transition: "background-color 0.3s ease",
-                      }}
-                      onMouseOver={(e) =>
-                        (e.target.style.backgroundColor = "#fea400")
-                      }
-                      onMouseOut={(e) =>
-                        (e.target.style.backgroundColor = "#fea400")
-                      }
-                    >
-                      Apply Now
-                    </button>
-                  </div> */}
+               
                 </div>
               </div>
             </div>
@@ -1857,13 +1834,12 @@ const AffidavitNew = () => {
                   alt="Hong Kong Visa"
                   style={{
                     width: "100%",
-                    height: "150",
+                    height: "auto",
                     objectFit: "cover",
                   }}
                 />
-
-                {/* Text Container */}
                 <div
+                // className='bannerContent3'
                   style={{
                     position: "absolute",
                     bottom: 0,
@@ -1873,13 +1849,17 @@ const AffidavitNew = () => {
                       "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
                     color: "#fff",
                     padding: "10px",
+                   
                   }}
                 >
+                  <div className='bannerContent3'>
                   <p
+                  className="banner-text1"
                     style={{
                       fontSize: "14px",
                       fontWeight: "bold",
-                      marginBottom: "8px",
+                      marginBottom: "10px",
+                  
                     }}
                   >
                    Apply for Affidavits Online 
@@ -1897,44 +1877,16 @@ const AffidavitNew = () => {
                       fontWeight: "500",
                       marginBottom: "10px",
                       width: "fit-content",
+                     
                     }}
                   >
                     ⭐{" "}
-                    <span style={{ marginLeft: "6px" }}>
+                    <span style={{ marginLeft: "6px" }}  className="banner-text2">
                       99% Delivered on time
                     </span>
                   </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      fontSize: "10px",
-                    }}
-                  >
-                  
-                    {/* <div>
-                      <p
-                        style={{
-                          margin: 0,
-                          fontWeight: "bold",
-                          fontSize: "10px",
-                        }}
-                      >
-                        Starting from
-                      </p>
-                      <p
-                        style={{
-                          margin: 0,
-                          color: "#ffc107",
-                          fontWeight: "bold",
-                          fontSize: "10px",
-                        }}
-                      >
-                        ₹2,499/-
-                      </p>
-                    </div> */}
                   </div>
+
                 </div>
               </div>
             </div>

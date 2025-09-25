@@ -1385,7 +1385,7 @@ useLayoutEffect(() => {
     <title> Apply Food License | food license Application India </title>
 <meta name="description" content="Apply online for your food license with expert assistance. Quick and reliable service for employment, rental, and immigration purposes."/>
 <meta name="keywords" content="food license apply "/>
-<link rel="canonical" href="https://makemydocuments.com/food-license"/>
+<link rel="canonical" href="https://www.makemydocuments.com/food-license"/>
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>

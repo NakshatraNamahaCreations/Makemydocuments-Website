@@ -170,7 +170,7 @@ const RentalNew = () => {
        <meta name="description" content="Get your rental agreement online in 3 easy steps. Draft in 60 minutes, review securely, and receive doorstep delivery in 24 hours with a simple process."/>
        <meta name="keywords" content="rental agreement, rental agreement online, how to create rental agreement,rental agreement near me, rental agreement bangalore, online rental agreement, online rent agreement near me, rent agreement, notarized rent agreement online, house rental agreement, online house rental agreement,
        home rental agreement, rent agreement near me, rent agreement bangalore,rent agreement online bangalore, rental agreement karnataka, online agreement services."/>
-       <meta name="author" content="https://makemydocuments.com/rental-agreement"/>
+       <meta name="author" content="https://www.makemydocuments.com/rental-agreement"/>
        <link rel="canonical" href="https://www.makemydocuments.com/rental-agreement" />
        <meta name="rating" CONTENT="General"/>
        <meta name="revisit-after" CONTENT="2 days"/>
@@ -306,7 +306,7 @@ const RentalNew = () => {
           {/* Header Section */}
           <div style={{ margin: 0, fontFamily: "Poppins, sans-serif" }}>
             {/* Banner Section */}
-            <div style={{ width: "100%" }} className="d-none d-lg-block">
+            <div style={{ width: "100%"  }} className="d-none d-lg-block">
               <div
                 style={{
                   backgroundSize: "cover",
@@ -465,7 +465,7 @@ const RentalNew = () => {
               </div>
             </div>
 
-            <div style={{ width: "100%" }} className="d-block d-lg-none">
+            <div style={{ width: "100%"}} className="d-block d-lg-none">
               <div
                 style={{
                   position: "relative",
@@ -480,7 +480,7 @@ const RentalNew = () => {
                   alt="Hong Kong Visa"
                   style={{
                     width: "100%",
-                    height: "150",
+                    height: "auto",
                     objectFit: "cover",
                   }}
                 />
@@ -500,7 +500,7 @@ const RentalNew = () => {
                 >
                   <p
                     style={{
-                      fontSize: "14px",
+                      fontSize: "13px",
                       fontWeight: "bold",
                       marginBottom: "8px",
                     }}
@@ -566,25 +566,7 @@ const RentalNew = () => {
                     className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block"
                     style={{ marginLeft: "2%" }}
                   >
-                    {/* Image Section */}
-                    {/* <div className="d-flex justify-content-center align-items-center">
-    <div style={{ position: "relative", display: "inline-block",  marginTop:'-100%', marginLeft:'' }}>
-      <img src={circleIcon} alt="Circle Background" className="img-fluid"  />
-      <img
-        src={Price}
-        alt="Charges Icon"
-        style={{
-          position: "absolute",
-          top: "56%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "35px",
-        }}
-      />
-    </div>
-  </div> */}
-
-                    {/* Content Section */}
+      
 
       <div style={{ marginTop: "" }}>
                       <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>
@@ -877,29 +859,6 @@ const RentalNew = () => {
                   
                   
                   <br /> 
-                  {/*}  <div style={{ marginTop: "10px" }}>
-                      <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>
-                        Charges
-                      </h5>
-                      <ul
-                        style={{ listStyleType: "disc", paddingLeft: "20px" }}
-                      >
-                        <li>
-                          <strong style={{ color: "#ff9800" }}>
-                            Rs. Rs 300/-
-                          </strong>{" "}
-                          For (Normal Application)
-                        </li>
-                        <li>
-                          <strong style={{ color: "#ff9800" }}>
-                            Rs. 50/-
-                          </strong>{" "}
-                          as booking/consulting charge. Need to pay while submitting online form
-Note: Additional charges for stamp paper
-                        </li>
-                    
-                      </ul>
-                    </div>*/}
 
                      <div
                     className="d-block"

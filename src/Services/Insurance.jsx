@@ -5,6 +5,7 @@ import mmd2Image from "../images/MMD 2.svg";
 import mmd3Image from "../images/MMD 3.svg";
 import mmd4Image from "../images/MMD 4.svg";
 import { useLayoutEffect } from "react";
+import bannerimage from "../images/InsurenceBanner.png";
 import checklistIcon from "../images/notebook.svg";
 import vehiclesIcon from "../images/image 29.svg";
 import oneImage from "../images/1.png";
@@ -105,8 +106,8 @@ const InsurancePage = () => {
 
 <meta name="description" content=" Buy or renew bike, health, life & card insurance online. Fast approvals, secure process, and instant policy downloads without extra steps - Apply online"/>
 <meta name="keywords" content="bike insurance, two wheeler insurance, health insurance, life insurance, car insurance, motorcycle insurance, scooter insurance, insurance renewal, bike insurance online, health insurance online, life insurance online, motorcycle policy, two wheeler insurance renewal, instant bike insurance, health and life policies, card insurance online, buy insurance online, renew insurance online, no inspection, paperless insurance"/>
-<meta name="author" content="https://makemydocuments.com/insurance "/>
-<link rel="canonical" href="https://makemydocuments.com/insurance" />
+<meta name="author" content="https://www.makemydocuments.com/insurance "/>
+<link rel="canonical" href="https://www.makemydocuments.com/insurance" />
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>
@@ -211,7 +212,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
             style={{
               backgroundColor: "#f4f4f4",
               padding: "15px 25px",
-              marginTop: "8%",
+              marginTop: "10%",
             }}
             className="breadcrumb-title"
           >
@@ -230,21 +231,179 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                   aria-current="page"
                   style={{ fontWeight: "bold", fontSize: "14px" }}
                 >
-                 Insurance Services
+                 Insurance 
                 </li>
               </ol>
             </nav>
           </div>
     
     <div style={{overflow:'hidden'}} >
+        <div style={{ width: "100%" }} className="d-none d-lg-block">
+                    <div
+                      style={{
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        minHeight: "65vh",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        position: "relative",
+                        overflow: "hidden",
+                      }}
+                    >
+                      {/* Container for Image */}
+                      <div
+                        style={{
+                          position: "absolute",
+                          width: "100%",
+                          height: "100%",
+                          zIndex: 1,
+                        }}
+                      >
+                        <img
+                          src={bannerimage}
+                          alt="Hong Kong Visa"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
       
+                      {/* Container for Text */}
+                      <div
+                        style={{
+                          position: "relative",
+                          zIndex: 2,
+                          textAlign: "left",
+                          color: "#333",
+                          padding: "20px",
+                          marginRight: "auto",
+                        }}
+                      >
+                        <h1
+                          style={{
+                            fontSize: "36px",
+                            fontWeight: "bold",
+                            margin: 0,
+                          }}
+                        >
+                          Protect Your Future with Ease
+                        </h1>
+      
+                        {/* Approval Rate Badge */}
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            // backgroundColor: "#e6f7fa",
+                            padding: "5px 10px",
+                            borderRadius: "5px",
+                            marginTop: "10px",
+                            width: "fit-content",
+                          }}
+                        >
+                          {/* <span
+                            style={{
+                              fontSize: "18px",
+                              color: "#00c4cc",
+                              marginRight: "5px",
+                            }}
+                          >
+                            ⭐
+                          </span> */}
+                          <span
+                            style={{
+                              fontSize: "14px",
+                              color: "#000000",
+                              fontWeight: "bold",
+                            }}
+                          >
+                           Insurance applications made simple and stress-free.
+                          </span>
+                        </div>
+      
+                     
+                 
+                      </div>
+                    </div>
+                  </div>
+                    <div style={{ width: "100%" }} className="d-block d-lg-none">
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        overflow: "hidden",
+                        // marginTop: "37%",
+                      }}
+                    >
+                      {/* Image */}
+                      <img
+                        src={bannerimage}
+                        alt="Hong Kong Visa"
+                        style={{
+                          width: "100%",
+                          height: "150",
+                          objectFit: "cover",
+                        }}
+                      />
+      
+                      {/* Text Container */}
+                      <div
+                        style={{
+                          position: "absolute",
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+                          background:
+                            "linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0))",
+                          color: "#fff",
+                          padding: "10px",
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                            marginBottom: "8px",
+                          }}
+                        >
+                        Protect Your Future with Ease
+                        </p>
+      
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            // backgroundColor: "#e6f7fa",
+                            color: "#fff",
+                            padding: "3px 8px",
+                            borderRadius: "5px",
+                            fontSize: "10px",
+                            fontWeight: "500",
+                            marginBottom: "10px",
+                            width: "fit-content",
+                          }}
+                        >
+                          {/* ⭐{" "} */}
+                          <span >
+                           Insurance applications made simple <br />and stress-free.
+                          </span>
+                        </div>
+      
+           
+                      </div>
+                    </div>
+                  </div>
+
     <div
      
     >
-      <div  className="container-fluid-insurance-all"
+      {/* <div  className="container-fluid-insurance-all"
       style={{
         background: "linear-gradient(182.42deg, #FCA505 2.01%, #FFFFFF)",
-        // minHeight: "65vh",
+        minHeight: "65vh",
         position: "relative",
         
         
@@ -253,14 +412,13 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         className="row justify-content-start align-items-center"
         style={{ minHeight: "125%", padding:"20px" , margin:"0"}}
       >
-        {/* Left side: Text content */}
+     
         <div className="col-12 col-md-6 text-left">
           <div className="text-content ">
             <h2> <strong>Protect Your Future with Ease</strong> </h2>
             <p>Insurance applications made simple and stress-free.</p>
           </div>
 
-          {/* Checklist icon at the bottom of the left side */}
           <img
             src={checklistIcon}
             alt="Checklist Icon"
@@ -269,7 +427,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
           />
         </div>
 
-        {/* Right side: Vehicles and Phone Icon */}
+        
         <div className="col-12 col-md-6 text-center vehical-image-container">
           <img
             src={vehiclesIcon}
@@ -278,8 +436,11 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
           />
         </div>
       </div>
-      </div>
+      </div> */}
 
+        
+      
+                
       {/* Insurance type selection */}
       <div className="insurance-cards-container row justify-content-center">
         <div className="text-center mt-4">

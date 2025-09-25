@@ -169,7 +169,7 @@ const PassportAgentinPune = () => {
             <Helmet>
 
                 {/* Canonical URL */}
-                <link rel="canonical" href="https://makemydocuments.com/passport-agent-in-pune" />
+                <link rel="canonical" href="https://www.makemydocuments.com/passport-agent-in-pune" />
 
                 {/* Meta Title & Description */}
                 <title>Reliable Passport Agent in Pune - Expert Passport Services</title>
@@ -184,7 +184,7 @@ const PassportAgentinPune = () => {
                     property="og:description"
                     content="Apply for a passport in Pune with expert help from Make My Documents. We assist with fresh, renewal, and Tatkal passport services. Book now!"
                 />
-                <meta property="og:url" content="https://makemydocuments.com/passport-agent-in-pune" />
+                <meta property="og:url" content="https://www.makemydocuments.com/passport-agent-in-pune" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
                 <meta property="og:site_name" content="Make My Documents" />
@@ -207,10 +207,10 @@ const PassportAgentinPune = () => {
         "@graph": [
           {
             "@type": "LocalBusiness",
-            "@id": "https://makemydocuments.com/passport-agent-in-pune",
+            "@id": "https://www.makemydocuments.com/passport-agent-in-pune",
             "name": "Make My Documents",
-            "image": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
-            "url": "https://makemydocuments.com/passport-agent-in-pune",
+            "image": "https://www.makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
+            "url": "https://www.makemydocuments.com/passport-agent-in-pune",
             "telephone": "+91-9429690973",
             "address": {
               "@type": "PostalAddress",
@@ -686,12 +686,12 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
                                             </p>
                                         </div>
-                                        <div>
+                                        {/* <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
                                                 ₹2,499/-
                                             </p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

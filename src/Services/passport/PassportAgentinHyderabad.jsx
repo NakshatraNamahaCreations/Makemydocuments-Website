@@ -172,7 +172,7 @@ const PassportAgentinHyderabad = () => {
                 <meta name="description" content="Passport Agent in Hyderabad | Fast and Reliable passport agent in Hyderabad offering hassle-free passport services, which includes new, renewals and Tatkal.
 "/>
                 <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application" />
-                <link rel="canonical" href="https://makemydocuments.com/passport-agent-in-hyderabad
+                <link rel="canonical" href="https://www.makemydocuments.com/passport-agent-in-hyderabad
 " />
                 <meta name="rating" CONTENT="General" />
                 <meta name="revisit-after" CONTENT="2 days" />
@@ -245,8 +245,8 @@ const PassportAgentinHyderabad = () => {
         "@type": "LocalBusiness",
         "name": "Make My Documents",
         "image": "https://www.makemydocuments.com/logo.png",
-        "@id": "https://makemydocuments.com/passport-agent-in-hyderabad",
-        "url": "https://makemydocuments.com/passport-agent-in-hyderabad",
+        "@id": "https://www.makemydocuments.com/passport-agent-in-hyderabad",
+        "url": "https://www.makemydocuments.com/passport-agent-in-hyderabad",
         "telephone": "+91-9429690973",
         "address": {
           "@type": "PostalAddress",
@@ -433,7 +433,7 @@ const PassportAgentinHyderabad = () => {
 
                 <meta property="og:title" content="Passport Agent in Hyderabad | Fast & Reliable Passport Services" />
                 <meta property="og:description" content="Passport Agent in Hyderabad | Fast and Reliable passport agent in Hyderabad offering hassle-free passport services, which includes new, renewals and Tatkal." />
-                <meta property="og:url" content="https://makemydocuments.com/passport-agent-in-hyderabad" />
+                <meta property="og:url" content="https://www.makemydocuments.com/passport-agent-in-hyderabad" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://www.makemydocuments.com/images/passport-service-banner.jpg" />
                 <meta property="og:site_name" content="Make My Documents" />
@@ -783,12 +783,12 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
 
                                             </p>
                                         </div>
-                                        <div>
+                                        {/* <div>
                                             <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Starting from</p>
                                             <p style={{ margin: 0, color: "#ffc107", fontWeight: "bold", fontSize: "10px", }}>
                                                 ₹2,499/-
                                             </p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

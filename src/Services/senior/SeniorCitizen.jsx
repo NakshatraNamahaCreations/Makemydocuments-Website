@@ -718,7 +718,7 @@ const SeniorCitizen = () => {
         />
         <meta
           name="author"
-          content="https://makemydocuments.com/senior-citizen-card"
+          content="https://www.makemydocuments.com/senior-citizen-card"
         />
         <link
           rel="canonical"

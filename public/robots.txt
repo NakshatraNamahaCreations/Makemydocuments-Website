@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://makemydocuments.com/sitemap.xml
+Sitemap: https://www.makemydocuments.com//sitemap.xml

@@ -355,7 +355,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                             fontSize: "36px",
                                             fontWeight: "bold",
                                             margin: 0,
-
+                                            color:"#fff"
                                         }}
                                     >
                                         Azerbaijan Visa for Indians
@@ -412,7 +412,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                 style={{
                                                     fontSize: "14px",
                                                     marginBottom: "5px",
-                                                    color: "#333",
+                                                     color:"#fff",
                                                     fontWeight: "600",
                                                 }}
                                             >
@@ -442,7 +442,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                                                 style={{
                                                     fontSize: "14px",
                                                     marginBottom: "5px",
-                                                    color: "#333",
+                                                     color:"#fff",
                                                     fontWeight: "600",
                                                 }}
                                             >

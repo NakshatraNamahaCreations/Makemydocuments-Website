@@ -161,7 +161,7 @@ const BlogDetails = () => {
     <Helmet>
     <title>{blog.metaTitle || blog.title}</title>
     <meta name="description" content={blog.metaDescription || "Read our latest blog article."} />
-    <link rel="canonical" href={`https://makemydocuments.com/blogs/${title}`} />
+    <link rel="canonical" href={`https://www.makemydocuments.com/blogs/${title}`} />
     <script type="application/ld+json">
     {`
     {
@@ -169,7 +169,7 @@ const BlogDetails = () => {
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://makemydocuments.com/blogs/${title}"
+        "@id": "https://www.makemydocuments.com/blogs/${title}"
       },
       "headline": "${blog.metaTitle?.replace(/"/g, '\\"') || blog.title?.replace(/"/g, '\\"')}",
       "description": "${blog.metaDescription?.replace(/"/g, '\\"') || ""}",
@@ -177,14 +177,14 @@ const BlogDetails = () => {
       "author": {
         "@type": "Person",
         "name": "Make My Documents",
-        "url": "https://makemydocuments.com"
+        "url": "https://www.makemydocuments.com"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Make My Documents",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg"
+          "url": "https://www.makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg"
         }
       },
       "datePublished": "${new Date(blog.createdAt).toISOString()}",
@@ -202,19 +202,19 @@ const BlogDetails = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://makemydocuments.com/"
+          "item": "https://www.makemydocuments.com/
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Blogs",
-          "item": "https://makemydocuments.com/blogs"
+          "item": "https://www.makemydocuments.com/blogs"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "${(blog.metaTitle || blog.title)?.replace(/"/g, '\\"')}",
-          "item": "https://makemydocuments.com/blogs/${title}"
+          "item": "https://www.makemydocuments.com/blogs/${title}"
         }
       ]
     }

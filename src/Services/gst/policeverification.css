@@ -353,3 +353,18 @@
   }
 }
 
+
+@media (min-width: 768px) {
+  .banner-text1 {
+    font-size: 22px !important;  /* or any size you want */
+  }
+  .banner-text2{
+    font-size: 16px !important;
+
+  }
+  .bannerContent3{
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 80px;
+  }
+}

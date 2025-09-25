@@ -163,7 +163,7 @@ const PoliceVerificationNew = () => {
             <title> Police Verification Certificate | Apply Online</title>
         <meta name="description" content="Apply for your  Police Verification Certificate (PVC) online with Make My Documents. Easy process via Seva Sindhu, documents upload & fast delivery."/>
         <meta name="keywords" content="police verification certificate, PVC application, apply PVC online, police verification online, PVC application India, PVC certificate for employment, police verification for rental, police verification agents near me, PVC for immigration, police verification Bangalore, online police verification service, PVC application process, police verification documents required, how to apply for police verification certificate, police clearance certificate, PVC for job application, police verification certificate India, apply PVC online India"/>
-        <link rel="canonical" href="https://makemydocuments.com/police-verification"/>
+        <link rel="canonical" href="https://www.makemydocuments.com/police-verification"/>
         <meta name="rating" content="General"/>
         <meta name="revisit-after" content="2 days"/>
         <meta name="robots" content="ALL, index, follow"/>
@@ -265,11 +265,13 @@ const PoliceVerificationNew = () => {
         
             </Helmet>
 
-      <div
+
+      <div style={{ overflow: "hidden" }}>
+              <div
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -294,7 +296,6 @@ const PoliceVerificationNew = () => {
         </nav>
       </div>
 
-      <div style={{ overflow: "hidden" }}>
         <div className="mobile-header">
           {/* Header Section */}
           <div style={{ margin: 0, fontFamily: "Poppins, sans-serif" }}>
@@ -393,39 +394,10 @@ const PoliceVerificationNew = () => {
                       marginTop: "20px",
                       width: "100%",
                       maxWidth: "320px",
-
-                      // padding: "15px",
                       borderRadius: "10px",
                     }}
                   >
                   
-
-                    {/* <div style={{ flex: 1, textAlign: "right" }}>
-                      <p
-                        style={{
-                          fontSize: "14px",
-                          marginBottom: "5px",
-                          color: "#333",
-                          fontWeight: "600",
-                        }}
-                      >
-                        Starting from
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "12px",
-                          fontWeight: "bold",
-                          color: "#333",
-                          backgroundColor: "#e3f2fd",
-                          padding: "6px 10px",
-                          borderRadius: "6px",
-                          display: "inline-block",
-                          margin: 0,
-                        }}
-                      >
-                        ₹2,499/-
-                      </p>
-                    </div> */}
                   </div>
                   <div style={{ marginTop: "20px" }}>
                     <button
@@ -489,14 +461,16 @@ const PoliceVerificationNew = () => {
                     padding: "10px",
                   }}
                 >
+                  <div className='bannerContent3'>
                   <p
+                   className="banner-text1"
                     style={{
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginBottom: "8px",
                     }}
                   >
-                   Police Verification Certificate – Apply Online  
+                   Police Verification Certificate 
                   </p>
 
                   <div
@@ -514,11 +488,11 @@ const PoliceVerificationNew = () => {
                     }}
                   >
                     ⭐{" "}
-                    <span style={{ marginLeft: "6px" }}>
+                    <span style={{ marginLeft: "6px" }} className="banner-text2">
                       99% Delivered on time
                     </span>
                   </div>
-
+                      </div>
                   <div
                     style={{
                       display: "flex",

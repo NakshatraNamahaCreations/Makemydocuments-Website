@@ -1485,7 +1485,7 @@ const TwoWheeler = () => {
         />
         <meta
           name="author"
-          content="https://makemydocuments.com/life-insurance"
+          content="https://www.makemydocuments.com/life-insurance"
         />
         <meta name="rating" content="General" />
         <meta name="revisit-after" content="2 days" />

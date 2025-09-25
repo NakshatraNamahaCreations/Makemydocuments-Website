@@ -927,7 +927,7 @@ useLayoutEffect(() => {
 <meta name="description" content="Now get your Rental agreement online, Rental Agreement simple online process.Register online, Drafting, Review Drafting, Payment, Doorstep Delivery"/>
 <meta name="keywords" content="rental agreement, rental agreement online, how to create rental agreement,rental agreement near me, rental agreement bangalore, online rental agreement, online rent agreement near me, rent agreement, notarized rent agreement online, house rental agreement, online house rental agreement,
 home rental agreement, rent agreement near me, rent agreement bangalore,rent agreement online bangalore, rental agreement karnataka, online agreement services."/>
-<meta name="author" content="https://makemydocuments.com/rental-agreement"/>
+<meta name="author" content="https://www.makemydocuments.com/rental-agreement"/>
 <link rel="canonical" href="https://www.makemydocuments.com/rental-agreement" />
 <meta name="rating" CONTENT="General"/>
 <meta name="revisit-after" CONTENT="2 days"/>

@@ -267,7 +267,7 @@ const TravelVisaNew = () => {
 <meta name="keywords" content="tourist visa, apply tourist visa online, visa application, tourist visa approval, travel visa, online tourist visa, tourist visa services, easy visa application, tourist visa online, how to apply tourist visa, instant visa approval, download tourist visa, no paperwork tourist visa, hassle-free tourist visa"/>
 
 <link rel="canonical" href="https://www.makemydocuments.com/tourist-visa" />
-<meta name="author" content="https://makemydocuments.com/tourist-visa"/>
+<meta name="author" content="https://www.makemydocuments.com/tourist-visa"/>
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>
@@ -374,7 +374,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -455,7 +455,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                       margin: 0,
                     }}
                   >
-                    Tourist Visa Services – Apply Online With Ease
+                    Tourist Visa Services <br /> – Apply Online With Ease
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -490,112 +490,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                     </span>
                   </div> */}
 
-                  {/* Visa Details */}
-                  {/* <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      marginTop: "20px",
-                      width: "100%",
-                      maxWidth: "320px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <div style={{ flex: 1 }}>
-                      <p
-                        style={{
-                          fontSize: "14px",
-                          marginBottom: "5px",
-                          color: "#333",
-                          fontWeight: "600",
-                        }}
-                      >
-                        Processing time
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "12px",
-                          fontWeight: "bold",
-                          color: "#333",
-                          margin: 0,
-                          backgroundColor: "#e3f2fd",
-                          padding: "6px 10px",
-                          borderRadius: "6px",
-                          whiteSpace: "nowrap",
-                          display: "inline-block",
-                        }}
-                      >
-                        15-20 working days (Normal)
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "12px",
-                          fontWeight: "bold",
-                          color: "#333",
-                          margin: 0,
-                          backgroundColor: "#e3f2fd",
-                          padding: "6px 10px",
-                          borderRadius: "6px",
-                          whiteSpace: "nowrap",
-                          display: "inline-block",
-                        }}
-                      >
-                        5-10 working days (Tatkal)
-                      </p>
-                    </div>
-
-                    <div style={{ flex: 1, textAlign: "right" }}>
-                      <p
-                        style={{
-                          fontSize: "14px",
-                          marginBottom: "5px",
-                          color: "#333",
-                          fontWeight: "600",
-                        }}
-                      >
-                        Starting from
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "12px",
-                          fontWeight: "bold",
-                          color: "#333",
-                          backgroundColor: "#e3f2fd",
-                          padding: "6px 10px",
-                          borderRadius: "6px",
-                          display: "inline-block",
-                          margin: 0,
-                        }}
-                      >
-                        ₹2,499/-
-                      </p>
-                    </div>
-                  </div> */}
-                  {/* <div style={{ marginTop: "20px" }}>
-                    <button
-                      onClick={handleContinue}
-                      style={{
-                        backgroundColor: "#fea400 ",
-                        color: "#333",
-                        padding: "12px 24px",
-                        border: "none",
-                        borderRadius: "6px",
-                        fontSize: "16px",
-                        fontWeight: "bold",
-                        cursor: "pointer",
-                        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-                        transition: "background-color 0.3s ease",
-                      }}
-                      onMouseOver={(e) =>
-                        (e.target.style.backgroundColor = "#fea400")
-                      }
-                      onMouseOut={(e) =>
-                        (e.target.style.backgroundColor = "#fea400")
-                      }
-                    >
-                      Apply Now
-                    </button>
-                  </div> */}
+             
                 </div>
               </div>
             </div>
@@ -615,7 +510,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                   alt="Hong Kong Visa"
                   style={{
                     width: "100%",
-                    height: "auto",
+                    height: "150px",
                     objectFit: "cover",
                   }}
                 />
@@ -638,9 +533,11 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginBottom: "8px",
+                      
+                      
                     }}
                   >
-                   Tourist Visa Services – Apply Online With Ease
+                   Tourist Visa Services <br /> – Apply Online With Ease
                   </p>
 
                   {/* <div

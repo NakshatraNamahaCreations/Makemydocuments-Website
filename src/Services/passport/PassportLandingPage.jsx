@@ -165,7 +165,7 @@ const PassportLandingPage = () => {
            <title>Apply Passport Online | Professional Passport Assistance</title>
        <meta name="description" content="Apply for your passport online with expert assistance from Make My Documents. Get guidance for fresh, renewal, or Tatkal applications with error-free filing."/>
        <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application"/>
-       <link rel="canonical" href="https://makemydocuments.com/passport" />
+       <link rel="canonical" href="https://www.makemydocuments.com/passport" />
        <meta name="rating" CONTENT="General"/>
        <meta name="revisit-after" CONTENT="2 days"/>
        <meta name="robots" content=" ALL, index, follow"/>

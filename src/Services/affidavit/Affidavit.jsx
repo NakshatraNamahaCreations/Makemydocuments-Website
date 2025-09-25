@@ -1415,7 +1415,7 @@ const Affidavit = () => {
         <title> Name Change Affidavit Online|Draft In 60 Minutes|Delivery Within 24 Hours</title>
         <meta name="description" content="Click here to apply name change affidavir and get it the earliest,with expertise advice and guidance. And get newspaper publication online" />
         <meta name="keywords" content=" name change affidavit, name change affidavit online, how to get name change affidavit, how to create name change affidavit, create name change affidavit " />
-        <meta name="author" content="https://makemydocuments.com/name-change-affidavit" />
+        <meta name="author" content="https://www.makemydocuments.com/name-change-affidavit" />
         <link rel="canonical" href="https://www.makemydocuments.com/affidavits" />
         <meta name="rating" CONTENT="General" />
         <meta name="revisit-after" CONTENT="2 days" />
@@ -1651,7 +1651,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
               </div>
             </div>
 
-            <div style={{ width: "100%" }} className="d-block d-lg-none">
+            {/* <div style={{ width: "100%" }} className="d-block d-lg-none">
               <div
                 style={{
                   position: "relative",
@@ -1660,7 +1660,6 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                   marginTop: "37%",
                 }}
               >
-                {/* Image */}
                 <img
                   src={bannerimage}
                   alt="Hong Kong Visa"
@@ -1671,7 +1670,6 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                   }}
                 />
 
-                {/* Text Container */}
                 <div
                   style={{
                     position: "absolute",
@@ -1714,39 +1712,66 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                     </span>
                   </div>
 
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      fontSize: "10px",
-                    }}
-                  >
-                  
-                    {/* <div>
-                      <p
-                        style={{
-                          margin: 0,
-                          fontWeight: "bold",
-                          fontSize: "10px",
-                        }}
-                      >
-                        Starting from
-                      </p>
-                      <p
-                        style={{
-                          margin: 0,
-                          color: "#ffc107",
-                          fontWeight: "bold",
-                          fontSize: "10px",
-                        }}
-                      >
-                        ₹2,499/-
-                      </p>
-                    </div> */}
-                  </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+{/* MOBILE ONLY */}
+<div className="d-block d-lg-none">
+  <div
+    style={{
+      position: "relative",
+      width: "100%",
+      // height: 220,           // give the banner a real height (px)
+      overflow: "hidden",
+      marginTop: 250,          // avoid pushing the banner off-screen
+    }}
+  >
+    <img
+      src={bannerimage}
+      alt="Affidavits Online"
+      style={{
+        width: "100%",
+        height: "100%",      // fill the box
+        objectFit: "cover",
+        display: "block",
+      }}
+    />
+
+    {/* Text overlay */}
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        background: "linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0))",
+        color: "#fff",
+        padding: 12,
+      }}
+    >
+      <p style={{ fontSize: 16, fontWeight: 700, margin: 0 }}>
+        Apply for Affidavits Online
+      </p>
+
+      <div
+        style={{
+          alignSelf: "flex-start",
+          marginTop: 8,
+          backgroundColor: "rgba(230,247,250,0.95)",
+          color: "#000",
+          padding: "3px 8px",
+          borderRadius: 6,
+          fontSize: 11,
+          fontWeight: 600,
+        }}
+      >
+        ⭐ <span style={{ marginLeft: 6 }}>99% Delivered on time</span>
+      </div>
+    </div>
+  </div>
+</div>
+
             </div>
             </div>
         <div style={{ marginTop: "50px", marginLeft: "171px" }}>

@@ -189,7 +189,7 @@ const Vietnam = () => {
         />
         <link
           rel="canonical"
-          href="https://makemydocuments.com/vietnam-tourist-visa-for-indians"
+          href="https://www.makemydocuments.com/vietnam-tourist-visa-for-indians"
         />
         {/* <meta name="author" content={currentMeta.canonical} /> */}
         <meta name="rating" content="General" />
@@ -263,9 +263,9 @@ const Vietnam = () => {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Make My Documents",
-              "image": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
-              "@id": "https://makemydocuments.com/vietnam-tourist-visa-for-indians",
-              "url": "https://makemydocuments.com/vietnam-tourist-visa-for-indians",
+              "image": "https://www.makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
+              "@id": "https://www.makemydocuments.com/vietnam-tourist-visa-for-indians",
+              "url": "https://www.makemydocuments.com/vietnam-tourist-visa-for-indians",
               "telephone": "+91-9429690973",
               "address": {
                 "@type": "PostalAddress",
@@ -407,9 +407,9 @@ const Vietnam = () => {
 
         <meta property="og:title" content="Vietnam Tourist Visa for Indians – Fast & Easy Approval" />
         <meta property="og:description" content="Apply for your Vietnam Tourist Visa for Indians through online. 99% approval rate, secure process, and delivery will be in 7–10 days. Starting at just Rs.4,000." />
-        <meta property="og:url" content="https://makemydocuments.com/vietnam-tourist-visa-for-indians" />
+        <meta property="og:url" content="https://www.makemydocuments.com/vietnam-tourist-visa-for-indians" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
+        <meta property="og:image" content="https://www.makemydocuments.com/static/media/bannerimage-g.9468cc5ebd5dcf5ebb9d.png" />
         <meta property="og:site_name" content="Make My Documents" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -459,7 +459,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -537,7 +537,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                       fontSize: "36px",
                       fontWeight: "bold",
                       margin: 0,
-
+                      
                     }}
                   >
                     Vietnam Tourist Visa for Indians
@@ -703,9 +703,9 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                     padding: "15px",
                   }}
                 >
-                  <h2 style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" }}>
-                    Vietnam Tourist Visa for Indians
-                  </h2>
+                  <p style={{ fontSize: "14px", fontWeight: "bold", marginBottom: "8px" , color:"#333"}}>
+                    Vietnam Tourist Visa <br /> for Indians
+                  </p>
 
                   <div
                     style={{
@@ -732,7 +732,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                     }}
                   >
                     <div>
-                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px", }}>Processing time</p>
+                      <p style={{ margin: 0, fontWeight: "bold", fontSize: "10px",  }}>Processing time</p>
                       <p style={{ margin: 0, fontSize: "10px", }}>07 - 10 working days          </p>
                     </div>
                     <div>
@@ -752,111 +752,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                 {/* Left Column () */}
                 <div className="col-md-8" ref={firstColumnRef} >
                   {/* Charges Section (Scrollable) */}
-                  <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
-                    {/* Image Section */}
-                    <div className="d-flex justify-content-center align-items-center">
-                      <div style={{ position: "relative", display: "inline-block", marginTop: '-100%', marginLeft: '' }}>
-                        <img src={circleIcon} alt="Circle Background" className="img-fluid" />
-                        <img
-                          src={Price}
-                          alt="Charges Icon"
-                          style={{
-                            position: "absolute",
-                            top: "56%",
-                            left: "43%",
-                            transform: "translate(-50%, -50%)",
-                            maxWidth: "35px",
-                          }}
-                        />
-                      </div>
-                    </div>
-
-                    {/* Content Section */}
-                    <div style={{ marginTop: '' }}>
-                      <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
-                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
-                        <li>Vietnam 30 Days Single Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 4,371/-</strong> </li>
-                         <li>Vietnam 30 Days Multiple Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 12,492/-</strong> </li>
-                        <li>Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: '#ff9800' }}>Rs 14,573/-</strong>
-                        </li>
-                        <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
-
-                      </ul>
-                    </div>
-                  </div>
-                  <div
-                    className="d-block d-lg-none"
-                    style={{
-                      padding: "15px",
-                      backgroundColor: "#ffffff",
-                      borderRadius: "10px",
-                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-                      margin: "15px",
-                    }}
-                  >
-                    {/* Charges Section */}
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "10px",
-                        marginBottom: "20px",
-                      }}
-                    >
-                      <div
-                        style={{
-                          position: "relative",
-                          display: "inline-block",
-                          width: "100px",
-                          height: "100px",
-                        }}
-                      >
-                        <img
-                          src={circleIcon}
-                          alt="Circle"
-                          style={{ width: "100%", height: "100%" }}
-                        />
-                        <img
-                          src={Price}
-                          alt="Price Icon"
-                          style={{
-                            position: "absolute",
-                            top: "50%",
-                            left: "50%",
-                            transform: "translate(-50%, -50%)",
-                            width: "26px",
-                          }}
-                        />
-                      </div>
-                      <div>
-                        <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
-                          Charges
-                        </h5>
-                        <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
-                          <li>
-                            Vietnam 30 Days Single Entry E-Visa{" "}
-                            <strong style={{ color: "#ff9800" }}>Rs. 4,371/-</strong>
-                          </li>
-                               <li>
-                            Vietnam 30 Days Multiple Entry E-Visa{" "}
-                            <strong style={{ color: "#ff9800" }}>Rs. 12,492/-</strong>
-                          </li>
-                          <li>
-                            Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: "#ff9800" }}> Rs 14,573
-                            </strong>
-                          </li>
-                          <li>
-                            <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
-                            Need to pay while submitting online form (This amount will be
-                            adjusted in total bill)
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <br />
-                  {/* Documents Required Section (Non-scrollable) */}
+            
                   <div
                     className="d-none d-lg-block"
                     style={{
@@ -1157,6 +1053,95 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`}
                             your inbox.
                           </p>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                        <div className="d-flex align-items-center w-100 flex-wrap mt-5 gap-3  d-none d-lg-block" style={{ marginLeft: '2%' }}>
+                    {/* Image Section */}
+                    <div className="d-flex justify-content-center align-items-center">
+                     
+                    </div>
+
+                    {/* Content Section */}
+                    <div style={{ marginTop: '' }}>
+                      <h5 style={{ color: "#007BFF", fontWeight: "bold" }}>Charges</h5>
+                      <ul style={{ listStyleType: "disc", paddingLeft: "20px", }}>
+                        <li>Vietnam 30 Days Single Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 4,371/-</strong> </li>
+                         <li>Vietnam 30 Days Multiple Entry E-Visa <strong style={{ color: '#ff9800' }}>Rs. 12,492/-</strong> </li>
+                        <li>Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: '#ff9800' }}>Rs 14,573/-</strong>
+                        </li>
+                        <li> <strong style={{ color: '#ff9800' }}>Rs. 99/-</strong> as booking fee. Need to pay while submitting online form <br />(This mount will a be adjusted in total bill)</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                            <div
+                    className="d-block d-lg-none"
+                    style={{
+                      padding: "15px",
+                      backgroundColor: "#ffffff",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                      margin: "15px",
+                    }}
+                  >
+                    {/* Charges Section */}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "relative",
+                          display: "inline-block",
+                          width: "100px",
+                          height: "100px",
+                        }}
+                      >
+                        <img
+                          src={circleIcon}
+                          alt="circleIconCircle"
+                          style={{ width: "100%", height: "100%" }}
+                        />
+                        <img
+                          src={Price}
+                          alt="Price Icon"
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            width: "26px",
+                          }}
+                        />
+                      </div>
+                      <div>
+                        <h5 style={{ color: "#007BFF", fontWeight: "bold", fontSize: "16px" }}>
+                          Charges
+                        </h5>
+                        <ul style={{ fontSize: "14px", paddingLeft: "15px", marginBottom: 0 }}>
+                          <li>
+                            Vietnam 30 Days Single Entry E-Visa{" "}
+                            <strong style={{ color: "#ff9800" }}>Rs. 4,371/-</strong>
+                          </li>
+                               <li>
+                            Vietnam 30 Days Multiple Entry E-Visa{" "}
+                            <strong style={{ color: "#ff9800" }}>Rs. 12,492/-</strong>
+                          </li>
+                          <li>
+                            Vietnam 90 Days Multiple Entry E-Visa  <strong style={{ color: "#ff9800" }}> Rs 14,573
+                            </strong>
+                          </li>
+                          <li>
+                            <strong style={{ color: "#ff9800" }}>Rs. 99/-</strong> as booking fee.
+                            Need to pay while submitting online form (This amount will be
+                            adjusted in total bill)
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

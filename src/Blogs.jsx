@@ -36,7 +36,7 @@ const Blogs = () => {
           name="description"
           content="Explore our blog for expert tips and insights on document services like PAN cards, passports, visas, MSME certificates, and more."
         />
-        <link rel="canonical" href="https://makemydocuments.com/blogs" />
+        <link rel="canonical" href="https://www.makemydocuments.com/blogs" />
 
         <script type="application/ld+json">
     {JSON.stringify({
@@ -45,12 +45,12 @@ const Blogs = () => {
       "name": "Make My Documents Blog",
       "description":
         "Explore expert advice on documents like PAN cards, passports, visas, MSME certifications, and more.",
-      "url": "https://makemydocuments.com/blogs",
+      "url": "https://www.makemydocuments.com/blogs",
       "blogPost": blogs.slice(0, visibleCount).map((blog) => ({
         "@type": "BlogPosting",
         "headline": blog.metaTitle || blog.title,
         "description": blog.metaDescription || "",
-        "url": `https://makemydocuments.com/blogs/${blog.title}`,
+        "url": `https://www.makemydocuments.com/blogs/${blog.title}`,
         "image": `https://api.makemydocuments.com/uploads/blogs/${blog.image}`,
         "author": {
           "@type": "Person",
@@ -61,7 +61,7 @@ const Blogs = () => {
           "name": "Make My Documents",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
+            "url": "https://www.makemydocuments.com/static/media/logo.31258f6da87268f7ee2d04f6f96e256d.svg",
           },
         },
         "datePublished": new Date(blog.createdAt).toISOString(),
@@ -80,13 +80,13 @@ const Blogs = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://makemydocuments.com/"
+        "item": "https://www.makemydocuments.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blogs",
-        "item": "https://makemydocuments.com/blogs"
+        "item": "https://www.makemydocuments.com/blogs"
       }
     ]
   }

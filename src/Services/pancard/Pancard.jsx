@@ -1746,7 +1746,7 @@ const Pancard = () => {
           name="keywords"
           content="pan card, apply pan card, pan card online, pan card apply online, pan card apply online India, pan card apply bangalore, instant pan card, pan card application, pan card application online, pan application, pan card agents near me, online pan card agents, how to apply for pan card, new pan card application, documents required for pan card, pan card form, pan card application near me, how to get pan card online, pan card site, e pan card, new pan card apply, e pan card apply"
         />
-        <link rel="canonical" href="https://makemydocuments.com/pan-card" />
+        <link rel="canonical" href="https://www.makemydocuments.com/pan-card" />
         <meta name="rating" CONTENT="General" />
         <meta name="revisit-after" CONTENT="2 days" />
         <meta name="robots" content=" ALL, index, follow" />

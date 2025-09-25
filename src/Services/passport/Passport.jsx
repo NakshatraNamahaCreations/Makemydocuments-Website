@@ -1597,7 +1597,7 @@ const [leadId,setLeadId]=useState();
     <title>"Get Your Passport Fast and Hassle-Free | Expert Passport Application Assistance"</title>
 <meta name="description" content="Looking to get your passport without the hassle? Our passport services provide fast and efficient assistance with your passport application. Trust our expert passport team to handle everything, ensuring you receive your passport quickly and smoothly. Get started on your passport journey today and experience the best in passport services!"/>
 <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application"/>
-<link rel="canonical" href="https://makemydocuments.com/passport" />
+<link rel="canonical" href="https://www.makemydocuments.com/passport" />
 <meta name="rating" CONTENT="General"/>
 <meta name="revisit-after" CONTENT="2 days"/>
 <meta name="robots" content=" ALL, index, follow"/>

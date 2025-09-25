@@ -174,7 +174,7 @@ const SeniorCitizenNew = () => {
                 />
                 <meta
                   name="author"
-                  content="https://makemydocuments.com/senior-citizen-card"
+                  content="https://www.makemydocuments.com/senior-citizen-card"
                 />
                 <link
                   rel="canonical"
@@ -289,7 +289,7 @@ const SeniorCitizenNew = () => {
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -447,32 +447,6 @@ const SeniorCitizenNew = () => {
                    
                     </div>
 
-                    {/* <div style={{ flex: 1, textAlign: "right" }}>
-                      <p
-                        style={{
-                          fontSize: "14px",
-                          marginBottom: "5px",
-                          color: "#333",
-                          fontWeight: "600",
-                        }}
-                      >
-                        Starting from
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "12px",
-                          fontWeight: "bold",
-                          color: "#333",
-                          backgroundColor: "#e3f2fd",
-                          padding: "6px 10px",
-                          borderRadius: "6px",
-                          display: "inline-block",
-                          margin: 0,
-                        }}
-                      >
-                        ₹2,499/-
-                      </p>
-                    </div> */}
                   </div>
                   <div style={{ marginTop: "20px" }}>
                     <button

@@ -164,7 +164,7 @@ const PoliceClearenceNew = () => {
            <title> Police Clearance Certificate (PCC) Online | Application </title>
            <meta name="description" content="Apply for PCC online  with Make My Documents. Easy registration, PSK appointment, and quick delivery of your Police Clearance Certificate via email"/>
            <meta name="keywords" content="police clearance certificate, PCC application, apply PCC online, PCC application India, police clearance certificate online, PCC for visa, PCC agents near me, PCC for employment, police verification certificate, PCC document requirements, online PCC service, how to apply PCC, PCC process, police certificate for immigration, PCC Bangalore, police clearance certificate for travel, police clearance certificate India, PCC near me, apply police certificate online"/>
-           <link rel="canonical" href="https://makemydocuments.com/police-clearance-certificate"/>
+           <link rel="canonical" href="https://www.makemydocuments.com/police-clearance-certificate"/>
            <meta name="rating" content="General"/>
            <meta name="revisit-after" content="2 days"/>
            <meta name="robots" content="ALL, index, follow"/>
@@ -269,7 +269,7 @@ const PoliceClearenceNew = () => {
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -350,7 +350,7 @@ const PoliceClearenceNew = () => {
                       margin: 0,
                     }}
                   >
-                    Police Clearance Certificate (PCC) 
+                    Police Clearance Certificate 
                   </h1>
 
                   {/* Approval Rate Badge */}
@@ -489,14 +489,16 @@ const PoliceClearenceNew = () => {
                     padding: "10px",
                   }}
                 >
+                   <div className='bannerContent3'>
                   <p
+                   className="banner-text1"
                     style={{
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginBottom: "8px",
                     }}
                   >
-                   Police Clearance Certificate (PCC) 
+                   Police Clearance Certificate 
                   </p>
 
                   <div
@@ -514,41 +516,12 @@ const PoliceClearenceNew = () => {
                     }}
                   >
                     ⭐{" "}
-                    <span style={{ marginLeft: "6px" }}>
+                    <span style={{ marginLeft: "6px" }} className="banner-text2">
                       99% Delivered on time
                     </span>
                   </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      fontSize: "10px",
-                    }}
-                  >
-                  
-                    {/* <div>
-                      <p
-                        style={{
-                          margin: 0,
-                          fontWeight: "bold",
-                          fontSize: "10px",
-                        }}
-                      >
-                        Starting from
-                      </p>
-                      <p
-                        style={{
-                          margin: 0,
-                          color: "#ffc107",
-                          fontWeight: "bold",
-                          fontSize: "10px",
-                        }}
-                      >
-                        ₹2,499/-
-                      </p>
-                    </div> */}
-                  </div>
+                </div>
+                 
                 </div>
               </div>
             </div>

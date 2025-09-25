@@ -1598,7 +1598,7 @@ const [leadId,setLeadId]=useState();
     <title> Apply Police Verification Certificate Online | PVC Application India </title>
 <meta name="description" content="Apply online for your Police Verification Certificate (PVC) with expert assistance. Quick and reliable service for employment, rental, and immigration purposes."/>
 <meta name="keywords" content="police verification certificate, PVC application, apply PVC online, police verification online, PVC application India, PVC certificate for employment, police verification for rental, police verification agents near me, PVC for immigration, police verification Bangalore, online police verification service, PVC application process, police verification documents required, how to apply for police verification certificate, police clearance certificate, PVC for job application, police verification certificate India, apply PVC online India"/>
-<link rel="canonical" href="https://makemydocuments.com/police-verification"/>
+<link rel="canonical" href="https://www.makemydocuments.com/police-verification"/>
 <meta name="rating" content="General"/>
 <meta name="revisit-after" content="2 days"/>
 <meta name="robots" content="ALL, index, follow"/>

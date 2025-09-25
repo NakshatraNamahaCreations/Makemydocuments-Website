@@ -200,8 +200,8 @@ const App = () => {
         {/* <Route path="/msme-registration" element={<Layout><Msme /></Layout>} /> */}
         <Route path="/msme-registration-form" element={<Layout><Msme /></Layout>} />
         <Route path="/msme-registration/proceed-to-pay" element={<Layout><Msme /></Layout>} />
-        <Route path="/food-license" element={<Layout><Food /></Layout>} />
-        <Route path="/food-license-form" element={<Layout><Food /></Layout>} />
+        {/* <Route path="/food-license" element={<Layout><Food /></Layout>} /> */}
+        {/* <Route path="/food-license-form" element={<Layout><Food /></Layout>} /> */}
         <Route path="/food-license/proceed-to-pay" element={<Layout><Food /></Layout>} />
         {/* <Route path="/police-verification" element={<Layout><PoliceVerification /></Layout>} /> */}
         <Route path="/policeverification-form" element={<Layout><PoliceVerification /></Layout>} />

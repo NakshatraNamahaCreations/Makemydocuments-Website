@@ -169,8 +169,8 @@ const LeaseNew = () => {
               <meta name="description" content="Make your lease agreement online in 3 easy steps. Draft within 60 minutes, review securely, and get doorstep delivery in 24 hours through a simple process."/>
              <meta name="keywords" content="lease agreement, lease agreement online, how to create lease agreement,lease agreement near me, lease agreement bangalore, online lease agreement, online lease agreement near me, lease agreement, notarized lease agreement online, house lease agreement, online house lease agreement, 
              home lease agreement, lease agreement near me, lease agreement bangalore,lease agreement online bangalore, lease agreement karnataka, online agreement services."/>
-             <meta name="author" content="https://makemydocuments.com/lease-agreement"/>
-             <link rel="canonical" href="https://makemydocuments.com/lease-agreement" />
+             <meta name="author" content="https://www.makemydocuments.com/lease-agreement"/>
+             <link rel="canonical" href="https://www.makemydocuments.com/lease-agreement" />
             <meta name="rating" CONTENT="General"/>
             <meta name="revisit-after" CONTENT="2 days"/>
             <meta name="robots" content=" ALL, index, follow"/>
@@ -480,7 +480,7 @@ const LeaseNew = () => {
                   alt="Hong Kong Visa"
                   style={{
                     width: "100%",
-                    height: "150",
+                    height: "auto",
                     objectFit: "cover",
                   }}
                 />

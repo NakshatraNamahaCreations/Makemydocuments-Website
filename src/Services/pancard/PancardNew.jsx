@@ -184,7 +184,7 @@ const PancardNew = () => {
            <title>PAN Card Services Online | Apply New, Update & Correction</title>
        <meta name="description" content="Apply PAN card online easily. Get expert help with new PAN (Form 49A), updates, or corrections. Secure process with guidance and quick PAN application support."/>
        <meta name="keywords" content="passport, get passport fast, passport application, passport services, passport assistance, hassle-free passport, quick passport, passport team, passport solutions, secure passport, professional passport services, efficient passport application"/>
-       <link rel="canonical" href="https://makemydocuments.com/passport" />
+       <link rel="canonical" href="https://www.makemydocuments.com/passport" />
        <meta name="rating" CONTENT="General"/>
        <meta name="revisit-after" CONTENT="2 days"/>
        <meta name="robots" content=" ALL, index, follow"/>
@@ -290,7 +290,7 @@ const PancardNew = () => {
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -536,10 +536,13 @@ const PancardNew = () => {
                   alt="Hong Kong Visa"
                   style={{
                     width: "100%",
-                    height: "150",
+                    height: "120px",
                     objectFit: "cover",
+                   
                   }}
                 />
+             
+             
 
                 {/* Text Container */}
                 <div
@@ -554,11 +557,13 @@ const PancardNew = () => {
                     padding: "10px",
                   }}
                 >
+                     
                   <p
                     style={{
                       fontSize: "14px",
                       fontWeight: "bold",
                       marginBottom: "8px",
+                    
                     }}
                   >
                  PAN Card Services 

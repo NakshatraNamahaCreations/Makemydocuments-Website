@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import bannerimage from "../../images/PoliceVerificationBanner.png";
+import bannerimage from "../../images/msmebanner1.png";
 import circleIcon from "../../images/circle1.svg";
 import verify from "../../images/policeverification.svg";
 import Price from "../../images/Price Tag.svg";
@@ -160,10 +160,10 @@ const MemsNew = () => {
     <>
     
            <Helmet>
-              <title> Apply MSME Certificate Online | Online MSME Registration | Udyam Certificate </title>
-          <meta name="description" content="Click here to apply for MSME Certificate and get it at the earliest with expert advice and guidance. MSME Registration (Udyam Certificate) made simple and hassle-free."/>
+              <title> MSME Registration Online | Udyam Certificate Application </title>
+          <meta name="description" content="Apply MSME certificate online with expert support. Quick Udyam registration process, secure guidance, and instant certificate approval for your business needs."/>
           <meta name="keywords" content="MSME certificate, apply MSME certificate, MSME registration, MSME certificate online, MSME certificate application, Udyam registration, Udyam certificate, online MSME registration India, MSME application, MSME agents near me, how to apply for MSME certificate, MSME registration form, MSME registration near me, MSME registration portal, documents required for MSME certificate, MSME certificate process, MSME site, new MSME certificate apply, Udyam certificate application, online Udyam registration"/>
-          <link rel="canonical" href="https://makemydocuments.com/msme-certificate"/>
+          <link rel="canonical" href="https://www.makemydocuments.com/msme-certificate"/>
           <meta name="rating" content="General"/>
           <meta name="revisit-after" content="2 days"/>
           <meta name="robots" content="ALL, index, follow"/>
@@ -268,7 +268,7 @@ const MemsNew = () => {
         style={{
           backgroundColor: "#f4f4f4",
           padding: "15px 25px",
-          marginTop: "8%",
+          marginTop: "10%",
         }}
         className="breadcrumb-title"
       >
@@ -399,32 +399,6 @@ const MemsNew = () => {
                   >
                   
 
-                    {/* <div style={{ flex: 1, textAlign: "right" }}>
-                      <p
-                        style={{
-                          fontSize: "14px",
-                          marginBottom: "5px",
-                          color: "#333",
-                          fontWeight: "600",
-                        }}
-                      >
-                        Starting from
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "12px",
-                          fontWeight: "bold",
-                          color: "#333",
-                          backgroundColor: "#e3f2fd",
-                          padding: "6px 10px",
-                          borderRadius: "6px",
-                          display: "inline-block",
-                          margin: 0,
-                        }}
-                      >
-                        ₹2,499/-
-                      </p>
-                    </div> */}
                   </div>
                   <div style={{ marginTop: "20px" }}>
                     <button
@@ -495,7 +469,7 @@ const MemsNew = () => {
                       marginBottom: "8px",
                     }}
                   >
-                  MSME Registration (Udyam Registration)  
+                  MSME Registration <br />(Udyam Registration)  
                   </h2>
 
                   <div
